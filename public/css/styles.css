@@ -9111,6 +9111,7 @@ a.icon {
 .icon-default {
     color: #434445;
     border-color: #e5e5e5;
+
 }
 
 .icon-darker {
@@ -9416,36 +9417,40 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
 
 
 /*
+був шлях images/icons/icon-emergency-01.png" прибрав /icons
+
+ */
+
 .icon-doctor-01:before {
-    background-image: url("../images/icons/icon-doctor-01.jpg");
+    background-image: url("../images/icon-doctor-01.jpg");
 }
 
 .icon-doctor-xl:before {
-    background-image: url("../images/icons/icon-doctor-xl.png");
+    background-image: url("../images/icon-doctor-xl.png");
 }
 
 .icon-medical-car-01:before {
-    background-image: url("../images/icons/icon-medical-car-01.jpg");
+    background-image: url("../images/icon-medical-car-xl.png");
 }
 
 .icon-medical-car-xl:before {
-    background-image: url("../images/icons/icon-medical-car-xl.png");
+    background-image: url("../images/icon-medical-car-xl.png");
 }
 
 .icon-pills-01:before {
-    background-image: url("../images/icons/icon-pills-01.jpg");
+    background-image: url("../images/icon-pills-01.jpg");
 }
 
 .icon-pills-xl:before {
-    background-image: url("../images/icons/icon-pills-xl.png");
+    background-image: url("../images/icon-pills-xl.png");
 }
 
 .icon-emergency-01:before {
-    background-image: url("../images/icons/icon-emergency-01.png");
+    background-image: url("../images/icon-emergency-01.png");
     height: 21px;
     width: 24px;
 }
-*/
+
 
 
 .progress-linear {
@@ -16426,7 +16431,18 @@ html.rd-navbar-fixed-linked .page {
 .parallax-container {
     position: relative;
     overflow: hidden;
+    background: url(../images/background-03-1920x939.jpg);
 }
+
+.parallax-container_2 {
+    position: relative;
+    overflow: hidden;
+    background: url(../images/background-04-1920x980.jpg);
+}
+
+
+
+
 
 .parallax-container p {
     font-size: 18px;
@@ -38574,7 +38590,7 @@ a.thumbnail:hover {
         top: 0;
         width: 44vw;
         height: 100%;
-        background: transparent url(../images/background-02-676x545.jpg);
+        background: transparent url(../images/background-02-676x545 .jpg);
         background-repeat: no-repeat;
         background-position: top left;
         background-size: cover;
@@ -39267,7 +39283,7 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
     background-repeat: no-repeat;
     background-position: center;
 }
-/*
+
 .icon-doctor-01:before {
     background-image: url("../images/icons/icon-doctor-01.jpg");
 }
@@ -39297,8 +39313,6 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
     height: 21px;
     width: 24px;
 }
-
- */
 
 .progress-linear {
     position: relative;
@@ -43705,6 +43719,15 @@ fieldset[disabled] .member-block-type-3 .btn-group .btn {
 .mobile .sheldue-item-body {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
+}
+
+
+sheldue-item-body-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
 }
 
 .service {

@@ -3,10 +3,12 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'index'])->name('main.index');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -19,5 +21,19 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/home', [PageController::class, 'index'])->name('home');
+
+Route::get('lang/{locale}', function ($locale) {
+    if (!in_array($locale, ['en', 'uk'])) {
+        abort(400);
+    }
+
+
+    Session::put('locale', $locale);
+
+
+    App::setLocale($locale);
+
+    return Redirect::back();
+});
 
 require __DIR__.'/auth.php';

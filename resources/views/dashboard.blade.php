@@ -5,33 +5,182 @@
         </h2>
     </x-slot>
 
+    <a href="{{ url('lang/en') }}">English</a> |
+    <a href="{{ url('lang/uk') }}">Українська</a>
+
     <!--<div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900"> -->
-                    {{ __("You're logged in! ") }}
 
-                   <!-- <div class="preloader">
+
+                   <div class="preloader">
                         <div class="preloader-body">
                             <div class="cssload-container">
                                 <div class="cssload-double-torus"></div>
                             </div>
                             <p>&nbsp;</p>
                         </div>
-                    </div>-->
+                    </div>
 
-    <div class="tests_style"></div>
+
 
                     <div class="page">
 
+
+
+
+                        <header class="section page-header header-absolute">
+                            <!--RD Navbar-->
+                            <div class="rd-navbar-wrap">
+                                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                                    <div class="rd-navbar-aside-outer rd-navbar-collapse">
+                                        <!--RD Navbar Brand-->
+                                        <div class="rd-navbar-aside">
+                                            <div class="rd-navbar-brand">
+                                                <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src="images/logo-inverse-154x53.png" alt="" width="77" height="26"/></a>
+                                            </div>
+                                            <div class="contacts-wrap">
+                                                <address class="contact-info reveal-sm-inline-block text-start offset-none">
+                                                    <div class="p unit unit-spacing-xs unit-horizontal">
+                                                        <div class="unit-left"><span class="icon icon-xs icon-circle icon-white-17 mdi mdi-phone"></span></div>
+                                                        <div class="unit-body"><a class="text-white" href="tel:#">1-800-1234-567</a><br><a class="text-white" href="tel:#">1-800-3214-654</a></div>
+                                                    </div>
+                                                </address>
+                                                <address class="contact-info reveal-sm-inline-block text-start">
+                                                    <div class="p unit unit-horizontal unit-spacing-xs">
+                                                        <div class="unit-left"><span class="icon icon-xs icon-circle icon-white-17 mdi mdi-map-marker"></span></div>
+                                                        <div class="unit-body"><a class="text-white" href="#">2130 Fulton Street San Diego<br>CA 94117-1080 USA</a></div>
+                                                    </div>
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rd-navbar-main-outer">
+                                        <div class="rd-navbar-main">
+                                            <!--RD Navbar Panel-->
+                                            <div class="rd-navbar-panel">
+                                                <!--RD Navbar Toggle-->
+                                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                                <!--RD Navbar Brand-->
+                                                <div class="rd-navbar-brand">
+                                                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src="images/logo-inverse-154x53.png" alt="" width="77" height="26"/></a>
+                                                </div>
+                                            </div>
+                                            <div class="rd-navbar-main-element">
+                                                <div class="rd-navbar-nav-wrap">
+                                                    <ul class="rd-navbar-nav">
+                                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="team.html">Team</a>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link">Pages</a>
+                                                            <ul class="rd-menu rd-navbar-megamenu">
+                                                                <li class="rd-megamenu-item">
+                                                                    <h6 class="rd-megamenu-title">Elements</h6>
+                                                                    <ul class="rd-megamenu-list">
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">Grid</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">Tabs and Accordions</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">Progress bars</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="icons.html">Icons</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">Tables</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="rd-megamenu-item">
+                                                                    <h6 class="rd-megamenu-title">Pages 1</h6>
+                                                                    <ul class="rd-megamenu-list">
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="team-member.html">Team Member Profile</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="careers.html">Careers</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="faq.html">FAQ Page</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="pricing.html">Pricing</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming Soon</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="maintenance.html">Maintenance</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="under-construction.html">Under Construction</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="login.html">Login/Register</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="rd-megamenu-item">
+                                                                    <h6 class="rd-megamenu-title">Pages 2</h6>
+                                                                    <ul class="rd-megamenu-list">
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="clients.html">Clients</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="partners.html">Partners</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy Policy</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search Results</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404.html">404 Page</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503.html">503 Page</a></li>
+                                                                        <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="make-an-appointment.html">Make an Appointment</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Services</a>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="departments.html">Departments</a>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="timetable.html">Timetable</a>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Gallery</a>
+                                                            <ul class="rd-menu rd-navbar-dropdown">
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Grid Gallery</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery-no-padding.html">Gallery Without Padding</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">Masonry Gallery</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cobbles-gallery.html">Cobbles Grid</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="blog-masonry.html">Blog</a>
+                                                            <ul class="rd-menu rd-navbar-dropdown">
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">Blog Masonry</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-modern.html">Blog Modern</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-classic.html">Blog Classic</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-grid.html">Blog Grid</a>
+                                                                </li>
+                                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.html">Single Post</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!--RD Navbar Search-->
+                                                <div class="rd-navbar-search">
+                                                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                                                        <div class="form-wrap">
+                                                            <label class="form-label" for="rd-navbar-search-form-input">Type and hit enter...</label>
+                                                            <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                                                            <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                                                        </div>
+                                                        <button class="rd-search-form-submit fa-search" type="submit"></button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </header>
                         <!--RD Navbar-->
 
 
 
 
-                        <section class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
-
-                                <div class="swiper-slide" data-slide-bg="images/slide-02.jpg">
+                        <div class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
+                        </div>
+                                <div class="swiper-slide" data-slide-bg="{{ asset('images/slide-01.jpg') }}">
                                     <div class="swiper-caption">
                                         <div class="swiper-slide-caption">
                                             <div class="container">
@@ -48,7 +197,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-slide-bg="images/slide-03.jpg">
+                                <div class="swiper-slide" data-slide-bg="{{ asset('images/slide-02.jpg') }}">
                                     <div class="swiper-caption">
                                         <div class="swiper-slide-caption">
                                             <div class="container">
@@ -74,7 +223,11 @@
                                     <div class="col-md-8 col-lg-5 col-xl-3">
                                         <div class="sheldue-item first">
                                             <div class="sheldue-item-body">
-                                                <div class="icon icon-xs mdi mdi-calendar-clock text-white-50"></div>
+                                                <div class="icon icon-xs mdi mdi-calendar-clock text-white-50">
+                                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.25 13.0664H14.875V16.1133L17.5156 17.6875L16.7031 19.0586L13.25 17.0781V13.0664ZM17.5664 7.68359H2.43359V19.5664H7.46094C6.98698 18.5846 6.75 17.5013 6.75 16.3164C6.81771 14.1836 7.5625 12.4062 8.98438 10.9844C10.4062 9.5625 12.1836 8.81771 14.3164 8.75C15.5013 8.75 16.5846 8.98698 17.5664 9.46094V7.68359ZM2.43359 21.75C1.79036 21.75 1.26562 21.5384 0.859375 21.1152C0.453125 20.6921 0.25 20.1758 0.25 19.5664V4.43359C0.25 3.79036 0.453125 3.26562 0.859375 2.85938C1.26562 2.45312 1.79036 2.25 2.43359 2.25H3.5V0.0664062H5.68359V2.25H14.3164V0.0664062H16.5V2.25H17.5664C18.1758 2.25 18.6921 2.46159 19.1152 2.88477C19.5384 3.30794 19.75 3.82422 19.75 4.43359V11.0352C20.4271 11.7122 20.9518 12.5078 21.3242 13.4219C21.6966 14.3359 21.8997 15.3008 21.9336 16.3164C21.8659 18.4831 21.1211 20.2773 19.6992 21.6992C18.2773 23.1211 16.4831 23.8659 14.3164 23.9336C13.3008 23.8997 12.3359 23.6966 11.4219 23.3242C10.5078 22.9518 9.71224 22.4271 9.03516 21.75H2.43359ZM14.3164 11.0859C12.8268 11.1198 11.5911 11.6276 10.6094 12.6094C9.6276 13.5911 9.11979 14.8268 9.08594 16.3164C9.11979 17.806 9.6276 19.0501 10.6094 20.0488C11.5911 21.0475 12.8268 21.5638 14.3164 21.5977C15.806 21.5638 17.0501 21.0475 18.0488 20.0488C19.0475 19.0501 19.5638 17.806 19.5977 16.3164C19.5638 14.8268 19.0475 13.5911 18.0488 12.6094C17.0501 11.6276 15.806 11.1198 14.3164 11.0859Z" fill="white" fill-opacity="0.5" />
+                                                    </svg>
+                                                </div>
                                                 <h6 class="d-inline-block inset-left-10 text-white">opening hours</h6>
                                                 <hr>
                                                 <div class="row offset-top-24 justify-content-sm-between text-gray-light">
@@ -92,7 +245,9 @@
                                     <div class="col-md-8 col-lg-5 col-xl-3">
                                         <div class="sheldue-item light">
                                             <div class="sheldue-item-body">
-                                                <div class="icon icon-xs mdi mdi-calendar-today text-white-50"></div>
+                                                <div class="icon icon-xs mdi mdi-calendar-today text-white-50 ">
+
+                                                </div>
                                                 <h6 class="d-inline-block inset-left-10 text-white">doctors’ timetable</h6>
                                                 <hr>
                                                 <div class="offset-top-24 text-gray-light">
@@ -105,7 +260,11 @@
                                     <div class="col-md-8 col-lg-5 col-xl-3">
                                         <div class="sheldue-item">
                                             <div class="sheldue-item-body">
-                                                <div class="icon icon-xs mdi mdi-phone text-white-50"></div>
+                                                <div class="icon icon-xs mdi mdi-phone text-white-50">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.16016 8.67969C4.97266 10.237 5.97982 11.6165 7.18164 12.8184C8.38346 14.0202 9.76302 15.0273 11.3203 15.8398L13.707 13.4531C14.0456 13.1484 14.418 13.0638 14.8242 13.1992C16.043 13.6055 17.3294 13.8086 18.6836 13.8086C18.9883 13.8086 19.2422 13.9102 19.4453 14.1133C19.6484 14.3164 19.75 14.5703 19.75 14.875V18.6836C19.75 18.9883 19.6484 19.2422 19.4453 19.4453C19.2422 19.6484 18.9883 19.75 18.6836 19.75C13.4701 19.6146 9.12826 17.8118 5.6582 14.3418C2.18815 10.8717 0.385417 6.52995 0.25 1.31641C0.25 1.01172 0.351562 0.757812 0.554688 0.554688C0.757812 0.351562 1.01172 0.25 1.31641 0.25H5.125C5.42969 0.25 5.68359 0.351562 5.88672 0.554688C6.08984 0.757812 6.19141 1.01172 6.19141 1.31641C6.19141 2.67057 6.39453 3.95703 6.80078 5.17578C6.9362 5.58203 6.85156 5.95443 6.54688 6.29297L4.16016 8.67969Z" fill="white" fill-opacity="0.5" />
+                                                    </svg>
+                                                </div>
                                                 <h6 class="d-inline-block inset-left-10 text-white">appointments</h6>
                                                 <hr>
                                                 <div class="offset-top-24 text-gray-light">
@@ -118,8 +277,21 @@
                                     <div class="col-md-8 col-lg-5 col-xl-3">
                                         <div class="sheldue-item light last">
                                             <div class="sheldue-item-body">
-                                                <div class="icon icon-xs icon-emergency-01 text-white-50"></div>
-                                                <h6 class="d-inline-block inset-left-10 text-white">emergency cases</h6>
+
+
+                                                <div class="sheldue-item-body-title">
+                                                    <div>
+                                                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13.25 13.0664H14.875V16.1133L17.5156 17.6875L16.7031 19.0586L13.25 17.0781V13.0664ZM17.5664 7.68359H2.43359V19.5664H7.46094C6.98698 18.5846 6.75 17.5013 6.75 16.3164C6.81771 14.1836 7.5625 12.4062 8.98438 10.9844C10.4062 9.5625 12.1836 8.81771 14.3164 8.75C15.5013 8.75 16.5846 8.98698 17.5664 9.46094V7.68359ZM2.43359 21.75C1.79036 21.75 1.26562 21.5384 0.859375 21.1152C0.453125 20.6921 0.25 20.1758 0.25 19.5664V4.43359C0.25 3.79036 0.453125 3.26562 0.859375 2.85938C1.26562 2.45312 1.79036 2.25 2.43359 2.25H3.5V0.0664062H5.68359V2.25H14.3164V0.0664062H16.5V2.25H17.5664C18.1758 2.25 18.6921 2.46159 19.1152 2.88477C19.5384 3.30794 19.75 3.82422 19.75 4.43359V11.0352C20.4271 11.7122 20.9518 12.5078 21.3242 13.4219C21.6966 14.3359 21.8997 15.3008 21.9336 16.3164C21.8659 18.4831 21.1211 20.2773 19.6992 21.6992C18.2773 23.1211 16.4831 23.8659 14.3164 23.9336C13.3008 23.8997 12.3359 23.6966 11.4219 23.3242C10.5078 22.9518 9.71224 22.4271 9.03516 21.75H2.43359ZM14.3164 11.0859C12.8268 11.1198 11.5911 11.6276 10.6094 12.6094C9.6276 13.5911 9.11979 14.8268 9.08594 16.3164C9.11979 17.806 9.6276 19.0501 10.6094 20.0488C11.5911 21.0475 12.8268 21.5638 14.3164 21.5977C15.806 21.5638 17.0501 21.0475 18.0488 20.0488C19.0475 19.0501 19.5638 17.806 19.5977 16.3164C19.5638 14.8268 19.0475 13.5911 18.0488 12.6094C17.0501 11.6276 15.806 11.1198 14.3164 11.0859Z" fill="white" fill-opacity="0.5" />
+                                                        </svg>
+                                                    </div>
+
+
+                                                    <div>
+                                                        <h6 class="d-inline-block inset-left-10 text-white">emergency cases</h6>
+                                                    </div>
+                                                </div>
+
                                                 <hr>
                                                 <div class="offset-top-24">
                                                     <h5 class="font-weight-bold"><a class="text-white" href="tel:#">1-800-1234-567</a></h5>
@@ -133,7 +305,7 @@
                             </div>
                         </section>
                         <!--What makes us different-->
-                        <section class="section-lg bg-default-liac">
+                        <section class="section-lg bg-default-liac" >
                             <div class="container text-center">
                                 <h3>What Makes Us Different</h3>
                                 <div class="row offset-top-60 row-50">
@@ -156,7 +328,7 @@
                             </div>
                         </section>
                         <!-- Material Parallax-->
-                        <section class="parallax-container" data-parallax-img="{{ asset('images/background-03-1920x939(1).jpg') }}">
+                        <section class="parallax-container" data-parallax-img="{{ asset('../images/background-03-1920x980.jpg ') }}">
                             <div class="parallax-content section-98 section-sm-110 context-dark">
                                 <div class="container text-start">
                                     <div class="row justify-content-sm-center justify-content-lg-start">
@@ -334,7 +506,7 @@
                             </div>
                             <!-- RD Parallax-->
                         </section>
-                        <section class="parallax-container" data-parallax-img="images/background-04-1920x980.jpg">
+                        <section class="parallax-container_2 " >
                             <div class="parallax-content section-98 section-sm-110 context-dark">
                                 <div class="container text-start">
                                     <div class="row justify-content-sm-center justify-content-lg-start">
@@ -501,6 +673,9 @@
                         </footer>
                     </div>
                     <div class="snackbars" id="form-output-global"></div>
+
+    <script src="{{ asset('js/core.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 
      <!--            </div>
             </div>
