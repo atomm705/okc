@@ -156,7 +156,7 @@
                             </div>
                         </section>
                         <!-- Material Parallax-->
-                        <section class="parallax-container" data-parallax-img="images/background-03-1920x939.jpg">
+                        <section class="parallax-container" data-parallax-img="{{ asset('images/background-03-1920x939(1).jpg') }}">
                             <div class="parallax-content section-98 section-sm-110 context-dark">
                                 <div class="container text-start">
                                     <div class="row justify-content-sm-center justify-content-lg-start">
