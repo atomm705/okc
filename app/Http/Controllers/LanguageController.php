@@ -14,13 +14,8 @@ class LanguageController extends Controller
         if (!in_array($locale, ['en', 'ua'])) {
             abort(400);
         }
-
-
         Session::put('locale', $locale);
         session()->save();
-
-
-
 
         App::setLocale($locale);
 
