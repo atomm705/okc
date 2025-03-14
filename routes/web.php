@@ -7,6 +7,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\AboutControler;
 use App\Http\Controllers\TeamControler;
 use App\Http\Controllers\ServicesControler;
+use App\Http\Controllers\DepartmentsController;
 
 
 Route::middleware([\App\Http\Middleware\SetLocale::class])->group(function () {
@@ -18,6 +19,7 @@ Route::middleware([\App\Http\Middleware\SetLocale::class])->group(function () {
     Route::get('/about', [AboutControler::class, 'index'])->name('main.about');
     Route::get('/team', [TeamControler::class, 'index'])->name('main.team');
     Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
+    Route::get('/departments', [DepartmentsController::class, 'index'])->name('main.departments');
     Route::get('/home', [PageController::class, 'index'])->name('home');
 
     Route::get('/dashboard', function () {

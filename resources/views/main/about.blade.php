@@ -1,6 +1,7 @@
 <!-- Breadcrumbs-->
 <x-app-layout>
 
+
 <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
     <div class="container">
         <h2 class="breadcrumbs-custom-title">About</h2>

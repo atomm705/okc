@@ -460,5 +460,6 @@
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=geometry,places"></script>
 
 </x-app-layout>

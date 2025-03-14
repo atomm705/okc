@@ -98,7 +98,7 @@
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">@lang('messages.Services')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="departments.html">@lang('messages.Departments')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.departments') }}">@lang('messages.Departments')</a>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="timetable.html">@lang('messages.Timetable')</a>
                                 </li>

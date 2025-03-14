@@ -26,9 +26,13 @@
     <!-- Bootstrap JS + Popper.js -->
 
 
-    <body class="font-sans antialiased">
+    <body >
+
         <!--<div class="min-h-screen bg-gray-100">-->
         @include('layouts.header')
+
+
+
 
 
             <main>
