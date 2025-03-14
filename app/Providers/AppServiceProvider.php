@@ -7,21 +7,15 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
 class AppServiceProvider extends ServiceProvider
-
 {
-    /**
-     * Register any application services.
-     */
-    public function register(): void
-    {
-        //
-    }
-
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot()
+
     {
+
+
 
         $locale = Session::get('locale', config('app.locale'));
 
@@ -29,7 +23,11 @@ class AppServiceProvider extends ServiceProvider
         App::setLocale($locale);
     }
 
-
-
-
+    /**
+     * Register any application services.
+     */
+    public function register()
+    {
+        //
+    }
 }
