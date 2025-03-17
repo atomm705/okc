@@ -38,7 +38,7 @@ Route::middleware([\App\Http\Middleware\SetLocale::class])->group(function () {
     });
 });
 Route::get('/', function () {
-    return redirect('/ua');
+    return redirect('/uk');
 });
 
 

@@ -10,8 +10,11 @@
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
-                        <a class="brand" href="{{ route('lang', ['locale' => 'en']) }}">English</a>
-                        <a class="brand" href="{{ route('lang', ['locale' => 'ua']) }}">Ukrainian</a>
+                        <a class="brand" href="{{ url('/en') }}">English</a>
+                        <a class="brand" href="{{ url('/uk') }}">Ukrainian</a>
+
+
+
                         <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                     </div>
                     <div class="contacts-wrap">
@@ -46,7 +49,7 @@
                             <ul class="rd-navbar-nav">
                                 <li class="rd-nav-item active"><a class="rd-nav-link"href="{{ route('main.index') }}">@lang('messages.Home')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.about') }}"> @lang('messages.About')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
                                 <li class="rd-nav-item"><a class="rd-nav-link">@lang('messages.Pages')</a>

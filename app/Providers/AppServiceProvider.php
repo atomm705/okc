@@ -18,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
         App::setLocale($locale);
     }
 
+
+
     /**
      * Register any application services.
      */

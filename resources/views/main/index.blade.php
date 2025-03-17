@@ -23,6 +23,7 @@
     @endsection
 
 
+
         <section class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center">
                 <div class="swiper-slide" id="page-loader" data-slide-bg="images/slide-01.jpg">

@@ -16,19 +16,49 @@ class SetLocale
      * @param  \Closure  $next
      * @return mixed
      */
+    //public function handle(Request $request, Closure $next)
+    //{
+
+      //  $locale = $request->get('locale', Session::get('locale', config('app.locale')));
+
+        //if (!in_array($locale, ['en', 'uk'])) {
+          //  $locale = 'en';
+        //}
+
+        //App::setLocale($locale);
+
+        //Session::put('locale', $locale);
+
+        //return $next($request);
+    //}
+
     public function handle(Request $request, Closure $next)
     {
+       // $locale = $request->segment(1, Session::get('locale', 'uk'));
 
-        $locale = $request->get('locale', Session::get('locale', config('app.locale')));
+       // if (!in_array($locale, ['en', 'uk', 'ru'])) {
+       //     $locale = 'uk';
+      //  }
 
-        if (!in_array($locale, ['en', 'ua'])) {
-            $locale = 'en';
+       // App::setLocale($locale);
+       // Session::put('locale', $locale);
+
+       // return $next($request);
+
+        $locale = $request->segment(1, Session::get('locale', 'uk'));
+
+        if (!in_array($locale, ['en', 'uk', 'ru'])) {
+            $locale = 'uk';
         }
 
         App::setLocale($locale);
-
         Session::put('locale', $locale);
 
         return $next($request);
     }
+
+
+
+
+
 }

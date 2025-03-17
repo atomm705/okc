@@ -6,7 +6,7 @@
     </x-slot>
 
     <a href="{{ url('lang/en') }}">English</a> |
-    <a href="{{ url('lang/ua') }}">Українська</a>
+    <a href="{{ url('lang/uk') }}">Українська</a>
 
     <!--<div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">

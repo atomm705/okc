@@ -16,7 +16,7 @@
                     <div class="rd-navbar-brand">
                         <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                         <a class="brand" href="{{ route('lang', ['locale' => 'en']) }}">English</a>
-                        <a class="brand" href="{{ route('lang', ['locale' => 'ua']) }}">Ukrainian</a>
+                        <a class="brand" href="{{ route('lang', ['locale' => 'uk']) }}">Ukrainian</a>
                     </div>
                     <div class="contacts-wrap">
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">

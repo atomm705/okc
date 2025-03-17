@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\Session;
 
 class LocaleMiddleware
 {
-    public static $mainLanguage = 'ua'; //основной язык, который не должен отображаться в URl
+    public static $mainLanguage = 'uk';
 
-    public static $languages = ['ua', 'en'];
+    public static $languages = ['uk', 'en','ru'];
     /**
      * Handle an incoming request.
      *
@@ -22,19 +22,33 @@ class LocaleMiddleware
 
     public static function getLocale()
     {
+      //  $uri = Request::path();
+
+        //$segmentsURI = explode('/',$uri);
+
+
+        //if (!empty($segmentsURI[0]) && in_array($segmentsURI[0], self::$languages)) {
+
+       //     return $segmentsURI[0];
+
+      //  } else {
+      //      return  self::$mainLanguage;
+      //  }
+
         $uri = Request::path();
+        $segmentsURI = explode('/', $uri);
 
-        $segmentsURI = explode('/',$uri);
-
-
-        if (!empty($segmentsURI[0]) && in_array($segmentsURI[0], self::$languages)) {
-
+        // Проверяем, есть ли в первом сегменте URL допустимая локаль
+        if (in_array($segmentsURI[0], self::$languages)) {
             return $segmentsURI[0];
-
-        } else {
-            return  self::$mainLanguage;
         }
+
+        // Если локаль не указана в URL, возвращаем основную локаль
+        return self::$mainLanguage;
+
     }
+
+
 
     public function handle($request, Closure $next)
     {
