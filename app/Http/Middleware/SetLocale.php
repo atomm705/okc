@@ -21,18 +21,14 @@ class SetLocale
 
         $locale = $request->get('locale', Session::get('locale', config('app.locale')));
 
-
         if (!in_array($locale, ['en', 'ua'])) {
             $locale = 'en';
         }
 
-
         App::setLocale($locale);
-
 
         Session::put('locale', $locale);
 
         return $next($request);
     }
 }
-

@@ -27,6 +27,16 @@
 
 
     <body >
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-double-torus"></div>
+            </div>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div class="page">
+
 
         <!--<div class="min-h-screen bg-gray-100">-->
         @include('layouts.header')
@@ -43,6 +53,9 @@
 
 
         @include('layouts.footer')
+    </div>
+
+
 
     </body>
 </html>

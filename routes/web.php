@@ -7,31 +7,37 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\AboutControler;
 use App\Http\Controllers\TeamControler;
 use App\Http\Controllers\ServicesControler;
+use App\Http\Controllers\TimetableControler;
 use App\Http\Controllers\DepartmentsController;
+use App\Http\Controllers\ContactsControler;
 
 
 Route::middleware([\App\Http\Middleware\SetLocale::class])->group(function () {
-    // Маршрут для смены языка
+
     Route::get('lang/{locale}', [LanguageController::class, 'changeLanguage'])->name('lang');
 
-    // Главная страница и другие маршруты
-    Route::get('/', [PageController::class, 'index'])->name('main.index');
-    Route::get('/about', [AboutControler::class, 'index'])->name('main.about');
-    Route::get('/team', [TeamControler::class, 'index'])->name('main.team');
-    Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
-    Route::get('/departments', [DepartmentsController::class, 'index'])->name('main.departments');
-    Route::get('/home', [PageController::class, 'index'])->name('home');
+    Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
 
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->middleware(['auth', 'verified'])->name('dashboard');
 
-    Route::middleware('auth')->group(function () {
-        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+        Route::get('/', [PageController::class, 'index'])->name('main.index');
+        Route::get('/about', [AboutControler::class, 'index'])->name('main.about');
+        Route::get('/team', [TeamControler::class, 'index'])->name('main.team');
+        Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
+        Route::get('/departments', [DepartmentsController::class, 'index'])->name('main.departments');
+        Route::get('/timetable', [TimetableControler::class, 'index'])->name('main.timetable');
+        Route::get('/contacts', [ContactsControler::class, 'index'])->name('main.contacts');
+        Route::get('/home', [PageController::class, 'index'])->name('home');
+
+        Route::middleware('auth')->group(function () {
+            Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+            Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+            Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+        });
     });
 });
+Route::get('/', function () {
+    return redirect('/ua');
+});
+
 
 require __DIR__.'/auth.php';
-

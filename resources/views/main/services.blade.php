@@ -1,17 +1,9 @@
 <x-app-layout>
 
-<div class="preloader">
-    <div class="preloader-body">
-        <div class="cssload-container">
-            <div class="cssload-double-torus"></div>
-        </div>
-        <p>&nbsp;</p>
-    </div>
-</div>
-<div class="page">
+
 
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{ asset('images/background-breadcrumbs-01-1920x345.jpg ') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
             <h2 class="breadcrumbs-custom-title">Services</h2>
             <ul class="breadcrumbs-custom-path">
@@ -49,7 +41,7 @@
                         <div class="col-1 isotope-item isotope-sizer"></div>
                         <div class="col-lg-12 isotope-item" data-filter="Diagnostic Imaging">
                             <h3>Diagnostic Imaging</h3>
-                            <div class="offset-top-60"><img class="img-responsive" src="images/services-06-870x440.jpg" width="870" height="440" alt="">
+                            <div class="offset-top-60"><img class="img-responsive" src="{{ asset('images/services-06-870x440.jpg ') }}" width="870" height="440" alt="">
                                 <div class="offset-top-30">
                                     <p>Phasellus rhoncus felis ut justo laoreet, ac suscipit purus sagittis. Nulla volutpat, leo nec tempor tincidunt, metus sem sodales massa, nec ultricies dui justo a elit. Sed libero risus, vestibulum in purus ac, viverra sollicitudin massa. Sed tristique est quis urna sodales congue. In sit amet pretium erat, et suscipit mauris. Morbi nec tempor risus. Nullam tempus elementum lacus, id tincidunt dolor blandit non. Praesent bibendum ac diam varius consequat.</p>
                                     <ul class="list-marked list">
@@ -65,7 +57,7 @@
                         </div>
                         <div class="col-lg-12 isotope-item" data-filter="Ultrasound diagnostics">
                             <h3>Ultrasound Diagnostics</h3>
-                            <div class="offset-top-60"><img class="img-responsive" src="images/services-05-870x440.jpg" width="870" height="440" alt="">
+                            <div class="offset-top-60"><img class="img-responsive" src="{{ asset('images/services-05-870x440.jpg ') }}" width="870" height="440" alt="">
                                 <div class="offset-top-30">
                                     <p>Vivamus sed laoreet neque. Suspendisse vel eros nibh. Suspendisse potenti. Sed non viverra orci, eu volutpat diam.</p>
                                     <p>Fusce consequat pretium augue, scelerisque maximus eros commodo vel. Mauris vitae nisl quis odio semper rutrum vel quis est. Curabitur ac luctus metus.</p>
@@ -77,7 +69,7 @@
                         </div>
                         <div class="col-lg-12 isotope-item" data-filter="X-ray diagnostics">
                             <h3>X-ray diagnostics</h3>
-                            <div class="offset-top-60"><img class="img-responsive" src="images/services-04-870x440.jpg" width="870" height="440" alt="">
+                            <div class="offset-top-60"><img class="img-responsive" src="{{ asset('images/services-04-870x440.jpg ') }}" width="870" height="440" alt="">
                                 <div class="offset-top-30">
                                     <p>Aenean ac ex nunc. Phasellus tincidunt tempus enim. Pellentesque habitant morbi tristique senectus et.</p>
                                     <p>Sed elementum volutpat libero at pellentesque. Vestibulum interdum, dolor eget tristique dignissim.</p>
@@ -86,7 +78,7 @@
                         </div>
                         <div class="col-lg-12 isotope-item" data-filter="Pediatrics">
                             <h3>Pediatrics</h3>
-                            <div class="offset-top-60"><img class="img-responsive" src="images/services-03-870x440.jpg" width="870" height="440" alt="">
+                            <div class="offset-top-60"><img class="img-responsive" src="{{ asset('images/services-03-870x440.jpg ') }}" width="870" height="440" alt="">
                                 <div class="offset-top-30">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
                                     <ul class="list-marked list">
@@ -106,7 +98,7 @@
                         </div>
                         <div class="col-lg-12 isotope-item" data-filter="Laboratory Services">
                             <h3>Laboratory Services</h3>
-                            <div class="offset-top-60"><img class="img-responsive" src="images/services-02-870x440.jpg" width="870" height="440" alt="">
+                            <div class="offset-top-60"><img class="img-responsive" src="{{ asset('images/services-02-870x440.jpg ') }}" width="870" height="440" alt="">
                                 <div class="offset-top-30">
                                     <p>Aenean ac ex nunc. Phasellus tincidunt tempus enim. Sed elementum volutpat libero at pellentesque. Vestibulum interdum, dolor eget tristique dignissim, augue diam viverra ex, non malesuada ipsum mauris volutpat nibh.</p>
                                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam efficitur accumsan condimentum. Suspendisse non leo ut nulla maximus blandit at ac ante. Donec volutpat sit amet elit non ultricies.</p>
@@ -117,7 +109,7 @@
                         </div>
                         <div class="col-lg-12 isotope-item" data-filter="Pregnancy Services">
                             <h3>Pregnancy Services</h3>
-                            <div class="offset-top-60"><img class="img-responsive" src="images/services-01-870x440.jpg" width="870" height="440" alt="">
+                            <div class="offset-top-60"><img class="img-responsive" src="{{ asset('images/services-01-870x440.jpg ') }}" width="870" height="440" alt="">
                                 <div class="offset-top-30">
                                     <p>Etiam efficitur accumsan condimentum. Suspendisse non leo ut nulla maximus blandit at ac ante. Donec volutpat sit amet elit non ultricies. Nulla a imperdiet odio.</p>
                                     <p>Donec ornare molestie elit eget imperdiet. Vivamus sed laoreet neque.<a href="make-an-appointment.html">tincidunt sit amet tellus</a> mauris vitae nisl quis odio semper rutrum vel quis est. Curabitur ac.</p>
@@ -130,7 +122,7 @@
                                 <div class="row text-sm-start">
                                     <div class="col-lg-5 inset-lg-right-30">
                                         <div class="unit flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-sm-row unit-spacing-sm">
-                                            <div class="unit-left"><img class="img-responsive" src="images/user-scott-riley-110x110.jpg" width="110" height="110" alt=""></div>
+                                            <div class="unit-left"><img class="img-responsive" src=" {{ asset('images/user-scott-riley-110x110.jpg') }}" width="110" height="110" alt=""></div>
                                             <div class="unit-body">
                                                 <h5 class="font-weight-bold text-primary">Dr. Scott Riley</h5>
                                                 <p class="font-italic offset-top-0">CMO, Pathologist</p>
@@ -146,7 +138,7 @@
                                     </div>
                                     <div class="col-lg-5 offset-top-41 offset-md-top-0 inset-lg-right-30">
                                         <div class="unit flex-xxl-row flex-xl-row flex-lg-row flex-md-row flex-sm-row unit-spacing-sm">
-                                            <div class="unit-left"><img class="img-responsive" src="images/user-johnny-fowler-110x110.jpg" width="110" height="110" alt=""></div>
+                                            <div class="unit-left"><img class="img-responsive" src="{{ asset('images/user-johnny-fowler-110x110.jpg') }}" width="110" height="110" alt=""></div>
                                             <div class="unit-body">
                                                 <h5 class="font-weight-bold text-primary">Dr. Eric Snyder</h5>
                                                 <p class="font-italic offset-top-0">MRI Technologist</p>
@@ -170,8 +162,12 @@
     </section>
     <!-- Page Footer-->
 
-</div>
-<div class="snackbars" id="form-output-global"></div>
-<script src="js/core.min.js"></script>
-<script src="js/script.js"></script>
+
+
+
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="{{ asset('js/core.min.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+
+
 </x-app-layout>>

@@ -182,6 +182,7 @@ return [
 
     'contact us'=>'contact us',
 
+    'Type and hit enter...'=>'Type and hit enter...'
 
 
 ];

@@ -14,7 +14,7 @@
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
-                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-154x53.png" alt="" width="77" height="26"/><img class="brand-logo-light" src="images/logo-inverse-154x53.png" alt="" width="77" height="26"/></a>
+                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                         <a class="brand" href="{{ route('lang', ['locale' => 'en']) }}">English</a>
                         <a class="brand" href="{{ route('lang', ['locale' => 'ua']) }}">Ukrainian</a>
                     </div>
@@ -42,7 +42,7 @@
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!--RD Navbar Brand-->
                         <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-154x53.png" alt="" width="77" height="26"/><img class="brand-logo-light" src="images/logo-inverse-154x53.png" alt="" width="77" height="26"/></a>
+                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src=" {{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                         </div>
                     </div>
                     <div class="rd-navbar-main-element">
@@ -100,7 +100,7 @@
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.departments') }}">@lang('messages.Departments')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="timetable.html">@lang('messages.Timetable')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">@lang('messages.Timetable')</a>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="#">@lang('messages.Gallery')</a>
                                     <ul class="rd-menu rd-navbar-dropdown">
@@ -128,7 +128,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">@lang('messages.Contacts')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
                                 </li>
                             </ul>
                         </div>
