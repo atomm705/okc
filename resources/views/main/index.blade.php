@@ -17,6 +17,12 @@
 <x-app-layout>
 
 
+
+    @section('header')
+        @include('layouts.header_page_home')
+    @endsection
+
+
         <section class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center">
                 <div class="swiper-slide" id="page-loader" data-slide-bg="images/slide-01.jpg">
@@ -91,7 +97,7 @@
                                     <div class="col-sm-7 offset-top-10 text-sm-end">9:00am–3:00pm</div>
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="timetable.html">@lang('messages.view timetable')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('messages.view timetable')</a></div>
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-5 col-xl-3">
@@ -104,7 +110,7 @@
                                     <p>@lang('messages.The following is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as the doctors or nurses may sometimes be attending to other duties.')</p>
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="timetable.html">@lang('messages.view timetable')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('messages.view timetable')</a></div>
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-5 col-xl-3">
@@ -131,7 +137,7 @@
                                     <p class="text-gray-light">@lang('messages.Call us!')</p>
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="contacts.html">@lang('messages.Contact page')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.contacts') }}">@lang('messages.Contact page')</a></div>
                         </div>
                     </div>
                 </div>
@@ -183,27 +189,27 @@
                 </div>
                 <div class="row offset-top-60 text-lg-start row-30">
                     <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-01-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="services.html">@lang('messages.Pediatrics')</a>
+                        <div class="service"><img class="img-responsive" src="images/home-01-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.Pediatrics')</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 offset-sm-top-0">
-                        <div class="service"><img class="img-responsive" src="images/home-02-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="services.html">@lang('messages.MRI of the brain')</a>
+                        <div class="service"><img class="img-responsive" src="images/home-02-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.MRI of the brain')</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 offset-md-top-0">
-                        <div class="service"><img class="img-responsive" src="images/home-03-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="services.html">@lang('messages.x-ray diagnostic')</a>
+                        <div class="service"><img class="img-responsive" src="images/home-03-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.x-ray diagnostic')</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-04-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="services.html">@lang('messages.laboratory services')</a>
+                        <div class="service"><img class="img-responsive" src="images/home-04-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.laboratory services')</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-05-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="services.html">@lang('messages.pregnancy')</a>
+                        <div class="service"><img class="img-responsive" src="images/home-05-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.pregnancy')</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-06-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="services.html">@lang('messages.Best Equipment')</a>
+                        <div class="service"><img class="img-responsive" src="images/home-06-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.Best Equipment')</a>
                         </div>
                     </div>
                 </div>

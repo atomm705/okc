@@ -186,4 +186,6 @@ return [
 
 
     'Type and hit enter...'=>'Введіть і натисніть enter...',
+
+    'Contact page'=>'зв`язатися',
     ];

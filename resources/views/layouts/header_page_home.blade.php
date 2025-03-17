@@ -1,30 +1,34 @@
-<header class="section page-header">
-
+<header class="section page-header header-absolute">
     <p> локаль: {{ app()->getLocale() }}</p>
+
+
+
+
 
     <!--RD Navbar-->
     <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
             <div class="rd-navbar-aside-outer rd-navbar-collapse">
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
+                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                         <a class="brand" href="{{ route('lang', ['locale' => 'en']) }}">English</a>
                         <a class="brand" href="{{ route('lang', ['locale' => 'ua']) }}">Ukrainian</a>
-                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                     </div>
                     <div class="contacts-wrap">
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">
                             <div class="p unit unit-spacing-xs unit-horizontal">
-                                <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
-                                <div class="unit-body"><a href="tel:#">1-800-1234-567</a><br><a href="tel:#">1-800-3214-654</a></div>
+                                <div class="unit-left"><span class="icon icon-xs icon-circle icon-white-17 mdi mdi-phone"></span></div>
+                                <div class="unit-body"><a class="text-white" href="tel:#">1-800-1234-567</a><br><a class="text-white" href="tel:#">1-800-3214-654</a></div>
                             </div>
                         </address>
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
-                                <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
-                                <div class="unit-body"><a href="#">2130 Fulton Street San Diego<br>CA 94117-1080 USA</a></div>
+                                <div class="unit-left"><span class="icon icon-xs icon-circle icon-white-17 mdi mdi-map-marker"></span></div>
+                                <div class="unit-body"><a class="text-white" href="#">2130 Fulton Street San Diego<br>CA 94117-1080 USA</a></div>
                             </div>
                         </address>
                     </div>
@@ -38,7 +42,7 @@
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!--RD Navbar Brand-->
                         <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
+                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src=" {{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
                         </div>
                     </div>
                     <div class="rd-navbar-main-element">
@@ -49,6 +53,7 @@
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.about') }}"> @lang('messages.About')</a>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
+
                                 <li class="rd-nav-item"><a class="rd-nav-link">@lang('messages.Pages')</a>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         <li class="rd-megamenu-item">

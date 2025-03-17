@@ -10,6 +10,7 @@ use App\Http\Controllers\ServicesControler;
 use App\Http\Controllers\TimetableControler;
 use App\Http\Controllers\DepartmentsController;
 use App\Http\Controllers\ContactsControler;
+use App\Http\Controllers\Make_an_appointmentControler;
 
 
 Route::middleware([\App\Http\Middleware\SetLocale::class])->group(function () {
@@ -26,6 +27,7 @@ Route::middleware([\App\Http\Middleware\SetLocale::class])->group(function () {
         Route::get('/departments', [DepartmentsController::class, 'index'])->name('main.departments');
         Route::get('/timetable', [TimetableControler::class, 'index'])->name('main.timetable');
         Route::get('/contacts', [ContactsControler::class, 'index'])->name('main.contacts');
+        Route::get('/make_an_appointment', [Make_an_appointmentControler::class, 'index'])->name('main.make_an_appointment');
         Route::get('/home', [PageController::class, 'index'])->name('home');
 
         Route::middleware('auth')->group(function () {

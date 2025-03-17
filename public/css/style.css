@@ -131,8 +131,6 @@ a:focus {
 iframe {
 	display: block;
 }
-
-
 /** @section Context Styles */
 .context-dark, .bg-gray-700, .bg-accent, .bg-deluge, .bg-butterfly-bush, .navbar-inverse, .swiper-slide,
 .context-dark h1,

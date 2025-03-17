@@ -8,7 +8,7 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
@@ -39,7 +39,7 @@
 
 
         <!--<div class="min-h-screen bg-gray-100">-->
-        @include('layouts.header')
+        @yield('header', View::make('layouts.header'))
 
 
 
@@ -47,12 +47,16 @@
 
             <main>
 
+
                 {{ $slot }}
 
             </main>
 
 
         @include('layouts.footer')
+
+
+
     </div>
 
 
