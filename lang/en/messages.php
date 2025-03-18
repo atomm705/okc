@@ -187,4 +187,6 @@ return [
     'Contact page'=>'Contact page',
 
     'prices'=>'prices',
+    'testimonials'=>'testimonials',
+    'Online information'=>'Online information',
 ];

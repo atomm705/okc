@@ -191,4 +191,7 @@ return [
 
 
     'prices'=>'ціни',
+
+    'testimonials'=>'відгуки',
+    'Online information'=>'Онлайн конс'
     ];
