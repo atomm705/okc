@@ -44,7 +44,7 @@
             </div>
         </section>
         <!-- Our Achievements-->
-        <section class="text-md-start bg-default-liac section">
+        <!--<section class="text-md-start bg-default-liac section">
             <div class="container-wide container">
                 <div class="row justify-content-sm-center">
                     <div class="col-xl-5 col-xxl-4 section-90 section-md-122 context-md-dark bg-image-md-fullwidth-1 bg-image-md-fullwidth-1-left d-none d-xl-block"></div>
@@ -56,7 +56,7 @@
                                     <div class="col-lg-12 col-xxl-9">
                                         <div class="row row-50">
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
+
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default mdi mdi-trophy-variant"></span></div>
                                                     <div class="unit-body">
@@ -66,7 +66,6 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default  mdi mdi-pill copy"></span></div>
                                                     <div class="unit-body">
@@ -76,7 +75,6 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default  mdi mdi-school"></span></div>
                                                     <div class="unit-body">
@@ -86,7 +84,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
+
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default  mdi mdi-star"></span></div>
                                                     <div class="unit-body">
@@ -103,14 +101,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Our team-->
-        <section class="section-lg section bg-default">
+
+
+    <!--    <section class="section-lg section bg-default">
             <div class="container">
                 <h3 class="text-center">Our team</h3>
                 <div class="row justify-content-sm-center row-40">
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src=" {{ asset('images/our-team-08-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Scott Riley</h5>
@@ -120,7 +120,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-02-270x270.jpg') }} " alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Martha Schmidt</h5>
@@ -130,7 +130,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-03-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Sam McMillan</h5>
@@ -140,7 +140,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-04-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Mary Smith</h5>
@@ -150,7 +150,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-05-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Jane Fowler</h5>
@@ -160,7 +160,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-06-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Eric Snyder</h5>
@@ -170,7 +170,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-07-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Kate Hudson</h5>
@@ -180,7 +180,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-01-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. James Wilson</h5>
@@ -191,9 +191,19 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- testimonials-->
-        <section class="section-lg section bg-default-liac">
+        </section>-->
+    <section class="section section-md bg-default">
+        <div class="container grid-demo ">
+            <div class="row ">
+                 <div class="col-12">
+                     <h6  class="text-center">1/1</h6>
+                     <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.</p>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+        <section class="section-lg section #bg-default-liac">
             <div class="container">
                 <h3 class="text-center">Testimonials</h3>
                 <div class="offset-top-66">

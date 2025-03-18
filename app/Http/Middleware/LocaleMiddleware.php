@@ -38,12 +38,12 @@ class LocaleMiddleware
         $uri = Request::path();
         $segmentsURI = explode('/', $uri);
 
-        // Проверяем, есть ли в первом сегменте URL допустимая локаль
+
         if (in_array($segmentsURI[0], self::$languages)) {
             return $segmentsURI[0];
         }
 
-        // Если локаль не указана в URL, возвращаем основную локаль
+
         return self::$mainLanguage;
 
     }

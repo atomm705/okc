@@ -1,14 +1,14 @@
 <x-app-layout>
 
         <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{ asset('images/background-breadcrumbs-01-1920x345.jpg') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
-            <div class="container">
-                <h2 class="breadcrumbs-custom-title">Departments</h2>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="{{ route('main.index') }}">Home</a></li>
-                    <li class="active">Departments</li>
-                </ul>
-            </div>
-        </section>
+        <div class="container">
+            <h2 class="breadcrumbs-custom-title">Departments</h2>
+            <ul class="breadcrumbs-custom-path">
+                <li><a href="{{ route('main.index') }}">Home</a></li>
+                <li class="active">Departments</li>
+            </ul>
+        </div>
+    </section>
         <!-- Page Content-->
         <section class="section section-lg p-md-0">
             <div class="container">

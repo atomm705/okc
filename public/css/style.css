@@ -15651,6 +15651,7 @@ html.rd-navbar-fixed-linked .page {
 	box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
 	height: 60px;
+
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar {
@@ -15724,6 +15725,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-main-element {
 	display: flex;
 	align-items: center;
+
 }
 
 .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck, .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone {
@@ -15864,6 +15866,7 @@ html.rd-navbar-fixed-linked .page {
 	box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
 	height: 60px;
+    justify-content: space-between;
 }
 
 .rd-navbar-subpage.rd-navbar-static.rd-navbar {

@@ -35,12 +35,11 @@
                     </div>
                     <div class="rd-navbar-main-element">
                         <div class="rd-navbar-nav-wrap">
+
                             <ul class="rd-navbar-nav">
                                 <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">@lang('messages.Home')</a>
                                 </li>
-                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
-                                </li>
-                                <li class="rd-nav-item @if(request()->routeIs('main.team')) active @endif"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
+
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">@lang('messages.Services')</a>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         <li class="rd-megamenu-item">
@@ -95,11 +94,18 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.departments') }}">@lang('messages.Departments')</a>
-                                </li>
+
+
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">@lang('messages.Timetable')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="#">@lang('messages.Gallery')</a>
+
+                                <li class="rd-nav-item @if(request()->routeIs('main.team')) active @endif"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
+
+
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">@lang('messages.prices')</a>
+                                </li>
+
+                                <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">@lang('messages.Gallery')</a>
                                     <ul class="rd-menu rd-navbar-dropdown">
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">@lang('messages.Grid Gallery')</a>
                                         </li>
@@ -110,9 +116,16 @@
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cobbles-gallery.html">@lang('messages.Cobbles Grid')</a>
                                         </li>
                                     </ul>
+                                </li>-->
+
+                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="blog-masonry.html">@lang('messages.Blog')</a>
-                                    <ul class="rd-menu rd-navbar-dropdown">
+
+                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
+                                </li>
+
+                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.blog') }}">@lang('messages.Blog')</a>
+                                    <!--<ul class="rd-menu rd-navbar-dropdown">
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">@lang('messages.Blog Masonry')</a>
                                         </li>
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-modern.html">@lang('messages.Blog Modern')</a>
@@ -123,23 +136,24 @@
                                         </li>
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.html">@lang('messages.Single Post')</a>
                                         </li>
-                                    </ul>
+                                    </ul>-->
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
-                                </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
-                                    <ul class="rd-menu rd-navbar-dropdown">
-                                        @foreach (['en', 'uk', 'ru'] as $lang)
-                                            <li class="rd-dropdown-item">
-                                                <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper( __('main.'.$lang)) }}</a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </li>
+                                <div class="language_select">
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
+                                        <ul class="rd-menu rd-navbar-dropdown">
+                                            @foreach (['en', 'uk', 'ru'] as $lang)
+                                                <li class="rd-dropdown-item">
+                                                    <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper( __('main.'.$lang)) }}</a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+                                </div>
+
                             </ul>
                         </div>
                         <!--RD Navbar Search-->
-                        <div class="rd-navbar-search">
+                        <!--<div class="rd-navbar-search">
                             <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
                             <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
                                 <div class="form-wrap">
@@ -149,7 +163,7 @@
                                 </div>
                                 <button class="rd-search-form-submit fa-search" type="submit"></button>
                             </form>
-                        </div>
+                            </div>-->
                     </div>
                 </div>
             </div>

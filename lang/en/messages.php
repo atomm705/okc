@@ -7,7 +7,7 @@ return [
     'description' => 'This is a description in English.',
     'Home'=>'Home',
     'About'=>'About',
-    'Team'=>'Team',
+    'Team'=>'doctors',
     'Pages'=>'Pages',
     'Services'=>'Services',
     'Departments'=>'Departments',
@@ -185,4 +185,6 @@ return [
     'Type and hit enter...'=>'Type and hit enter...',
 
     'Contact page'=>'Contact page',
+
+    'prices'=>'prices',
 ];

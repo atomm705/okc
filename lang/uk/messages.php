@@ -9,8 +9,8 @@ return [
 
     'Home'=>'Головна',
 
-    'About'=>'О',
-    'Team'=>'Команда',
+    'About'=>'про нас',
+    'Team'=>'Лікарі',
     'Pages'=>'Cторінки',
     'Services'=>'Послуги',
     'Departments'=>'Кафедри',
@@ -188,4 +188,7 @@ return [
     'Type and hit enter...'=>'Введіть і натисніть enter...',
 
     'Contact page'=>'зв`язатися',
+
+
+    'prices'=>'ціни',
     ];

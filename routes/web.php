@@ -3,17 +3,23 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\SetLocale;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ServicesControler;
+use App\Http\Controllers\AppointmentControler;
 
 // Використовуємо middleware у групі маршрутів
 Route::middleware(SetLocale::class)->group(function () {
     Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
         Route::get('', [PageController::class, 'index'])->name('main.index');
         Route::get('/about', [PageController::class, 'about'])->name('main.about');
-        Route::get('/team', [PageController::class, 'team'])->name('main.team');
-        Route::get('/services', [PageController::class, 'services'])->name('main.services');
+        Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
+        Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
         Route::get('/departments', [PageController::class, 'departments'])->name('main.departments');
-        Route::get('/timetable', [PageController::class, 'timetable'])->name('main.timetable');
+        Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
+        Route::get('/blog', [PageController::class, 'blog'])->name('main.blog');
         Route::get('/contacts', [PageController::class, 'contacts'])->name('main.contacts');
+        Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
+        Route::get('/prices', [PageController::class, 'prices'])->name('main.prices');
+        Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
     })->where('locale', 'en|uk|ru');
 
 });
