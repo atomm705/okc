@@ -1,29 +1,7 @@
-
-
-<!--<!DOCTYPE html>
-<html class="wide wow-animation scrollTo" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Asap:400,500,600,700%7CLato:400italic,400,700">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body>-->
 <x-app-layout>
-
-
-
     @section('header')
-        @include('layouts.header_page_home')
+        @include('layouts.header')
     @endsection
-
-
-
         <section class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center">
                 <div class="swiper-slide" id="page-loader" data-slide-bg="images/slide-01.jpg">

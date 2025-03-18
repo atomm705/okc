@@ -21,11 +21,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-
-
     <!-- Bootstrap JS + Popper.js -->
-
-
     <body >
     <div class="preloader">
         <div class="preloader-body">
@@ -36,30 +32,12 @@
         </div>
     </div>
     <div class="page">
-
-
         <!--<div class="min-h-screen bg-gray-100">-->
         @yield('header', View::make('layouts.header'))
-
-
-
-
-
             <main>
-
-
                 {{ $slot }}
-
             </main>
-
-
         @include('layouts.footer')
-
-
-
     </div>
-
-
-
     </body>
 </html>

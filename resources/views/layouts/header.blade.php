@@ -1,7 +1,4 @@
 <header class="section page-header">
-
-    <p> локаль: {{ app()->getLocale() }}</p>
-
     <!--RD Navbar-->
     <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
@@ -9,14 +6,6 @@
             <div class="rd-navbar-aside-outer rd-navbar-collapse">
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
-                    <div class="rd-navbar-brand">
-                        <a class="brand" href="{{ url('/en') }}">English</a>
-                        <a class="brand" href="{{ url('/uk') }}">Ukrainian</a>
-
-
-
-                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
-                    </div>
                     <div class="contacts-wrap">
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">
                             <div class="p unit unit-spacing-xs unit-horizontal">
@@ -127,6 +116,15 @@
                                     </ul>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
+                                    <ul class="rd-menu rd-navbar-dropdown">
+                                        @foreach (['en', 'uk', 'ru'] as $lang)
+                                            <li class="rd-dropdown-item">
+                                                <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper($lang) }}</a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
