@@ -19,7 +19,6 @@
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <!-- Bootstrap JS + Popper.js -->
     <body >
@@ -33,10 +32,8 @@
     </div>
     <div class="page">
         <!--<div class="min-h-screen bg-gray-100">-->
-        @yield('header', View::make('layouts.header'))
-            <main>
-                {{ $slot }}
-            </main>
+        @include('layouts.header')
+        {{ $slot }}
         @include('layouts.footer')
     </div>
     </body>

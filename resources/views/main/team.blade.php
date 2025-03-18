@@ -1,9 +1,4 @@
-
 <x-app-layout>
-
-
-
-
         <!-- Breadcrumbs-->
         <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{ asset('images/background-breadcrumbs-01-1920x345.jpg') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
             <div class="container">
@@ -164,12 +159,5 @@
             </div>
         </section>
         <!-- Page Footer-->
-
-
-
     <div class="snackbars" id="form-output-global"></div>
-    <script src="{{ asset('js/core.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
-
-
 </x-app-layout>

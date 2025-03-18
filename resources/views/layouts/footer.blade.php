@@ -54,3 +54,7 @@
         <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Medina diagnostic center</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
     </div>
 </footer>
+<div class="snackbars" id="form-output-global"></div>
+<script src="{{ asset('js/core.min.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
+

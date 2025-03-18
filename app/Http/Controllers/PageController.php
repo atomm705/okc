@@ -10,4 +10,9 @@ class PageController extends Controller
     {
         return view('main.index');
     }
+
+    public function team(){
+
+        return view('main.team');
+    }
 }

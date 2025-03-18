@@ -1,4 +1,4 @@
-<header class="section page-header">
+<header class="section page-header @if(request()->routeIs('main.index')) header-absolute @endif">
     <!--RD Navbar-->
     <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
@@ -36,15 +36,15 @@
                     <div class="rd-navbar-main-element">
                         <div class="rd-navbar-nav-wrap">
                             <ul class="rd-navbar-nav">
-                                <li class="rd-nav-item active"><a class="rd-nav-link"href="{{ route('main.index') }}">@lang('messages.Home')</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">@lang('messages.Home')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
                                 </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
-                                <li class="rd-nav-item"><a class="rd-nav-link">@lang('messages.Pages')</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.team')) active @endif"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">@lang('messages.Services')</a>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('messages.Elements')</h6>
+                                            <h6 class="rd-megamenu-title">@lang('main.oftalmology')</h6>
                                             <ul class="rd-megamenu-list">
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">@lang('messages.Typography')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">@lang('messages.Forms')</a></li>
@@ -57,7 +57,7 @@
                                             </ul>
                                         </li>
                                         <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('messages.Pages 1')</h6>
+                                            <h6 class="rd-megamenu-title">@lang('main.plastic_khirurgiya')</h6>
                                             <ul class="rd-megamenu-list">
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="team-member.html">@lang('messages.Team Member Profile')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="careers.html">@lang('messages.Careers')</a></li>
@@ -70,7 +70,19 @@
                                             </ul>
                                         </li>
                                         <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('messages.Pages 2')</h6>
+                                            <h6 class="rd-megamenu-title">@lang('main.estetychna_medicine')</h6>
+                                            <ul class="rd-megamenu-list">
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="clients.html">@lang('messages.Clients')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="partners.html">@lang('messages.Partners')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">@lang('messages.Privacy Policy')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">@lang('messages.Search Results')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404.html">@lang('messages.404 Page')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503.html">@lang('messages.503 Page')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="make-an-appointment.html">@lang('messages.Make an Appointment')</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="rd-megamenu-item">
+                                            <h6 class="rd-megamenu-title">@lang('main.all_medicine')</h6>
                                             <ul class="rd-megamenu-list">
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="clients.html">@lang('messages.Clients')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="partners.html">@lang('messages.Partners')</a></li>
@@ -82,8 +94,6 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">@lang('messages.Services')</a>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.departments') }}">@lang('messages.Departments')</a>
                                 </li>
@@ -121,7 +131,7 @@
                                     <ul class="rd-menu rd-navbar-dropdown">
                                         @foreach (['en', 'uk', 'ru'] as $lang)
                                             <li class="rd-dropdown-item">
-                                                <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper($lang) }}</a>
+                                                <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper( __('main.'.$lang)) }}</a>
                                             </li>
                                         @endforeach
                                     </ul>
