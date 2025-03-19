@@ -5,6 +5,7 @@ use App\Http\Middleware\SetLocale;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServicesControler;
 use App\Http\Controllers\AppointmentControler;
+use App\Http\Controllers\DoctorsController;
 
 // Використовуємо middleware у групі маршрутів
 Route::middleware(SetLocale::class)->group(function () {
@@ -20,6 +21,8 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
         Route::get('/prices', [PageController::class, 'prices'])->name('main.prices');
         Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
+        Route::get('/telemed', [PageController::class, 'telemed'])->name('main.telemed');
+        Route::get('/doctors/about', [DoctorsController::class, 'index'])->name('main.doctors');
     })->where('locale', 'en|uk|ru');
 
 });

@@ -52,6 +52,11 @@ class PageController extends Controller
         return view('main.testimonials');
     }
 
+    public function telemed(){
+
+        return view('main.telemed');
+    }
+
 
 
 

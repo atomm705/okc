@@ -188,4 +188,10 @@ return [
     'Type and hit enter...'=>'Введіть і натисніть enter...',
 
     'Contact page'=>'зв`язатися',
+
+
+    'Online medical information in Docart'=>'Онлайн медицинская информация в Docart',
+
+
+    'The Medical Center "Dokart" is constantly improving the level of comfort of its clients. Now we offer the opportunity to consult with any specialist online.'=>'Медицинский центр Docart постоянно стремится к комфорту своих клиентов. Теперь мы знаем о возможности консультации с любым специалистом онлайн.',
     ];

@@ -193,5 +193,9 @@ return [
     'prices'=>'ціни',
 
     'testimonials'=>'відгуки',
-    'Online information'=>'Онлайн конс'
+    'Online information'=>'Онлайн конс',
+
+    'Online medical information in Docart'=>'Медична інформація онлайн в Docart',
+
+    'The Medical Center "Dokart" is constantly improving the level of comfort of its clients. Now we offer the opportunity to consult with any specialist online.'=>'Медичний центр «Докарт» постійно підвищує рівень комфорту своїх клієнтів. Тепер ми пропонуємо можливість проконсультуватися з будь-яким спеціалістом онлайн.',
     ];

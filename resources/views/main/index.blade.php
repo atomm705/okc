@@ -157,7 +157,7 @@
             </div>
         </section>
         <!-- main services-->
-        <section class="section-lg bg-default section">
+    <section class="section-lg bg-default section">
             <div class="container">
                 <h3 class="text-center">@lang('messages.Our Services')</h3>
                 <div class="offset-top-41">

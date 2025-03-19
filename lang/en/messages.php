@@ -189,4 +189,9 @@ return [
     'prices'=>'prices',
     'testimonials'=>'testimonials',
     'Online information'=>'Online information',
+
+    'Online medical information in Docart'=>'Online medical information in Docart',
+
+    'The Medical Center "Dokart" is constantly improving the level of comfort of its clients. Now we offer the opportunity to consult with any specialist online.'=>'The Medical Center "Dokart" is constantly improving the level of comfort of its clients. Now we offer the opportunity to consult with any specialist online.',
+
 ];
