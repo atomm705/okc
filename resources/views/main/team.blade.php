@@ -21,7 +21,7 @@
                                     <h5 class="thumbnail-josip-title text-medium text-white">Dr. Scott Riley</h5>
                                     <p class="d-none d-lg-block font-italic text-white offset-top-0">Chief Medical Officer, Pathologist</p>
                                 </div>
-                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                             </figure>
                         </div>
                         <div class="col-sm-8 col-md-7 col-lg-3 offset-top-41 offset-md-top-0">
@@ -31,7 +31,7 @@
                                     <h5 class="thumbnail-josip-title text-medium text-white">Dr. Martha Schmidt</h5>
                                     <p class="d-none d-lg-block font-italic text-white offset-top-0">EKG Technician</p>
                                 </div>
-                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                             </figure>
                         </div>
                         <div class="col-sm-8 col-md-7 col-lg-3 offset-top-41 offset-md-top-0">
@@ -41,7 +41,7 @@
                                     <h5 class="thumbnail-josip-title text-medium text-white">Dr. Sam McMillan</h5>
                                     <p class="d-none d-lg-block font-italic text-white offset-top-0">Histotechnologist</p>
                                 </div>
-                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                             </figure>
                         </div>
                         <div class="col-sm-8 col-md-7 col-lg-3 offset-top-41 offset-md-top-0">
@@ -51,7 +51,7 @@
                                     <h5 class="thumbnail-josip-title text-medium text-white">Dr. Mary Smith</h5>
                                     <p class="d-none d-lg-block font-italic text-white offset-top-0">Phlebotomist</p>
                                 </div>
-                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                                <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                             </figure>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Scott Riley</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">Chief Medical Officer, Pathologist</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big"><a href="team-member.html"><img width="384" height="410" src="{{ asset('images/our-team-06-270x270.jpg') }}" alt=""/></a>
@@ -76,7 +76,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Jane Fowler</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">Clinical Laboratory Technologist</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big offset-md-top-0 odd"><a href="team-member.html"><img width="384" height="410" src="{{ asset('images/our-team-07-270x270.jpg') }}" alt=""/></a>
@@ -84,7 +84,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Eric Snyder</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">MRI Technologist</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big offset-md-top-0"><a href="team-member.html"><img width="384" height="410" src="{{ asset('images/our-team-08-270x270.jpg') }}" alt=""/></a>
@@ -92,7 +92,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Martha Schmidt</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">EKG Technician</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big "><a href="team-member.html"><img width="384" height="410" src="{{ asset('images/our-team-09-384x410.jpg') }}" alt=""/></a>
@@ -100,7 +100,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. James Wilson</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">Radiology Technician</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">view full profile</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">view full profile</a></figcaption>
                     </figure>
                 </div>
             </div>

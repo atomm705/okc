@@ -12,193 +12,50 @@
 
     <section class="section-lg section bg-default">
         <div class="container">
-            <div class="row justify-content-sm-center ">
+            <div class="row justify-content-sm-center">
                 <div class="col-md-8">
+                    @php
+                        $activeTab = isset($tab) ? $tab : 'x-ray';
+                    @endphp
 
                     <div class="offset-sm-top-60 text-start">
                         <div class="tabs-custom tabs-vertical tabs-corporate" id="tabs-2">
-                            <!--Nav tabs-->
+
                             <ul class="nav nav-tabs">
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-1" data-toggle="tab">X-ray</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-2" data-toggle="tab">Computer Tomography</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-3" data-toggle="tab">Magnetic Resonance Imaging</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-4" data-toggle="tab">Laboratory Tests</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-5" data-toggle="tab">Ultrasound Imaging</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-6" data-toggle="tab">Pregnancy Care Services</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-7" data-toggle="tab">Emergency Department Charges</a></li>
+                                @foreach ($tabs as $slug => $name)
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link {{ $activeTab === $slug ? 'active' : '' }}"
+                                           href="{{ route('prices.' . $slug, ['locale' => app()->getLocale()]) }}">
+                                            {{ __($name) }}
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
-                            <!--Tab panes-->
+
+
                             <div class="tab-content">
-                                <div class="tab-pane fade" id="tabs-2-1">
-                                    <h3 class="text-start">X-ray</h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
+                                @foreach ($tabs as $slug => $name)
+                                    <div class="tab-pane fade {{ $activeTab === $slug ? 'show active' : '' }}" id="tabs-{{ $slug }}">
+                                        <h3 class="text-start">{{ $name }}</h3>
+                                        <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
+                                            <tr>
+                                                <th>Service</th>
+                                                <th>Time (min)</th>
+                                                <th>Price, $</th>
+                                            </tr>
 
-                                            <th>Service</th>
-                                            <th>time(min)</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-
-                                            <td>X-ray</td>
-                                            <td>5-10</td>
-                                            <td>6,160.00</td>
-                                        </tr>
-
-
-
-                                    </table>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-2-2">
-                                    <h3 class="text-start">Tomography</h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
-
-                                            <th>Service</th>
-                                            <th>time(min)</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-
-                                            <td>Computer Tomography</td>
-                                            <td>5-10</td>
-                                            <td>2,120.00</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-2-3">
-                                    <h3 class="text-start">Tomography</h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
-
-                                            <th>Service</th>
-                                            <th>time(min)</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-
-
-                                            <td>Magnetic Resonance Imaging</td>
-                                            <td>2</td>
-                                            <td>2,575.00</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-2-4">
-                                    <h3 class="text-start">Laboratory Tests</h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
-
-                                            <th>Service</th>
-                                            <th>time(min)</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-
-
-                                            <td>Laboratory Tests</td>
-                                            <td>4</td>
-                                            <td>4,765.00</td>
-                                        </tr>
-                                    </table>
-                                </div>
-
-                                <div class="tab-pane fade" id="tabs-2-5">
-                                    <h3 class="text-start">Tomography</h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
-
-                                            <th>Service</th>
-                                            <th>time(min)</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-
-                                            <td>Ultrasound Imaging</td>
-
-                                            <td>5</td>
-                                            <td>4,785.00</td>
-                                        </tr>
-
-
-
-                                    </table>
-                                </div>
-
-                                <div class="tab-pane fade" id="tabs-2-6">
-                                    <h3 class="text-start">Pregnancy Care</h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
-
-                                            <th>Service</th>
-                                            <th>time(min)</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-
-
-                                            <td>Pregnancy Care  Services</td>
-
-                                            <td>6</td>
-                                            <td>5,030.00</td>
-                                        </tr>
-                                    </table>
-                                </div>
-
-                                <div class="tab-pane fade" id="tabs-2-7">
-                                    <h3 class="text-start">Emergency Department </h3>
-                                    <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Service</th>
-                                            <th>Price, $</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Level 1</td>
-                                            <td>290.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Level 2</td>
-                                            <td>476.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Level 3</td>
-                                            <td>912.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Level 4</td>
-                                            <td>1,246.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Level 5</td>
-                                            <td>2,306.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Critical tests</td>
-                                            <td>3,439.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>CT &amp; Ultrasound Diagnostics</td>
-                                            <td>8,050.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>MRI &amp; X-ray </td>
-                                            <td>5,750.00</td>
-                                        </tr>
-
-
-
-                                    </table>
-                                </div>
-
+                                            @foreach ($dataForTab as $data)
+                                                @if($slug == $tab)
+                                                    <tr>
+                                                        <td>{{ $data['service'] }}</td>
+                                                        <td>{{ $data['time'] }}</td>
+                                                        <td>{{ $data['price'] }}</td>
+                                                    </tr>
+                                                @endif
+                                            @endforeach
+                                        </table>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -385,5 +242,6 @@
             </div>
         </div>
     </section>
+
 
 </x-app-layout>

@@ -188,7 +188,7 @@ return [
 
     'prices'=>'prices',
     'testimonials'=>'testimonials',
-    'Online information'=>'Online information',
+    'Online information'=>'Telemed',
 
     'Online medical information in Docart'=>'Online medical information in Docart',
 

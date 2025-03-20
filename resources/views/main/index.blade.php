@@ -201,7 +201,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Scott Riley</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.Chief Medical Officer, Pathologist')</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">@lang('messages.view full profile')</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big"><a href="team-member.html"><img width="384" height="410" src="images/our-team-06-384x410.jpg" alt=""/></a>
@@ -209,7 +209,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Jane Fowler</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.Clinical Laboratory Technologist')</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">@lang('messages.view full profile')</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big offset-md-top-0 odd"><a href="team-member.html"><img width="384" height="410" src="images/our-team-07-384x410.jpg" alt=""/></a>
@@ -217,7 +217,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Eric Snyder</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.MRI Technologist')</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">@lang('messages.view full profile')</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big offset-md-top-0"><a href="team-member.html"><img width="384" height="410" src="images/our-team-08-384x410.jpg" alt=""/></a>
@@ -225,7 +225,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. Martha Schmidt</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.EKG Technician')</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">@lang('messages.view full profile')</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
                     </figure>
                     <!-- Thumbnail Josip-->
                     <figure class="thumbnail-josip thumbnail-big "><a href="team-member.html"><img width="384" height="410" src="images/our-team-09-384x410.jpg" alt=""/></a>
@@ -233,7 +233,7 @@
                             <h5 class="thumbnail-josip-title text-medium text-white">Dr. James Wilson</h5>
                             <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.Radiology Technician')</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="team-member.html">@lang('messages.view full profile')</a></figcaption>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
                     </figure>
                 </div>
             </div>
