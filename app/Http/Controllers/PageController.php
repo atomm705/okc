@@ -44,84 +44,25 @@ class PageController extends Controller
         return view('main.timetable');
     }
 
-    public function prices(Request $request, $tab = 'x-ray', $locale = 'en')
+    public function prices()
     {
-       // $tabs = [
-      //      'x-ray' => 'X-ray',
-      //      'tomography' => 'Computer Tomography',
-       //     'mri' => 'Magnetic Resonance Imaging',
-       //     'lab-tests' => 'Laboratory Tests',
-       //     'ultrasound' => 'Ultrasound Imaging',
-       //     'pregnancy-care' => 'Pregnancy Care Services',
-       //     'emergency' => 'Emergency Department Charges'
-      //  ];
-
-        // Получаем параметр tab из запроса, если его нет, то выбираем первый таб
-      //  $tab = $request->get('tab', 'x-ray'); // Задаем 'x-ray' по умолчанию
-
-      //  return view('main.prices', compact('tab', 'tabs'));
-        app()->setLocale($locale);
-
-        $tabs = [
-            'x-ray' => 'X-ray',
-            'tomography' => 'Computer Tomography',
-            'mri' => 'Magnetic Resonance Imaging',
-            'lab-tests' => 'Laboratory Tests',
-            'ultrasound' => 'Ultrasound Imaging',
-            'pregnancy-care' => 'Pregnancy Care Services',
-
-        ];
-
-
-        if (!array_key_exists($tab, $tabs)) {
-            $tab = 'x-ray';
-        }
-
-
-        $dataForTab = $this->getDataForTab($tab);
-
-        return view('main.prices', compact('tab', 'tabs', 'dataForTab'));
+        return view('main.prices');
     }
 
-    private function getDataForTab($tab)
-    {
+    //public function priceCategory($category)
+    //{
+        //$validCategories = [ 'x-ray', 'dermatologiya', 'oftalmologiya', 'terapevt','povne-obstezhennya-organizmu-sheck-up','khirurgichna-plastika','ginekologiya'];
 
-        switch ($tab) {
-            case 'x-ray':
-                return [
-                    ['service' => 'X-ray', 'time' => '5-10', 'price' => '6,160.00'],
 
-                ];
-            case 'tomography':
-                return [
-                    ['service' => 'Computer Tomography', 'time' => '10-15', 'price' => '2,120.00'],
 
-                ];
-            case 'mri':
-                return [
-                    ['service' => 'Magnetic Resonance Imaging', 'time' => '10-15', 'price' => '2,120.00'],
+        //if (!in_array($category, $validCategories)) {
+          //  abort(404);
+        //}
 
-                ];
-            case 'ultrasound':
-                return [
-                    ['service' => 'ultrasound', 'time' => '10-15', 'price' => '2,120.00'],
+        //return view('main.prices', compact('category'));
 
-                ];
-            case 'pregnancy-care':
-                return [
-                    ['service' => 'pregnancy-care', 'time' => '10-15', 'price' => '2,120.00'],
+   // }
 
-                ];
-            case 'emergency':
-                return [
-                    ['service' => 'emergency', 'time' => '10-15', 'price' => '2,120.00'],
-
-                ];
-
-            default:
-                return [];
-        }
-    }
 
     public function testimonials(){
 
