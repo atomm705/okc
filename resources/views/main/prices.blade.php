@@ -8,8 +8,6 @@
             </ul>
         </div>
     </section>
-
-
     <section class="section-lg section bg-default">
         <div class="container">
             <div class="row justify-content-sm-center">
