@@ -10,14 +10,15 @@
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">
                             <div class="p unit unit-spacing-xs unit-horizontal">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
-                                <div class="unit-body"><a href="tel:#">0-(800)-317-</a><br><a href="tel:#">317</a></div>
+                                <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index')) text-white @endif">0-(800)-317-317</a></div>
                             </div>
                         </address>
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
-                                <div class="unit-body"><a href="#">Україна, м. Харків,
-                                       <br> вул. Миколи Хвильового (Маяковського), 24</a></div>
+                                <div class="unit-body"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">Україна, м. Харків,
+                                       <br> вул. Миколи Хвильового (Маяковського), 24</a>
+                                </div>
                             </div>
                         </address>
                     </div>

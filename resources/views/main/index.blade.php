@@ -1,4 +1,13 @@
 <x-app-layout>
+    @php
+        $doctors = [
+            ['slug' => 'prokipets-armen-tarasovich', 'name' => 'Dr. Prokipets Armen Tarasovich', 'image' => 'images/our-team-08-270x270.jpg', 'speciality' => __('messages.Chief Medical Officer, oftalmologia')],
+            ['slug' => 'jane-fowler', 'name' => 'Dr. Jane Fowler', 'image' => 'images/our-team-06-384x410.jpg', 'speciality' => __('messages.Clinical Laboratory Technologist')],
+            ['slug' => 'eric-snyder', 'name' => 'Dr. Eric Snyder', 'image' => 'images/our-team-07-384x410.jpg', 'speciality' => __('messages.MRI Technologist')],
+            ['slug' => 'martha-schmidt', 'name' => 'Dr. Martha Schmidt', 'image' => 'images/our-team-08-384x410.jpg', 'speciality' => __('messages.EKG Technician')],
+            ['slug' => 'james-wilson', 'name' => 'Dr. James Wilson', 'image' => 'images/our-team-09-384x410.jpg', 'speciality' => __('messages.Radiology Technician')],
+        ];
+    @endphp
         <section class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center">
                 <div class="swiper-slide" id="page-loader" data-slide-bg="images/slide-01.jpg">
@@ -192,53 +201,32 @@
             </div>
         </section>
         <!-- Our Team-->
-        <section class="section section-md p-xl-0">
-            <div class="container-fluid p-0">
-                <div class="justify-content-sm-center row-30 row g-0">
-                    <!-- Thumbnail Josip-->
-                    <figure class="thumbnail-josip thumbnail-big"><a href="team-member.html"><img width="384" height="410" src="images/our-team-05-384x410.jpg" alt=""/></a>
+    <section class="section section-md p-xl-0">
+        <div class="container-fluid p-0">
+            <div class="justify-content-sm-center row-30 row g-0">
+            @foreach ($doctors as $doctor)
+                <!-- Thumbnail Josip -->
+                    <figure class="thumbnail-josip thumbnail-big">
+                        <a href="{{ route('main.doctor.profile', ['slug' => $doctor['slug']]) }}">
+                            <img width="384" height="410" src="{{ asset($doctor['image']) }}" alt="{{ $doctor['name'] }}"/>
+                        </a>
                         <div class="thumbnail-desc">
-                            <h5 class="thumbnail-josip-title text-medium text-white">Dr. Scott Riley</h5>
-                            <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.Chief Medical Officer, Pathologist')</p>
+                            <h5 class="thumbnail-josip-title text-medium text-white">{{ $doctor['name'] }}</h5>
+                            <p class="d-none d-lg-block font-italic text-white offset-top-0">{{ $doctor['speciality'] }}</p>
                         </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
+                        <figcaption>
+                            <a class="btn btn-block btn-rect text-center text-lg-start btn-white"
+                               href="{{ route('main.doctor.profile', ['slug' => $doctor['slug']]) }}">
+                                @lang('messages.view full profile')
+                            </a>
+                        </figcaption>
                     </figure>
-                    <!-- Thumbnail Josip-->
-                    <figure class="thumbnail-josip thumbnail-big"><a href="team-member.html"><img width="384" height="410" src="images/our-team-06-384x410.jpg" alt=""/></a>
-                        <div class="thumbnail-desc">
-                            <h5 class="thumbnail-josip-title text-medium text-white">Dr. Jane Fowler</h5>
-                            <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.Clinical Laboratory Technologist')</p>
-                        </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
-                    </figure>
-                    <!-- Thumbnail Josip-->
-                    <figure class="thumbnail-josip thumbnail-big offset-md-top-0 odd"><a href="team-member.html"><img width="384" height="410" src="images/our-team-07-384x410.jpg" alt=""/></a>
-                        <div class="thumbnail-desc">
-                            <h5 class="thumbnail-josip-title text-medium text-white">Dr. Eric Snyder</h5>
-                            <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.MRI Technologist')</p>
-                        </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
-                    </figure>
-                    <!-- Thumbnail Josip-->
-                    <figure class="thumbnail-josip thumbnail-big offset-md-top-0"><a href="team-member.html"><img width="384" height="410" src="images/our-team-08-384x410.jpg" alt=""/></a>
-                        <div class="thumbnail-desc">
-                            <h5 class="thumbnail-josip-title text-medium text-white">Dr. Martha Schmidt</h5>
-                            <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.EKG Technician')</p>
-                        </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
-                    </figure>
-                    <!-- Thumbnail Josip-->
-                    <figure class="thumbnail-josip thumbnail-big "><a href="team-member.html"><img width="384" height="410" src="images/our-team-09-384x410.jpg" alt=""/></a>
-                        <div class="thumbnail-desc">
-                            <h5 class="thumbnail-josip-title text-medium text-white">Dr. James Wilson</h5>
-                            <p class="d-none d-lg-block font-italic text-white offset-top-0">@lang('messages.Radiology Technician')</p>
-                        </div>
-                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-start btn-white" href="{{ route('main.doctors') }}">@lang('messages.view full profile')</a></figcaption>
-                    </figure>
-                </div>
+                @endforeach
             </div>
-        </section>
-        <!-- testimonials-->
+        </div>
+    </section>
+
+    <!-- testimonials-->
         <section class="section-lg bg-default-liac">
             <div class="container">
                 <h3 class="text-center">@lang('messages.Testimonials')</h3>

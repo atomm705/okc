@@ -9,6 +9,8 @@
         </div>
     </section>
 
+
+
     <section class="section-lg section bg-default">
         <div class="container">
             <div class="row isotope-wrap">
@@ -22,12 +24,12 @@
                             <li class="section-relative">
                                 <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
-                                    <li><a href="{{ route('prices.category', 'diagnostic-imaging') }}">Diagnostic Imaging</a></li>
-                                    <li><a href="{{ route('prices.category', 'ultrasound-diagnostics') }}">Ultrasound Diagnostics</a></li>
-                                    <li><a href="{{ route('prices.category', 'x-ray') }}">X-ray Diagnostics</a></li>
-                                    <li><a href="{{ route('prices.category', 'pediatrics') }}">Pediatrics</a></li>
-                                    <li><a href="{{ route('prices.category', 'laboratory-services') }}">Laboratory Services</a></li>
-                                    <li><a href="{{ route('prices.category', 'pregnancy-services') }}">Pregnancy Services</a></li>
+                                    <li><a href="{{ route('prices.category', 'oftalmologiya') }}">oftalmologiya</a></li>
+                                    <li><a href="{{ route('prices.category', 'ginekologiya') }}">ginekologiya</a></li>
+                                    <li><a href="{{ route('prices.category', 'ultrazvukova-diagnostika') }}">ultrazvukova-diagnostika</a></li>
+                                    <li><a href="{{ route('prices.category', 'dermatologiya') }}">dermatologiya</a></li>
+                                    <li><a href="{{ route('prices.category', 'gastroenterologiya') }}">gastroenterologiya</a></li>
+                                    <li><a href="{{ route('prices.category', 'endoskopiya') }}">endoskopiya</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -38,9 +40,9 @@
                         @if($category)
                         <div class="col-1 isotope-item isotope-sizer"></div>
 
-                        <div class="col-lg-12 isotope-item" data-filter="Diagnostic Imaging">
-                            @if($category === 'diagnostic-imaging')
-                            <h3>Diagnostic Imaging</h3>
+                        <div class="col-lg-12 isotope-item" data-filter="oftalmologiya">
+                            @if($category === 'oftalmologiya')
+                            <h3>oftalmologiya</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                         <li>Can I track my order?</li>
@@ -49,7 +51,45 @@
                                         <li>How long will my order take to be delivered?</li>
                                     </ul>
                                     <div class="resp-tabs-container tabs-group-default" data-group="tabs-group-default">
-                                        <div>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 15 minutes after your order is placed. Within a few hours of you placing your order, you will receive an expected delivery time. When the order will be ready for delivery, you will receive another email with the tracking number and a link to trace the order online with the courier.</div>
+                                        <div>
+                                            <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Service</th>
+                                                    <th>Price, $</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>X-ray</td>
+                                                    <td>6,160.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Magnetic Resonance Imaging</td>
+                                                    <td>2,575.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Computer Tomography</td>
+                                                    <td>2,120.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Laboratory Tests</td>
+                                                    <td>4,765.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Ultrasound Imaging</td>
+                                                    <td>4,785.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Pregnancy Care  Services</td>
+                                                    <td>5,030.00</td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                         <div>If you need to change something in your order, please contact us immediately. We usually process orders within 30 minutes, and once we have processed your order, we will be unable to make any changes.</div>
                                         <div>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</div>
                                         <div>Delivery times will depend on your location. Once payment is confirmed your order will be packaged. Delivery can be expected within a day.</div>
@@ -57,9 +97,9 @@
                                 </div>
                         </div>
 
-                        <div class="col-lg-12 isotope-item" data-filter="Ultrasound diagnostics">
-                            @elseif($category === 'ultrasound-diagnostics')
-                            <h3>Ultrasound Diagnostics</h3>
+                        <div class="col-lg-12 isotope-item" data-filter="ginekologiya">
+                            @elseif($category === 'ginekologiya')
+                            <h3>ginekologiya</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                         <li>Can I track my order?</li>
@@ -75,9 +115,9 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-12 isotope-item" data-filter="X-ray diagnostics">
-                            @elseif($category === 'x-ray')
-                            <h3>X-ray diagnostics</h3>
+                        <div class="col-lg-12 isotope-item" data-filter="ultrazvukova-diagnostika">
+                            @elseif($category === 'ultrazvukova-diagnostika')
+                            <h3>ultrazvukova-diagnostika</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                         <li>Can I track my order?</li>
@@ -93,9 +133,9 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-12 isotope-item" data-filter="Pediatrics">
-                            @elseif($category === 'pediatrics')
-                            <h3>Pediatrics</h3>
+                        <div class="col-lg-12 isotope-item" data-filter="dermatologiya">
+                            @elseif($category === 'dermatologiya')
+                            <h3>dermatologiya</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                         <li>Can I track my order?</li>
@@ -111,9 +151,9 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-12 isotope-item" data-filter="Laboratory Services">
-                            @elseif($category === 'laboratory-services')
-                            <h3>Laboratory Services</h3>
+                        <div class="col-lg-12 isotope-item" data-filter="gastroenterologiya">
+                            @elseif($category === 'gastroenterologiya')
+                            <h3>gastroenterologiya</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                         <li>Can I track my order?</li>
@@ -129,9 +169,9 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-12 isotope-item" data-filter="Pregnancy Services">
-                            @elseif($category === 'pregnancy-services')
-                            <h3>Pregnancy Services</h3>
+                        <div class="col-lg-12 isotope-item" data-filter="endoskopiya">
+                            @elseif($category === 'endoskopiya')
+                            <h3>endoskopiya</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                         <li>Can I track my order?</li>
