@@ -22,6 +22,9 @@
                                 <p>Choose your category:</p>
                             </li>
                             <li class="section-relative">
+                                @if(!$category)
+                                    @php $category = 'oftalmologiya'; @endphp
+                                @endif
                                 <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     <li><a href="{{ route('prices.category', 'oftalmologiya') }}">oftalmologiya</a></li>

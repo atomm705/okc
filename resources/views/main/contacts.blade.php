@@ -116,7 +116,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="offset-top-60">
+                                    <!--<div class="offset-top-60">
                                         <h6>e-mail</h6>
                                         <hr class="text-subline">
                                         <div class="offset-top-20">
@@ -127,7 +127,7 @@
                                                 <div class="unit-body"><a class="text-dark" href="mailto:#">info@demolink.org</a></div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>

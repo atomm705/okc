@@ -22,16 +22,16 @@
                             <address class="contact-info d-md-inline-block text-start">
                                 <div class="p unit unit-spacing-xxs flex-row">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-phone text-white"></span></div>
-                                    <div class="unit-body"><a class="text-white-70" href="tel:#">1-800-1234-567</a><span class="text-white-70">, </span><a class="text-white-70" href="tel:#">1-800-3214-321</a></div>
+                                    <div class="unit-body"> <a class="text-white-70" href="tel:#"> (057) 761-61-31</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (093) 761-61-31</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (099) 548-44-85</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (097) 318-67-58</a> </div>
                                 </div>
                                 <div class="p unit flex-row unit-spacing-xxs">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
-                                    <div class="unit-body"><a class="text-white-70" href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                                    <div class="unit-body"><a class="text-white-70" href="#">м. Харків, вул. Миколи Хвильового (Маяковського), 24 (м. Університет, м. Пушкінська)</a></div>
                                 </div>
-                                <div class="p unit unit-spacing-xxs flex-row offset-top-16">
+                                <!--<div class="p unit unit-spacing-xxs flex-row offset-top-16">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-email-outline text-white"></span></div>
                                     <div class="unit-body"><a class="text-white-70 text-java" href="mailto:#">info@demolink.org</a></div>
-                                </div>
+                                </div>-->
                             </address>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="container offset-top-50 offset-md-top-60">
-        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Medina diagnostic center</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Докарт центр сучасної медицини </span><span>.&nbsp;</span><a href="privacy-policy.html">политика конфиденциальности</a></p>
     </div>
 </footer>
 <div class="snackbars" id="form-output-global"></div>

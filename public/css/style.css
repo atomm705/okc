@@ -15662,6 +15662,7 @@ html.rd-navbar-fixed-linked .page {
 	background: transparent;
 }
 
+
 .rd-navbar-classic.rd-navbar-static .rd-navbar-aside {
 	display: flex;
 	justify-content: space-between;
@@ -15978,6 +15979,7 @@ html.rd-navbar-fixed-linked .page {
 	transition: all ease .25s;
 	transform: none;
 }
+
 
 .rd-navbar-subpage.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main-element {
 	box-shadow: none;
