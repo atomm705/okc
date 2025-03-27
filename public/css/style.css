@@ -362,7 +362,7 @@ fieldset[disabled] .swiper-slide .btn-default {
 }
 
 @media (min-width: 1200px) {
-	.context-dark .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-gray-700 .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-accent .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-deluge .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-butterfly-bush .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .navbar-inverse .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .swiper-slide .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list {
+	.context-dark .isotope-filters.isotope-filter-collapse-lg .acordion-title .isotope-filters-list, .bg-gray-700 .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-accent .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-deluge .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .bg-butterfly-bush .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .navbar-inverse .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list, .swiper-slide .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list {
 		border-left-color: #868686;
 	}
 	.context-dark .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a, .bg-gray-700 .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a, .bg-accent .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a, .bg-deluge .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a, .bg-butterfly-bush .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a, .navbar-inverse .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a, .swiper-slide .isotope-filters.isotope-filter-collapse-lg .isotope-filters-list > li > a {
@@ -24836,9 +24836,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	position: relative;
 	padding: 11px 33px 15px 20px;
 	overflow: hidden;
-	font-size: 15px;
-	font-weight: 700;
-	color: #2a93c9;
+	font-size: 20px;
+	font-weight: 200;
+
 	text-align: left;
 	text-overflow: ellipsis;
 	transition: color .2s ease-in;
@@ -24857,7 +24857,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	width: 20px;
 	font-family: "Material Design Icons";
 	font-size: 26px;
-	font-weight: 400;
+	font-weight: 250;
 	text-align: center;
 	color: #868686;
 	transition: .2s;
@@ -24868,7 +24868,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .responsive-tabs .resp-accordion.resp-tab-active {
-	color: #2a93c9;
+	color: #868686;
 }
 
 .responsive-tabs .resp-accordion.resp-tab-active .resp-arrow:before {
@@ -25595,6 +25595,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	.google-map {
 		height: 250px;
 	}
+
 }
 
 @media (min-width: 768px) {

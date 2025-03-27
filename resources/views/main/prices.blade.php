@@ -45,8 +45,8 @@
                             <h3>oftalmologiya</h3>
                                 <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                     <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
-                                        <li>Can I track my order?</li>
-                                        <li>How can I change something in my order?</li>
+                                        <li  class="acordion-title">Can I track my order?</li>
+                                        <li  class="text-[#868686]">How can I change something in my order?</li>
                                         <li>How can I pay for my order?</li>
                                         <li>How long will my order take to be delivered?</li>
                                     </ul>
@@ -201,68 +201,7 @@
         </div>
     </section>
 
-    <!-- Become a Partner-->
-    <section class="section-lg bg-default-liac">
-        <div class="container">
-            <h3 class="text-center">Diagnostic Services Pricing</h3>
-            <div class="row g-0 justify-content-lg-center offset-top-66">
-                <div class="col-sm-8 offset-sm-2 col-lg-3 offset-lg-0 col-xl-3 offset-md-right-negative-6">
-                    <!-- Planning Box type 2-->
-                    <div class="box-planning box-planning-type-2">
-                        <div class="icon icon-sm text-primary fa-star-o"></div>
-                        <div class="offset-top-14">
-                            <h5 class="text-primary font-weight-bold">Starter</h5>
-                        </div>
-                        <div class="offset-top-41">
-                            <ul class="list-separated list-unstyled">
-                                <li><span class="text-gray-darker">CT Scan</span></li>
-                                <li><span class="text-gray-darker">Radiography</span></li>
-                                <li><span class="text-strike text-gray">Ultrasound</span></li>
-                                <li><span class="text-strike text-gray">Mammography</span></li>
-                                <li><span class="text-strike text-gray">Nuclear Medicine</span></li>
-                            </ul>
-                        </div><a class="btn btn-ellipse btn-primary" href="#">buy now</a>
-                    </div>
-                </div>
-                <div class="col-sm-8 offset-sm-2 col-lg-4 offset-lg-0 offset-top-50 offset-md-top-0 to-front">
-                    <!-- Planning Box type 2-->
-                    <div class="box-planning box-planning-type-2 active">
-                        <div class="icon icon-sm text-primary fa-star-half-empty"></div>
-                        <div class="offset-top-14">
-                            <h5 class="text-primary font-weight-bold">Business</h5>
-                        </div>
-                        <div class="offset-top-41">
-                            <ul class="list-separated list-unstyled">
-                                <li><span class="text-gray-darker">CT Scan</span></li>
-                                <li><span class="text-gray-darker">Radiography</span></li>
-                                <li><span class="text-gray-darker">Ultrasound</span></li>
-                                <li><span class="text-strike text-gray">Mammography</span></li>
-                                <li><span class="text-strike text-gray">Nuclear Medicine</span></li>
-                            </ul>
-                        </div><a class="btn btn-ellipse btn-primary" href="#">buy now</a>
-                    </div>
-                </div>
-                <div class="col-sm-8 offset-sm-2 col-lg-3 offset-lg-0 offset-top-50 offset-md-top-0 offset-md-left-negative-6">
-                    <!-- Planning Box type 2-->
-                    <div class="box-planning box-planning-type-2">
-                        <div class="icon icon-sm text-primary fa-star"></div>
-                        <div class="offset-top-14">
-                            <h5 class="text-primary font-weight-bold">Ultimate</h5>
-                        </div>
-                        <div class="offset-top-41">
-                            <ul class="list-separated list-unstyled">
-                                <li><span class="text-gray-darker">CT Scan</span></li>
-                                <li><span class="text-gray-darker">Radiography</span></li>
-                                <li><span class="text-gray-darker">Ultrasound</span></li>
-                                <li><span class="text-gray-darker">Mammography</span></li>
-                                <li><span class="text-gray-darker">Nuclear Medicine</span></li>
-                            </ul>
-                        </div><a class="btn btn-ellipse btn-primary" href="#">buy now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
 

@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="col-sm-10 col-lg-4 order-lg-1 text-center text-lg-start">
-                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
+                        <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
                         <div class="offset-top-30">
                             <ul class="list-inline">
                                 <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="#"></a></li>

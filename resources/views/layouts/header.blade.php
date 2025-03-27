@@ -7,20 +7,33 @@
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="contacts-wrap">
+                        <address class="contact-info reveal-sm-inline-block text-start">
+                            <div class="p unit unit-horizontal unit-spacing-xs">
+                                <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
+                                <div class="unit-body"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">ПН-СБ
+                                        <br> с 9-00 до 17-00
+                                    </a>
+                                </div>
+                            </div>
+                        </address>
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">
                             <div class="p unit unit-spacing-xs unit-horizontal">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
-                                <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index')) text-white @endif">0-(800)-317-317</a></div>
+                                <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index')) text-white @endif">0 (800) 317-317
+                                    </a></div>
                             </div>
                         </address>
+
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
                                 <div class="unit-body"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">Україна, м. Харків,
-                                       <br> вул. Миколи Хвильового (Маяковського), 24</a>
+                                        <br> вул. Миколи Хвильового (Маяковського), 24</a>
                                 </div>
                             </div>
                         </address>
+
+
                     </div>
                 </div>
             </div>
@@ -32,7 +45,7 @@
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!--RD Navbar Brand-->
                         <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-default-154x53.png') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-inverse-154x53.png') }}" alt="" width="77" height="26"/></a>
+                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
                         </div>
                     </div>
                     <div class="rd-navbar-main-element">
@@ -130,7 +143,7 @@
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">@lang('messages.Online information')</a>
 
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.blog') }}">@lang('messages.Blog')</a>
-                                    <!--<ul class="rd-menu rd-navbar-dropdown">
+                                <!--<ul class="rd-menu rd-navbar-dropdown">
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">@lang('messages.Blog Masonry')</a>
                                         </li>
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-modern.html">@lang('messages.Blog Modern')</a>
@@ -158,7 +171,7 @@
                             </ul>
                         </div>
                         <!--RD Navbar Search-->
-                        <!--<div class="rd-navbar-search">
+                    <!--<div class="rd-navbar-search">
                             <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
                             <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
                                 <div class="form-wrap">

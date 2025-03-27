@@ -78,7 +78,8 @@
                                                     <div class="icon icon-xxs text-middle mdi mdi-map-marker text-primary"></div>
                                                 </div>
                                                 <div class="unit-body">
-                                                    <p><a class="text-gray-dark" href="#">2130 Fulton Street San Diego,<br>CA 94117-1080 USA</a></p>
+                                                    <p><a class="text-gray-dark" href="#">Україна, Харків, вул. Миколи
+                                                            <br> Хвильового (Маяковського), 24</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,9 +93,8 @@
                                                     <div class="icon icon-xxs text-middle mdi mdi-calendar-clock text-primary"></div>
                                                 </div>
                                                 <div class="unit-body">
-                                                    <div>Mon–Fri: 8:00am–6:00pm</div>
-                                                    <div>Sat: 9:00am–3:00pm</div>
-                                                    <div>Sun: 10:00am–2:00pm</div>
+                                                    <div>Пн-Сб: з 09-00 до 17-00</div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -107,7 +107,12 @@
                                                 <div class="unit-left">
                                                     <div class="icon icon-xxs text-middle mdi mdi-phone text-primary"></div>
                                                 </div>
-                                                <div class="unit-body"><a class="text-dark d-block" href="tel:#">1-800-1234-567</a><a class="text-dark d-block" href="tel:#">1-800-7654-876</a></div>
+                                                <div class="unit-body">
+                                                    <a class="text-dark d-block" href="tel:#">0 (800) 317-317</a>
+                                                    <a class="text-dark d-block" href="tel:#">(057) 761-61-31</a>
+                                                    <a class="text-dark d-block" href="tel:#">(093) 761-61-31</a>
+                                                    <a class="text-dark d-block" href="tel:#">(099) 548-44-85</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -130,17 +135,22 @@
                 </div>
             </div>
         </section>
-        <div class="offset-top-110">
-            <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-            <!--Please note that YOUR_API_KEY should replaced with your key.-->
-            <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
-            <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
-                <div class="google-map"></div>
-                <ul class="google-map-markers">
-                    <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-                </ul>
+    <section class="section">
+        <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+        <!--Please note that YOUR_API_KEY should replaced with your key.-->
+        <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
+        <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.105976527954!2d36.24050249288963!3d50.00936884557607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e56e275b2f%3A0x42bbbee2ee570576!2z0JzQtdC00LjRhtC40L3RgdC60LjQuSDRhtC10L3RgtGAINCU0L7QutCw0YDRgiAo0LrQu9C40L3QuNC60LAg0J7QuiDQptC10L3RgtGAKQ!5e0!3m2!1sru!2sua!4v1743058892159!5m2!1sru!2sua&gestureHandling=greedy"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+            <ul class="google-map-markers">
+                <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+            </ul>
         </div>
+    </section>
 
 
 
