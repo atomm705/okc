@@ -7,9 +7,9 @@
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
-                        <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
+                        <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                     </div>
-                    
+
                     <div class="contacts-wrap">
 
                         <address class="contact-info reveal-sm-inline-block text-start">
@@ -45,13 +45,17 @@
             <div class="rd-navbar-main-outer">
                 <div class="rd-navbar-main">
                     <!--RD Navbar Panel-->
-                    <div class="rd-navbar-panel">
+                    <div class="rd-navbar-panel ">
                         <!--RD Navbar Toggle-->
+
                         <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!--RD Navbar Brand-->
-                        <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
+                        <div class="rd-navbar-brand ">
+                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                         </div>
+
+                        <div class="rd-navbar-brand"></div>
+                        <div></div>
                     </div>
                     <div class="rd-navbar-main-element">
                         <div class="rd-navbar-nav-wrap">
