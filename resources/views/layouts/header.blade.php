@@ -6,10 +6,12 @@
             <div class="rd-navbar-aside-outer rd-navbar-collapse">
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
+                    <div class="rd-navbar-brand">
+                        <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
+                    </div>
+                    
                     <div class="contacts-wrap">
-                        <div class="rd-navbar-brand">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="26"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
-                        </div>
+
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
