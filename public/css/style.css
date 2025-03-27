@@ -14686,16 +14686,30 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 1080;
-	display: flex;
-	align-items: center;
-    gap: 90px;
-	height: 70px;
-	padding: 4px;
+     position: fixed;
+     left: 0;
+     top: 0;
+     right: 0;
+     z-index: 1080;
+     display: flex;
+     align-items: center;
+     gap: 90px;
+     height: 70px;
+     padding: 4px;
+ }
+
+@media (max-width: 1024px) {
+    .rd-navbar-fixed .rd-navbar-panel {
+        gap: 300px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .rd-navbar-fixed .rd-navbar-panel {
+        gap: 90px;
+
+    }
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
@@ -22484,6 +22498,7 @@ html:not(.lt-ie10) .not-animated {
 	.isotope-filters-vertical > ul > li > ul {
 		width: 100%;
 	}
+
 }
 
 @media (min-width: 1200px) {
