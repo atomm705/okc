@@ -14693,7 +14693,7 @@ a[href*='tel'], a[href*='mailto'] {
 	z-index: 1080;
 	display: flex;
 	align-items: center;
-    justify-content: space-between;
+    gap: 90px;
 	height: 70px;
 	padding: 4px;
 }
