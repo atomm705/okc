@@ -1,4 +1,4 @@
-<header class="section page-header @if(request()->routeIs('main.index')) header-absolute @endif">
+<header class="section page-header  @if(request()->routeIs('main.index') || request()->routeIs('main.blepharoplastika')) header-absolute @endif">
     <!--RD Navbar-->
     <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
@@ -12,7 +12,7 @@
 
                     <div class="contacts-wrap">
 
-                        <address class="contact-info reveal-sm-inline-block text-start">
+                        <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
                                 <div class="unit-body"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">ПН-СБ
@@ -48,7 +48,7 @@
                     <div class="rd-navbar-panel ">
                         <!--RD Navbar Toggle-->
 
-                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                        <button class="rd-navbar-toggle " data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                         <!--RD Navbar Brand-->
                         <div class="rd-navbar-brand ">
                             <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
@@ -67,7 +67,7 @@
                                         <li class="rd-megamenu-item">
                                             <h6 class="rd-megamenu-title">@lang('main.oftalmology')</h6>
                                             <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">@lang('messages.Typography')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.blepharoplastika') }}" >Блефаропластика</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">@lang('messages.Forms')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">@lang('messages.Buttons')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">@lang('messages.Grid')</a></li>

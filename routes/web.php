@@ -27,7 +27,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
         Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
         Route::get('/telemed', [PageController::class, 'telemed'])->name('main.telemed');
-        Route::get('/blepharoplastika', [PageController::class, 'blepharoplastika'])->name('main.blepharoplastika');
+        Route::get('oftalmologiya/blepharoplastika', [PageController::class, 'blepharoplastika'])->name('main.blepharoplastika');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
 

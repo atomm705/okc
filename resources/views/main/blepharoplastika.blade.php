@@ -1,106 +1,13 @@
 
-<!DOCTYPE html>
-<html lang="uk" class="page-blefaroplastika page-header-not-margin">
-<head>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="date" content="2025 Mar 28">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Блефаропластика в медичнцентрі в Харкові &quot;Докарт&quot; Приватна клініка в Харкові</title><meta name="description" content="Блефаропластика в Докарт. Теперь у нас в центре вы можете сделать блефаропластику (пластику век). Ее можно проводить как для нижнего,..."><meta name="keywords" content="Докарт, Харків, блефаропластика, офтальмологія, офтальмолог, лазерна корекція зору, лазерна корекція, лікування катаракти, підбір окулярів, гінекологія, гінеколог, урологія, уролог, Check-UP">
-    <meta property="og:title" content="Блефаропластика в медичнцентрі в Харкові &quot;Докарт&quot; Приватна клініка в Харкові" /><meta property="og:description" content="Блефаропластика в Докарт. Теперь у нас в центре вы можете сделать блефаропластику (пластику век). Ее можно проводить как для нижнего,..." />
-
-    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+<x-app-layout>
 
 
-    <link rel="preload" href="{{ asset('fonts/materialdesignicons-webfont.woff2') }}" as="font" crossorigin>
-    <link rel="preload" type="text/css" href="{{ asset('blepharoplastika-css/plugins.css') }}" as="style">
-    <link rel="preload" type="text/css" href=" {{ asset('blepharoplastika-css/style-bleforoplastik.css') }}" as="style">
-    <link rel="preload" type="text/css" href="{{ asset('blepharoplastika-css/fonts-bleforoplastik.css') }}" as="style">
-    <link rel="preload" as="script"  href=" {{ asset('blepharoplastika-js/app.js') }}">
+<div class="app color-main"  id="app">
 
-    <sсript src="https://www.googletagmanager.com/gtag/js?id=UA-102428787-1"></sсript>
-    <sсript>
-        <template>
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-            dataLayer.push(arguments);
-            }
-
-            gtag('js', new Date());
-            gtag('config', 'UA-102428787-1');
-        </template>
-    </sсript>
-    <sсript>
-        <template>
-            (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-MZ368BN');
-        </template>
-    </sсript>
-    <link rel="preload" href="{{ asset('blepharoplastika-js/app.js') }}" as="script">
-    <link rel="preload" href="{{ asset('blepharoplastika-css/services.css') }}" as="style">
-    <link rel="stylesheet"
-          href="{{ asset('blepharoplastika-css/swiper.min.css') }}" as="style">
-    <link rel="stylesheet" href=" {{ asset('blepharoplastika-css/app.css') }}"
-          as="style">
-    <link rel="preload" href="{{ asset('blepharoplastika-js/services.js') }}" as="script">
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '599872220629949');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=599872220629949&ev=PageView&noscript=1"
-        /></noscript>
-    <!-- End Facebook Pixel Code -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87739144-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-87739144-1');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TNTXJH6');</script>
-    <!-- End Google Tag Manager -->
-
-</head>
-<body class="">
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ368BN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<div id="loading" style="color: #eee;">Загрузка сайта. Подождите пожалуйста.</div>
-<div class="app" id="app">
-
-    <main class="body-main">
+    <div class="body-main ">
         <div class="section-main">
-            <div class="banner-main"
+            <div class="banner-main mt-0"
                  style="background-image: url('/images/banner.png');">
                 <div class="page-content">
                     <div class="banner-main-hold">
@@ -928,34 +835,30 @@
                 </div>
             </div>
         </div>
-    </main>
-    <footer-component :translations="{&quot;newsletter&quot;:{&quot;title&quot;:&quot;Розсилка&quot;,&quot;description&quot;:&quot;Введіть свою E-Mail адресу, щоб отримувати новини та іншу інформацію, яка може бути цікавою для вас.&quot;,&quot;subscribe&quot;:&quot;Підписатися&quot;},&quot;contacts&quot;:{&quot;title&quot;:&quot;Контакти&quot;,&quot;address&quot;:&quot;м. Харків, вул. Миколи Хвильового (Маяковського), 24 (м. Університет, м. Пушкінська)&quot;}}"></footer-component>
-    <appointment-modal locale="uk" :translations="{&quot;fatal_error&quot;:&quot;Фатальна помилка&quot;,&quot;title&quot;:&quot;Запис онлайн&quot;,&quot;selectizer&quot;:{&quot;title&quot;:&quot;Направлення&quot;,&quot;values&quot;:{&quot;value_1&quot;:&quot;Консультація лікаря&quot;,&quot;value_2&quot;:&quot;Лазерна корекція зору&quot;,&quot;value_3&quot;:&quot;Катаракта&quot;,&quot;value_4&quot;:&quot;Гінекологія&quot;,&quot;value_5&quot;:&quot;УЗ діагностика&quot;,&quot;value_6&quot;:&quot;Гастроентерологія&quot;,&quot;value_7&quot;:&quot;Дерматологія&quot;,&quot;value_8&quot;:&quot;Урологія\/Проктологія&quot;,&quot;value_9&quot;:&quot;Трихологія&quot;}},&quot;phone&quot;:{&quot;label&quot;:&quot;Ваш номер телефону&quot;,&quot;description&quot;:&quot;Формат: +380501023212&quot;},&quot;name&quot;:{&quot;label&quot;:&quot;Ваше ім&#039;я&quot;},&quot;additional&quot;:{&quot;label&quot;:&quot;Додаткова інформація&quot;},&quot;work&quot;:{&quot;title&quot;:&quot;Ми працюємо&quot;,&quot;value&quot;:&quot;ПН-СБ з 9:00 до 18:00&quot;},&quot;appointment&quot;:{&quot;title&quot;:&quot;Запис через соц. мережу&quot;,&quot;value&quot;:&quot;До 21:00&quot;},&quot;appointment_phone&quot;:{&quot;title&quot;:&quot;Запис по телефону&quot;,&quot;value&quot;:&quot;До 19:00&quot;},&quot;agreement&quot;:&quot;Заповнюючи дану форму, Ви погоджуєтеся з умовами обробки персональніх даних. Ми гарантуемо конфіденційність Вашого зверненя&quot;,&quot;discount&quot;:&quot;10% знижка за онлайн реєстрацію&quot;,&quot;buttons&quot;:{&quot;submit&quot;:&quot;Відправити&quot;,&quot;cancel&quot;:&quot;Відмінити&quot;}}"></appointment-modal>
+    </div></div>
+
+    <!--<appointment-modal locale="uk" :translations="{&quot;fatal_error&quot;:&quot;Фатальна помилка&quot;,&quot;title&quot;:&quot;Запис онлайн&quot;,&quot;selectizer&quot;:{&quot;title&quot;:&quot;Направлення&quot;,&quot;values&quot;:{&quot;value_1&quot;:&quot;Консультація лікаря&quot;,&quot;value_2&quot;:&quot;Лазерна корекція зору&quot;,&quot;value_3&quot;:&quot;Катаракта&quot;,&quot;value_4&quot;:&quot;Гінекологія&quot;,&quot;value_5&quot;:&quot;УЗ діагностика&quot;,&quot;value_6&quot;:&quot;Гастроентерологія&quot;,&quot;value_7&quot;:&quot;Дерматологія&quot;,&quot;value_8&quot;:&quot;Урологія\/Проктологія&quot;,&quot;value_9&quot;:&quot;Трихологія&quot;}},&quot;phone&quot;:{&quot;label&quot;:&quot;Ваш номер телефону&quot;,&quot;description&quot;:&quot;Формат: +380501023212&quot;},&quot;name&quot;:{&quot;label&quot;:&quot;Ваше ім&#039;я&quot;},&quot;additional&quot;:{&quot;label&quot;:&quot;Додаткова інформація&quot;},&quot;work&quot;:{&quot;title&quot;:&quot;Ми працюємо&quot;,&quot;value&quot;:&quot;ПН-СБ з 9:00 до 18:00&quot;},&quot;appointment&quot;:{&quot;title&quot;:&quot;Запис через соц. мережу&quot;,&quot;value&quot;:&quot;До 21:00&quot;},&quot;appointment_phone&quot;:{&quot;title&quot;:&quot;Запис по телефону&quot;,&quot;value&quot;:&quot;До 19:00&quot;},&quot;agreement&quot;:&quot;Заповнюючи дану форму, Ви погоджуєтеся з умовами обробки персональніх даних. Ми гарантуемо конфіденційність Вашого зверненя&quot;,&quot;discount&quot;:&quot;10% знижка за онлайн реєстрацію&quot;,&quot;buttons&quot;:{&quot;submit&quot;:&quot;Відправити&quot;,&quot;cancel&quot;:&quot;Відмінити&quot;}}"></appointment-modal>
 
     <page-sticky-menu-component :translations="{&quot;appointment&quot;:&quot;Записатися&quot;}">
-    </page-sticky-menu-component>
+    </page-sticky-menu-component>-->
 </div>
 
 
-<link rel="preload" href="{{ asset('fonts/materialdesignicons-webfont.woff2') }}" as="font" crossorigin>
-<link rel="preload" href="{{ asset('fonts/materialdesignicons-webfont.woff2') }}" as="font" crossorigin>
-
-<link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-<link rel="stylesheet" href=" {{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-<link rel="stylesheet" href="{{ asset('blepharoplastika-css/fonts-bleforoplastik.css') }}">
 
 
-<script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>
-<link rel="stylesheet" href="{{ asset('blepharoplastika-css/services.css') }}">
-<script src="{{ asset('blepharoplastika-js/services.js') }}" defer></script>
-<script src="{{ asset('blepharoplastika-js/swiper.min.js') }}" defer></script>
-<script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}"
-        defer></script>
-<script src=" {{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 
-<script>var telerWdWidgetId = "eddf3ae2-5534-4445-b242-48011c530c54";
-    var telerWdDomain = "okc.phonet.com.ua";</script>
 
-<sсript src=" {{ asset('blepharoplastika-js/lib-v3.js') }}"></sсript>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+</x-app-layout>
+
+
+

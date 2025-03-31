@@ -108,7 +108,11 @@ video,
 button,
 .button {
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  color: #767676;
+    color: #2a93c9;
+}
+
+footer a, p{
+    color: #ffffff;
 }
 
 h1 {

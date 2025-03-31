@@ -18,6 +18,14 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+        @if(Route::currentRouteName() === 'main.blepharoplastika')
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+        @endif
+
+
         <!-- Scripts -->
     </head>
     <!-- Bootstrap JS + Popper.js -->
@@ -31,7 +39,7 @@
         </div>
     </div>
     <div class="page">
-        <!--<div class="min-h-screen bg-gray-100">-->
+
         @include('layouts.header')
         {{ $slot }}
         @include('layouts.footer')

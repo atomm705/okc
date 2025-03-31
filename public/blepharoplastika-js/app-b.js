@@ -382,8 +382,8 @@ function СontrolModal(node) {
     var self = this;
     self.node = node;
     self.modal = document.querySelector('.modal.appointment-modal');
-    self.modalContent = self.modal.querySelector('.modal.appointment-modal > .content');
-    self.bntClose = self.modal.querySelector('.button-preset-cancel');
+  //  self.modalContent = self.modal.querySelector('.modal.appointment-modal > .content');
+    //self.bntClose = self.modal.querySelector('.button-preset-cancel');
     self.widthScroll = function () {
         let div = document.createElement('div');
         div.style.opacity = '0';
@@ -428,7 +428,7 @@ function СontrolModal(node) {
     };
 
     self.node.addEventListener('click', self.open);
-    self.bntClose.addEventListener('click', self.close);
+    //self.bntClose.addEventListener('click', self.close);
 }
 
 /////////////////
