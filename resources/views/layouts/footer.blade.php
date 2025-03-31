@@ -50,9 +50,9 @@
             </div>
         </div>
     </div>
-    <div class="container offset-top-50 offset-md-top-60">
+   <!-- <div class="container offset-top-50 offset-md-top-60">
         <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Докарт центр сучасної медицини </span><span>.&nbsp;</span><a href="privacy-policy.html">политика конфиденциальности</a></p>
-    </div>
+    </div>-->
 </footer>
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>

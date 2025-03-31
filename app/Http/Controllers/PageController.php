@@ -74,6 +74,11 @@ class PageController extends Controller
         return view('main.telemed');
     }
 
+    public function blepharoplastika(){
+
+        return view('main.blepharoplastika');
+    }
+
 
 
 

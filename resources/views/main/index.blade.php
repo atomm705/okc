@@ -8,15 +8,15 @@
             ['slug' => 'james-wilson', 'name' => 'Dr. James Wilson', 'image' => 'images/our-team-09-384x410.jpg', 'speciality' => __('messages.Radiology Technician')],
         ];
     @endphp
-        <section class="section swiper-container swiper-slider bg-default" data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
+        <section class="section swiper-container swiper-slider bg-default " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center">
-                <div class="swiper-slide" id="page-loader" data-slide-bg="images/slide-01.jpg">
+                <div class="swiper-slide" id="page-loader" data-slide-bg="images/bg-1.webp">
                     <div class="swiper-caption">
-                        <div class="swiper-slide-caption">
+                        <div class="swiper-slide-caption ">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-7 section-slider-custom">
-                                        <div class="inset-xl-right-80 text-lg-start">
+                                        <div class="inset-xl-right-80 text-lg-start ">
                                             <h2>@lang('messages.Take Care of')<br class="d-block"> @lang('messages.Your Health')
                                             </h2>
                                             <h5 class="d-none d-lg-block mw-400">@lang('messages.At Medina, we are dedicated to diagnosing all kinds of diseases.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}">@lang('messages.make an appointment')</a>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" data-slide-bg="images/slide-02.jpg">
+                <div class="swiper-slide" data-slide-bg="images/bg-2.webp">
                     <div class="swiper-caption">
                         <div class="swiper-slide-caption">
                             <div class="container">
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" data-slide-bg="images/slide-03.jpg">
+                <div class="swiper-slide" data-slide-bg="images/bg-3.webp">
                     <div class="swiper-caption">
                         <div class="swiper-slide-caption">
                             <div class="container">
@@ -152,12 +152,12 @@
             </div>
         </section>
         <!-- Material Parallax-->
-        <section class="parallax-container" data-parallax-img="images/background-03-1920x939.jpg">
+        <section class="parallax-container  "  data-parallax-img="images/bg-4.webp">
             <div class="parallax-content section-98 section-sm-110 context-dark">
                 <div class="container text-start">
                     <div class="row justify-content-sm-center justify-content-lg-start">
                         <div class="col-md-10 col-lg-8 col-xl-5">
-                            <h2>@lang('messages.All Kinds')<br class="d-none d-xl-inline-block">@lang('messages.of Diagnostics')</h2>
+                            <h2><br class="d-none d-xl-inline-block">Лазерна корекція зору</h2>
                             <p class="offset-top-30 text-white">@lang('messages.Medina offers the region’s most comprehensive range of diagnostic services, from MRI to X-ray.')</p>
                             <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('messages.free consultation')</a></div>
                         </div>
@@ -309,13 +309,13 @@
             </div>
             <!-- RD Parallax-->
         </section>
-        <section class="parallax-container" data-parallax-img="images/background-04-1920x980.jpg">
+        <section class="parallax-container" data-parallax-img="images/bg-5.webp">
             <div class="parallax-content section-98 section-sm-110 context-dark">
                 <div class="container text-start">
                     <div class="row justify-content-sm-center justify-content-lg-start">
                         <div class="col-md-10 col-lg-8 col-xl-5">
-                            <h2>@lang('messages.Pediatric')<br class="d-none d-xl-inline-block">@lang('messages.Diagnostics')</h2>
-                            <p class="offset-top-30 text-white">@lang('messages.Our center provides a vast range of pediatric diagnostic services for children all over our state.')</p>
+                            <h2><br class="d-none d-xl-inline-block">Професійне лікування катаракти</h2>
+                            <p class="offset-top-30 text-white">Якісно надаються послуги з лікування катаракти за максимально низькими цінами в нашому місті.</p>
                             <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('messages.free consultation')</a></div>
                         </div>
                     </div>

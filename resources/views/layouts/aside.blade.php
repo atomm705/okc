@@ -84,7 +84,7 @@
 
                 <li class="menu-item ">
                     <a href="{{ route('admin.index') }}" class="menu-link"  >
-                        <div>Статистика</div>
+                        <div>Аналитика</div>
 
                     </a>
                 </li>
@@ -95,8 +95,6 @@
                         <div>Сервіси</div>
                     </a>
                 </li>
-
-
 
 
                 <li class="menu-item ">
@@ -154,6 +152,90 @@
                 <li class="menu-item ">
                     <a href="{{ route('admin.user-management') }}" class="menu-link" >
                         <div>Гастроінтерологія</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Ендоскопия</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Амбулаторна хірургія</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Урологія</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Трихологія</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Терапевт</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Естетична медицина</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Фізіопроцедури</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Повне обстеження организму CHECK-UP </div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Лазерне шліфування CO2 лазер</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Хірургічна пластика</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>VENUS LEGACY</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Невропатолог</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Психотерапия</div>
+                    </a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="{{ route('admin.user-management') }}" class="menu-link" >
+                        <div>Проктологія</div>
                     </a>
                 </li>
             </ul>
@@ -803,5 +885,5 @@
         </li>
     </ul>-->
 
-
+    </ul>
 </aside>
