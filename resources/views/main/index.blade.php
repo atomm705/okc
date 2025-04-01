@@ -8,11 +8,11 @@
             ['slug' => 'james-wilson', 'name' => 'Dr. James Wilson', 'image' => 'images/our-team-09-384x410.jpg', 'speciality' => __('messages.Radiology Technician')],
         ];
     @endphp
-        <section class="section swiper-container swiper-slider bg-default " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
-            <div class="swiper-wrapper text-center">
-                <div class="swiper-slide" id="page-loader" data-slide-bg="images/bg-1.webp">
+        <section class="section swiper-container swiper-slider " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
+            <div class="swiper-wrapper text-center ">
+                <div class="swiper-slide " id="page-loader" data-slide-bg="images/bg-1.webp">
                     <div class="swiper-caption">
-                        <div class="swiper-slide-caption ">
+                        <div class="swiper-slide-caption slider-fade">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-7 section-slider-custom">
@@ -27,9 +27,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" data-slide-bg="images/bg-2.webp">
+                <div class="swiper-slide slider-fade" data-slide-bg="images/bg-2.webp">
                     <div class="swiper-caption">
-                        <div class="swiper-slide-caption">
+                        <div class="swiper-slide-caption slider-fade">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 section-slider-custom to-front">
@@ -44,9 +44,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" data-slide-bg="images/bg-3.webp">
+                <div class="swiper-slide slider-fade" data-slide-bg="images/bg-3.webp">
                     <div class="swiper-caption">
-                        <div class="swiper-slide-caption">
+                        <div class="swiper-slide-caption slider-fade">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-7 section-slider-custom">

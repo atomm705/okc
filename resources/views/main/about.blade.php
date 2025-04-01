@@ -1,14 +1,16 @@
 <!-- Breadcrumbs-->
 <x-app-layout>
 
-        <section class="breadcrumbs-custom bg-image context-dark " style="background-image: url({{ asset('images/bg-6.webp') }});"  data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
-            <div class="container ">
-                <h2 class="breadcrumbs-custom-title">About</h2>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">About</li>
-                </ul>
-            </div>
+        <section class="breadcrumbs-custom bg-image context-dark slider-page"  style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+
+                <div class="container " >
+                    <h2 class="breadcrumbs-custom-title">About</h2>
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">About</li>
+                    </ul>
+                </div>
+
         </section>
         <!-- a few words about us-->
         <section class="section-lg bg-default text-start section">
