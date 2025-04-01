@@ -169,6 +169,9 @@ body,html{margin:0;padding:0;background:#f1f3f9}@media (min-width: 1201px){html 
         z-index: 2;
         cursor: pointer;
     }
+
+
+
 }
 .rd-navbar-aside{
     justify-content: space-between;
@@ -246,6 +249,10 @@ body,html{margin:0;padding:0;background:#f1f3f9}@media (min-width: 1201px){html 
 
     html.rd-navbar-fixed-linked .page {
          padding-top: 0px;
+    }
+
+    .plastica-banner-position{
+        margin-top: 70px;
     }
 
 }

@@ -79,6 +79,15 @@ class PageController extends Controller
         return view('main.blepharoplastika');
     }
 
+    public function plastichnakhururgiya(){
+
+    return view('main.plastichna-khururgiya');
+    }
+
+
+
+
+
 
 
 

@@ -8,6 +8,7 @@ use App\Http\Controllers\AppointmentControler;
 use App\Http\Controllers\DoctorsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\ServicePagesController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProfileController;
 
@@ -28,6 +29,10 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
         Route::get('/telemed', [PageController::class, 'telemed'])->name('main.telemed');
         Route::get('oftalmologiya/blepharoplastika', [PageController::class, 'blepharoplastika'])->name('main.blepharoplastika');
+        Route::get('/plastichna-khururgiya', [PageController::class, 'plastichnakhururgiya'])->name('main.plastichna-khururgiya');
+        Route::get('/esteticheskaya-meditsina/inektsionnaya-terapiyaa', [ServicePagesController::class, 'inektsionnayaterapiya'])->name('services.inektsionnaya-terapiya');
+        Route::get('/esteticheskaya-meditsina/plazmoterapiya', [ServicePagesController::class, 'plazmoterapiya'])->name('services.plazmoterapiya');
+        Route::get('/esteticheskaya-meditsina/rf-lifting', [ServicePagesController::class, 'rflifting'])->name('services.rf-lifting');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
 
