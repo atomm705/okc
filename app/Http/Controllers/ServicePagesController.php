@@ -19,5 +19,10 @@ class ServicePagesController extends Controller
         return view('services.rf-lifting');
     }
 
+    public function lazernayaepilyatsiya(){
+
+        return view('services.lazernaya-epilyatsiya');
+    }
+
 
 }

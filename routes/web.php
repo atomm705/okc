@@ -33,6 +33,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/esteticheskaya-meditsina/inektsionnaya-terapiyaa', [ServicePagesController::class, 'inektsionnayaterapiya'])->name('services.inektsionnaya-terapiya');
         Route::get('/esteticheskaya-meditsina/plazmoterapiya', [ServicePagesController::class, 'plazmoterapiya'])->name('services.plazmoterapiya');
         Route::get('/esteticheskaya-meditsina/rf-lifting', [ServicePagesController::class, 'rflifting'])->name('services.rf-lifting');
+        Route::get('/esteticheskaya-meditsina/lazernaya-epilyatsiya', [ServicePagesController::class, 'lazernayaepilyatsiya'])->name('services.lazernaya-epilyatsiya');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
 
