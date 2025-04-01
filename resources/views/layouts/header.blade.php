@@ -15,7 +15,7 @@
                         <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
-                                <div class="unit-body"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">ПН-СБ
+                                <div class="unit-body unit-body-first"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">ПН-СБ
                                         <br> с 9-00 до 17-00
                                     </a>
                                 </div>
@@ -32,7 +32,7 @@
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
-                                <div class="unit-body"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">Україна, м. Харків,
+                                <div class="unit-body unit-body-third"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">Україна, м. Харків,
                                         <br> вул. Миколи Хвильового (Маяковського), 24</a>
                                 </div>
                             </div>
