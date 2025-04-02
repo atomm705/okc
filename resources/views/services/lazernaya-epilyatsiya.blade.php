@@ -444,7 +444,7 @@
                 <img src="/images/banner-section-4.jpg" alt="bg"/>
             </div>
 
-            <div class="page-content">
+            <div class="page-content before-foter-position">
                 <div class="banner-section-title">
                     <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
                 </div>

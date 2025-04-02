@@ -34,6 +34,10 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/esteticheskaya-meditsina/plazmoterapiya', [ServicePagesController::class, 'plazmoterapiya'])->name('services.plazmoterapiya');
         Route::get('/esteticheskaya-meditsina/rf-lifting', [ServicePagesController::class, 'rflifting'])->name('services.rf-lifting');
         Route::get('/esteticheskaya-meditsina/lazernaya-epilyatsiya', [ServicePagesController::class, 'lazernayaepilyatsiya'])->name('services.lazernaya-epilyatsiya');
+        Route::get('/esteticheskaya-meditsina/lazernoe-omolozhenie', [ServicePagesController::class, 'lazernoeomolozhenie'])->name('services.lazernoe-omolozhenie');
+        Route::get('/esteticheskaya-meditsina/co2', [ServicePagesController::class, 'co2'])->name('services.co2');
+        Route::get('/diagnostika/checkup', [ServicePagesController::class, 'checkup'])->name('services.checkup');
+        Route::get('/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
 

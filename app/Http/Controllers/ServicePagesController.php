@@ -24,5 +24,25 @@ class ServicePagesController extends Controller
         return view('services.lazernaya-epilyatsiya');
     }
 
+    public function lazernoeomolozhenie(){
+
+        return view('services.lazernoe-omolozhenie');
+    }
+
+    public function co2(){
+
+        return view('services.co2');
+    }
+
+    public function checkup(){
+
+        return view('services.checkup');
+    }
+
+    public function panoptix(){
+
+        return view('services.panoptix');
+    }
+
 
 }
