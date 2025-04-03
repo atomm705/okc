@@ -1,6 +1,6 @@
 <x-app-layout>
 
-    <section class="section-mouse-effects section-1 section-flat-height"><!---->
+    <section class="section-mouse-effects section-1 section-flat-height "><!---->
         <div class="images">
             <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;">
                 <img class="board" src="/images/9c865035a41a088e2394ef64c8afc017.webp">
@@ -153,20 +153,14 @@
 
     <section tilt="true" class="section-mouse-effects section-7 section-flat-height"><!----> <div class="images"><img src="#" data-tilt-full-page-listening="" data-tilt-reset="false"> <div data-tilt-full-page-listening="" data-tilt-reset="false" data-tilt-perspective="400" class="particles"><div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div></div></div> <div class="content"><h3>Залишились питання?</h3> <!----> <div class="slot"><p><strong>AcrySof PanOptix</strong> дає можливість пацієнтам більш природно адаптуватися до своїх зорових функцій, наближених до їхнього зору в молодому віці..</p> <p>Фахівці клініки <strong>"Докарт"</strong> проведуть всі необхідні обстеження для того, щоб ви змогли повернутися до нормального життя з <strong>AcrySof PanOptix</strong>.</p> <p>Зв'яжіться з нами, щоб отримати актуальну інформацію з питань, що вас цікавлять.</p> <div class="center"><a href="/contacts" class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a></div></div></div></section>
 
-    <section class="section">
-        <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-        <!--Please note that YOUR_API_KEY should replaced with your key.-->
-        <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
-        <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
-            <div class="google-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.105976527954!2d36.24050249288963!3d50.00936884557607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e56e275b2f%3A0x42bbbee2ee570576!2z0JzQtdC00LjRhtC40L3RgdC60LjQuSDRhtC10L3RgtGAINCU0L7QutCw0YDRgiAo0LrQu9C40L3QuNC60LAg0J7QuiDQptC10L3RgtGAKQ!5e0!3m2!1sru!2sua!4v1743058892159!5m2!1sru!2sua&gestureHandling=greedy"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+    <section class="section-map section-full-width section-flat-width section-flat-height"
+             style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
+        <div class="content"><!----> <!---->
+            <div class="slot">
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="allowfullscreen" width="100%" height="400px" frameborder="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.2756506946719!2d36.245743173268586!3d50.00921300450467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dbc8603d19%3A0x344aa3d3b44d1308!2z0YPQuy4g0JzQsNGP0LrQvtCy0YHQutC-0LPQviwgMjQsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1577399748711!5m2!1sru!2sua"></iframe>
             </div>
-            <ul class="google-map-markers">
-                <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-            </ul>
         </div>
     </section>
 

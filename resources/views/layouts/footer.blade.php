@@ -60,7 +60,7 @@
 
 
 
-@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup'|| Route::currentRouteName() === 'services.panoptix')
+@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup'|| Route::currentRouteName() === 'services.panoptix'|| Route::currentRouteName() === 'services.oklens')
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 
@@ -68,4 +68,8 @@
 
 @if(Route::currentRouteName() === 'services.panoptix')
     <script src="{{ asset('blepharoplastika-js/panoptix.js') }}" defer></script>
+@endif
+
+@if(Route::currentRouteName() === 'services.oklens')
+    <script src="{{ asset('blepharoplastika-js/oklens.js') }}" defer></script>
 @endif

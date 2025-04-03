@@ -44,5 +44,10 @@ class ServicePagesController extends Controller
         return view('services.panoptix');
     }
 
+    public function oklens(){
+
+        return view('services.oklens');
+    }
+
 
 }
