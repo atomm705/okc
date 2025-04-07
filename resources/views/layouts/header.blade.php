@@ -68,7 +68,7 @@
                                             <h6 class="rd-megamenu-title">@lang('main.oftalmology')</h6>
                                             <ul class="rd-megamenu-list">
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.blepharoplastika') }}" >Блефаропластика</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">@lang('messages.Forms')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.panoptix') }}">PanOptix</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">@lang('messages.Buttons')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">@lang('messages.Grid')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">@lang('messages.Tabs and Accordions')</a></li>

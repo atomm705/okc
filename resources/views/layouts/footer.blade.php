@@ -60,16 +60,75 @@
 
 
 
-@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup'|| Route::currentRouteName() === 'services.panoptix'|| Route::currentRouteName() === 'services.oklens')
+@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.oklens')
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 
 @endif
 
 @if(Route::currentRouteName() === 'services.panoptix')
-    <script src="{{ asset('blepharoplastika-js/panoptix.js') }}" defer></script>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".section-mouse-effects");
+
+            sections.forEach((section) => {
+                const images = section.querySelectorAll(".image img");
+
+                section.addEventListener("mousemove", (e) => {
+                    const { left, top, width, height } = section.getBoundingClientRect();
+                    const x = (e.clientX - left) / width;
+                    const y = (e.clientY - top) / height;
+
+                    images.forEach((img, index) => {
+                        const moveX = (x - 0.5) * - 60;
+                        const moveY = (y - 0.5) * - 80;
+                        img.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                    });
+                });
+
+                section.addEventListener("mouseleave", () => {
+                    images.forEach((img) => {
+                        img.style.transform = "translate(0, 0)";
+                    });
+                });
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const section1 = document.querySelector(".section-1");
+
+            if (section1) {
+                const images = section1.querySelectorAll(".image img");
+
+                section1.addEventListener("mousemove", (e) => {
+                    const { left, width } = section1.getBoundingClientRect();
+                    const x = (e.clientX - left) / width;
+
+                    images.forEach((img) => {
+                        const moveX = -(x - 0.5) * 10;
+                        img.style.transform = `translateX(${moveX}px)`;
+                    });
+                });
+
+                section1.addEventListener("mouseleave", () => {
+                    images.forEach((img) => {
+                        img.style.transform = "translateX(0)";
+                    });
+                });
+            }
+        });
+    </script>
+
+
+
 @endif
 
 @if(Route::currentRouteName() === 'services.oklens')
     <script src="{{ asset('blepharoplastika-js/oklens.js') }}" defer></script>
+
 @endif

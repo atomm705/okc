@@ -49,5 +49,10 @@ class ServicePagesController extends Controller
         return view('services.oklens');
     }
 
+    public function tests(){
+
+        return view('services.tests');
+    }
+
 
 }

@@ -39,6 +39,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/diagnostika/checkup', [ServicePagesController::class, 'checkup'])->name('services.checkup');
         Route::get('/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
         Route::get('/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
+        Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
 
