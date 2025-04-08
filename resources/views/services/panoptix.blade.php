@@ -126,7 +126,7 @@
                                                 <ul class="rd-megamenu-list">
                                                     <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.blepharoplastika') }}" >Блефаропластика</a></li>
                                                     <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.panoptix') }}">PanOptix</a></li>
-                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">@lang('messages.Buttons')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('services.oklens') }}">Ок Лінзи</a></li>
                                                     <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">@lang('messages.Grid')</a></li>
                                                     <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">@lang('messages.Tabs and Accordions')</a></li>
                                                     <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">@lang('messages.Progress bars')</a></li>
@@ -255,7 +255,7 @@
         </div>
     </header>
 
-    <section class="section-mouse-effects section-1 section-flat-height section-full-width section-full-height "><!---->
+    <section class=" section-1 section-flat-height section-full-width section-full-height "><!---->
         <div class="images">
             <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;"><img class="board"
                                                                                                        src="/images/9c865035a41a088e2394ef64c8afc017.webp">
@@ -297,9 +297,8 @@
                     довжиною 400-475 нм.</p>
                 <p>Оптична частина лінзи є двоопуклою і складається з м'якого гідрофобного акрилового матеріалу, що має
                     властивість згинатися перед введенням, що дозволяє вводити лінзу через розріз менше, ніж оптичний
-                    діаметр лінзи. Після імплантації лінзи вона плавно розгинається.</p> <a href="/contacts"
-                                                                                            class="button button-ellipse button-preset-primary button-large">Зв'яжіться
-                    з нами</a></div>
+                    діаметр лінзи. Після імплантації лінзи вона плавно розгинається.</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a>
+            </div>
         </div>
     </section>
     <section class="section-mouse-effects section-mouse-effects-sides section-mouse-effects-reversed section-3 section-flat-height section-full-width section-full-height">
@@ -332,8 +331,8 @@
                     меридіани з найменшою оптичною силою.</p>
                 <p>Зіставлення осьових міток торичного компонента з післяопераційним меридіаном рогівки, з найбільшою
                     оптичною силою дозволяє лінзам коригувати існуючий рогівковий астигматизм.</p> <a href="/contacts"
-                                                                                                      class="button button-ellipse button-preset-primary button-large">Зв'яжіться
-                    з нами</a></div>
+                                                                                 class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a>
+            </div>
         </div>
     </section>
     <section
@@ -369,9 +368,8 @@
                     <li>комфортний зір на ближній та середній відстані</li>
                     <li>широкий діапазон зору, незалежно від діаметра зіниці</li>
                 </ul>
-                <p>А ще це новий трифокальний дизайн без аподизації.</p> <a href="/contacts"
-                                                                            class="button button-ellipse button-preset-primary button-large">Зв'яжіться
-                    з нами</a></div>
+                <p>А ще це новий трифокальний дизайн без аподизації.</p> <a href="/contacts"class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a>
+            </div>
         </div>
     </section>
     <section
