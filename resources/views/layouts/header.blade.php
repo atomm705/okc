@@ -15,7 +15,7 @@
                         <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
-                                <div class="unit-body unit-body-first"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">ПН-СБ
+                                <div class="unit-body unit-body-first"><a href="#" class=" @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')) text-white @endif">ПН-СБ
                                         <br> с 9-00 до 17-00
                                     </a>
                                 </div>
@@ -24,7 +24,7 @@
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">
                             <div class="p unit unit-spacing-xs unit-horizontal">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
-                                <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index')) text-white @endif">0 (800) 317-317
+                                <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')) text-white @endif">0 (800) 317-317
                                     </a></div>
                             </div>
                         </address>
@@ -32,7 +32,7 @@
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
-                                <div class="unit-body unit-body-third"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">Україна, м. Харків,
+                                <div class="unit-body unit-body-third"><a href="#" class=" @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')) text-white @endif">Україна, м. Харків,
                                         <br> вул. Миколи Хвильового (Маяковського), 24</a>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                     <div class="rd-navbar-panel ">
                         <!--RD Navbar Toggle-->
 
-                        <button class="rd-navbar-toggle " data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span class="color-mobil"></span></button>
+                        <button class="rd-navbar-toggle " data-rd-navbar-toggle=".rd-navbar-nav-wrap" ><span class="color-mobil"></span></button>
                         <!--RD Navbar Brand-->
                         <div class="rd-navbar-brand ">
                             <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>

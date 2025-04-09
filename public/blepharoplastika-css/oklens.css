@@ -1660,6 +1660,33 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
     html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-component>.calculation>.footer>.price-calculator-items-total-component {
         width:50%
     }
+
+    .contacts-wrap{
+        margin-left: 20px;
+    }
+
+    .unit-body-first {
+        width: 120px;
+
+    }
+
+    .unit-body-third {
+        width: 326px;
+        margin-right: 30px;
+    }
+    .rd-navbar-subpage.rd-navbar-static .rd-nav-link{
+
+    }
+    .contacts-wrap {
+        display: flex;
+        align-items: center;
+
+    }
+    .swiper-slider-content-mt{
+        margin-top: 20px;
+    }
+
+
 }
 
 @media (max-width: 1200px) {
@@ -1668,6 +1695,33 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
         padding-top: 25px;
         width: 100%
     }
+
+    .rd-navbar-submenu-toggle{
+        content: '\f107';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 56px;
+        height: 52px;
+        font: 400 14px "FontAwesome";
+        line-height: 52px;
+        text-align: center;
+        transition: 0.4s all ease;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .togle-padding-mobil{
+        padding: 0px;
+    }
+
+    .first-section-position-mobil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
 
 @media (min-width: 992px) {
@@ -1768,12 +1822,6 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
 
 .section-mb{
     margin-bottom: 70px;
-
-}
-.contacts-wrap {
-    display: flex;
-    align-items: center;
-
 }
 
 
@@ -1802,21 +1850,13 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
     padding: 19px 56px 19px 18px;
 }
 
-.rd-nav-item{
-    margin-top: 23px;
-}
-.rd-navbar-submenu-toggle{
-    content: '\f107';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 56px;
-    height: 52px;
-    font: 400 14px "FontAwesome";
-    line-height: 52px;
-    text-align: center;
-    transition: 0.4s all ease;
-    z-index: 2;
-    cursor: pointer;
+
+
+.rd-navbar-subpage.rd-navbar-static .rd-navbar-nav {
+    display: flex;
+    align-items: center;
 }
 
+.section-title{
+    padding-top: 110px;
+}

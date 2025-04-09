@@ -48,26 +48,26 @@
                         <div class="contacts-wrap">
 
                             <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
-                                <div class="p unit unit-horizontal unit-spacing-xs">
+                                <div class="p unit unit-horizontal unit-spacing-xs position-address-center" style="display: flex;align-items: center;">
                                     <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
-                                    <div class="unit-body unit-body-first"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">ПН-СБ
+                                    <div class="unit-body unit-body-first"><a href="#" class=" @if(request()->routeIs('main.index') || request()->routeIs('services.oklens')) text-white @endif">ПН-СБ
                                             <br> с 9-00 до 17-00
                                         </a>
                                     </div>
                                 </div>
                             </address>
                             <address class="contact-info reveal-sm-inline-block text-start offset-none">
-                                <div class="p unit unit-spacing-xs unit-horizontal">
+                                <div class="p unit unit-spacing-xs unit-horizontal position-address-center">
                                     <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
-                                    <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index')) text-white @endif">0 (800) 317-317
+                                    <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index') || request()->routeIs('services.oklens')) text-white @endif">0 (800) 317-317
                                         </a></div>
                                 </div>
                             </address>
 
                             <address class="contact-info reveal-sm-inline-block text-start">
-                                <div class="p unit unit-horizontal unit-spacing-xs">
+                                <div class="p unit unit-horizontal unit-spacing-xs position-address-center" style="display: flex;align-items: center;">
                                     <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
-                                    <div class="unit-body unit-body-third"><a href="#" class=" @if(request()->routeIs('main.index')) text-white @endif">Україна, м. Харків,
+                                    <div class="unit-body unit-body-third"><a href="#" class=" @if(request()->routeIs('main.index') || request()->routeIs('services.oklens')) text-white @endif">Україна, м. Харків,
                                             <br> вул. Миколи Хвильового (Маяковського), 24</a>
                                     </div>
                                 </div>
@@ -83,14 +83,14 @@
                         <div class="rd-navbar-panel ">
                             <!--RD Navbar Toggle-->
 
-                            <button class="rd-navbar-toggle " data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span class="color-mobil"></span></button>
+                            <button class="rd-navbar-toggle togle-padding-mobil" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span class="color-mobil"></span></button>
                             <!--RD Navbar Brand-->
                             <div class="rd-navbar-brand ">
                                 <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                             </div>
 
                         </div>
-                        <div class="rd-navbar-main-element">
+                        <div class="rd-navbar-main-element ">
                             <div class="rd-navbar-nav-wrap">
 
                                 <ul class="rd-navbar-nav">
@@ -181,8 +181,10 @@
                                     <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
                                     </li>
 
-                                    <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link " style="white-space: nowrap;" href="{{ route('main.about') }}">@lang('messages.About')</a>
                                     </li>
+
+
 
                                     <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">@lang('messages.Online information')</a>
 
@@ -202,7 +204,7 @@
                                     </li>
                                     <div class="language_select">
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
-                                            <ul class="rd-menu rd-navbar-dropdown">
+                                            <ul class="rd-menu rd-navbar-dropdown" style="width: auto">
                                                 @foreach (['en', 'uk', 'ru'] as $lang)
                                                     <li class="rd-dropdown-item">
                                                         <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper( __('main.'.$lang)) }}</a>
@@ -240,8 +242,8 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="inset-xl-right-80 text-lg-start ">
+                                <div class="col-lg-7 section-slider-custom first-section-position-mobil">
+                                    <div class="inset-xl-right-80 text-lg-start  swiper-slider-content-mt">
                                         <h2>@lang('messages.Take Care of')<br class="d-block"> @lang('messages.Your Health')
                                         </h2>
                                         <h5 class="d-none d-lg-block mw-400">@lang('messages.At Medina, we are dedicated to diagnosing all kinds of diseases.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}">@lang('messages.make an appointment')</a>
@@ -257,8 +259,8 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-6 section-slider-custom to-front">
-                                    <div class="text-lg-start">
+                                <div class="col-lg-6 section-slider-custom to-front first-section-position-mobil">
+                                    <div class="text-lg-start swiper-slider-content-mt">
                                         <h2>@lang('messages.Years of')<br class="d-block"> @lang('messages.Experience')
                                         </h2>
                                         <h5 class="d-none d-lg-block mw-400">@lang('messages.Since our foundation, we`ve been delivering diagnostic solutions').</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
@@ -274,8 +276,8 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="text-lg-start">
+                                <div class="col-lg-7 section-slider-custom first-section-position-mobil" >
+                                    <div class="text-lg-start swiper-slider-content-mt">
                                         <h2>@lang('messages.Qualified Team')<br class="d-block">@lang('messages.of Experts')</h2>
                                         <h5 class="d-none d-lg-block mw-400">@lang('messages.Our team of diagnosticians is always ready to help you be healthier.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
                                     </div>
@@ -290,8 +292,8 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="text-lg-start">
+                                <div class="col-lg-7 section-slider-custom first-section-position-mobil">
+                                    <div class="text-lg-start swiper-slider-content-mt">
                                         <h2>@lang('messages.Qualified Team')<br class="d-block">@lang('messages.of Experts')</h2>
                                         <h5 class="d-none d-lg-block mw-400">@lang('messages.Our team of diagnosticians is always ready to help you be healthier.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
                                     </div>
@@ -544,8 +546,8 @@
             </div>
         </div>
     </section>
-    <section style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
-        <div class="content"><h3>Якщо вам не вдається одягти лінзу, зверніться до фахівця нашого центру</h3> <!---->
+    <section  style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
+        <div class="content section-title"><h3>Якщо вам не вдається одягти лінзу, зверніться до фахівця нашого центру</h3> <!---->
             <!----></div>
     </section>
     <section reverse="true" class="timeline section-padding "
@@ -587,7 +589,7 @@
         </div>
     </section>
     <section style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
-        <div class="content"><h3>Якщо вам не вдається зняти лінзу, зверніться до фахівця нашого центру</h3> <!---->
+        <div class="content section-title"><h3>Якщо вам не вдається зняти лінзу, зверніться до фахівця нашого центру</h3> <!---->
             <!----></div>
     </section>
     <section class="section-full-width section-flat-width section-flat-height"
@@ -601,7 +603,7 @@
         </div>
     </section>
     <section class="section-full-width" style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----><!---->
-        <div class="content"><h3>Ми пропонуємо чудовий суперсучасний альтернативний варіант – ортокератологічні «нічні»
+        <div class="content section-title"><h3>Ми пропонуємо чудовий суперсучасний альтернативний варіант – ортокератологічні «нічні»
                 лінзи!</h3> <!---->
             <div class="slot"><a href="/contacts" class="button button-ellipse button-preset-primary button-large">Зв'яжіться
                     з нами</a></div>
@@ -656,7 +658,7 @@
                         </div>
                         <div class="col-sm-10 col-lg-4 order-lg-1 text-center text-lg-start">
                             <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
-                            <div class="offset-top-30">
+                            <div class="offset-top-30" style="margin-top: 40px;">
                                 <ul class="list-inline">
                                     <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="#"></a></li>
                                     <li><a class="icon fa fa-twitter icon-xxs icon-circle icon-white" href="#"></a></li>
