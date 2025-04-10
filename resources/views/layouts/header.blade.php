@@ -59,10 +59,10 @@
                         <div class="rd-navbar-nav-wrap">
 
                             <ul class="rd-navbar-nav">
-                                <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">@lang('messages.Home')</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">{{ __('header.menu.index') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">@lang('messages.Services')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">{{ __('header.menu.services') }}</a>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         <li class="rd-megamenu-item">
                                             <h6 class="rd-megamenu-title">@lang('main.oftalmology')</h6>
@@ -120,15 +120,15 @@
                                 </li>
 
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">@lang('messages.Timetable')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">{{ __('header.menu.schedule') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item @if(request()->routeIs('main.team')) active @endif"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
+                                <li class="rd-nav-item @if(request()->routeIs('main.team')) active @endif"><a class="rd-nav-link" href="{{ route('main.team') }}">{{ __('header.menu.doctors') }}</a></li>
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.testimonials') }}">@lang('messages.testimonials')</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.testimonials') }}">{{ __('header.menu.testimonials') }}</a></li>
 
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">@lang('messages.prices')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">{{ __('header.menu.price') }}</a>
 
                                 <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">@lang('messages.Gallery')</a>
                                     <ul class="rd-menu rd-navbar-dropdown">
@@ -143,15 +143,15 @@
                                     </ul>
                                 </li>-->
 
-                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">{{ __('header.menu.contacts') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > {{ __('header.menu.about') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">@lang('messages.Online information')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">{{ __('header.menu.telemed') }}</a>
 
-                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.blog') }}">@lang('messages.Blog')</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.blog') }}">{{ __('header.menu.blog') }}</a>
                                 <!--<ul class="rd-menu rd-navbar-dropdown">
                                         <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">@lang('messages.Blog Masonry')</a>
                                         </li>
@@ -170,7 +170,7 @@
                                         <ul class="rd-menu rd-navbar-dropdown">
                                             @foreach (['en', 'uk', 'ru'] as $lang)
                                                 <li class="rd-dropdown-item">
-                                                    <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper( __('main.'.$lang)) }}</a>
+                                                    <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">  {{ __('header.menu_ext.languages.'.$lang) }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>

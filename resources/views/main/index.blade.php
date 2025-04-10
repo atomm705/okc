@@ -17,9 +17,9 @@
                                 <div class="row">
                                     <div class="col-lg-7 section-slider-custom">
                                         <div class="inset-xl-right-80 text-lg-start ">
-                                            <h2>@lang('messages.Take Care of')<br class="d-block"> @lang('messages.Your Health')
+                                            <h2>{{ __('frontend/index.slider.slide_1.title') }}<br class="d-block">
                                             </h2>
-                                            <h5 class="d-none d-lg-block mw-400">@lang('messages.At Medina, we are dedicated to diagnosing all kinds of diseases.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}">@lang('messages.make an appointment')</a>
+                                            <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -34,9 +34,9 @@
                                 <div class="row">
                                     <div class="col-lg-6 section-slider-custom to-front">
                                         <div class="text-lg-start">
-                                            <h2>@lang('messages.Years of')<br class="d-block"> @lang('messages.Experience')
+                                            <h2>{{ __('frontend/index.slider.slide_2.title') }}
                                             </h2>
-                                            <h5 class="d-none d-lg-block mw-400">@lang('messages.Since our foundation, we`ve been delivering diagnostic solutions').</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
+                                            <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">{{ __('frontend/index.slider.slide_2.link') }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -51,8 +51,8 @@
                                 <div class="row">
                                     <div class="col-lg-7 section-slider-custom">
                                         <div class="text-lg-start">
-                                            <h2>@lang('messages.Qualified Team')<br class="d-block">@lang('messages.of Experts')</h2>
-                                            <h5 class="d-none d-lg-block mw-400">@lang('messages.Our team of diagnosticians is always ready to help you be healthier.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
+                                            <h2>{{ __('frontend/index.slider.slide_3.title') }}</h2>
+                                            <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">{{ __('frontend/index.slider.slide_3.link') }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -71,58 +71,65 @@
                         <div class="sheldue-item first">
                             <div class="sheldue-item-body">
                                 <div class="icon icon-xs mdi mdi-calendar-clock text-white-50"></div>
-                                <h6 class="d-inline-block inset-left-10 text-white">@lang('messages.opening hours')</h6>
+                                <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.time_to_work.title')</h6>
                                 <hr>
                                 <div class="row offset-top-24 justify-content-sm-between text-gray-light">
-                                    <div class="col-sm-4">@lang('messages.Mon–Fri')</div>
-                                    <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">8:00am–7:00pm</div>
-                                    <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('messages.Saturday')</div>
-                                    <div class="col-sm-7 offset-top-10 text-sm-end">9:00am–5:00pm</div>
-                                    <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('messages.Sunday')</div>
-                                    <div class="col-sm-7 offset-top-10 text-sm-end">9:00am–3:00pm</div>
+                                    <div class="col-sm-4"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span></div>
+                                    <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div>
+                                    <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</div>
+                                    <div class="col-sm-7 offset-top-10 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</div>
+                                    <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.appointment.title')</div>
+                                    <div class="offset-top-5 text-gray-light offset-top-30 offset-xs-top-10"> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span style="margin-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
+
+                                    <div class="offset-top-8 text-gray-light">
+                                        <p>@lang('frontend/index.blocks.time_to_work.body.shedule_time.body')</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('messages.view timetable')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('frontend/index.blocks.time_to_work.link')</a></div>
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-5 col-xl-3">
                         <div class="sheldue-item light">
                             <div class="sheldue-item-body">
                                 <div class="icon icon-xs mdi mdi-calendar-today text-white-50"></div>
-                                <h6 class="d-inline-block inset-left-10 text-white">@lang('messages.doctors’ timetable')</h6>
+                                <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.schedule.title' )</h6>
                                 <hr>
                                 <div class="offset-top-24 text-gray-light">
-                                    <p>@lang('messages.The following is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as the doctors or nurses may sometimes be attending to other duties.')</p>
+                                    <p>@lang('frontend/index.blocks.schedule.body')</p>
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('messages.view timetable')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('frontend/index.blocks.schedule.link')</a></div>
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-5 col-xl-3">
                         <div class="sheldue-item">
                             <div class="sheldue-item-body">
                                 <div class="icon icon-xs mdi mdi-phone text-white-50"></div>
-                                <h6 class="d-inline-block inset-left-10 text-white">@lang('messages.appointments')</h6>
+                                <h6 class="d-inline-block inset-left-10 text-white"><span style="font-size: 17px">@lang('frontend/index.blocks.appointment.title')</span></h6>
                                 <hr>
                                 <div class="offset-top-24 text-gray-light">
-                                    <p>@lang('messages.The first step towards a healthy life  is to schedule an appointment. Please contact our office by phone or complete the appointment request form.')</p>
+                                    <p>@lang('frontend/index.blocks.appointment.body')</p>
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="make-an-appointment.html">@lang('messages.make an appointment')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="make-an-appointment.html">@lang('frontend/index.blocks.appointment.link')</a></div>
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-5 col-xl-3">
                         <div class="sheldue-item light last">
                             <div class="sheldue-item-body">
                                 <div class="icon icon-xs icon-emergency-01 text-white-50"></div>
-                                <h6 class="d-inline-block inset-left-10 text-white">@lang('messages.emergency cases')</h6>
+                                <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.phones.title')</h6>
                                 <hr>
                                 <div class="offset-top-24">
-                                    <h5 class="font-weight-bold"><a class="text-white" href="tel:#">1-800-1234-567</a></h5>
-                                    <p class="text-gray-light">@lang('messages.Call us!')</p>
+                                    <p style="font-size: 17px"><a class="text-white" href="tel:#">0 (800) 317-317</a></p>
+                                    <p style="font-size: 17px"><a class="text-white" href="tel:#">+38 (057) 761-61-31</a></p>
+                                    <p style="font-size: 17px"><a class="text-white" href="tel:#">+38 (093) 761-61-31</a></p>
+                                    <p style="font-size: 17px"><a class="text-white" href="tel:#">+38 (099) 548-44-85</a></p>
+
                                 </div>
                             </div>
-                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.contacts') }}">@lang('messages.Contact page')</a></div>
+                            <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.contacts') }}">@lang('frontend/index.blocks.phones.link')</a></div>
                         </div>
                     </div>
                 </div>
@@ -131,22 +138,26 @@
         <!--What makes us different-->
         <section class="section-lg bg-default-liac">
             <div class="container text-center">
-                <h3>@lang('messages.What Makes Us Different')</h3>
+                <h3>@lang('frontend/index.why_we.title')</h3>
+                <div class="offset-top-41">
+                    <p class="custom-paragraph">@lang('frontend/index.why_we.description')</p>
+
+                </div>
                 <div class="row offset-top-60 row-50">
                     <div class="col-md-6 col-lg-4">
                         <div class="icon icon-xlg icon-circle icon-default icon-pills-xl"></div>
-                        <h5 class="font-weight-bold text-gray-darkest">@lang('messages.Qualified Specialists')</h5>
-                        <p>@lang('messages.We hire the best specialists to deliver top-notch diagnostic services for you.')</p>
+                        <h5 class="font-weight-bold text-gray-darkest">@lang('frontend/index.why_we.columns.column_1.title')</h5>
+                        <p>@lang('frontend/index.why_we.columns.column_1.description')</p>
                     </div>
                     <div class="col-md-6 col-lg-4 offset-md-top-0">
                         <div class="icon icon-xlg icon-circle icon-default icon-doctor-xl"></div>
-                        <h5 class="font-weight-bold text-gray-darkest">@lang('messages.Modern Equipment')</h5>
-                        <p>@lang('messages.We use the first-class medical equipment for timely diagnostics of various diseases.')</p>
+                        <h5 class="font-weight-bold text-gray-darkest">@lang('frontend/index.why_we.columns.column_2.title')</h5>
+                        <p>@lang('frontend/index.why_we.columns.column_2.description')</p>
                     </div>
                     <div class="col-md-6 col-lg-4 offset-md-top-0">
                         <div class="icon icon-xlg icon-circle icon-default icon-medical-car-xl"></div>
-                        <h5 class="font-weight-bold text-gray-darkest">@lang('messages.Emergency Diagnostics')</h5>
-                        <p>@lang('messages.Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.')</p>
+                        <h5 class="font-weight-bold text-gray-darkest">@lang('frontend/index.why_we.columns.column_3.title')</h5>
+                        <p>@lang('frontend/index.why_we.columns.column_3.description')</p>
                     </div>
                 </div>
             </div>
@@ -157,9 +168,9 @@
                 <div class="container text-start">
                     <div class="row justify-content-sm-center justify-content-lg-start">
                         <div class="col-md-10 col-lg-8 col-xl-5">
-                            <h2><br class="d-none d-xl-inline-block">Лазерна корекція зору</h2>
-                            <p class="offset-top-30 text-white">@lang('messages.Medina offers the region’s most comprehensive range of diagnostic services, from MRI to X-ray.')</p>
-                            <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('messages.free consultation')</a></div>
+                            <h2><br class="d-none d-xl-inline-block">@lang('frontend/index.laser_correction.title')</h2>
+                            <p class="offset-top-30 text-white">@lang('frontend/index.laser_correction.description')</p>
+                            <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('frontend/index.laser_correction.link')</a></div>
                         </div>
                     </div>
                 </div>

@@ -4,9 +4,9 @@
             <div class="col-md-8 col-lg-12">
                 <div class="row justify-content-sm-center row-40">
                     <div class="col-sm-10 col-lg-4 text-start order-lg-3 inset-lg-left-50">
-                        <h6>@lang('messages.Newsletter')</h6>
+                        <h6>@lang('footer.newsletter.title')</h6>
                         <hr class="text-subline">
-                        <p class="text-white-70">@lang('messages.Enter your email address to receive up-to-date news, new patient information and other useful stuff, delivered right to your inbox.')</p>
+                        <p class="text-white-70">@lang('footer.newsletter.description')</p>
                         <form class="rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                             <div class="form-wrap input-group input-group-custom input-group-sm no-wrap">
                                 <label class="form-label" for="subscribe-form-email">@lang('messages.Your e-mail...')</label>
@@ -16,7 +16,7 @@
                         </form>
                     </div>
                     <div class="col-sm-10 text-sm-start col-lg-4 order-lg-2">
-                        <h6>@lang('messages.contact us')</h6>
+                        <h6>@lang('footer.contacts.title')</h6>
                         <hr class="text-subline">
                         <div class="text-center text-xl-start">
                             <address class="contact-info d-md-inline-block text-start">
@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="p unit flex-row unit-spacing-xxs">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
-                                    <div class="unit-body"><a class="text-white-70" href="#">м. Харків, вул. Миколи Хвильового (Маяковського), 24 (м. Університет, м. Пушкінська)</a></div>
+                                    <div class="unit-body"><a class="text-white-70" href="#">@lang('footer.contacts.address')</a></div>
                                 </div>
                                 <!--<div class="p unit unit-spacing-xxs flex-row offset-top-16">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-email-outline text-white"></span></div>

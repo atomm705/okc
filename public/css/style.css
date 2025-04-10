@@ -5758,7 +5758,7 @@ footer .btn-java:hover {
 }
 
 .custom-paragraph {
-	max-width: 550px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -13808,8 +13808,9 @@ fieldset[disabled] .member-block-type-3 .btn-group .btn {
 		border-bottom-right-radius: 5px;
 	}
 	.sheldue .sheldue-item .sheldue-item-body {
-		max-height: 286px;
-		height: 286px;
+		/*max-height: 286px;
+		height: 286px;*/
+        height: 400px;
 	}
 	.sheldue .sheldue-item:hover .sheldue-item-body {
 		border-bottom-left-radius: 0 !important;
@@ -15871,7 +15872,7 @@ html.rd-navbar-fixed-linked .page {
 	color: #fff;
 	font-size: 15px;
 	padding: 18px 19px;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.03em;
 	display: inline-block;
 	font-weight: 600;
 	line-height: 24px;
@@ -16532,7 +16533,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .slider-page .container {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 
