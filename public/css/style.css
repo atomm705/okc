@@ -29930,3 +29930,12 @@ html.ie-11 .fc-event .fc-event-wrap {
 	z-index: 99;
 	margin-right: 6px;
 }
+
+.div-telemed-link{
+
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
