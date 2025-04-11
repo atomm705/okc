@@ -102,12 +102,13 @@
 
 
 
+
                                             </ul>
                                         </li>
                                         <li class="rd-megamenu-item">
                                             <h6 class="rd-megamenu-title">@lang('main.all_medicine')</h6>
                                             <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="clients.html">@lang('messages.Clients')</a></li>
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.checkup') }}">Check Up</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="partners.html">@lang('messages.Partners')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">@lang('messages.Privacy Policy')</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">@lang('messages.Search Results')</a></li>

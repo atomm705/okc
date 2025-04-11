@@ -417,10 +417,17 @@
                 <div class="offset-top-50 text-center text-lg-start"><a class="btn btn-ellipse btn-primary" href="blog-grid.html">@lang('messages.View all blog posts')</a></div>
             </div>
         </section>
+
+   <section class="section-lg bg-default section">
+
+        <!--<div class="container">-->
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/cOUYKMbttow?si=3y2RivY38F5Dv7VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!--</div>-->
+
+    </section>
+
         <section class="section">
-            <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-            <!--Please note that YOUR_API_KEY should replaced with your key.-->
-            <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
             <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
                 <div class="google-map">
                     <iframe
@@ -433,6 +440,9 @@
                 </ul>
             </div>
         </section>
+
+
+
         <!-- Page Footer-->
 
 

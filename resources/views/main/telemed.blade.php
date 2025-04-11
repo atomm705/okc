@@ -166,9 +166,9 @@
         </div>
 
     </section>
-    
-    <section class="section-lg bg-default-liac"><!----> <!---->
-        <div class="container text-center"><!----> <!---->
+
+    <section class="section-lg bg-default-liac">
+        <div class="container text-center">
 
             <div ><h3 style="font-size: 2.60em; margin-top: 0px";>Плюси онлайн інформування</h3>
                 <p>Складно не відзначити переваги дистанційного прийому:</p>
