@@ -70,24 +70,14 @@
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.blepharoplastika') }}" >Блефаропластика</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('services.panoptix') }}">PanOptix</a></li>
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('services.oklens') }}">Ок Лінзи</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">@lang('messages.Grid')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">@lang('messages.Tabs and Accordions')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">@lang('messages.Progress bars')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="icons.html">@lang('messages.Icons')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">@lang('messages.Tables')</a></li>
+
                                             </ul>
                                         </li>
                                         <li class="rd-megamenu-item">
                                             <h6 class="rd-megamenu-title">@lang('main.plastic_khirurgiya')</h6>
                                             <ul class="rd-megamenu-list">
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('main.plastichna-khururgiya') }}">Пластична хірургія</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="careers.html">@lang('messages.Careers')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="faq.html">@lang('messages.FAQ Page')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="pricing.html">@lang('messages.Pricing')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">@lang('messages.Coming Soon')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="maintenance.html">@lang('messages.Maintenance')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="under-construction.html">@lang('messages.Under Construction')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="login.html">@lang('messages.Login/Register')</a></li>
+
                                             </ul>
                                         </li>
                                         <li class="rd-megamenu-item">
@@ -109,12 +99,7 @@
                                             <h6 class="rd-megamenu-title">@lang('main.all_medicine')</h6>
                                             <ul class="rd-megamenu-list">
                                                 <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.checkup') }}">Check Up</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="partners.html">@lang('messages.Partners')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">@lang('messages.Privacy Policy')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">@lang('messages.Search Results')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404.html">@lang('messages.404 Page')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503.html">@lang('messages.503 Page')</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="make-an-appointment.html">@lang('messages.Make an Appointment')</a></li>
+
                                             </ul>
                                         </li>
                                     </ul>
@@ -147,7 +132,7 @@
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">{{ __('header.menu.contacts') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > {{ __('header.menu.about') }}</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" style=" white-space: nowrap;" > {{ __('header.menu.about') }}</a>
                                 </li>
 
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">{{ __('header.menu.telemed') }}</a>
@@ -168,7 +153,7 @@
                                 </li>
                                 <div class="language_select">
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
-                                        <ul class="rd-menu rd-navbar-dropdown">
+                                        <ul class="rd-menu rd-navbar-dropdown" >
                                             @foreach (['en', 'uk', 'ru'] as $lang)
                                                 <li class="rd-dropdown-item">
                                                     <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">  {{ __('header.menu_ext.languages.'.$lang) }}</a>

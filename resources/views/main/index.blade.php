@@ -177,41 +177,100 @@
             </div>
         </section>
         <!-- main services-->
-    <section class="section-lg bg-default section">
-            <div class="container">
-                <h3 class="text-center">@lang('messages.Our Services')</h3>
-                <div class="offset-top-41">
-                    <p class="custom-paragraph">@lang('messages.At our clinic, you can experience the best and the most extensive range of diagnostic services in the state. Feel free to browse our website for more information.')</p>
-                </div>
-                <div class="row offset-top-60 text-lg-start row-30">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-01-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.Pediatrics')</a>
+
+
+
+    <section class="section-lg bg-default-liac"><!----> <!---->
+        <div class="container text-center"><!----> <!---->
+
+            <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/index.advantages_1.title')</h3>
+                <p class="custom-paragraph">@lang('frontend/index.advantages_1.description')</p>
+            </div>
+
+        </div>
+
+        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
+                                         class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_1.link')</a>
+        </div>
+    </section>
+
+
+    <section class="section section-lg p-md-0">
+        <div class="container">
+
+            <div class="row justify-content-sm-center justify-content-md-end offset-top-0">
+                <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-left text-center text-md-start">
+                    <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/170f76372caeaf65382417301b2dca09.webp') }})"></div>
+                    <div class="section-image-aside-body offset-top-66 offset-sm-top-0 section-sm-bottom-66 section-sm-top-110 inset-lg-left-93">
+                        <h3>@lang('frontend/index.ophthalmology.title')</h3>
+                        <div class="offset-top-34 offset-md-top-60">
+                            <p>@lang('frontend/index.ophthalmology.description')</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 offset-sm-top-0">
-                        <div class="service"><img class="img-responsive" src="images/home-02-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.MRI of the brain')</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 offset-md-top-0">
-                        <div class="service"><img class="img-responsive" src="images/home-03-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.x-ray diagnostic')</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-04-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.laboratory services')</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-05-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.pregnancy')</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service"><img class="img-responsive" src="images/home-06-320x320.jpg" width="320" height="320" alt=""/><a class="service-desc h6" href="{{ route('main.services') }}">@lang('messages.Best Equipment')</a>
-                        </div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">@lang('frontend/index.ophthalmology.link')</a></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Our Team-->
+
+
+            <div class="row justify-content-sm-center justify-content-md-start">
+                <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-center text-md-start">
+                    <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/9db2b605ab634c6b5e251e29d167a648.webp') }})"></div>
+                    <div class="section-image-aside-body section-sm-bottom-66 section-sm-top-110 inset-lg-right-93">
+                        <h3>@lang('frontend/index.surgery.title')</h3>
+                        <div class="offset-top-34 offset-md-top-60">
+                            <p>@lang('frontend/index.surgery.description')</p>
+
+                        </div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">@lang('frontend/index.surgery.link')</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-sm-center justify-content-md-end offset-top-0">
+                <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-left text-center text-md-start">
+                    <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/background-02-676x545.jpg') }})"></div>
+                    <div class="section-image-aside-body offset-top-66 offset-sm-top-0 section-sm-bottom-66 section-sm-top-110 inset-lg-left-93">
+                        <h3>@lang('frontend/index.diagnosis.title')</h3>
+                        <div class="offset-top-34 offset-md-top-60">
+                            <p>@lang('frontend/index.diagnosis.description')</p>
+                        </div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">@lang('frontend/index.diagnosis.link')</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-sm-center justify-content-md-start">
+                <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-center text-md-start">
+                    <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/departments-01-960-611.jpg') }})"></div>
+                    <div class="section-image-aside-body section-sm-bottom-66 section-sm-top-110 inset-lg-right-93">
+                        <h3>Clinical Laboratory</h3>
+                        <div class="offset-top-34 offset-md-top-60">
+                            <p>Sed rutrum, mi sit amet fringilla feugiat, nunc magna ullamcorper lectus, ac congue nisi est ac orci.</p>
+                            <p>Curabitur ultrices, nunc eu maximus tristique, purus ex ullamcorper lacus, vel scelerisque lectus libero sit amet odio. Duis vel enim in erat vulputate tincidunt eu sed nisi. Aenean vehicula, dui at convallis laoreet.</p>
+                        </div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-lg bg-default-liac"><!----> <!---->
+        <div class="container text-center"><!----> <!---->
+
+            <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/index.advantages_2.title')</h3>
+                <p class="custom-paragraph">@lang('frontend/index.advantages_2.description')</p>
+            </div>
+
+        </div>
+
+        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
+                                         class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_2.link')</a>
+        </div>
+    </section>
+
+    <!-- Our Team-->
     <section class="section section-md p-xl-0">
         <div class="container-fluid p-0">
             <div class="justify-content-sm-center row-30 row g-0">
@@ -235,6 +294,15 @@
                 @endforeach
             </div>
         </div>
+    </section>
+
+    <section class="section-lg bg-default section">
+
+        <div class="container">
+            <iframe width="100%" height="600" src="https://www.youtube.com/embed/cOUYKMbttow?si=3y2RivY38F5Dv7VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
     </section>
 
     <!-- testimonials-->
@@ -417,17 +485,22 @@
                 <div class="offset-top-50 text-center text-lg-start"><a class="btn btn-ellipse btn-primary" href="blog-grid.html">@lang('messages.View all blog posts')</a></div>
             </div>
         </section>
+    <section class="section-lg bg-default-liac"><!----> <!---->
+        <div class="container text-center defolt-div" ><!----> <!---->
 
-   <section class="section-lg bg-default section">
+            <a class="link-discount" style=" background-image: url('{{ asset('images/218bbe9c38ffa59b6e99bf94428e4293.webp') }}') ; "  href="single-post.html">
+               <div  style=" padding-right:10px ; padding-left: 10px;">
 
-        <!--<div class="container">-->
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/cOUYKMbttow?si=3y2RivY38F5Dv7VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   <p >Leave a feedback in Google <br>Get 10% discount for all consulting services</p>
 
-        <!--</div>-->
+               </div>
 
+            </a>
+
+        </div>
     </section>
 
-        <section class="section">
+    <section class="section">
             <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
                 <div class="google-map">
                     <iframe

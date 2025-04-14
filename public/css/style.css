@@ -489,9 +489,9 @@ h2 + p,
 	margin-top: 30px;
 }
 
-* + .row {
+/* * + .row {
 	margin-top: 30px;
-}
+}*/
 
 html .page .inset-left-0 {
 	padding-left: 0;
@@ -3984,21 +3984,28 @@ Section Slider Custom
 	}
 }
 
-* + .row:not(.offset-0) {
-	margin-top: 30px;
+@media (max-width: 768px) {
+
+    * + .row:not(.offset-0) {
+        margin-top: 30px;
+    }
 }
 
-@media (min-width: 768px) {
+/* * + .row:not(.offset-0) {
+	margin-top: 30px;
+}*/
+
+/*@media (min-width: 768px) {
 	* + .row:not(.offset-0) {
 		margin-top: 40px;
 	}
-}
+}*/
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
 	* + .row:not(.offset-0) {
 		margin-top: 60px;
 	}
-}
+}*/
 
 /** @section Backgrounds */
 .context-dark .brand .brand-logo-dark, .bg-gray-700 .brand .brand-logo-dark, .bg-accent .brand .brand-logo-dark, .bg-deluge .brand .brand-logo-dark, .bg-butterfly-bush .brand .brand-logo-dark, .navbar-inverse .brand .brand-logo-dark, .swiper-slide .brand .brand-logo-dark {
@@ -15837,6 +15844,8 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-nav {
 	display: flex;
+    /*я додав 14.04.2025   align-items: center;*/
+    align-items: center;
 }
 
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-search {
@@ -15871,8 +15880,9 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-subpage.rd-navbar-static .rd-nav-link {
 	color: #fff;
 	font-size: 15px;
-	padding: 18px 19px;
-	letter-spacing: 0.03em;
+	/*padding: 18px 19px;  це було я змінив на  padding: 18px 18px; змінено 14.04.2025*/
+    padding: 18px 18px;
+	/*letter-spacing: 0.03em; прибрав  змінено 14.04.2025*/
 	display: inline-block;
 	font-weight: 600;
 	line-height: 24px;
@@ -15949,9 +15959,12 @@ html.rd-navbar-fixed-linked .page {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 0 0 0;
+	/*padding: 20px 0 0 0;*/
+
+    padding: 5px 0 0 0;
+
 	z-index: 20;
-	transform: translateY(30px);
+	/*transform: translateY(30px);*/
 }
 
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-brand .brand .brand-logo-light {
@@ -29938,4 +29951,28 @@ html.ie-11 .fc-event .fc-event-wrap {
     align-items: center;
     justify-content: center;
 
+}
+
+
+@media (min-width: 1200px) {
+    .link-discount{
+        width: 570px;
+        height: 98px;
+    }
+}
+.link-discount{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.link-discount p{
+    color: #0a0a0a;
+    font-weight: 600;
+    text-align: right;
+}
+
+.defolt-div{
+    display: flex;
+    justify-content: center;
 }
