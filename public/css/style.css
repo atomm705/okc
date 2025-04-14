@@ -13817,7 +13817,7 @@ fieldset[disabled] .member-block-type-3 .btn-group .btn {
 	.sheldue .sheldue-item .sheldue-item-body {
 		/*max-height: 286px;
 		height: 286px;*/
-        height: 400px;
+        height: 430px;
 	}
 	.sheldue .sheldue-item:hover .sheldue-item-body {
 		border-bottom-left-radius: 0 !important;
@@ -15946,9 +15946,9 @@ html.rd-navbar-fixed-linked .page {
 	position: relative;
 }
 
-.rd-navbar-subpage.rd-navbar-static .rd-navbar-aside {
+/*.rd-navbar-subpage.rd-navbar-static .rd-navbar-aside {
 	padding: 38px 0 0 0;
-}
+} я закоментував верхній відступ хедера зробивши його як на головному сайти чісло коментаря 14.04.2025*/
 
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-aside .list-inline {
 	display: flex;
