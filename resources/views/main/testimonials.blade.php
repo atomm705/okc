@@ -3,9 +3,9 @@
     <div class="container">
         <h2 class="breadcrumbs-custom-title">Clients</h2>
         <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li><a>Pages</a></li>
-            <li class="active">Clients</li>
+            <li><a href="{{ route('main.index') }}">Home</a></li>
+            <li><a href="{{ route('main.testimonials') }}">Reviews</a></li>
+
         </ul>
     </div>
 </section>

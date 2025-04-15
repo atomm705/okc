@@ -2,29 +2,79 @@
 
 
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark slider-page"
+             style="background-image: url({{ asset('images/bg-6.webp') }});"
+             data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">Timetable</h2>
+            <h2 class="breadcrumbs-custom-title">
+                {{ $department ? ucfirst(str_replace('-', ' ', $department)) . ' Schedule' : 'Timetable' }}
+            </h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Timetable</li>
+                <li><a href="{{ route('main.index') }}">Home</a></li>
+                <li><a href="{{ route('main.timetable') }}">Timetable</a></li>
+                @if($department)
+                    <li class="active">{{ ucfirst(str_replace('-', ' ', $department)) }}</li>
+                @endif
             </ul>
         </div>
     </section>
     <!-- Timetable-->
     <section class="section-98 section-sm-110">
         <div class="container">
+
             <!-- Responsive-tabs-->
             <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
-                <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
-                    <li>All Departments</li>
-                    <li>MIT</li>
-                    <li>X-Ray</li>
-                    <li>Clinical Laboratory</li>
-                    <li>CT Imaging</li>
-                    <li>ECG</li>
-                </ul>
+                <div class="defolt-div" style="margin-top: 10px">
+                    <ul class="list-inline list-inline-sm">
+                        <li class="d-xl-none">
+                            <p>Choose your category:</p>
+                        </li>
+                        <li class="section-relative">
+                            <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
+                            <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
+                                <li>
+                                    <a href="{{ route('main.timetable') }}" class="{{ $department === null ? 'active' : '' }}">
+                                        All Departments
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('main.timetable', 'mit') }}" class="{{ $department === 'mit' ? 'active' : '' }}">
+                                        MIT
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('main.timetable', 'x-ray') }}" class="{{ $department === 'x-ray' ? 'active' : '' }}">
+                                        X-Ray
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('main.timetable', 'clinical-lab') }}" class="{{ $department === 'clinical-lab' ? 'active' : '' }}">
+                                        Clinical Laboratory
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('main.timetable', 'ct-imaging') }}" class="{{ $department === 'ct-imaging' ? 'active' : '' }}">
+                                        CT Imaging
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('main.timetable', 'ecg') }}" class="{{ $department === 'ecg' ? 'active' : '' }}">
+                                        ECG
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
                 <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
+
+                    @if ($department === null)
                     <div>
                         <div class="calendar-responsive-mod-1 offset-top-30">
                             <table class="calendar-variant-2">
@@ -226,6 +276,8 @@
                             </table>
                         </div>
                     </div>
+
+                    @elseif ($department === 'mit')
                     <div>
                         <div class="calendar-responsive-mod-1 offset-top-30">
                             <table class="calendar-variant-2">
@@ -409,6 +461,7 @@
                             </table>
                         </div>
                     </div>
+                    @elseif($department === 'x-ray')
                     <div>
                         <div class="calendar-responsive-mod-1 offset-top-30">
                             <table class="calendar-variant-2">
@@ -565,6 +618,7 @@
                             </table>
                         </div>
                     </div>
+                    @elseif($department === 'clinical-lab')
                     <div>
                         <div class="calendar-responsive-mod-1 offset-top-30">
                             <table class="calendar-variant-2">
@@ -748,6 +802,7 @@
                             </table>
                         </div>
                     </div>
+                    @elseif($department === 'ct-imaging')
                     <div>
                         <div class="calendar-responsive-mod-1 offset-top-30">
                             <table class="calendar-variant-2">
@@ -904,6 +959,7 @@
                             </table>
                         </div>
                     </div>
+                    @elseif($department === 'ecg')
                     <div>
                         <div class="calendar-responsive-mod-1 offset-top-30">
                             <table class="calendar-variant-2">
@@ -1051,6 +1107,7 @@
                             </table>
                         </div>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

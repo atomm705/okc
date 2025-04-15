@@ -3,9 +3,9 @@
         <div class="container">
             <h2 class="breadcrumbs-custom-title">Blog Modern</h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog-masonry.html">Blog</a></li>
-                <li class="active">Blog Modern</li>
+                <li><a href="{{ route('main.index') }}">Home</a></li>
+                <li><a href="{{ route('main.blog') }}">Blog</a></li>
+
             </ul>
         </div>
     </section>

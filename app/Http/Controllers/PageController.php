@@ -39,9 +39,9 @@ class PageController extends Controller
     }
 
 
-    public function timetable(){
-
-        return view('main.timetable');
+    public function timetable($department = null)
+    {
+        return view('main.timetable', compact('department'));
     }
 
     public function prices()

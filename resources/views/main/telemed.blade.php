@@ -7,9 +7,11 @@
             <h2 class="breadcrumbs-custom-title">
                 Online medical information</h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{ route('main.index') }}">Home</a></li>
                 <li class="active">
+                    <a href="{{ route('main.telemed') }}">
                     Online medical information
+                    </a>
                 </li>
             </ul>
         </div>

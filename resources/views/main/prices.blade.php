@@ -1,10 +1,20 @@
 <x-app-layout>
-    <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});"  data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+
+    <section class="breadcrumbs-custom bg-image context-dark slider-page"
+             style="background-image: url({{ asset('images/bg-6.webp') }});"
+             data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">Prices</h2>
+            <h2 class="breadcrumbs-custom-title">
+                {{ $category ? ucfirst(str_replace('-', ' ', $category)) : 'Prices' }}
+            </h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">Prices</li>
+                <li ><a href="{{ route('main.index') }}">Home</a></li>
+                <li class="active"><a  href="{{ route('main.index') }}">Prices</a></li>
+                @if($category)
+                    <li class="active">{{ ucfirst(str_replace('-', ' ', $category)) }}</li>
+                @else
+                    <li class="active">Oftalmologiya</li>
+                @endif
             </ul>
         </div>
     </section>
@@ -26,6 +36,7 @@
                                     @php $category = 'oftalmologiya'; @endphp
                                 @endif
                                 <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
+
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     <li><a href="{{ route('prices.category', 'oftalmologiya') }}">oftalmologiya</a></li>
                                     <li><a href="{{ route('prices.category', 'ginekologiya') }}">ginekologiya</a></li>

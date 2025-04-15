@@ -4,8 +4,8 @@
             <div class="container">
                 <h2 class="breadcrumbs-custom-title">Team</h2>
                 <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Team</li>
+                    <li><a href="{{ route('main.index') }}">Home</a></li>
+                    <li class="active"><a href="{{ route('main.team') }}">Team</a></li>
                 </ul>
             </div>
         </section>

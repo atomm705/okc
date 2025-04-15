@@ -3,7 +3,7 @@
     <div class="container">
         <h2 class="breadcrumbs-custom-title">Team Member Profile</h2>
         <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{{ route('main.index') }}">Home</a></li>
             <li><a>Pages</a></li>
             <li class="active">Team Member Profile</li>
         </ul>

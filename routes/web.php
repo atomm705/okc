@@ -22,7 +22,15 @@ Route::middleware(SetLocale::class)->group(function () {
 
         Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
         Route::get('/departments', [PageController::class, 'departments'])->name('main.departments');
-        Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
+
+        //Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
+
+        //Route::get('/schedule/{department?}', function ($department = null) {
+      //      return view('main.timetable', compact('department'));
+       // })->name('main.timetable');
+
+        Route::get('/schedule/{department?}', [PageController::class, 'timetable'])->name('main.timetable');
+
         Route::get('/blog', [PageController::class, 'blog'])->name('main.blog');
         Route::get('/contacts', [PageController::class, 'contacts'])->name('main.contacts');
         Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
@@ -54,6 +62,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/prices/{category}', function ($category) {
             return view('main.prices', compact('category'));
         })->name('prices.category');
+
     })->where('locale', 'en|uk|ru');
 });
 

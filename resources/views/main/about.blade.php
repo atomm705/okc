@@ -6,8 +6,8 @@
                 <div class="container " >
                     <h2 class="breadcrumbs-custom-title">About</h2>
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About</li>
+                        <li><a href="{{ route('main.index') }}">Home</a></li>
+                        <li class="active"><a href="{{ route('main.about') }}">About</a></li>
                     </ul>
                 </div>
 
