@@ -29977,3 +29977,87 @@ html.ie-11 .fc-event .fc-event-wrap {
     display: flex;
     justify-content: center;
 }
+
+.list-timetable{
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.list-timetable-item a{
+    color:#868686;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.list-timetable-item a:hover {
+    color: #2a93c9;
+}
+
+.list-timetable-item a.active {
+    color: #2a93c9;
+    border-bottom: 2px solid #2a93c9;
+}
+
+.dropdown-toggle {
+    background: #2a93c9;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu {
+
+    padding: 0;
+
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: block;
+    width: 366px;
+
+    margin-top: 10px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color:#868686;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+}
+
+
+@media (max-width: 767px) {
+    .tabs-desktop {
+        display: none;
+    }
+    .tabs-mobile {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .tabs-mobile {
+        display: none;
+    }
+}
+
+.hidden-list{
+    display: none;
+}
+

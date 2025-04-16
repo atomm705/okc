@@ -25,49 +25,59 @@
             <!-- Responsive-tabs-->
             <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                 <div class="defolt-div" style="margin-top: 10px">
-                    <ul class="list-inline list-inline-sm">
-                        <li class="d-xl-none">
-                            <p>Choose your category:</p>
-                        </li>
-                        <li class="section-relative">
-                            <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
-                            <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
-                                <li>
+                    <div class="tabs-mobile md:hidden">
+                        <button onclick="toggleDropdown()" class="dropdown-toggle">
+                            {{ $department ? ucfirst(str_replace('-', ' ', $department)) : 'All Departments' }}
+                        </button>
+                        <ul id="dropdown-menu" class="dropdown-menu hidden-list">
+                            <li><a href="{{ route('main.timetable') }}">All Departments</a></li>
+                            <li><a href="{{ route('main.timetable', 'mit') }}">MIT</a></li>
+                            <li><a href="{{ route('main.timetable', 'x-ray') }}">X-Ray</a></li>
+                            <li><a href="{{ route('main.timetable', 'clinical-lab') }}">Clinical Lab</a></li>
+                            <li><a href="{{ route('main.timetable', 'ct-imaging') }}">CT Imaging</a></li>
+                            <li><a href="{{ route('main.timetable', 'ecg') }}">ECG</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <ul class="list-timetable tabs-desktop hidden md:flex">
+
+
+
+                                <li class="list-timetable-item">
                                     <a href="{{ route('main.timetable') }}" class="{{ $department === null ? 'active' : '' }}">
                                         All Departments
                                     </a>
                                 </li>
 
-                                <li>
+                                <li class="list-timetable-item">
                                     <a href="{{ route('main.timetable', 'mit') }}" class="{{ $department === 'mit' ? 'active' : '' }}">
                                         MIT
                                     </a>
                                 </li>
 
-                                <li>
+                                <li class="list-timetable-item">
                                     <a href="{{ route('main.timetable', 'x-ray') }}" class="{{ $department === 'x-ray' ? 'active' : '' }}">
                                         X-Ray
                                     </a>
                                 </li>
 
-                                <li>
+                                <li class="list-timetable-item">
                                     <a href="{{ route('main.timetable', 'clinical-lab') }}" class="{{ $department === 'clinical-lab' ? 'active' : '' }}">
                                         Clinical Laboratory
                                     </a>
                                 </li>
-                                <li>
+                                <li class="list-timetable-item">
                                     <a href="{{ route('main.timetable', 'ct-imaging') }}" class="{{ $department === 'ct-imaging' ? 'active' : '' }}">
                                         CT Imaging
                                     </a>
                                 </li>
-                                <li>
+                                <li class="list-timetable-item">
                                     <a href="{{ route('main.timetable', 'ecg') }}" class="{{ $department === 'ecg' ? 'active' : '' }}">
                                         ECG
                                     </a>
                                 </li>
-
-                            </ul>
-                        </li>
                     </ul>
 
                 </div>

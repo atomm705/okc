@@ -124,8 +124,15 @@
         });
     </script>
 
-
-
 @endif
 
+
+@if(Route::currentRouteName() === 'main.timetable')
+<script>
+    function toggleDropdown() {
+        const menu = document.getElementById('dropdown-menu');
+        menu.classList.toggle('hidden-list');
+    }
+</script>
+@endif
 
