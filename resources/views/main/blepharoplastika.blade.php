@@ -450,7 +450,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Спеціаліст</span>
+                    <span>@lang('frontend/blefaroplastika.specialist.title') </span>
                 </div>
             </div>
 
@@ -458,21 +458,21 @@
                 <div class="page-content wr-specialist-info">
                     <div class="specialist-card-box">
                         <div class="specialist-name">
-                            <span>Кремінь Василь Олександрович</span>
+                            <span>@lang('frontend/blefaroplastika.specialist.specialist')</span>
                         </div>
 
                         <div class="specialist-specialization">
                             <div class="specialist-specialization-property">
-                                <span>Спеціалізація</span>
+                                <span>@lang('frontend/blefaroplastika.specialist.specialisation')</span>
                             </div>
 
                             <div class="specialist-specialization-title">
-                                <span>Пластична хірургія</span>
+                                <span>@lang('frontend/blefaroplastika.specialist.description.title')</span>
                             </div>
                         </div>
 
                         <div class="specialist-info">
-                            <p>Кандидат медичних наук. Член Всеукраїнської Асоціації пластичних, реконструктивних та естетичних хірургів. Співавтор ряду навчально-методичних посібників для лікарів-хірургів, комбустіологів та пластичних хірургів</p>
+                            <p>@lang('frontend/blefaroplastika.specialist.description.description')</p>
                         </div>
                     </div>
                 </div>
@@ -518,7 +518,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Сертифікати</span>
+                    <span>@lang('frontend/blefaroplastika.sertificats.title')</span>
                 </div>
 
                 <div class="list-box">
@@ -560,15 +560,15 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/blefaroplastika.recording.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Дізнайтеся, який тип операції підійде саме вам</span>
+                        <span>@lang('frontend/blefaroplastika.recording.description')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -582,7 +582,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+                                <span>@lang('frontend/blefaroplastika.recording.items.item_1.title')</span>
                             </div>
                         </div>
 
@@ -592,7 +592,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найсучасніше обладнання</span>
+                                <span>@lang('frontend/blefaroplastika.recording.items.item_2.title')</span>
                             </div>
                         </div>
 
@@ -602,7 +602,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Кожен етап операції супроводжує лікар-анестезіолог, що є запорукою комфорту пацієнта</span>
+                                <span>@lang('frontend/blefaroplastika.recording.items.item_3.title')</span>
                             </div>
                         </div>
                     </div>
@@ -614,7 +614,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Обладнання</span>
+                        <span>@lang('frontend/blefaroplastika.equipment.equipment')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -622,29 +622,29 @@
                             <img src="/images/equipment.jpg" alt="equipment">
 
                             <div class="equipment-card-title equipment-card-title_mob">
-                                <span>Valleylab Force FX</span>
+                                <span>@lang('frontend/blefaroplastika.equipment.title')</span>
                             </div>
                         </div>
 
                         <div class="equipment-card-block">
                             <div class="equipment-card-block__inner">
                                 <div class="equipment-card-title equipment-card-title_desktop">
-                                    <span>Valleylab Force FX</span>
+                                    <span>@lang('frontend/blefaroplastika.equipment.title')</span>
                                 </div>
 
                                 <div class="equipment-card-year">
-                                    <span class="equipment-card-year__property">Рік випуску</span>
+                                    <span class="equipment-card-year__property">@lang('frontend/blefaroplastika.equipment.year_title')</span>
 
-                                    <span class="equipment-card-year__value">2020</span>
+                                    <span class="equipment-card-year__value">@lang('frontend/blefaroplastika.equipment.year')</span>
                                 </div>
 
                                 <div class="equipment-card-descr">
-                                    <p>Ультразвуковий хірургічний ніж, який впливає тільки в точці прикладання і зберігає прилеглі клітини.</p>
+                                    <p>@lang('frontend/blefaroplastika.equipment.description')</p>
                                 </div>
                             </div>
 
                             <div class="equipment-card-addition">
-                                <p>Операції проводить досвідчений офтальмохірург – 16 років стажу. Набряклість менше на 52 % у порівнянні з іншими клініками.</p>
+                                <p>@lang('frontend/blefaroplastika.equipment.alert')</p>
                             </div>
                         </div>
                     </div>
@@ -658,15 +658,15 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/blefaroplastika.recording.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Отримайте розрахунок вартості операції</span>
+                        <span>@lang('frontend/blefaroplastika.recording.cost')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -675,7 +675,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Відгуки клієнтів</span>
+                    <span>@lang('frontend/blefaroplastika.reviews.title')</span>
                 </div>
 
                 <div class="list-box">
@@ -806,7 +806,7 @@
 
                 <div class="recall-button">
                     <a href="https://www.okc.com.ua/ru/testimonials" target="_blank"
-                       class="button-main button-main_blue button-more-recall">Більше відгуків</a>
+                       class="button-main button-main_blue button-more-recall">@lang('frontend/blefaroplastika.reviews.link')</a>
                 </div>
             </div>
         </div>
@@ -820,15 +820,15 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ГОТОВІ ВІДПОВІСТИ НА БУДЬ-ЯКІ ВАШІ ЗАПИТАННЯ І ПЕРЕТЕЛЕФОНУВАТИ ВАМ!</span>
+                        <span>@lang('frontend/blefaroplastika.consultation.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Залиште заявку на безкоштовну консультацію менеджера.</span>
+                        <span>@lang('frontend/blefaroplastika.consultation.description')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal-recall button-main button-main_orange">заявка на зворотній дзвінок</button>
+                        <button class="open-modal-recall button-main button-main_orange">@lang('frontend/blefaroplastika.consultation.link')</button>
                     </div>
                 </div>
             </div>
