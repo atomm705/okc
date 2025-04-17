@@ -5,13 +5,13 @@ return [
 		'title'       => 'Contacts of a medical center in Kharkiv OK Center',
 		'description' => 'You will find us at Kharkov, Mykoly Khvylyovogo (Mayakovs\'koho) St, 24, tel. (057) 761-61-31 and (093) 761-61-31. Private clinic OK Center in Kharkov',
 	],
-	
+
 	'api' => [
 		'store' => [
 			'fatal_error' => 'Unfortunately, due to an error, we were unable to send your message. Try later.'
 		]
 	],
-	
+
 	'contact' => [
 		'title'       => 'Contact',
 		'description' => 'You can contact us in any way which is convenient for you. We are available 24/7 by fax or email. You can also use the quick contact form below or visit our clinic in person. We will be happy to answer your questions.',
@@ -40,7 +40,9 @@ return [
 			'title'   => 'Address',
 			'country' => 'Ukraine',
 			'city'    => 'Kharkiv',
-			'street'  => 'Mykoly Khvylyovogo (Mayakovs\'koho) St, 24'
+			'street'  => 'Mykoly Khvylyovogo (Mayakovs\'koho) St, 24',
+            'full_address' => 'Ukraine, Kharkiv, Mykoly Khvylyovogo',
+            'only_street' => '(Mayakovs\'koho) St, 24',
 		],
 		'time_to_work'    => [
 			'title' => 'Working hours',

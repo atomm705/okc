@@ -10,6 +10,7 @@
         </div>
     </section>
     <section class="section-98 section-sm-110">
+
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-lg-10 col-xl-8">
@@ -51,6 +52,7 @@
                             <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
                         </div>
                     </div>
+
                     <!-- Post Modern Timeline-->
                     <article class="post post-modern post-modern-timeline post-modern-timeline-left">
                         <!-- Post media-->

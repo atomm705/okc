@@ -18,17 +18,17 @@
                     <div class="col-md-9 col-lg-8 col-xl-12">
                         <div class="row">
                             <div class="col-xl-8 text-start">
-                                <h3>Get In Touch</h3>
+                                <h3>@lang('frontend/contacts.contact.title')</h3>
                                 <div class="offset-top-66">
-                                    <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our medical center personally.</p>
-                                    <p>We would be happy to answer your questions.</p>
+                                    <p>@lang('frontend/contacts.contact.description')</p>
+
                                 </div>
                                 <div class="offset-top-34">
                                     <form class="rd-mailform text-start" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
                                         <div class="row justify-content-sm-center">
                                             <div class="col-md-6">
                                                 <div class="form-wrap form-wrap-label-outside">
-                                                    <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-first-name">First name</label>
+                                                    <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-first-name">@lang('frontend/contacts.contact.form.name.label')</label>
                                                     <input class="form-input form-input-last-child" id="contacts-first-name" type="text" name="first-name" data-constraints=""><span class="form-validation"></span>
                                                 </div>
                                                 <div class="form-wrap form-wrap-label-outside offset-top-20">
@@ -38,21 +38,23 @@
                                             </div>
                                             <div class="col-md-6 offset-top-20 offset-sm-top-0">
                                                 <div class="form-wrap form-wrap-label-outside">
-                                                    <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-last-name">Last name</label>
+                                                    <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-last-name">@lang('frontend/contacts.contact.form.surname.label')</label>
                                                     <input class="form-input form-input-last-child" id="contacts-last-name" type="text" name="last-name" data-constraints=""><span class="form-validation"></span>
                                                 </div>
                                                 <div class="form-wrap form-wrap-label-outside offset-top-20">
-                                                    <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-phone">Phone</label>
+                                                    <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-phone">@lang('frontend/contacts.contact.form.phone.label')</label>
                                                     <input class="form-input form-input-last-child" id="contacts-phone" type="text" name="last-name" data-constraints=""><span class="form-validation"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-wrap form-wrap-label-outside offset-top-20">
-                                            <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-message">Message</label>
+                                            <label class="form-label form-label-outside text-dark rd-input-label" for="contacts-message">@lang('frontend/contacts.contact.form.message.label')</label>
                                             <textarea class="form-input form-input-last-child" id="contacts-message" name="message" data-constraints="" style="max-height: 150px;"></textarea><span class="form-validation"></span>
                                         </div>
                                         <div class="offset-top-18 offset-sm-top-24 text-center text-md-start">
-                                            <button class="btn btn-ellipse btn-primary" type="submit" style="min-width: 130px;">send message</button>
+
+                                            <p>@lang('frontend/contacts.contact.form.agreement')</p>
+                                            <button class="btn btn-ellipse btn-primary" type="submit" style="min-width: 130px;">@lang('frontend/contacts.contact.form.send')</button>
                                         </div>
                                     </form>
                                 </div>
@@ -60,7 +62,7 @@
                             <div class="col-xl-4 text-start offset-top-66 offset-lg-top-0">
                                 <div class="inset-xl-left-40">
                                     <div>
-                                        <h6>Socials</h6>
+                                        <h6>@lang('frontend/contacts.blocks.social_networks.title')</h6>
                                         <hr class="text-subline">
                                         <ul class="list-inline">
                                             <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-gray-light" href="#"></a></li>
@@ -70,7 +72,7 @@
                                         </ul>
                                     </div>
                                     <div class="offset-top-60">
-                                        <h6>address</h6>
+                                        <h6>@lang('frontend/contacts.blocks.address.title')</h6>
                                         <hr class="text-subline">
                                         <div class="offset-top-20">
                                             <div class="unit flex-row unit-spacing-xxs p">
@@ -78,14 +80,14 @@
                                                     <div class="icon icon-xxs text-middle mdi mdi-map-marker text-primary"></div>
                                                 </div>
                                                 <div class="unit-body">
-                                                    <p><a class="text-gray-dark" href="#">Україна, Харків, вул. Миколи
-                                                            <br> Хвильового (Маяковського), 24</a></p>
+                                                    <p><a class="text-gray-dark" href="#">@lang('frontend/contacts.blocks.address.full_address')
+                                                            <br> @lang('frontend/contacts.blocks.address.only_street') </a></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="offset-top-60">
-                                        <h6>OPENING hours</h6>
+                                        <h6>@lang('frontend/contacts.blocks.time_to_work.title')</h6>
                                         <hr class="text-subline">
                                         <div class="offset-top-20">
                                             <div class="unit flex-row unit-spacing-xxs p">
@@ -93,14 +95,14 @@
                                                     <div class="icon icon-xxs text-middle mdi mdi-calendar-clock text-primary"></div>
                                                 </div>
                                                 <div class="unit-body">
-                                                    <div>Пн-Сб: з 09-00 до 17-00</div>
+                                                    <div>@lang('frontend/contacts.blocks.time_to_work.value')</div>
 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="offset-top-60">
-                                        <h6>Phones</h6>
+                                        <h6> @lang('frontend/contacts.blocks.phones.title')</h6>
                                         <hr class="text-subline">
                                         <div class="offset-top-20">
                                             <div class="unit flex-row unit-spacing-xxs p">

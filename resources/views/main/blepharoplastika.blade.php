@@ -12,16 +12,16 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span>Блефаропластика в "Докарт"</span>
+                            <span>@lang('frontend/blefaroplastika.slider.slide_1.title')</span>
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span>Корекція верхніх і нижніх повік досвідченим пластичним хірургом. </span><br>
-                            <span style="font-size: 28px">Консультація лікаря - усього за 1грн</span>
+                            <span>@lang('frontend/blefaroplastika.slider.slide_1.description')</span><br>
+                            <span style="font-size: 28px">@lang('frontend/blefaroplastika.slider.slide_1.description1')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -32,17 +32,16 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Що таке блефаропластика?</span>
+                        <span>@lang('frontend/blefaroplastika.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Блефаропластика</span> - це малоінвазивний мікрохірургічний метод корекції вікових змін повік та періорбітальної зони.
-                        </p>
+                            <span class="text-section__strong">@lang('frontend/blefaroplastika.whatas.description_1_1')</span>@lang('frontend/blefaroplastika.whatas.description_1_2')
 
                         <p>
-                            <span class="text-section__strong">Під час застосування цього методу видаляються надлишки шкіри і жиру.</span>
-                            <span class="text-section__mark">Слідів такої операції практично непомітно,</span> оскільки процедура проводиться на рівні очних складок
+                            <span class="text-section__strong">@lang('frontend/blefaroplastika.whatas.description_1_3')</span>
+                            <span class="text-section__mark">@lang('frontend/blefaroplastika.whatas.description_1_4')</span> @lang('frontend/blefaroplastika.whatas.description_1_5')
                         </p>
                     </div>
                 </div>
@@ -52,7 +51,7 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Коли потрібна блефаропластика?</span>
+                    <span>@lang('frontend/blefaroplastika.when.title')</span>
                 </div>
 
                 <div class="advantage">
@@ -63,11 +62,11 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Омолодження погляду</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Якщо ви хочете омолодити свій погляд за рахунок зменшення вікових змін шкіри навколо очей.</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_1_2')</span>
                             </div>
                         </div>
 
@@ -77,11 +76,11 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Відкритий погляд</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Якщо у вас нависла верхня повіка і ви хочете зробити більш відкритий погляд.</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_2_2')</span>
                             </div>
                         </div>
 
@@ -91,11 +90,11 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Птоз</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>(опущення верхньої повіки) Опущена повіка може призвести до значного зниження зору.</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_3_2')</span>
                             </div>
                         </div>
 
@@ -105,11 +104,11 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Жирові грижі</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_4_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Щоб прибрати жирові грижі («мішки» під очима).</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_4_2')</span>
                             </div>
                         </div>
 
@@ -119,11 +118,11 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Опущена нижня повіка</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_5_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>При «опущенні нижньої повіки».</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_5_2')</span>
                             </div>
                         </div>
 
@@ -133,11 +132,11 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Корекція</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_6_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>З метою корекції асиметрії повік.</span>
+                                <span>@lang('frontend/blefaroplastika.when.slide_6_2')</span>
                             </div>
                         </div>
                     </div>
@@ -166,7 +165,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Консультація - всього за 1 грн.</span>
+                        <span>@lang('frontend/blefaroplastika.akcia.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
@@ -174,7 +173,7 @@
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.akcia.link')</button>
                     </div>
                 </div>
             </div>
@@ -188,7 +187,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо ви хочете омолодити свій погляд за рахунок зменшення вікових змін шкіри навколо очей.</span>
+                                <span>@lang('frontend/blefaroplastika.if.slide_1')</span>
                             </div>
                         </div>
 
@@ -198,7 +197,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо у вас нависла верхня повіка і ви хочете зробити більш відкритий погляд.</span>
+                                <span>@lang('frontend/blefaroplastika.if.slide_2')</span>
                             </div>
                         </div>
 
@@ -208,7 +207,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>(опущення верхньої повіки) Опущена повіка може призвести до значного зниження зору.</span>
+                                <span>@lang('frontend/blefaroplastika.if.slide_3')</span>
                             </div>
                         </div>
                     </div>
@@ -220,14 +219,14 @@
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">
-                        <span>Як відбувається процедура</span>
+                        <span>@lang('frontend/blefaroplastika.how.title')</span>
                     </div>
 
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація</span>
+                                    <span class="accordion-title__text"> @lang('frontend/blefaroplastika.how.items.item_1.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -240,7 +239,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Ви консультуєтеся з хірургом.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_1.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +248,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Огляд у фахівця</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_2.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -263,7 +262,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Здаєте всі необхідні аналізи і, за потреби, проходите огляд у додаткових фахівців. Все індивідуально.
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_2.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -272,7 +271,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Призначення дати операції</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_3.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -286,7 +285,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Лікар призначає дату операції та видає вам пам'ятку передопераційної підготовки з необхідними медикаментами. Обов'язково додержуйтеся інформації в пам'ятці тому, що підготовка впливає на результат.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -295,7 +294,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Передопераційна підготовка</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_4.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -309,7 +308,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>У призначений день вам проводять передопераційну підготовку (необхідну розмітку та анестезіологічний супровід) і саму операцію. Операція триває від 40 до 90 хвилин.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_4.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +317,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Спостереження</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_5.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -332,7 +331,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після операції протягом 1,5-2 годин ви залишаєтеся в клініці під наглядом лікаря.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_5.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +340,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Пам'ятка післяопераційного догляду</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_6.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -355,7 +354,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Вам видадуть пам'ятку післяопераційного догляду й необхідні медикаменти. Для швидкого загоєння і кращого результату потрібно чітко дотримуватися всіх рекомендацій.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_6.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +363,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація хірурга</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_7.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -378,7 +377,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Наступного дня після операції наш хірург перевіряє ваш стан і консультує online.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_7.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +386,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Зняття швів</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_8.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -401,7 +400,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>На 5-7 день після операції вам знімуть шви.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_8.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -410,7 +409,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Остаточне загоєння</span>
+                                    <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_9.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -424,7 +423,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після цього йде період остаточного загоєння і наступна консультація через 7-14 днів.</p>
+                                        <p>@lang('frontend/blefaroplastika.how.items.item_9.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -441,15 +440,14 @@
                             </span>
 
                         <div class="attention-main__text">
-                            <p>Кожен етап може трохи відрізнятися за часом, оскільки все індивідуально і залежить від ваших особливостей. Лікар враховує саме вашу ситуацію під час огляду, лікування та відновлення. Завдяки персоналізованим, а не «шаблонним» методам ви можете бути впевнені в результаті.
-                            </p>
+                            <p>@lang('frontend/blefaroplastika.how.alert')</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        --<div class="section-main">
+        <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
                     <span>Спеціаліст</span>

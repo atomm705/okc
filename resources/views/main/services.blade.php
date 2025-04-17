@@ -8,10 +8,11 @@
             <h2 class="breadcrumbs-custom-title">Services</h2>
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">Home</a></li>
-                <li class="active"><a href="{{ route('main.services') }}">Services</a></li>
+                <li><a href="{{ route('main.services') }}">Services</a></li>
             </ul>
         </div>
     </section>
+
     <section class="section-lg section bg-default">
         <div class="container">
             <div class="row isotope-wrap">

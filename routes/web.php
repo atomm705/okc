@@ -55,6 +55,7 @@ Route::middleware(SetLocale::class)->group(function () {
             return view('main.doctor-profile');
         })->name('main.doctor.profile');
 
+
         Route::get('/prices', function () {
             return view('main.prices', ['category' => null]);
         })->name('main.prices');
@@ -62,7 +63,6 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/prices/{category}', function ($category) {
             return view('main.prices', compact('category'));
         })->name('prices.category');
-
     })->where('locale', 'en|uk|ru');
 });
 

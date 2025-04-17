@@ -8,6 +8,10 @@
             ['slug' => 'james-wilson', 'name' => 'Dr. James Wilson', 'image' => 'images/our-team-09-384x410.jpg', 'speciality' => __('messages.Radiology Technician')],
         ];
     @endphp
+
+
+
+
         <section class="section swiper-container swiper-slider " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center ">
                 <div class="swiper-slide " id="page-loader" data-slide-bg="images/bg-1.webp">
@@ -271,12 +275,12 @@
     </section>
 
     <!-- Our Team-->
-    <section class="section section-md p-xl-0">
+  <!--  <section class="section section-md p-xl-0">
         <div class="container-fluid p-0">
-            <div class="justify-content-sm-center row-30 row g-0">
+            <div class="justify-content-sm-center row-30 row g-0">-->
             @foreach ($doctors as $doctor)
                 <!-- Thumbnail Josip -->
-                    <figure class="thumbnail-josip thumbnail-big">
+                    <!--<figure class="thumbnail-josip thumbnail-big">
                         <a href="{{ route('main.doctor.profile', ['slug' => $doctor['slug']]) }}">
                             <img width="384" height="410" src="{{ asset($doctor['image']) }}" alt="{{ $doctor['name'] }}"/>
                         </a>
@@ -294,7 +298,7 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section class="section-lg bg-default section">
 
@@ -308,7 +312,7 @@
     <!-- testimonials-->
         <section class="section-lg bg-default-liac">
             <div class="container">
-                <h3 class="text-center">@lang('messages.Testimonials')</h3>
+                <h3 class="text-center">@lang('frontend/index.testimonials.title')</h3>
                 <div class="offset-top-66">
                     <div class="owl-carousel owl-carousel-default owl-carousel-class-light" data-loop="false" data-items="1" data-dots="true" data-mouse-drag="false" data-lg-items="2" data-nav="false" data-owl="{&quot;dots&quot;:true,&quot;nav&quot;:false,&quot;autoplayTimeout&quot;:3500}">
                         <div class="item">
@@ -393,28 +397,28 @@
                 <div class="container text-start">
                     <div class="row justify-content-sm-center justify-content-lg-start">
                         <div class="col-md-10 col-lg-8 col-xl-5">
-                            <h2><br class="d-none d-xl-inline-block">Професійне лікування катаракти</h2>
-                            <p class="offset-top-30 text-white">Якісно надаються послуги з лікування катаракти за максимально низькими цінами в нашому місті.</p>
-                            <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('messages.free consultation')</a></div>
+                            <h2 style=" white-space: nowrap;"> @lang('frontend/index.cataract.title')</h2>
+                            <p class="offset-top-30 text-white">@lang('frontend/index.cataract.description')</p>
+                            <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('frontend/index.cataract.link')</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- latest blog posts-->
-        <section class="section-98 section-sm-110">
+        <!--<section class="section-98 section-sm-110">
             <div class="container">
                 <h3 class="text-center text-lg-start">@lang('messages.Latest Blog Posts')</h3>
                 <div class="row justify-content-sm-center offset-top-60">
-                    <div class="col-md-8 col-lg-4">
+                    <div class="col-md-8 col-lg-4">-->
                         <!-- Post Modern-->
-                        <article class="post post-modern post-modern-classic">
-                            <!-- Post media-->
+                        <!--<article class="post post-modern post-modern-classic">
+
                             <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-13-370x250.jpg" alt=""/></a>
                             </div>
-                            <!-- Post content-->
+
                             <div class="post-content text-start">
-                                <!-- Post Title-->
+
                                 <div class="post-title offset-top-8">
                                     <h5 class="font-weight-bold"><a href="single-post.html">@lang('messages.Reasons to Visit a Breast Specialist')</a></h5>
                                 </div>
@@ -422,7 +426,7 @@
                                     <li>@lang('messages.June 21, 2023 at 8:12pm')</li>
                                     <li><a class="text-primary" href="blog-masonry.html">@lang('messages.News')</a></li>
                                 </ul>
-                                <!-- Post Body-->
+
                                 <div class="post-body">
                                     <p>@lang('messages.There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...')</p>
                                 </div>
@@ -432,14 +436,14 @@
                         </article>
                     </div>
                     <div class="col-md-8 col-lg-4 offset-top-50 offset-md-top-0">
-                        <!-- Post Modern-->
+
                         <article class="post post-modern post-modern-classic">
-                            <!-- Post media-->
+
                             <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-14-370x250.jpg" alt=""/></a>
                             </div>
-                            <!-- Post content-->
+
                             <div class="post-content text-start">
-                                <!-- Post Title-->
+
                                 <div class="post-title offset-top-8">
                                     <h5 class="font-weight-bold"><a href="single-post.html">@lang('messages.Picking the Right Diagnostic Services for Efficient Results')</a></h5>
                                 </div>
@@ -447,7 +451,7 @@
                                     <li>@lang('messages.June 21, 2023 at 8:12pm')</li>
                                     <li><a class="text-primary" href="blog-masonry.html">@lang('messages.News')</a></li>
                                 </ul>
-                                <!-- Post Body-->
+
                                 <div class="post-body">
                                     <p>@lang('messages.There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...')</p>
                                 </div>
@@ -457,14 +461,14 @@
                         </article>
                     </div>
                     <div class="col-md-8 col-lg-4 offset-top-50 offset-md-top-0">
-                        <!-- Post Modern-->
+
                         <article class="post post-modern post-modern-classic">
-                            <!-- Post media-->
+
                             <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-15-370x250.jpg" alt=""/></a>
                             </div>
-                            <!-- Post content-->
+
                             <div class="post-content text-start">
-                                <!-- Post Title-->
+
                                 <div class="post-title offset-top-8">
                                     <h5 class="font-weight-bold"><a href="single-post.html">@lang('messages.Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians')</a></h5>
                                 </div>
@@ -472,7 +476,7 @@
                                     <li>@lang('messages.June 21, 2023 at 8:12pm')</li>
                                     <li><a class="text-primary" href="blog-masonry.html">@lang('messages.News')</a></li>
                                 </ul>
-                                <!-- Post Body-->
+
                                 <div class="post-body">
                                     <p>@lang('messages.An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...')</p>
                                 </div>
@@ -484,14 +488,15 @@
                 </div>
                 <div class="offset-top-50 text-center text-lg-start"><a class="btn btn-ellipse btn-primary" href="blog-grid.html">@lang('messages.View all blog posts')</a></div>
             </div>
-        </section>
+        </section>-->
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container text-center defolt-div" ><!----> <!---->
 
             <a class="link-discount" style=" background-image: url('{{ asset('images/218bbe9c38ffa59b6e99bf94428e4293.webp') }}') ; "  href="single-post.html">
                <div  style=" padding-right:10px ; padding-left: 10px;">
 
-                   <p >Leave a feedback in Google <br>Get 10% discount for all consulting services</p>
+                   <p class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_1') </p>
+                   <p  class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_2')</p>
 
                </div>
 
