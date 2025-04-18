@@ -3,7 +3,7 @@
     <div class="container">
         <h2 class="breadcrumbs-custom-title">Clients</h2>
         <ul class="breadcrumbs-custom-path">
-            <li><a href="{{ route('main.index') }}">Home</a></li>
+            <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
             <li><a href="{{ route('main.testimonials') }}">Reviews</a></li>
 
         </ul>

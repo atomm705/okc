@@ -4,7 +4,7 @@
         <div class="container">
             <h2 class="breadcrumbs-custom-title">Make an Appointment</h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="{{ route('main.index') }}">Home</a></li>
+                <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a>Pages</a></li>
                 <li class="active"><a href="{{ route('main.appointment') }}">Make an Appointment</a></li>
             </ul>

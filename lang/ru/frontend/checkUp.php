@@ -253,7 +253,7 @@ return [
                 'description_6' => 'Цена - 4380 грн.',
             ],
             'item_9' => [
-                'title_1' => 'Пакет <span style="color:#F37110">Гинекологический расширеный чек-ап</span>',
+                'title_1' => '<span style="color:#F37110">Гинекологический расширеный чек-ап</span>',
                 'title_2' => '<span style="color:#F37110">6</span> <span style="color: #838583;">пакетов анализов</span> <span style="color:#F37110">2</span> <span style="color: #838583;">приема специалистов</span> <span style="color:#F37110">3</span> <span style="color: #838583;">метода диагностики</span> <span style="color:#F37110">2</span> <span style="color: #838583;">УЗИ</span>',
                 'description_1' => 'Консультация врачей:',
                 'description_2' => ' - гинеколог;',
@@ -288,7 +288,7 @@ return [
 		'specialist_6' => 'Даниленко Светлана Витальевна',
 		'specialist_7' => 'Витохина-Лесная Татьяна Петровна',
         'specialisation' => 'специализация',
-            'description' => [
+        'description' => [
                 'title_1' => 'Офтальмолог, врач высшей категории',
                 'title_2' => 'Уролог, Андролог, Сексолог, Венеролог, врач высшей категории',
                 'title_3' => 'Офтальмолог',
@@ -297,7 +297,7 @@ return [
                 'title_6' => 'Эндокринолог, врач 1 категории',
                 'title_7' => 'Акушер-гинеколог, врач высшей категории',
                 'link' => 'Подробнее о враче',
-            ],
+        ],
 	],
 
 	'sertificats' => [

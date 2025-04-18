@@ -1,10 +1,10 @@
 <x-app-layout>
     <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">Blog Modern</h2>
+            <h2 class="breadcrumbs-custom-title">@lang('global.pages.blog')</h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="{{ route('main.index') }}">Home</a></li>
-                <li><a href="{{ route('main.blog') }}">Blog</a></li>
+                <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
+                <li><a href="{{ route('main.blog') }}">@lang('global.pages.blog')</a></li>
 
             </ul>
         </div>

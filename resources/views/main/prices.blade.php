@@ -5,11 +5,12 @@
              data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
             <h2 class="breadcrumbs-custom-title">
-                {{ $category ? ucfirst(str_replace('-', ' ', $category)) : 'Prices' }}
+            @lang('global.pages.prices')
+               {{--{{ $category ? ucfirst(str_replace('-', ' ', $category)) : 'Prices' }} --}}
             </h2>
             <ul class="breadcrumbs-custom-path">
-                <li ><a href="{{ route('main.index') }}">Home</a></li>
-                <li class="active"><a  href="{{ route('main.index') }}">Prices</a></li>
+                <li ><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
+                <li class="active"><a  href="{{ route('main.index') }}">@lang('global.pages.prices')</a></li>
                 @if($category)
                     <li class="active">{{ ucfirst(str_replace('-', ' ', $category)) }}</li>
                 @else

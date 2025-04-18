@@ -5,10 +5,10 @@
     <!-- Breadcrumbs-->
     <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp ') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">Services</h2>
+            <h2 class="breadcrumbs-custom-title">@lang('global.pages.services')</h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="{{ route('main.index') }}">Home</a></li>
-                <li><a href="{{ route('main.services') }}">Services</a></li>
+                <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
+                <li><a href="{{ route('main.services') }}">@lang('global.pages.services')</a></li>
             </ul>
         </div>
     </section>

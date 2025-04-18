@@ -7,15 +7,15 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span style="color: #294481;">Check-UP в "Докарт"</span>
+                            <span style="color: #294481;">@lang('frontend/checkUp.slider.slide_1.title')</span>
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #294481">комплексне обстеження вашого організму</span>
+                            <span style="color: #294481">@lang('frontend/checkUp.slider.slide_1.description')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/checkUp.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -26,16 +26,16 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Що таке Check-UP</span>
+                        <span>@lang('frontend/checkUp.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Check-UP</span> - це перевірка всіх основних систем організму, що попереджує розвиток захворювань або виявлення на ранній стадії.
+                            <span class="text-section__strong">@lang('frontend/checkUp.whatas.description_1_1')</span> @lang('frontend/checkUp.whatas.description_1_2')
                         </p>
 
                         <p>
-                            <span class="text-section__strong">У ході Check-UP виявляються всі ризики для здоров'я, схильність до захворювань, складається план по відновленню організму.</span>
+                            <span class="text-section__strong">@lang('frontend/checkUp.whatas.description_1_3')</span>
                         </p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Кому потрібен Check-UP</span>
+                    <span>@lang('frontend/checkUp.when.title')</span>
                 </div>
 
                 <div class="advantage">
@@ -63,7 +63,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Захворювання НЕ входить до Вашіх планів</span>
+                                <span>@lang('frontend/checkUp.when.slide_1_1')</span>
                             </div>
 
                         </div>
@@ -74,7 +74,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Вважаєте себе здоровим і хочете бути в цьому впевнені</span>
+                                <span>@lang('frontend/checkUp.when.slide_2_1')</span>
                             </div>
 
                         </div>
@@ -85,7 +85,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Немає зайвого часу</span>
+                                <span>@lang('frontend/checkUp.when.slide_3_1')</span>
                             </div>
 
                         </div>
@@ -96,7 +96,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Відчуваєте хронічну втому</span>
+                                <span>@lang('frontend/checkUp.when.slide_4_1')</span>
                             </div>
 
                         </div>
@@ -107,7 +107,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Ви мешканець мегаполісу</span>
+                                <span>@lang('frontend/checkUp.when.slide_5_1')</span>
                             </div>
 
                         </div>
@@ -118,7 +118,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Хочете тримати своє тіло під контролем і своєчасно піклуватися про нього</span>
+                                <span>@lang('frontend/checkUp.when.slide_6_1')</span>
                             </div>
 
                         </div>
@@ -132,14 +132,14 @@
                 <div class="equipment">
                     <div class="page-box-sm">
                         <div class="title-section">
-                            <span>Як проходить сама процедура</span>
+                            <span>@lang('frontend/checkUp.how.title')</span>
                         </div>
 
                         <div class="accordion-list">
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Перший візит (як правило займаю 2,5-3 години)</span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.how.items.item_1.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -152,9 +152,9 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>1)  Здача всіх необхідних налізів</p>
-                                            <p>2)	Проходження всіх видів УЗД в залежності від пакету</p>
-                                            <p>3)	Прийом у спеціалістів в залежності від пакету</p>
+                                            <p>@lang('frontend/checkUp.how.items.item_1.description_1')</p>
+                                            <p>@lang('frontend/checkUp.how.items.item_1.description_2')</p>
+                                            <p>@lang('frontend/checkUp.how.items.item_1.description_3')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Другий візит(як правило планується через тиждень, займає 2,5-3 години)</span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.how.items.item_2.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -177,9 +177,9 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>1) Відвідуєте спеціалістів в залежності від пакету
-                                            <p>2) Повторні візити до спеціалістів за результатами аналізів
-                                            <p>3) ЕКГ та прийом терапевта, котрий разом з вами переглядає результати аналізів та надає подальші рекомендації.
+                                            <p>@lang('frontend/checkUp.how.items.item_2.description_1')</p>
+                                            <p>@lang('frontend/checkUp.how.items.item_2.description_2')</p>
+                                            <p>@lang('frontend/checkUp.how.items.item_2.description_3')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                             </span>
 
                             <div class="attention-main__text">
-                                <p>Кожен етап може трохи відрізнятися по часу, тому що все індивідуально в залежності від ваших особливостей. Лікар приймає до уваги саме вашу ситуацію при огляді, лікуванні та відновленню. Завдяки персоналізованим, а не "шаблонним" методам ви можеие бути впевнені в результаті.</p>
+                                <p>@lang('frontend/checkUp.how.alert')</p>
                             </div>
                         </div>
                     </div>
@@ -213,15 +213,15 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/checkUp.recording.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Оберіть Check-UP</span>
+                        <span>@lang('frontend/checkUp.recording.cost')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/checkUp.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -232,14 +232,14 @@
                 <div class="equipment">
                     <div class="page-box-sm">
                         <div class="title-section">
-                            <span>Виберіть свій Check-UP</span>
+                            <span>@lang('frontend/checkUp.variant.title')</span>
                         </div>
 
                         <div class="accordion-list">
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">Жіночий Onko</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_6.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -252,25 +252,25 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">3</span> <span style="color: #838583;">пакети аналізів</span> <span style="color:#F37110">3</span> <span style="color: #838583;">прийоми спеціалістів</span> <span style="color:#F37110">3</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">5</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_6.title_2') </p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - терапевт-кардіолог;</p>
-                                            <p> - ендоскопіст;</p>
-                                            <p> - гастроскопія (ЕФГДС), обстеження кішківника (колоноскопія, весь товстий кішківник);</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_6.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_6.description_2')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_6.description_4')</p>
                                             <p>&nbsp;</p>
-                                            <p> - УЗД діагностика (щитовидна залоза + доплерографія, органи черевної порожнин серце, органи малого тазу, молочні залози);</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - Оптимальний пакет аналізів (клінічний аналіз крові, повний розгорнутий біохімічний аналіз крові, феритин крові, онкомаркери (ПСА, РЕА, СЕА, СА19-9));</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_6')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_7')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_8')</p>
                                             <p>&nbsp;</p>
-                                            <p> Консультація лікаря з обговоренням результатів обстеження;</p>
-                                            <p> Письмовий висновок з результатами обстеження;</p>
-                                            <p> Рекомендації щодо лікування та дообстеження (при необхідності);</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_9')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_10')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_6.description_11')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 8800 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_6.description_12')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -279,7 +279,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">Чоловічий Onko</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_7.title_1') </span></span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -292,24 +292,24 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">4</span> <span style="color: #838583;">пакети аналізів</span> <span style="color:#F37110">3</span> <span style="color: #838583;">прийоми спеціалістів</span> <span style="color:#F37110">7</span> <span style="color: #838583;">методів діагностики</span> <span style="color:#F37110">5</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_7.title_2')</p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_7.description_1')</p>
                                             <p>&nbsp;</p>
-                                            <p> - УЗД діагностика (щитовидної залози + доплерографія, нирок, органів черевної порожнини, серця, урологічне обстеження, молочних залоз з регіонарними лімфовузлами);</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - гастроскопія (ЕФГДС);</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_7.description_6')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_7.description_7')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_7.description_8')</p>
                                             <p>&nbsp;</p>
-                                            <p> - обстеження кішківника (колоноскопія, весь товстий кішківник);</p>
-                                            <p> - анестезія (наркоз);</p>
-                                            <p> - оптимальний пакет аналізів (клінічний аналіз крові, повний розгорнутий біохімічний аналіз крові, феритин крові, онкомаркери (ПСА, РЕА, СЕА, СА19-9); гістологічний аналіз такні);</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_7.description_9')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_7.description_10')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_7.description_11')</p>
                                             <p>&nbsp;</p>
-                                            <p> Рекомендації щодо лікування та дообстеження (при необхідності);</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_7.description_12')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 9100 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_7.description_13')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -318,7 +318,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет жіночий <span style="color:#F37110">START</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_1.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -329,22 +329,22 @@
                                         </span>
                                     </div>
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color: #F37110;">7</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color: #F37110;">4</span> <span style="color: #838583;">прийомів спеціалістів</span> <span style="color: #F37110;">3</span> <span style="color: #838583;">методи діагностики</span> <span style="color: #F37110;">5</span> <span style="color: #838583;">УЗД</span></p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_1.title_2')</p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - терапевт;</p>
-                                            <p> - гінеколог;</p>
-                                            <p> - офтальмолог;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_2')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_4')</p>
                                             <p>&nbsp;</p>
-                                            <p> - УЗД діагностика (щитоподібна залоза, сечоидільна система, органи малого тазу, узд молочних залоз);</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - Оптимальний пакет аналізів (загальний аналіз сечі, загальний аналіз крові, печінкові проби, альфафетопротеїн, аналізи на паразитів, ТТГ, АТ ТПО)</p>
-                                            <p> - онкомаркери;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_5')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_6')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_7')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_8')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 9100 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_1.description_9')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +353,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет жіночий <span style="color:#F37110">STANDART</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_2.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -365,26 +365,26 @@
                                         </span>
                                     </div>
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color: #F37110;">11</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color: #F37110;">5</span> <span style="color: #838583;">прийомів спеціалістів</span> <span style="color: #F37110;">3</span> <span style="color: #838583;">методи діагностики <span style="color: #F37110;">5</span> УЗД</p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_2.title_2')</p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - терапевт;</p>
-                                            <p> - гінеколог;</p>
-                                            <p> - офтальмолог;</p>
-                                            <p> - гастроентеролог;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_2.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_2.description_2')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_2.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_2.description_4')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_2.description_5')</p>
                                             <p>&nbsp;</p>
-                                            <p> - УЗД діагностика (щитовидна залоза, сечовидільна система, органи малого тазу, узі молочних залоз);</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - Оптимальний пакет аналізів (загальний аналіз сечі, загальний аналіз крові, печінкові проби, альфафетопротеїн, аналізи на паразитів, ТТГ, АТ ТПО)</p>
-                                            <p> - онкомаркери;</p>
-                                            <p> - перевіряємо наявність в організмі хелікобактер пилори ( Helicobacter pylori)</p>
-                                            <p> - Виявляємо схильність до захворювань органів ШКТ або їх наявність;</p>
-                                            <p> - Визначення захворювань пов'язаних в анамнезі з порізами на шкірі, контактом з інфікованою кров'ю (вірус гепатиту В і С, ВІЛ та інші);</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_2.description_6')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_2.description_7')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_2.description_8')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_2.description_9')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_2.description_10')</p>
+                                            <p>  @lang('frontend/checkUp.variant.items.item_2.description_11')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_2.description_12')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 10500 грн.</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_2.description_13')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -393,45 +393,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет чоловічий <span style="color:#F37110">START</span></span>
-
-                                        <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-
-                                    <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">11</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color:#F37110">4</span> <span style="color: #838583;">прийома спеціалістів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">4</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
-                                    </div>
-
-                                    <div class="accordion-descr" data-box-dropdown>
-                                        <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - терапевт;</p>
-                                            <p> - уролог;</p>
-                                            <p> - офтальмолог;</p>
-                                            <p>&nbsp;</p>
-                                            <p> - УЗД діагностика (щитовидна залоза, сечовидільна система, органи малого тазу, органи черевної порожнини);</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - Мікроскопія секрету простати;</p>
-                                            <p> - Оптимальний пакет аналізів (загальний аналіз сечі, загальний аналіз крові, печінкові проби, альфафетопротеїн, аналізи на паразитів, ТТГ, АТ ТПО);</p>
-                                            <p> - онкомаркери;</p>
-                                            <p>&nbsp;</p>
-                                            <p>Ціна - 9100 грн.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-list-item">
-                                <div class="accordion-list-item__inner">
-                                    <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет чоловічий <span style="color:#F37110">STANDART</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_3.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -444,27 +406,23 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">12</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color:#F37110">5</span> <span style="color: #838583;">прийомів спеціалістів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">5</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_3.title_2')</p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - терапевт;</p>
-                                            <p> - уролог;</p>
-                                            <p> - офтальмолог;</p>
-                                            <p> - гастроентеролог;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_2')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_4')</p>
                                             <p>&nbsp;</p>
-                                            <p> - УЗД діагностика (щитовидна залоза, сечовидільна система, органи малого тазу, органи черевної порожнини);</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - Мікроскопія секрету простати;</p>
-                                            <p> - оптимальний пакет аналізів (загальний аналіз сечі, загальний аналіз крові, печінкові проби, альфафетопротеїн, аналізи на паразитів, ТТГ, АТ ТПО, Т4 віч, Т3 віч, перевіряємо наявність в організмі хелікобактер пилори (Helicobacter pylori);</p>
-                                            <p> - Виявляємо схильність до захворювань органів ШКТ або їх наявність;</p>
-                                            <p> - Визначення захворювань пов'язаних в анамнезі з порізами на шкірі, контактом з інфікованою кров'ю (вірус гепатиту В і С та інші);</p>
-                                            <p> - Визначення норми гормонального фону, з метою попередження розвитку еректильної дисфункції;</p>
-                                            <p> - онкомаркери;</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_3.description_5')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_6')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_3.description_7')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_3.description_8')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_9')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 10550 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_3.description_10')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -473,7 +431,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">CHECK-UP Базовий</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_4.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -486,25 +444,36 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">5</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">прийоми спеціалістів</span> <span style="color:#F37110">4</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">3</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_4.title_2')</p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p> - Лікар терапевт;</p>
-                                            <p> - ЕКГ;</p>
-                                            <p> - УЗД діагностика (УЗД серця + доплерографія; УЗД судин шиї)</p>
-                                            <p> - Оптимальний пакет аналізів (клінічний аналіз крові, повний розгорнутий біохімічний аналіз крові, білірубін, глікований гемоглобін, холестерин, тригліцериди, креатинін, ТТГ, феритин);</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_1')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_4.description_2')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_4')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_4.description_5')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 4380 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_6')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_7')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_4.description_8')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_4.description_9')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_10')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_4.description_11')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_12')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_4.description_13')</p>
+                                            <p>&nbsp;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_4.description_14')</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">Гінекологічний базовий</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_8.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -517,21 +486,52 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">2</span> <span style="color: #838583;">пакети аналізів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">прийоми спеціалістів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">2</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_8.title_2')               </p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - гінеколог;</p>
-                                            <p> - УЗД діагностика (молочних залоз + доплерографія, органів малого тазу);</p>
-                                            <p> - Оптимальний пакет аналізів (вірус папіломи, 14 типів ВКР, якісне визначення з генотипуванням, рідина цитології ПАП-тест);</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_8.description_1')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_8.description_2')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_8.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_8.description_4')</p>
+                                            <p>&nbsp;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_8.description_6')</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-list-item">
+                                <div class="accordion-list-item__inner">
+                                    <div class="accordion-title" data-button>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_5.title_1')</span></span>
+
+                                        <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="accordion-title">
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_5.title_2')   </p>
+                                    </div>
+
+                                    <div class="accordion-descr" data-box-dropdown>
+                                        <div class="accordion-descr__inner" data-box-inner>
+                                            <p>@lang('frontend/checkUp.variant.items.item_5.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_5.description_2')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_5.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_5.description_4')</p>
                                             <p>&nbsp;</p>
                                             <p></p>
                                             <p></p>
                                             <p></p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 2800 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_5.description_9')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -539,7 +539,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">Гінекологічний розширений чек-ап</span></span>
+                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">@lang('frontend/checkUp.variant.items.item_9.title_1')</span></span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -552,19 +552,19 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">6</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">прийоми спеціалістів</span> <span style="color:#F37110">3</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">2</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_9.title_2')</p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - гінеколог;</p>
-                                            <p> - УЗД діагностика (молочних залоз + доплерографія, органів малого тазу);</p>
-                                            <p> - Оптимальний пакет аналізів (ПЛР, рідина цитологія ПАП-тест, гепатит В, гепатит С, сифіліс);</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_9.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_9.description_2')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_9.description_3')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_9.description_4')</p>
                                             <p></p>
-                                            <p> Складання персоналізованої схеми відновлення (за потреби);</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_9.description_6')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 5900 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_9.description_7')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -572,7 +572,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Пакет <span style="color:#F37110">Гінекологічний після незахищеного статевого акту</span></span>
+                                        <span class="accordion-title__text">@lang('frontend/checkUp.variant.items.item_10.title_1')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -585,19 +585,19 @@
                                     </div>
 
                                     <div class="accordion-title">
-                                        <p class="accordion-descr__inner" style="font-size: 14px"><span style="color:#F37110">6</span> <span style="color: #838583;">пакетів аналізів</span> <span style="color:#F37110">2</span> <span style="color: #838583;">прийоми спеціалістів</span> <span style="color:#F37110">3</span> <span style="color: #838583;">методи діагностики</span> <span style="color:#F37110">2</span> <span style="color: #838583;">УЗД</span></p>                                      </p>
+                                        <p class="accordion-descr__inner" style="font-size: 14px">@lang('frontend/checkUp.variant.items.item_10.title_2')                                    </p>
                                     </div>
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Консультація лікарів:</p>
-                                            <p> - гінеколог;</p>
-                                            <p> - Оптимальний пакет аналізів (ПЛР, гепатит В, гепатит С, сифіліс;</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_10.description_1')</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_10.description_2')</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_10.description_3')</p>
                                             <p></p>
                                             <p></p>
-                                            <p> Складання персоналізованої схеми відновлення (за потреби);</p>
+                                            <p> @lang('frontend/checkUp.variant.items.item_10.description_6')</p>
                                             <p>&nbsp;</p>
-                                            <p>Ціна - 3750 грн.</p>
+                                            <p>@lang('frontend/checkUp.variant.items.item_10.description_7')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -615,15 +615,15 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/checkUp.recording.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Оберіть Check-UP</span>
+                        <span>@lang('frontend/checkUp.recording.cost')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button href="#resultRecall_1" class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button href="#resultRecall_1" class="open-modal button-main button-main_orange">@lang('frontend/checkUp.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -632,7 +632,7 @@
         <div class="section-main section-main_m-n section-main_video">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Специалисты</span>
+                    <span>@lang('frontend/checkUp.specialist.title')</span>
                 </div>
                 <div class="slider-main wr-slider-video">
                     <div class="slider-video swiper-container">
@@ -642,21 +642,21 @@
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
-                                            <span>Цівенко Вікторія Миколаївна</span>
+                                            <span>@lang('frontend/checkUp.specialist.specialist_5')</span>
                                         </div>
 
                                         <div class="specialist-specialization">
                                             <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
+                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
                                             </div>
 
                                             <div class="specialist-specialization-title">
-                                                <span>Терапевт - кардіолог, лікар вищої категорії</span>
+                                                <span>@lang('frontend/checkUp.specialist.description.title_5') </span>
                                             </div>
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/tsivenko-viktoriya-nikolaevna">Детальніше про лікаря</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/tsivenko-viktoriya-nikolaevna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -684,21 +684,21 @@
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
-                                            <span>Михеев Эдуард Александрович</span>
+                                            <span>@lang('frontend/checkUp.specialist.specialist_2')</span>
                                         </div>
 
                                         <div class="specialist-specialization">
                                             <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
+                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
                                             </div>
 
                                             <div class="specialist-specialization-title">
-                                                <span>Уролог, Андролог, Сексолог, Венеролог, врач высшей категории</span>
+                                                <span>@lang('frontend/checkUp.specialist.description.title_2') </span>
                                             </div>
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/mikheev-eduard-aleksandrovich">Детальніше про лікаря</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/mikheev-eduard-aleksandrovich">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -726,21 +726,21 @@
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
-                                            <span>Вітохіна-Лісна Тетяна Петрівна</span>
+                                            <span>@lang('frontend/checkUp.specialist.specialist_7')</span>
                                         </div>
 
                                         <div class="specialist-specialization">
                                             <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
+                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
                                             </div>
 
                                             <div class="specialist-specialization-title">
-                                                <span>Акушер-гінеколог, лікар вищої категорії</span>
+                                                <span>@lang('frontend/checkUp.specialist.description.title_7') </span>
                                             </div>
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/vitokhina-lesnaya-tatyana-petrovna">Детальніше про лікаря</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/vitokhina-lesnaya-tatyana-petrovna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -764,8 +764,8 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
-                                <!-- -->
+                            <!--<div class="swiper-slide">
+
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
@@ -805,28 +805,28 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- -->
-                            </div>
+
+                            </div>-->
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
-                                            <span>Погребняк Анна Александровна</span>
+                                            <span>@lang('frontend/checkUp.specialist.specialist_3')</span>
                                         </div>
 
                                         <div class="specialist-specialization">
                                             <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
+                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
                                             </div>
 
                                             <div class="specialist-specialization-title">
-                                                <span>Офтальмолог</span>
+                                                <span>@lang('frontend/checkUp.specialist.description.title_3') </span>
                                             </div>
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/pogrebnyak-anna-aleksandrovna">Детальніше про лікаря</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/pogrebnyak-anna-aleksandrovna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -854,21 +854,21 @@
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
-                                            <span>Трофімова Катерина Олександрівна</span>
+                                            <span>@lang('frontend/checkUp.specialist.specialist_4')</span>
                                         </div>
 
                                         <div class="specialist-specialization">
                                             <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
+                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
                                             </div>
 
                                             <div class="specialist-specialization-title">
-                                                <span>УЗ-Діагностик. лікар вищої категорії</span>
+                                                <span>@lang('frontend/checkUp.specialist.description.title_4') </span>
                                             </div>
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/trofimova-ekaterina-aleksandrovna">Детальніше про лікаря</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/trofimova-ekaterina-aleksandrovna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -896,21 +896,21 @@
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box">
                                         <div class="specialist-name">
-                                            <span>Даниленко Світлана Віталіївна</span>
+                                            <span>@lang('frontend/checkUp.specialist.specialist_6')</span>
                                         </div>
 
                                         <div class="specialist-specialization">
                                             <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
+                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
                                             </div>
 
                                             <div class="specialist-specialization-title">
-                                                <span>Ендокринолог, лікар 1 категорії</span>
+                                                <span>@lang('frontend/checkUp.specialist.description.title_6') </span>
                                             </div>
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/danilenko-svetlana-vitalevna">Детальніше про лікаря</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/danilenko-svetlana-vitalevna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -965,15 +965,15 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ГОТОВІ ВІДПОВІСТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ ТА ПЕРЕТЕЛЕФОНУВАТИ</span>
+                        <span>@lang('frontend/checkUp.consultation.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Залиште заявку на безкоштовну консультацію менеджера</span>
+                        <span>@lang('frontend/checkUp.consultation.description')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal-recall button-main button-main_orange">заявка на зворотній дзвінок</button>
+                        <button class="open-modal-recall button-main button-main_orange">@lang('frontend/checkUp.consultation.link')</button>
                     </div>
                 </div>
             </div>
@@ -982,7 +982,7 @@
         <div class="section-main section-main_m-n section-main_video">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Відеовідгук</span>
+                    <span>@lang('frontend/checkUp.reviews.video')</span>
                 </div>
 
                 <div class="slider-main wr-slider-video">

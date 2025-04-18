@@ -5,12 +5,12 @@
              data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
             <h2 class="breadcrumbs-custom-title">
-                Online medical information</h2>
+                @lang('global.pages.telemed')</h2>
             <ul class="breadcrumbs-custom-path">
-                <li><a href="{{ route('main.index') }}">Home</a></li>
+                <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li class="active">
                     <a href="{{ route('main.telemed') }}">
-                    Online medical information
+                        @lang('global.pages.telemed')
                     </a>
                 </li>
             </ul>

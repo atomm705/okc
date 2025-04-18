@@ -6,15 +6,15 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span><span style="color: #000">Ін'єкційна косметологія <br>в "Докарт"</span></span>
+                            @lang('frontend/injection.slider.slide_1.title')
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #000">Корекція зморшок, підйом куточків рота, збільшення губ, контурна пластика</span>
+                            <span style="color: #000">@lang('frontend/injection.slider.slide_1.description')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на консультацію</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/injection.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -25,12 +25,12 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span><span>Що таке ін'єкційна косметологія</span></span>
+                        @lang('frontend/injection.whatas.title')
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong"><span style="font-weight: normal"><span style="font-weight: bold">Ін'єкційна косметологія</span> - це омолоджують процедури без хірургічного втручання. Щоб шкіра набула бажаного вигляду, використовують різні препарати, які вводять у певні шари шкіри. </br><span style="font-weight: bold;">Усі процедури виконуються лікарями</span> з використанням ефективних та сертифікованих препаратів провідних світових виробників.</span>
+                            @lang('frontend/injection.whatas.description_1_1')
                         </p>
 
                     </div>
@@ -47,7 +47,7 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Коли потрібна ін'єкційна терапія</span>
+                    <span>  @lang('frontend/injection.when.title')</span>
                 </div>
 
                 <div class="advantage">
@@ -57,11 +57,11 @@
                                 <img src="/images/services/cosmetology/1.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Корекція міжбрівних зморшок</span>
+                                <span>@lang('frontend/injection.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Корекція горизонтальних зморшок чола. Корекція зморшок “гусячі лапки. Корекція "кролячих" зморшок</span>
+                                <span>@lang('frontend/injection.when.slide_1_2')</span>
                             </div>
                         </div>
 
@@ -70,11 +70,11 @@
                                 <img src="/images/services/cosmetology/2.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Підйом куточків рота</span>
+                                <span>@lang('frontend/injection.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Корекція глибоких та дрібних кисетних зморшок.</span>
+                                <span>@lang('frontend/injection.when.slide_2_2')</span>
                             </div>
                         </div>
 
@@ -83,11 +83,11 @@
                                 <img src="/images/services/cosmetology/3.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Усунення носогубної складки</span>
+                                <span>@lang('frontend/injection.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Швидке розгладжування носогубних складок, покращення контурів обличчя.</span>
+                                <span>@lang('frontend/injection.when.slide_3_2')</span>
                             </div>
                         </div>
 
@@ -96,11 +96,11 @@
                                 <img src="/images/services/cosmetology/4.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Омолодження зони навколо очей</span>
+                                <span>@lang('frontend/injection.when.slide_4_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Усунення "гусячих лапок", поверхневих та глибоких зморшок. Зменшення набряклості та звільнення від темних кіл під очима. Зволоження шкіри та покращення її кольору.</span>
+                                <span>@lang('frontend/injection.when.slide_4_2')</span>
                             </div>
                         </div>
 
@@ -109,11 +109,11 @@
                                 <img src="/images/services/cosmetology/5.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Корекція форми та об'єму губ</span>
+                                <span>@lang('frontend/injection.when.slide_5_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Надання губav бажаного зовнішнього вигляду. Терапія гіперкорекції гіалуронідазою.</span>
+                                <span>@lang('frontend/injection.when.slide_5_2')</span>
                             </div>
                         </div>
 
@@ -122,11 +122,11 @@
                                 <img src="/images/services/cosmetology/6.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Омолодження шиї та зони декольте</span>
+                                <span>@lang('frontend/injection.when.slide_6_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Усунення поперечних складок шиї (кільця Венери). Поліпшення рельєфу та кольору шкіри.</span>
+                                <span>@lang('frontend/injection.when.slide_6_2')</span>
                             </div>
                         </div>
 
@@ -135,11 +135,11 @@
                                 <img src="/images/services/cosmetology/7.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Контурная пластика подбородка, скул, углов нижней челюсти</span>
+                                <span>@lang('frontend/injection.when.slide_7_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Створення чіткого овалу обличчя, усунення асиметрії.</span>
+                                <span>@lang('frontend/injection.when.slide_7_2')</span>
                             </div>
                         </div>
 
@@ -148,11 +148,11 @@
                                 <img src="/images/services/cosmetology/8.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Лікування недоліків шкіри</span>
+                                <span>@lang('frontend/injection.when.slide_8_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Лікування розацеа, розширених пір, жирної шкіри голови.</span>
+                                <span>@lang('frontend/injection.when.slide_8_2')</span>
                             </div>
                         </div>
 
@@ -161,11 +161,11 @@
                                 <img src="/images/services/cosmetology/9.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Лікування рубців</span>
+                                <span>@lang('frontend/injection.when.slide_9_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Усунення невеликих рубців та розтяжок.</span>
+                                <span>@lang('frontend/injection.when.slide_9_2')</span>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                             </span>
 
                         <div class="attention-main__text">
-                            <p>Зверніть увагу на протипоказання – вагітність, період лактації, діабет, захворювання крові, онкопатології, гостре перебіг інших захворювань.</p>
+                            <p>@lang('frontend/injection.when.alert')</p>
                         </div>
                     </div>
 
@@ -195,7 +195,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо ви хочете омолодити обличчя за рахунок зменшення поверхневих та глибоких зморшок</span>
+                                <span>@lang('frontend/injection.if.slide_1')</span>
                             </div>
                         </div>
 
@@ -205,7 +205,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо ви хочете більш виразний овал обличчя або усунути асиметрію</span>
+                                <span>@lang('frontend/injection.if.slide_2')</span>
                             </div>
                         </div>
 
@@ -215,7 +215,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо ви хочете усунути недоліки шкіри та покращити її колір</span>
+                                <span>@lang('frontend/injection.if.slide_3')</span>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Запишіться на консультацію перед ін'єкційною терапією</span>
+                        <span>@lang('frontend/injection.akcia.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
@@ -239,7 +239,7 @@
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/injection.akcia.link')</button>
                     </div>
                 </div>
             </div>
@@ -248,14 +248,14 @@
                 <div class="advantage">
                     <div class="advantage-list advantage-list_white page-box-sm">
                         <div class="title-section" style="padding-top: 25px;margin-left:auto; margin-right: auto">
-                            <span>Як проходить процедура ін'єкційної терапії</span>
+                            <span>@lang('frontend/injection.how.title')</span>
                         </div>
 
                         <div class="accordion-list">
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Консультацsя</span>
+                                        <span class="accordion-title__text">@lang('frontend/injection.how.items.item_1.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -268,7 +268,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Ви проходите огляд у спеціаліста, який визначає ваші цілі.</p>
+                                            <p>@lang('frontend/injection.how.items.item_1.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +276,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Підготовчий процес до процедури.</span>
+                                        <span class="accordion-title__text">@lang('frontend/injection.how.items.item_2.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -289,7 +289,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Перед початком шкіру обробляють місцевим анестетиком, лікар розпочинає підготовку до процедури.</p>
+                                            <p>@lang('frontend/injection.how.items.item_2.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +297,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Процедура.</span>
+                                        <span class="accordion-title__text">@lang('frontend/injection.how.items.item_3.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -310,8 +310,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Лікар вводить препарат на невелику глибину під шкіру, щоб досягти потрібного ефекту. Тривалість процедури залежить від поставленого завдання. Після процедури фахівець дасть вам рекомендації щодо догляду за шкірою.
-                                                .</p>
+                                            <p>@lang('frontend/injection.how.items.item_3.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +325,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Фахівці</span>
+                        <span>@lang('frontend/injection.specialist.title')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -342,21 +341,21 @@
                                     </picture>
                                 </div>
                                 <div class="specialist-name">
-                                    <span>Салєнкова Олена Анатоліївна</span>
+                                    <span>@lang('frontend/injection.specialist_1.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/injection.specialist_1.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>косметологія, дерматологія і трихологія</span>
+                                        <span>@lang('frontend/injection.specialist_1.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">@lang('frontend/injection.specialist_1.description.link')</a>
                                 </div>
                             </div>
 
@@ -374,21 +373,21 @@
                                     </picture>
                                 </div>
                                 <div class="specialist-name">
-                                    <span>Хорунжа Любов Сергіївна</span>
+                                    <span>@lang('frontend/injection.specialist_2.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/injection.specialist_2.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>ксметологія, дерматовенерологія, трихологія</span>
+                                        <span>@lang('frontend/injection.specialist_2.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">@lang('frontend/injection.specialist_2.description.link')</a>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +404,7 @@
 
                 <div class="page-content" style="z-index: 6">
                     <div class="banner-section-title">
-                        <span style="color: #FFF">ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span style="color: #FFF">@lang('frontend/injection.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -413,7 +412,7 @@
                     </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/injection.recording.link')</button>
                     </div>
                 </div>
                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.4); z-index: 5"></div>
@@ -428,7 +427,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+                                <span>@lang('frontend/injection.recording.items.item_1.title')</span>
                             </div>
                         </div>
 
@@ -438,7 +437,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найпередовіше обладнання</span>
+                                <span>@lang('frontend/injection.recording.items.item_2.title')</span>
                             </div>
                         </div>
 
@@ -448,7 +447,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>На всіх етапах операції супроводжує лікар анестезіолог - є запорукою комфорту пацієнта</span>
+                                <span>@lang('frontend/injection.recording.items.item_3.title')/span>
                             </div>
                         </div>
                     </div>
@@ -463,7 +462,7 @@
 
             <div class="page-content">
                 <div class="banner-section-title">
-                    <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                    <span>@lang('frontend/injection.recording.title')</span>
                 </div>
 
                 <!--<div class="banner-section-subtitle">
@@ -471,7 +470,7 @@
                 </div>-->
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                    <button class="open-modal button-main button-main_orange">@lang('frontend/injection.recording.link')</button>
                 </div>
             </div>
         </div>
@@ -480,7 +479,7 @@
         <div class="section-main section-main_m-n section-main_video">
             <div class="page-content">
                 <div class="title-section">
-                    <span>часті питання</span>
+                    <span>@lang('frontend/injection.question.title')</span>
                 </div>
 
                 <div class="accordion-list">
@@ -540,15 +539,15 @@
 
             <div class="page-content before-foter-position">
                 <div class="banner-section-title">
-                    <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
+                    <span>@lang('frontend/injection.consultation.title')</span>
                 </div>
 
                 <div class="banner-section-subtitle">
-                    <span>Залишіть заявку на безкоштовну консультацію менеджера</span>
+                    <span>@lang('frontend/injection.consultation.description')</span>
                 </div>
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal-recall button-main button-main_orange">заявка на зворотний дзвінок</button>
+                    <button class="open-modal-recall button-main button-main_orange">@lang('frontend/injection.consultation.link')</button>
                 </div>
             </div>
         </div>

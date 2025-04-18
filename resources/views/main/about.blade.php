@@ -4,16 +4,16 @@
         <section class="breadcrumbs-custom bg-image context-dark slider-page"  style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
 
                 <div class="container " >
-                    <h2 class="breadcrumbs-custom-title">About</h2>
+                    <h2 class="breadcrumbs-custom-title">@lang('global.pages.about')</h2>
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="{{ route('main.index') }}">Home</a></li>
-                        <li class="active"><a href="{{ route('main.about') }}">About</a></li>
+                        <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
+                        <li class="active"><a href="{{ route('main.about') }}">@lang('global.pages.about')</a></li>
                     </ul>
                 </div>
 
         </section>
         <!-- a few words about us-->
-        <section class="section-lg bg-default text-start section">
+        <!--<section class="section-lg bg-default text-start section">
             <div class="container">
                 <div class="row justify-content-sm-center row-30">
                     <div class="col-sm-10 col-lg-8">
@@ -44,9 +44,46 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
+    <section class="section-lg ">
+        <div class="container ">
+
+            <div ><h3 style="font-size: 2.60em; margin-top: 0px; " class="text-left">@lang('frontend/about.article.title')</h3>
+                <p class="text-left">@lang('frontend/about.article.texts.text_1')</p>
+
+                <p class="text-left">@lang('frontend/about.article.texts.text_2')</p>
+                <p class="text-left">@lang('frontend/about.article.texts.text_3')</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section-lg ">
+        <div class="container ">
+
+            <div ><h3 style="font-size: 2.60em; margin-top: 0px; margin-bottom: 33px; " class="text-center">@lang('frontend/about.mission.title') </h3>
+                <p class="text-left">@lang('frontend/about.mission.texts.text_1')</p>
+
+                <ul class="list-marked" style="text-align: left;">
+                    <li>@lang('frontend/about.mission.list.item_1')</li>
+                    <li>@lang('frontend/about.mission.list.item_2')</li>
+                    <li>@lang('frontend/about.mission.list.item_3')</li>
+
+                </ul>
+
+                <p class="text-left">@lang('frontend/about.mission.texts.text_2')</p>
+
+
+            </div>
+        </div>
+
+    </section>
         <!-- Our Achievements-->
-        <section class="text-md-start bg-default-liac section">
+       <!-- <section class="text-md-start bg-default-liac section">
             <div class="container-wide container">
                 <div class="row justify-content-sm-center">
                     <div class="col-xl-5 col-xxl-4 section-90 section-md-122 context-md-dark bg-image-md-fullwidth-1 bg-image-md-fullwidth-1-left d-none d-xl-block"></div>
@@ -58,7 +95,7 @@
                                     <div class="col-lg-12 col-xxl-9">
                                         <div class="row row-50">
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
+
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default mdi mdi-trophy-variant"></span></div>
                                                     <div class="unit-body">
@@ -68,7 +105,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
+
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default  mdi mdi-pill copy"></span></div>
                                                     <div class="unit-body">
@@ -78,7 +115,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
+
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default  mdi mdi-school"></span></div>
                                                     <div class="unit-body">
@@ -88,7 +125,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <!-- Icon Box Type 2-->
+
                                                 <div class="unit unit-sm flex-md-row unit-spacing-sm text-md-start align-items-center unit-middle">
                                                     <div class="unit-left"><span class="icon icon icon-sm icon-circle text-primary icon-default  mdi mdi-star"></span></div>
                                                     <div class="unit-body">
@@ -105,14 +142,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Our team-->
-        <section class="section-lg section bg-default">
+       <!-- <section class="section-lg section bg-default">
             <div class="container">
                 <h3 class="text-center">Our team</h3>
                 <div class="row justify-content-sm-center row-40">
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src=" {{ asset('images/our-team-08-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Scott Riley</h5>
@@ -122,7 +159,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-02-270x270.jpg') }} " alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Martha Schmidt</h5>
@@ -132,7 +169,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-03-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Sam McMillan</h5>
@@ -142,7 +179,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-04-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Mary Smith</h5>
@@ -152,7 +189,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-05-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Jane Fowler</h5>
@@ -162,7 +199,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-06-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Eric Snyder</h5>
@@ -172,7 +209,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip odd"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-07-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. Kate Hudson</h5>
@@ -182,7 +219,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
-                        <!-- Thumbnail Josip-->
+
                         <figure class="thumbnail-josip"><a href="team-member.html"><img width="270" height="270" src="{{ asset('images/our-team-01-270x270.jpg') }}" alt=""/></a>
                             <div class="thumbnail-desc">
                                 <h5 class="thumbnail-josip-title text-medium text-white">Dr. James Wilson</h5>
@@ -193,9 +230,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- testimonials-->
-        <section class="section-lg section bg-default-liac">
+        <!--<section class="section-lg section bg-default-liac">
             <div class="container">
                 <h3 class="text-center">Testimonials</h3>
                 <div class="offset-top-66">
@@ -365,7 +402,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
 
 
