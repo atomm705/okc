@@ -1,16 +1,818 @@
-<x-app-layout>
-    <section class="section swiper-container swiper-slider " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
-        <div class="swiper-wrapper text-center ">
-            <div class="swiper-slide " id="page-loader" data-slide-bg="/images/1549d8b2f585416ee85313fc51e63ef3.webp">
-                <div class="swiper-caption">
-                    <div class="swiper-slide-caption slider-fade">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="inset-xl-right-80 text-lg-start ">
-                                        <h2>@lang('messages.Take Care of')<br class="d-block"> @lang('messages.Your Health')
-                                        </h2>
-                                        <h5 class="d-none d-lg-block mw-400">@lang('messages.At Medina, we are dedicated to diagnosing all kinds of diseases.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}">@lang('messages.make an appointment')</a>
+
+<!DOCTYPE html>
+<html lang="uk" class="page-liposaktsiya page-header-not-margin">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="csrf-token" content="z5IhmV3naNZFJ2EFI25iCK2IDvqOeDSpyxbGQQ2x">
+    <meta name="date" content="2025 Apr 21">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Ліпосакція та Ліпоскульптурування в «Докарт» На сучасному обладнанні VASER. Приватна клініка в Харкове.</title><meta name="description" content="Ліпосакція та Ліпоскульптурування в «Докарт». Тепер у нас в центрі ви можете зробити ліпосакцію та ліпоскульптурування...."><meta name="keywords" content="Докарт, Харків, блефаропластика, офтальмологія, офтальмолог, лазерна корекція зору, лазерна корекція, лікування катаракти, підбір окулярів, гінекологія, гінеколог, урологія, урологб ліпосакція, ліпоскульптурування">
+    <meta property="og:title" content="Ліпосакція та Ліпоскульптурування в «Докарт» На сучасному обладнанні VASER. Приватна клініка в Харкове." /><meta property="og:description" content="Ліпосакція та Ліпоскульптурування в «Докарт». Тепер у нас в центрі ви можете зробити ліпосакцію та ліпоскульптурування...." />
+
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
+
+    <sсript src="https://www.googletagmanager.com/gtag/js?id=UA-102428787-1"></sсript>
+    <sсript>
+        <template>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+            dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+            gtag('config', 'UA-102428787-1');
+        </template>
+    </sсript>
+    <sсript>
+        <template>
+            (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-MZ368BN');
+        </template>
+    </sсript>
+    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
+    <link rel="preload" href="/assets/css/frontend/pages/services/services.css?3.0.15" as="style">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/swiper.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/custom.css') }}">
+    <link rel="preload" href="/assets/js/frontend/pages/services/services.js?3.0.15" as="script">
+
+    <!-- Facebook Pixel Code -->
+
+
+</head>
+<body class="">
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ368BN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<div id="loading" style="color: #eee;">Загрузка сайта. Подождите пожалуйста.</div>
+<div class="app" id="app">
+
+    <main class="body-main">
+        <div class="section-main">
+            <div class="banner-main"
+                 style="background-image: url('/assets/images/services/liposaktsiya/banner.jpg');">
+                <div class="page-content">
+                    <div class="banner-main-hold">
+                        <div class="banner-main-title margin--50">
+                            <span class="text-shadow-primary text-primary">Ліпосакція та Ліпоскульптурування в «Докарт». На сучасному обладнанні VASER</span>
+                        </div>
+
+                        <div class="banner-main-subtitle full-width-custom">
+                            <span class="text-primary">Vaser Lipo – найефективніша система ультразвукової ліпосакції доступна Вам вже сьогодні</span>
+                            <span style="font-size: 28px; margin-top: 20px" class="text-primary">Консультація лікаря - усього за 1грн</span>
+                        </div>
+
+                        <div class="wr-banner-main-button">
+                            <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main">
+            <div class="page-content">
+                <div class="box-info">
+                    <div class="title-section">
+                        <span>Що таке ліпосакція?</span>
+                    </div>
+
+                    <div class="text-section">
+                        <p>
+                            <span class="text-section__strong">Ліпосакція </span>  - це хірургічна процедура, яка дозволяє видалити локальні жирові відкладення з різних ділянок тіла, таких як живіт, стегна, сідниці, боки, руки, підборіддя.
+                        </p>
+
+                        <p>
+                            <span class="text-section__strong">Основною метою є корекція контурів тіла.</span>
+                            <span class="text-section__mark"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main">
+            <div class="page-content">
+                <div class="box-info">
+                    <div class="title-section">
+                        <span>Переваги ліпосакції в "Докарт"</span>
+                    </div>
+
+                    <div class="text-section">
+                        <span class="text-section__strong">В стінах нашої клініки ми використовуємо надсучасний апарат Vaser Lipo.</span>
+                        <p class="text-section__strong"> Унікальний ультразвуковий режим подрібнює жир залишаючи інші тканини неушкодженими.</p>
+
+                        <p>
+                            <span class="text-section__strong">Як наслідок:</span>
+                        </p>
+                        <ul>
+                            <li><span> - Менша травматизація зони ліпосакції;</span></li>
+                            <li><span> - Відсутність набряків, синців, та бугристості після операції;</span></li>
+                            <li><span> - Швидкий період реабілітації;</span></li>
+                            <li><span> - Видалення жиру + підтяжка шкіри одночасно, на відміну від класичної ліпосакції</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main when-needed">
+            <div class="page-content">
+                <div class="title-section">
+                    <span>Коли потрібна ліпосакція:</span>
+                </div>
+
+                <div class="advantage">
+                    <div class="advantage-list">
+                        <div class="advantage-card">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/1.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-title">
+                                <span>Жирові пастки на:</span>
+                            </div>
+
+                            <div class="advantage-card-descr">
+                                <span>талії, руках, ногах(передня і/або задня поверхня стегна, і/або "вушка" та коліна, спина, холка)</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/2.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-title">
+                                <span>Ліпосакція обличчя</span>
+                            </div>
+
+                            <div class="advantage-card-descr">
+                                <span>2-ге підборіддя</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/3.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-title">
+                                <span>Ліпосакція 360</span>
+                            </div>
+
+                            <div class="advantage-card-descr">
+                                <span>Живіт, бока, спина</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/4.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-title">
+                                <span>Ліпоскульптуринг</span>
+                            </div>
+
+                            <div class="advantage-card-descr">
+                                <span>"Бразильські сідниці", "6 кубиків пресу"</span>
+                            </div>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/5.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-title">
+                                <span>Гінекомастія</span>
+                            </div>
+
+                            <div class="advantage-card-descr">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/6.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-title">
+                                <span>Комбінація ліпосакції з абдомінопластикою</span>
+                            </div>
+
+                            <div class="advantage-card-descr">
+                                <span>твій шлях до ідеального тіла</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main section-main-first">
+            <div class="page-content" style="display: flex; justify-content: center">
+                <div id="video_youtube" class="align-center"></div>
+                <script>
+                    if(screen.width > '767'){
+                        document.getElementById("video_youtube").innerHTML = '<iframe width="482" height="857" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+                    }
+                    if(screen.width < '768'){
+                        document.getElementById("video_youtube").innerHTML = '<iframe width="420" height="750" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="section-main section-main_first">
+            <div class="banner-section banner-section_top" id="banner-section-1">
+                <div class="banner-section-bg">
+                    <img src="/assets/images/60c7c9c66be72f8fbcdac32f0a3a99c6.webp" alt="bg"/>
+                    <div class="overlay-custom"></div>
+                </div>
+
+                <div class="page-content">
+                    <div class="banner-section-title">
+                        <span>Консультація - всього за 1 грн.</span>
+                    </div>
+
+                    <div class="banner-section-subtitle">
+                        <span> <br><span class="text-strong"></span></span>
+                    </div>
+
+                    <div class="wr-banner-section-button">
+                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="advantage">
+                    <div class="advantage-list advantage-list_white">
+                        <div class="advantage-card advantage-card-custom advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Сучасне обладнання яке має сертификат FDA та використовується у найвідоміших клініках світу.</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card advantage-card-custom advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Сучасне обладнання яке має сертификат FDA та використовується у найвідоміших клініках світу.</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card advantage-card-custom advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Висококваліфіковані лікарі з багаторічним досвідом роботи</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card advantage-card-custom advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Ідеальні контури тіла без рубців та швидка реабілітація</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main section-main_second  section-main_change-mob">
+            <div class="page-content">
+                <div class="page-box-sm">
+                    <div class="title-section">
+                        <span>Як відбувається процедура</span>
+                    </div>
+
+                    <div class="accordion-list">
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Консультація</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="0" width="2" height="16" fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Ви консультуєтесь з хірургом з приводу питань, які вас цікавлять. Отримаєте вичерпні відповіді і індивідуальний розбір вашої ситуації.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Огляд у фахівця</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Здаєте всі необхідні аналізи і, за потреби, проходите огляд у додаткових фахівців. Все індивідуально.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Призначення дати операції</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Лікар призначає дату операції і дає вам пам'ятку передопераційної підготовки з необхідними медикаментами. Обов'язково дотримуйтеся інформації в пам'ятці, оскільки якість підготовки впливає на результат.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">День операції</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>У призначений день вам проводять передопераційну підготовку (необхідну розмітку та анестезіологічний супровід) і саму операцію.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Спостереження в медичному центрі</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Після операції вас переводять в палату, де ви відпочиваєте та отримуєте подальший супровід. На наступний день, вас виписують. Зауважимо, що все індивідуально, і в залежності від складності випадку та загального стану здоров'я пацієнта можливий варіант подовженого перебування в медичному центрі ще на 1 добу</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Пам'ятка післяопераційного догляду</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Вам видадуть пам'ятку післяопераційного догляду й необхідні медикаменти. Для швидкого загоєння і кращого результату потрібно чітко дотримуватися всіх рекомендацій.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Консультація хірурга</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Перед випискою з медичного центру вас обов'язково ще раз консультує хірург</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">Післяопераційний період</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>Через тиждень ви приходите в медичний центр для контрольного огляду хірургом. Він оглядає вас для контролю процесу загоєння та надає додаткові рекомендації, якщо вони потрібні</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attention-main">
+                            <span class="attention-main__ico">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.3911 22.5353L18.7818 3.00376C17.981 1.65576 16.5668 0.850677 14.9989 0.850677C13.4309 0.850677 12.0167 1.65576 11.2159 3.00376C11.2099 3.01408 11.2048 3.02439 11.1988 3.0347L0.624693 22.5044C-0.193217 23.8808 -0.208686 25.5338 0.582564 26.9257C1.37563 28.3184 2.80438 29.1492 4.40674 29.1492H25.5324C27.1347 29.1492 28.6222 28.3184 29.4152 26.9257C30.2064 25.5339 30.191 23.8808 29.3911 22.5353ZM13.2393 9.79378C13.2393 8.82195 14.0271 8.03421 14.9989 8.03421C15.9707 8.03421 16.7584 8.82201 16.7584 9.79378V16.8321C16.7584 17.8038 15.9706 18.5917 14.9989 18.5917C14.0271 18.5917 13.2393 17.8038 13.2393 16.8321V9.79378ZM14.9989 25.6301C13.5434 25.6301 12.3594 24.4461 12.3594 22.9907C12.3594 21.5353 13.5434 20.3513 14.9989 20.3513C16.4543 20.3513 17.6382 21.5353 17.6382 22.9907C17.6383 24.4461 16.4543 25.6301 14.9989 25.6301Z"
+                                          fill="#F37110"/>
+                                </svg>
+                            </span>
+
+                        <div class="attention-main__text">
+                            <p>Кожен етап може трохи відрізнятися за часом, оскільки все індивідуально і залежить від ваших особливостей. Лікар враховує саме вашу ситуацію під час огляду, лікування та відновлення. Завдяки персоналізованим, а не «шаблонним» методам ви можете бути впевнені в результаті.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main">
+            <div class="page-content">
+                <div class="title-section">
+                    <span>Спеціаліст</span>
+                </div>
+            </div>
+
+            <div class="slider-main wr-slider-specialist">
+                <div class="page-content wr-specialist-info">
+                    <div class="specialist-card-box">
+                        <div class="specialist-name">
+                            <span>Овчинка Роман Олександрович</span>
+                        </div>
+
+                        <div class="specialist-specialization">
+                            <div class="specialist-specialization-property">
+                                <span>Спеціалізація</span>
+                            </div>
+
+                            <div class="specialist-specialization-title">
+                                <span>Пластична хірургія</span>
+                            </div>
+                        </div>
+
+                        <div class="specialist-info">
+                            <p>Лікар пластичної хірургії зі стажем роботи понад 7 років</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wr-slider-specialis__inner">
+                    <div class="slider-specialist swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="specialist-card">
+                                    <picture class="specialist-photo">
+                                        <source srcset="/assets/images/services/liposaktsiya/ovchinka.png"
+                                                media="(min-width: 992px)"/>
+
+                                        <img src="/assets/images/services/liposaktsiya/ovchinka_mob.png"
+                                             alt="specialist"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-main-navigation" style="display: none">
+                        <div class="slider-main-button slider-main-prev">
+                            <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2.35836L4.96156 10L13 17.6416L10.5193 20L-1.2319e-06 10L10.5193 5.42182e-07L13 2.35836Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+
+                        <div class="slider-main-button slider-main-next">
+                            <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.31342e-06 17.6416L8.03844 10L3.09261e-07 2.35836L2.48074 -3.25309e-07L13 10L2.48074 20L2.31342e-06 17.6416Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main">
+            <div class="banner-section banner-section_top" id="banner-section-2">
+                <div class="banner-section-bg">
+                    <img src="/assets/images/services/plastychna/banner-section-2.jpg" alt="bg"/>
+                </div>
+                <div class="page-content">
+                    <div class="banner-section-title">
+                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                    </div>
+
+                    <div class="banner-section-subtitle">
+                        <span>Дізнайтеся, який тип операції підійде саме вам</span>
+                    </div>
+
+                    <div class="wr-banner-section-button">
+                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="advantage">
+                    <div class="advantage-list advantage-list_white">
+                        <div class="advantage-card advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/plastychna/svg/ico-4.svg" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/plastychna/svg/ico-5.svg" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Найсучасніше обладнання</span>
+                            </div>
+                        </div>
+
+                        <div class="advantage-card advantage-card_small">
+                            <div class="advantage-card-ico">
+                                <img src="/assets/images/services/plastychna/svg/ico-6.svg" alt="ico"/>
+                            </div>
+
+                            <div class="advantage-card-descr advantage-card-descr_text-sm">
+                                <span>Кожен етап операції супроводжує лікар-анестезіолог, що є запорукою комфорту пацієнта</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-main">
+            <div class="page-content">
+                <div class="equipment">
+                    <div class="title-section">
+                        <span>Обладнання</span>
+                    </div>
+
+                    <div class="equipment-card">
+                        <div class="equipment-card-img">
+                            <img src="/assets/images/services/liposaktsiya/equipment.png" alt="equipment">
+
+                            <div class="equipment-card-title equipment-card-title_mob">
+                                <span>VASER LIPO</span>
+                            </div>
+                        </div>
+
+                        <div class="equipment-card-block">
+                            <div class="equipment-card-block__inner">
+                                <div class="equipment-card-title equipment-card-title_desktop">
+                                    <span>VASER LIPO</span>
+                                </div>
+
+                                <div class="equipment-card-year">
+                                    <span class="equipment-card-year__property">Рік випуску</span>
+
+                                    <span class="equipment-card-year__value">2025</span>
+                                </div>
+
+                                <div class="equipment-card-descr">
+                                    <p>VASER LIPO – ультразвуковий апарат для ліпосакції, який дозволяє точно та делікатно видаляти жирові відкладення без пошкодження навколишніх тканин. Апарат забезпечує мінімальну травматичність, короткий період відновлення та можливість моделювання контурів тіла з високою точністю.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="equipment-card-addition">
+                                <p>Операції проводить досвідчений пластичний хірург – більше 7 років стажу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-section banner-section_bottom" id="banner-section-3">
+                <div class="banner-section-bg">
+                    <img src="/assets/images/services/plastychna/banner-section-3.jpg" alt="bg"/>
+                </div>
+
+                <div class="page-content">
+                    <div class="banner-section-title">
+                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                    </div>
+
+                    <div class="banner-section-subtitle">
+                        <span>Отримайте розрахунок вартості операції</span>
+                    </div>
+
+                    <div class="wr-banner-section-button">
+                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="section-main">
+            <div class="page-content">
+                <div class="title-section">
+                    <span>Відгуки клієнтів</span>
+                </div>
+                <div class="list-box">
+                    <div class="list-box__item">
+                        <div class="review-box">
+                            <div class="recall-result">
+                                <div class="recall-result-title">
+                                    <span>Результат</span>
+                                </div>
+                                <div class="recall-result-box" id="resultRecall_1">
+                                    <div class="recall-result-box__before">
+                                        <div class="recall-result-box-img">
+                                            <img src="/assets/images/services/liposaktsiya/slide1-1.jpg"
+                                                 alt="result">
+                                        </div>
+
+                                        <div class="recall-result-box-title">
+                                            <span>До</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="recall-result-box__after divisorAfter">
+                                        <div class="recall-result-box-img">
+                                            <img src="/assets/images/services/liposaktsiya/slide1-2.jpg"
+                                                 alt="result">
+                                        </div>
+
+                                        <div class="recall-result-box-title" id="titleBefore">
+                                            <span>Після</span>
+                                        </div>
+
+                                        <div class="draggable">
+                                                <span class="dr-btn">
+                                                    <span class="dr-btn__left">
+                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                                  fill="#1D86BC"/>
+                                                        </svg>
+                                                    </span>
+
+                                                    <span class="dr-btn__right">
+                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                                  fill="#1D86BC"/>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-box__item">
+                        <div class="review-box">
+                            <div class="recall-result">
+                                <div class="recall-result-title">
+                                    <span>Результат</span>
+                                </div>
+                                <div class="recall-result-box" id="resultRecall_2">
+                                    <div class="recall-result-box__before">
+                                        <div class="recall-result-box-img">
+                                            <img src="/assets/images/services/liposaktsiya/slide2-1.jpg"
+                                                 alt="result"/>
+                                        </div>
+
+                                        <div class="recall-result-box-title">
+                                            <span>До</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="recall-result-box__after divisorAfter">
+                                        <div class="recall-result-box-img">
+                                            <img src="/assets/images/services/liposaktsiya/slide2-2.jpg"
+                                                 alt="result"/>
+                                        </div>
+
+                                        <div class="recall-result-box-title">
+                                            <span>Після</span>
+                                        </div>
+
+                                        <div class="draggable">
+                                                <span class="dr-btn">
+                                                    <span class="dr-btn__left">
+                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                                  fill="#1D86BC"/>
+                                                        </svg>
+                                                    </span>
+
+                                                    <span class="dr-btn__right">
+                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                                  fill="#1D86BC"/>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -18,48 +820,78 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide slider-fade" data-slide-bg="/images/7479920ff89386ac92a9419f07da0308.webp">
-                <div class="swiper-caption">
-                    <div class="swiper-slide-caption slider-fade">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 section-slider-custom to-front">
-                                    <div class="text-lg-start">
-                                        <h2>@lang('messages.Years of')<br class="d-block"> @lang('messages.Experience')
-                                        </h2>
-                                        <h5 class="d-none d-lg-block mw-400">@lang('messages.Since our foundation, we`ve been delivering diagnostic solutions').</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
+        </div>-->
+        <div class="section-main">
+            <div class="page-content">
+                <div class="title-section">
+                    <span>Відгуки клієнтів</span>
+                </div>
+                <div class="list-box">
+                    <div class="list-box__item">
+                        <div class="review-box">
+                            <div class="recall-result">
+                                <div class="recall-result-title">
+                                    <span>Результат</span>
+                                </div>
+                                <div class="ba-slider">
+                                    <img src="/images/services/slide1-1.jpg" alt="">
+                                    <span class="label label-after">До</span>
+                                    <div class="resize">
+                                        <img src="/images/services/slide1-2.jpg" alt="">
+                                        <span class="label label-before">Після</span>
+                                    </div>
+                                    <div class="draggable">
+                                        <span class="dr-btn">
+                                          <span class="dr-btn__left">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                          <span class="dr-btn__right">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide slider-fade" data-slide-bg="/images/2ebbb981858861962de32ac1b146339d.webp">
-                <div class="swiper-caption">
-                    <div class="swiper-slide-caption slider-fade">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="text-lg-start">
-                                        <h2>@lang('messages.Qualified Team')<br class="d-block">@lang('messages.of Experts')</h2>
-                                        <h5 class="d-none d-lg-block mw-400">@lang('messages.Our team of diagnosticians is always ready to help you be healthier.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
-                                    </div>
+                    <div class="list-box__item">
+                        <div class="review-box">
+                            <div class="recall-result">
+                                <div class="recall-result-title">
+                                    <span>Результат</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide slider-fade" data-slide-bg="/images/32cbee805c52b9a7e02675477669a4cf.webp">
-                <div class="swiper-caption">
-                    <div class="swiper-slide-caption slider-fade">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="text-lg-start">
-                                        <h2>@lang('messages.Qualified Team')<br class="d-block">@lang('messages.of Experts')</h2>
-                                        <h5 class="d-none d-lg-block mw-400">@lang('messages.Our team of diagnosticians is always ready to help you be healthier.')</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">@lang('messages.make an appointment')</a>
+                                <div class="ba-slider">
+                                    <img src="/images/services/slide2-1.jpg" alt="">
+                                    <span class="label label-after">До</span>
+                                    <div class="resize">
+                                        <img src="/images/services/slide2-2.jpg" alt="">
+                                        <span class="label label-before">Після</span>
+                                    </div>
+                                    <div class="draggable">
+                                        <span class="dr-btn">
+                                          <span class="dr-btn__left">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                          <span class="dr-btn__right">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -68,72 +900,54 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-    </section>
-    <!--Sheldue-->
+        <div class="section-main section-main_m-n section-main_video" style="min-height: 320px; height:auto; max-height: 640px">
 
-    <section class="with-icon" style="transform: translateY(0px); transition: 0.3s; opacity: 1;">
-        <div class="additional">
-            <div class="icon"><img src="/images/2cde28769923fd45b1e2f262351c9039.webp"></div>
-        </div> <!---->
-        <div class="content"><h3>Що таке Ортокератологія?</h3>
-            <p class="p-mobil">Це сучасний метод корекції аномалій рефракції, а саме короткозорості та астигматизму. Даний метод
-                дозволяє тимчасово скорегувати зір за допомогою застосування спеціальних контактних лінз (ОК-лінз) під
-                час сну. Таким чином, пацієнт носить лінзи тільки коли спить, а вдень отримує можливість чітко бачити
-                без використання окулярів та денних лінз.</p> <!----></div>
-    </section>
-
-    <section class="parallax-container "  data-parallax-img="/images/53c7040420ca6f48cc5827f9addb9656.webp">
-        <div class="parallax-content parallax-container-bg section-98 section-sm-110 context-dark">
-            <div class="additional">
-                <div class="icon"><img src="/images/77775b5b7c04a94448c250ef94a2eea1.webp"></div>
-            </div>
-
-            <div class="content"><h3 class="text-center content-title-position">Для того, щоб чітко бачити – не потрібна хірургічна операція!</h3>
-                <p class="text-center p-mobil-2">Тільки ОК-лінзи вночі, які скорегують ваш зір та зір вашої дитини для майбутнього дня.</p> <!---->
-            </div>
-        </div>
-    </section>
-
-    <section class="children tiles section-padding parallax"
-             style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
-        <div class="content"><h3>Порушення зору у дітей</h3>
-            <p>Дитині з <strong>короткозорістю або далекозорістю</strong> дуже складно робити повсякденні завдання без
-                використання окулярів чи контактних лінз. <strong>Окуляри</strong> заважають повністю насолоджуватися
-                життям : спадають, тягнуть, а під час активних занять їх можна розбити і травмуватися. Також діти можуть
-                не дотримуватися правил носіння <strong>контактних лінз</strong>, що може призвести до сумних наслідків.
-            </p>
-            <div class="slot">
-                <div class="tile">
-                    <div class="header">
-                        <div class="icon"><img src="/images/31350162dbb169b44f63f1ef56575df7.webp"></div>
-                    </div>
-                    <div class="body">Лінзи одягаються тільки<br>на ніч</div>
-                    <div class="footer">
-                        <button class="button-ellipse button-preset-white button-large">Детальніше</button>
-                    </div>
+            <div class="banner-section banner-section_bottom" id="banner-section-4" style="margin-top: 70px">
+                <div class="banner-section-bg">
+                    <img src="/assets/images/services/plastychna/banner-section-4.jpg" alt="bg"/>
                 </div>
-                <div class="tile">
-                    <div class="header">
-                        <div class="icon"><img src="/images/logo_lense-1.png"></div>
+
+                <div class="page-content">
+                    <div class="banner-section-title">
+                        <span>ГОТОВІ ВІДПОВІСТИ НА БУДЬ-ЯКІ ВАШІ ЗАПИТАННЯ І ПЕРЕТЕЛЕФОНУВАТИ ВАМ!</span>
                     </div>
-                    <div class="body">Гарний зір забезпечено протягом<br>24 годин</div>
-                    <div class="footer">
-                        <button class="button-ellipse button-preset-white button-large">Детальніше</button>
+
+                    <div class="banner-section-subtitle">
+                        <span>Залиште заявку на безкоштовну консультацію менеджера.</span>
                     </div>
-                </div>
-                <div class="tile">
-                    <div class="header">
-                        <div class="icon"><img src="/images/7f60fbbdf5685051501baa68dc0c95a0.webp"></div>
-                    </div>
-                    <div class="body">Немає гіпоксії рогівки й не порушується сльозообмін</div>
-                    <div class="footer">
-                        <button class="button-ellipse button-preset-white button-large">Детальніше</button>
+
+                    <div class="wr-banner-section-button">
+                        <button class="open-modal-recall button-main button-main_orange">заявка на зворотній дзвінок</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
+    <footer-component :translations="{&quot;newsletter&quot;:{&quot;title&quot;:&quot;Розсилка&quot;,&quot;description&quot;:&quot;Введіть свою E-Mail адресу, щоб отримувати новини та іншу інформацію, яка може бути цікавою для вас.&quot;,&quot;subscribe&quot;:&quot;Підписатися&quot;},&quot;contacts&quot;:{&quot;title&quot;:&quot;Контакти&quot;,&quot;address&quot;:&quot;м. Харків, вул. Миколи Хвильового (Маяковського), 24 (м. Університет, м. Пушкінська)&quot;}}"></footer-component>
+    <appointment-modal locale="uk" :translations="{&quot;fatal_error&quot;:&quot;Фатальна помилка&quot;,&quot;title&quot;:&quot;Запис онлайн&quot;,&quot;selectizer&quot;:{&quot;title&quot;:&quot;Направлення&quot;,&quot;values&quot;:{&quot;value_1&quot;:&quot;Консультація лікаря&quot;,&quot;value_2&quot;:&quot;Лазерна корекція зору&quot;,&quot;value_3&quot;:&quot;Катаракта&quot;,&quot;value_4&quot;:&quot;Гінекологія&quot;,&quot;value_5&quot;:&quot;УЗ діагностика&quot;,&quot;value_6&quot;:&quot;Гастроентерологія&quot;,&quot;value_7&quot;:&quot;Дерматологія&quot;,&quot;value_8&quot;:&quot;Урологія\/Проктологія&quot;,&quot;value_9&quot;:&quot;Трихологія&quot;}},&quot;phone&quot;:{&quot;label&quot;:&quot;Ваш номер телефону&quot;,&quot;description&quot;:&quot;Формат: +380501023212&quot;},&quot;name&quot;:{&quot;label&quot;:&quot;Ваше ім&#039;я&quot;},&quot;additional&quot;:{&quot;label&quot;:&quot;Додаткова інформація&quot;},&quot;work&quot;:{&quot;title&quot;:&quot;Ми працюємо&quot;,&quot;value&quot;:&quot;ПН-СБ з 9:00 до 18:00&quot;},&quot;appointment&quot;:{&quot;title&quot;:&quot;Запис через соц. мережу&quot;,&quot;value&quot;:&quot;До 21:00&quot;},&quot;appointment_phone&quot;:{&quot;title&quot;:&quot;Запис по телефону&quot;,&quot;value&quot;:&quot;До 19:00&quot;},&quot;agreement&quot;:&quot;Заповнюючи дану форму, Ви погоджуєтеся з умовами обробки персональніх даних. Ми гарантуемо конфіденційність Вашого зверненя&quot;,&quot;discount&quot;:&quot;10% знижка за онлайн реєстрацію&quot;,&quot;buttons&quot;:{&quot;submit&quot;:&quot;Відправити&quot;,&quot;cancel&quot;:&quot;Відмінити&quot;}}"></appointment-modal>
+
+    <page-sticky-menu-component :translations="{&quot;appointment&quot;:&quot;Записатися&quot;}">
+    </page-sticky-menu-component>
+</div>
 
 
-</x-app-layout>
+<link rel="preload" href="/assets/fonts/font-awesome/fa-solid-900.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/font-awesome/fa-brands-400.woff2" as="font" crossorigin>
+
+<link rel="stylesheet" href="/assets/css/frontend/plugins.css?3.0.15">
+<link rel="stylesheet" href="/assets/css/frontend/style.css?3.0.15">
+<link rel="stylesheet" href="/assets/css/frontend/fonts.css?3.0.15">
+
+<script src="/assets/js/frontend/app.js?3.0.15" defer></script>
+<link rel="stylesheet" href="/assets/css/frontend/pages/services/services.css?3.0.15">
+<script src="/assets/js/frontend/pages/services/services.js?3.0.15" defer></script>
+<script src="/assets/js/frontend/pages/services/plastychna/swiper.min.js?3.0.15" defer></script>
+<script src="/assets/js/frontend/pages/services/plastychna/simpleParallax.js?3.0.15"
+        defer></script>
+<script src="/assets/js/frontend/pages/services/liposaktsiya/app.js?3.0.15" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+
+</body>
+</html>

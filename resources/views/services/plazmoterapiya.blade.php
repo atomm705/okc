@@ -7,15 +7,15 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span></span>
+                            <span> @lang('frontend/plazmoterapiya.slider.slide_1.title')</span>
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #000">Омолодження та лікування шкіри без хірургії та препаратів.</span>
+                            <span style="color: #000">@lang('frontend/plazmoterapiya.slider.slide_1.description') </span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на консультацію</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/plazmoterapiya.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -26,12 +26,12 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Плазмотерапія, що це?</span>
+                        <span>@lang('frontend/plazmoterapiya.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Плазмоліфтинг – це безпечна косметологічна процедура омолодження обличчя. Завдяки ін'єкціям із вашої власної плазми крові, шкіра у необхідній зоні відновлюється. Це дозволить вам позбутися вікових змін, рубців і плям постакне, а також провести лікування та профілактику випадання волосся.</span>
+                            <span class="text-section__strong">@lang('frontend/plazmoterapiya.whatas.description_1_1')</span>
                         </p>
 
                     </div>
@@ -42,38 +42,38 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Коли потрібен плазмоліфтинг?</span>
+                    <span>@lang('frontend/plazmoterapiya.when.title')</span>
                 </div>
 
                 <div class="advantage">
                     <div class="advantage-list">
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Омолодження та підтяжка шкіри обличчя</span>
+                                <span>@lang('frontend/plazmoterapiya.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Відновлення структури, здорового вигляду та тонусу, усунення темних кіл під очима</span>
+                                <span>@lang('frontend/plazmoterapiya.when.slide_1_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Звільнення від недоліків на обличчі</span>
+                                <span>@lang('frontend/plazmoterapiya.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Усунення дрібних шрамів, рубців, пігментних плям, лікування акне та постакне</span>
+                                <span>@lang('frontend/plazmoterapiya.when.slide_2_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Повернення шкіри пружності</span>
+                                <span>@lang('frontend/plazmoterapiya.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Збільшення вироблення гіалуронової кислоти, колагену та еластину, які підвищують пружність шкіри та нормалізують її вологість.</span>
+                                <span>@lang('frontend/plazmoterapiya.when.slide_3_2')</span>
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Запишіться на консультацію перед ін'єкційною терапією</span>
+                        <span>@lang('frontend/plazmoterapiya.akcia.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/plazmoterapiya.akcia.link')</button>
                     </div>
                 </div>
             </div>
@@ -106,14 +106,14 @@
                 <div class="advantage">
                     <div class="advantage-list advantage-list_white page-box-sm">
                         <div class="title-section" style="padding-top: 25px;margin-left:auto; margin-right: auto">
-                            <span>Як проходить процедура плазмоліфтингу?</span>
+                            <span>@lang('frontend/plazmoterapiya.how.title')</span>
                         </div>
 
                         <div class="accordion-list">
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Консультація</span>
+                                        <span class="accordion-title__text">@lang('frontend/plazmoterapiya.how.items.item_1.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -126,7 +126,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Ви проходите огляд у фахівця, який визначає ваші цілі, проводи огляд та визначає кількість процедур.</p>
+                                            <p>@lang('frontend/plazmoterapiya.how.items.item_1.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Попередня підготовка</span>
+                                        <span class="accordion-title__text">@lang('frontend/plazmoterapiya.how.items.item_2.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -148,16 +148,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Попередня підготовка:
-                                            <ul><li>- ВІЛ/СНІД</li>
-                                                <li>- сифіліс</li>
-                                                <li>- гепатит В,С</li>
-                                                <li>- клінічний аналіз крові</li>
-                                                <li>- біохімічний аналіз крові</li>
-                                                <li>- глюкоза</li>
-                                                <li>- за 2-3 дні до процедури утриматися від алкоголю</li>
-                                                <li>- 2-3 дні не приймати препарати-антикоагулянти</li>
-                                                <li>- якщо у вас на обличчі були герпетичні висипання, про них необхідно попередити лікаря</li></ul>
+                                            <p>@lang('frontend/plazmoterapiya.how.items.item_2.description')
                                             </p>
                                         </div>
                                     </div>
@@ -167,7 +158,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Підготовка перед процедурою</span>
+                                        <span class="accordion-title__text">@lang('frontend/plazmoterapiya.how.items.item_3.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -180,7 +171,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Перед процедурою у вас беруть кров з вени. Потім спеціальний апарат очищає кров, поділяє на групи, і вибирає найбільш багату на тромбоцити..</p>
+                                            <p>@lang('frontend/plazmoterapiya.how.items.item_3.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +186,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Фахівці</span>
+                        <span>@lang('frontend/plazmoterapiya.specialist.title')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -212,21 +203,21 @@
                                 </div>
 
                                 <div class="specialist-name">
-                                    <span>Салєнкова Олена Анатоліївна</span>
+                                    <span>@lang('frontend/plazmoterapiya.specialist_1.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/plazmoterapiya.specialist_1.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>косметологія, дерматологія і трихологія</span>
+                                        <span>@lang('frontend/plazmoterapiya.specialist_1.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">@lang('frontend/plazmoterapiya.specialist_1.description.link')</a>
                                 </div>
                             </div>
 
@@ -244,21 +235,21 @@
                                     </picture>
                                 </div>
                                 <div class="specialist-name">
-                                    <span>Хорунжа Любов Сергіївна</span>
+                                    <span>@lang('frontend/plazmoterapiya.specialist_1.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/plazmoterapiya.specialist_1.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>ксметологія, дерматовенерологія, трихологія</span>
+                                        <span>@lang('frontend/plazmoterapiya.specialist_1.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">@lang('frontend/plazmoterapiya.specialist_1.description.link')</a>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +266,7 @@
 
                 <div class="page-content" style="z-index: 6">
                     <div class="banner-section-title">
-                        <span style="color: #FFF">ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span style="color: #FFF">@lang('frontend/plazmoterapiya.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -283,7 +274,7 @@
                     </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/plazmoterapiya.recording.link')</button>
                     </div>
                 </div>
                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.4); z-index: 5"></div>
@@ -298,7 +289,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+                                <span>@lang('frontend/plazmoterapiya.recording.items.item_1.title')</span>
                             </div>
                         </div>
 
@@ -308,7 +299,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найпередовіше обладнання</span>
+                                <span>@lang('frontend/plazmoterapiya.recording.items.item_2.title')</span>
                             </div>
                         </div>
 
@@ -318,7 +309,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>На всех этапах операции сопровождает врач анестезиолог- является залогом комфорта пациента</span>
+                                <span>@lang('frontend/plazmoterapiya.recording.items.item_3.title')</span>
                             </div>
                         </div>
                     </div>
@@ -368,7 +359,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/plazmoterapiya.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -376,7 +367,7 @@
                     </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/plazmoterapiya.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -385,7 +376,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Відгуки клієнтів</span>
+                    <span>@lang('frontend/plazmoterapiya.reviews.title')</span>
                 </div>
 
                 <div class="list-box">
@@ -515,7 +506,7 @@
 
                 <div class="recall-button">
                     <a href="https://www.okc.com.ua/ru/testimonials" target="_blank"
-                       class="button-main button-main_blue button-more-recall">Більше відгуків</a>
+                       class="button-main button-main_blue button-more-recall">@lang('frontend/plazmoterapiya.reviews.link')</a>
                 </div>
             </div>
         </div>
@@ -523,7 +514,7 @@
         <div class="section-main section-main_m-n section-main_video">
             <div class="page-content">
                 <div class="title-section">
-                    <span>часті питання</span>
+                    <span>@lang('frontend/plazmoterapiya.question.title')</span>
                 </div>
 
                 <div class="accordion-list">
@@ -583,15 +574,15 @@
 
             <div class="page-content before-foter-position">
                 <div class="banner-section-title">
-                    <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
+                    <span>@lang('frontend/plazmoterapiya.consultation.title')</span>
                 </div>
 
                 <div class="banner-section-subtitle">
-                    <span>Залишіть заявку на безкоштовну консультацію менеджера</span>
+                    <span>@lang('frontend/plazmoterapiya.consultation.description')</span>
                 </div>
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal-recall button-main button-main_orange">заявка на зворотний дзвінок</button>
+                    <button class="open-modal-recall button-main button-main_orange">@lang('frontend/plazmoterapiya.consultation.link')</button>
                 </div>
             </div>
         </div>

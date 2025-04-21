@@ -666,7 +666,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="specialist-card">
-                                                    <picture class="specialist-photo">
+                                                    <picture class="specialist-photo specialist-photo-checup">
                                                         <source srcset="/images/services/checkup/tsivenko.jpg"
                                                                 media="(min-width: 992px)"/>
 
@@ -708,7 +708,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="specialist-card">
-                                                    <picture class="specialist-photo" style="width: 450px">
+                                                    <picture class="specialist-photo specialist-photo-checup" style="width: 450px">
                                                         <source srcset="/images/services/checkup/mikheev.jpg"
                                                                 media="(min-width: 992px)"/>
 
@@ -750,7 +750,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="specialist-card">
-                                                    <picture class="specialist-photo" style="width: 440px">
+                                                    <picture class="specialist-photo specialist-photo-checup" style="width: 440px">
                                                         <source srcset="/images/services/checkup/vitohina.jpg"
                                                                 media="(min-width: 992px)"/>
 
@@ -836,7 +836,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="specialist-card">
-                                                    <picture class="specialist-photo">
+                                                    <picture class="specialist-photo specialist-photo-checup">
                                                         <source srcset="/images/services/checkup/pogrebnyak.jpg"
                                                                 media="(min-width: 992px)"/>
 
@@ -878,7 +878,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="specialist-card">
-                                                    <picture class="specialist-photo">
+                                                    <picture class="specialist-photo specialist-photo-checup">
                                                         <source srcset="/images/services/checkup/trofimova.jpg"
                                                                 media="(min-width: 992px)"/>
 
@@ -920,7 +920,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="specialist-card">
-                                                    <picture class="specialist-photo" style="width: 450px">
+                                                    <picture class="specialist-photo specialist-photo-checup" style="width: 450px">
                                                         <source srcset="/images/services/checkup/a2f6efeab4e089eab6d81b0bcbbeb0ba.webp"
                                                                 media="(min-width: 992px)"/>
 

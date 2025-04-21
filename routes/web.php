@@ -48,6 +48,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
         Route::get('/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
         Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
+        Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
 

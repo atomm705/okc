@@ -9,11 +9,11 @@
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #000">Відновлення тонусу шкіри, згладжування зморшок і розтяжок, усунення наслідків акне та розширених пір на надефективному апараті Endymed PRO</span>
+                            <span style="color: #000">@lang('frontend/rf.slider.slide_1.description')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на консультацію</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/rf.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -24,12 +24,12 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Endymed PRO  що це?</span>
+                        <span>@lang('frontend/rf.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">У нашому медичному центрі RF-терапія проводиться на новому апараті Endymed PRO. Це максимально можлива комплектація апарату. За один сеанс ви отримаєте відчутний ефект. Якщо Вас турбують втрата тонусу шкіри (в'янення), овал обличчя, в'ялість шкіри після схуднення, зморшки і виснажена шкіра навколо очей, плями після акне, гіпотрофічні рубці, шрами то в нашому медичному центрі ми з легкістю вирішимо ці проблеми.</span>
+                            <span class="text-section__strong"> @lang('frontend/rf.whatas.description_1_1') </span>
                         </p>
 
                     </div>
@@ -46,38 +46,38 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Коли потрібен Endymed PRO?</span>
+                    <span>@lang('frontend/rf.when.title')</span>
                 </div>
 
                 <div class="advantage">
                     <div class="advantage-list">
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Омолодження та підтяжка шкіри обличчя</span>
+                                <span>@lang('frontend/rf.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Рівна структура, здоровий вигляд та тонус</span>
+                                <span>@lang('frontend/rf.when.slide_1_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Звільнення від недоліків на обличчі</span>
+                                <span>@lang('frontend/rf.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Дрібні шрами, наслідки акне, гіпотрофічні рубці, розширені пори</span>
+                                <span>@lang('frontend/rf.when.slide_2_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Видалення розтяжок та шрамів</span>
+                                <span>@lang('frontend/rf.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Наслідки схуднення, розтяжки на животі, шрами</span>
+                                <span>@lang('frontend/rf.when.slide_3_2')</span>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Консультація у лікаря перед процедурою RF-ліфтингу – 250 грн</span>
+                        <span>@lang('frontend/rf.akcia.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/rf.akcia.link')</button>
                     </div>
                 </div>
             </div>
@@ -110,14 +110,14 @@
                 <div class="advantage">
                     <div class="advantage-list advantage-list_white page-box-sm">
                         <div class="title-section" style="padding-top: 25px;margin-left:auto;margin-right: auto">
-                            <span>Які процедури робляться за допомогою RF</span>
+                            <span>@lang('frontend/rf.what.title')</span>
                         </div>
 
                         <div class="accordion-list">
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Неінвазивний RF - ліфтинг (радіохвильовий ліфтинг)</span>
+                                        <span class="accordion-title__text">@lang('frontend/rf.what.items.item_1.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -130,7 +130,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Омолодження шкіри, усунення дрібних зморшок (носогубні складки, гусячі лапки), усунення в'ялості шкіри навколо очей, боротьба з розширеними порами.</p>
+                                            <p>@lang('frontend/rf.what.items.item_1.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Мікроігольчастий RF - ліфтинг</span>
+                                        <span class="accordion-title__text">@lang('frontend/rf.what.items.item_2.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -151,7 +151,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>Усунення шрамів, рубців, розтяжок, видалення наслідків постакне</p>
+                                            <p>@lang('frontend/rf.what.items.item_2.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,14 +166,14 @@
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">
-                        <span>Як проходить процедура RF-ліфтингу</span>
+                        <span>@lang('frontend/rf.how.title')</span>
                     </div>
 
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація</span>
+                                    <span class="accordion-title__text">@lang('frontend/rf.how.items.item_1.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -186,7 +186,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Ви проходите огляд у спеціаліста, який визначає ваші цілі.</p>
+                                        <p>@lang('frontend/rf.how.items.item_1.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Підготовчий процес</span>
+                                    <span class="accordion-title__text">@lang('frontend/rf.how.items.item_2.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -209,7 +209,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Лікар ретельно очищує вашу шкіру. Потім на обличчя наноситься зволожуюча емульсія.</p>
+                                        <p>@lang('frontend/rf.how.items.item_2.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +218,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Процес підбору індивідуальних параметрів.</span>
+                                    <span class="accordion-title__text">@lang('frontend/rf.how.items.item_3.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -232,7 +232,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Лікар налаштовує апарат залежно від Вашої проблеми, яку потрібно вирішити.</p>
+                                        <p>@lang('frontend/rf.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +241,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Процедура</span>
+                                    <span class="accordion-title__text">@lang('frontend/rf.how.items.item_3.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -255,7 +255,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>За допомогою апарату проводиться процедура RF-ліфтингу. Після процедури лікар наносить зволожуючий засіб. Сама процедура проходить максимально комфортно та безболісно. Після процедури лікар дасть Вам максимально ефективні рекомендації щодо догляду за шкірою.</p>
+                                        <p>@lang('frontend/rf.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +270,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Фахівці</span>
+                        <span>@lang('frontend/rf.specialist.title')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -287,21 +287,21 @@
                                 </div>
 
                                 <div class="specialist-name">
-                                    <span>Салєнкова Олена Анатоліївна</span>
+                                    <span>@lang('frontend/rf.specialist_1.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/rf.specialist_1.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>косметологія, дерматологія і трихологія</span>
+                                        <span>@lang('frontend/rf.specialist_1.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">@lang('frontend/rf.specialist_1.description.link')</a>
                                 </div>
                             </div>
                         </div>
@@ -319,21 +319,21 @@
                                 </div>
 
                                 <div class="specialist-name">
-                                    <span>Хорунжа Любов Сергіївна</span>
+                                    <span>@lang('frontend/rf.specialist_2.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/rf.specialist_2.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>ксметологія, дерматовенерологія, трихологія</span>
+                                        <span>@lang('frontend/rf.specialist_2.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">@lang('frontend/rf.specialist_2.description.link')</a>
                                 </div>
                             </div>
                         </div>
@@ -351,11 +351,11 @@
 
                 <div class="page-content" style="z-index: 6">
                     <div class="banner-section-title">
-                        <span style="color: #FFF">Запис на первинну консультацію</span>
+                        <span style="color: #FFF">@lang('frontend/rf.recording.title')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/rf.recording.link')</button>
                     </div>
                 </div>
 
@@ -371,7 +371,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Підбір індивідуальної програми лікування</span>
+                                <span>@lang('frontend/rf.recording.items.item_1.title')</span>
                             </div>
                         </div>
 
@@ -381,7 +381,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найпередовіше обладнання</span>
+                                <span>@lang('frontend/rf.recording.items.item_1.title')</span>
                             </div>
                         </div>
 
@@ -391,7 +391,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Тільки сертифіковані препарати та міжнародні програми лікування</span>
+                                <span>@lang('frontend/rf.recording.items.item_1.title')</span>
                             </div>
                         </div>
                     </div>
@@ -403,7 +403,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Устаткування</span>
+                        <span>@lang('frontend/rf.equipment.equipment')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -414,20 +414,20 @@
                         <div class="equipment-card-block">
                             <div class="equipment-card-block__inner">
                                 <div class="equipment-card-title equipment-card-title_desktop" style="display: block">
-                                    <span>Багатофункціональна апаратна платформа з підтримкою чотирьох технологій:</span>
+                                    <span>@lang('frontend/rf.equipment.title')</span>
                                 </div>
 
                                 <div class="equipment-card-descr">
-                                    <p> - <b>ТС</b> (неінвазивний RF-лифтинг)</p>
-                                    <p> - <b>FSR</b> (фракційна поверхнева абляція)</p>
-                                    <p> - <b>Intensif</b> (об'ємне ремоделювання шкіри за допомогою мікроголок)</p>
-                                    <p> - <b>Contour</b> (редукція локальних жирових відкладень та неінвазивний RF-ліфтинг)</p>
+                                    <p>  @lang('frontend/rf.equipment.description_1')</p>
+                                    <p>  @lang('frontend/rf.equipment.description_2')</p>
+                                    <p>  @lang('frontend/rf.equipment.description_3')</p>
+                                    <p> @lang('frontend/rf.equipment.description_4')</p>
                                 </div>
 
                                 <div class="equipment-card-year">
-                                    <span class="equipment-card-year__property">Рік випуску</span>
+                                    <span class="equipment-card-year__property">@lang('frontend/rf.equipment.year_title')</span>
 
-                                    <span class="equipment-card-year__value">2021</span>
+                                    <span class="equipment-card-year__value">@lang('frontend/rf.equipment.year')</span>
                                 </div>
 
                                 <div class="equipment-card-descr">
@@ -446,11 +446,11 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Запис на первинну консультацію</span>
+                        <span>@lang('frontend/rf.recording.title')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/rf.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -459,7 +459,7 @@
         <div class="section-main section-main_m-n section-main_video">
             <div class="page-content">
                 <div class="title-section">
-                    <span>часті питання</span>
+                    <span>@lang('frontend/rf.question.title')</span>
                 </div>
 
                 <div class="accordion-list">
@@ -715,15 +715,15 @@
 
             <div class="page-content before-foter-position">
                 <div class="banner-section-title">
-                    <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
+                    <span>@lang('frontend/rf.consultation.title')</span>
                 </div>
 
                 <div class="banner-section-subtitle">
-                    <span>Залишіть заявку на безкоштовну консультацію менеджера</span>
+                    <span>@lang('frontend/rf.consultation.description')</span>
                 </div>
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal-recall button-main button-main_orange">заявка на зворотний дзвінок</button>
+                    <button class="open-modal-recall button-main button-main_orange">@lang('frontend/rf.consultation.link')</button>
                 </div>
             </div>
         </div>

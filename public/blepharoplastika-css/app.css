@@ -114,6 +114,8 @@ svg * {
     .banner-main-title {
         max-width: 100%
     }
+
+
 }
 
 h1 .banner-main-title, h2 .banner-main-title {
@@ -2335,9 +2337,15 @@ div.slider-main-navigation {
         padding-top: 140px;
     }
 
+
+
+
+
     .before-foter-positiont-seccond{
 
     }
+
+
 
 }
 
@@ -2364,8 +2372,14 @@ custom-color{
         width: 30%;
     }
 }
+.advantage-card-custom {
+    width: calc(100% / 4 - 30px + 30px / 4);
+}
 
 
+. specialist-photo-update{
+    width: 400%;
+}
 
 
 

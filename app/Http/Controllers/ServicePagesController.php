@@ -54,5 +54,10 @@ class ServicePagesController extends Controller
         return view('services.tests');
     }
 
+    public function liposaktsiya(){
+
+        return view('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
+    }
+
 
 }
