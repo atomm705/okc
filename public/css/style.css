@@ -30061,3 +30061,11 @@ html.ie-11 .fc-event .fc-event-wrap {
     display: none;
 }
 
+.p-index a{
+    color: white;
+    font-weight: bold;
+}
+
+.p-index a:hover{
+    text-decoration: underline;
+}

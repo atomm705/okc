@@ -112,7 +112,7 @@
                                 <div class="icon icon-xs mdi mdi-phone text-white-50"></div>
                                 <h6 class="d-inline-block inset-left-10 text-white"><span style="font-size: 17px">@lang('frontend/index.blocks.appointment.title')</span></h6>
                                 <hr>
-                                <div class="offset-top-24 text-gray-light">
+                                <div class="offset-top-24 text-gray-light p-index">
                                     <p>@lang('frontend/index.blocks.appointment.body')</p>
                                 </div>
                             </div>

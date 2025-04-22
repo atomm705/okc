@@ -264,10 +264,9 @@
                                                                                                        src="/images/fc27907f2413cdff764b30b308059476.webp">
             </div>
         </div>
-        <div class="content"><h3>ACRYSOF® IQ PANOPTIX™ - <span>життя без окулярів для читання</span></h3>
-            <p>Для природнішої адаптації пацієнтів до свого нового зору. PanOptix дозволяє хірургам здійснювати
-                індивідуальний підхід з метою задоволення зорових вимог кожного пацієнта.</p>
-            <div class="slot">Краща ціна: <span>29 400 <i class="fas fa-hryvnia"></i></span></div>
+        <div class="content"><h3>@lang('frontend/panoptix.cover.title')</h3>
+            <p>@lang('frontend/panoptix.cover.description')</p>
+            <div class="slot">@lang('frontend/panoptix.cover.body')</div>
         </div>
     </section>
     <section class="section-mouse-effects section-mouse-effects-sides section-2 section-flat-height section-full-width section-full-height">
@@ -290,14 +289,9 @@
                 <div class="particle"></div>
             </div>
         </div>
-        <div class="content"><h3>Інтраокулярні лінзи для корекції пресбіопії ACRYSOF® IQ PANOPTIX™</h3> <!---->
-            <div class="slot"><p>Дані лінзи є гнучкими мультифокальними лінзами, що фільтрують ультрафіолет і блакитне
-                    світло. Кожна лінза складається з матеріалу з високим коефіцієнтом заломлення світла і з
-                    запатентованим хромофором, який фільтрує, подібно до кришталика людини, хвилю блакитного світла,
-                    довжиною 400-475 нм.</p>
-                <p>Оптична частина лінзи є двоопуклою і складається з м'якого гідрофобного акрилового матеріалу, що має
-                    властивість згинатися перед введенням, що дозволяє вводити лінзу через розріз менше, ніж оптичний
-                    діаметр лінзи. Після імплантації лінзи вона плавно розгинається.</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a>
+        <div class="content"><h3>@lang('frontend/panoptix.intraocular.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.intraocular.body.text_1')</p>
+                <p>@lang('frontend/panoptix.intraocular.body.text_2')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.intraocular.link')</a>
             </div>
         </div>
     </section>
@@ -322,16 +316,11 @@
                 <div class="particle"></div>
             </div>
         </div>
-        <div class="content"><h3>ACRYSOF® IQ PANOPTIX™</h3> <!---->
-            <div class="slot"><p>Дифракційна структура лінзи розподіляє світло, що потрапляє в око, забезпечуючи
-                    гостроту зору в далечінь, на середній та близькій відстані. Використовуючи такі лінзи, лікарі можуть
-                    забезпечити пацієнтів додатковою корекцією. <strong>+2,17 дптр</strong> для зору на проміжній
-                    відстані та <strong>+3,25 дптр</strong> для зору на близьку відстань. </p>
-                <p>Крім цього, лінзи мають торичний компонент на задній поверхні з осьовими мітками для позначення
-                    меридіани з найменшою оптичною силою.</p>
-                <p>Зіставлення осьових міток торичного компонента з післяопераційним меридіаном рогівки, з найбільшою
-                    оптичною силою дозволяє лінзам коригувати існуючий рогівковий астигматизм.</p> <a href="/contacts"
-                                                                                 class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a>
+        <div class="content"><h3>@lang('frontend/panoptix.panoptix.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.panoptix.body.text_1')</p>
+                <p>@lang('frontend/panoptix.panoptix.body.text_2')</p>
+                <p>@lang('frontend/panoptix.panoptix.body.text_3')</p> <a href="/contacts"
+                                                                                 class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.panoptix.link')</a>
             </div>
         </div>
     </section>
@@ -360,15 +349,14 @@
                 <div class="particle"></div>
             </div>
         </div>
-        <div class="content"><h3>Оптична технологія ENLIGHTEN</h3> <!---->
-            <div class="slot"><p>Оптична технологія <strong>ENLIGHTEN® (ENhanced LIGHT ENergy)</strong>, що імітує
-                    характеристики здорового кришталика, забезпечує:</p>
+        <div class="content"><h3>@lang('frontend/panoptix.enlighten.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.enlighten.body.text_1')</p>
                 <ul class="list-marked list-tab-none">
-                    <li>високий рівень використання світла</li>
-                    <li>комфортний зір на ближній та середній відстані</li>
-                    <li>широкий діапазон зору, незалежно від діаметра зіниці</li>
+                    <li>@lang('frontend/panoptix.enlighten.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.enlighten.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.enlighten.body.items.item_1')</li>
                 </ul>
-                <p>А ще це новий трифокальний дизайн без аподизації.</p> <a href="/contacts"class="button button-ellipse button-preset-primary button-large">Зв'яжіться з нами</a>
+                <p>@lang('frontend/panoptix.enlighten.body.text_2')</p> <a href="/contacts"class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.enlighten.link')</a>
             </div>
         </div>
     </section>
@@ -397,22 +385,20 @@
                 <div class="particle"></div>
             </div>
         </div>
-        <div class="content"><h3>Вироблено компанією Alcon</h3> <!---->
-            <div class="slot"><p>Alcon - є світовим лідером в офтальмології та найбільшим виробником медичних виробів
-                    для лікування різних порушень зору та очних захворювань із 1945 року. Виробляє величезну кількість
-                    інноваційних рішень для досягнення ефективного результату, а також:</p>
+        <div class="content position-decstop"><h3>@lang('frontend/panoptix.company.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.company.body.text_1')</p>
                 <ul class="list-marked list-tab-none">
-                    <li>робота у більш ніж 70 країнах</li>
-                    <li>обслуговування пацієнтів у більш ніж 140 країнах</li>
-                    <li>понад 70 років роботи</li>
-                    <li>один з найбільших виробників контактних лінз та засобів догляду за лінзами</li>
-                    <li>і багато іншого</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_2')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_3')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_4')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_5')</li>
                 </ul>
-                <p>Зв'яжіться з нами, щоб отримати детальну інформацію про компанію Alcon</p> <a href="/contacts"
-                                                                                                 class="button button-ellipse button-preset-primary button-large">Зв'яжіться
-                    з нами</a></div>
+                <p>@lang('frontend/panoptix.company.body.text_2')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.company.link')</a></div>
         </div>
     </section>
+
+    
     <section
         class="section-mouse-effects section-mouse-effects-sides section-6 section-flat-height section-full-width section-full-height ">
         <!---->
@@ -440,20 +426,16 @@
                 <div class="particle"></div>
             </div>
         </div>
-        <div class="content"><h3>Найновіше обладнання - система видалення катаракти CENTURION™</h3> <!---->
-            <div class="slot"><p>Високопродуктивна факоемульсифікація з інноваційними технологіями</p>
+        <div class="content"><h3>@lang('frontend/panoptix.centurion.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.centurion.body.text_1')</p>
                 <ul class="list-marked list-tab-none">
-                    <li>Active Fluidics™ - динамічне керування ВГД для підвищення стабільності камери</li>
-                    <li>Centurion® Energy Delivery - узгодженість роботи OZil® Torsional Phaco з покращеним контролем
-                        потоку для максимальної продуктивності
+                    <li>@lang('frontend/panoptix.centurion.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.centurion.body.items.item_2')
                     </li>
-                    <li>INTREPID® Integration - мікро-коаксіальна система, призначена для покращення контролю хірургом
+                    <li>@lang('frontend/panoptix.centurion.body.items.item_3')
                     </li>
                 </ul>
-                <p>Centurion® Vision System є частиною катарактального-рефракційного комплексу Alcon. Зв'яжіться з нами,
-                    щоб отримати детальну інформацію про компанію Centurion® Vision System</p> <a href="/contacts"
-                                                                                                  class="button button-ellipse button-preset-primary button-large">Зв'яжіться
-                    з нами</a></div>
+                <p>@lang('frontend/panoptix.centurion.body.text_1')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.centurion.link')</a></div>
         </div>
     </section>
     <section tilt="true"
@@ -474,15 +456,11 @@
                 <div class="particle"></div>
             </div>
         </div>
-        <div class="content"><h3>Залишились питання?</h3> <!---->
-            <div class="slot"><p><strong>AcrySof PanOptix</strong> дає можливість пацієнтам більш природно адаптуватися
-                    до своїх зорових функцій, наближених до їхнього зору в молодому віці..</p>
-                <p>Фахівці клініки <strong>"Докарт"</strong> проведуть всі необхідні обстеження для того, щоб ви змогли
-                    повернутися до нормального життя з <strong>AcrySof PanOptix</strong>.</p>
-                <p>Зв'яжіться з нами, щоб отримати актуальну інформацію з питань, що вас цікавлять.</p>
-                <div class="center"><a href="/contacts"
-                                       class="button button-ellipse button-preset-primary button-large">Зв'яжіться з
-                        нами</a></div>
+        <div class="content"><h3>@lang('frontend/panoptix.questions.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.questions.body.text_1')</p>
+                <p>@lang('frontend/panoptix.questions.body.text_2')</p>
+                <p>@lang('frontend/panoptix.questions.body.text_3')</p>
+                <div class="center"><a href="/contacts"   class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.questions.link')</a></div>
             </div>
         </div>
     </section>

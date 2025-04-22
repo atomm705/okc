@@ -7,15 +7,15 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title" style="padding: 0;">
-                            <span style="color: #233164;font-size: 1.8rem">Лазерне омолодження в медичному центрі Докaрт</span>
+                            <span style="color: #233164;font-size: 1.8rem">@lang('frontend/lumeca.slider.slide_1.title')</span>
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #233164">безпечне та ефективне усунення недоліків шкіри та омолодження</span>
+                            <span style="color: #233164">@lang('frontend/lumeca.slider.slide_1.description')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на процедуру</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/lumeca.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -26,12 +26,12 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Що таке IPL-лікування та омолодження Lumecca?</span>
+                        <span>@lang('frontend/lumeca.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Inmode LUMECCA</span> - це найпотужніший інтенсивний імпульсний світло (IPL) для лікування пігментних та судинних уражень. Після всього лише одного застосування помітні значні покращення у кольорі обличчя та чистоті шкіри. LUMECCA має одночасно потрійний ефект - фотоомолодження, вирівнювання тону обличчя та видалення пігментних плям. LUMECCA-досконале рішення для омолодження вашої шкіри, а також у лікуванні розацеа та акне.
+                            <span class="text-section__strong"> @lang('frontend/lumeca.whatas.description_1_1')</span> @lang('frontend/lumeca.whatas.description_1_2')
                         </p>
                         <p>
                             <span class="text-section__strong"></span>
@@ -46,7 +46,7 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Які проблеми вирішує технологія LUMECCA</span>
+                    <span>@lang('frontend/lumeca.when.title')</span>
                 </div>
 
                 <div class="advantage">
@@ -56,11 +56,11 @@
                                 <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>-->
                             <div class="advantage-card-title">
-                                <span>Акне та вугровий висип</span>
+                                <span>@lang('frontend/lumeca.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>значно зменшує недоліки шкіри та запальні процеси навіть після 1 процедури.</span>
+                                <span>@lang('frontend/lumeca.when.slide_1_2')</span>
                             </div>
                         </div>
 
@@ -69,11 +69,11 @@
                                     <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                                 </div>-->
                             <div class="advantage-card-title">
-                                <span>Розацеа</span>
+                                <span>@lang('frontend/lumeca.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>зменшує запалення, тон обличчя стає світлішим.</span>
+                                <span>@lang('frontend/lumeca.when.slide_2_2')</span>
                             </div>
                         </div>
 
@@ -82,11 +82,11 @@
                                     <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                                 </div>-->
                             <div class="advantage-card-title">
-                                <span>Гіперпігментація</span>
+                                <span>@lang('frontend/lumeca.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>позбавляє небажаної пігментації на обличчі, шиї, в зоні декольте, передпліччя і руках (червона/коричнева пігментація).</span>
+                                <span>@lang('frontend/lumeca.when.slide_3_2')</span>
                             </div>
                         </div>
 
@@ -95,11 +95,11 @@
                                     <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                                 </div>-->
                             <div class="advantage-card-title">
-                                <span>Ластовиння та пошкодження сонцем</span>
+                                <span>@lang('frontend/lumeca.when.slide_4_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>після 1 сеансу відбувається помітне усунення ластовиння та пошкоджень сонцем</span>
+                                <span>@lang('frontend/lumeca.when.slide_4_2')</span>
                             </div>
                         </div>
 
@@ -108,11 +108,11 @@
                                     <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                                 </div>-->
                             <div class="advantage-card-title">
-                                <span>Судинні зірочки та купероз</span>
+                                <span>@lang('frontend/lumeca.when.slide_5_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>видаляє судинні патології на обличчі, шиї та в зоні декольте</span>
+                                <span>@lang('frontend/lumeca.when.slide_5_2')</span>
                             </div>
                         </div>
 
@@ -121,11 +121,11 @@
                                     <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                                 </div>-->
                             <div class="advantage-card-title">
-                                <span>Вікові зміни</span>
+                                <span>@lang('frontend/lumeca.when.slide_6_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>ефективно зменшує зморшки, підвищує тонус обличчя та еластичність шкіри. При омолоджуючій обробці обличчя спостерігається більш виражене загальне поліпшення у поєднанні з процедурами мікрогольчастого RF ліфтингу (ремоделювання шкіри за допомогою мікроголок) з 3-4-тижневими інтервалами.</span>
+                                <span>@lang('frontend/lumeca.when.slide_6_2')</span>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@
                             </span>
 
                         <div class="attention-main__text">
-                            <p>Зверніть увагу на протипоказання: вагітність та лактація, онкологія, гострі інфекційні захворювання, ендокринні патології.</p>
+                            <p>@lang('frontend/lumeca.when.alert')</p>
                         </div>
                     </div>
 
@@ -156,14 +156,14 @@
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">
-                        <span>Як відбувається процедура IPL-лікування та омолодження Lumecca</span>
+                        <span>@lang('frontend/lumeca.how.title')</span>
                     </div>
 
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Підготовка до процедури</span>
+                                    <span class="accordion-title__text">@lang('frontend/lumeca.how.items.item_1.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -176,7 +176,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>За місяць до процедури уникайте: засмагу на сонці та в солярії, проведення лазерної епіляції, прийом системних ретиноїдів. За 48 годин до сеансу не рекомендується відвідувати сауну, лазню, басейн та приймати теплові процедури.</p>
+                                        <p>@lang('frontend/lumeca.how.items.item_1.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Процедура</span>
+                                    <span class="accordion-title__text">@lang('frontend/lumeca.how.items.item_2.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -199,7 +199,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Під час процедури з Lumecca виходитимуть яскраві спалахи світла, які відчуваються як легкі теплові імпульси, які переносяться комфортно та не потребують додаткового знеболювання. Почервоніння та легке тепло на шкірі зазвичай проходять протягом години. Протягом наступних 24–48 годин відбувається потемніння пігментних плям, які через тиждень відлущуються, і шкіра набуває більш рівномірного відтінку. Не рекомендується виходити відкрите сонце і займатися спортом відразу після сеансу.
+                                        <p>@lang('frontend/lumeca.how.items.item_2.description') </p>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +208,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Рекомендації після процедури</span>
+                                    <span class="accordion-title__text">@lang('frontend/lumeca.how.items.item_3.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -222,7 +222,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Сонцезахисний крем слід використовувати протягом трьох тижнів після кожного сеансу. Після кожної процедури можна наносити зволожуючі засоби. Чи не відвідувати сауни, лазні, басейни 3-4 дні. Відкласти ін'єкційні процедури щонайменше на тиждень.</p>
+                                        <p>@lang('frontend/lumeca.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Устаткування</span>
+                        <span>@lang('frontend/lumeca.equipment.equipment')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -250,17 +250,17 @@
                         <div class="equipment-card-block">
                             <div class="equipment-card-block__inner">
                                 <div class="equipment-card-title equipment-card-title_desktop" style="display: block">
-                                    <span>InMode Triton</span>
+                                    <span>@lang('frontend/lumeca.equipment.title')</span>
                                 </div>
 
                                 <div class="equipment-card-year">
-                                    <span class="equipment-card-year__property">Рік випуску</span>
+                                    <span class="equipment-card-year__property">@lang('frontend/lumeca.equipment.year_title')</span>
 
-                                    <span class="equipment-card-year__value">2021</span>
+                                    <span class="equipment-card-year__value">@lang('frontend/lumeca.equipment.year')</span>
                                 </div>
 
                                 <div class="equipment-card-descr">
-                                    <p>У нашому медичному центрі сеанси лазерного омолодження проводяться на базі ультрасучасної платформи InMode Triton. Платформа InMode є багатофункціональною та здатна вирішувати різноманітні косметологічні завдання. У ході процедури використовується насадка Lumeca, це ультрашвидкий діодний лазер для омолодження, характерними рисами якого є: технологія одночасного охолодження 3 pc (охолодження до, під час та після), ультрасучасна генерація імпульсів та потужність.</p>
+                                    <p>@lang('frontend/lumeca.equipment.description')</p>
                                 </div>
                             </div>
 
@@ -277,7 +277,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПРОЦЕДУРУ</span>
+                        <span>@lang('frontend/lumeca.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -285,7 +285,7 @@
                         </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/lumeca.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -511,15 +511,15 @@
 
             <div class="page-content before-foter-position">
                 <div class="banner-section-title">
-                    <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
+                    <span>@lang('frontend/lumeca.consultation.title')</span>
                 </div>
 
                 <div class="banner-section-subtitle">
-                    <span>Залишіть заявку на безкоштовну консультацію менеджера</span>
+                    <span>@lang('frontend/lumeca.consultation.description')</span>
                 </div>
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal-recall button-main button-main_orange">заявка на зворотний дзвінок</button>
+                    <button class="open-modal-recall button-main button-main_orange">@lang('frontend/lumeca.consultation.link')</button>
                 </div>
             </div>
         </div>

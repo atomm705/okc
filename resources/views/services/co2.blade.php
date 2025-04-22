@@ -11,11 +11,11 @@
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #000">Усунення косметичних дефектів та омолодження шкіри без скальпеля та уколів з фракційним Candela CO2RE лазером</span>
+                            <span style="color: #000">@lang('frontend/co2.slider.slide_1.description')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на консультацію</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/co2.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -26,12 +26,12 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Фракційний лазер Candela CO2RE, що це?</span>
+                        <span>@lang('frontend/co2.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Безболісне та безпечне видалення рубців, папілом, пігментних плям, наслідків акне, усунення мімічних зморшок. Все це можливо з функціональним фракційним лазером Candela CO2RE.</span>
+                            <span class="text-section__strong">@lang('frontend/co2.whatas.description_1_1')</span>
                         </p>
 
                     </div>
@@ -48,48 +48,48 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Коли потрібний фракційний лазер Candela CO2RE?</span>
+                    <span>@lang('frontend/co2.when.title')</span>
                 </div>
 
                 <div class="advantage">
                     <div class="advantage-list">
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Омолодження шкіри обличчя</span>
+                                <span>@lang('frontend/co2.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Якщо ви хочете, щоб ваша шкіра мала рівний рельєф, була здоровою та свіжою.</span>
+                                <span>@lang('frontend/co2.when.slide_1_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Звільнення від недоліків на обличчі</span>
+                                <span>@lang('frontend/co2.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Видалення пігментних плям, зморшок, рубців, ластовиння або кератозу.</span>
+                                <span>@lang('frontend/co2.when.slide_2_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Повернення шкіри пружності</span>
+                                <span>@lang('frontend/co2.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Збільшення синтезу колагену в епідермісі, що сприяє підвищенню пружності шкіри.</span>
+                                <span>@lang('frontend/co2.when.slide_3_2')</span>
                             </div>
                         </div>
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-title">
-                                <span>Видалення розтяжок та шрамів</span>
+                                <span>@lang('frontend/co2.when.slide_4_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>Якщо у вас є необхідність видалити розтяжки, косметологічні дефекти, атрофічні, хірургічні та опікові шрами або постакне.</span>
+                                <span>@lang('frontend/co2.when.slide_4_2')</span>
                             </div>
                         </div>
 
@@ -104,7 +104,7 @@
                             </span>
 
                         <div class="attention-main__text">
-                            <p>Якщо хочете вирішити якусь із цих проблем, фракційний лазер Candela CO2RE допоможе вам у цьому!</p>
+                            <p>@lang('frontend/co2.when.alert')</p>
                         </div>
                     </div>
 
@@ -120,7 +120,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Консультація перед Candela CO2RE – всього за 250 грн!</span>
+                        <span>@lang('frontend/co2.akcia.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/co2.akcia.link')</button>
                     </div>
                 </div>
             </div>
@@ -137,14 +137,14 @@
                 <div class="advantage">
                     <div class="advantage-list advantage-list_white page-box-sm">
                         <div class="title-section" style="padding-top: 25px">
-                            <span>Які процедури виконуються за допомогою фракційного лазера Candela CO2RE?</span>
+                            <span>@lang('frontend/co2.what.title')</span>
                         </div>
 
                         <div class="accordion-list">
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Candela CO2RE light</span>
+                                        <span class="accordion-title__text">@lang('frontend/co2.what.items.item_1.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -157,7 +157,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>поверхневе фракційне омолодження шкіри. Підходить для усунення дрібних нерівностей з поверхні шкіри, розширених пор та дрібних зморшок.</p>
+                                            <p>@lang('frontend/co2.what.items.item_1.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Candela CO2RE mid</span>
+                                        <span class="accordion-title__text">@lang('frontend/co2.what.items.item_2.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -178,7 +178,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>в цьому режимі лазер проникає в глибші шари шкіри, стимулюючи вироблення колагену. Відновлюються середні шари шкіри, видаляються рубці та сліди від акне, усуваються зморшки в області очей, рота, шиї та чола.</p>
+                                            <p>@lang('frontend/co2.what.items.item_2.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Candela CO2RE deep</span>
+                                        <span class="accordion-title__text">@lang('frontend/co2.what.items.item_3.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -199,7 +199,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>застосовується для проникнення у найглибші шари епідермісу, щоб розгладити глибокі зморшки, видалити рубці після прищів, атрофічні шрами, шрами після опіків, хірургічного впливу та інших косметичних дефектів. Відбувається омолодження шкіри, що в'яне, втрачає свою пружність.</p>
+                                            <p>@lang('frontend/co2.what.items.item_3.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@
                             <div class="accordion-list-item">
                                 <div class="accordion-list-item__inner">
                                     <div class="accordion-title" data-button>
-                                        <span class="accordion-title__text">Candela CO2RE fusion</span>
+                                        <span class="accordion-title__text">@lang('frontend/co2.what.items.item_4.title')</span>
 
                                         <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -220,7 +220,7 @@
 
                                     <div class="accordion-descr" data-box-dropdown>
                                         <div class="accordion-descr__inner" data-box-inner>
-                                            <p>цей режим призначений для випадків, коли необхідно одночасно впливати на поверхневі шари шкіри, так і на глибокі.</p>
+                                            <p>@lang('frontend/co2.what.items.item_4.description')</p>
                                         </div>
                                     </div>
                                 </div>
@@ -235,14 +235,14 @@
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">
-                        <span>Як відбувається процедура омолодження із системою Candela CO2RE?</span>
+                        <span>@lang('frontend/co2.how.title')</span>
                     </div>
 
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація</span>
+                                    <span class="accordion-title__text">@lang('frontend/co2.how.items.item_1.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -255,7 +255,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Ви проходите огляд у спеціаліста, який визначає ваші цілі.</p>
+                                        <p>@lang('frontend/co2.how.items.item_1.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -264,7 +264,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Підготовчий процес до процедури.</span>
+                                    <span class="accordion-title__text">@lang('frontend/co2.how.items.item_2.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -278,7 +278,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Перед початком шкіру обробляють місцевим анестетиком і за півгодини пацієнту надягають захисні окуляри.
+                                        <p>@lang('frontend/co2.how.items.item_2.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Процес вибору індивідуальних параметрів.</span>
+                                    <span class="accordion-title__text">@lang('frontend/co2.how.items.item_3.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -301,7 +301,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Сканується шкіра та залежно від обраної процедури, а також індивідуальних особливостей пацієнта, підбираються унікальні налаштування апарату.</p>
+                                        <p>@lang('frontend/co2.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +310,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Потім розпочинається процедура.</span>
+                                    <span class="accordion-title__text">@lang('frontend/co2.how.items.item_4.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -324,7 +324,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після неї фахівець дасть вам рекомендації щодо догляду за шкірою.</p>
+                                        <p>@lang('frontend/co2.how.items.item_4.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +339,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Фахівці</span>
+                        <span>@lang('frontend/co2.specialist.title')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -355,21 +355,21 @@
                                     </picture>
                                 </div>
                                 <div class="specialist-name">
-                                    <span>Салєнкова Олена Анатоліївна</span>
+                                    <span>@lang('frontend/co2.specialist_1.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/co2.specialist_1.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>косметологія, дерматологія і трихологія</span>
+                                        <span>@lang('frontend/co2.specialist_1.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">@lang('frontend/co2.specialist_1.description.link')</a>
                                 </div>
                             </div>
 
@@ -387,21 +387,21 @@
                                     </picture>
                                 </div>
                                 <div class="specialist-name">
-                                    <span>Хорунжа Любов Сергіївна</span>
+                                    <span>@lang('frontend/co2.specialist_2.specialist')</span>
                                 </div>
 
                                 <div class="specialist-specialization">
                                     <div class="specialist-specialization-property">
-                                        <span>спеціалізація</span>
+                                        <span>@lang('frontend/co2.specialist_2.specialisation')</span>
                                     </div>
 
                                     <div class="specialist-specialization-title">
-                                        <span>ксметологія, дерматовенерологія, трихологія</span>
+                                        <span>@lang('frontend/co2.specialist_2.description.title')</span>
                                     </div>
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">Докладніше про лікаря</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">@lang('frontend/co2.specialist_2.description.link')</a>
                                 </div>
                             </div>
                         </div>
@@ -418,7 +418,7 @@
 
                 <div class="page-content" style="z-index: 6">
                     <div class="banner-section-title">
-                        <span style="color: #FFF">ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span style="color: #FFF">@lang('frontend/co2.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -426,7 +426,7 @@
                     </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/co2.recording.link')</button>
                     </div>
                 </div>
                 <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.4); z-index: 5"></div>
@@ -441,7 +441,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+                                <span>@lang('frontend/co2.recording.items.item_1.title')</span>
                             </div>
                         </div>
 
@@ -451,7 +451,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найпередовіше обладнання</span>
+                                <span>@lang('frontend/co2.recording.items.item_2.title')</span>
                             </div>
                         </div>
 
@@ -461,7 +461,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Усі етапи процедури контролює лікар, що є запорукою комфорту пацієнта.</span>
+                                <span>@lang('frontend/co2.recording.items.item_3.title')</span>
                             </div>
                         </div>
                     </div>
@@ -473,7 +473,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Обладнання</span>
+                        <span> @lang('frontend/co2.equipment.equipment')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -485,17 +485,17 @@
                         <div class="equipment-card-block">
                             <div class="equipment-card-block__inner">
                                 <div class="equipment-card-title equipment-card-title_desktop" style="display: block">
-                                    <span>Candela CO2RE</span>
+                                    <span>@lang('frontend/co2.equipment.title')</span>
                                 </div>
 
                                 <div class="equipment-card-year">
-                                    <span class="equipment-card-year__property">Рік випуску</span>
+                                    <span class="equipment-card-year__property">@lang('frontend/co2.equipment.year_title')</span>
 
-                                    <span class="equipment-card-year__value">2020</span>
+                                    <span class="equipment-card-year__value">@lang('frontend/co2.equipment.year')</span>
                                 </div>
 
                                 <div class="equipment-card-descr">
-                                    <p>Фракційний лазер з широким спектром можливостей</p>
+                                    <p>@lang('frontend/co2.equipment.description')</p>
                                 </div>
                             </div>
 
@@ -511,7 +511,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/co2.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -519,7 +519,7 @@
                     </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/co2.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -806,15 +806,15 @@
 
             <div class="page-content before-foter-position">
                 <div class="banner-section-title">
-                    <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
+                    <span>@lang('frontend/co2.consultation.title')</span>
                 </div>
 
                 <div class="banner-section-subtitle">
-                    <span>Залишіть заявку на безкоштовну консультацію менеджера</span>
+                    <span>@lang('frontend/co2.consultation.description')</span>
                 </div>
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal-recall button-main button-main_orange">заявка на зворотний дзвінок</button>
+                    <button class="open-modal-recall button-main button-main_orange">@lang('frontend/co2.consultation.link')</button>
                 </div>
             </div>
         </div>

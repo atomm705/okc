@@ -6,15 +6,15 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span style="color: #181818;">Лазерна епіляція у “Докарт”</span>
+                            <span style="color: #181818;">@lang('frontend/epil.slider.slide_1.title')</span>
                         </div>
 
                         <div class="banner-main-subtitle">
-                            <span style="color: #181818">безпечне, ніжне та ефективне видалення небажаного волосся ультра діодним лазером DIOLAZE by INMODE</span>
+                            <span style="color: #181818">@lang('frontend/epil.slider.slide_1.description')</span>
                         </div>
 
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/epil.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -25,15 +25,15 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Епіляція діодним лазером DIOLAZE by INMODE?</span>
+                        <span>@lang('frontend/epil.whatas.title')</span>
                     </div>
 
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Епіляція діодним лазером</span> - Це унікальне безболісне та безпечне видалення небажаного волосся із системою потрійного охолодження. DIOLAZE використовує різні довжини хвиль впливу на саме волосся, що дозволяє максимально швидко та ефективно видалити навіть тонкі волоски.
+                            <span class="text-section__strong">@lang('frontend/epil.whatas.description_1_1')</span> @lang('frontend/epil.whatas.description_1_2')
                         </p>
                         <p>
-                            <span class="text-section__strong">Пристрій схвалений FDA.</span>
+                            <span class="text-section__strong">@lang('frontend/epil.whatas.description_1_3')</span>
                             <span class="text-section__mark"></span>
                         </p>
 
@@ -53,7 +53,7 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Лазерна епіляція DIOLAZE by INMODE</span>
+                    <span>@lang('frontend/epil.when.title')</span>
                 </div>
 
                 <div class="advantages">
@@ -63,11 +63,11 @@
                                     <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                                 </div>-->
                             <div class="advantage-card-title">
-                                <span>Зона бікіні</span>
+                                <span>@lang('frontend/epil.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>середнє бікіні та екстра бікіні, лобкова зона, статеві губи, міжягідна складка, сідниці</span>
+                                <span>@lang('frontend/epil.when.slide_1_2')</span>
                             </div>
                         </div>
 
@@ -76,11 +76,11 @@
                                 <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>-->
                             <div class="advantage-card-title">
-                                <span>Ноги</span>
+                                <span>@lang('frontend/epil.when.slide_2_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>стегна, гомілки, пальці ніг та повна епіляція ніг</span>
+                                <span>@lang('frontend/epil.when.slide_2_2')</span>
                             </div>
                         </div>
 
@@ -89,11 +89,11 @@
                                 <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>-->
                             <div class="advantage-card-title">
-                                <span>Руки та пахви</span>
+                                <span>@lang('frontend/epil.when.slide_3_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>кисті, пальці, передпліччя, плечі та пахви</span>
+                                <span>@lang('frontend/epil.when.slide_3_2')</span>
                             </div>
                         </div>
 
@@ -102,11 +102,11 @@
                                 <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>-->
                             <div class="advantage-card-title">
-                                <span>Спина та живіт</span>
+                                <span>@lang('frontend/epil.when.slide_4_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>поперек, верхня частина спини і вся спина, лінія живота та живіт</span>
+                                <span>@lang('frontend/epil.when.slide_4_2')</span>
                             </div>
                         </div>
 
@@ -115,11 +115,11 @@
                                 <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>-->
                             <div class="advantage-card-title">
-                                <span>Груди та шия</span>
+                                <span>@lang('frontend/epil.when.slide_5_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>епіляція чоловічих та жіночих грудей, ореоли молочних залоз, зона декольте</span>
+                                <span>@lang('frontend/epil.when.slide_5_2')</span>
                             </div>
                         </div>
 
@@ -128,11 +128,11 @@
                                 <img src="/assets/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>-->
                             <div class="advantage-card-title">
-                                <span>Обличчя</span>
+                                <span>@lang('frontend/epil.when.slide_6_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
-                                <span>зона зростання над верхньою губою, підборіддя, віскі, корекція брів, лінія чола</span>
+                                <span>@lang('frontend/epil.when.slide_6_2')</span>
                             </div>
                         </div>
 
@@ -147,7 +147,7 @@
                             </span>
 
                         <div class="attention-main__text">
-                            <p>Зверніть увагу на протипоказання: вагітність та лактація, онкологія, псоріаз, екзема та висип на шкірі, діабет та дисфункція щитовидної залози.</p>
+                            <p>@lang('frontend/epil.when.alert')</p>
                         </div>
                     </div>
 
@@ -163,14 +163,14 @@
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">
-                        <span>Як відбувається процедура лазерної епіляції DIOLAZE by INMODE</span>
+                        <span>@lang('frontend/epil.how.title')</span>
                     </div>
 
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Підготовка до процедури</span>
+                                    <span class="accordion-title__text">@lang('frontend/epil.how.items.item_1.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -183,7 +183,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Уникайте будь-якої засмаги протягом 3-4 тижнів перед процедурою або використовуйте сонцезахисний крем щонайменше 30 SPF. Уникайте місцевої дії подразників протягом 2-3 днів перед процедурою. Уникайте антикоагулянтів протягом 7–10 днів перед процедурою, якщо це допустимо з медичної точки зору. Зголіть волосся перед процедурою. Шкіра має бути чистою.</p>
+                                        <p>@lang('frontend/epil.how.items.item_1.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Процедура</span>
+                                    <span class="accordion-title__text">@lang('frontend/epil.how.items.item_2.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -206,7 +206,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Лазерна епіляція проходить швидко та безболісно.
+                                        <p>@lang('frontend/epil.how.items.item_2.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Рекомендації після процедури лазерної епіляції DIOLAZE by INMODE</span>
+                                    <span class="accordion-title__text">@lang('frontend/epil.how.items.item_3.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -229,7 +229,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>2-3 тижні не засмагати і не ходити у лазню тощо. <br>2-3 дні не займатися спортом та ін. активними фізичними навантаженнями. <br>Не висмикувати волосся в зоні обробки, тільки голити або депілювати кремом.</p>
+                                        <p>@lang('frontend/epil.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
-                        <span>Обладнання</span>
+                        <span>@lang('frontend/epil.equipment.equipment')</span>
                     </div>
 
                     <div class="equipment-card">
@@ -257,17 +257,17 @@
                         <div class="equipment-card-block">
                             <div class="equipment-card-block__inner">
                                 <div class="equipment-card-title equipment-card-title_desktop" style="display: block">
-                                    <span>InMode Triton</span>
+                                    <span>@lang('frontend/epil.equipment.title')</span>
                                 </div>
 
                                 <div class="equipment-card-year">
-                                    <span class="equipment-card-year__property">Рік випуску</span>
+                                    <span class="equipment-card-year__property">@lang('frontend/epil.equipment.year_title')</span>
 
-                                    <span class="equipment-card-year__value">2021</span>
+                                    <span class="equipment-card-year__value">@lang('frontend/epil.equipment.year')</span>
                                 </div>
 
                                 <div class="equipment-card-descr">
-                                    <p>У нашому медичному центрі сеанси лазерної епіляції проводяться на основі ультрасучасної платформи InMode Triton. Платформа InMode є багатофункціональною та здатна вирішувати різноманітні косметологічні завдання. У ході процедури використовується насадка Diolaze, це ультрашвидкий діодний лазер для епіляції, характерними рисами якого є: технологія одночасного охолодження 3 pc (охолодження до, під час та після), ультрасучасна генерація імпульсів та потужність. Для ефективного результату не потрібно проходити тривалі курси лазерної епіляції.</p>
+                                    <p>@lang('frontend/epil.equipment.description')</p>
                                 </div>
                             </div>
 
@@ -290,7 +290,7 @@
 
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПРОЦЕДУРУ</span>
+                        <span>@lang('frontend/epil.recording.title')</span>
                     </div>
 
                     <!--<div class="banner-section-subtitle">
@@ -298,7 +298,7 @@
                         </div>-->
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/epil.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -446,15 +446,15 @@
 
             <div class="page-content before-foter-position">
                 <div class="banner-section-title">
-                    <span>ГОТОВІ ВІДПОВІДІТИ НА БУДЬ-ЯКІ ВАШІ ПИТАННЯ І ПЕРЕДЗВОНИТИ</span>
+                    <span>@lang('frontend/epil.consultation.title')</span>
                 </div>
 
                 <div class="banner-section-subtitle">
-                    <span>Залишіть заявку на безкоштовну консультацію менеджера</span>
+                    <span>@lang('frontend/epil.consultation.description')</span>
                 </div>
 
                 <div class="wr-banner-section-button">
-                    <button class="open-modal-recall button-main button-main_orange">заявка на зворотний дзвінок</button>
+                    <button class="open-modal-recall button-main button-main_orange">@lang('frontend/epil.consultation.link')</button>
                 </div>
             </div>
         </div>

@@ -141,12 +141,18 @@ section {
         padding-top: 60px;
         padding-bottom: 60px
     }
+
+
 }
 
 @media (min-width: 1201px) {
     section.section-image:not(.section-flat-height), section.section-padding:not(.section-flat-height) {
         padding-top: 110px;
         padding-bottom: 110px
+    }
+
+    .position-decstop{
+        padding-left: 40px;
     }
 }
 
