@@ -397,8 +397,6 @@
                 <p>@lang('frontend/panoptix.company.body.text_2')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.company.link')</a></div>
         </div>
     </section>
-
-    
     <section
         class="section-mouse-effects section-mouse-effects-sides section-6 section-flat-height section-full-width section-full-height ">
         <!---->

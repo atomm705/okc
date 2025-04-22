@@ -6,15 +6,15 @@ return [
 		'description' => 'Medical center OK Center Kharkiv. Diagnostic center using modern equipment. Mayakovs\'koho St, 24 ☎ (057) 761-61-31',
 		'keywords'    => 'OK Center, Kharkiv, ophthalmology, ophthalmologist, laser vision correction, laser correction, cataract treatment, glasses selection, gynecology, gynecologist, urology, urologist',
 	],
-	
+
 	'slider' => [
 		'slide_1' => [
-			'title'       => 'The child should see the world <span>with his</span> eyes',
+			'title'       => 'The child should see the world <span style="font-size: 48px; color: #ff951d;">with his</span> eyes',
 			'description' => 'without glass and silicon barriers',
 			'link'        => 'Make an appointment',
 		],
 		'slide_2' => [
-			'title'       => '<span>Freedom</span> in movement towards victory',
+			'title'       => '<span style="font-size: 48px; color: #ff951d;">Freedom</span> in movement towards victory',
 			'description' => 'absolute freedom with active lifestyle',
 			'link'        => 'Make an appointment',
 		],
@@ -24,22 +24,22 @@ return [
 			'link'        => 'Make an appointment',
 		],
 		'slide_4' => [
-			'title'       => '<span>No surgical</span> intervention',
+			'title'       => '<span style="font-size: 48px; color: #ff951d;">No surgical</span> intervention',
 			'description' => 'and disturbances of the corneal and tear exchange',
 			'link'        => 'Make an appointment',
 		],
 	],
-	
+
 	'orthokeratology' => [
 		'title'       => 'What is Orthokeratology',
 		'description' => 'This is a modern method of correcting refractive errors namely myopia and astigmatism. This method allows you to temporarily correct vision using special contact lenses (OK-Lenses) during sleeping. Thus, the patient wears the lenses only while he is sleeping, and during the day he gets the opportunity to clearly see without the use of glasses and day lenses.',
 	],
-	
+
 	'surgery' => [
 		'title'       => 'Surgery is not required to see clearly',
 		'description' => 'Only OK-Lenses at night that will correct your child’s and your own eyesight for the coming day',
 	],
-	
+
 	'child' => [
 		'title'       => 'Visual impairment in children',
 		'description' => 'It is very difficult for a child with <strong>myopia</strong> or farsightedness to do everyday tasks without the use of glasses or contact lenses. <strong>Glasses</strong> prevent you from fully enjoying life: they fall off, pull, and with active exercises they can be broken and one can get injured. Also children may not keep the rules for wearing <strong>contact lenses</strong> which can lead to sad consequences',
@@ -58,11 +58,11 @@ return [
 			],
 		],
 	],
-	
+
 	'lenses' => [
 		'title' => 'You are exempted from glasses and contact lenses in the afternoon',
 	],
-	
+
 	'advantages' => [
 		'title' => 'Benefits of OK-Lenses',
 		'items' => [
@@ -84,11 +84,11 @@ return [
 			],
 		]
 	],
-	
+
 	'myopia_farsightedness' => [
 		'title' => 'Over <strong>6 years-old</strong> with a <strong>shortsightedness</strong> from 0.5 to 7 dioptries or with a <strong>astigmatism</strong> to 2 dioptries'
 	],
-	
+
 	'indication' => [
 		'title'       => 'Indications for OK-therapy',
 		'description' => 'Outside the upper bounds of any ametropias, there is the possibility of an incomplete correction with extra correction',
@@ -115,12 +115,12 @@ return [
 			],
 		],
 	],
-	
+
 	'consultation' => [
 		'title'       => 'Consult our specialists',
 		'description' => 'Our specialist will help you and answer all your questions'
 	],
-	
+
 	'price_calculator' => [
 		'items'      => [
 			'selected' => [
@@ -219,11 +219,11 @@ return [
 			'total'       => 'Total',
 		]
 	],
-	
+
 	'discomfort' => [
 		'title' => 'Time to stop feeling discomfort from wearing glasses and day contact lenses'
 	],
-	
+
 	'lenses_before_sleep' => [
 		'title' => 'How to wear lenses before bedtime',
 		'items' => [
@@ -239,11 +239,11 @@ return [
 			'item_10' => 'Loosely cover the container with lids or leave it open on the table in the room so that it does not gather dust, but dries overnight (do not leave the container in the bathroom).',
 		]
 	],
-	
+
 	'contact_with_specialist_up_lens' => [
 		'title' => 'If you do not manage to put on the lens, contact a specialist of our center',
 	],
-	
+
 	'lenses_after_sleep' => [
 		'title' => 'How to correctly remove lenses after sleep',
 		'items' => [
@@ -258,11 +258,11 @@ return [
 			'item_9' => 'Place the lens in the cup of the container and repeat all operations with the left lens.',
 		]
 	],
-	
+
 	'contact_with_specialist_down_lens' => [
 		'title' => 'If you don’t manage to remove the lens, contact a specialist at our center',
 	],
-	
+
 	'contact_us' => [
 		'title' => 'We offer an excellent ultramodern alternative which is Orthokeratological Night lenses',
 		'link'  => 'Contact us'
