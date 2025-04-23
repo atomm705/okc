@@ -2,7 +2,23 @@
     <!--RD Navbar-->
     <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-collapse-toggle
+            {{ Route::currentRouteName() === 'main.blepharoplastika' ||
+               Route::currentRouteName() === 'main.plastichna-khururgiya' ||
+               Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
+               Route::currentRouteName() === 'services.plazmoterapiya' ||
+               Route::currentRouteName() === 'services.rf-lifting' ||
+               Route::currentRouteName() === 'services.lazernaya-epilyatsiya' ||
+               Route::currentRouteName() === 'services.lazernoe-omolozhenie' ||
+               Route::currentRouteName() === 'services.co2' ||
+               Route::currentRouteName() === 'services.checkup' ||
+               Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
+               ? 'rd-navbar-collapse-toggle1'
+               : '' }}
+                rd-navbar-fixed-element-1"
+                 data-rd-navbar-toggle=".rd-navbar-collapse">
+                <span></span>
+            </div>
             <div class="rd-navbar-aside-outer rd-navbar-collapse">
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
@@ -45,10 +61,32 @@
             <div class="rd-navbar-main-outer">
                 <div class="rd-navbar-main">
                     <!--RD Navbar Panel-->
-                    <div class="rd-navbar-panel ">
+                    <div class="rd-navbar-panel"  style="{{ Route::currentRouteName() === 'main.blepharoplastika' ||
+              Route::currentRouteName() === 'main.plastichna-khururgiya' ||
+              Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
+              Route::currentRouteName() === 'services.plazmoterapiya' ||
+              Route::currentRouteName() === 'services.rf-lifting' ||
+              Route::currentRouteName() === 'services.lazernaya-epilyatsiya' ||
+              Route::currentRouteName() === 'services.lazernoe-omolozhenie' ||
+              Route::currentRouteName() === 'services.co2' ||
+              Route::currentRouteName() === 'services.checkup' ||
+              Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
+              ? 'background: white;box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);'
+              : '' }}">
                         <!--RD Navbar Toggle-->
 
-                        <button class="rd-navbar-toggle " data-rd-navbar-toggle=".rd-navbar-nav-wrap" ><span class="color-mobil"></span></button>
+                        <button class="rd-navbar-toggle  {{ Route::currentRouteName() === 'main.blepharoplastika' ||
+               Route::currentRouteName() === 'main.plastichna-khururgiya' ||
+               Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
+               Route::currentRouteName() === 'services.plazmoterapiya' ||
+               Route::currentRouteName() === 'services.rf-lifting' ||
+               Route::currentRouteName() === 'services.lazernaya-epilyatsiya' ||
+               Route::currentRouteName() === 'services.lazernoe-omolozhenie' ||
+               Route::currentRouteName() === 'services.co2' ||
+               Route::currentRouteName() === 'services.checkup' ||
+               Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
+               ? 'rd-navbar-toggle2'
+               : '' }}" data-rd-navbar-toggle=".rd-navbar-nav-wrap" ><span class="color-mobil "></span></button>
                         <!--RD Navbar Brand-->
                         <div class="rd-navbar-brand ">
                             <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>

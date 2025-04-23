@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     @if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya' || Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'   )
+
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">

@@ -14147,6 +14147,14 @@ a[href*='tel'], a[href*='mailto'] {
 	border-radius: 5px;
 }
 
+.rd-navbar-toggle2 span:after, .rd-navbar-toggle2 span:before, .rd-navbar-toggle2 span {
+	width: 24px;
+	height: 4px;
+	background-color: black;
+	backface-visibility: hidden;
+	border-radius: 5px;
+}
+
 .rd-navbar-toggle span {
 	transform: rotate(180deg);
 }
@@ -14201,6 +14209,20 @@ a[href*='tel'], a[href*='mailto'] {
 	margin-left: -3px;
 	border-radius: 50%;
 	transition: .3s all ease;
+}
+
+
+.rd-navbar-collapse-toggle1 span, .rd-navbar-collapse-toggle1 span:before, .rd-navbar-collapse-toggle1 span:after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    line-height: 6px;
+    text-align: center;
+    background: black;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 50%;
+    transition: .3s all ease;
 }
 
 .rd-navbar-collapse-toggle span:before, .rd-navbar-collapse-toggle span:after {
@@ -15091,6 +15113,7 @@ a[href*='tel'], a[href*='mailto'] {
 	box-shadow: none;
 	background: #2a93c9;
 }
+
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
 	color: #fff;
@@ -30069,3 +30092,5 @@ html.ie-11 .fc-event .fc-event-wrap {
 .p-index a:hover{
     text-decoration: underline;
 }
+
+
