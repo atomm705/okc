@@ -121,25 +121,45 @@
 
 @if(Route::currentRouteName() === 'services.panoptix')
 
-
-
+    <link rel="preload" as="script" src="{{ asset('blepharoplastika-js/app.js') }}">
 
     <script>
+
         document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll(".section-mouse-effects");
 
             sections.forEach((section) => {
                 const images = section.querySelectorAll(".image img");
+                const particles = section.querySelectorAll(".particles ");
+
+
+                //particles.forEach((particle) => {
+                //   const randX = Math.random() * 100;
+                //   const randY = Math.random() * 100;
+
+                //  particle.dataset.left = randX;
+                //  particle.dataset.top = randY;
+
+                //  particle.style.position = 'absolute';
+                //  particle.style.left = `${randX}%`;
+                //  particle.style.top = `${randY}%`;
+                // });
 
                 section.addEventListener("mousemove", (e) => {
                     const { left, top, width, height } = section.getBoundingClientRect();
                     const x = (e.clientX - left) / width;
                     const y = (e.clientY - top) / height;
 
-                    images.forEach((img, index) => {
-                        const moveX = (x - 0.5) * - 60;
-                        const moveY = (y - 0.5) * - 80;
+                    const moveX = (x - 0.5) * -80;
+                    const moveY = (y - 0.5) * -100;
+
+                    images.forEach((img) => {
                         img.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                    });
+
+                    particles.forEach((particle, index) => {
+                        const factor = (index % 3 === 0 ? 0.5 : 1);
+                        particle.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px)`;
                     });
                 });
 
@@ -147,9 +167,15 @@
                     images.forEach((img) => {
                         img.style.transform = "translate(0, 0)";
                     });
+
+                    particles.forEach((particle) => {
+                        particle.style.transform = "translate(0, 0)";
+                    });
                 });
             });
         });
+
+
 
 
         document.addEventListener("DOMContentLoaded", function () {

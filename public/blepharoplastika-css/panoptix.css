@@ -595,11 +595,13 @@ html.page-panoptix body .app section:not(.section-map).section-1 {
     }
 }
 
+/*
+коміт зроблено 23.04.2025
 @media (max-width: 1200px) {
     html.page-panoptix body .app section:not(.section-map).section-1 {
         margin-top: 60px
     }
-}
+}*/
 
 html.page-panoptix body .app section:not(.section-map).section-1 > .images {
     position: absolute;
@@ -656,19 +658,32 @@ html.page-panoptix body .app section:not(.section-map).section-1 > .images > .im
     height: 100%
 }
 
-html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
-    bottom: -80px !important
-}
+/*коміт 23.04.2025*/
+/*html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
+  bottom: -80px !important
+}*/
+
 
 @media (min-width: 1441px) {
     html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
         right: 20% !important
+    }
+
+    /* доданий стиль 23.04.2025*/
+    html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
+        bottom: -55px !important
     }
 }
 
 @media (max-width: 1440px) {
     html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
         right: 10% !important
+    }
+
+    html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
+
+
+        bottom: -35px !important
     }
 }
 
@@ -678,20 +693,36 @@ html.page-panoptix body .app section:not(.section-map).section-1 > .images > .im
         left: 30% !important;
         width: 550px
     }
+
+
 }
 
 @media (max-width: 768px) {
     html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
         left: 20% !important
     }
+
+    /*доданий стиль 23.04.2025 */
+    html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
+
+
+        bottom: -20px !important
+    }
+
+    /*доданий стиль 23.04.2025 */
+    html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
+        left: -10% !important;
+        width: 740px
+    }
 }
 
-@media (max-width: 480px) {
+/*коміт 23.04.2025 */
+/*@media (max-width: 480px) {
     html.page-panoptix body .app section:not(.section-map).section-1 > .images > .image img.iols {
         left: -60% !important;
         width: 740px
     }
-}
+}*/
 
 html.page-panoptix body .app section:not(.section-map).section-1 > .content > .slot > span, html.page-panoptix body .app section:not(.section-map).section-1 > .content > .slot > span i, html.page-panoptix body .app section:not(.section-map).section-1 > .content h3 span, html.page-panoptix body .app section:not(.section-map).section-1 > .content h3 span i {
     color: #f97d0a

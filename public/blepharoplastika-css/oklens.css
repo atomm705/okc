@@ -1686,6 +1686,10 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
         margin-top: 20px;
     }
 
+    .height-swipe{
+        height: 866px;
+    }
+
 
 }
 
@@ -1721,6 +1725,10 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
         justify-content: center;
     }
 
+    .height-swipe{
+        height: 600px;
+    }
+
 
 }
 
@@ -1731,6 +1739,8 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
          left: 0;
          z-index: 500;
     }
+
+
 }
 
 
@@ -1786,6 +1796,13 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .rd-navbar-toggle{
+        padding: 0px;
+    }
+    .height-swipe{
+        height: 600px;
+    }
 }
 
 .parallax-container-bg {
@@ -1830,7 +1847,7 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
     z-index: 15;
     position: absolute;
     width: 1170px;
-    margin-left:  -115px;
+    margin-left:  -110px;
     padding: 30px 40px;
     margin-top: 22px ;
 
@@ -1840,6 +1857,15 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
     border: 1px solid #d7d7d7;
     transform: translate3d(0, 30px, 0);
 
+}
+
+.rd-navbar-static .rd-navbar-dropdown {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    padding: 15px;
+    background: #fff;
+    z-index: 5;
 }
 .rd-navbar-fixed .rd-nav-link {
     color: #9b9b9b;
@@ -1860,3 +1886,10 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
 .section-title{
     padding-top: 110px;
 }
+
+.unit-body{
+    display: flex;
+    align-items: center;
+}
+
+

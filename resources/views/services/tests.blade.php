@@ -1,953 +1,636 @@
-
 <!DOCTYPE html>
-<html lang="uk" class="page-liposaktsiya page-header-not-margin">
+<html lang="uk" class="page-panoptix page-header-not-margin">
+
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="csrf-token" content="z5IhmV3naNZFJ2EFI25iCK2IDvqOeDSpyxbGQQ2x">
-    <meta name="date" content="2025 Apr 21">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="csrf-token" content="a8YXROVf1VdVuKifPeQ50SlXPOGIdCveMJ6TUIw9">
+    <meta name="date" content="2025 Apr 04">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Ліпосакція та Ліпоскульптурування в «Докарт» На сучасному обладнанні VASER. Приватна клініка в Харкове.</title><meta name="description" content="Ліпосакція та Ліпоскульптурування в «Докарт». Тепер у нас в центрі ви можете зробити ліпосакцію та ліпоскульптурування...."><meta name="keywords" content="Докарт, Харків, блефаропластика, офтальмологія, офтальмолог, лазерна корекція зору, лазерна корекція, лікування катаракти, підбір окулярів, гінекологія, гінеколог, урологія, урологб ліпосакція, ліпоскульптурування">
-    <meta property="og:title" content="Ліпосакція та Ліпоскульптурування в «Докарт» На сучасному обладнанні VASER. Приватна клініка в Харкове." /><meta property="og:description" content="Ліпосакція та Ліпоскульптурування в «Докарт». Тепер у нас в центрі ви можете зробити ліпосакцію та ліпоскульптурування...." />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta name="description"
+          content="Багатопрофільний медичний центр Докарт Харків. Діагностичний центр із використанням сучасного обладнання. вул. Маяковського, 24 ☎0(800)317-317">
+    <meta name="keywords"
+          content="Докарт, Харків, офтальмологія, офтальмолог, лазерна корекція зору, лазерна корекція, лікування катаракти, підбір очок, гінекологія, гінеколог, урологія, уролог">
+    <meta property="og:title"
+          content="Лінзи PanOptix у медичному центрі у Харкові &quot;Докарт&quot;. Приватна клініка у Харкові.">
+    <meta property="og:description"
+          content="Багатопрофільний медичний центр Докарт Харків. Діагностичний центр із використанням сучасного обладнання. вул. Маяковського, 24 ☎0(800)317-317">
+
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
 
 
 
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
     <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 
-    <sсript src="https://www.googletagmanager.com/gtag/js?id=UA-102428787-1"></sсript>
-    <sсript>
-        <template>
-            window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-            dataLayer.push(arguments);
-            }
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/panoptix.css') }}">
 
-            gtag('js', new Date());
-            gtag('config', 'UA-102428787-1');
-        </template>
-    </sсript>
-    <sсript>
-        <template>
-            (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-MZ368BN');
-        </template>
-    </sсript>
-    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
-    <link rel="preload" href="/assets/css/frontend/pages/services/services.css?3.0.15" as="style">
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/swiper.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/custom.css') }}">
-    <link rel="preload" href="/assets/js/frontend/pages/services/services.js?3.0.15" as="script">
 
-    <!-- Facebook Pixel Code -->
+
+    <link rel="preload" as="script" src="{{ asset('blepharoplastika-js/app.js') }}">
+
+
 
 
 </head>
-<body class="">
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ368BN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<div id="loading" style="color: #eee;">Загрузка сайта. Подождите пожалуйста.</div>
-<div class="app" id="app">
 
-    <main class="body-main">
-        <div class="section-main">
-            <div class="banner-main"
-                 style="background-image: url('/assets/images/services/liposaktsiya/banner.jpg');">
-                <div class="page-content">
-                    <div class="banner-main-hold">
-                        <div class="banner-main-title margin--50">
-                            <span class="text-shadow-primary text-primary">Ліпосакція та Ліпоскульптурування в «Докарт». На сучасному обладнанні VASER</span>
+<body >
+
+
+
+
+
+
+
+<div id="app" class="app">
+    <header class="section page-header  @if(request()->routeIs('main.index') || request()->routeIs('main.blepharoplastika') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.inektsionnaya-terapiya') || request()->routeIs('services.plazmoterapiya') || request()->routeIs('services.rf-lifting')|| request()->routeIs('services.lazernaya-epilyatsiya')|| request()->routeIs('services.lazernoe-omolozhenie')|| request()->routeIs('services.co2') || request()->routeIs('services.checkup') || request()->routeIs('services.panoptix')|| request()->routeIs('services.oklens')) header-absolute @endif">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <div class="rd-navbar-aside-outer rd-navbar-collapse">
+                    <!--RD Navbar Brand-->
+                    <div class="rd-navbar-aside">
+                        <div class="rd-navbar-brand">
+                            <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                         </div>
 
-                        <div class="banner-main-subtitle full-width-custom">
-                            <span class="text-primary">Vaser Lipo – найефективніша система ультразвукової ліпосакції доступна Вам вже сьогодні</span>
-                            <span style="font-size: 28px; margin-top: 20px" class="text-primary">Консультація лікаря - усього за 1грн</span>
-                        </div>
+                        <div class="contacts-wrap">
 
-                        <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-main">
-            <div class="page-content">
-                <div class="box-info">
-                    <div class="title-section">
-                        <span>Що таке ліпосакція?</span>
-                    </div>
-
-                    <div class="text-section">
-                        <p>
-                            <span class="text-section__strong">Ліпосакція </span>  - це хірургічна процедура, яка дозволяє видалити локальні жирові відкладення з різних ділянок тіла, таких як живіт, стегна, сідниці, боки, руки, підборіддя.
-                        </p>
-
-                        <p>
-                            <span class="text-section__strong">Основною метою є корекція контурів тіла.</span>
-                            <span class="text-section__mark"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-main">
-            <div class="page-content">
-                <div class="box-info">
-                    <div class="title-section">
-                        <span>Переваги ліпосакції в "Докарт"</span>
-                    </div>
-
-                    <div class="text-section">
-                        <span class="text-section__strong">В стінах нашої клініки ми використовуємо надсучасний апарат Vaser Lipo.</span>
-                        <p class="text-section__strong"> Унікальний ультразвуковий режим подрібнює жир залишаючи інші тканини неушкодженими.</p>
-
-                        <p>
-                            <span class="text-section__strong">Як наслідок:</span>
-                        </p>
-                        <ul>
-                            <li><span> - Менша травматизація зони ліпосакції;</span></li>
-                            <li><span> - Відсутність набряків, синців, та бугристості після операції;</span></li>
-                            <li><span> - Швидкий період реабілітації;</span></li>
-                            <li><span> - Видалення жиру + підтяжка шкіри одночасно, на відміну від класичної ліпосакції</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-main when-needed">
-            <div class="page-content">
-                <div class="title-section">
-                    <span>Коли потрібна ліпосакція:</span>
-                </div>
-
-                <div class="advantage">
-                    <div class="advantage-list">
-                        <div class="advantage-card">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/1.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-title">
-                                <span>Жирові пастки на:</span>
-                            </div>
-
-                            <div class="advantage-card-descr">
-                                <span>талії, руках, ногах(передня і/або задня поверхня стегна, і/або "вушка" та коліна, спина, холка)</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/2.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-title">
-                                <span>Ліпосакція обличчя</span>
-                            </div>
-
-                            <div class="advantage-card-descr">
-                                <span>2-ге підборіддя</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/3.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-title">
-                                <span>Ліпосакція 360</span>
-                            </div>
-
-                            <div class="advantage-card-descr">
-                                <span>Живіт, бока, спина</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/4.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-title">
-                                <span>Ліпоскульптуринг</span>
-                            </div>
-
-                            <div class="advantage-card-descr">
-                                <span>"Бразильські сідниці", "6 кубиків пресу"</span>
-                            </div>
-                        </div>
-                        <div class="advantage-card">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/5.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-title">
-                                <span>Гінекомастія</span>
-                            </div>
-
-                            <div class="advantage-card-descr">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="advantage-card">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/6.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-title">
-                                <span>Комбінація ліпосакції з абдомінопластикою</span>
-                            </div>
-
-                            <div class="advantage-card-descr">
-                                <span>твій шлях до ідеального тіла</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-main section-main-first">
-            <div class="page-content" style="display: flex; justify-content: center">
-                <div id="video_youtube" class="align-center"></div>
-                <script>
-                    if(screen.width > '767'){
-                        document.getElementById("video_youtube").innerHTML = '<iframe width="482" height="857" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-                    }
-                    if(screen.width < '768'){
-                        document.getElementById("video_youtube").innerHTML = '<iframe width="420" height="750" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-                    }
-                </script>
-            </div>
-        </div>
-        <div class="section-main section-main_first">
-            <div class="banner-section banner-section_top" id="banner-section-1">
-                <div class="banner-section-bg">
-                    <img src="/assets/images/60c7c9c66be72f8fbcdac32f0a3a99c6.webp" alt="bg"/>
-                    <div class="overlay-custom"></div>
-                </div>
-
-                <div class="page-content">
-                    <div class="banner-section-title">
-                        <span>Консультація - всього за 1 грн.</span>
-                    </div>
-
-                    <div class="banner-section-subtitle">
-                        <span> <br><span class="text-strong"></span></span>
-                    </div>
-
-                    <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-content">
-                <div class="advantage">
-                    <div class="advantage-list advantage-list_white">
-                        <div class="advantage-card advantage-card-custom advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Сучасне обладнання яке має сертификат FDA та використовується у найвідоміших клініках світу.</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card advantage-card-custom advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Сучасне обладнання яке має сертификат FDA та використовується у найвідоміших клініках світу.</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card advantage-card-custom advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Висококваліфіковані лікарі з багаторічним досвідом роботи</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card advantage-card-custom advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Ідеальні контури тіла без рубців та швидка реабілітація</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-main section-main_second  section-main_change-mob">
-            <div class="page-content">
-                <div class="page-box-sm">
-                    <div class="title-section">
-                        <span>Як відбувається процедура</span>
-                    </div>
-
-                    <div class="accordion-list">
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0" y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="0" width="2" height="16" fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Ви консультуєтесь з хірургом з приводу питань, які вас цікавлять. Отримаєте вичерпні відповіді і індивідуальний розбір вашої ситуації.</p>
+                            <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
+                                <div class="p unit unit-horizontal unit-spacing-xs">
+                                    <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
+                                    <div class="unit-body unit-body-first"><a href="#" class=" @if(request()->routeIs('main.index') || request()->routeIs('services.tests') ) text-white @endif">ПН-СБ
+                                            <br> с 9-00 до 17-00
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Огляд у фахівця</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
+                            </address>
+                            <address class="contact-info reveal-sm-inline-block text-start offset-none">
+                                <div class="p unit unit-spacing-xs unit-horizontal">
+                                    <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
+                                    <div class="unit-body align-content-center "><a href="tel:#" class=" @if(request()->routeIs('main.index') || request()->routeIs('services.tests')) text-white @endif">0 (800) 317-317
+                                        </a></div>
                                 </div>
+                            </address>
 
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Здаєте всі необхідні аналізи і, за потреби, проходите огляд у додаткових фахівців. Все індивідуально.
+                            <address class="contact-info reveal-sm-inline-block text-start">
+                                <div class="p unit unit-horizontal unit-spacing-xs">
+                                    <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
+                                    <div class="unit-body unit-body-third"><a href="#" class=" @if(request()->routeIs('main.index') || request()->routeIs('services.tests')) text-white @endif">Україна, м. Харків,
+                                            <br> вул. Миколи Хвильового (Маяковського), 24</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </address>
 
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Призначення дати операції</span>
 
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Лікар призначає дату операції і дає вам пам'ятку передопераційної підготовки з необхідними медикаментами. Обов'язково дотримуйтеся інформації в пам'ятці, оскільки якість підготовки впливає на результат.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">День операції</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>У призначений день вам проводять передопераційну підготовку (необхідну розмітку та анестезіологічний супровід) і саму операцію.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Спостереження в медичному центрі</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після операції вас переводять в палату, де ви відпочиваєте та отримуєте подальший супровід. На наступний день, вас виписують. Зауважимо, що все індивідуально, і в залежності від складності випадку та загального стану здоров'я пацієнта можливий варіант подовженого перебування в медичному центрі ще на 1 добу</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Пам'ятка післяопераційного догляду</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Вам видадуть пам'ятку післяопераційного догляду й необхідні медикаменти. Для швидкого загоєння і кращого результату потрібно чітко дотримуватися всіх рекомендацій.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація хірурга</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Перед випискою з медичного центру вас обов'язково ще раз консультує хірург</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Післяопераційний період</span>
-
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Через тиждень ви приходите в медичний центр для контрольного огляду хірургом. Він оглядає вас для контролю процесу загоєння та надає додаткові рекомендації, якщо вони потрібні</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attention-main">
-                            <span class="attention-main__ico">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M29.3911 22.5353L18.7818 3.00376C17.981 1.65576 16.5668 0.850677 14.9989 0.850677C13.4309 0.850677 12.0167 1.65576 11.2159 3.00376C11.2099 3.01408 11.2048 3.02439 11.1988 3.0347L0.624693 22.5044C-0.193217 23.8808 -0.208686 25.5338 0.582564 26.9257C1.37563 28.3184 2.80438 29.1492 4.40674 29.1492H25.5324C27.1347 29.1492 28.6222 28.3184 29.4152 26.9257C30.2064 25.5339 30.191 23.8808 29.3911 22.5353ZM13.2393 9.79378C13.2393 8.82195 14.0271 8.03421 14.9989 8.03421C15.9707 8.03421 16.7584 8.82201 16.7584 9.79378V16.8321C16.7584 17.8038 15.9706 18.5917 14.9989 18.5917C14.0271 18.5917 13.2393 17.8038 13.2393 16.8321V9.79378ZM14.9989 25.6301C13.5434 25.6301 12.3594 24.4461 12.3594 22.9907C12.3594 21.5353 13.5434 20.3513 14.9989 20.3513C16.4543 20.3513 17.6382 21.5353 17.6382 22.9907C17.6383 24.4461 16.4543 25.6301 14.9989 25.6301Z"
-                                          fill="#F37110"/>
-                                </svg>
-                            </span>
-
-                        <div class="attention-main__text">
-                            <p>Кожен етап може трохи відрізнятися за часом, оскільки все індивідуально і залежить від ваших особливостей. Лікар враховує саме вашу ситуацію під час огляду, лікування та відновлення. Завдяки персоналізованим, а не «шаблонним» методам ви можете бути впевнені в результаті.
-                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <!--RD Navbar Panel-->
+                        <div class="rd-navbar-panel ">
+                            <!--RD Navbar Toggle-->
+
+                            <button class="rd-navbar-toggle " data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span class="color-mobil"></span></button>
+                            <!--RD Navbar Brand-->
+                            <div class="rd-navbar-brand ">
+                                <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
+                            </div>
+
+                        </div>
+                        <div class="rd-navbar-main-element">
+                            <div class="rd-navbar-nav-wrap">
+
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">@lang('messages.Home')</a>
+                                    </li>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">@lang('messages.Services')</a>
+                                        <ul class="rd-menu rd-navbar-megamenu">
+                                            <li class="rd-megamenu-item">
+                                                <h6 class="rd-megamenu-title">@lang('main.oftalmology')</h6>
+                                                <ul class="rd-megamenu-list">
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.blepharoplastika') }}" >Блефаропластика</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.panoptix') }}">PanOptix</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('services.oklens') }}">Ок Лінзи</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">@lang('messages.Grid')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tabs-and-accordions.html">@lang('messages.Tabs and Accordions')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">@lang('messages.Progress bars')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="icons.html">@lang('messages.Icons')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">@lang('messages.Tables')</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="rd-megamenu-item">
+                                                <h6 class="rd-megamenu-title">@lang('main.plastic_khirurgiya')</h6>
+                                                <ul class="rd-megamenu-list">
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('main.plastichna-khururgiya') }}">Пластична хірургія</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="careers.html">@lang('messages.Careers')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="faq.html">@lang('messages.FAQ Page')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="pricing.html">@lang('messages.Pricing')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">@lang('messages.Coming Soon')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="maintenance.html">@lang('messages.Maintenance')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="under-construction.html">@lang('messages.Under Construction')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="login.html">@lang('messages.Login/Register')</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="rd-megamenu-item">
+                                                <h6 class="rd-megamenu-title">@lang('main.estetychna_medicine')</h6>
+                                                <ul class="rd-megamenu-list">
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.inektsionnaya-terapiya') }}">Ін'єкційна косметологія</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.plazmoterapiya') }}">Плазмотерапія</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.rf-lifting') }}">RF-ліфтинг</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.lazernaya-epilyatsiya') }}">Лазерна епиляция</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.lazernoe-omolozhenie') }}">Лазерне омоложення</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.co2') }}">Фракційний лазер Candela CO2RE</a></li>
+
+
+
+                                                </ul>
+                                            </li>
+                                            <li class="rd-megamenu-item">
+                                                <h6 class="rd-megamenu-title">@lang('main.all_medicine')</h6>
+                                                <ul class="rd-megamenu-list">
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.checkup') }}">Check Up</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="partners.html">@lang('messages.Partners')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">@lang('messages.Privacy Policy')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">@lang('messages.Search Results')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404.html">@lang('messages.404 Page')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503.html">@lang('messages.503 Page')</a></li>
+                                                    <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="make-an-appointment.html">@lang('messages.Make an Appointment')</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">@lang('messages.Timetable')</a>
+                                    </li>
+
+                                    <li class="rd-nav-item @if(request()->routeIs('main.team')) active @endif"><a class="rd-nav-link" href="{{ route('main.team') }}">@lang('messages.Team')</a></li>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.testimonials') }}">@lang('messages.testimonials')</a></li>
+
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">@lang('messages.prices')</a>
+
+                                    <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">@lang('messages.Gallery')</a>
+                                    <ul class="rd-menu rd-navbar-dropdown">
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">@lang('messages.Grid Gallery')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery-no-padding.html">@lang('messages.Gallery Without Padding')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">@lang('messages.Masonry Gallery')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cobbles-gallery.html">@lang('messages.Cobbles Grid')</a>
+                                        </li>
+                                    </ul>
+                                </li>-->
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">@lang('messages.Contacts')</a>
+                                    </li>
+
+                                    <li class="rd-nav-item @if(request()->routeIs('main.about')) active @endif"><a class="rd-nav-link" href="{{ route('main.about') }}" > @lang('messages.About')</a>
+                                    </li>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">@lang('messages.Online information')</a>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.blog') }}">@lang('messages.Blog')</a>
+                                    <!--<ul class="rd-menu rd-navbar-dropdown">
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">@lang('messages.Blog Masonry')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-modern.html">@lang('messages.Blog Modern')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-classic.html">@lang('messages.Blog Classic')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-grid.html">@lang('messages.Blog Grid')</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.html">@lang('messages.Single Post')</a>
+                                        </li>
+                                    </ul>-->
+                                    </li>
+                                    <div class="language_select">
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
+                                            <ul class="rd-menu rd-navbar-dropdown">
+                                                @foreach (['en', 'uk', 'ru'] as $lang)
+                                                    <li class="rd-dropdown-item">
+                                                        <a class="rd-dropdown-link" href="{{ route('switch.language', ['locale' => $lang]) }}">{{ strtoupper( __('main.'.$lang)) }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <!--RD Navbar Search-->
+                        <!--<div class="rd-navbar-search">
+                            <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                            <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                                <div class="form-wrap">
+                                    <label class="form-label" for="rd-navbar-search-form-input">@lang('messages.Type and hit enter...')</label>
+                                    <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                                    <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                                </div>
+                                <button class="rd-search-form-submit fa-search" type="submit"></button>
+                            </form>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class=" section-1 section-flat-height section-full-width section-full-height "><!---->
+        <div class="images">
+            <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;"><img class="board"
+                                                                                                       src="/images/9c865035a41a088e2394ef64c8afc017.webp">
+            </div>
+            <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;"><img class="iols"
+                                                                                                       src="/images/fc27907f2413cdff764b30b308059476.webp">
             </div>
         </div>
-
-        <div class="section-main">
-            <div class="page-content">
-                <div class="title-section">
-                    <span>Спеціаліст</span>
-                </div>
-            </div>
-
-            <div class="slider-main wr-slider-specialist">
-                <div class="page-content wr-specialist-info">
-                    <div class="specialist-card-box">
-                        <div class="specialist-name">
-                            <span>Овчинка Роман Олександрович</span>
-                        </div>
-
-                        <div class="specialist-specialization">
-                            <div class="specialist-specialization-property">
-                                <span>Спеціалізація</span>
-                            </div>
-
-                            <div class="specialist-specialization-title">
-                                <span>Пластична хірургія</span>
-                            </div>
-                        </div>
-
-                        <div class="specialist-info">
-                            <p>Лікар пластичної хірургії зі стажем роботи понад 7 років</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wr-slider-specialis__inner">
-                    <div class="slider-specialist swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="specialist-card">
-                                    <picture class="specialist-photo">
-                                        <source srcset="/assets/images/services/liposaktsiya/ovchinka.png"
-                                                media="(min-width: 992px)"/>
-
-                                        <img src="/assets/images/services/liposaktsiya/ovchinka_mob.png"
-                                             alt="specialist"/>
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slider-main-navigation" style="display: none">
-                        <div class="slider-main-button slider-main-prev">
-                            <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 2.35836L4.96156 10L13 17.6416L10.5193 20L-1.2319e-06 10L10.5193 5.42182e-07L13 2.35836Z"
-                                      fill="white"/>
-                            </svg>
-                        </div>
-
-                        <div class="slider-main-button slider-main-next">
-                            <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.31342e-06 17.6416L8.03844 10L3.09261e-07 2.35836L2.48074 -3.25309e-07L13 10L2.48074 20L2.31342e-06 17.6416Z"
-                                      fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+        <div class="content"><h3>@lang('frontend/panoptix.cover.title')</h3>
+            <p>@lang('frontend/panoptix.cover.description')</p>
+            <div class="slot">@lang('frontend/panoptix.cover.body')</div>
+        </div>
+    </section>
+    <section class="section-mouse-effects section-mouse-effects-sides section-2 section-flat-height section-full-width section-full-height">
+        <!---->
+        <div class="images">
+            <div class="image section-mouse-effects" style="transform-style: preserve-3d; backface-visibility: hidden;"><img
+                    src="/images/69c53bef4bfcc111c612abd11b996de9.webp"></div>
+            <div class="particles" style="transform-style: preserve-3d; backface-visibility: hidden;">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
             </div>
         </div>
-
-        <div class="section-main">
-            <div class="banner-section banner-section_top" id="banner-section-2">
-                <div class="banner-section-bg">
-                    <img src="/assets/images/services/plastychna/banner-section-2.jpg" alt="bg"/>
-                </div>
-                <div class="page-content">
-                    <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
-                    </div>
-
-                    <div class="banner-section-subtitle">
-                        <span>Дізнайтеся, який тип операції підійде саме вам</span>
-                    </div>
-
-                    <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
-                    </div>
-                </div>
+        <div class="content"><h3>@lang('frontend/panoptix.intraocular.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.intraocular.body.text_1')</p>
+                <p>@lang('frontend/panoptix.intraocular.body.text_2')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.intraocular.link')</a>
             </div>
+        </div>
+    </section>
+    <section class="section-mouse-effects section-mouse-effects-sides section-mouse-effects-reversed section-3 section-flat-height section-full-width section-full-height">
+        <!---->
+        <div class="images">
+            <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;"><img
+                    src="/images/e54b3beace82bb7e66a9c4e539caede7.webp"></div>
+            <div class="particles" style="transform-style: preserve-3d; backface-visibility: hidden;">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="content"><h3>@lang('frontend/panoptix.panoptix.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.panoptix.body.text_1')</p>
+                <p>@lang('frontend/panoptix.panoptix.body.text_2')</p>
+                <p>@lang('frontend/panoptix.panoptix.body.text_3')</p> <a href="/contacts"
+                                                                          class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.panoptix.link')</a>
+            </div>
+        </div>
+    </section>
+    <section
+        class="section-mouse-effects section-mouse-effects-sides section-4 section-flat-height section-full-width section-full-height">
+        <!---->
+        <div class="images">
+            <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;"><img
+                    src="/images/bb5bf3aecc22c5000ba655d32f1748d8.webp"></div>
+            <div class="particles" style="transform-style: preserve-3d; backface-visibility: hidden;">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="content"><h3>@lang('frontend/panoptix.enlighten.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.enlighten.body.text_1')</p>
+                <ul class="list-marked list-tab-none">
+                    <li>@lang('frontend/panoptix.enlighten.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.enlighten.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.enlighten.body.items.item_1')</li>
+                </ul>
+                <p>@lang('frontend/panoptix.enlighten.body.text_2')</p> <a href="/contacts"class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.enlighten.link')</a>
+            </div>
+        </div>
+    </section>
+    <section
+        class="section-mouse-effects section-mouse-effects-sides section-mouse-effects-reversed section-5 section-flat-height section-full-width section-full-height">
+        <!---->
+        <div class="images">
+            <div class="image" style="transform-style: preserve-3d; backface-visibility: hidden;"><img
+                    src="/images/ddb67f77df26b9ab3a22d62890349112.webp"></div>
+            <div class="particles" style="transform-style: preserve-3d; backface-visibility: hidden;">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="content position-decstop"><h3>@lang('frontend/panoptix.company.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.company.body.text_1')</p>
+                <ul class="list-marked list-tab-none">
+                    <li>@lang('frontend/panoptix.company.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_2')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_3')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_4')</li>
+                    <li>@lang('frontend/panoptix.company.body.items.item_5')</li>
+                </ul>
+                <p>@lang('frontend/panoptix.company.body.text_2')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.company.link')</a></div>
+        </div>
+    </section>
+    <section
+        class="section-mouse-effects section-mouse-effects-sides section-6 section-flat-height section-full-width section-full-height ">
+        <!---->
+        <div class="images">
+            <div class="image"
+                 style="transform-style: preserve-3d; backface-visibility: hidden; transform: translate3d(-48.4587px, 14.3457px, 0px);">
+                <img src="/images/0ce32fde40dc9b0d3ccec8420c3188c4.webp"></div>
+            <div class="particles"
+                 style="transform-style: preserve-3d; backface-visibility: hidden; transform: translate3d(-144.67px, 43.0321px, 0px);">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="content"><h3>@lang('frontend/panoptix.centurion.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.centurion.body.text_1')</p>
+                <ul class="list-marked list-tab-none">
+                    <li>@lang('frontend/panoptix.centurion.body.items.item_1')</li>
+                    <li>@lang('frontend/panoptix.centurion.body.items.item_2')
+                    </li>
+                    <li>@lang('frontend/panoptix.centurion.body.items.item_3')
+                    </li>
+                </ul>
+                <p>@lang('frontend/panoptix.centurion.body.text_1')</p> <a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.centurion.link')</a></div>
+        </div>
+    </section>
+    <section tilt="true"
+             class="section-mouse-effects section-7 section-flat-height section-full-width section-full-height"><!---->
+        <div class="images"><img data-tilt-full-page-listening="" data-tilt-reset="false"
+                                 src="/images/29f97ac0545f1369b0528257352d4cd6.png">
+            <div data-tilt-full-page-listening="" data-tilt-reset="false" data-tilt-perspective="400" class="particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="content"><h3>@lang('frontend/panoptix.questions.title')</h3> <!---->
+            <div class="slot"><p>@lang('frontend/panoptix.questions.body.text_1')</p>
+                <p>@lang('frontend/panoptix.questions.body.text_2')</p>
+                <p>@lang('frontend/panoptix.questions.body.text_3')</p>
+                <div class="center"><a href="/contacts"   class="button button-ellipse button-preset-primary button-large">@lang('frontend/panoptix.questions.link')</a></div>
+            </div>
+        </div>
+    </section>
 
-            <div class="page-content">
-                <div class="advantage">
-                    <div class="advantage-list advantage-list_white">
-                        <div class="advantage-card advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/plastychna/svg/ico-4.svg" alt="ico"/>
-                            </div>
+    <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+    <!--Please note that YOUR_API_KEY should replaced with your key.-->
+    <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
+    <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.105976527954!2d36.24050249288963!3d50.00936884557607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e56e275b2f%3A0x42bbbee2ee570576!2z0JzQtdC00LjRhtC40L3RgdC60LjQuSDRhtC10L3RgtGAINCU0L7QutCw0YDRgiAo0LrQu9C40L3QuNC60LAg0J7QuiDQptC10L3RgtGAKQ!5e0!3m2!1sru!2sua!4v1743058892159!5m2!1sru!2sua&gestureHandling=greedy"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <ul class="google-map-markers">
+            <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+        </ul>
+    </div>
 
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+
+
+
+    <footer class="section-relative section-top-66 section-bottom-34 page-footer bg-accent context-dark footer-classic">
+        <div class="container">
+            <div class="row justify-content-md-center text-xl-start">
+                <div class="col-md-8 col-lg-12">
+                    <div class="row justify-content-sm-center row-40">
+                        <div class="col-sm-10 col-lg-4 text-start order-lg-3 inset-lg-left-50">
+                            <h6>@lang('messages.Newsletter')</h6>
+                            <hr class="text-subline">
+                            <p class="text-white-70">@lang('messages.Enter your email address to receive up-to-date news, new patient information and other useful stuff, delivered right to your inbox.')</p>
+                            <form class="rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                                <div class="form-wrap input-group input-group-custom input-group-sm no-wrap">
+                                    <label class="form-label" for="subscribe-form-email">@lang('messages.Your e-mail...')</label>
+                                    <input class="form-input mr-2" id="subscribe-form-email" type="email" name="email">
+                                    <button class="btn btn-sm btn-darkest" type="submit">@lang('messages.Subscribe')</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-10 text-sm-start col-lg-4 order-lg-2">
+                            <h6>@lang('messages.contact us')</h6>
+                            <hr class="text-subline">
+                            <div class="text-center text-xl-start">
+                                <address class="contact-info d-md-inline-block text-start">
+                                    <div class="p unit unit-spacing-xxs flex-row">
+                                        <div class="unit-left"><span class="icon icon-xxs mdi mdi-phone text-white"></span></div>
+                                        <div class="unit-body"> <a class="text-white-70" href="tel:#"> (057) 761-61-31</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (093) 761-61-31</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (099) 548-44-85</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (097) 318-67-58</a> </div>
+                                    </div>
+                                    <div class="p unit flex-row unit-spacing-xxs">
+                                        <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
+                                        <div class="unit-body"><a class="text-white-70" href="#">м. Харків, вул. Миколи Хвильового (Маяковського), 24 (м. Університет, м. Пушкінська)</a></div>
+                                    </div>
+                                    <!--<div class="p unit unit-spacing-xxs flex-row offset-top-16">
+                                        <div class="unit-left"><span class="icon icon-xxs mdi mdi-email-outline text-white"></span></div>
+                                        <div class="unit-body"><a class="text-white-70 text-java" href="mailto:#">info@demolink.org</a></div>
+                                    </div>-->
+                                </address>
                             </div>
                         </div>
-
-                        <div class="advantage-card advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/plastychna/svg/ico-5.svg" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найсучасніше обладнання</span>
-                            </div>
-                        </div>
-
-                        <div class="advantage-card advantage-card_small">
-                            <div class="advantage-card-ico">
-                                <img src="/assets/images/services/plastychna/svg/ico-6.svg" alt="ico"/>
-                            </div>
-
-                            <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Кожен етап операції супроводжує лікар-анестезіолог, що є запорукою комфорту пацієнта</span>
+                        <div class="col-sm-10 col-lg-4 order-lg-1 text-center text-lg-start">
+                            <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
+                            <div class="offset-top-30">
+                                <ul class="list-inline">
+                                    <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="#"></a></li>
+                                    <li><a class="icon fa fa-twitter icon-xxs icon-circle icon-white" href="#"></a></li>
+                                    <li><a class="icon fa fa-google-plus icon-xxs icon-circle icon-white" href="#"></a></li>
+                                    <li><a class="icon fa fa-rss icon-xxs icon-circle icon-white" href="#"></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <div class="container offset-top-50 offset-md-top-60">
+             <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Докарт центр сучасної медицини </span><span>.&nbsp;</span><a href="privacy-policy.html">политика конфиденциальности</a></p>
+         </div>-->
+    </footer>
 
-        <div class="section-main">
-            <div class="page-content">
-                <div class="equipment">
-                    <div class="title-section">
-                        <span>Обладнання</span>
-                    </div>
 
-                    <div class="equipment-card">
-                        <div class="equipment-card-img">
-                            <img src="/assets/images/services/liposaktsiya/equipment.png" alt="equipment">
 
-                            <div class="equipment-card-title equipment-card-title_mob">
-                                <span>VASER LIPO</span>
-                            </div>
-                        </div>
-
-                        <div class="equipment-card-block">
-                            <div class="equipment-card-block__inner">
-                                <div class="equipment-card-title equipment-card-title_desktop">
-                                    <span>VASER LIPO</span>
-                                </div>
-
-                                <div class="equipment-card-year">
-                                    <span class="equipment-card-year__property">Рік випуску</span>
-
-                                    <span class="equipment-card-year__value">2025</span>
-                                </div>
-
-                                <div class="equipment-card-descr">
-                                    <p>VASER LIPO – ультразвуковий апарат для ліпосакції, який дозволяє точно та делікатно видаляти жирові відкладення без пошкодження навколишніх тканин. Апарат забезпечує мінімальну травматичність, короткий період відновлення та можливість моделювання контурів тіла з високою точністю.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="equipment-card-addition">
-                                <p>Операції проводить досвідчений пластичний хірург – більше 7 років стажу.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="banner-section banner-section_bottom" id="banner-section-3">
-                <div class="banner-section-bg">
-                    <img src="/assets/images/services/plastychna/banner-section-3.jpg" alt="bg"/>
-                </div>
-
-                <div class="page-content">
-                    <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
-                    </div>
-
-                    <div class="banner-section-subtitle">
-                        <span>Отримайте розрахунок вартості операції</span>
-                    </div>
-
-                    <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--<div class="section-main">
-            <div class="page-content">
-                <div class="title-section">
-                    <span>Відгуки клієнтів</span>
-                </div>
-                <div class="list-box">
-                    <div class="list-box__item">
-                        <div class="review-box">
-                            <div class="recall-result">
-                                <div class="recall-result-title">
-                                    <span>Результат</span>
-                                </div>
-                                <div class="recall-result-box" id="resultRecall_1">
-                                    <div class="recall-result-box__before">
-                                        <div class="recall-result-box-img">
-                                            <img src="/assets/images/services/liposaktsiya/slide1-1.jpg"
-                                                 alt="result">
-                                        </div>
-
-                                        <div class="recall-result-box-title">
-                                            <span>До</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="recall-result-box__after divisorAfter">
-                                        <div class="recall-result-box-img">
-                                            <img src="/assets/images/services/liposaktsiya/slide1-2.jpg"
-                                                 alt="result">
-                                        </div>
-
-                                        <div class="recall-result-box-title" id="titleBefore">
-                                            <span>Після</span>
-                                        </div>
-
-                                        <div class="draggable">
-                                                <span class="dr-btn">
-                                                    <span class="dr-btn__left">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-
-                                                    <span class="dr-btn__right">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="list-box__item">
-                        <div class="review-box">
-                            <div class="recall-result">
-                                <div class="recall-result-title">
-                                    <span>Результат</span>
-                                </div>
-                                <div class="recall-result-box" id="resultRecall_2">
-                                    <div class="recall-result-box__before">
-                                        <div class="recall-result-box-img">
-                                            <img src="/assets/images/services/liposaktsiya/slide2-1.jpg"
-                                                 alt="result"/>
-                                        </div>
-
-                                        <div class="recall-result-box-title">
-                                            <span>До</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="recall-result-box__after divisorAfter">
-                                        <div class="recall-result-box-img">
-                                            <img src="/assets/images/services/liposaktsiya/slide2-2.jpg"
-                                                 alt="result"/>
-                                        </div>
-
-                                        <div class="recall-result-box-title">
-                                            <span>Після</span>
-                                        </div>
-
-                                        <div class="draggable">
-                                                <span class="dr-btn">
-                                                    <span class="dr-btn__left">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-
-                                                    <span class="dr-btn__right">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <div class="section-main">
-            <div class="page-content">
-                <div class="title-section">
-                    <span>Відгуки клієнтів</span>
-                </div>
-                <div class="list-box">
-                    <div class="list-box__item">
-                        <div class="review-box">
-                            <div class="recall-result">
-                                <div class="recall-result-title">
-                                    <span>Результат</span>
-                                </div>
-                                <div class="ba-slider">
-                                    <img src="/images/services/slide1-1.jpg" alt="">
-                                    <span class="label label-after">До</span>
-                                    <div class="resize">
-                                        <img src="/images/services/slide1-2.jpg" alt="">
-                                        <span class="label label-before">Після</span>
-                                    </div>
-                                    <div class="draggable">
-                                        <span class="dr-btn">
-                                          <span class="dr-btn__left">
-                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
-                                                    fill="#1D86BC"/>
-                                            </svg>
-                                          </span>
-                                          <span class="dr-btn__right">
-                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
-                                                    fill="#1D86BC"/>
-                                            </svg>
-                                          </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-box__item">
-                        <div class="review-box">
-                            <div class="recall-result">
-                                <div class="recall-result-title">
-                                    <span>Результат</span>
-                                </div>
-                                <div class="ba-slider">
-                                    <img src="/images/services/slide2-1.jpg" alt="">
-                                    <span class="label label-after">До</span>
-                                    <div class="resize">
-                                        <img src="/images/services/slide2-2.jpg" alt="">
-                                        <span class="label label-before">Після</span>
-                                    </div>
-                                    <div class="draggable">
-                                        <span class="dr-btn">
-                                          <span class="dr-btn__left">
-                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
-                                                    fill="#1D86BC"/>
-                                            </svg>
-                                          </span>
-                                          <span class="dr-btn__right">
-                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
-                                                    fill="#1D86BC"/>
-                                            </svg>
-                                          </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-main section-main_m-n section-main_video" style="min-height: 320px; height:auto; max-height: 640px">
-
-            <div class="banner-section banner-section_bottom" id="banner-section-4" style="margin-top: 70px">
-                <div class="banner-section-bg">
-                    <img src="/assets/images/services/plastychna/banner-section-4.jpg" alt="bg"/>
-                </div>
-
-                <div class="page-content">
-                    <div class="banner-section-title">
-                        <span>ГОТОВІ ВІДПОВІСТИ НА БУДЬ-ЯКІ ВАШІ ЗАПИТАННЯ І ПЕРЕТЕЛЕФОНУВАТИ ВАМ!</span>
-                    </div>
-
-                    <div class="banner-section-subtitle">
-                        <span>Залиште заявку на безкоштовну консультацію менеджера.</span>
-                    </div>
-
-                    <div class="wr-banner-section-button">
-                        <button class="open-modal-recall button-main button-main_orange">заявка на зворотній дзвінок</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer-component :translations="{&quot;newsletter&quot;:{&quot;title&quot;:&quot;Розсилка&quot;,&quot;description&quot;:&quot;Введіть свою E-Mail адресу, щоб отримувати новини та іншу інформацію, яка може бути цікавою для вас.&quot;,&quot;subscribe&quot;:&quot;Підписатися&quot;},&quot;contacts&quot;:{&quot;title&quot;:&quot;Контакти&quot;,&quot;address&quot;:&quot;м. Харків, вул. Миколи Хвильового (Маяковського), 24 (м. Університет, м. Пушкінська)&quot;}}"></footer-component>
-    <appointment-modal locale="uk" :translations="{&quot;fatal_error&quot;:&quot;Фатальна помилка&quot;,&quot;title&quot;:&quot;Запис онлайн&quot;,&quot;selectizer&quot;:{&quot;title&quot;:&quot;Направлення&quot;,&quot;values&quot;:{&quot;value_1&quot;:&quot;Консультація лікаря&quot;,&quot;value_2&quot;:&quot;Лазерна корекція зору&quot;,&quot;value_3&quot;:&quot;Катаракта&quot;,&quot;value_4&quot;:&quot;Гінекологія&quot;,&quot;value_5&quot;:&quot;УЗ діагностика&quot;,&quot;value_6&quot;:&quot;Гастроентерологія&quot;,&quot;value_7&quot;:&quot;Дерматологія&quot;,&quot;value_8&quot;:&quot;Урологія\/Проктологія&quot;,&quot;value_9&quot;:&quot;Трихологія&quot;}},&quot;phone&quot;:{&quot;label&quot;:&quot;Ваш номер телефону&quot;,&quot;description&quot;:&quot;Формат: +380501023212&quot;},&quot;name&quot;:{&quot;label&quot;:&quot;Ваше ім&#039;я&quot;},&quot;additional&quot;:{&quot;label&quot;:&quot;Додаткова інформація&quot;},&quot;work&quot;:{&quot;title&quot;:&quot;Ми працюємо&quot;,&quot;value&quot;:&quot;ПН-СБ з 9:00 до 18:00&quot;},&quot;appointment&quot;:{&quot;title&quot;:&quot;Запис через соц. мережу&quot;,&quot;value&quot;:&quot;До 21:00&quot;},&quot;appointment_phone&quot;:{&quot;title&quot;:&quot;Запис по телефону&quot;,&quot;value&quot;:&quot;До 19:00&quot;},&quot;agreement&quot;:&quot;Заповнюючи дану форму, Ви погоджуєтеся з умовами обробки персональніх даних. Ми гарантуемо конфіденційність Вашого зверненя&quot;,&quot;discount&quot;:&quot;10% знижка за онлайн реєстрацію&quot;,&quot;buttons&quot;:{&quot;submit&quot;:&quot;Відправити&quot;,&quot;cancel&quot;:&quot;Відмінити&quot;}}"></appointment-modal>
-
-    <page-sticky-menu-component :translations="{&quot;appointment&quot;:&quot;Записатися&quot;}">
-    </page-sticky-menu-component>
 </div>
 
 
-<link rel="preload" href="/assets/fonts/font-awesome/fa-solid-900.woff2" as="font" crossorigin>
-<link rel="preload" href="/assets/fonts/font-awesome/fa-brands-400.woff2" as="font" crossorigin>
 
-<link rel="stylesheet" href="/assets/css/frontend/plugins.css?3.0.15">
-<link rel="stylesheet" href="/assets/css/frontend/style.css?3.0.15">
-<link rel="stylesheet" href="/assets/css/frontend/fonts.css?3.0.15">
+<script src="{{ asset('js/core.min.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
 
-<script src="/assets/js/frontend/app.js?3.0.15" defer></script>
-<link rel="stylesheet" href="/assets/css/frontend/pages/services/services.css?3.0.15">
-<script src="/assets/js/frontend/pages/services/services.js?3.0.15" defer></script>
-<script src="/assets/js/frontend/pages/services/plastychna/swiper.min.js?3.0.15" defer></script>
-<script src="/assets/js/frontend/pages/services/plastychna/simpleParallax.js?3.0.15"
-        defer></script>
-<script src="/assets/js/frontend/pages/services/liposaktsiya/app.js?3.0.15" defer></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section-mouse-effects");
+
+        sections.forEach((section) => {
+            const images = section.querySelectorAll(".image img");
+            const particles = section.querySelectorAll(".particles ");
+
+
+            //particles.forEach((particle) => {
+            //   const randX = Math.random() * 100;
+            //   const randY = Math.random() * 100;
+
+            //  particle.dataset.left = randX;
+            //  particle.dataset.top = randY;
+
+            //  particle.style.position = 'absolute';
+            //  particle.style.left = `${randX}%`;
+            //  particle.style.top = `${randY}%`;
+            // });
+
+            section.addEventListener("mousemove", (e) => {
+                const { left, top, width, height } = section.getBoundingClientRect();
+                const x = (e.clientX - left) / width;
+                const y = (e.clientY - top) / height;
+
+                const moveX = (x - 0.5) * -80;
+                const moveY = (y - 0.5) * -100;
+
+                images.forEach((img) => {
+                    img.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                });
+
+                particles.forEach((particle, index) => {
+                    const factor = (index % 3 === 0 ? 0.5 : 1);
+                    particle.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px)`;
+                });
+            });
+
+            section.addEventListener("mouseleave", () => {
+                images.forEach((img) => {
+                    img.style.transform = "translate(0, 0)";
+                });
+
+                particles.forEach((particle) => {
+                    particle.style.transform = "translate(0, 0)";
+                });
+            });
+        });
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const section1 = document.querySelector(".section-1");
+
+        if (section1) {
+            const images = section1.querySelectorAll(".image img");
+
+            section1.addEventListener("mousemove", (e) => {
+                const { left, width } = section1.getBoundingClientRect();
+                const x = (e.clientX - left) / width;
+
+                images.forEach((img) => {
+                    const moveX = -(x - 0.5) * 10;
+                    img.style.transform = `translateX(${moveX}px)`;
+                });
+            });
+
+            section1.addEventListener("mouseleave", () => {
+                images.forEach((img) => {
+                    img.style.transform = "translateX(0)";
+                });
+            });
+        }
+    });
+</script>
 
 
 
 </body>
+
+
 </html>
