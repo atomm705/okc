@@ -4,7 +4,7 @@
         <div class="section-main">
             <div class="banner-main"
                  style="background-image: url('/images/services/banner (2).jpg');">
-                <div class="page-content">
+                <div class="page-content " style="margin-top: 40px">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
                             <span style="color: #294481;">@lang('frontend/checkUp.slider.slide_1.title')</span>
@@ -640,7 +640,7 @@
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
+                                    <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_5')</span>
                                         </div>
@@ -682,7 +682,7 @@
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
+                                    <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_2')</span>
                                         </div>
@@ -724,7 +724,7 @@
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
+                                    <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_7')</span>
                                         </div>
@@ -810,7 +810,7 @@
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
+                                    <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_3')</span>
                                         </div>
@@ -852,7 +852,7 @@
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
+                                    <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_4')</span>
                                         </div>
@@ -894,7 +894,7 @@
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
+                                    <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_6')</span>
                                         </div>
@@ -1152,5 +1152,6 @@
         </div>
 
     </main>
+
 
 </x-app-layout>

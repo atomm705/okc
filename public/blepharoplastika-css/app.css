@@ -1210,6 +1210,7 @@ h2 .title-section, h3 .title-section {
     z-index: 2
 }
 
+
 @media (max-width: 1200px) {
     .specialist-card-box {
         width: calc(540 * 100vw / 1200)
@@ -1868,6 +1869,15 @@ div.slider-main-navigation {
     .review-text span {
         font-size: calc(18 * 100vw / 1200)
     }
+
+    .services-aside-mobil-color{
+        background-color: white !important;
+
+    }
+
+    .color-services-mobil{
+        color: #2a93c9 !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2271,6 +2281,10 @@ div.slider-main-navigation {
     .contacts-wrap {
         width: 1000px;
         margin-left: 20px;
+    }
+
+    .specialist-card-box-position{
+        margin-left: 30px;
     }
 }
 
