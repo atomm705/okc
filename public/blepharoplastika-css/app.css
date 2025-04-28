@@ -12,6 +12,22 @@ body, html {
         right: 0;
         left: 0
     }
+
+    .specialist-photo2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0 ;
+
+        height: 100%;
+        margin: auto;
+        z-index: 0;
+    }
 }
 
 *, *:after, *:before {
@@ -65,6 +81,8 @@ svg * {
 }
 
 @media (max-width: 1200px) {
+
+
     .banner-main {
         height: calc(680 * 100vw / 1200);
         padding-top: 0;
@@ -77,6 +95,8 @@ svg * {
         -ms-flex-align: center;
         align-items: center
     }
+
+
 }
 
 @media (max-width: 767px) {
@@ -1290,6 +1310,8 @@ h2 .title-section, h3 .title-section {
     z-index: 0
 }
 
+
+
 @media (max-width: 991px) {
     .specialist-photo {
         position: relative;
@@ -1421,6 +1443,13 @@ h2 .title-section, h3 .title-section {
     .wr-specialist-info {
         padding: 0 60px
     }
+
+    .specialist-tablet{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1442,7 +1471,7 @@ h2 .title-section, h3 .title-section {
 }
 
 .slider-main.wr-slider-video {
-    background: #000
+    background: #000;
 }
 
 .slider-main.wr-slider-specialist__inner {
@@ -2286,6 +2315,10 @@ div.slider-main-navigation {
     .specialist-card-box-position{
         margin-left: 30px;
     }
+
+    .specialist-card-bg{
+        background: linear-gradient(90deg, #1f5fc2 3%, white 54%);
+    }
 }
 
 @media (max-width: 767px) {
@@ -2352,11 +2385,13 @@ div.slider-main-navigation {
     }
 
 
+    .positio-section-mob{
+        padding: 60px 0 17px;
+        margin-top: 0px;
+    }
 
-
-
-    .before-foter-positiont-seccond{
-
+    .title-color-mob{
+        color: #0a0a0a !important;
     }
 
 

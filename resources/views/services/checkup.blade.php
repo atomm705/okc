@@ -127,12 +127,12 @@
             </div>
         </div>
 
-        <div class="section-main section-main_second  section-main_change-mob">
+        <div class="section-main section-main_second  section-main_change-mob positio-section-mob">
             <div class="page-content">
                 <div class="equipment">
                     <div class="page-box-sm">
                         <div class="title-section">
-                            <span>@lang('frontend/checkUp.how.title')</span>
+                            <span class="title-color-mob">@lang('frontend/checkUp.how.title')</span>
                         </div>
 
                         <div class="accordion-list">
@@ -227,12 +227,12 @@
             </div>
         </div>
 
-        <div class="section-main section-main_second  section-main_change-mob">
+        <div class="section-main section-main_second  section-main_change-mob positio-section-mob">
             <div class="page-content">
                 <div class="equipment">
                     <div class="page-box-sm">
                         <div class="title-section">
-                            <span>@lang('frontend/checkUp.variant.title')</span>
+                            <span class="title-color-mob">@lang('frontend/checkUp.variant.title')</span>
                         </div>
 
                         <div class="accordion-list">
@@ -665,13 +665,13 @@
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo specialist-photo-checup">
+                                                <div class="specialist-card specialist-card-bg" >
+                                                    <picture class="specialist-photo2 specialist-photo-checup">
                                                         <source srcset="/images/services/checkup/tsivenko.jpg"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <img src="/images/services/checkup/tsivenko.jpg"
-                                                             alt="specialist"/>
+                                                        <div class="specialist-tablet"><img src="/images/services/checkup/tsivenko.jpg"
+                                                                  alt="specialist" style="height: 415px; "/></div>
                                                     </picture>
                                                 </div>
                                             </div>
@@ -707,13 +707,13 @@
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo specialist-photo-checup" style="width: 450px">
+                                                <div class="specialist-card specialist-card-bg" >
+                                                    <picture class="specialist-photo2 specialist-photo-checup" style="width: 450px">
                                                         <source srcset="/images/services/checkup/mikheev.jpg"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <img src="/images/services/checkup/mikheev.jpg"
-                                                             alt="specialist"/>
+                                                        <div class="specialist-tablet"><img src="/images/services/checkup/mikheev.jpg"
+                                                                  alt="specialist" style="height: 550px;"/></div>
                                                     </picture>
                                                 </div>
                                             </div>
@@ -749,13 +749,15 @@
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo specialist-photo-checup" style="width: 440px">
+                                                <div class="specialist-card specialist-card-bg">
+                                                    <picture class="specialist-photo2 specialist-photo-checup" style="width: 440px;" >
                                                         <source srcset="/images/services/checkup/vitohina.jpg"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <img src="/images/services/checkup/vitohina.jpg"
-                                                             alt="specialist"/>
+                                                       <div class="specialist-tablet">
+                                                           <img src="/images/services/checkup/vitohina.jpg"
+                                                                alt="specialist"/>
+                                                       </div>
                                                     </picture>
                                                 </div>
                                             </div>
@@ -835,13 +837,17 @@
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo specialist-photo-checup">
+                                                <div class="specialist-card specialist-card-bg" >
+                                                    <picture class="specialist-photo2 specialist-photo-checup" >
                                                         <source srcset="/images/services/checkup/pogrebnyak.jpg"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <img src="/images/services/checkup/pogrebnyak.jpg"
-                                                             alt="specialist"/>
+                                                        <div class="specialist-tablet">
+
+                                                            <img src="/images/services/checkup/pogrebnyak.jpg"
+                                                                 alt="specialist"/>
+
+                                                        </div>
                                                     </picture>
                                                 </div>
                                             </div>
@@ -877,13 +883,13 @@
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo specialist-photo-checup">
+                                                <div class="specialist-card specialist-card-bg" >
+                                                    <picture class="specialist-photo2 specialist-photo-checup" >
                                                         <source srcset="/images/services/checkup/trofimova.jpg"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <img src="/images/services/checkup/trofimova.jpg"
-                                                             alt="specialist"/>
+                                                       <div class="specialist-tablet"><img src="/images/services/checkup/trofimova.jpg"
+                                                                 alt="specialist"/></div>
                                                     </picture>
                                                 </div>
                                             </div>
@@ -919,13 +925,15 @@
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo specialist-photo-checup" style="width: 450px">
+                                                <div class="specialist-card specialist-card-bg">
+                                                    <picture class="specialist-photo2 specialist-photo-checup" style="width: 450px; ">
                                                         <source srcset="/images/services/checkup/a2f6efeab4e089eab6d81b0bcbbeb0ba.webp"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <img src="/images/uploads/a2f6efeab4e089eab6d81b0bcbbeb0ba.webp"
-                                                             alt="specialist"/>
+                                                       <div class="specialist-tablet">
+                                                           <img src="/images/services/checkup/a2f6efeab4e089eab6d81b0bcbbeb0ba.webp"
+                                                                alt="specialist" style="height: 450px"/>
+                                                       </div>
                                                     </picture>
                                                 </div>
                                             </div>
@@ -984,39 +992,11 @@
                 <div class="title-section">
                     <span>@lang('frontend/checkUp.reviews.video')</span>
                 </div>
-
-                <div class="slider-main wr-slider-video">
-                    <div class="slider-video swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="section-main section-main_m-n section-main_video">
-                                    <div class="page-content">
-                                        <iframe width="100%" height="617" src="https://www.youtube.com/embed/videoseries?list=PLJwatesN19cLJWXfGyMNreC42M2SjaLWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-main-navigation">
-                        <div class="slider-main-button slider-main-prev" id="slider-video-button-prev">
-                            <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 2.35836L4.96156 10L13 17.6416L10.5193 20L-1.2319e-06 10L10.5193 5.42182e-07L13 2.35836Z"
-                                      fill="white"/>
-                            </svg>
-                        </div>
-
-                        <div class="slider-main-button slider-main-next" id="slider-video-button-next">
-                            <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.31342e-06 17.6416L8.03844 10L3.09261e-07 2.35836L2.48074 -3.25309e-07L13 10L2.48074 20L2.31342e-06 17.6416Z"
-                                      fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+                <iframe width="100%" height="617" src="https://www.youtube.com/embed/videoseries?list=PLJwatesN19cLJWXfGyMNreC42M2SjaLWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+
+
         <div class="section-main">
             <div class="page-content" style="display: none">
                 <div class="title-section">
@@ -1150,6 +1130,9 @@
 
             </div>
         </div>
+
+
+
 
     </main>
 
