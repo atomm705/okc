@@ -46,11 +46,11 @@
 
     @endif
 
-    @if(Route::currentRouteName() === 'main.timetable' )
+   <!-- @if(Route::currentRouteName() === 'main.timetable' )
 
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/schedule.css') }}">
 
-    @endif
+    @endif-->
 
     @if(Route::currentRouteName() === 'main.team' )
 
