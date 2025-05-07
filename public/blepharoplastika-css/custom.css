@@ -1,0 +1,161 @@
+.text-shadow-primary{
+    text-shadow: 2px 2px 4px rgba(42, 147, 201, 0.6);
+}
+.text-shadow-white{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+.text-primary{
+    color: #2a93c9 !important;
+}
+.full-width-custom{
+    width: 100% !important;
+    max-width: 100%;
+}
+.margin--50{
+    margin-top: -50px !important;
+}
+
+.full-width-custom span{
+    display: block;
+}
+.advantage-card-custom{
+    width: calc(100% / 4 - 30px + 30px / 4);
+}
+
+.advantage-card-custom:nth-child(n+4){
+    margin-top: 0;
+}
+.overlay-custom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* напівпрозорий чорний */
+    pointer-events: none;
+}
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.resize {
+    width: 50%; /* Початкова ширина */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden; /* Ховаємо частину зображення, яка виходить за межі */
+    z-index: 1;
+}
+
+.resize img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto; /* Задаємо ширину зображення як авто */
+    object-fit: cover;
+    max-width: none;
+}
+
+.draggable {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+    left: 50%; /* старт по центру */
+    transform: translateX(-50%);
+    width: 40px;
+    cursor: ew-resize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dr-btn {
+    display: flex;
+    border-radius: 4px;
+    padding: 4px;
+    pointer-events: none; /* дозволяє ловити події тільки на .draggable */
+    left: calc(50% - 8px);
+}
+
+.dr-btn__left, .dr-btn__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.label {
+    position: absolute;
+    top: 10px;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    z-index: 4; /* виводить над зображеннями */
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.label-before {
+    left: 10px;
+    z-index: 3; /* нижчий за .resize */
+}
+
+.label-after {
+    right: 10px;
+    z-index: 2;
+}
+@media screen and (max-width: 480px) {
+    .section-main{
+        margin-top: 70px;
+    }
+    .banner-main{
+        background-position: -560px 0;
+        height: 420px;
+    }
+    .banner-main-title span{
+        font-size: 30px;
+        line-height: 1.2em;
+    }
+    .page-content{
+        margin-top: 80px;
+    }
+    .text-primary{
+        font-size: 20px;
+    }
+    .wr-banner-main-button{
+        margin: 17px 0;
+    }
+    .advantage-card-custom{
+        width: 100%
+    }
+    .advantage-card-custom:nth-child(n+1){
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .page-content-mobil{
+        margin-top: 0px;
+    }
+
+
+    .last-section-mobil{
+        height: 265px;
+    }
+
+    .section-main_change-mob{
+        padding: 18px 0 17px;
+    }
+
+    .equipment-card-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
