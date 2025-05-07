@@ -26,8 +26,8 @@ Route::middleware(SetLocale::class)->group(function () {
         //Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
 
         //Route::get('/schedule/{department?}', function ($department = null) {
-      //      return view('main.timetable', compact('department'));
-       // })->name('main.timetable');
+        //      return view('main.timetable', compact('department'));
+        // })->name('main.timetable');
 
         Route::get('/schedule/{department?}', [PageController::class, 'timetable'])->name('main.timetable');
 
@@ -111,23 +111,23 @@ Route::get('/', function () {
 });
 
 //Route::middleware(['auth'])->group(function () {
-   //Route::get('/dashboard', function () {
-      //  return view('dashboard');
-   //})->name('dashboard');
+//Route::get('/dashboard', function () {
+//  return view('dashboard');
+//})->name('dashboard');
 //});
 
 
 //Route::middleware('auth')->group(function () {
 
-   // Route::get('/profile', function () {
-   //     return redirect()->route('profile.edit');
-  //  });
+// Route::get('/profile', function () {
+//     return redirect()->route('profile.edit');
+//  });
 
-  // Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+// Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
 
-  //  Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//  Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
-  // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 //});
 
 require __DIR__.'/auth.php';

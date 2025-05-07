@@ -46,46 +46,43 @@
 
     @endif
 
-   <!-- @if(Route::currentRouteName() === 'main.timetable' )
+<!-- @if(Route::currentRouteName() === 'main.timetable' )
 
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/schedule.css') }}">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/schedule.css') }}">
 
     @endif-->
 
-    @if(Route::currentRouteName() === 'main.team' )
+        @if(Route::currentRouteName() === 'main.team' )
 
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/departments.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/departments.css') }}">
 
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+
+        @endif
+
+
+        @if(Route::currentRouteName() === 'services.oklens' )
+
+
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/oklens.css') }}" >
+
+
+        @endif
+
+        @if(Route::currentRouteName() === 'services.panoptix' )
+
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
+
+
+            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/panoptix.css') }}">
 
     @endif
 
-
-    @if(Route::currentRouteName() === 'services.oklens' )
-
-
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/oklens.css') }}" >
-
-
-    @endif
-
-    @if(Route::currentRouteName() === 'services.panoptix' )
-
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
-
-
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/panoptix.css') }}">
-
-    @endif
-
-
-
-<!-- Scripts -->
 </head>
 <!-- Bootstrap JS + Popper.js -->
 <body >

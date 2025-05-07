@@ -37,7 +37,7 @@ class PageController extends Controller
 
 
         $doctors = DoctorTranslation::with('doctor.image')
-        ->where('locale', $locale)
+            ->where('locale', $locale)
             ->join('doctors', 'doctors.doctor_id', '=', 'doctors_translations.doctor_id')
             ->where('doctors.is_visible', true)
             ->select('doctors_translations.*')
@@ -76,68 +76,68 @@ class PageController extends Controller
 
 
 
-   // public function timetable($department = null)
-  //  {
+    // public function timetable($department = null)
+    //  {
     //    return view('main.timetable', compact('department'));
-  //  }
+    //  }
 
     public function timetable($departmentSlug = null)
-{
-    $locale = app()->getLocale();
+    {
+        $locale = app()->getLocale();
 
 
-    $allDepartments = DoctorDepartmentTranslation::with([
-        'department.doctors.translations' => function ($query) use ($locale) {
-            $query->where('locale', $locale);
-        }
-    ])->where('locale', $locale)->get();
+        $allDepartments = DoctorDepartmentTranslation::with([
+            'department.doctors.translations' => function ($query) use ($locale) {
+                $query->where('locale', $locale);
+            }
+        ])->where('locale', $locale)->get();
 
 
-    if (!$departmentSlug) {
-        $defaultDepartment = $allDepartments->firstWhere('slug', 'oftalmologiya');
-        $departmentSlug = $defaultDepartment?->slug;
+        if (!$departmentSlug) {
+            $defaultDepartment = $allDepartments->firstWhere('slug', 'oftalmologiya');
+            $departmentSlug = $defaultDepartment?->slug;
     }
 
-    $currentDepartment = $allDepartments->firstWhere('slug', $departmentSlug);
+        $currentDepartment = $allDepartments->firstWhere('slug', $departmentSlug);
 
-    foreach ($allDepartments as $department) {
-        $filteredDoctors = [];
+        foreach ($allDepartments as $department) {
+            $filteredDoctors = [];
 
-        foreach ($department->department->doctors as $doctor) {
+            foreach ($department->department->doctors as $doctor) {
 
-            $workHours = json_decode($doctor->pivot->work_hours, true);
+                $workHours = json_decode($doctor->pivot->work_hours, true);
 
 
-            if (empty($workHours) || collect($workHours)->filter()->isEmpty()) {
-                continue;
+                if (empty($workHours) || collect($workHours)->filter()->isEmpty()) {
+                    continue;
+                }
+
+
+                $days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+                $doctorSchedule = [];
+
+                foreach ($days as $i => $day) {
+                    $doctorSchedule[] = [
+                        'day' => $day,
+                        'time' => $workHours[$i] ?? 'нет приёма',
+                    ];
+                }
+
+
+                $doctor->schedule = $doctorSchedule;
+
+
+                $filteredDoctors[] = $doctor;
             }
 
-
-            $days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
-            $doctorSchedule = [];
-
-            foreach ($days as $i => $day) {
-                $doctorSchedule[] = [
-                    'day' => $day,
-                    'time' => $workHours[$i] ?? 'нет приёма',
-                ];
-            }
-
-
-            $doctor->schedule = $doctorSchedule;
-
-
-            $filteredDoctors[] = $doctor;
+            $department->department->setRelation('doctors', collect($filteredDoctors));
         }
 
-        $department->department->setRelation('doctors', collect($filteredDoctors));
+        return view('main.timetable', [
+            'departments' => $allDepartments,
+            'currentDepartment' => $currentDepartment,
+        ]);
     }
-
-    return view('main.timetable', [
-        'departments' => $allDepartments,
-        'currentDepartment' => $currentDepartment,
-    ]);
-}
 
 
 
@@ -151,17 +151,17 @@ class PageController extends Controller
 
     //public function priceCategory($category)
     //{
-        //$validCategories = [ 'x-ray', 'dermatologiya', 'oftalmologiya', 'terapevt','povne-obstezhennya-organizmu-sheck-up','khirurgichna-plastika','ginekologiya'];
+    //$validCategories = [ 'x-ray', 'dermatologiya', 'oftalmologiya', 'terapevt','povne-obstezhennya-organizmu-sheck-up','khirurgichna-plastika','ginekologiya'];
 
 
 
-        //if (!in_array($category, $validCategories)) {
-          //  abort(404);
-        //}
+    //if (!in_array($category, $validCategories)) {
+    //  abort(404);
+    //}
 
-        //return view('main.prices', compact('category'));
+    //return view('main.prices', compact('category'));
 
-   // }
+    // }
 
 
     public function testimonials(){
@@ -181,7 +181,7 @@ class PageController extends Controller
 
     public function plastichnakhururgiya(){
 
-    return view('main.plastichna-khururgiya');
+        return view('main.plastichna-khururgiya');
     }
 
 }

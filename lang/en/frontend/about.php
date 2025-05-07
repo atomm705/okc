@@ -17,6 +17,7 @@ return [
 		'title' => 'HEART OF OK CENTER',
 		'text'  => 'He takes adults and children (over 5 years old). He constantly takes part in national and international conferences on medicine. During his practice, he performed more than 15,000 eye operations.',
 		'more'  => 'more details',
+		'position'  => 'Chief Physician, Ophthalmic Surgeon',
 	],
 	'mission'      => [
 		'title' => 'Mission of OK Center',

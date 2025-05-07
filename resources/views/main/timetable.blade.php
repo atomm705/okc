@@ -63,12 +63,12 @@
                             @foreach ($currentDepartment->department->doctors as $doctor)
                                 <div class="doctor mb-3 p-3 border rounded">
                                     <h4 class="mb-2">{{ $doctor->translation->full_name ?? 'Имя не указано' }}</h4>
-                                     @if ($doctor->translation)
+                                    @if ($doctor->translation)
 
                                         <a href="{{ route('main.doctor.profile', ['slug' => $doctor->translation->full_slug]) }}" class="doctor-tile-compact-component">
                                             Профиль врача
                                         </a>
-                                     @else
+                                    @else
 
                                         <p>Профиль недоступен</p>
                                     @endif

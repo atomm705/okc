@@ -9,9 +9,9 @@
                         <p class="text-white-70">@lang('footer.newsletter.description')</p>
                         <form class="rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                             <div class="form-wrap input-group input-group-custom input-group-sm no-wrap">
-                                <label class="form-label" for="subscribe-form-email">@lang('messages.Your e-mail...')</label>
+                                <label class="form-label" for="subscribe-form-email">E-mail</label>
                                 <input class="form-input mr-2" id="subscribe-form-email" type="email" name="email">
-                                <button class="btn btn-sm btn-darkest" type="submit">@lang('messages.Subscribe')</button>
+                                <button class="btn btn-sm btn-darkest" type="submit"> @lang('footer.contacts.subscribe')</button>
                             </div>
                         </form>
                     </div>
@@ -98,7 +98,7 @@
                     var percent = (pos / width) * 100;
 
                     $handle.css('left', percent + '%');
-                    $resize.css('width', percent + '%');  // Змінюємо ширину блоку .resize
+                    $resize.css('width', percent + '%');
                 }
 
                 function onEnd() {
@@ -107,7 +107,7 @@
                     $(document).off('mouseup touchend touchcancel', onEnd);
                 }
 
-                // На всякий випадок — оновлення при ресайзі
+
                 $(window).on('resize', function () {
                     var percent = $resize.width() / $slider.width() * 100;
                     $handle.css('left', percent + '%');
@@ -214,6 +214,7 @@
     }
 </script>
 @endif
+
 
 <!--@if(Route::currentRouteName() === 'main.team')
     <script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>

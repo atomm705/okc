@@ -219,11 +219,11 @@
                                 @endforeach
                             </ul>
                         </div>
-                    @endif
+                @endif
 
 
 
-                  <!--<div class="offset-top-66">
+                <!--<div class="offset-top-66">
                         <h6 class="text-start">skills</h6>
                         <hr class="text-subline">
                         <div class="offset-top-30">
@@ -279,93 +279,5 @@
             </div>
         </div>
     </section>
-    <!-- Dr. Scott Riley’s blog posts-->
-    <!--<section class="section-lg section bg-default-liac">
-        <div class="container">
-            <h3>Scott Riley’s Blog Posts</h3>
-            <div class="row justify-content-sm-center row-40">
-                <div class="col-sm-10 col-md-8 col-lg-4">
 
-                    <article class="post post-modern post-modern-classic">
-
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src=" {{ asset('images/post-13-370x250.jpg') }}" alt=""/></a>
-                        </div>
-
-                        <div class="post-content text-start">
-
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
-                            </div>
-                            <ul class="list-inline list-inline-dashed">
-                                <li>June 21, 2023 at 8:12pm</li>
-                                <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
-                            </ul>
-
-                            <div class="post-body">
-                                <div class="offset-top-14">
-                                    <p>There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...</p>
-                                </div>
-                            </div>
-                            <div class="tags group group-sm">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-10 col-md-8 col-lg-4">
-
-                    <article class="post post-modern post-modern-classic">
-
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="{{ asset('images/post-14-370x250.jpg') }}" alt=""/></a>
-                        </div>
-
-                        <div class="post-content text-start">
-
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Picking the Right Diagnostic Services for Efficient Results</a></h5>
-                            </div>
-                            <ul class="list-inline list-inline-dashed">
-                                <li>June 21, 2023 at 8:12pm</li>
-                                <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
-                            </ul>
-
-                            <div class="post-body">
-                                <div class="offset-top-14">
-                                    <p>There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...</p>
-                                </div>
-                            </div>
-                            <div class="tags group group-sm">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-10 col-md-8 col-lg-4">
-
-                    <article class="post post-modern post-modern-classic">
-
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="{{ asset('images/post-15-370x250.jpg') }}" alt=""/></a>
-                        </div>
-
-                        <div class="post-content text-start">
-
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a></h5>
-                            </div>
-                            <ul class="list-inline list-inline-dashed">
-                                <li>June 21, 2023 at 8:12pm</li>
-                                <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
-                            </ul>
-
-                            <div class="post-body">
-                                <div class="offset-top-14">
-                                    <p>An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...</p>
-                                </div>
-                            </div>
-                            <div class="tags group group-sm">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div><a class="btn btn-ellipse btn-primary offset-top-41 offset-md-top-60" href="blog-masonry.html">view all blog posts</a>
-        </div>
-    </section>-->
 </x-app-layout>
