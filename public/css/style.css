@@ -9851,7 +9851,7 @@ p + .list-marked {
 
 @media (min-width: 576px) {
     .breadcrumbs-custom {
-        margin-left: -30px;
+       /* margin-left: -30px;*/
         margin-right: -30px;
     }
     .breadcrumbs-custom > * {

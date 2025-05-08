@@ -89,7 +89,8 @@ class PageController extends Controller
         $allDepartments = DoctorDepartmentTranslation::with([
             'department.doctors.translations' => function ($query) use ($locale) {
                 $query->where('locale', $locale);
-            }
+            },
+             'department.doctors.imageSquare',
         ])->where('locale', $locale)->get();
 
 

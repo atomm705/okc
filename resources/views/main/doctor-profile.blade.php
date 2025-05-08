@@ -5,7 +5,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.team') }}">@lang('global.pages.doctors')</a></li>
-                <li class="active">{{ $doctorTranslation->full_name }}</li>
+                <li >{{ $doctorTranslation->full_name }}</li>
             </ul>
         </div>
     </section>

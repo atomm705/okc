@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="uk" class="page-schedule">
 <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="csrf-token" content="Tqdrue3pOVPAx6yXPv12KXflXo5JWQaLcSHk5fKu">
-    <meta name="date" content="2025 May 06">
+    <meta name="csrf-token" content="z5cdec8Hm2Zt9HVC5KxwhbXTQR4l7hqkWP3dDLiO">
+    <meta name="date" content="2025 May 08">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
     <title>Розклад фахівців багатопрофільного медичного центру в Харкові Докарт</title>
@@ -19,28 +20,22 @@
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
 
 
-    <link rel="preload" href="/assets/fonts/material-design/materialdesignicons-webfont.woff2" as="font" crossorigin="">
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/schedule.css') }}">
 
-    <link rel="preload" type="text/css" href="/assets/css/frontend/fonts.css?3.0.16" as="style">
-    <link rel="preload" as="script" href="/assets/js/frontend/app.js?3.0.16">
 
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MZ368BN"></script>
     <script type="text/javascript" async=""
-            src="https://www.googletagmanager.com/gtag/js?id=UA-102428787-1&amp;l=dataLayer&amp;cx=c&amp;gtm=457e5521za200&amp;tag_exp=101509157~103101750~103101752~103116026~103200004~103211513~103231718~103231720~103233427~103251618~103251620~103252644~103252646"></script>
+            src="https://www.googletagmanager.com/gtag/js?id=UA-102428787-1&amp;cx=c&amp;gtm=457e5561za200&amp;tag_exp=101509156~103101750~103101752~103116026~103130495~103130497~103200004~103233424~103251618~103251620~103252644~103252646~103284320~103284322~103301114~103301116"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" async=""
-            src="https://www.googletagmanager.com/gtag/js?id=G-E80EZXJCVG&amp;l=dataLayer&amp;cx=c&amp;gtm=457e5521za200&amp;tag_exp=101509157~103101750~103101752~103116026~103200004~103211513~103231718~103231720~103233427~103251618~103251620~103252644~103252646"></script>
+            src="https://www.googletagmanager.com/gtag/js?id=G-E80EZXJCVG&amp;cx=c&amp;gtm=457e5561za200&amp;tag_exp=101509156~103101750~103101752~103116026~103130495~103130497~103200004~103233424~103251618~103251620~103252644~103252646~103284320~103284322~103301114~103301116"></script>
     <script charset="utf-8" src="/assets/js/frontend/pages/schedule/3.v16.js"></script>
     <script charset="utf-8" src="/assets/js/frontend/pages/schedule/0.v16.js"></script>
     <script charset="utf-8" src="/assets/js/frontend/pages/schedule/2.v16.js"></script>
     <script charset="utf-8" src="/assets/js/frontend/pages/schedule/1.v16.js"></script>
     <script type="text/javascript" async=""
-            src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/868210700/?random=1746521011147&amp;cv=11&amp;fst=1746521011147&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je5521v9181231435za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509156~103101750~103101752~103116025~103130495~103130497~103200001~103231718~103231720~103233424~103251618~103251620~103252644~103252646&amp;ptag_exp=101509157~103101750~103101752~103116026~103200004~103211513~103231718~103231720~103233427~103251618~103251620~103252644~103252646&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fschedule%2Foftalmologiya&amp;ref=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fdoctors%2Fbezrukova-yuliya-oleksandrivna&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4%20%D1%84%D0%B0%D1%85%D1%96%D0%B2%D1%86%D1%96%D0%B2%20%D0%B1%D0%B0%D0%B3%D0%B0%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D1%84%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE&amp;npa=0&amp;auid=1355258546.1742282434&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+            src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/868210700/?random=1746697484961&amp;cv=11&amp;fst=1746697484961&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je5561v9181231435za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509156~103101750~103101752~103116025~103200001~103233424~103251618~103251620~103252644~103252646~103284320~103284322~103301114~103301116&amp;ptag_exp=101509156~103101750~103101752~103116026~103130495~103130497~103200004~103233424~103251618~103251620~103252644~103252646~103284320~103284322~103301114~103301116&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fschedule%2Fdermatologiya&amp;ref=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fdoctors%2Fprokipets-armen-tarasovich&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4%20%D1%84%D0%B0%D1%85%D1%96%D0%B2%D1%86%D1%96%D0%B2%20%D0%B1%D0%B0%D0%B3%D0%B0%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D1%84%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE&amp;npa=0&amp;auid=1355258546.1742282434&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B136.0.7103.92%7CGoogle%2520Chrome%3B136.0.7103.92%7CNot.A%252FBrand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-102428787-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -62,24 +57,20 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-MZ368BN');
     </script>
-    <script src="https://okc.phonet.com.ua/public/widget/call-catcher/lib-v3.js"></script>
+    <script src=" {{ asset('blepharoplastika-js/lib-v3.js') }}"></script>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400&amp;amp;subset=cyrillic"
           type="text/css">
 </head>
 <body class="">
 
 
-<link rel="preload" href="/assets/js/frontend/app.js?3.0.16" as="script">
-<link rel="preload" href="/assets/css/frontend/pages/schedule/schedule.css?3.0.16" as="style">
-<link rel="preload" href="/assets/js/frontend/pages/schedule/schedule.js?3.0.16" as="script">
-
 <!-- Facebook Pixel Code -->
 <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TNTXJH6"></script>
 <script
-    src="https://connect.facebook.net/signals/config/343873816474535?v=2.9.199&amp;r=stable&amp;domain=www.okc.com.ua&amp;hme=53363064397d256bdf8f213dd9a9e18c291fc2ed691e4233e4a9e488f248f817&amp;ex_m=73%2C128%2C113%2C117%2C64%2C5%2C106%2C72%2C18%2C100%2C92%2C53%2C57%2C182%2C203%2C210%2C206%2C207%2C209%2C31%2C107%2C55%2C80%2C208%2C177%2C180%2C204%2C205%2C190%2C139%2C43%2C195%2C192%2C193%2C36%2C152%2C17%2C52%2C199%2C198%2C141%2C20%2C42%2C1%2C45%2C68%2C69%2C70%2C74%2C96%2C19%2C16%2C99%2C95%2C94%2C114%2C54%2C116%2C41%2C115%2C32%2C97%2C28%2C178%2C181%2C149%2C13%2C14%2C15%2C7%2C8%2C27%2C24%2C25%2C60%2C65%2C67%2C78%2C56%2C105%2C108%2C29%2C79%2C11%2C9%2C83%2C50%2C23%2C110%2C109%2C111%2C102%2C12%2C22%2C3%2C40%2C77%2C21%2C161%2C89%2C135%2C49%2C48%2C101%2C76%2C0%2C98%2C59%2C87%2C35%2C30%2C85%2C86%2C91%2C39%2C6%2C93%2C84%2C46%2C34%2C37%2C90%2C4%2C88%2C248%2C175%2C126%2C164%2C157%2C2%2C38%2C66%2C44%2C112%2C47%2C82%2C71%2C118%2C63%2C62%2C33%2C103%2C61%2C58%2C51%2C81%2C75%2C26%2C104%2C10%2C119%2C142%2C173%2C200%2C202%2C250%2C176%2C234%2C129%2C167%2C154%2C137%2C247%2C123%2C201%2C134%2C155%2C183%2C169%2C125%2C144%2C130%2C197%2C120%2C159%2C136"
+    src="https://connect.facebook.net/signals/config/343873816474535?v=2.9.200&amp;r=stable&amp;domain=www.okc.com.ua&amp;hme=9ebdfdd473ffce6bfe2267012c83f73483198ffe20d84139a2066b7682f827c0&amp;ex_m=73%2C128%2C113%2C117%2C64%2C6%2C106%2C72%2C19%2C100%2C92%2C54%2C57%2C181%2C202%2C209%2C205%2C206%2C208%2C32%2C107%2C56%2C80%2C207%2C176%2C179%2C203%2C204%2C189%2C139%2C44%2C194%2C191%2C192%2C37%2C151%2C18%2C53%2C198%2C197%2C141%2C21%2C43%2C2%2C46%2C68%2C69%2C70%2C74%2C96%2C20%2C17%2C99%2C95%2C94%2C114%2C55%2C116%2C42%2C115%2C33%2C97%2C29%2C177%2C180%2C148%2C14%2C15%2C16%2C8%2C9%2C28%2C25%2C26%2C60%2C65%2C67%2C78%2C105%2C108%2C30%2C79%2C12%2C10%2C83%2C51%2C24%2C110%2C109%2C111%2C102%2C13%2C23%2C4%2C41%2C77%2C22%2C160%2C89%2C135%2C76%2C1%2C98%2C59%2C87%2C36%2C31%2C85%2C86%2C91%2C40%2C7%2C93%2C84%2C47%2C35%2C38%2C90%2C5%2C50%2C49%2C101%2C88%2C246%2C174%2C126%2C163%2C156%2C3%2C39%2C66%2C45%2C112%2C48%2C82%2C71%2C118%2C63%2C62%2C34%2C103%2C61%2C58%2C52%2C81%2C75%2C27%2C104%2C11%2C0%2C119%2C142%2C172%2C199%2C201%2C248%2C175%2C129%2C166%2C153%2C137%2C245%2C123%2C200%2C134%2C154%2C182%2C168%2C125%2C144%2C130%2C196%2C120%2C158%2C136"
     async=""></script>
 <script
-    src="https://connect.facebook.net/signals/config/599872220629949?v=2.9.199&amp;r=stable&amp;domain=www.okc.com.ua&amp;hme=53363064397d256bdf8f213dd9a9e18c291fc2ed691e4233e4a9e488f248f817&amp;ex_m=73%2C128%2C113%2C117%2C64%2C5%2C106%2C72%2C18%2C100%2C92%2C53%2C57%2C182%2C203%2C210%2C206%2C207%2C209%2C31%2C107%2C55%2C80%2C208%2C177%2C180%2C204%2C205%2C190%2C139%2C43%2C195%2C192%2C193%2C36%2C152%2C17%2C52%2C199%2C198%2C141%2C20%2C42%2C1%2C45%2C68%2C69%2C70%2C74%2C96%2C19%2C16%2C99%2C95%2C94%2C114%2C54%2C116%2C41%2C115%2C32%2C97%2C28%2C178%2C181%2C149%2C13%2C14%2C15%2C7%2C8%2C27%2C24%2C25%2C60%2C65%2C67%2C78%2C56%2C105%2C108%2C29%2C79%2C11%2C9%2C83%2C50%2C23%2C110%2C109%2C111%2C102%2C12%2C22%2C3%2C40%2C77%2C21%2C161%2C89%2C135%2C49%2C48%2C101%2C76%2C0%2C98%2C59%2C87%2C35%2C30%2C85%2C86%2C91%2C39%2C6%2C93%2C84%2C46%2C34%2C37%2C90%2C4%2C88%2C248%2C175%2C126%2C164%2C157%2C2%2C38%2C66%2C44%2C112%2C47%2C82%2C71%2C118%2C63%2C62%2C33%2C103%2C61%2C58%2C51%2C81%2C75%2C26%2C104%2C10%2C119"
+    src="https://connect.facebook.net/signals/config/599872220629949?v=2.9.200&amp;r=stable&amp;domain=www.okc.com.ua&amp;hme=9ebdfdd473ffce6bfe2267012c83f73483198ffe20d84139a2066b7682f827c0&amp;ex_m=73%2C128%2C113%2C117%2C64%2C6%2C106%2C72%2C19%2C100%2C92%2C54%2C57%2C181%2C202%2C209%2C205%2C206%2C208%2C32%2C107%2C56%2C80%2C207%2C176%2C179%2C203%2C204%2C189%2C139%2C44%2C194%2C191%2C192%2C37%2C151%2C18%2C53%2C198%2C197%2C141%2C21%2C43%2C2%2C46%2C68%2C69%2C70%2C74%2C96%2C20%2C17%2C99%2C95%2C94%2C114%2C55%2C116%2C42%2C115%2C33%2C97%2C29%2C177%2C180%2C148%2C14%2C15%2C16%2C8%2C9%2C28%2C25%2C26%2C60%2C65%2C67%2C78%2C105%2C108%2C30%2C79%2C12%2C10%2C83%2C51%2C24%2C110%2C109%2C111%2C102%2C13%2C23%2C4%2C41%2C77%2C22%2C160%2C89%2C135%2C76%2C1%2C98%2C59%2C87%2C36%2C31%2C85%2C86%2C91%2C40%2C7%2C93%2C84%2C47%2C35%2C38%2C90%2C5%2C50%2C49%2C101%2C88%2C246%2C174%2C126%2C163%2C156%2C3%2C39%2C66%2C45%2C112%2C48%2C82%2C71%2C118%2C63%2C62%2C34%2C103%2C61%2C58%2C52%2C81%2C75%2C27%2C104%2C11%2C0%2C119"
     async=""></script>
 <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
 <script>
@@ -428,7 +419,7 @@
     </header>
     <div class="breadcrumbs-component">
         <div class="images"><img src="/assets/images/4675fe54e4b56482a148da0f1e21ffe6.webp"></div>
-        <div class="content"><h1>Офтальмологія</h1>
+        <div class="content"><h1>Дерматологія</h1>
             <ul itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList" class="list">
                 <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"
                     class="breadcrumb"><a href="/" itemprop="item"><span itemprop="name">Головна</span></a>
@@ -439,7 +430,7 @@
                     <meta itemprop="position" content="1">
                 </li>
                 <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"
-                    class="breadcrumb"><a href="/uk/schedule/oftalmologiya" itemprop="item"><span itemprop="name">Офтальмологія</span></a>
+                    class="breadcrumb"><a href="/uk/schedule/dermatologiya" itemprop="item"><span itemprop="name">Дерматологія</span></a>
                     <meta itemprop="position" content="2">
                 </li>
             </ul>
@@ -452,8 +443,8 @@
                     <div class="content">
                         <div class="articles-list">
                             <div class="list" style="height: 0px;">
-                                <div class="article active"><a href="/uk/schedule/oftalmologiya">Офтальмологія</a></div>
-                                <div class="article"><a href="/uk/schedule/dermatologiya">Дерматологія</a></div>
+                                <div class="article"><a href="/uk/schedule/oftalmologiya">Офтальмологія</a></div>
+                                <div class="article active"><a href="/uk/schedule/dermatologiya">Дерматологія</a></div>
                                 <div class="article"><a href="/uk/schedule/ginekologiya">Гінекологія</a></div>
                                 <div class="article"><a href="/uk/schedule/urologiya">Урологія</a></div>
                                 <div class="article"><a href="/uk/schedule/uzd">УЗД</a></div>
@@ -479,14 +470,88 @@
                         </div>
                         <div class="articles">
                             <article itemscope="itemscope" itemtype="http://schema.org/Article"
-                                     link="/uk/schedule/oftalmologiya" class="active shown">
+                                     link="/uk/schedule/dermatologiya" class="active shown">
                                 <meta itemprop="name" content="">
-                                <h3>Офтальмологія</h3>
+                                <h3>Дерматологія</h3>
                                 <div class="doctor"><img
-                                        src="/assets/images/uploads/14b0c14a8626d74b72f14c61d5aadb67.png">
+                                        src="/assets/images/uploads/ed5ca91ab8afe7a0901e3b6e1f6c69f1.png">
                                     <div class="info">
-                                        <div class="name">Прокіпець Армен Тарасович</div>
-                                        <a href="/uk/doctors/prokipets-armen-tarasovich">Профiль</a></div>
+                                        <div class="name">Салєнкова Олена Анатоліївна</div>
+                                        <a href="/uk/doctors/salenkova-olena-anatoliivna">Профiль</a></div>
+                                </div>
+                                <table class="schedule table-preset-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="hours">Час</th>
+                                        <th>Пн</th>
+                                        <th>Вт</th>
+                                        <th>Ср</th>
+                                        <th>Чт</th>
+                                        <th>Пт</th>
+                                        <th>Сб</th>
+                                        <th>Нд</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="hour">08:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">09:00</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="line" style="top: 0%; height: 251%;">
+                                                <div class="start">09:00</div>
+                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
+                                                <div class="finish">17:30</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="line" style="top: 0%; height: 200%;">
+                                                <div class="start">09:00</div>
+                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
+                                                <div class="finish">17:00</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">16:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">17:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="doctor"><img
+                                        src="/assets/images/uploads/08685571d000ffb7d3f9ab26201e4772.png">
+                                    <div class="info">
+                                        <div class="name">Хорунжа Любов Сергіївна</div>
+                                        <a href="/uk/doctors/khorunzha-lyubov-sergiivna">Профiль</a></div>
                                 </div>
                                 <table class="schedule table-preset-1">
                                     <thead>
@@ -514,8 +579,6 @@
                                     </tr>
                                     <tr>
                                         <td class="hour">10:00</td>
-                                        <td></td>
-                                        <td></td>
                                         <td>
                                             <div class="line" style="top: 0%; height: 400%;">
                                                 <div class="start">10:00</div>
@@ -523,11 +586,123 @@
                                                 <div class="finish">16:00</div>
                                             </div>
                                         </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">11:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="line" style="top: 0%; height: 400%;">
+                                                <div class="start">11:00</div>
+                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
+                                                <div class="finish">17:00</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">13:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="line" style="top: 0%; height: 351%;">
+                                                <div class="start">13:00</div>
+                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
+                                                <div class="finish">17:30</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">15:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">16:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">17:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="doctor"><img
+                                        src="/assets/images/uploads/9d0f61d7503ae222c7b06356c542d3c2.png">
+                                    <div class="info">
+                                        <div class="name">Новікова Олена Петрівна</div>
+                                        <a href="/uk/doctors/novikova-olena-petrivna">Профiль</a></div>
+                                </div>
+                                <table class="schedule table-preset-1">
+                                    <thead>
+                                    <tr>
+                                        <th class="hours">Час</th>
+                                        <th>Пн</th>
+                                        <th>Вт</th>
+                                        <th>Ср</th>
+                                        <th>Чт</th>
+                                        <th>Пт</th>
+                                        <th>Сб</th>
+                                        <th>Нд</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="hour">08:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="hour">09:00</td>
+                                        <td></td>
                                         <td>
                                             <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">10:00</div>
+                                                <div class="start">09:00</div>
                                                 <div class="icon"><span class="mdi mdi-clock"></span></div>
                                                 <div class="finish">12:00</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="line" style="top: 0%; height: 400%;">
+                                                <div class="start">09:00</div>
+                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
+                                                <div class="finish">15:00</div>
                                             </div>
                                         </td>
                                         <td></td>
@@ -555,103 +730,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td class="hour">15:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">16:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="doctor"><img
-                                        src="/assets/images/uploads/819a1388a7d520d7234dc5f10c1b38d2.png">
-                                    <div class="info">
-                                        <div class="name">Ківшар Микола Миколайович</div>
-                                        <a href="/uk/doctors/kivshar-mikola-mikolayovich">Профiль</a></div>
-                                </div>
-                                <table class="schedule table-preset-1">
-                                    <thead>
-                                    <tr>
-                                        <th class="hours">Час</th>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Нд</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="hour">08:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">09:00</td>
-                                        <td>
-                                            <div class="line" style="top: 50%; height: 402%;">
-                                                <div class="start">09:30</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">16:30</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 50%; height: 402%;">
-                                                <div class="start">09:30</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">16:30</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 50%; height: 402%;">
-                                                <div class="start">09:30</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">16:30</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 50%; height: 151%;">
-                                                <div class="start">09:30</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">13:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">12:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">13:00</td>
+                                        <td class="hour">14:00</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -670,149 +749,13 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    <tr>
-                                        <td class="hour">16:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
                                     </tbody>
                                 </table>
                                 <div class="doctor"><img
-                                        src="/assets/images/uploads/faf65381327a37aa41e27f4faeacc067.png">
+                                        src="/assets/images/uploads/8dda9b9ade50b9f2ece81b68b03a86c3.png">
                                     <div class="info">
-                                        <div class="name">Філатова Анна Вадимівна</div>
-                                        <a href="/uk/doctors/filatova-anna-vadimivna">Профiль</a></div>
-                                </div>
-                                <table class="schedule table-preset-1">
-                                    <thead>
-                                    <tr>
-                                        <th class="hours">Час</th>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Нд</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="hour">08:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">09:00</td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 551%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">16:30</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">12:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">13:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">11:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">12:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 400%;">
-                                                <div class="start">12:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">13:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">15:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">16:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">17:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="doctor"><img
-                                        src="/assets/images/uploads/80f623a905cb3df583a70684470ff121.png">
-                                    <div class="info">
-                                        <div class="name">Івженко Людмила Ігорівна</div>
-                                        <a href="/uk/doctors/ivzhenko-lyudmila-igorivna">Профiль</a></div>
+                                        <div class="name">Колганова Наталія Леонідівна</div>
+                                        <a href="/uk/doctors/kolganova-nataliya-leonidivna">Профiль</a></div>
                                 </div>
                                 <table class="schedule table-preset-1">
                                     <thead>
@@ -875,109 +818,13 @@
                                                 <div class="finish">17:00</div>
                                             </div>
                                         </td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">16:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">17:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="doctor"><img
-                                        src="/assets/images/uploads/e222898d87b8f95ef3c284bc65a6595c.png">
-                                    <div class="info">
-                                        <div class="name">Безрукова Юлія Олександрівна</div>
-                                        <a href="/uk/doctors/bezrukova-yuliya-oleksandrivna">Профiль</a></div>
-                                </div>
-                                <table class="schedule table-preset-1">
-                                    <thead>
-                                    <tr>
-                                        <th class="hours">Час</th>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Нд</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="hour">08:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">09:00</td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
                                         <td>
                                             <div class="line" style="top: 0%; height: 200%;">
                                                 <div class="start">09:00</div>
                                                 <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">16:00</div>
+                                                <div class="finish">17:00</div>
                                             </div>
                                         </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">15:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                         <td></td>
                                     </tr>
                                     <tr>
@@ -1003,10 +850,10 @@
                                     </tbody>
                                 </table>
                                 <div class="doctor"><img
-                                        src="/assets/images/uploads/393c0f6615c651ced163c4929401820c.png">
+                                        src="/assets/images/uploads/94ba5c69a3b618a8a7a924be525ae422.png">
                                     <div class="info">
-                                        <div class="name">Нащанська Ганна Іванівна</div>
-                                        <a href="/uk/doctors/nashchanska-ganna-ivanivna">Профiль</a></div>
+                                        <div class="name">Галушка Єлизавета Андріївна</div>
+                                        <a href="/uk/doctors/galushka-elizaveta-andriivna">Профiль</a></div>
                                 </div>
                                 <table class="schedule table-preset-1">
                                     <thead>
@@ -1035,46 +882,12 @@
                                     <tr>
                                         <td class="hour">09:00</td>
                                         <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
+                                            <div class="line" style="top: 0%; height: 351%;">
                                                 <div class="start">09:00</div>
                                                 <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
+                                                <div class="finish">17:30</div>
                                             </div>
                                         </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">16:00</td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -1083,81 +896,17 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td class="hour">17:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="doctor"><img
-                                        src="/assets/images/uploads/c51772ca853f2ae2ddad2013dadcb077.png">
-                                    <div class="info">
-                                        <div class="name">Дрокіна Дар'я Миколаївна</div>
-                                        <a href="/uk/doctors/drokina-darya-mikolaivna">Профiль</a></div>
-                                </div>
-                                <table class="schedule table-preset-1">
-                                    <thead>
-                                    <tr>
-                                        <th class="hours">Час</th>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Нд</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="hour">08:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">09:00</td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
+                                        <td class="hour">14:00</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td>
                                             <div class="line" style="top: 0%; height: 300%;">
-                                                <div class="start">09:00</div>
+                                                <div class="start">14:00</div>
                                                 <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
+                                                <div class="finish">18:00</div>
                                             </div>
                                         </td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">16:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">15:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -1182,140 +931,8 @@
                                         <td></td>
                                         <td></td>
                                     </tr>
-                                    </tbody>
-                                </table>
-                                <div class="doctor"><img
-                                        src="/assets/images/uploads/1ec3691542dfc23f09355f905bdfa5ca.png">
-                                    <div class="info">
-                                        <div class="name">Скоропліт Анастасія Сергіївна</div>
-                                        <a href="/uk/doctors/skoroplit-anastasiya-sergiivna">Профiль</a></div>
-                                </div>
-                                <table class="schedule table-preset-1">
-                                    <thead>
                                     <tr>
-                                        <th class="hours">Час</th>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Нд</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="hour">08:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">09:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">09:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">17:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">16:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">17:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div class="doctor"><img
-                                        src="/assets/images/uploads/17c4903c7f40e19badb4f57580c70740.png">
-                                    <div class="info">
-                                        <div class="name">Попова Олена Анатоліївна</div>
-                                        <a href="/uk/doctors/popova-olena-anatoliivna">Профiль</a></div>
-                                </div>
-                                <table class="schedule table-preset-1">
-                                    <thead>
-                                    <tr>
-                                        <th class="hours">Час</th>
-                                        <th>Пн</th>
-                                        <th>Вт</th>
-                                        <th>Ср</th>
-                                        <th>Чт</th>
-                                        <th>Пт</th>
-                                        <th>Сб</th>
-                                        <th>Нд</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="hour">09:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">10:00</td>
-                                        <td></td>
-                                        <td>
-                                            <div class="line" style="top: 0%; height: 200%;">
-                                                <div class="start">10:00</div>
-                                                <div class="icon"><span class="mdi mdi-clock"></span></div>
-                                                <div class="finish">13:00</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">12:00</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hour">13:00</td>
+                                        <td class="hour">18:00</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -1343,7 +960,7 @@
                         <div class="text">&nbsp;</div>
                     </div>
                     <input type="hidden" name="_token" skip-cleaning=""
-                           value="Tqdrue3pOVPAx6yXPv12KXflXo5JWQaLcSHk5fKu">
+                           value="z5cdec8Hm2Zt9HVC5KxwhbXTQR4l7hqkWP3dDLiO">
                     <div class="form-group"><input type="email" name="email" placeholder="E-Mail">
                         <div class="error" style="height: 0px;">
                             <div class="text">&nbsp;</div>
@@ -1386,7 +1003,7 @@
                 <div class="error" style="height: 0px;">
                     <div class="text">&nbsp;</div>
                 </div>
-                <input type="hidden" name="_token" skip-cleaning="" value="Tqdrue3pOVPAx6yXPv12KXflXo5JWQaLcSHk5fKu">
+                <input type="hidden" name="_token" skip-cleaning="" value="z5cdec8Hm2Zt9HVC5KxwhbXTQR4l7hqkWP3dDLiO">
                 <div class="error" style="height: 0px;">
                     <div class="text">&nbsp;</div>
                 </div>
@@ -1505,23 +1122,23 @@
 </div>
 
 
-<link rel="preload" href="/assets/fonts/font-awesome/fa-solid-900.woff2" as="font" crossorigin="">
-<link rel="preload" href="/assets/fonts/font-awesome/fa-brands-400.woff2" as="font" crossorigin="">
-
-<link rel="stylesheet" href="/assets/css/frontend/plugins.css?3.0.16">
-<link rel="stylesheet" href="/assets/css/frontend/style.css?3.0.16">
+<link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
+<link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+<link rel="stylesheet" href="{{ asset('blepharoplastika-css/schedule.css') }}">
 <link rel="stylesheet" href="/assets/css/frontend/fonts.css?3.0.16">
 
-
+<script src="/assets/js/frontend/app.js?3.0.16" defer=""></script>
+<link rel="stylesheet" href="/assets/css/frontend/pages/schedule/schedule.css?3.0.16">
+<script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>
 <script src="{{ asset('blepharoplastika-js/schedule.js') }}" defer></script>
 
 <script>var telerWdWidgetId = "eddf3ae2-5534-4445-b242-48011c530c54";
     var telerWdDomain = "okc.phonet.com.ua";</script>
 
 <iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
-<iframe allow="join-ad-interest-group" data-tagging-id="AW-868210700" data-load-time="1746521011159" height="0"
+<iframe allow="join-ad-interest-group" data-tagging-id="AW-868210700" data-load-time="1746697484969" height="0"
         width="0"
-        src="https://td.doubleclick.net/td/rul/868210700?random=1746521011147&amp;cv=11&amp;fst=1746521011147&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je5521v9181231435za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509156~103101750~103101752~103116025~103130495~103130497~103200001~103231718~103231720~103233424~103251618~103251620~103252644~103252646&amp;ptag_exp=101509157~103101750~103101752~103116026~103200004~103211513~103231718~103231720~103233427~103251618~103251620~103252644~103252646&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fschedule%2Foftalmologiya&amp;ref=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fdoctors%2Fbezrukova-yuliya-oleksandrivna&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4%20%D1%84%D0%B0%D1%85%D1%96%D0%B2%D1%86%D1%96%D0%B2%20%D0%B1%D0%B0%D0%B3%D0%B0%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D1%84%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE&amp;npa=0&amp;auid=1355258546.1742282434&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B135.0.7049.115%7CNot-A.Brand%3B8.0.0.0%7CChromium%3B135.0.7049.115&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
+        src="https://td.doubleclick.net/td/rul/868210700?random=1746697484961&amp;cv=11&amp;fst=1746697484961&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je5561v9181231435za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509156~103101750~103101752~103116025~103200001~103233424~103251618~103251620~103252644~103252646~103284320~103284322~103301114~103301116&amp;ptag_exp=101509156~103101750~103101752~103116026~103130495~103130497~103200004~103233424~103251618~103251620~103252644~103252646~103284320~103284322~103301114~103301116&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fschedule%2Fdermatologiya&amp;ref=https%3A%2F%2Fwww.okc.com.ua%2Fuk%2Fdoctors%2Fprokipets-armen-tarasovich&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4%20%D1%84%D0%B0%D1%85%D1%96%D0%B2%D1%86%D1%96%D0%B2%20%D0%B1%D0%B0%D0%B3%D0%B0%D1%82%D0%BE%D0%BF%D1%80%D0%BE%D1%84%D1%96%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE&amp;npa=0&amp;auid=1355258546.1742282434&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B136.0.7103.92%7CGoogle%2520Chrome%3B136.0.7103.92%7CNot.A%252FBrand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
         style="display: none; visibility: hidden;"></iframe>
 
 
@@ -1821,11 +1438,12 @@
         }    </style>
 
 
-    <div id="__telerWdTriggerContent" class="teler-wd__trigger ">
+    <div id="__telerWdTriggerContent" class="teler-wd__trigger  teler-wd__tooltip_show">
         <div class="teler-wd__tooltip" style="display: none;">
             Перезвоним за 25 секунд
         </div>
-        <div class="teler-wd__flipper_wrapper                                 teler-wd__flipper_wrapper_hover">
+        <div
+            class="teler-wd__flipper_wrapper                                                         teler-wd__flipper_wrapper_hover">
             <div class="teler-wd__flipper">
                 <div class="teler-wd__flipper-front">
                     <svg class="teler-wd__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
