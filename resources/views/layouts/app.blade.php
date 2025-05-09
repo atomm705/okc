@@ -50,7 +50,6 @@
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/schedule.css') }}">
-
     @endif-->
 
         @if(Route::currentRouteName() === 'main.team' )

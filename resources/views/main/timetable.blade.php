@@ -66,9 +66,9 @@
                                             @endif
 
                                             <div class="info">
-                                                <div class="name fw-bold mb-1">{{ $doctor->translation->full_name ?? 'Имя не указано' }}</div>
+                                                <div class="name fw-bold ">{{ $doctor->translation->full_name ?? 'Имя не указано' }}</div>
                                                 @if ($doctor->translation)
-                                                    <a href="{{ route('main.doctor.profile', ['slug' => $doctor->translation->full_slug]) }}" class="btn btn-link p-0">Профиль врача</a>
+                                                    <a href="{{ route('main.doctor.profile', ['slug' => $doctor->translation->full_slug]) }}" class="info-doctor" >Профиль врача</a>
                                                 @else
                                                     <p>Профиль недоступен</p>
                                                 @endif
@@ -82,7 +82,7 @@
                                                     <tr>
                                                         <th class="hours">Час</th>
                                                         @foreach (['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'] as $day)
-                                                            <th>{{ $day }}</th>
+                                                            <th  class="hours">{{ $day }}</th>
                                                         @endforeach
                                                     </tr>
                                                     </thead>
@@ -118,12 +118,14 @@
                                                                             $endHour = $block['endHour'];
                                                                             $duration = $endHour - $startHour;
 
+                                                                             [$start, $end] = explode('-', $block['time']);
+
                                                                             if ($hour === $startHour) {
-                                                                                echo '<td rowspan="' . $duration . '">';
-                                                                                echo '<div class="line">';
-                                                                                echo '<div class="start">' . $block['time'] . '</div>';
-                                                                                echo '<div class="icon"><span class="mdi mdi-clock"></span></div>';
-                                                                                echo '<div class="finish"></div>';
+                                                                                echo '<td class"shadow" rowspan="' . $duration . '">';
+                                                                                echo '<div class="line" style="--rows: ' . $duration . ';">';
+                                                                                echo '<div class="start"> ' . $start . ' </div>';
+                                                                                echo '<div class="icon-2"><span class="mdi mdi-clock"></span></div>';
+                                                                                echo '<div class="finish">' . $end . '</div>';
                                                                                 echo '</div>';
                                                                                 echo '</td>';
                                                                                 $rendered = true;
@@ -152,9 +154,7 @@
                                     </div>
                                 @endforeach
                             </div>
-
-                            </div>
-
+                        </div>
                     </div>
                 </div>
             </div>

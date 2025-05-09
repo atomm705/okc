@@ -1201,6 +1201,9 @@ html.page-schedule body .app section>.content>.slot>.articles-component>.content
     box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)
 }
 
+
+
+
 html.page-schedule body .app section>.content>.slot>.articles-component>.content>.articles>article>table>tbody>tr>td>.line>.finish,html.page-schedule body .app section>.content>.slot>.articles-component>.content>.articles>article>table>tbody>tr>td>.line>.start {
     font-weight: 700;
     text-align: center;
