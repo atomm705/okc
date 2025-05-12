@@ -84,7 +84,7 @@
                     var percent = (pos / width) * 100;
 
                     $handle.css('left', percent + '%');
-                    $resize.css('width', percent + '%');  // Змінюємо ширину блоку .resize
+                    $resize.css('width', percent + '%');
                 }
 
                 function onEnd() {
@@ -93,7 +93,7 @@
                     $(document).off('mouseup touchend touchcancel', onEnd);
                 }
 
-                // На всякий випадок — оновлення при ресайзі
+
                 $(window).on('resize', function () {
                     var percent = $resize.width() / $slider.width() * 100;
                     $handle.css('left', percent + '%');
@@ -200,4 +200,9 @@
     }
 </script>
 @endif
+
+
+<!--@if(Route::currentRouteName() === 'main.team')
+    <script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>
+@endif-->
 

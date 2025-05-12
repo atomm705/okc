@@ -22,7 +22,7 @@
 
 
 
-    <section class="section-lg section bg-default">
+    <section class="section-lg section bg-default" style="margin-bottom: 70px;">
         <div class="container">
             <div class="row isotope-wrap">
                 <div class="col-lg-3">

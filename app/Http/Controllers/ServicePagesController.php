@@ -2,6 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
+use App\Models\DoctorDepartmentTranslation;
+use App\Models\DoctorTranslation;
+use App\Models\Doctor;
+use App\Models\Image;
+
 use Illuminate\Http\Request;
 
 class ServicePagesController extends Controller
@@ -49,10 +55,13 @@ class ServicePagesController extends Controller
         return view('services.oklens');
     }
 
-    public function tests(){
+    public function tests()
+    {
+
 
         return view('services.tests');
     }
+
 
     public function liposaktsiya(){
 

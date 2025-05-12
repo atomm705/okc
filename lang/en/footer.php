@@ -9,5 +9,8 @@ return [
 	'contacts'   => [
 		'title'   => 'Contacts',
 		'address' => 'Kharkiv City, Mykoly Khvylyovogo (Mayakovs\'koho) St, 24 (subway station Universytet, subway station Pushkinska)',
+        'subscribe' => 'subscribe',
 	],
+
+
 ];
