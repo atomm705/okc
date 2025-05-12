@@ -30,7 +30,7 @@
                Route::currentRouteName() === 'services.checkup' ||
                Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
                ? 'services-aside-mobil-color'
-               : '' }}  " style="padding-top: 30px; ">
+               : '' }}  " >
                 <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
@@ -71,7 +71,6 @@
             </div>
             <div class="rd-navbar-main-outer">
                 <div class="rd-navbar-main">
-                    <!--RD Navbar Panel-->
                     <div class="rd-navbar-panel"  style="{{ Route::currentRouteName() === 'main.blepharoplastika' ||
               Route::currentRouteName() === 'main.plastichna-khururgiya' ||
               Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
@@ -84,8 +83,6 @@
               Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
               ? 'background: white;box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);'
               : '' }}">
-                        <!--RD Navbar Toggle-->
-
                         <button class="rd-navbar-toggle  {{ Route::currentRouteName() === 'main.blepharoplastika' ||
                Route::currentRouteName() === 'main.plastichna-khururgiya' ||
                Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
@@ -118,7 +115,7 @@
                                             <h6 class="rd-megamenu-title">{{ $item->translation()->title }}</h6>
                                             <ul class="rd-megamenu-list">
                                                 @foreach($item->categories as $category)
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->category->translation->slug]) }}" >{{ $category->category->translation->name ?? '' }}</a></li>
+                                                @if(isset($category->category->translation->slug))<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->category->translation->slug]) }}" >{{ $category->category->translation->name ?? '' }}</a></li>@endif
                                                 @endforeach
                                             </ul>
                                         </li>
