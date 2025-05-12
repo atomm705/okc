@@ -7,6 +7,8 @@ use App\Models\DoctorTranslation;
 use App\Models\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use App\Models\Doctor;
+
 
 
 class PageController extends Controller
@@ -108,30 +110,10 @@ class PageController extends Controller
         ]);
     }
 
-
-
-
-
-
     public function prices()
     {
         return view('main.prices');
     }
-
-    //public function priceCategory($category)
-    //{
-    //$validCategories = [ 'x-ray', 'dermatologiya', 'oftalmologiya', 'terapevt','povne-obstezhennya-organizmu-sheck-up','khirurgichna-plastika','ginekologiya'];
-
-
-
-    //if (!in_array($category, $validCategories)) {
-    //  abort(404);
-    //}
-
-    //return view('main.prices', compact('category'));
-
-    // }
-
 
     public function testimonials(){
 

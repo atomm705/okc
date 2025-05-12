@@ -49,10 +49,10 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
         Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
 
+
         Route::get('/doctors', [DoctorController::class, 'index'])->name('main.team');
 
         Route::get('/doctors/{slug}', [DoctorController::class, 'show'])->name('doctors.show');
-
 
         Route::get('/prices', function () {
             return view('main.prices', ['category' => null]);
@@ -119,26 +119,6 @@ Route::get('/switch-language/{locale}', function ($locale) {
 Route::get('/', function () {
     return redirect('/uk');
 });
-
-//Route::middleware(['auth'])->group(function () {
-//Route::get('/dashboard', function () {
-//  return view('dashboard');
-//})->name('dashboard');
-//});
-
-
-//Route::middleware('auth')->group(function () {
-
-// Route::get('/profile', function () {
-//     return redirect()->route('profile.edit');
-//  });
-
-// Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
-
-//  Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
-
-// Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-//});
 
 require __DIR__.'/auth.php';
 

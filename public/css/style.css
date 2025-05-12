@@ -30229,5 +30229,15 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #2a93c9;
 }
 
+@media (max-width: 1200px) {
 
+    .services-aside-mobil-color{
+        background-color: white !important;
+
+    }
+
+    .color-services-mobil{
+        color: #2a93c9 !important;
+    }
+}
 

@@ -1,10 +1,6 @@
 
-
 <x-app-layout>
-
-
 <div class="app color-main"  id="app">
-
     <div class="body-main ">
         <div class="section-main">
             <div class="banner-main mt-0"
@@ -14,12 +10,10 @@
                         <div class="banner-main-title">
                             <span>@lang('frontend/blefaroplastika.slider.slide_1.title')</span>
                         </div>
-
                         <div class="banner-main-subtitle">
                             <span>@lang('frontend/blefaroplastika.slider.slide_1.description')</span><br>
                             <span style="font-size: 28px">@lang('frontend/blefaroplastika.slider.slide_1.description1')</span>
                         </div>
-
                         <div class="wr-banner-main-button">
                             <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.slider.slide_1.link')</button>
                         </div>
@@ -34,11 +28,9 @@
                     <div class="title-section">
                         <span>@lang('frontend/blefaroplastika.whatas.title')</span>
                     </div>
-
                     <div class="text-section">
                         <p>
                             <span class="text-section__strong">@lang('frontend/blefaroplastika.whatas.description_1_1')</span>@lang('frontend/blefaroplastika.whatas.description_1_2')
-
                         <p>
                             <span class="text-section__strong">@lang('frontend/blefaroplastika.whatas.description_1_3')</span>
                             <span class="text-section__mark">@lang('frontend/blefaroplastika.whatas.description_1_4')</span> @lang('frontend/blefaroplastika.whatas.description_1_5')
@@ -53,7 +45,6 @@
                 <div class="title-section">
                     <span>@lang('frontend/blefaroplastika.when.title')</span>
                 </div>
-
                 <div class="advantage">
                     <div class="advantage-list">
                         <div class="advantage-card">
@@ -143,7 +134,6 @@
                 </div>
             </div>
         </div>
-
         <div class="section-main section-main-first">
             <div class="page-content">
                 <div id="video_youtube"></div>
@@ -221,7 +211,6 @@
                     <div class="title-section">
                         <span>@lang('frontend/blefaroplastika.how.title')</span>
                     </div>
-
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
@@ -244,12 +233,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
                                     <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_2.title')</span>
-
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -267,12 +254,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
                                     <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_3.title')</span>
-
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -282,7 +267,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_3.description')</p>
@@ -290,7 +274,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
@@ -305,7 +288,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_4.description')</p>
@@ -313,12 +295,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
                                     <span class="accordion-title__text">@lang('frontend/blefaroplastika.how.items.item_5.title')</span>
-
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +308,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_5.description')</p>
@@ -336,7 +315,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
@@ -351,7 +329,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_6.description')</p>
@@ -359,7 +336,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
@@ -374,7 +350,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_7.description')</p>
@@ -382,7 +357,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
@@ -397,7 +371,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_8.description')</p>
@@ -405,7 +378,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
@@ -420,7 +392,6 @@
                                             </svg>
                                         </span>
                                 </div>
-
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
                                         <p>@lang('frontend/blefaroplastika.how.items.item_9.description')</p>
@@ -429,7 +400,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="attention-main">
                             <span class="attention-main__ico">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -438,7 +408,6 @@
                                           fill="#F37110"/>
                                 </svg>
                             </span>
-
                         <div class="attention-main__text">
                             <p>@lang('frontend/blefaroplastika.how.alert')</p>
                         </div>
@@ -453,30 +422,25 @@
                     <span>@lang('frontend/blefaroplastika.specialist.title') </span>
                 </div>
             </div>
-
             <div class="slider-main wr-slider-specialist">
                 <div class="page-content wr-specialist-info">
                     <div class="specialist-card-box">
                         <div class="specialist-name">
                             <span>@lang('frontend/blefaroplastika.specialist.specialist')</span>
                         </div>
-
                         <div class="specialist-specialization">
                             <div class="specialist-specialization-property">
                                 <span>@lang('frontend/blefaroplastika.specialist.specialisation')</span>
                             </div>
-
                             <div class="specialist-specialization-title">
                                 <span>@lang('frontend/blefaroplastika.specialist.description.title')</span>
                             </div>
                         </div>
-
                         <div class="specialist-info">
                             <p>@lang('frontend/blefaroplastika.specialist.description.description')</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="wr-slider-specialis__inner">
                     <div class="slider-specialist swiper-container">
                         <div class="swiper-wrapper">
@@ -493,7 +457,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="slider-main-navigation" style="display: none">
                         <div class="slider-main-button slider-main-prev">
                             <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
@@ -502,7 +465,6 @@
                                       fill="white"/>
                             </svg>
                         </div>
-
                         <div class="slider-main-button slider-main-next">
                             <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -520,14 +482,12 @@
                 <div class="title-section">
                     <span>@lang('frontend/blefaroplastika.sertificats.title')</span>
                 </div>
-
                 <div class="list-box">
                     <div class="list-box__item">
                         <div class="wr-img">
                             <img src="/images/diplom_krem1-min.png" alt=""/>
                         </div>
                     </div>
-
                     <div class="list-box__item">
                         <div class="wr-img">
                             <img src="/images/diplom_krem2-min.png" alt=""/>
@@ -557,16 +517,13 @@
                 <div class="banner-section-bg">
                     <img src="/images/banner-section-2.jpg" alt="bg"/>
                 </div>
-
                 <div class="page-content">
                     <div class="banner-section-title">
                         <span>@lang('frontend/blefaroplastika.recording.title')</span>
                     </div>
-
                     <div class="banner-section-subtitle">
                         <span>@lang('frontend/blefaroplastika.recording.description')</span>
                     </div>
-
                     <div class="wr-banner-section-button">
                         <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.recording.link')</button>
                     </div>
@@ -580,12 +537,10 @@
                             <div class="advantage-card-ico">
                                 <img src="/images/ico-4.svg" alt="ico"/>
                             </div>
-
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
                                 <span>@lang('frontend/blefaroplastika.recording.items.item_1.title')</span>
                             </div>
                         </div>
-
                         <div class="advantage-card advantage-card_small">
                             <div class="advantage-card-ico">
                                 <img src="/images/ico-5.svg" alt="ico"/>
@@ -595,12 +550,10 @@
                                 <span>@lang('frontend/blefaroplastika.recording.items.item_2.title')</span>
                             </div>
                         </div>
-
                         <div class="advantage-card advantage-card_small">
                             <div class="advantage-card-ico">
                                 <img src="/images/ico-6.svg" alt="ico"/>
                             </div>
-
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
                                 <span>@lang('frontend/blefaroplastika.recording.items.item_3.title')</span>
                             </div>
@@ -609,14 +562,12 @@
                 </div>
             </div>
         </div>
-
         <div class="section-main">
             <div class="page-content">
                 <div class="equipment">
                     <div class="title-section">
                         <span>@lang('frontend/blefaroplastika.equipment.equipment')</span>
                     </div>
-
                     <div class="equipment-card">
                         <div class="equipment-card-img">
                             <img src="/images/equipment.jpg" alt="equipment">
@@ -625,24 +576,20 @@
                                 <span>@lang('frontend/blefaroplastika.equipment.title')</span>
                             </div>
                         </div>
-
                         <div class="equipment-card-block">
                             <div class="equipment-card-block__inner">
                                 <div class="equipment-card-title equipment-card-title_desktop">
                                     <span>@lang('frontend/blefaroplastika.equipment.title')</span>
                                 </div>
-
                                 <div class="equipment-card-year">
                                     <span class="equipment-card-year__property">@lang('frontend/blefaroplastika.equipment.year_title')</span>
 
                                     <span class="equipment-card-year__value">@lang('frontend/blefaroplastika.equipment.year')</span>
                                 </div>
-
                                 <div class="equipment-card-descr">
                                     <p>@lang('frontend/blefaroplastika.equipment.description')</p>
                                 </div>
                             </div>
-
                             <div class="equipment-card-addition">
                                 <p>@lang('frontend/blefaroplastika.equipment.alert')</p>
                             </div>
@@ -650,21 +597,17 @@
                     </div>
                 </div>
             </div>
-
             <div class="banner-section banner-section_bottom" id="banner-section-3">
                 <div class="banner-section-bg">
                     <img src="/images/banner-section-3.jpg" alt="bg"/>
                 </div>
-
                 <div class="page-content">
                     <div class="banner-section-title">
                         <span>@lang('frontend/blefaroplastika.recording.title')</span>
                     </div>
-
                     <div class="banner-section-subtitle">
                         <span>@lang('frontend/blefaroplastika.recording.cost')</span>
                     </div>
-
                     <div class="wr-banner-section-button">
                         <button class="open-modal button-main button-main_orange">@lang('frontend/blefaroplastika.recording.link')</button>
                     </div>
@@ -677,7 +620,6 @@
                 <div class="title-section">
                     <span>@lang('frontend/blefaroplastika.reviews.title')</span>
                 </div>
-
                 <div class="list-box">
                     <div class="list-box__item">
                         <div class="review-box">
@@ -688,34 +630,28 @@
                             <div class="review-text">
                                 <span>Благодарю Анну Васильевну за профессионализм и отличный результат. Обратилась к ней, так как провисала кожа на верхних веках. Долго сомневалась стоит ли делать. Все таки операция. Пробовала решить косметическим способом. Но ничего не помогало. Анну Васильевну мне посоветовала подруга. Сначала обратилась за консультацией. Она очень подробно объяснила как будет все будет проходить, ответила на все мои вопросы и опасения. Операция прошла достаточно быстро и безболезненно. А восстановление почти незаметно.</span>
                             </div>-->
-
                             <div class="recall-result">
                                 <div class="recall-result-title">
                                     <span>Результат</span>
                                 </div>
-
                                 <div class="recall-result-box" id="resultRecall_1">
                                     <div class="recall-result-box__before">
                                         <div class="recall-result-box-img">
                                             <img src="/images/before-1.jpg"
                                                  alt="result">
                                         </div>
-
                                         <div class="recall-result-box-title">
                                             <span>До</span>
                                         </div>
                                     </div>
-
                                     <div class="recall-result-box__after divisorAfter">
                                         <div class="recall-result-box-img">
                                             <img src="/images/after-1.jpg"
                                                  alt="result">
                                         </div>
-
                                         <div class="recall-result-box-title" id="titleBefore">
                                             <span>После</span>
                                         </div>
-
                                         <div class="draggable">
                                                 <span class="dr-btn">
                                                     <span class="dr-btn__left">
@@ -725,7 +661,6 @@
                                                                   fill="#1D86BC"/>
                                                         </svg>
                                                     </span>
-
                                                     <span class="dr-btn__right">
                                                         <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
@@ -740,7 +675,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="list-box__item">
                         <div class="review-box">
                             <!--<div class="review-title">
@@ -750,34 +684,28 @@
                             <div class="review-text">
                                 <span>Делала операцию месяц назад. Чувствую себя прекрасно. Благодарю Анну Васильевну. У нее золотые руки. Операция прошла быстро. Анна Васильевна говорила мне на каждом этапе операции что происходит, что все под контролем и это помогало мне чувствовать себя спокойно. Спасибо ей за то, что после операции связывалась со мной по скайпу и отвечала на все вопросы в телеграмм. Восстановление прошло очень быстро, всего 2 недели. Очень довольна результатом. Все как я и хотела!</span>
                             </div>-->
-
                             <div class="recall-result">
                                 <div class="recall-result-title">
                                     <span>Результат</span>
                                 </div>
-
                                 <div class="recall-result-box" id="resultRecall_2">
                                     <div class="recall-result-box__before">
                                         <div class="recall-result-box-img">
                                             <img src="/images/before-2.jpg"
                                                  alt="result"/>
                                         </div>
-
                                         <div class="recall-result-box-title">
                                             <span>До</span>
                                         </div>
                                     </div>
-
                                     <div class="recall-result-box__after divisorAfter">
                                         <div class="recall-result-box-img">
                                             <img src="/images/after-2.jpg"
                                                  alt="result"/>
                                         </div>
-
                                         <div class="recall-result-box-title">
                                             <span>После</span>
                                         </div>
-
                                         <div class="draggable">
                                                 <span class="dr-btn">
                                                     <span class="dr-btn__left">
@@ -787,7 +715,6 @@
                                                                   fill="#1D86BC"/>
                                                         </svg>
                                                     </span>
-
                                                     <span class="dr-btn__right">
                                                         <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
@@ -803,7 +730,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="recall-button">
                     <a href="https://www.okc.com.ua/ru/testimonials" target="_blank"
                        class="button-main button-main_blue button-more-recall">@lang('frontend/blefaroplastika.reviews.link')</a>
@@ -812,7 +738,6 @@
         </div>
 
         <div class="section-main section-main_m-n section-main_video" style="min-height: 320px; height:auto; max-height: 640px">
-
             <div class="banner-section banner-section_bottom" id="banner-section-4" style="margin-top: 70px">
                 <div class="banner-section-bg">
                     <img src="/images/banner-section-4.jpg" alt="bg"/>
@@ -826,15 +751,14 @@
                     <div class="banner-section-subtitle">
                         <span>@lang('frontend/blefaroplastika.consultation.description')</span>
                     </div>
-
                     <div class="wr-banner-section-button">
                         <button class="open-modal-recall button-main button-main_orange">@lang('frontend/blefaroplastika.consultation.link')</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div></div>
-
+    </div>
+</div>
     <!--<appointment-modal locale="uk" :translations="{&quot;fatal_error&quot;:&quot;Фатальна помилка&quot;,&quot;title&quot;:&quot;Запис онлайн&quot;,&quot;selectizer&quot;:{&quot;title&quot;:&quot;Направлення&quot;,&quot;values&quot;:{&quot;value_1&quot;:&quot;Консультація лікаря&quot;,&quot;value_2&quot;:&quot;Лазерна корекція зору&quot;,&quot;value_3&quot;:&quot;Катаракта&quot;,&quot;value_4&quot;:&quot;Гінекологія&quot;,&quot;value_5&quot;:&quot;УЗ діагностика&quot;,&quot;value_6&quot;:&quot;Гастроентерологія&quot;,&quot;value_7&quot;:&quot;Дерматологія&quot;,&quot;value_8&quot;:&quot;Урологія\/Проктологія&quot;,&quot;value_9&quot;:&quot;Трихологія&quot;}},&quot;phone&quot;:{&quot;label&quot;:&quot;Ваш номер телефону&quot;,&quot;description&quot;:&quot;Формат: +380501023212&quot;},&quot;name&quot;:{&quot;label&quot;:&quot;Ваше ім&#039;я&quot;},&quot;additional&quot;:{&quot;label&quot;:&quot;Додаткова інформація&quot;},&quot;work&quot;:{&quot;title&quot;:&quot;Ми працюємо&quot;,&quot;value&quot;:&quot;ПН-СБ з 9:00 до 18:00&quot;},&quot;appointment&quot;:{&quot;title&quot;:&quot;Запис через соц. мережу&quot;,&quot;value&quot;:&quot;До 21:00&quot;},&quot;appointment_phone&quot;:{&quot;title&quot;:&quot;Запис по телефону&quot;,&quot;value&quot;:&quot;До 19:00&quot;},&quot;agreement&quot;:&quot;Заповнюючи дану форму, Ви погоджуєтеся з умовами обробки персональніх даних. Ми гарантуемо конфіденційність Вашого зверненя&quot;,&quot;discount&quot;:&quot;10% знижка за онлайн реєстрацію&quot;,&quot;buttons&quot;:{&quot;submit&quot;:&quot;Відправити&quot;,&quot;cancel&quot;:&quot;Відмінити&quot;}}"></appointment-modal>
 
     <page-sticky-menu-component :translations="{&quot;appointment&quot;:&quot;Записатися&quot;}">

@@ -55,7 +55,7 @@
         </div>
         <div class="swiper-pagination"></div>
     </section>
-    <!--Sheldue-->
+
     <section class="bg-default-liac bg-white-liac section section-md pt-xl-0">
         <div class="container section-top-34 section-lg-top-0">
             <div class="row g-0 justify-content-sm-center justify-content-xl-start offset-lg-top-34-negative sheldue text-sm-start to-front row-30">
@@ -127,13 +127,12 @@
             </div>
         </div>
     </section>
-    <!--What makes us different-->
+
     <section class="section-lg bg-default-liac">
         <div class="container text-center">
             <h3>@lang('frontend/index.why_we.title')</h3>
             <div class="offset-top-41">
                 <p class="custom-paragraph">@lang('frontend/index.why_we.description')</p>
-
             </div>
             <div class="row offset-top-60 row-50">
                 <div class="col-md-6 col-lg-4">
@@ -154,7 +153,7 @@
             </div>
         </div>
     </section>
-    <!-- Material Parallax-->
+
     <section class="parallax-container  "  data-parallax-img="images/bg-4.webp">
         <div class="parallax-content section-98 section-sm-110 context-dark">
             <div class="container text-start">
@@ -168,28 +167,19 @@
             </div>
         </div>
     </section>
-    <!-- main services-->
 
-
-
-    <section class="section-lg bg-default-liac"><!----> <!---->
-        <div class="container text-center"><!----> <!---->
-
+    <section class="section-lg bg-default-liac">
+        <div class="container text-center">
             <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/index.advantages_1.title')</h3>
                 <p class="custom-paragraph">@lang('frontend/index.advantages_1.description')</p>
             </div>
-
         </div>
-
-        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
-                                         class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_1.link')</a>
+        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_1.link')</a>
         </div>
     </section>
 
-
     <section class="section section-lg p-md-0">
         <div class="container">
-
             <div class="row justify-content-sm-center justify-content-md-end offset-top-0">
                 <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-left text-center text-md-start">
                     <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/170f76372caeaf65382417301b2dca09.webp') }})"></div>
@@ -202,8 +192,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="row justify-content-sm-center justify-content-md-start">
                 <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-center text-md-start">
                     <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/9db2b605ab634c6b5e251e29d167a648.webp') }})"></div>
@@ -217,7 +205,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-sm-center justify-content-md-end offset-top-0">
                 <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-left text-center text-md-start">
                     <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/background-02-676x545.jpg') }})"></div>
@@ -230,7 +217,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-sm-center justify-content-md-start">
                 <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-center text-md-start">
                     <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/departments-01-960-611.jpg') }})"></div>
@@ -244,31 +230,23 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container text-center"><!----> <!---->
-
             <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/index.advantages_2.title')</h3>
                 <p class="custom-paragraph">@lang('frontend/index.advantages_2.description')</p>
             </div>
-
         </div>
-
-        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
-                                         class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_2.link')</a>
+        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_2.link')</a>
         </div>
     </section>
 
     <section class="section-lg bg-default section">
-
         <div class="container">
             <iframe width="100%" height="600" src="https://www.youtube.com/embed/cOUYKMbttow?si=3y2RivY38F5Dv7VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
         </div>
-
     </section>
 
     <!-- testimonials-->
@@ -358,8 +336,8 @@
                 </div>
             </div>
         </div>
-        <!-- RD Parallax-->
     </section>
+
     <section class="parallax-container" data-parallax-img="images/bg-5.webp">
         <div class="parallax-content section-98 section-sm-110 context-dark">
             <div class="container text-start">
@@ -376,13 +354,10 @@
 
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container text-center defolt-div" ><!----> <!---->
-
             <a class="link-discount" style=" background-image: url('{{ asset('images/218bbe9c38ffa59b6e99bf94428e4293.webp') }}') ; "  href="single-post.html">
                 <div  style=" padding-right:10px ; padding-left: 10px;">
-
                     <p class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_1') </p>
                     <p  class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_2')</p>
-
                </div>
             </a>
         </div>

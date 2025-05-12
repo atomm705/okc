@@ -17,34 +17,25 @@
         </div>
     </section>
 
-        <section class="section-lg bg-default-liac"><!----> <!---->
-            <div class="container text-center"><!----> <!---->
-
+        <section class="section-lg bg-default-liac">
+            <div class="container text-center">
                     <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_1.title')</h3>
                         <p class="custom-paragraph">@lang('frontend/telemed.article_1.texts.text_1')</p>
                     </div>
-
             </div>
-
-            <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
-                                 class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a>
-            </div>
+            <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a></div>
         </section>
 
-        <section class="section-lg bg-default-liac"><!----> <!---->
-            <div class="container text-center"><!----> <!---->
-
+        <section class="section-lg bg-default-liac">
+            <div class="container text-center">
                     <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_2.title')</h3>
                         <p class="custom-paragraph">@lang('frontend/telemed.article_2.texts.text_1')</p>
                     </div>
-
             </div>
-
-
         </section>
 
-        <section class="section-lg bg-default-liac"><!----> <!---->
-        <div class="container text-center"><!----> <!---->
+        <section class="section-lg bg-default-liac">
+        <div class="container text-center">
 
             <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_3.title')</h3>
                 <p >@lang('frontend/telemed.article_3.texts.text_1')</p>
@@ -61,13 +52,9 @@
                 </ul>
             </div>
 
-            <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
-                                             class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a>
-            </div>
+            <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a></div>
         </div>
-
         </section>
-
 
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container "><!----> <!---->
@@ -112,40 +99,27 @@
 
     </section>
 
-
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container "><!----> <!---->
-
             <div ><h3 style="font-size: 2.60em; margin-top: 0px;" class="text-center">@lang('frontend/telemed.article_5.title')</h3>
                 <p >@lang('frontend/telemed.article_5.texts.text_1')</p>
-
-
                 <p class="text-left">@lang('frontend/telemed.article_5.texts.text_2')</p>
-
                 <p >@lang('frontend/telemed.article_5.texts.text_3')</p>
                 <p >@lang('frontend/telemed.article_5.texts.text_4')</p>
-
                 <ul class="list-marked" style="text-align: left;">
                     <li>@lang('frontend/telemed.article_5.phone.item_1')</li>
                     <li>@lang('frontend/telemed.article_5.phone.item_2')</li>
                     <li>@lang('frontend/telemed.article_5.phone.item_3')</li>
                     <li>@lang('frontend/telemed.article_5.phone.item_4')</li>
                 </ul>
-
-
             </div>
-
-
         </div>
-
     </section>
 
     <section class="section-lg bg-default-liac">
         <div class="container text-center">
-
             <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_6.title')</h3>
                 <p>@lang('frontend/telemed.article_6.texts.text_1')</p>
-
                 <ul class="list-marked" style="text-align: left;">
                     <li>@lang('frontend/telemed.article_6.list.item_1')</li>
                     <li>@lang('frontend/telemed.article_6.list.item_2')</li>
@@ -153,15 +127,8 @@
                     <li>@lang('frontend/telemed.article_6.list.item_4')</li>
                 </ul>
             </div>
-
-            <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
-                                             class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a>
-            </div>
+            <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a></div>
         </div>
-
     </section>
-
-
-
 
 </x-app-layout>

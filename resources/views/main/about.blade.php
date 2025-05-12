@@ -1,14 +1,14 @@
 <!-- Breadcrumbs-->
 <x-app-layout>
-        <section class="breadcrumbs-custom bg-image context-dark slider-page"  style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
-                <div class="container " >
-                    <h2 class="breadcrumbs-custom-title">@lang('global.pages.about')</h2>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
-                        <li class="active"><a href="{{ route('main.about') }}">@lang('global.pages.about')</a></li>
-                    </ul>
-                </div>
-       </section>
+    <section class="breadcrumbs-custom bg-image context-dark slider-page"  style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+        <div class="container " >
+            <h2 class="breadcrumbs-custom-title">@lang('global.pages.about')</h2>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
+                    <li class="active"><a href="{{ route('main.about') }}">@lang('global.pages.about')</a></li>
+                </ul>
+        </div>
+    </section>
     <section class="section-lg bg-default text-start section">
         <div class="container">
             <div class="row justify-content-sm-center row-30">

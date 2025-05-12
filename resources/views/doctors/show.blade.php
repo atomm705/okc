@@ -9,12 +9,11 @@
             </ul>
         </div>
     </section>
-    <!-- team member section-->
+
     <section class="section-lg section bg-default">
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-sm-10 col-lg-4">
-                    <!-- Member block type 5-->
                     <div class="member-block-type-5 inset-lg-right-20">
 
                         <img src="{{ $doctorTranslation->doctor->imageSquare->src }}"
@@ -41,6 +40,7 @@
                     </div>
                 </div>
                 <div class="col-sm-10 col-lg-8 text-lg-start offset-top-60 offset-md-top-0">
+
                     @php
                         $position = json_decode($doctorTranslation->position_all, true);
                         $education = json_decode($doctorTranslation->educations, true);
@@ -175,6 +175,7 @@
                                     </ul>
                                 </div>
                             @endif
+
                         </div>
                     @endif
                     @php
