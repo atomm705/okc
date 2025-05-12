@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <section class="section swiper-container swiper-slider " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
         <div class="swiper-wrapper text-center ">
             <div class="swiper-slide " id="page-loader" data-slide-bg="images/bg-1.webp">
@@ -12,6 +11,7 @@
                                         <h2>{{ __('frontend/index.slider.slide_1.title') }}<br class="d-block">
                                         </h2>
                                         <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -168,8 +168,8 @@
         </div>
     </section>
 
-    <section class="section-lg bg-default-liac"><!----> <!---->
-        <div class="container text-center"><!----> <!---->
+    <section class="section-lg bg-default-liac">
+        <div class="container text-center">
             <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/index.advantages_1.title')</h3>
                 <p class="custom-paragraph">@lang('frontend/index.advantages_1.description')</p>
             </div>
@@ -242,8 +242,6 @@
         <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_2.link')</a>
         </div>
     </section>
-
-
 
     <section class="section-lg bg-default section">
         <div class="container">
@@ -360,11 +358,10 @@
                 <div  style=" padding-right:10px ; padding-left: 10px;">
                     <p class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_1') </p>
                     <p  class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_2')</p>
-                </div>
+               </div>
             </a>
         </div>
     </section>
-
     <section class="section">
         <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
             <div class="google-map">
@@ -378,5 +375,4 @@
             </ul>
         </div>
     </section>
-
 </x-app-layout>

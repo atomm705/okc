@@ -7,13 +7,6 @@
                         <h6>@lang('footer.newsletter.title')</h6>
                         <hr class="text-subline">
                         <p class="text-white-70">@lang('footer.newsletter.description')</p>
-                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
-                            <div class="form-wrap input-group input-group-custom input-group-sm no-wrap">
-                                <label class="form-label" for="subscribe-form-email">E-mail</label>
-                                <input class="form-input mr-2" id="subscribe-form-email" type="email" name="email">
-                                <button class="btn btn-sm btn-darkest" type="submit"> @lang('footer.contacts.subscribe')</button>
-                            </div>
-                        </form>
                     </div>
                     <div class="col-sm-10 text-sm-start col-lg-4 order-lg-2">
                         <h6>@lang('footer.contacts.title')</h6>
@@ -28,10 +21,6 @@
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
                                     <div class="unit-body"><a class="text-white-70" href="#">@lang('footer.contacts.address')</a></div>
                                 </div>
-                                <!--<div class="p unit unit-spacing-xxs flex-row offset-top-16">
-                                    <div class="unit-left"><span class="icon icon-xxs mdi mdi-email-outline text-white"></span></div>
-                                    <div class="unit-body"><a class="text-white-70 text-java" href="mailto:#">info@demolink.org</a></div>
-                                </div>-->
                             </address>
                         </div>
                     </div>
@@ -50,9 +39,6 @@
             </div>
         </div>
     </div>
-   <!-- <div class="container offset-top-50 offset-md-top-60">
-        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Докарт центр сучасної медицини </span><span>.&nbsp;</span><a href="privacy-policy.html">политика конфиденциальности</a></p>
-    </div>-->
 </footer>
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>

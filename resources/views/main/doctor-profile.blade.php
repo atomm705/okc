@@ -56,6 +56,7 @@
                     </div>
                 </div>
                 <div class="col-sm-10 col-lg-8 text-lg-start offset-top-60 offset-md-top-0">
+
                     @php
                         $position = json_decode($doctorTranslation->position_all, true);
                         $education = json_decode($doctorTranslation->educations, true);
@@ -197,10 +198,9 @@
                                     </ul>
                                 </div>
                             @endif
+
                         </div>
                     @endif
-
-
 
                     @php
                         $awards = json_decode($doctorTranslation->awards, true);

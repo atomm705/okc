@@ -11,6 +11,8 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ServicePagesController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DivisionController;
+use App\Http\Controllers\ArticleController;
 
 
 
@@ -51,7 +53,6 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
 
         Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
-
         Route::get('/doctors/{slug}', [DoctorsController::class, 'show'])->name('main.doctor.profile');
 
 
@@ -62,6 +63,9 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/prices/{category}', function ($category) {
             return view('main.prices', compact('category'));
         })->name('prices.category');
+
+        Route::get('/{category_slug}', [ArticleController::class, 'category_page'])->name('main.category');
+        Route::get('/{category_slug}/{slug}', [ArticleController::class, 'page'])->name('main.service');
     })->where('locale', 'en|uk|ru');
 });
 
@@ -73,19 +77,27 @@ Route::middleware(['auth', \App\Http\Middleware\IsAdmin::class])->group(function
 
 // Тут прописані маршрути тільки для зареєстрованих користувачів(включно адміністратора)
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin-pannel', [AdminController::class, 'index'])->name('admin.index');
-    Route::get('/admin-pannel/doctors', [AdminController::class, 'doctors'])->name('admin.admin-doctors');
-    Route::get('/admin-pannel/services', [AdminController::class, 'services'])->name('admin.admin-services');
-    Route::get('/admin-pannel/user-profile', [AdminController::class, 'users'])->name('admin.user-profile');
+    Route::group(['prefix' => 'admin-panel'], function() {
+        Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+
+        Route::get('/doctors', [DoctorController::class, 'doctors'])->name('admin.doctors');
+
+        Route::get('/groups', [ServiceController::class, 'groups'])->name('admin.groups');
+
+        Route::get('/services', [ServiceController::class, 'services'])->name('admin.services');
+
+        Route::get('/division', [DivisionController::class, 'index'])->name('admin.divisions');
+        Route::get('/division/create', [DivisionController::class, 'create'])->name('admin.divisions.create');
+        Route::post('/division/store', [DivisionController::class, 'store'])->name('admin.divisions.store');
+        Route::get('/division/{id}/edit', [DivisionController::class, 'edit'])->name('admin.divisions.edit');
+        Route::post('/division/{id}/update', [DivisionController::class, 'update'])->name('admin.divisions.update');
+        Route::post('/division/{id}/category_add', [DivisionController::class, 'category_add'])->name('admin.divisions.category_add');
+        Route::post('/division/category_del', [DivisionController::class, 'category_del'])->name('admin.divisions.category_del');
+
+        Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
+
+    });
 });
-
-Route::get('/admin-pannel/register', [RegisteredUserController::class, 'create'])
-    ->middleware(['auth', \App\Http\Middleware\IsAdmin::class])
-    ->name('admin.register');
-
-Route::post('/admin-pannel/register', [RegisteredUserController::class, 'store'])
-    ->middleware(['auth', \App\Http\Middleware\IsAdmin::class]);
-
 
 Route::get('/switch-language/{locale}', function ($locale) {
     if (!in_array($locale, ['en', 'uk', 'ru'])) {

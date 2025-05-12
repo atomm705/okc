@@ -7,6 +7,8 @@ use App\Models\DoctorTranslation;
 use App\Models\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use App\Models\Doctor;
+
 
 
 class PageController extends Controller
@@ -20,10 +22,10 @@ class PageController extends Controller
         return view('main.index');
     }
 
-    public function team(){
+    public function team()
+    {
 
         $locale = App::getLocale();
-
 
         $departments = DoctorDepartmentTranslation::where('locale', $locale)
             ->join('doctors_departments', 'doctors_departments.department_id', '=', 'doctors_departments_translations.department_id')
@@ -32,25 +34,24 @@ class PageController extends Controller
                 'doctors_departments_translations.*',
                 'images.src as image_src'
             )
-            ->get()
-            ->keyBy('department_id');
+            ->get();
 
+        $doctors = Doctor::with(['translations', 'departments'])
+            ->whereHas('translations', function ($query) use ($locale) {
+                $query->where('locale', $locale);
+            })
+            ->where('is_visible', true)
+            ->get();
 
-        $doctors = DoctorTranslation::with('doctor.image')
-            ->where('locale', $locale)
-            ->join('doctors', 'doctors.doctor_id', '=', 'doctors_translations.doctor_id')
-            ->where('doctors.is_visible', true)
-            ->select('doctors_translations.*')
-            ->get()
-            ->keyBy('doctor_id');
+        $doctorsByDepartment = $doctors->groupBy(function ($doctor) {
+            return $doctor->departments->pluck('department_id')->first();
+        });
 
-
-        $images = Image::all()->keyBy('image_id');
-
-        return view('main.team', compact('departments', 'doctors' ,'images'));
-
+        return view('main.team', compact('departments', 'doctorsByDepartment'));
 
     }
+
+
 
     public function about(){
 

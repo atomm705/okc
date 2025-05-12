@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class AdminController extends Controller
 {
@@ -13,6 +14,9 @@ class AdminController extends Controller
 
     public function user()
     {
+        if(!Auth::user()->is_admin){
+            return redirect()->route('no-access');
+        }
         return view('admin.user-management');
     }
 

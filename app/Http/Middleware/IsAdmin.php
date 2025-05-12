@@ -21,6 +21,6 @@ class IsAdmin
         }
 
 
-        return redirect('/');
+        return redirect()->route('admin.index');
     }
 }

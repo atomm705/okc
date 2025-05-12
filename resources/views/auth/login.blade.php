@@ -14,7 +14,7 @@
 
 
 
-                    <h4 class="mb-1">Welcome to sneat! 👋</h4>
+                    <h4 class="mb-1">Welcome to AdminPanel! 👋</h4>
                     <p class="mb-6">Please sign-in to your account and start the adventure</p>
 
                     <form method="POST" action="{{ route('login') }}">
@@ -43,21 +43,21 @@
                         <div class="d-flex justify-content-between mt-8">
                             <label for="remember_me" class="inline-flex items-center">
                                 <input id="remember_me" type="checkbox" class="form-check-input" name="remember">
-                                <span class="ms-2 text-sm text-gray-600 form-check-label mt-1">{{ __('Remember me') }}</span>
+                                <span class="ms-2 text-sm text-gray-600 form-check-label mt-1">Запам'ятати мене</span>
                             </label>
 
 
 
                             @if (Route::has('password.request'))
                                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                                    {{ __('Forgot your password?') }}
+                                    Забули пароль?
                                 </a>
                             @endif
 
                         </div>
 
                         <x-primary-button class="ms-3">
-                            {{ __('Log in') }}
+                            Вийти
                         </x-primary-button>
 
 
