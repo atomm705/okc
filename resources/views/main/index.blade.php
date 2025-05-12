@@ -1,17 +1,4 @@
 <x-app-layout>
-    @php
-        $doctors = [
-            ['slug' => 'prokipets-armen-tarasovich', 'name' => 'Dr. Prokipets Armen Tarasovich', 'image' => 'images/our-team-08-270x270.jpg', 'speciality' => __('messages.Chief Medical Officer, oftalmologia')],
-            ['slug' => 'jane-fowler', 'name' => 'Dr. Jane Fowler', 'image' => 'images/our-team-06-384x410.jpg', 'speciality' => __('messages.Clinical Laboratory Technologist')],
-            ['slug' => 'eric-snyder', 'name' => 'Dr. Eric Snyder', 'image' => 'images/our-team-07-384x410.jpg', 'speciality' => __('messages.MRI Technologist')],
-            ['slug' => 'martha-schmidt', 'name' => 'Dr. Martha Schmidt', 'image' => 'images/our-team-08-384x410.jpg', 'speciality' => __('messages.EKG Technician')],
-            ['slug' => 'james-wilson', 'name' => 'Dr. James Wilson', 'image' => 'images/our-team-09-384x410.jpg', 'speciality' => __('messages.Radiology Technician')],
-        ];
-    @endphp
-
-
-
-
         <section class="section swiper-container swiper-slider " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
             <div class="swiper-wrapper text-center ">
                 <div class="swiper-slide " id="page-loader" data-slide-bg="images/bg-1.webp">
@@ -21,9 +8,9 @@
                                 <div class="row">
                                     <div class="col-lg-7 section-slider-custom">
                                         <div class="inset-xl-right-80 text-lg-start ">
-                                            <h2>{{ __('frontend/index.slider.slide_1.title') }}<br class="d-block">
+                                            <h2>{!! __('frontend/index.slider.slide_1.title') !!}
                                             </h2>
-                                            <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
+                                            <h5 class="d-none d-lg-block mw-1000">{!! __('frontend/index.slider.slide_1.description') !!}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -274,32 +261,6 @@
         </div>
     </section>
 
-    <!-- Our Team-->
-  <!--  <section class="section section-md p-xl-0">
-        <div class="container-fluid p-0">
-            <div class="justify-content-sm-center row-30 row g-0">-->
-            @foreach ($doctors as $doctor)
-                <!-- Thumbnail Josip -->
-                    <!--<figure class="thumbnail-josip thumbnail-big">
-                        <a href="{{ route('main.doctor.profile', ['slug' => $doctor['slug']]) }}">
-                            <img width="384" height="410" src="{{ asset($doctor['image']) }}" alt="{{ $doctor['name'] }}"/>
-                        </a>
-                        <div class="thumbnail-desc">
-                            <h5 class="thumbnail-josip-title text-medium text-white">{{ $doctor['name'] }}</h5>
-                            <p class="d-none d-lg-block font-italic text-white offset-top-0">{{ $doctor['speciality'] }}</p>
-                        </div>
-                        <figcaption>
-                            <a class="btn btn-block btn-rect text-center text-lg-start btn-white"
-                               href="{{ route('main.doctor.profile', ['slug' => $doctor['slug']]) }}">
-                                @lang('messages.view full profile')
-                            </a>
-                        </figcaption>
-                    </figure>
-                @endforeach
-            </div>
-        </div>
-    </section>-->
-
     <section class="section-lg bg-default section">
 
         <div class="container">
@@ -319,7 +280,6 @@
                             <blockquote class="quote quote-classic">
                                 <div class="quote-body">
                                     <p class="font-italic text-gray-dark">
-                                        <q>@lang('messages.I had a colonoscopy at Medina Diagnostic Center. From the moment I entered the center, I was greeted and treated warmly and respectfully and it was the best experience.')</q>
                                     </p>
                                     <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
                                         <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-betty-wade-60x60.jpg" alt=""/></div>
@@ -327,7 +287,7 @@
                                             <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                                 <cite class="text-normal">Betty Wade</cite>
                                             </h5>
-                                            <p class="quote-desc text-capitalize text-gray font-italic">@lang('messages.Patient')</p>
+                                            <p class="quote-desc text-capitalize text-gray font-italic"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -337,7 +297,6 @@
                             <blockquote class="quote quote-classic">
                                 <div class="quote-body">
                                     <p class="font-italic text-gray-dark">
-                                        <q>@lang('messages.I would like to thank and compliment the staff at Medina, including the outpatient, laboratory staff and cardiac division during my stay at your facility on July 9th and 10th.')</q>
                                     </p>
                                     <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
                                         <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>
@@ -345,7 +304,7 @@
                                             <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                                 <cite class="text-normal">Bryan Green</cite>
                                             </h5>
-                                            <p class="quote-desc text-capitalize text-gray font-italic">@lang('messages.Patient')</p>
+                                            <p class="quote-desc text-capitalize text-gray font-italic"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +314,6 @@
                             <blockquote class="quote quote-classic">
                                 <div class="quote-body">
                                     <p class="font-italic text-gray-dark">
-                                        <q>@lang('messages.I had a colonoscopy at Medina Diagnostic Center. From the moment I entered the center, I was greeted and treated warmly and respectfully and it was the best experience.')</q>
                                     </p>
                                     <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
                                         <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>
@@ -363,7 +321,7 @@
                                             <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                                 <cite class="text-normal">Bryan Green</cite>
                                             </h5>
-                                            <p class="quote-desc text-capitalize text-gray font-italic">@lang('messages.Patient')</p>
+                                            <p class="quote-desc text-capitalize text-gray font-italic"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +331,6 @@
                             <blockquote class="quote quote-classic">
                                 <div class="quote-body">
                                     <p class="font-italic text-gray-dark">
-                                        <q>@lang('messages.I would like to thank and compliment the staff at Medina, including the outpatient, laboratory staff and cardiac division during my stay at your facility on July 9th and 10th.')</q>
                                     </p>
                                     <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
                                         <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-betty-wade-60x60.jpg" alt=""/></div>
@@ -381,7 +338,7 @@
                                             <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                                 <cite class="text-normal">Betty Wade</cite>
                                             </h5>
-                                            <p class="quote-desc text-capitalize text-gray font-italic">@lang('messages.Patient')</p>
+                                            <p class="quote-desc text-capitalize text-gray font-italic"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -405,90 +362,6 @@
                 </div>
             </div>
         </section>
-        <!-- latest blog posts-->
-        <!--<section class="section-98 section-sm-110">
-            <div class="container">
-                <h3 class="text-center text-lg-start">@lang('messages.Latest Blog Posts')</h3>
-                <div class="row justify-content-sm-center offset-top-60">
-                    <div class="col-md-8 col-lg-4">-->
-                        <!-- Post Modern-->
-                        <!--<article class="post post-modern post-modern-classic">
-
-                            <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-13-370x250.jpg" alt=""/></a>
-                            </div>
-
-                            <div class="post-content text-start">
-
-                                <div class="post-title offset-top-8">
-                                    <h5 class="font-weight-bold"><a href="single-post.html">@lang('messages.Reasons to Visit a Breast Specialist')</a></h5>
-                                </div>
-                                <ul class="list-inline list-inline-dashed">
-                                    <li>@lang('messages.June 21, 2023 at 8:12pm')</li>
-                                    <li><a class="text-primary" href="blog-masonry.html">@lang('messages.News')</a></li>
-                                </ul>
-
-                                <div class="post-body">
-                                    <p>@lang('messages.There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...')</p>
-                                </div>
-                                <div class="tags group group-sm">
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-8 col-lg-4 offset-top-50 offset-md-top-0">
-
-                        <article class="post post-modern post-modern-classic">
-
-                            <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-14-370x250.jpg" alt=""/></a>
-                            </div>
-
-                            <div class="post-content text-start">
-
-                                <div class="post-title offset-top-8">
-                                    <h5 class="font-weight-bold"><a href="single-post.html">@lang('messages.Picking the Right Diagnostic Services for Efficient Results')</a></h5>
-                                </div>
-                                <ul class="list-inline list-inline-dashed">
-                                    <li>@lang('messages.June 21, 2023 at 8:12pm')</li>
-                                    <li><a class="text-primary" href="blog-masonry.html">@lang('messages.News')</a></li>
-                                </ul>
-
-                                <div class="post-body">
-                                    <p>@lang('messages.There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...')</p>
-                                </div>
-                                <div class="tags group group-sm">
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-8 col-lg-4 offset-top-50 offset-md-top-0">
-
-                        <article class="post post-modern post-modern-classic">
-
-                            <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-15-370x250.jpg" alt=""/></a>
-                            </div>
-
-                            <div class="post-content text-start">
-
-                                <div class="post-title offset-top-8">
-                                    <h5 class="font-weight-bold"><a href="single-post.html">@lang('messages.Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians')</a></h5>
-                                </div>
-                                <ul class="list-inline list-inline-dashed">
-                                    <li>@lang('messages.June 21, 2023 at 8:12pm')</li>
-                                    <li><a class="text-primary" href="blog-masonry.html">@lang('messages.News')</a></li>
-                                </ul>
-
-                                <div class="post-body">
-                                    <p>@lang('messages.An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...')</p>
-                                </div>
-                                <div class="tags group group-sm">
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="offset-top-50 text-center text-lg-start"><a class="btn btn-ellipse btn-primary" href="blog-grid.html">@lang('messages.View all blog posts')</a></div>
-            </div>
-        </section>-->
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container text-center defolt-div" ><!----> <!---->
 
@@ -499,12 +372,9 @@
                    <p  class="mt-0 mb-0">@lang('frontend/index.stocks.google.text_2')</p>
 
                </div>
-
             </a>
-
         </div>
     </section>
-
     <section class="section">
             <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
                 <div class="google-map">
@@ -518,10 +388,5 @@
                 </ul>
             </div>
         </section>
-
-
-
         <!-- Page Footer-->
-
-
 </x-app-layout>

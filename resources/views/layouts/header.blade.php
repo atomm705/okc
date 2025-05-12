@@ -111,51 +111,20 @@
                                 <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">{{ __('header.menu.index') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.services') }}">{{ __('header.menu.services') }}</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="">{{ __('header.menu.services') }}</a>
                                     <ul class="rd-menu rd-navbar-megamenu">
+                                        @foreach($mainMenu as $item)
                                         <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('main.oftalmology')</h6>
+                                            <h6 class="rd-megamenu-title">{{ $item->translation()->title }}</h6>
                                             <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.blepharoplastika') }}" >Блефаропластика</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('services.panoptix') }}">PanOptix</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('services.oklens') }}">Ок Лінзи</a></li>
-
+                                                @foreach($item->categories as $category)
+                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->category->translation->slug]) }}" >{{ $category->category->translation->name ?? '' }}</a></li>
+                                                @endforeach
                                             </ul>
                                         </li>
-                                        <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('main.plastic_khirurgiya')</h6>
-                                            <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('main.plastichna-khururgiya') }}">Пластична хірургія</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart') }}">Ліпосакція</a></li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('main.estetychna_medicine')</h6>
-                                            <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.inektsionnaya-terapiya') }}">Ін'єкційна косметологія</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.plazmoterapiya') }}">Плазмотерапія</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.rf-lifting') }}">RF-ліфтинг</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.lazernaya-epilyatsiya') }}">Лазерна епиляция</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.lazernoe-omolozhenie') }}">Лазерне омоложення</a></li>
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.co2') }}">Фракційний лазер Candela CO2RE</a></li>
-
-
-
-
-                                            </ul>
-                                        </li>
-                                        <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">@lang('main.all_medicine')</h6>
-                                            <ul class="rd-megamenu-list">
-                                                <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link"  href="{{ route('services.checkup') }}">Check Up</a></li>
-
-                                            </ul>
-                                        </li>
+                                        @endforeach
                                     </ul>
                                 </li>
-
-
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">{{ __('header.menu.schedule') }}</a>
                                 </li>
 
@@ -166,18 +135,6 @@
 
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">{{ __('header.menu.price') }}</a>
 
-                                <!--<li class="rd-nav-item"><a class="rd-nav-link" href="#">@lang('messages.Gallery')</a>
-                                    <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">@lang('messages.Grid Gallery')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery-no-padding.html">@lang('messages.Gallery Without Padding')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">@lang('messages.Masonry Gallery')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cobbles-gallery.html">@lang('messages.Cobbles Grid')</a>
-                                        </li>
-                                    </ul>
-                                </li>-->
 
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">{{ __('header.menu.contacts') }}</a>
                                 </li>
@@ -188,18 +145,6 @@
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.telemed') }}">{{ __('header.menu.telemed') }}</a>
 
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.blog') }}">{{ __('header.menu.blog') }}</a>
-                                <!--<ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">@lang('messages.Blog Masonry')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-modern.html">@lang('messages.Blog Modern')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-classic.html">@lang('messages.Blog Classic')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-grid.html">@lang('messages.Blog Grid')</a>
-                                        </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.html">@lang('messages.Single Post')</a>
-                                        </li>
-                                    </ul>-->
                                 </li>
                                 <div class="language_select">
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="#">{{ strtoupper(app()->getLocale()) }}</a>
@@ -212,21 +157,8 @@
                                         </ul>
                                     </li>
                                 </div>
-
                             </ul>
                         </div>
-                        <!--RD Navbar Search-->
-                    <!--<div class="rd-navbar-search">
-                            <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
-                            <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="rd-navbar-search-form-input">@lang('messages.Type and hit enter...')</label>
-                                    <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
-                                    <div class="rd-search-results-live" id="rd-search-results-live"></div>
-                                </div>
-                                <button class="rd-search-form-submit fa-search" type="submit"></button>
-                            </form>
-                            </div>-->
                     </div>
                 </div>
             </div>
