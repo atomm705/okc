@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
             <h2 class="breadcrumbs-custom-title" style="margin-top: 10px;">@lang('global.pages.doctors')</h2>
@@ -9,19 +8,12 @@
             </ul>
         </div>
     </section>
-
     <div id="app" class="app">
-
-
-
-
         <section><!----> <!---->
             <div class="content"><!----> <!---->
                 <div class="slot">
                     <div class="doctors-departments-section">
                         <div class="departments-list-compact">
-
-
                             <a href="#doctors-department-oftalmologiya" class="department">
                                 <img src="/images/uploads/a81aacf1c072df3a3d25cc9e43366648.webp" alt="{{ $departments[3]->name }}">
                                 <div class="title">{{ $departments[1]->name }}</div>
@@ -97,8 +89,6 @@
                             <div class="doctors-departments-section-department" id="doctors-department-oftalmologiya">
                                 <div class="content"><h3>{{ $departments[1]->name }}</h3>
                                     <div class="doctors">
-
-
                                         @if(isset($doctors[1]))
                                             <a href="{{ route('main.doctor.profile', [ 'slug' => $doctors[1]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img src="/images/uploads/14b0c14a8626d74b72f14c61d5aadb67.webp">
@@ -109,7 +99,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
                                         @if(isset($doctors[2]))
                                             <a href="{{ route('main.doctor.profile', [ 'slug' => $doctors[2]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -121,7 +110,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
                                         @if(isset($doctors[45]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[45]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -133,7 +121,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
                                         @if(isset($doctors[54]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[54]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -145,7 +132,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
                                         @if(isset($doctors[60]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[60]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -157,8 +143,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
-
                                         @if(isset($doctors[68]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[68]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -170,7 +154,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
                                         @if(isset($doctors[77]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[77]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -182,7 +165,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
                                         @if(isset($doctors[79]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[79]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img
@@ -194,8 +176,6 @@
                                                 </div>
                                             </a>
                                         @endif
-
-
                                         @if(isset($doctors[80]))
                                             <a href="{{ route('main.doctor.profile', ['slug' => $doctors[80]->full_slug]) }}" class="doctor-tile-compact-component">
                                                 <img

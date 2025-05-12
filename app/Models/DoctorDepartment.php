@@ -23,12 +23,16 @@ class DoctorDepartment extends Model
 
     public function translations()
     {
-        return $this->hasMany(DoctorDepartmentTranslation::class, 'department_id', 'department_id');
+        return $this->hasMany(DoctorDepartmentTranslation::class, 'department_id', 'department_id')->where('locale', app()->getLocale())->first();
     }
 
     public function doctors()
     {
-        return $this->belongsToMany(Doctor::class, 'doctors_doctors_departments', 'department_id', 'doctor_id')
-            ->withPivot('work_hours');
+        return $this->belongsToMany(Doctor::class, 'doctors_doctors_departments', 'department_id', 'doctor_id')->where('doctors_doctors_departments.is_visible', 1)
+            ->withPivot('work_hours')
+            ->where('doctors.is_visible', true)
+            ->with(['translation' => function ($query) {
+                $query->where('locale', app()->getLocale());
+            }]);
     }
 }

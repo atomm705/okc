@@ -5,12 +5,9 @@ use App\Http\Middleware\SetLocale;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ServicesControler;
 use App\Http\Controllers\AppointmentControler;
-use App\Http\Controllers\DoctorsController;
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\ServicePagesController;
-use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ArticleController;
 
@@ -52,16 +49,16 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
         Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
 
-        Route::get('/doctors', [PageController::class, 'team'])->name('main.team');
+        Route::get('/doctors', [DoctorController::class, 'index'])->name('main.team');
 
-        Route::get('/doctors/{slug}', [DoctorsController::class, 'show'])->name('main.doctor.profile');
+        Route::get('/doctors/{slug}', [DoctorController::class, 'show'])->name('doctors.show');
 
 
         Route::get('/prices', function () {
             return view('main.prices', ['category' => null]);
-        })->name('main.prices');
+        })->name('services.prices');
 
-        Route::get('/prices/{category}', function ($category) {
+        Route::get('/price/{category}', function ($category) {
             return view('main.prices', compact('category'));
         })->name('prices.category');
 

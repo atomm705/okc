@@ -13,18 +13,14 @@ class Doctor extends Model
 
     public function translations()
     {
-        return $this->hasMany(DoctorTranslation::class, 'doctor_id');
+        return $this->hasMany(DoctorTranslation::class, 'doctor_id', 'doctor_id')->where('locale', app()->getLocale())->first();
     }
 
     public function translation()
     {
-        return $this->hasOne(DoctorTranslation::class, 'doctor_id')->where('locale', app()->getLocale());
+        return $this->hasOne(DoctorTranslation::class, 'doctor_id', 'doctor_id')
+            ->where('locale', app()->getLocale());
     }
-
-    //public function translation()
-   // {
-       // return $this->hasOne(DoctorTranslation::class, 'doctor_id');
- //   }
 
     public function image()
     {
