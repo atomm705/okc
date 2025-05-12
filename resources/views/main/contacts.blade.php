@@ -1,7 +1,5 @@
 <x-app-layout>
 
-
-        <!-- Breadcrumbs-->
         <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }}");  data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
             <div class="container">
                 <h2 class="breadcrumbs-custom-title">@lang('global.pages.contacts')</h2>
@@ -11,7 +9,7 @@
                 </ul>
             </div>
         </section>
-        <!-- Get In Touch-->
+
         <section class="section section-lg bg-default">
             <div class="container">
                 <div class="row justify-content-sm-center">
@@ -21,7 +19,6 @@
                                 <h3>@lang('frontend/contacts.contact.title')</h3>
                                 <div class="offset-top-66">
                                     <p>@lang('frontend/contacts.contact.description')</p>
-
                                 </div>
                                 <div class="offset-top-34">
                                     <form class="rd-mailform text-start" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
@@ -96,7 +93,6 @@
                                                 </div>
                                                 <div class="unit-body">
                                                     <div>@lang('frontend/contacts.blocks.time_to_work.value')</div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -137,6 +133,7 @@
                 </div>
             </div>
         </section>
+
     <section class="section">
         <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
         <!--Please note that YOUR_API_KEY should replaced with your key.-->
@@ -153,8 +150,5 @@
             </ul>
         </div>
     </section>
-
-
-
 
 </x-app-layout>

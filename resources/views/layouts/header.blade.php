@@ -1,5 +1,4 @@
 <header class="section page-header  @if(request()->routeIs('main.index') || request()->routeIs('main.blepharoplastika') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.inektsionnaya-terapiya') || request()->routeIs('services.plazmoterapiya') || request()->routeIs('services.rf-lifting')|| request()->routeIs('services.lazernaya-epilyatsiya')|| request()->routeIs('services.lazernoe-omolozhenie')|| request()->routeIs('services.co2') || request()->routeIs('services.checkup') || request()->routeIs('services.panoptix')|| request()->routeIs('services.oklens')|| request()->routeIs('services.tests')|| request()->routeIs('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart')) header-absolute @endif">
-    <!--RD Navbar-->
     <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-subpage" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-collapse-toggle
@@ -31,14 +30,11 @@
                Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
                ? 'services-aside-mobil-color'
                : '' }}  " style="padding-top: 30px; ">
-                <!--RD Navbar Brand-->
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
-                        <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
+                       <a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                     </div>
-
                     <div class="contacts-wrap">
-
                         <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
@@ -55,7 +51,6 @@
                                     </a></div>
                             </div>
                         </address>
-
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
@@ -64,14 +59,11 @@
                                 </div>
                             </div>
                         </address>
-
-
                     </div>
                 </div>
             </div>
             <div class="rd-navbar-main-outer">
                 <div class="rd-navbar-main">
-                    <!--RD Navbar Panel-->
                     <div class="rd-navbar-panel"  style="{{ Route::currentRouteName() === 'main.blepharoplastika' ||
               Route::currentRouteName() === 'main.plastichna-khururgiya' ||
               Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
@@ -84,8 +76,6 @@
               Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
               ? 'background: white;box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);'
               : '' }}">
-                        <!--RD Navbar Toggle-->
-
                         <button class="rd-navbar-toggle  {{ Route::currentRouteName() === 'main.blepharoplastika' ||
                Route::currentRouteName() === 'main.plastichna-khururgiya' ||
                Route::currentRouteName() === 'services.inektsionnaya-terapiya' ||
@@ -98,7 +88,7 @@
                Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'
                ? 'rd-navbar-toggle2'
                : '' }}" data-rd-navbar-toggle=".rd-navbar-nav-wrap" ><span class="color-mobil "></span></button>
-                        <!--RD Navbar Brand-->
+
                         <div class="rd-navbar-brand ">
                             <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                         </div>

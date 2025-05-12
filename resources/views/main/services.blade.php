@@ -1,7 +1,5 @@
 <x-app-layout>
 
-
-
     <!-- Breadcrumbs-->
     <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp ') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
@@ -161,12 +159,5 @@
             </div>
         </div>
     </section>
-    <!-- Page Footer-->
 
-
-
-
-
-
-
-</x-app-layout>>
+</x-app-layout>

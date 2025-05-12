@@ -9,12 +9,11 @@
         </ul>
     </div>
 </section>
-<!-- team member section-->
+
 <section class="section-lg section bg-default">
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col-sm-10 col-lg-4">
-                <!-- Member block type 5-->
                 <div class="member-block-type-5 inset-lg-right-20"><img class="img-responsive center-block" src="{{ asset('images/user-scott-riley-320x320.jpg ') }}" width="320" height="320" alt=""/>
                     <div class="member-block-body"><a class="btn-ellipse btn-primary btn" href="make-an-appointment.html">make an appointment</a>
                         <address class="contact-info offset-top-20 offset-sm-top-24">
@@ -81,7 +80,6 @@
                     <h6 class="text-start">skills</h6>
                     <hr class="text-subline">
                     <div class="offset-top-30">
-                        <!-- Linear progress bar-->
                         <div class="progress-linear">
                             <div class="progress-header">
                                 <h6 class="text-gray-dark pull-left">Dedication</h6>
@@ -92,7 +90,6 @@
                             </div>
                         </div>
                         <div class="offset-top-60">
-                            <!-- Linear progress bar-->
                             <div class="progress-linear">
                                 <div class="progress-header">
                                     <h6 class="text-gray-dark pull-left">problem Solving</h6>
@@ -104,7 +101,6 @@
                             </div>
                         </div>
                         <div class="offset-top-60">
-                            <!-- Linear progress bar-->
                             <div class="progress-linear">
                                 <div class="progress-header">
                                     <h6 class="text-gray-dark pull-left">professionalism</h6>
@@ -116,7 +112,6 @@
                             </div>
                         </div>
                         <div class="offset-top-60">
-                            <!-- Linear progress bar-->
                             <div class="progress-linear">
                                 <div class="progress-header">
                                     <h6 class="text-gray-dark pull-left">Decision-making</h6>
@@ -133,20 +128,16 @@
         </div>
     </div>
 </section>
-<!-- Dr. Scott Riley’s blog posts-->
+
 <section class="section-lg section bg-default-liac">
     <div class="container">
         <h3>Scott Riley’s Blog Posts</h3>
         <div class="row justify-content-sm-center row-40">
             <div class="col-sm-10 col-md-8 col-lg-4">
-                <!-- Post Modern-->
                 <article class="post post-modern post-modern-classic">
-                    <!-- Post media-->
                     <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src=" {{ asset('images/post-13-370x250.jpg') }}" alt=""/></a>
                     </div>
-                    <!-- Post content-->
                     <div class="post-content text-start">
-                        <!-- Post Title-->
                         <div class="post-title offset-top-8">
                             <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
                         </div>
@@ -154,7 +145,6 @@
                             <li>June 21, 2023 at 8:12pm</li>
                             <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
                         </ul>
-                        <!-- Post Body-->
                         <div class="post-body">
                             <div class="offset-top-14">
                                 <p>There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...</p>
@@ -166,14 +156,10 @@
                 </article>
             </div>
             <div class="col-sm-10 col-md-8 col-lg-4">
-                <!-- Post Modern-->
                 <article class="post post-modern post-modern-classic">
-                    <!-- Post media-->
                     <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="{{ asset('images/post-14-370x250.jpg') }}" alt=""/></a>
                     </div>
-                    <!-- Post content-->
                     <div class="post-content text-start">
-                        <!-- Post Title-->
                         <div class="post-title offset-top-8">
                             <h5 class="font-weight-bold"><a href="single-post.html">Picking the Right Diagnostic Services for Efficient Results</a></h5>
                         </div>
@@ -181,7 +167,6 @@
                             <li>June 21, 2023 at 8:12pm</li>
                             <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
                         </ul>
-                        <!-- Post Body-->
                         <div class="post-body">
                             <div class="offset-top-14">
                                 <p>There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...</p>
@@ -193,14 +178,10 @@
                 </article>
             </div>
             <div class="col-sm-10 col-md-8 col-lg-4">
-                <!-- Post Modern-->
                 <article class="post post-modern post-modern-classic">
-                    <!-- Post media-->
                     <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="{{ asset('images/post-15-370x250.jpg') }}" alt=""/></a>
                     </div>
-                    <!-- Post content-->
                     <div class="post-content text-start">
-                        <!-- Post Title-->
                         <div class="post-title offset-top-8">
                             <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a></h5>
                         </div>
@@ -208,7 +189,6 @@
                             <li>June 21, 2023 at 8:12pm</li>
                             <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
                         </ul>
-                        <!-- Post Body-->
                         <div class="post-body">
                             <div class="offset-top-14">
                                 <p>An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...</p>

@@ -10,12 +10,11 @@
             </ul>
         </div>
     </section>
-    <!-- Calendar-->
+
     <section class="bg-overlay-white" id="rd-event-calendar-demo">
         <div class="container-wide section-98 section-sm-110">
             <h3 class="text-center">Calendar</h3>
             <div class="offset-top-60">
-                <!-- Responsive-tabs-->
                 <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                     <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
                         <li>MIT </li>

@@ -9,12 +9,11 @@
             </ul>
         </div>
     </section>
-    <!-- team member section-->
+
     <section class="section-lg section bg-default">
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-sm-10 col-lg-4">
-                    <!-- Member block type 5-->
                     <div class="member-block-type-5 inset-lg-right-20">
 
                         <img src="{{ asset(str_replace('/assets', '', $doctor->imageSquare->src)) }}"
@@ -157,7 +156,7 @@
                         <div class="offset-top-30 text-start">
                             <h6>@lang('frontend/doctors/doctors.about.title')</h6>
                             <hr class="text-subline-2">
-                            <p>{{ $doctorTranslation->about }}</p>
+                            <p>{!! $doctorTranslation->about !!}</p>
                         </div>
                     @endif
 
@@ -220,8 +219,6 @@
                             </ul>
                         </div>
                 @endif
-
-
 
                 <!--<div class="offset-top-66">
                         <h6 class="text-start">skills</h6>

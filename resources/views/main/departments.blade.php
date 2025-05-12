@@ -1,6 +1,6 @@
 <x-app-layout>
 
-        <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }}); " data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
             <h2 class="breadcrumbs-custom-title">Departments</h2>
             <ul class="breadcrumbs-custom-path">
@@ -9,7 +9,7 @@
             </ul>
         </div>
     </section>
-        <!-- Page Content-->
+
         <section class="section section-lg p-md-0">
             <div class="container">
                 <div class="row justify-content-sm-center justify-content-md-start">

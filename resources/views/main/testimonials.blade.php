@@ -10,14 +10,8 @@
 
             </ul>
         </div>
-
-
     </section>
 
-
-
-
-    <!-- Our Customers-->
     <section class="section-lg section bg-default">
         <div class="slider-video-container">
             <h3 class="text-center">@lang('frontend/testimonials.video.title')</h3>
@@ -28,23 +22,17 @@
                          data-loop="false" data-items="1" data-sm-items="2" data-dots="true" data-mouse-drag="false"
                          data-lg-items="5"
                          data-owl="{&quot;dots&quot;:true,&quot;nav&quot;:false,&quot;autoplayTimeout&quot;:3500}">
-
-
                         <a
                             class="text-center" href="https://youtu.be/EJGBeL5vNng"><img
                                 src="https://i.ytimg.com/vi/EJGBeL5vNng/hqdefault.jpg"
                                 alt="" width="365" height="274" />
                         </a>
-
-
                         <a
                             href="https://youtu.be/tCqJfCOzP3E"><img
                                 class="d-inline-block "
                                 src="https://i.ytimg.com/vi/tCqJfCOzP3E/hqdefault.jpg"
                                 alt="" width="365" height="274"/>
                         </a>
-
-
                         <a class="text-center" href="https://youtu.be/FuRRxFJXjMA"><img
                                 class="d-inline-block "
                                 src="https://i.ytimg.com/vi/FuRRxFJXjMA/hqdefault.jpg"
@@ -104,15 +92,12 @@
                                 src=" https://i.ytimg.com/vi/FhKQ9ZPc6Ys/hqdefault.jpg"
                                 alt="" width="365" height="274"/>
                         </a>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- testimonials-->
     <section class="section-lg bg-default-liac section">
         <div class="container">
             <h3 class="text-center">@lang('frontend/testimonials.title')</h3>

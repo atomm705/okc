@@ -14,27 +14,22 @@
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-lg-10 col-xl-8">
-                    <!-- Blog Modern-->
                     <div class="post-modern-timeline-date text-md-start">
                         <div class="d-inline-block text-center">
                             <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
                         </div>
                     </div>
-                    <!-- Post Modern Timeline-->
                     <article class="post post-modern post-modern-timeline post-modern-timeline-left">
-                        <!-- Post media-->
                         <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="400" src=" {{ asset('images/post-04-570x370.jpg') }}" alt=""/></a>
                         </div>
-                        <!-- Post content-->
                         <section class="post-content text-start">
-                            <!-- Post Title-->
+
                             <div class="post-title offset-top-8">
                                 <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps</a></h5>
                             </div>
                             <div class="offset-top-4">
                                 <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">News</a>
                             </div>
-                            <!-- Post Body-->
                             <div class="post-body offset-top-14">
                                 <p>Etiam et imperdiet quam. In sit amet finibus lorem, ac ultricies enim. Aliquam volutpat enim diam, vitae. Phasellus non luctus justo, eu fringilla tortor.</p>
                             </div>
@@ -53,21 +48,16 @@
                         </div>
                     </div>
 
-                    <!-- Post Modern Timeline-->
                     <article class="post post-modern post-modern-timeline post-modern-timeline-left">
-                        <!-- Post media-->
                         <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="380" src=" {{ asset('images/post-05-570x370.jpg') }}" alt=""/></a>
                         </div>
-                        <!-- Post content-->
                         <section class="post-content text-start">
-                            <!-- Post Title-->
                             <div class="post-title offset-top-8">
                                 <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
                             </div>
                             <div class="offset-top-4">
                                 <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">News</a>
                             </div>
-                            <!-- Post Body-->
                             <div class="post-body offset-top-14">
                                 <p>Phasellus et lacus mattis, tincidunt metus sodales, tincidunt urna. Cras felis neque, iaculis vitae varius eu, luctus consectetur odio.</p>
                             </div>
@@ -85,21 +75,17 @@
                             <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
                         </div>
                     </div>
-                    <!-- Post Modern Timeline-->
                     <article class="post post-modern post-modern-timeline post-modern-timeline-left">
-                        <!-- Post media-->
                         <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="370" src="{{ asset('images/post-06-570x370.jpg ') }}" alt=""/></a>
                         </div>
-                        <!-- Post content-->
+
                         <section class="post-content text-start">
-                            <!-- Post Title-->
                             <div class="post-title offset-top-8">
                                 <h5 class="font-weight-bold"><a href="single-post.html">Picking the Right Diagnostic Services</a></h5>
                             </div>
                             <div class="offset-top-4">
                                 <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">Science</a>
                             </div>
-                            <!-- Post Body-->
                             <div class="post-body offset-top-14">
                                 <p>Phasellus et lacus mattis, tincidunt metus sodales, tincidunt urna. Cras felis neque, iaculis vitae varius eu, luctus consectetur odio.</p>
                             </div>
@@ -117,21 +103,17 @@
                             <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
                         </div>
                     </div>
-                    <!-- Post Modern Timeline-->
                     <article class="post post-modern post-modern-timeline post-modern-timeline-left post-modern-timeline-left-last">
-                        <!-- Post media-->
                         <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="370" src="{{ asset('images/post-07-570x370.jpg ') }}" alt=""/></a>
                         </div>
-                        <!-- Post content-->
+
                         <section class="post-content text-start">
-                            <!-- Post Title-->
                             <div class="post-title offset-top-8">
                                 <h5 class="font-weight-bold"><a href="single-post.html">The Purpose and Procedure of X-ray Imaging</a></h5>
                             </div>
                             <div class="offset-top-4">
                                 <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">Food</a>
                             </div>
-                            <!-- Post Body-->
                             <div class="post-body offset-top-14">
                                 <p>Cras tempor eu enim id pulvinar. Proin at imperdiet felis, vel vehicula neque. Nulla quis nisl facilisis ex dignissim euismod eu vel neque.</p>
                             </div>
@@ -147,7 +129,6 @@
                     <div class="row offset-top-50 offset-lg-top-0">
                         <div class="col-xl-10 offset-xl-2 text-xl-start">
                             <div class="inset-xl-left-10">
-                                <!-- Classic Pagination-->
                                 <nav>
                                     <ul class="pagination-classic">
                                         <li class="active"><span class="btn btn-darkest">1</span>
@@ -166,14 +147,11 @@
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-4 offset-top-66 offset-md-top-90 offset-lg-top-0">
                     <div class="blog-grid-sidebar inset-xxl-left-30">
-                        <!-- Aside-->
                         <aside class="text-start">
-                            <!-- Search in Blog-->
                             <div>
                                 <h6>Search in Blog</h6>
                                 <hr class="text-subline">
                                 <div class="offset-top-14 offset-md-top-20 rd-search-blog">
-                                    <!-- RD Search Form-->
                                     <form class="form-search rd-search" action="search-results.html" method="GET">
                                         <div class="form-wrap">
                                             <label class="form-label form-search-label" for="blog-classic-form-search-widget">Search</label>
@@ -183,7 +161,6 @@
                                     </form>
                                 </div>
                             </div>
-                            <!-- Archive-->
                             <div class="offset-top-30 offset-md-top-60">
                                 <h6>Archive</h6>
                                 <hr class="text-subline">
@@ -191,7 +168,6 @@
                             <div class="offset-top-14 offset-md-top-20">
                                 <div class="row justify-content-sm-center justify-content-xl-start">
                                     <div class="col-sm-6 col-xl-5">
-                                        <!-- List Marked-->
                                         <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
                                             <li><a href="#">Jan 2023</a></li>
                                             <li><a href="#">Mar 2023</a></li>
@@ -200,7 +176,6 @@
                                         </ul>
                                     </div>
                                     <div class="col-sm-6 col-xl-5 offset-top-10 offset-xs-top-0 inset-sm-left-5">
-                                        <!-- List Marked-->
                                         <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
                                             <li><a href="#">Jul 2023</a></li>
                                             <li><a href="#">Sep 2023</a></li>
