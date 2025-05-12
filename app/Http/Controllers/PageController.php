@@ -74,14 +74,6 @@ class PageController extends Controller
     }
 
 
-
-
-
-    // public function timetable($department = null)
-    //  {
-    //    return view('main.timetable', compact('department'));
-    //  }
-
     public function timetable($departmentSlug = null)
     {
         $locale = app()->getLocale();
@@ -141,30 +133,10 @@ class PageController extends Controller
         ]);
     }
 
-
-
-
-
-
     public function prices()
     {
         return view('main.prices');
     }
-
-    //public function priceCategory($category)
-    //{
-    //$validCategories = [ 'x-ray', 'dermatologiya', 'oftalmologiya', 'terapevt','povne-obstezhennya-organizmu-sheck-up','khirurgichna-plastika','ginekologiya'];
-
-
-
-    //if (!in_array($category, $validCategories)) {
-    //  abort(404);
-    //}
-
-    //return view('main.prices', compact('category'));
-
-    // }
-
 
     public function testimonials(){
 

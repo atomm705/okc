@@ -94,7 +94,6 @@
                         </div>
                     @endif
 
-
                     @php
                         $specs = json_decode($doctorTranslation->specialisation, true);
                     @endphp
