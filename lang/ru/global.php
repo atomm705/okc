@@ -28,4 +28,10 @@ return [
 		'su' => 'Вс',
 	],
     'more' => 'Подробнее',
+    'Choose your category' => 'Выберите категорию',
+    'service' => 'Услуга',
+    'price' => 'Цена',
+    'time_m' => 'Время(мин)',
+    'description' => 'Примечание',
+
 ];

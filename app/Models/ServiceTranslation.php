@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ServiceTranslation extends Model
 {
+    protected $table = 'services_translations';
+
     protected $primaryKey = 'translation_id';
 
     public function service()

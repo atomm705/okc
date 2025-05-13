@@ -26,5 +26,12 @@ return [
 		'fr' => 'Fr',
 		'sa' => 'Sa',
 		'su' => 'Su',
-	]
+	],
+    'more' => 'More',
+    'Choose your category' => 'Choose your category',
+    'service' => 'Service',
+    'price' => 'Price',
+    'time_m' => 'Time(minutes)',
+    'description' => 'Note',
+
 ];
