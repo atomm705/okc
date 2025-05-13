@@ -53,8 +53,8 @@
                 <div class="col-lg-9 offset-lg-top-0 offset-top-34">
                     <div class="row text-md-start isotope isotope-style-1" data-isotope-layout="fitRows" data-column-class=".col-1" data-lightgallery="group" data-lg-animation="lg-slide-circular" data-isotope-group="gallery">
                         <div class="col-1 isotope-item isotope-sizer"></div>
-                        <div class="col-lg-12 isotope-item" data-filter="Diagnostic Imaging">
-                            <h3>{{ $category->name }}</h3>
+                        <div class="col-lg-12 isotope-item services-item" data-filter="Diagnostic Imaging">
+                           <!-- <h3>{{ $category->name }}</h3>-->
                             {!! $category->text !!}
                         </div>
                     </div>

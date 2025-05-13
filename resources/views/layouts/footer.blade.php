@@ -183,8 +183,13 @@
         menu.classList.toggle('hidden-list');
     }
 </script>
+
+@if(Route::currentRouteName() === 'main.services_article')
+
+    <script src="{{ asset('blepharoplastika-js/schedule.js') }}" defer></script>
+
 @endif
 <!--@if(Route::currentRouteName() === 'main.team')
     <script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>
 @endif-->
-
+@endif
