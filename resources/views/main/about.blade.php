@@ -9,7 +9,6 @@
                 </ul>
         </div>
     </section>
-
     <section class="section-lg bg-default text-start section">
         <div class="container">
             <div class="row justify-content-sm-center row-30">
@@ -26,7 +25,7 @@
                     <hr class="text-subline">
                     <div class="offset-top-30">
                         <div class="unit flex-xxl-row flex-xl-row flex-lg-column flex-md-row flex-sm-row unit-spacing-sm">
-                            <div class="unit-left"><img class="img-responsive" src="/images/uploads/14b0c14a8626d74b72f14c61d5aadb67.webp" width="110" height="110" alt="" style="width: 110px">
+                            <div class="unit-left"><img class="img-responsive" src="/assets/images/uploads/14b0c14a8626d74b72f14c61d5aadb67.webp" width="110" height="110" alt="" style="width: 110px">
                             </div>
                             <div class="unit-body">
                                 <h6 class="font-weight-bold text-primary">Армен Прокипец</h6>
@@ -40,7 +39,6 @@
             </div>
         </div>
     </section>
-
     <section class="section-lg ">
         <div class="container ">
             <div ><h3 style="font-size: 2.60em; margin-top: 0px; margin-bottom: 33px; " class="text-center">@lang('frontend/about.mission.title') </h3>
@@ -54,5 +52,4 @@
             </div>
         </div>
     </section>
-
 </x-app-layout>

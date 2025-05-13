@@ -51,6 +51,8 @@
                             <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                         </div>
 
+                        <div class="content-mobil"></div>
+
                     </div>
                     <div class="rd-navbar-main-element">
                         <div class="rd-navbar-nav-wrap">
@@ -81,7 +83,7 @@
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.testimonials') }}">{{ __('header.menu.testimonials') }}</a></li>
 
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">{{ __('header.menu.price') }}</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="">{{ __('header.menu.price') }}</a>
 
 
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">{{ __('header.menu.contacts') }}</a>

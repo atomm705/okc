@@ -15,38 +15,19 @@
             <div class="row justify-content-sm-center">
                 <div class="col-sm-10 col-lg-4">
                     <div class="member-block-type-5 inset-lg-right-20">
-
-                        <img src="{{ asset(str_replace('/assets', '', $doctor->imageSquare->src)) }}"
-                             width="320" height="320"
-                             alt="{{ $doctorTranslation->full_name }}" />
-                        <div class="member-block-body"><a class="btn-ellipse btn-primary btn" href="make-an-appointment.html">make an appointment</a>
-                            <address class="contact-info offset-top-20 offset-sm-top-24">
-                                <ul class="list-unstyled p">
-                                    <li><span class="icon icon-xxxs text-middle text-primary mdi mdi-phone"></span><a class="text-middle d-inline-block text-gray-darker" href="tel:1-800-1234-567">1-800-1234-567</a></li>
-                                    <li><span class="icon icon-xxxs text-middle text-primary mdi mdi-email-open"></span><a class="text-middle d-inline-block" href="mailto:mail@demolink.org">mail@demolink.org</a></li>
-                                </ul>
-                            </address>
-                            <div class="offset-top-24">
-                                <ul class="list-inline list-inline-xs">
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-facebook" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-twitter" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-google-plus" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-rss" href="#"></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <img src="{{ $doctorTranslation->doctor->imageSquare->src }}" width="320" height="320" alt="{{ $doctorTranslation->full_name }}" />
                     </div>
                     <div class="offset-top-34 text-md-start inset-lg-right-20">
                         <h6 class="text-start">@lang('frontend/doctors/doctors.certificates.title')</h6>
                         <hr class="text-subline">
                         <div class="row justify-content-sm-center justify-content-md-start offset-top-24 row-certificates" data-lightgallery="group">
-                            @foreach ($doctor->getCertificates() as $certificate)
+                            @foreach ($doctorTranslation->doctor->getCertificates() as $certificate)
                                 <div class="col-sm-8 col-md-4 offset-top-20">
                                     <a class="thumbnail-classic" data-lightgallery="item" data-size="700x970"
-                                       href="{{ asset(str_replace('/assets', '', $certificate->src)) }}">
+                                       href="{{ $certificate->src }}">
                                         <figure>
                                             <img width="100" height="138"
-                                                 src="{{ asset(str_replace('/assets', '', $certificate->src)) }}"
+                                                 src="{{ $certificate->src }}"
                                                  alt="certificate">
                                         </figure>
                                     </a>
@@ -67,7 +48,7 @@
                             @if (is_array($position) && count(array_filter($position)))
                                 <div class="col-md-5">
                                     <div><h6>@lang('frontend/doctors/doctors.position.title')</h6></div>
-                                    <hr class="text-subline-2">
+                                    <hr class="text-subline-1">
                                     <ul class="list list-marked">
                                         @foreach ($position as $item)
                                             @if (!empty(trim($item)))
@@ -81,7 +62,7 @@
                             @if (is_array($education) && count(array_filter($education)))
                                 <div class="col-md-7 offset-top-41 offset-sm-top-0">
                                     <div><h6>@lang('frontend/doctors/doctors.education.title')</h6></div>
-                                    <hr class="text-subline-2">
+                                    <hr class="text-subline-1">
                                     <ul class="list list-marked">
                                         @foreach ($education as $item)
                                             @if (!empty(trim($item)))
@@ -101,7 +82,7 @@
                     @if (is_array($specs) && count(array_filter($specs)))
                         <div class="col-md-10 col-lg-8 offset-top-30">
                             <h6>@lang('frontend/doctors/doctors.specialization.title')</h6>
-                            <hr class="text-subline-2">
+                            <hr class="text-subline-1">
                             <ul class="list list-marked">
                                 @foreach ($specs as $spec)
                                     @if (!empty(trim($spec)))
@@ -125,7 +106,7 @@
                             @if (is_array($courses) && count(array_filter($courses)))
                                 <div class="col-md-5">
                                     <div><h6>@lang('frontend/doctors/doctors.courses.title')</h6></div>
-                                    <hr class="text-subline-2">
+                                    <hr class="text-subline-1">
                                     <ul class="list list-marked">
                                         @foreach ($courses as $course)
                                             @if (!empty(trim($course)))
@@ -139,7 +120,7 @@
                             @if (is_array($associations) && count(array_filter($associations)))
                                 <div class="col-md-7 offset-top-41 offset-sm-top-0">
                                     <div><h6>@lang('frontend/doctors/doctors.association.title')</h6></div>
-                                    <hr class="text-subline-2">
+                                    <hr class="text-subline-1">
                                     <ul class="list list-marked">
                                         @foreach ($associations as $assoc)
                                             @if (!empty(trim($assoc)))
@@ -155,7 +136,7 @@
                     @if (!empty(trim($doctorTranslation->about)))
                         <div class="offset-top-30 text-start">
                             <h6>@lang('frontend/doctors/doctors.about.title')</h6>
-                            <hr class="text-subline-2">
+                            <hr class="text-subline-1">
                             <p>{!! $doctorTranslation->about !!}</p>
                         </div>
                     @endif
@@ -173,7 +154,7 @@
                             @if (is_array($treatment) && count(array_filter($treatment)))
                                 <div class="col-md-5">
                                     <div><h6>@lang('frontend/doctors/doctors.treatment_of_disease.title')</h6></div>
-                                    <hr class="text-subline-2">
+                                    <hr class="text-subline-1">
                                     <ul class="list list-marked">
                                         @foreach ($treatment as $item)
                                             @if (!empty(trim($item)))
@@ -187,7 +168,7 @@
                             @if (is_array($procedures) && count(array_filter($procedures)))
                                 <div class="col-md-7 offset-top-41 offset-sm-top-0">
                                     <div><h6>@lang('frontend/doctors/doctors.procedures.title')</h6></div>
-                                    <hr class="text-subline-2">
+                                    <hr class="text-subline-1">
                                     <ul class="list list-marked">
                                         @foreach ($procedures as $proc)
                                             @if (!empty(trim($proc)))
@@ -208,7 +189,7 @@
                     @if (is_array($awards) && count(array_filter($awards)))
                         <div class="offset-top-30 text-start">
                             <h6>@lang('frontend/doctors/doctors.awards.title')</h6>
-                            <hr class="text-subline-2">
+                            <hr class="text-subline-1">
                             <ul class="list list-marked">
                                 @foreach ($awards as $award)
                                     @if (!empty(trim($award)))
@@ -218,59 +199,6 @@
                             </ul>
                         </div>
                 @endif
-
-                <!--<div class="offset-top-66">
-                        <h6 class="text-start">skills</h6>
-                        <hr class="text-subline">
-                        <div class="offset-top-30">
-
-                            <div class="progress-linear">
-                                <div class="progress-header">
-                                    <h6 class="text-gray-dark pull-left">Dedication</h6>
-                                    <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">50</h6>
-                                </div>
-                                <div class="progress-bar-linear-wrap progress-linear-body">
-                                    <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
-                                </div>
-                            </div>
-                            <div class="offset-top-60">
-
-                                <div class="progress-linear">
-                                    <div class="progress-header">
-                                        <h6 class="text-gray-dark pull-left">problem Solving</h6>
-                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">20</h6>
-                                    </div>
-                                    <div class="progress-bar-linear-wrap progress-linear-body">
-                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offset-top-60">
-
-                                <div class="progress-linear">
-                                    <div class="progress-header">
-                                        <h6 class="text-gray-dark pull-left">professionalism</h6>
-                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">87</h6>
-                                    </div>
-                                    <div class="progress-bar-linear-wrap progress-linear-body">
-                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offset-top-60">
-
-                                <div class="progress-linear">
-                                    <div class="progress-header">
-                                        <h6 class="text-gray-dark pull-left">Decision-making</h6>
-                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">37</h6>
-                                    </div>
-                                    <div class="progress-bar-linear-wrap progress-linear-body">
-                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>

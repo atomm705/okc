@@ -9423,7 +9423,7 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
 }
 
 .icon-doctor-xl:before {
-    background-image: url("../images/icons/icon-doctor-xl.png");
+    background-image: url("/images/576d20949fdfa82b76a5b79fbe05c246.webp");
 }
 
 .icon-medical-car-01:before {
@@ -9431,7 +9431,7 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
 }
 
 .icon-medical-car-xl:before {
-    background-image: url("../images/icons/icon-medical-car-xl.png");
+    background-image: url("/images/78323ad177daac16b9225d62191ac7c7.webp");
 }
 
 .icon-pills-01:before {
@@ -9439,11 +9439,11 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
 }
 
 .icon-pills-xl:before {
-    background-image: url("../images/icons/icon-pills-xl.png");
+    background-image: url("/images/e59717661fd05423f9072609994c291f.webp");
 }
 
 .icon-emergency-01:before {
-    background-image: url("../images/icons/icon-emergency-01.png");
+    background-image: url("/images/icon-emergency-01.png");
     height: 21px;
     width: 24px;
 }
@@ -14718,7 +14718,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .rd-navbar-fixed .rd-navbar-brand img {
-    max-width: 150px;
+   /* max-width: 150px;*/
     width: auto;
     height: auto;
     max-height: 60px;
@@ -14738,18 +14738,21 @@ a[href*='tel'], a[href*='mailto'] {
     padding: 4px;
 }
 
-@media (max-width: 1024px) {
-    .rd-navbar-fixed .rd-navbar-panel {
-        gap: 300px;
+/*@media (max-width: 1024px) {
+   .rd-navbar-fixed .rd-navbar-panel {
+       gap: 300px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
 
-    }
-}
+}*/
 
 @media (max-width: 768px) {
-    .rd-navbar-fixed .rd-navbar-panel {
+    /*.rd-navbar-fixed .rd-navbar-panel {
         gap: 90px;
 
-    }
+    }*/
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
@@ -30231,6 +30234,19 @@ html.ie-11 .fc-event .fc-event-wrap {
 
 @media (max-width: 1200px) {
 
+    .rd-navbar-fixed .rd-navbar-panel {
+        /* gap: 300px;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .content-mobil{
+        width: 48px;
+        height: 48px;
+    }
+
     .services-aside-mobil-color{
         background-color: white !important;
 
@@ -30240,4 +30256,6 @@ html.ie-11 .fc-event .fc-event-wrap {
         color: #2a93c9 !important;
     }
 }
+
+
 

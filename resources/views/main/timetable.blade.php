@@ -52,21 +52,19 @@
 
                             <div class="articles">
                                 <h3 class="mb-3">{{ $currentDepartment->name ?? 'Без названия' }}</h3>
-
                                 @foreach ($currentDepartment->department->doctors as $doctor)
                                     <div class="doctor-container mb-5">
                                         <div class="doctor d-flex align-items-start">
                                             @if ($doctor->imageSquare)
-                                                <img src="{{ asset(str_replace('/assets', '', $doctor->imageSquare->src)) }}"
+                                                <img src="{{ $doctor->imageSquare->src }}"
                                                      alt="{{ $doctor->translation->full_name ?? 'Фото доктора' }}"
                                                      class="img-fluid me-3"
                                                      style="margin: 0;border: 4px solid #e5e5e5;border-radius: 50%;width: 60px;height: 60px;">
                                             @endif
-
                                             <div class="info">
                                                 <div class="name fw-bold ">{{ $doctor->translation->full_name ?? 'Имя не указано' }}</div>
                                                 @if ($doctor->translation)
-                                                    <a href="{{ route('main.doctor.profile', ['slug' => $doctor->translation->full_slug]) }}" class="info-doctor" >Профиль врача</a>
+                                                    <a href="{{ route('doctors.show', ['slug' => $doctor->translation->full_slug]) }}" class="info-doctor" >Профиль врача</a>
                                                 @else
                                                     <p>Профиль недоступен</p>
                                                 @endif

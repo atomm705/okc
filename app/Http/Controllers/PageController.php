@@ -14,44 +14,10 @@ use App\Models\Doctor;
 class PageController extends Controller
 {
 
-
-
-
     public function index()
     {
         return view('main.index');
     }
-
-    public function team()
-    {
-
-        $locale = App::getLocale();
-
-        $departments = DoctorDepartmentTranslation::where('locale', $locale)
-            ->join('doctors_departments', 'doctors_departments.department_id', '=', 'doctors_departments_translations.department_id')
-            ->join('images', 'images.image_id', '=', 'doctors_departments.image_id')
-            ->select(
-                'doctors_departments_translations.*',
-                'images.src as image_src'
-            )
-            ->get();
-
-        $doctors = Doctor::with(['translations', 'departments'])
-            ->whereHas('translations', function ($query) use ($locale) {
-                $query->where('locale', $locale);
-            })
-            ->where('is_visible', true)
-            ->get();
-
-        $doctorsByDepartment = $doctors->groupBy(function ($doctor) {
-            return $doctor->departments->pluck('department_id')->first();
-        });
-
-        return view('main.team', compact('departments', 'doctorsByDepartment'));
-
-    }
-
-
 
     public function about(){
 
@@ -80,10 +46,14 @@ class PageController extends Controller
 
 
         $allDepartments = DoctorDepartmentTranslation::with([
-            'department.doctors.translations' => function ($query) use ($locale) {
-                $query->where('locale', $locale);
+            'department.doctors' => function ($query) use ($locale) {
+                $query->with([
+                    'translation' => function ($q) use ($locale) {
+                        $q->where('locale', $locale);
+                    },
+                    'imageSquare',
+                ]);
             },
-             'department.doctors.imageSquare',
         ])->where('locale', $locale)->get();
 
 
@@ -92,20 +62,19 @@ class PageController extends Controller
             $departmentSlug = $defaultDepartment?->slug;
     }
 
+
         $currentDepartment = $allDepartments->firstWhere('slug', $departmentSlug);
+
 
         foreach ($allDepartments as $department) {
             $filteredDoctors = [];
 
             foreach ($department->department->doctors as $doctor) {
-
                 $workHours = json_decode($doctor->pivot->work_hours, true);
-
 
                 if (empty($workHours) || collect($workHours)->filter()->isEmpty()) {
                     continue;
                 }
-
 
                 $days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
                 $doctorSchedule = [];
@@ -124,8 +93,10 @@ class PageController extends Controller
                 $filteredDoctors[] = $doctor;
             }
 
+
             $department->department->setRelation('doctors', collect($filteredDoctors));
         }
+
 
         return view('main.timetable', [
             'departments' => $allDepartments,

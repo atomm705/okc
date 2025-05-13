@@ -43,20 +43,15 @@
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
-
-
-
 @if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' )
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 
 @endif
-
 @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'  )
     <script src="{{ asset('blepharoplastika-js/liposaktsiya.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
-
     <script>
         $(document).ready(function () {
             $('.ba-slider').each(function () {
@@ -101,14 +96,9 @@
             });
         });
     </script>
-
-
 @endif
-
 @if(Route::currentRouteName() === 'services.panoptix')
-
     <link rel="preload" as="script" src="{{ asset('blepharoplastika-js/app.js') }}">
-
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -161,9 +151,6 @@
             });
         });
 
-
-
-
         document.addEventListener("DOMContentLoaded", function () {
             const section1 = document.querySelector(".section-1");
 
@@ -188,10 +175,7 @@
             }
         });
     </script>
-
 @endif
-
-
 @if(Route::currentRouteName() === 'main.timetable')
 <script>
     function toggleDropdown() {
@@ -200,8 +184,6 @@
     }
 </script>
 @endif
-
-
 <!--@if(Route::currentRouteName() === 'main.team')
     <script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>
 @endif-->

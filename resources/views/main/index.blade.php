@@ -85,7 +85,7 @@
                     <div class="sheldue-item light">
                         <div class="sheldue-item-body">
                             <div class="icon icon-xs mdi mdi-calendar-today text-white-50"></div>
-                            <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.schedule.title' )</h6>
+                            <h6 class="d-inline-block inset-left-10 text-white"><span style="font-size: 15px">@lang('frontend/index.blocks.schedule.title' )</span></h6>
                             <hr>
                             <div class="offset-top-24 text-gray-light">
                                 <p>@lang('frontend/index.blocks.schedule.body')</p>
