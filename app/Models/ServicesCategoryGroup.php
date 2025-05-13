@@ -21,14 +21,14 @@ class ServicesCategoryGroup extends Model
 
     public function services()
     {
-        return $this->hasMany(Service::class, 'group_id')
+        return $this->hasMany(Service::class, 'group_id', 'group_id')
             ->where('is_visible', 1);
     }
 
     public function translations()
     {
         return $this->hasMany(ServicesCategoryGroupTranslation::class, 'group_id')
-            ->where('is_visible', 1);
+            ->where('is_visible', 1)->where('locale', app()->getLocale())->first();
     }
 
     public function scopeVisible($query)

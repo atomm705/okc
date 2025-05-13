@@ -54,13 +54,9 @@ Route::middleware(SetLocale::class)->group(function () {
 
         Route::get('/doctors/{slug}', [DoctorController::class, 'show'])->name('doctors.show');
 
-        Route::get('/prices', function () {
-            return view('main.prices', ['category' => null]);
-        })->name('services.prices');
+        Route::get('/prices', [PageController::class, 'prices'])->name('main.prices');
 
-        Route::get('/price/{category}', function ($category) {
-            return view('main.prices', compact('category'));
-        })->name('prices.category');
+        Route::get('/price/{category}', [ServicesControler::class, 'price'])->name('prices.category');
 
         Route::get('/{category_slug}', [ArticleController::class, 'category_page'])->name('main.category');
         Route::get('/{category_slug}/{slug}', [ArticleController::class, 'page'])->name('main.service');

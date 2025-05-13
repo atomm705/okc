@@ -19,8 +19,8 @@ class Service extends Model
 
     public function translations()
     {
-        return $this->hasMany(ServiceTranslation::class, 'service_id')
-            ->where('is_visible', 1);
+        return $this->hasMany(ServiceTranslation::class, 'service_id', 'service_id')
+            ->where('is_visible', 1)->where('locale', app()->getLocale())->first();
     }
 
     public function visibleTranslations($locale)

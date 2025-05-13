@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\DoctorDepartmentTranslation;
 use App\Models\DoctorTranslation;
 use App\Models\Image;
+use App\Models\ServicesCategory;
+use App\Models\ServicesCategoryTranslation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use App\Models\Doctor;
@@ -112,7 +114,11 @@ class PageController extends Controller
 
     public function prices()
     {
-        return view('main.prices');
+        $categories = ServicesCategory::where('is_visible', true)->get();
+
+        $category_active = ServicesCategoryTranslation::where('slug', 'oftalmologiya')->where('locale', app()->getLocale())->first();
+
+        return view('main.prices', compact('categories', 'category_active'));
     }
 
     public function testimonials(){
