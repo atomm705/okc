@@ -43,6 +43,7 @@
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
+
 @if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' )
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
@@ -176,20 +177,83 @@
         });
     </script>
 @endif
-@if(Route::currentRouteName() === 'main.timetable')
+
+@if(Route::currentRouteName() === 'main.timetable' )
 <script>
     function toggleDropdown() {
         const menu = document.getElementById('dropdown-menu');
         menu.classList.toggle('hidden-list');
     }
 </script>
+@endif
 
-@if(Route::currentRouteName() === 'main.services_article')
+@if(Route::currentRouteName() === 'main.category' || Route::currentRouteName() === 'main.service')
 
-    <script src="{{ asset('blepharoplastika-js/schedule.js') }}" defer></script>
+
+    <script>
+        // цей скрипт для роботи тегу select для телефонів і планшетів
+        document.addEventListener("DOMContentLoaded", function () {
+            const categorySelect = document.getElementById("category");
+
+            if (categorySelect) {
+                categorySelect.addEventListener("change", function () {
+                    const url = this.value;
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            }
+        });
+    </script>
+
+    <script>
+        // цей скрипт для роботи акордіону
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".price-item > .edit-spoiler-component > .header").forEach(header => {
+                header.addEventListener("click", function () {
+                    const body = this.nextElementSibling;
+
+                    // якщо у мене багато інформації и треба відкривати тільки один акордін то просто це розкометувати треба
+                    //document.querySelectorAll(".price-item > .edit-spoiler-component > .body").forEach(b => b.style.display = "none");
+                    //document.querySelectorAll(".price-item > .edit-spoiler-component > .header").forEach(h => h.classList.remove("active"));
+
+                    const isOpen = body.style.display === "block";
+                    body.style.display = isOpen ? "none" : "block";
+                    this.classList.toggle("active", !isOpen);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // цей скрипт відповідає за натискання кнопки яка знаходится поверх відео
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.edit-video-cover-component').forEach(component => {
+                const content = component.querySelector('.content');
+                const iframe = component.querySelector('iframe');
+
+                const button = content?.querySelector('button');
+
+                if (button && iframe && content) {
+                    button.addEventListener('click', function () {
+                        content.style.display = 'none';
+
+                        const src = iframe.getAttribute('src');
+                        if (!src.includes('autoplay=1')) {
+                            const newSrc = src.includes('?') ? `${src}&autoplay=1` : `${src}?autoplay=1`;
+                            iframe.setAttribute('src', newSrc);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 
 @endif
+
+
+
 <!--@if(Route::currentRouteName() === 'main.team')
     <script src="{{ asset('blepharoplastika-js/app.js') }}" defer></script>
 @endif-->
-@endif
+

@@ -12,17 +12,17 @@
     </section>
 
     <section class="section-lg section bg-default">
-        <div class="container">
+        <div class="container container-2">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="isotope-filters isotope-filters-vertical">
-                        <ul class="list-inline list-inline-sm">
-                            <li class="d-xl-none">
+                        <ul class="list-inline list-inline-sm service-select-mobil" >
+                            <li class="d-xl-none service-select-mobil"  >
                                 <p>{{ __('global.Choose your category') }}:</p>
-                                <select id="category" class="form-control">
-                                    <option value="{{ $article->article->category->translation->slug }}">{{ $article->article->category->translation->name }}</option>
+                                <select id="category" class="form-control service-select-mobil" >
+                                    <option value="{{ $article->article->category->translation->slug }}">{{ $article->article->category->translation->name }} </option>
                                     @foreach($article->article->category->articles as $articl)
-                                        <option value="/{{ app()->getLocale() }}/{{ $article->article->category->translation->slug }}/{{ $articl->translation->slug }}" @if($article->slug == $articl->slug) selected @endif>
+                                        <option  value="/{{ app()->getLocale() }}/{{ $article->article->category->translation->slug }}/{{ $articl->translation->slug }}" @if($article->slug == $articl->slug) selected @endif >
                                             {{ $articl->translation->name }}
                                         </option>
                                     @endforeach
@@ -62,5 +62,7 @@
             </div>
         </div>
     </section>
+
+
 
 </x-app-layout>

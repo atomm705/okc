@@ -12,15 +12,15 @@
     </section>
 
     <section class="section-lg section bg-default">
-        <div class="container">
+        <div class="container container-2">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="isotope-filters isotope-filters-vertical">
-                        <ul class="list-inline list-inline-sm">
-                            <li class="d-xl-none">
+                        <ul class="list-inline list-inline-sm service-select-mobil">
+                            <li class="d-xl-none service-select-mobil">
                                 <p>{{ __('global.Choose your category') }}:</p>
-                                <select id="category" class="form-control">
-                                    <option value="{{ $category->slug }}">{{ $category->name }}</option>
+                                <select id="category" class="form-control service-select-mobil  " >
+                                    <option value="{{ $category->slug }}" >{{ $category->name }}</option>
                                     @foreach($category->category->articles as $article)
                                         <option value="/{{ app()->getLocale() }}/{{ $category->slug }}/{{ $article->translation->slug }}">
                                             {{ $article->translation->name }}

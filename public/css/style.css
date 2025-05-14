@@ -30258,7 +30258,7 @@ html.ie-11 .fc-event .fc-event-wrap {
 }
 .services-item > p > iframe{
     width: 100%;
-
+    height: 500px;
 
 }
 
@@ -30322,7 +30322,7 @@ html.ie-11 .fc-event .fc-event-wrap {
 
 .price-item > div > iframe {
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 .price-item > div {
@@ -30483,19 +30483,33 @@ html.ie-11 .fc-event .fc-event-wrap {
     transition: all .3s ease-out 0s;
     -webkit-transition: all .3s ease-in-out 0s;
     transition: all .3s ease-in-out 0s;
-}.price-item > .edit-spoiler-component > .header:after {
-     content: "\F067";
-     font-size: 18px;
-     font-family: Font Awesome\ 5 Free;
-     font-weight: 700;
+}
+
+.price-item > .edit-spoiler-component > .header:after {
+     content: "";
      position: absolute;
-     top: 50%;
-     right: 0;
-     -webkit-transform: translateY(-50%);
-     transform: translateY(-50%);
+     top: 5px;
+     right: 15px;
+     bottom: 0;
+     width: 20px;
+     font-family: "Material Design Icons";
+     font-size: 26px;
+     font-weight: 400;
+     text-align: center;
+     color: #868686;
+     transition: .2s;
  }
+
+.price-item > .edit-spoiler-component > .header.active:after {
+    content: "";
+    position: absolute;
+    color: #868686;
+    transition: .2s;
+}
+
 .price-item > .edit-spoiler-component > .body {
     padding: 12px 35px 12px 0;
+    display: none;
 }
 .price-item > .edit-spoiler-component > .body > .list-tab-none{
     padding: 12px 35px 12px 0;
@@ -30541,3 +30555,27 @@ html.ie-11 .fc-event .fc-event-wrap {
     width: 100%;
     height: 500px;
 }
+
+
+@media (min-width: 1200px) {
+    .container-2 {
+        max-width: 1440px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .price-item > div  > .content > .button{
+       font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .service-select-mobil{
+        width: 100%;
+    }
+
+    
+}
+
