@@ -6,7 +6,7 @@
 
             <div class="section-main ">
                 <div class="banner-main "
-                     style="background-image: url('/images/services/banner(3).jpg');">
+                     style="background-image: url('/images/services/liposaktsiya/banner.jpg');">
                     <div class="page-content">
                         <div class="banner-main-hold">
                             <div class="banner-main-title margin--50">
@@ -82,7 +82,7 @@
                         <div class="advantage-list">
                             <div class="advantage-card">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/1.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/1.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-title">
@@ -96,7 +96,7 @@
 
                             <div class="advantage-card">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/2.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/2.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-title">
@@ -110,7 +110,7 @@
 
                             <div class="advantage-card">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/3.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/3.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-title">
@@ -124,7 +124,7 @@
 
                             <div class="advantage-card">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/4.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/4.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-title">
@@ -137,7 +137,7 @@
                             </div>
                             <div class="advantage-card">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/5.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/5.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-title">
@@ -150,7 +150,7 @@
                             </div>
                             <div class="advantage-card">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/6.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/6.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-title">
@@ -206,7 +206,7 @@
                         <div class="advantage-list advantage-list_white advantage-list-mobil">
                             <div class="advantage-card advantage-card-custom advantage-card_small advantage-card-mobil">
                                 <div class="advantage-card-ico ">
-                                    <img  src="/images/services/IMG_7445.png" alt="ico"/>
+                                    <img  src="/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-descr advantage-card-descr_text-sm advantage-card-mobil">
@@ -216,7 +216,7 @@
 
                             <div class="advantage-card advantage-card-custom advantage-card_small advantage-card-mobil">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/IMG_7445.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-descr advantage-card-descr_text-sm advantage-card-mobil">
@@ -226,7 +226,7 @@
 
                             <div class="advantage-card advantage-card-custom advantage-card_small advantage-card-mobil">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/IMG_7445.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-descr advantage-card-descr_text-sm">
@@ -236,7 +236,7 @@
 
                             <div class="advantage-card advantage-card-custom advantage-card_small mt-0 advantage-card-mobil">
                                 <div class="advantage-card-ico">
-                                    <img src="/images/services/IMG_7445.png" alt="ico"/>
+                                    <img src="/images/services/liposaktsiya/IMG_7445.png" alt="ico"/>
                                 </div>
 
                                 <div class="advantage-card-descr advantage-card-descr_text-sm">
@@ -494,10 +494,10 @@
                                 <div class="swiper-slide">
                                     <div class="specialist-card">
                                         <picture class="specialist-photo ">
-                                            <source srcset="/images/services/ovchinka.png"
+                                            <source srcset="/images/services/liposaktsiya/ovchinka.png"
                                                     media="(min-width: 992px)"/>
 
-                                            <img  src="/images/services/ovchinka_mob.png"
+                                            <img  src="/images/services/liposaktsiya/ovchinka_mob.png"
                                                  alt="specialist" style="width: 100%;"/>
                                         </picture>
                                     </div>
@@ -594,7 +594,7 @@
 
                         <div class="equipment-card">
                             <div class="equipment-card-img">
-                                <img src="/images/services/equipment.png" alt="equipment">
+                                <img src="/images/services/liposaktsiya/equipment.png" alt="equipment">
 
                                 <div class="equipment-card-title equipment-card-title_mob text-center">
                                     <span style="color: #0a0a0a;">VASER LIPO</span>
@@ -775,10 +775,10 @@
                                         <span>Результат</span>
                                     </div>
                                     <div class="ba-slider">
-                                        <img src="/images/services/slide1-1.jpg" alt="">
+                                        <img src="/images/services/liposaktsiya/slide1-1.jpg" alt="">
                                         <span class="label label-after">До</span>
                                         <div class="resize">
-                                            <img src="/images/services/slide1-2.jpg" alt="">
+                                            <img src="/images/services/liposaktsiya/slide1-2.jpg" alt="">
                                             <span class="label label-before">Після</span>
                                         </div>
                                         <div class="draggable">
@@ -810,10 +810,10 @@
                                         <span>Результат</span>
                                     </div>
                                     <div class="ba-slider">
-                                        <img src="/images/services/slide2-1.jpg" alt="">
+                                        <img src="/images/services/liposaktsiya/slide2-1.jpg" alt="">
                                         <span class="label label-after">До</span>
                                         <div class="resize">
-                                            <img src="/images/services/slide2-2.jpg" alt="">
+                                            <img src="/images/services/liposaktsiya/slide2-2.jpg" alt="">
                                             <span class="label label-before">Після</span>
                                         </div>
                                         <div class="draggable">

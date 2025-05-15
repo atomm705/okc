@@ -1,7 +1,7 @@
 <x-app-layout>
     <main class="body-main">
         <div class="section-main">
-            <div class="banner-main" style="background-image: url('/images/services/banner.jpg'); background-position: right; background-repeat: no-repeat;">
+            <div class="banner-main" style="background-image: url('/images/services/rf/banner.jpg'); background-position: right; background-repeat: no-repeat;">
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
@@ -408,7 +408,7 @@
 
                     <div class="equipment-card">
                         <div class="equipment-card-img">
-                            <img src="/images/services/rf_equip.jpg" alt="equipment">
+                            <img src="/images/services/rf/rf_equip.jpg" alt="equipment">
                         </div>
 
                         <div class="equipment-card-block">
@@ -466,7 +466,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">1. Подойдет ли мне процедура?</span>
+                                <span class="accordion-title__text">@lang('frontend/rf.question.question_1')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -479,20 +479,21 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Да, если у вас присутствует что-либо из перечисленного:
+                                    <p>@lang('frontend/rf.question.answer_1.title')</p>
                                     <ul>
-                                        <li> - Утрата тонуса кожи(увядание);</li>
-                                        <li> - изменившийся овал лица;</li>
-                                        <li> - дряблость кожи после похудения;</li>
-                                        <li> - морщины и истощенная кожа вокруг глаз;</li>
-                                        <li> - рубцы после акне;</li>
-                                        <li> - гипотрофические рубцы;</li>
-                                        <li> - шрамы;</li>
-                                        <li> - расширенные поры;</li>
-                                        <li> - растяжки;</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li1')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li2')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li3')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li4')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li5')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li6')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li7')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li8')</li>
+                                        <li> @lang('frontend/rf.question.answer_1.li9')</li>
                                     </ul>
                                     <br>
-                                    <p>Также процедура особо актуальна для тех, у кого есть выраженные постакне рубцы, гипо- и гипертрофические шрамы. Обратите внимание на противопоказания — вы не беременны, нет лактации, диабета или острого протекания других заболеваний.</p>
+                                    <p>
+                                        @lang('frontend/rf.question.answer_1.description')</p>
                                     </p>
                                 </div>
                             </div>
@@ -502,7 +503,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">2. Когда лучше делать процедуру?</span>
+                                <span class="accordion-title__text">@lang('frontend/rf.question.question_2')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -516,7 +517,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Процедуру можно делать в любое время года.</p>
+                                    <p>@lang('frontend/rf.question.answer_2.title')</p>
                                 </div>
                             </div>
                         </div>
@@ -525,7 +526,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">3. Будет ли больно?</span>
+                                <span class="accordion-title__text">@lang('frontend/rf.question.question_3')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -539,7 +540,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Нет, вы будете чувствовать эффект теплого массажа на области тела, где проводится процедура.</p>
+                                    <p>@lang('frontend/rf.question.answer_3.title')</p>
                                 </div>
                             </div>
                         </div>
@@ -548,7 +549,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">4. Как долго сохраняется эффект?</span>
+                                <span class="accordion-title__text">@lang('frontend/rf.question.question_4')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -562,9 +563,9 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>В случае, если Вы ведете здоровый образ жизни, то эффект подтяжки кожи, улучшения ее тонуса будут присутствовать на протяжении долгих лет. </p>
-                                    <p>Старение кожи динамический процесс и поэтому процедуру нужно повторять курсом раз в несколько лет.Это же касается сужения пор и удаления морщин. </p>
-                                    <p>Эффект от удаленных растяжек, шрамов и рубцов сохранится на всю жизнь.</p>
+                                    <p>@lang('frontend/rf.question.answer_4.title1') </p>
+                                    <p>@lang('frontend/rf.question.answer_4.title2') </p>
+                                    <p>@lang('frontend/rf.question.answer_4.title3')</p>
                                 </div>
                             </div>
                         </div>

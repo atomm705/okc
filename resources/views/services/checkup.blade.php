@@ -3,7 +3,7 @@
     <main class="body-main">
         <div class="section-main">
             <div class="banner-main"
-                 style="background-image: url('/images/services/banner (2).jpg');">
+                 style="background-image: url('/images/services/checkup/banner.jpg');">
                 <div class="page-content " style="margin-top: 40px">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
@@ -59,7 +59,7 @@
                     <div class="advantage-list">
                         <div class="advantage-card">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/no_tabs.jpg" alt="ico"/>
+                                <img src="/images/services/checkup/no_tabs.jpg" alt="ico"/>
                             </div>
 
                             <div class="advantage-card-title">
@@ -70,7 +70,7 @@
 
                         <div class="advantage-card">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/health_man.jpg" alt="ico"/>
+                                <img src="/images/services/checkup/health_man.jpg" alt="ico"/>
                             </div>
 
                             <div class="advantage-card-title">
@@ -81,7 +81,7 @@
 
                         <div class="advantage-card">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/no_time.jpg" alt="ico"/>
+                                <img src="/images/services/checkup/no_time.jpg" alt="ico"/>
                             </div>
 
                             <div class="advantage-card-title">
@@ -92,7 +92,7 @@
 
                         <div class="advantage-card">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/fatigue.jpg" alt="ico"/>
+                                <img src="/images/services/checkup/fatigue.jpg" alt="ico"/>
                             </div>
 
                             <div class="advantage-card-title">
@@ -103,7 +103,7 @@
 
                         <div class="advantage-card">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/megopolis.jpg" alt="ico"/>
+                                <img src="/images/services/checkup/megopolis.jpg" alt="ico"/>
                             </div>
 
                             <div class="advantage-card-title">
@@ -114,7 +114,7 @@
 
                         <div class="advantage-card">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/body.jpg" alt="ico"/>
+                                <img src="/images/services/checkup/body.jpg" alt="ico"/>
                             </div>
 
                             <div class="advantage-card-title">
@@ -208,7 +208,7 @@
 
             <div class="banner-section banner-section_bottom" id="banner-section-3">
                 <div class="banner-section-bg" style="background: rgb(0,115,255)">
-                    <img src="/images/services/record_background.jpg" alt="bg" style="opacity: 0.8"/>
+                    <img src="/images/services/checkup/record_background.jpg" alt="bg" style="opacity: 0.8"/>
                 </div>
 
                 <div class="page-content">
@@ -610,7 +610,7 @@
 
             <div class="banner-section banner-section_bottom" id="banner-section-3">
                 <div class="banner-section-bg" style="background: rgb(0,115,255)">
-                    <img src="/images/services/v266.jpg" alt="bg" style="opacity: 0.8"/>
+                    <img src="/images/services/checkup/v266.jpg" alt="bg" style="opacity: 0.8"/>
                 </div>
 
                 <div class="page-content">

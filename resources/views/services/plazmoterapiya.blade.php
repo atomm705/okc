@@ -3,7 +3,7 @@
     <main class="body-main">
         <div class="section-main">
             <div class="banner-main"
-                 style="background-image: url('/images/services/plazmoterapiya_banner_head.webp'); background-position: right; background-repeat: no-repeat;: ">
+                 style="background-image: url('/images/services/cosmetology/plazmoterapiya_banner_head.webp'); background-position: right; background-repeat: no-repeat;: ">
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
@@ -521,7 +521,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">1. Чи буде боляче?</span>
+                                <span class="accordion-title__text">@lang('frontend/plazmoterapiya.question.question_1')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -534,7 +534,8 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Перед процедурою лікар наносить на шкіру, в області проведення процедури, місцевий знеболюючий засіб. Болі та дискомфорту пд час процедури ви не відчуєте.
+                                    <p>
+                                        @lang('frontend/plazmoterapiya.question.answer_1.title')
                                     </p>
                                 </div>
                             </div>
@@ -544,7 +545,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">2. Як довго зберігається ефект?</span>
+                                <span class="accordion-title__text">@lang('frontend/plazmoterapiya.question.question_2')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -558,7 +559,9 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Організм змінюється. Зміни, що відбуваються з нашою шкірою напротязі життя носять постійний характер. Тому процедуру необхідно повторювати в залежності від образу життя та звичок людини і особливостей будови та схильності шкіри людини.
+                                    <p>
+                                        @lang('frontend/plazmoterapiya.question.answer_2.title')
+                                    </p>
                                 </div>
                             </div>
                         </div>

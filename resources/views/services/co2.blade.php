@@ -3,7 +3,7 @@
     <main class="body-main">
         <div class="section-main">
             <div class="banner-main"
-                 style="background-image: url('/images/services/banner(1).jpg'); background-position: right; background-repeat: no-repeat;">
+                 style="background-image: url('/images/services/co2/banner.jpg'); background-position: right; background-repeat: no-repeat;">
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
@@ -413,7 +413,7 @@
         <div class="section-main">
             <div class="banner-section banner-section_top" id="banner-section-2">
                 <div class="banner-section-bg">
-                    <img src="/images/services/cosmetology/banner_12.jpg" alt="bg"/>
+                    <img src="/images/services/co2/banner_12.jpg" alt="bg"/>
                 </div>
 
                 <div class="page-content" style="z-index: 6">
@@ -478,7 +478,7 @@
 
                     <div class="equipment-card">
                         <div class="equipment-card-img">
-                            <img src="/images/services/co2re_full.jpg" alt="equipment">
+                            <img src="/images/services/co2/co2re_full.jpg" alt="equipment">
 
                         </div>
 
@@ -549,7 +549,7 @@
                                 <div class="recall-result-box" id="resultRecall_2">
                                     <div class="recall-result-box__before">
                                         <div class="recall-result-box-img">
-                                            <img src="/images/services/slide_2_before.jpg"
+                                            <img src="/images/services/co2/slide_2_before.jpg"
                                                  alt="result">
                                         </div>
 
@@ -560,7 +560,7 @@
 
                                     <div class="recall-result-box__after divisorAfter">
                                         <div class="recall-result-box-img">
-                                            <img src="/images/services/slide_2_after.jpg"
+                                            <img src="/images/services/co2/slide_2_after.jpg"
                                                  alt="result">
                                         </div>
 
@@ -610,7 +610,7 @@
                                 <div class="recall-result-box" id="resultRecall_1">
                                     <div class="recall-result-box__before">
                                         <div class="recall-result-box-img">
-                                            <img src="/images/services/slide_1_before.jpg"
+                                            <img src="/images/services/co2/slide_1_before.jpg"
                                                  alt="result">
                                         </div>
 
@@ -621,7 +621,7 @@
 
                                     <div class="recall-result-box__after divisorAfter">
                                         <div class="recall-result-box-img">
-                                            <img src="/images/services/slide_1_after.jpg"
+                                            <img src="/images/services/co2/slide_1_after.jpg"
                                                  alt="result">
                                         </div>
 
@@ -666,14 +666,14 @@
         <div class="section-main section-main_m-n section-main_video">
             <div class="page-content">
                 <div class="title-section">
-                    <span>часті питання</span>
+                    <span>@lang('frontend/co2.question.title')</span>
                 </div>
 
                 <div class="accordion-list">
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">1. Чи підійде мені процедура?</span>
+                                <span class="accordion-title__text">1.@lang('frontend/co2.question.question_1')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -686,18 +686,18 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Так, якщо у вас є щось із перерахованого:
+                                    <p>@lang('frontend/co2.question.answer_1.title')
                                     <ul>
-                                        <li> - вікова зміна;</li>
-                                        <li> - відбувається процес фотостаріння;</li>
-                                        <li> - пігментація;</li>
-                                        <li> - в'ялість шкіри в зоні шиї та декольте;</li>
-                                        <li> - шрами, розтяжки, рубці;</li>
-                                        <li> - є зморшки;</li>
-                                        <li> - новоутворення.</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li1')</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li2')</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li3')</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li4')</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li5')</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li6')</li>
+                                        <li>@lang('frontend/co2.question.answer_1.li7')</li>
                                     </ul>
                                     <br>
-                                    <p>Також процедура особливо актуальна для тих, хто має виражені постакне рубці, гіпо- і гіпертрофічні шрами. Зверніть увагу на протипоказання – ви не вагітні, немає лактації, діабету чи гострого перебігу інших захворювань.</p>
+                                    <p>@lang('frontend/co2.question.answer_1.description')</p>
                                     </p>
                                 </div>
                             </div>
@@ -707,7 +707,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">2. Чи підійде мені процедура?</span>
+                                <span class="accordion-title__text">2. @lang('frontend/co2.question.question_2')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -721,7 +721,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Процедуру можна робити в будь-який період року, крім літнього, коли підвищена інсоляція шкіри
+                                    <p>@lang('frontend/co2.question.answer_2.title')</p>
                                 </div>
                             </div>
                         </div>
@@ -730,7 +730,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">3. Чи буде боляче?</span>
+                                <span class="accordion-title__text">3.@lang('frontend/co2.question.question_3')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -744,7 +744,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>У випадку, якщо пацієнт повністю вилікував акне до лазерного шліфування, то результат збережеться на все життя. В іншому разі акне будуть провокувати появу нових рубців.</p>
+                                    <p>@lang('frontend/co2.question.answer_3.title')</p>
                                 </div>
                             </div>
                         </div>
@@ -753,7 +753,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">4. Як проходить реабілітація?</span>
+                                <span class="accordion-title__text">4.@lang('frontend/co2.question.question_4')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -767,7 +767,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>frontend/co2.question.answer_4.title</p>
+                                    <p>@lang('frontend/co2.question.answer_4.title')</p>
                                 </div>
                             </div>
                         </div>
@@ -776,7 +776,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">5. Як довго зберігається ефект?</span>
+                                <span class="accordion-title__text">5. @lang('frontend/co2.question.question_5')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -790,7 +790,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>frontend/co2.question.answer_5.title</p>
+                                    <p>@lang('frontend/co2.question.answer_5.title')</p>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
     <main class="body-main plastica-banner-position">
         <div class="section-main">
             <div class="banner-main"
-                 style="background-image: url('/images/services/injection_banner_head.webp'); background-position: right; background-repeat: no-repeat;: ">
+                 style="background-image: url('/images/services/cosmetology/injection_banner_head.webp'); background-position: right; background-repeat: no-repeat;: ">
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
@@ -54,7 +54,7 @@
                     <div class="advantage-list">
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/1.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/1.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_1_1')</span>
@@ -67,7 +67,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/2.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/2.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_2_1')</span>
@@ -80,7 +80,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/3.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/3.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_3_1')</span>
@@ -93,7 +93,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/4.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/4.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_4_1')</span>
@@ -106,7 +106,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/5.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/5.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_5_1')</span>
@@ -119,7 +119,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/6.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/6.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_6_1')</span>
@@ -132,7 +132,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/7.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/7.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_7_1')</span>
@@ -145,7 +145,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/8.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/8.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_8_1')</span>
@@ -158,7 +158,7 @@
 
                         <div class="advantage-card" style="min-height: 50px">
                             <div class="advantage-card-ico">
-                                <img src="/images/services/cosmetology/9.png" alt="ico"/>
+                                <img src="/images/services/cosmetology/injection/9.png" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
                                 <span>@lang('frontend/injection.when.slide_9_1')</span>

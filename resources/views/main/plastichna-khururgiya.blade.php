@@ -7,14 +7,14 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span>Пластична хірургія в медичному центрі "Докарт"</span>
+                            <span>@lang('frontend/plastychna.slider.slide_1.title')</span>
                         </div>
                         <div class="banner-main-subtitle">
-                            <span>Весь спектр пластичних операцій від досвідченого хірурга</span><br>
-                            <span style="font-size: 28px">Консультація лікаря - усього за 1грн</span>
+                            <span>@lang('frontend/plastychna.slider.slide_1.description')</span><br>
+                            <span style="font-size: 28px">@lang('frontend/plastychna.slider.slide_1.description1')</span>
                         </div>
                         <div class="wr-banner-main-button">
-                            <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                            <button class="open-modal button-main button-main_orange">@lang('frontend/plastychna.slider.slide_1.link')</button>
                         </div>
                     </div>
                 </div>
@@ -24,14 +24,14 @@
             <div class="page-content">
                 <div class="box-info">
                     <div class="title-section">
-                        <span>Навіща потрібна пластична хірургія?</span>
+                        <span>@lang('frontend/plastychna.whatas.title')</span>
                     </div>
                     <div class="text-section">
                         <p>
-                            <span class="text-section__strong">Пластична хірургія </span> несе в собі ціль усунути як вроджені так і набуті недоліки зовнішності людини, щоб покращити якість життя.
+                            <span class="text-section__strong">@lang('frontend/plastychna.whatas.description_1_1') </span> @lang('frontend/plastychna.whatas.description_1_2')
                         </p>
                         <p>
-                            <span class="text-section__strong">Також вона несе в собі естетичну мету - корекція зовнішності людини, щоб отримати бажаний результат.</span>
+                            <span class="text-section__strong">@lang('frontend/plastychna.whatas.description_1_3')</span>
                             <span class="text-section__mark"></span>
                         </p>
                     </div>
@@ -42,7 +42,7 @@
         <div class="section-main when-needed">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Які види пластичних операцій ми пропонуємо Вам:</span>
+                    <span>@lang('frontend/plastychna.when.title')</span>
                 </div>
                 <div class="advantage">
                     <div class="advantage-list">
@@ -52,7 +52,7 @@
                             </div>
 
                             <div class="advantage-card-title">
-                                <span>Блефаропластика</span>
+                                <span>@lang('frontend/plastychna.when.slide_1_1')</span>
                             </div>
 
                             <div class="advantage-card-descr">
@@ -64,10 +64,10 @@
                                 <img src="/images/view-2.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Мастопексія</span>
+                                <span>@lang('frontend/plastychna.when.slide_2_1')</span>
                             </div>
                             <div class="advantage-card-descr">
-                                <span>(підтяжка молочних залоз без видалення тканини)</span>
+                                <span>@lang('frontend/plastychna.when.slide_2_2')</span>
                             </div>
                         </div>
 
@@ -76,10 +76,10 @@
                                 <img src="/images/view-3.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Редукційна мамопластика</span>
+                                <span>@lang('frontend/plastychna.when.slide_3_1')</span>
                             </div>
                             <div class="advantage-card-descr">
-                                <span>(підтяжка молочних залоз з видаленням тканини)</span>
+                                <span>@lang('frontend/plastychna.when.slide_3_2')</span>
                             </div>
                         </div>
                         <div class="advantage-card">
@@ -87,10 +87,10 @@
                                 <img src="/images/view-4.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Аугментаційна мамопластика</span>
+                                <span>@lang('frontend/plastychna.when.slide_4_1')</span>
                             </div>
                             <div class="advantage-card-descr">
-                                <span>(збільшення молочних залоз за допомогою імплантів).</span>
+                                <span>@lang('frontend/plastychna.when.slide_4_2')</span>
                             </div>
                         </div>
                         <div class="advantage-card">
@@ -98,10 +98,10 @@
                                 <img src="/images/view-5.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Абдомінопластика</span>
+                                <span>@lang('frontend/plastychna.when.slide_5_1')</span>
                             </div>
                             <div class="advantage-card-descr">
-                                <span>(пластика живота з пересадкою пупка)</span>
+                                <span>@lang('frontend/plastychna.when.slide_5_2')</span>
                             </div>
                         </div>
                         <div class="advantage-card">
@@ -109,10 +109,10 @@
                                 <img src="/images/view-6.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Мініабдомінопластика</span>
+                                <span>@lang('frontend/plastychna.when.slide_6_1')</span>
                             </div>
                             <div class="advantage-card-descr">
-                                <span>(пластика живота)</span>
+                                <span>@lang('frontend/plastychna.when.slide_6_2')</span>
                             </div>
                         </div>
                         <div class="advantage-card">
@@ -120,7 +120,7 @@
                                 <img src="/images/view-6.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Ліфтинг (підтяжка) м'яких тканин обличчя та шиї</span>
+                                <span>@lang('frontend/plastychna.when.slide_7_1')</span>
                             </div>
                             <div class="advantage-card-descr">
                                 <span></span>
@@ -131,10 +131,10 @@
                                 <img src="/images/view-8.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Отопластика</span>
+                                <span>@lang('frontend/plastychna.when.slide_8_1')</span>
                             </div>
                             <div class="advantage-card-descr">
-                                <span>(пластика вушних раковин)</span>
+                                <span>@lang('frontend/plastychna.when.slide_8_2')</span>
                             </div>
                         </div>
                         <div class="advantage-card">
@@ -142,7 +142,7 @@
                                 <img src="/images/view-9.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-title">
-                                <span>Ліпосакція</span>
+                                <span>@lang('frontend/plastychna.when.slide_9_1')</span>
                             </div>
                             <div class="advantage-card-descr">
                                 <span></span>
@@ -173,13 +173,13 @@
                 </div>
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>Консультація - всього за 1 грн.</span>
+                        <span>@lang('frontend/plastychna.akcia.title')</span>
                     </div>
                     <div class="banner-section-subtitle">
                         <span> <br><span class="text-strong"></span></span>
                     </div>
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">Записатися на прийом</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/plastychna.akcia.link')</button>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                                 <img src="/images/ico-1.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо ви хочете вирішити питання з вродженими чи набутими дефектами</span>
+                                <span>@lang('frontend/plastychna.if.slide_1')</span>
                             </div>
                         </div>
                         <div class="advantage-card advantage-card_small">
@@ -200,7 +200,7 @@
                                 <img src="/images/ico-2.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо ви хочете змінити деталі своєї зовнішності, які турбують</span>
+                                <span>@lang('frontend/plastychna.if.slide_2')</span>
                             </div>
                         </div>
                         <div class="advantage-card advantage-card_small">
@@ -208,7 +208,7 @@
                                 <img src="/images/ico-3.svg" alt="ico"/>
                             </div>
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Якщо засоби догляду допомагають в незначній мірі, а хочеться суттєвих змін та покращень.</span>
+                                <span>@lang('frontend/plastychna.if.slide_3')</span>
                             </div>
                         </div>
                     </div>
@@ -220,13 +220,13 @@
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">
-                        <span>Як відбувається процедура</span>
+                        <span>@lang('frontend/plastychna.how.title')</span>
                     </div>
                     <div class="accordion-list">
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація</span>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_1.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -238,7 +238,7 @@
                                 </div>
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Ви консультуєтесь з хірургом з приводу питань, які вас цікавлять. Отримаєте вичерпні відповіді і індивідуальний розбір вашої ситуації.</p>
+                                        <p>@lang('frontend/plastychna.how.items.item_1.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Огляд у фахівця</span>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_2.title')</span>
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +259,7 @@
 
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Здаєте всі необхідні аналізи і, за потреби, проходите огляд у додаткових фахівців. Все індивідуально.
+                                        <p>@lang('frontend/plastychna.how.items.item_2.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Призначення дати операції</span>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_3.title')</span>
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +279,7 @@
                                 </div>
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Лікар призначає дату операції і дає вам пам'ятку передопераційної підготовки з необхідними медикаментами. Обов'язково дотримуйтеся інформації в пам'ятці, оскільки якість підготовки впливає на результат.</p>
+                                        <p>@lang('frontend/plastychna.how.items.item_3.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Передопераційна підготовка</span>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_4.title')</span>
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -300,56 +300,16 @@
                                 </div>
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>У призначений день вам проводять передопераційну підготовку (необхідну розмітку та анестезіологічний супровід) і саму операцію. Операція триває від 40 хвилин до 3,5 годин</p>
+                                        <p>@lang('frontend/plastychna.how.items.item_4.description')</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Спостереження</span>
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після операції, пацієнт залишається в клініці під наглядом лікаря на 1,5-2 години після блефаропластики, або на добу операцій проведених під загальним наркозом.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Пам'ятка післяопераційного догляду</span>
-                                    <span class="accordion-title__indicator" data-indicator>
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
-                                            </svg>
-                                        </span>
-                                </div>
-                                <div class="accordion-descr" data-box-dropdown>
-                                    <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Вам видадуть пам'ятку післяопераційного догляду й необхідні медикаменти. Для швидкого загоєння і кращого результату потрібно чітко дотримуватися всіх рекомендацій.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-list-item">
-                            <div class="accordion-list-item__inner">
-                                <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Консультація хірурга після операції</span>
 
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_5.title')</span>
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -361,7 +321,7 @@
                                 </div>
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після проведення операції хірург перевіряє ваш стан після операції та надає рекомендації</p>
+                                        <p>@lang('frontend/plastychna.how.items.item_5.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -369,7 +329,27 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Зняття швів</span>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_6.title')</span>
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>@lang('frontend/plastychna.how.items.item_6.description')</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_7.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -382,7 +362,7 @@
                                 </div>
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після операції хірург знімає шви, залежності від виду операції це може бути або 5 день, абе третій тиждень.</p>
+                                        <p>@lang('frontend/plastychna.how.items.item_7.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -390,7 +370,7 @@
                         <div class="accordion-list-item">
                             <div class="accordion-list-item__inner">
                                 <div class="accordion-title" data-button>
-                                    <span class="accordion-title__text">Остаточне загоєння</span>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_8.title')</span>
 
                                     <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -403,7 +383,28 @@
                                 </div>
                                 <div class="accordion-descr" data-box-dropdown>
                                     <div class="accordion-descr__inner" data-box-inner>
-                                        <p>Після операції ми з пацієнтом знаходимося на постійному зв’язку, до остаточного загоєння.</p>
+                                        <p>@lang('frontend/plastychna.how.items.item_8.description')</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-list-item">
+                            <div class="accordion-list-item__inner">
+                                <div class="accordion-title" data-button>
+                                    <span class="accordion-title__text">@lang('frontend/plastychna.how.items.item_9.title')</span>
+
+                                    <span class="accordion-title__indicator" data-indicator>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="7" width="16" height="2" fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
+                                                      fill="#1D86BC"/>
+                                            </svg>
+                                        </span>
+                                </div>
+                                <div class="accordion-descr" data-box-dropdown>
+                                    <div class="accordion-descr__inner" data-box-inner>
+                                        <p>@lang('frontend/plastychna.how.items.item_9.description')</p>
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +420,7 @@
                             </span>
 
                         <div class="attention-main__text">
-                            <p>Кожен етап може трохи відрізнятися за часом, оскільки все індивідуально і залежить від ваших особливостей. Лікар враховує саме вашу ситуацію під час огляду, лікування та відновлення. Завдяки персоналізованим, а не «шаблонним» методам ви можете бути впевнені в результаті.
+                            <p>@lang('frontend/plastychna.how.alert')
                             </p>
                         </div>
                     </div>
@@ -429,26 +430,26 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Спеціаліст</span>
+                    <span>@lang('frontend/plastychna.specialist.title')</span>
                 </div>
             </div>
             <div class="slider-main wr-slider-specialist">
                 <div class="page-content wr-specialist-info">
                     <div class="specialist-card-box">
                         <div class="specialist-name">
-                            <span>Кремінь Василь Олександрович</span>
+                            <span>@lang('frontend/plastychna.specialist.specialist')</span>
                         </div>
                         <div class="specialist-specialization">
                             <div class="specialist-specialization-property">
-                                <span>Спеціалізація</span>
+                                <span>@lang('frontend/plastychna.specialist.specialisation')</span>
                             </div>
 
                             <div class="specialist-specialization-title">
-                                <span>Пластична хірургія</span>
+                                <span>@lang('frontend/plastychna.specialist.description.title')</span>
                             </div>
                         </div>
                         <div class="specialist-info">
-                            <p>Кандидат медичних наук. Член Всеукраїнської Асоціації пластичних, реконструктивних та естетичних хірургів. Співавтор ряду навчально-методичних посібників для лікарів-хірургів, комбустіологів та пластичних хірургів</p>
+                            <p>@lang('frontend/plastychna.specialist.description.description')</p>
                         </div>
                     </div>
                 </div>
@@ -490,7 +491,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Сертифікати</span>
+                    <span>@lang('frontend/plastychna.sertificats.title') </span>
                 </div>
                 <div class="list-box">
                     <div class="list-box__item">
@@ -528,15 +529,15 @@
                 </div>
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ЗАПИС НА ПЕРВИННУ КОНСУЛЬТАЦІЮ</span>
+                        <span>@lang('frontend/plastychna.recording.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Дізнайтеся, який тип операції підійде саме вам</span>
+                        <span>@lang('frontend/plastychna.recording.description')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal button-main button-main_orange">ЗАПИСАТИСЯ</button>
+                        <button class="open-modal button-main button-main_orange">@lang('frontend/plastychna.recording.link')</button>
                     </div>
                 </div>
             </div>
@@ -549,7 +550,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Не конвеєрний підхід – індивідуальний підхід</span>
+                                <span>@lang('frontend/plastychna.recording.items.item_1.title')</span>
                             </div>
                         </div>
                         <div class="advantage-card advantage-card_small">
@@ -558,7 +559,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Найсучасніше обладнання</span>
+                                <span>@lang('frontend/plastychna.recording.items.item_2.title')</span>
                             </div>
                         </div>
                         <div class="advantage-card advantage-card_small">
@@ -567,7 +568,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>Кожен етап операції супроводжує лікар-анестезіолог, що є запорукою комфорту пацієнта</span>
+                                <span>@lang('frontend/plastychna.recording.items.item_3.title')</span>
                             </div>
                         </div>
                     </div>
@@ -640,7 +641,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Відгуки клієнтів</span>
+                    <span>@lang('frontend/plastychna.reviews.title')</span>
                 </div>
                 <div class="list-box">
                     <div class="list-box__item">
@@ -766,15 +767,15 @@
                 </div>
                 <div class="page-content">
                     <div class="banner-section-title">
-                        <span>ГОТОВІ ВІДПОВІСТИ НА БУДЬ-ЯКІ ВАШІ ЗАПИТАННЯ І ПЕРЕТЕЛЕФОНУВАТИ ВАМ!</span>
+                        <span>@lang('frontend/plastychna.consultation.title')</span>
                     </div>
 
                     <div class="banner-section-subtitle">
-                        <span>Залиште заявку на безкоштовну консультацію менеджера.</span>
+                        <span>@lang('frontend/plastychna.consultation.description')</span>
                     </div>
 
                     <div class="wr-banner-section-button">
-                        <button class="open-modal-recall button-main button-main_orange">заявка на зворотній дзвінок</button>
+                        <button class="open-modal-recall button-main button-main_orange">@lang('frontend/plastychna.consultation.link')</button>
                     </div>
                 </div>
             </div>

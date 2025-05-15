@@ -3,7 +3,7 @@
     <main class="body-main plastica-banner-position">
         <div class="section-main">
             <div class="banner-main"
-                 style="background-image: url('/images/services/lumeca_banner.webp'); background-position: right; background-repeat: no-repeat;">
+                 style="background-image: url('/images/services/cosmetology/lumeca_banner.webp'); background-position: right; background-repeat: no-repeat;">
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title" style="padding: 0;">
@@ -245,7 +245,7 @@
 
                     <div class="equipment-card">
                         <div class="equipment-card-img">
-                            <img src="/images/services/laser.jpg" alt="equipment">
+                            <img src="/images/services/cosmetology/laser.jpg" alt="equipment">
 
                         </div>
 
@@ -300,34 +300,34 @@
                 </div>
                 <div style="display: flex; flex-wrap: wrap; width: 100%; flex-direction: row">
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_1.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_1.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_2.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_2.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_3.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_3.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_4.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_4.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_5.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_5.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_6.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_6.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_7.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_7.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_8.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_8.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_9.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_9.jpg">
                     </div>
                     <div class="advantage-card" style="width: 100%;min-height: 230px;">
-                        <img src="/images/services/cosmetology/lumeca_slide_10.jpg">
+                        <img src="/images/services/cosmetology/lumeca/lumeca_slide_10.jpg">
                     </div>
                 </div>
             </div>
@@ -336,14 +336,14 @@
         <div class="section-main section-main_m-n" style="z-index: 1;">
             <div class="page-content">
                 <div class="title-section">
-                    <span>часті питання</span>
+                    <span>@lang('frontend/lumeca.question.title')</span>
                 </div>
 
                 <div class="accordion-list">
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">1. Как понять поможет ли мне процедура?</span>
+                                <span class="accordion-title__text">@lang('frontend/lumeca.question.question_1')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -356,7 +356,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Узнайте у врача, подходит ли вам эта процедура. Стоимость консультации перед процедурой всего 200 грн.</p>
+                                    <p> @lang('frontend/lumeca.question.answer_1.title')</p>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +365,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">2. Сколько потребуется процедур?</span>
+                                <span class="accordion-title__text">@lang('frontend/lumeca.question.question_2')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -379,7 +379,9 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Улучшение внешнего вида кожи можно заметить после первого сеанса. Несколько сеансов дают еще лучший результат. Режим процедуры зависит от степени повреждения кожи, ее типа, параметров энергии и типа процедуры (сосуды или повреждения от солнца).</p>
+                                    <p>
+                                        @lang('frontend/lumeca.question.answer_2.title')
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +390,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">3. Как быстро будут заметны результаты?</span>
+                                <span class="accordion-title__text">@lang('frontend/lumeca.question.question_3')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -402,7 +404,8 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Результаты фотоомоложения можно увидеть через несколько дней после первой процедуры. Кожа со временем будет выглядеть моложе, а через 1-2 недели результаты будут наиболее заметны.</p><p>Проведение нескольких процедур улучшит конечный результат. Результаты лечения сосудов, например, сосудистых звездочек,можно увидеть в срок до 2 недель.</p>
+                                    <p> @lang('frontend/lumeca.question.answer_3.title1')</p>
+                                    <p> @lang('frontend/lumeca.question.answer_3.title2')</p>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +414,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">4. Есть ли побочные эффекты?</span>
+                                <span class="accordion-title__text">@lang('frontend/lumeca.question.question_4')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -425,7 +428,9 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Большинство пациентов с побочными эффектами не сталкивается, и любая реакция кожи обычно исчезает через пару часов. Сразу после процедуры пациенты могут ощущать повышенную чувствительность к солнечному свету.</p>
+                                    <p>
+                                        @lang('frontend/lumeca.question.answer_4.title')
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -434,7 +439,7 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">5. Какая цена?</span>
+                                <span class="accordion-title__text">@lang('frontend/lumeca.question.question_5')</span>
 
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -448,51 +453,51 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <span class="accordion-title__text">Лазерная ксметология на аппарате LUMECA</span>
+                                    <span class="accordion-title__text"> @lang('frontend/lumeca.question.answer_5.title')</span>
                                     <table class="table table-bordered" width="100%">
                                         <thead>
-                                        <th width="70%" style="border-bottom: 1px solid #000; padding-bottom: 5px">Название</th>
-                                        <th width="30%" style="border-bottom: 1px solid #000; padding-bottom: 5px">Цена(грн)</th>
+                                        <th width="70%" style="border-bottom: 1px solid #000; padding-bottom: 5px">@lang('frontend/lumeca.question.table.column1.title')</th>
+                                        <th width="30%" style="border-bottom: 1px solid #000; padding-bottom: 5px">@lang('frontend/lumeca.question.table.column2.title')</th>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>Лицо</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td1')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">3500</td>
                                         </tr>
                                         <tr>
-                                            <td>Декольте</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td2')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">4000</td>
                                         </tr>
                                         <tr>
-                                            <td>Плечи</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td3')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">2500</td>
                                         </tr>
                                         <tr>
-                                            <td>Предплечья</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td4')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">2500</td>
                                         </tr>
                                         <tr>
-                                            <td>Кисти рук</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td5')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">1750</td>
                                         </tr>
                                         <tr>
-                                            <td>Лицо + шея</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td6')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">4500</td>
                                         </tr>
                                         <tr>
-                                            <td>Шея</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td7')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">1800</td>
                                         </tr>
                                         <tr>
-                                            <td>Лицо + шея + декольте(процедура проводится в 2 этапа)</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td8')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">6000</td>
                                         </tr>
                                         <tr>
-                                            <td>1см2 воздействия()</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td9')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">500</td>
                                         </tr>
                                         <tr>
-                                            <td>Щеки отдельно</td>
+                                            <td>@lang('frontend/lumeca.question.table.column1.td10')</td>
                                             <td style="text-align: left;padding: 5px 0 5px 10%">3000</td>
                                         </tr>
                                         </tbody>

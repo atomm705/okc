@@ -30126,7 +30126,6 @@ html.ie-11 .fc-event .fc-event-wrap {
 
 }
 
-
 @media (min-width: 768px) {
     .tabs-mobile {
         display: none;
@@ -30145,6 +30144,7 @@ html.ie-11 .fc-event .fc-event-wrap {
 .p-index a:hover{
     text-decoration: underline;
 }
+
 .hour{
     width: 100px;
     height: 100px;
@@ -30157,15 +30157,12 @@ html.ie-11 .fc-event .fc-event-wrap {
 .hours{
     width: 101px;
     height: 43px ;
-
     text-align: center;
     vertical-align: middle;
     color: #272727;
     border: none;
     border-bottom: 1px solid #191919;
 }
-
-
 
 .line {
     margin: 0;
@@ -30182,7 +30179,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     left: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
-
 
 .start {
     font-weight: 700;
@@ -30285,13 +30281,11 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #2a93c9;
 }
 
-
 .services-item > :last-child{
     padding: 25px 0;
     width: 100%;
     text-align: center;
 }
-
 
 .has-button-component{
     padding: 25px 0;
@@ -30318,7 +30312,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     box-shadow: none;
 
 }
-
 
 .price-item > div > iframe {
     width: 100%;
@@ -30349,7 +30342,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     flex-direction: column !important;
 }
 
-
 .price-item > div  > .content > .title{
     font-weight: 300;
     text-align: center;
@@ -30364,32 +30356,48 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #fafafa;
 }
 
-
 .price-item > div  > .content > .button{
     margin-top: 25px;
     padding: 15px 35px;
     background: #fff;
     color: #191919;
     border-radius: 999px;
-
-
     line-height: 1;
     font-size: 1rem;
     white-space: nowrap;
     text-transform: uppercase;
     font-weight: 600;
-
     outline: none;
-
     display: inline-block;
     cursor: pointer;
     cursor: hand;
-
     transition: all .3s ease-in-out 0s;
 }
 
-
 .price-item > div  > .content > .button:hover{
+    background: #2a93c9;
+    color: #fff;
+}
+
+.price-item > div  > .content > .buttons > button{
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #fff;
+    color: #191919;
+    border-radius: 999px;
+    line-height: 1;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+    cursor: hand;
+    transition: all .3s ease-in-out 0s;
+}
+
+.price-item > div  > .content > .buttons > button:hover{
     background: #2a93c9;
     color: #fff;
 }
@@ -30411,7 +30419,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     cursor: pointer;
     cursor: hand;
     box-shadow: none;
-
 }
 
 .price-item >p:has(button){
@@ -30423,14 +30430,12 @@ html.ie-11 .fc-event .fc-event-wrap {
 .price-item > h3{
     font-size: 1.75rem;
     line-height: 1;
-
 }
 
 .price-item > .list-images > li{
     padding-left: 0;
     display: -webkit-box;
-    display: flex
-;
+    display: flex;
     -webkit-box-pack: start;
     justify-content: flex-start;
     -webkit-box-align: center;
@@ -30448,7 +30453,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     max-width: 100%;
 }
 
-
 .price-item > .list-marked > li{
     font-size: 1rem;
     padding-left: 25px;
@@ -30456,7 +30460,6 @@ html.ie-11 .fc-event .fc-event-wrap {
 }
 
 .price-item >.list-marked > li:before {
-
     display: inline-block;
     left: 0;
     top: 12px;
@@ -30511,12 +30514,13 @@ html.ie-11 .fc-event .fc-event-wrap {
     padding: 12px 35px 12px 0;
     display: none;
 }
+
 .price-item > .edit-spoiler-component > .body > .list-tab-none{
     padding: 12px 35px 12px 0;
 }
+
 .price-item > .edit-spoiler-component > .body > .list-tab-none > li{
     font-size: 1rem;
-
     line-height: 1.5;
     margin-top: 10px;
 }
@@ -30542,7 +30546,6 @@ html.ie-11 .fc-event .fc-event-wrap {
 }
 
 .price-item > ul > li:before {
-
     display: inline-block;
     left: 0;
     top: 12px;
@@ -30551,19 +30554,17 @@ html.ie-11 .fc-event .fc-event-wrap {
     font: 400 14px / 24px 'FontAwesome';
     color: #2a93c9;
 }
+
 .price-item > p > iframe {
     width: 100%;
     height: 500px;
 }
-
 
 @media (min-width: 1200px) {
     .container-2 {
         max-width: 1440px;
     }
 }
-
-
 
 @media (max-width: 768px) {
     .price-item > div  > .content > .button{
@@ -30575,7 +30576,8 @@ html.ie-11 .fc-event .fc-event-wrap {
     .service-select-mobil{
         width: 100%;
     }
-
-    
 }
+
+
+
 

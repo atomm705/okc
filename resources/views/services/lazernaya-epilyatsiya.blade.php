@@ -2,7 +2,7 @@
     <main class="body-main plastica-banner-position">
         <div class="section-main">
             <div class="banner-main"
-                 style="background-image: url('/images/services/laser_banner.jpg'); background-position: right; background-repeat: no-repeat;">
+                 style="background-image: url('/images/services/cosmetology/laser_banner.jpg'); background-position: right; background-repeat: no-repeat;">
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
@@ -250,7 +250,7 @@
 
                     <div class="equipment-card">
                         <div class="equipment-card-img">
-                            <img src="/images/services/laser.jpg" alt="equipment">
+                            <img src="/images/services/cosmetology/laser.jpg" alt="equipment">
 
                         </div>
 
