@@ -188,7 +188,7 @@
                         <div class="offset-top-34 offset-md-top-60">
                             <p>@lang('frontend/index.ophthalmology.description')</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">@lang('frontend/index.ophthalmology.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/oftalmologiya">@lang('frontend/index.ophthalmology.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -213,20 +213,20 @@
                         <div class="offset-top-34 offset-md-top-60">
                             <p>@lang('frontend/index.diagnosis.description')</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">@lang('frontend/index.diagnosis.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/diagnostika">@lang('frontend/index.diagnosis.link')</a></div>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-sm-center justify-content-md-start">
                 <div class="col-sm-10 col-md-6 section-image-aside section-image-aside-right text-center text-md-start">
-                    <div class="section-image-aside-img d-none d-md-block" style="background-image: url( {{ asset('images/departments-01-960-611.jpg') }})"></div>
+                    <div class="section-image-aside-img d-none d-md-block" style="background-image: url('/images/banner (1).png');"></div>
                     <div class="section-image-aside-body section-sm-bottom-66 section-sm-top-110 inset-lg-right-93">
-                        <h3>Clinical Laboratory</h3>
+                        <h3>Пастична хірургія</h3>
                         <div class="offset-top-34 offset-md-top-60">
-                            <p>Sed rutrum, mi sit amet fringilla feugiat, nunc magna ullamcorper lectus, ac congue nisi est ac orci.</p>
-                            <p>Curabitur ultrices, nunc eu maximus tristique, purus ex ullamcorper lacus, vel scelerisque lectus libero sit amet odio. Duis vel enim in erat vulputate tincidunt eu sed nisi. Aenean vehicula, dui at convallis laoreet.</p>
+                            <p>Пластична хірургія несе в собі ціль усунути як вроджені так і набуті недоліки зовнішності людини, щоб покращити якість життя.</p>
+                            <p>Також вона несе в собі естетичну мету - корекція зовнішності людини, щоб отримати бажаний результат.</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">Learn more</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/plastichna-khirurgiya">@lang('frontend/index.diagnosis.link')</a></div>
                     </div>
                 </div>
             </div>

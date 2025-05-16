@@ -447,7 +447,7 @@
                             </div>
 
                             <div class="advantage-card-descr advantage-card-descr_text-sm">
-                                <span>@lang('frontend/injection.recording.items.item_3.title')/span>
+                                <span>@lang('frontend/injection.recording.items.item_3.title')</span>
                             </div>
                         </div>
                     </div>
@@ -481,14 +481,12 @@
                 <div class="title-section">
                     <span>@lang('frontend/injection.question.title')</span>
                 </div>
-
                 <div class="accordion-list">
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">1. Будет ли больно?</span>
-
-                                <span class="accordion-title__indicator" data-indicator>
+                                <span class="accordion-title__text">@lang('frontend/injection.question.question_1')</span>
+                                        <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="0" y="7" width="16" height="2" fill="#1D86BC"/>
@@ -499,7 +497,7 @@
 
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Перед процедурой врач наносит на кожу, в области проведения процедуры, местное обезболивающее средство. Боли и дискомфорта во время процедуры вы не почувствуете.
+                                    <p>@lang('frontend/injection.question.answer_1.title')
                                     </p>
                                 </div>
                             </div>
@@ -509,21 +507,19 @@
                     <div class="accordion-list-item">
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
-                                <span class="accordion-title__text">2. Как долго сохраняется эффект?</span>
+                                <span class="accordion-title__text">@lang('frontend/injection.question.question_2')</span>
 
-                                <span class="accordion-title__indicator" data-indicator>
+                                        <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="7" width="16" height="2" fill="#1D86BC"/>
-                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
-                                                      fill="#1D86BC"/>
+                                                <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)" fill="#1D86BC"/>
                                             </svg>
                                         </span>
                             </div>
-
                             <div class="accordion-descr" data-box-dropdown>
                                 <div class="accordion-descr__inner" data-box-inner>
-                                    <p>Организм меняется. Изменение, которые происходят с нашей кожей в течении жизни носят постоянный характер. Поэтому процедуры нужно повторять в зависимости от образа жизни, привычек человека и особенностей строение и предрасположенности кожи человека
+                                    <p>@lang('frontend/injection.question.answer_2.title')</p>
                                 </div>
                             </div>
                         </div>

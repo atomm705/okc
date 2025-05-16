@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\DoctorDepartment;
 use App\Models\DoctorDepartmentTranslation;
 use App\Models\DoctorTranslation;

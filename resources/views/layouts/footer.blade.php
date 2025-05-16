@@ -98,6 +98,7 @@
         });
     </script>
 @endif
+
 @if(Route::currentRouteName() === 'services.panoptix')
     <link rel="preload" as="script" src="{{ asset('blepharoplastika-js/app.js') }}">
     <script>

@@ -106,7 +106,7 @@ return [
 
     'specialist' => [
         'title' => 'Специалист',
-        'specialist' => 'Кремень Василий Александрович',
+        'specialist' => 'Кремень Василий Александрович ',
         'specialisation' => 'Специализация',
         'description' => [
             'title' => 'Пластическая хирургия',
