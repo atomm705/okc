@@ -21,13 +21,10 @@ Route::middleware(SetLocale::class)->group(function () {
 
         Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
         Route::get('/departments', [PageController::class, 'departments'])->name('main.departments');
-
         //Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
-
         //Route::get('/schedule/{department?}', function ($department = null) {
         //      return view('main.timetable', compact('department'));
         // })->name('main.timetable');
-
         Route::get('/schedule/{department?}', [PageController::class, 'timetable'])->name('main.timetable');
 
         Route::get('/blog', [PageController::class, 'blog'])->name('main.blog');

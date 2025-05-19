@@ -1,14 +1,14 @@
 <x-app-layout>
     <section class="section swiper-container swiper-slider " data-swiper='{"autoplay":{"delay":5000},"effect":"fade"}'>
         <div class="swiper-wrapper text-center ">
-            <div class="swiper-slide " id="page-loader" data-slide-bg="images/bg-1.webp">
+            <div class="swiper-slide slide-tablet" id="page-loader" data-slide-bg="images/bg-1.webp">
                 <div class="swiper-caption">
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 section-slider-custom">
                                     <div class="inset-xl-right-80 text-lg-start ">
-                                        <h2>{{ __('frontend/index.slider.slide_1.title') }}<br class="d-block">
+                                        <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_1.title') }} <br class="d-block">
                                         </h2>
                                         <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
 
@@ -19,14 +19,14 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide slider-fade" data-slide-bg="images/bg-2.webp">
+            <div class="swiper-slide slider-fade slide-tablet" data-slide-bg="images/bg-2.webp">
                 <div class="swiper-caption">
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 section-slider-custom to-front">
                                     <div class="text-lg-start">
-                                        <h2>{{ __('frontend/index.slider.slide_2.title') }}
+                                        <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_2.title') }}
                                         </h2>
                                         <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">{{ __('frontend/index.slider.slide_2.link') }}</a>
                                     </div>
@@ -36,14 +36,14 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide slider-fade" data-slide-bg="images/bg-3.webp">
+            <div class="swiper-slide slider-fade slide-tablet" data-slide-bg="images/bg-3.webp">
                 <div class="swiper-caption">
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 section-slider-custom">
                                     <div class="text-lg-start">
-                                        <h2>{{ __('frontend/index.slider.slide_3.title') }}</h2>
+                                        <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_3.title') }}</h2>
                                         <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">{{ __('frontend/index.slider.slide_3.link') }}</a>
                                     </div>
                                 </div>
@@ -262,7 +262,9 @@
                                     <q>Спасибо ОГРОМНОЕ - Николаю Николаевичу Ковшарь, за профессионализм и человеческое отношение, а также: его ассистентам и другим сотрудникам медцентра "Докарт"!!! Впечатление, от посещения медцентра,- самые положительные! Все на европейском уровне: начиная от порога-входа, сотрудника безопасности, ресепшен и заканчивая - санузлом; везде - уют, чистота и комфорт!!! Низкий поклон, всем - Вам!!!</q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-betty-wade-60x60.jpg" alt=""/></div>
+                                    <div class="unit-left unit-item-narrow">
+                                       <!-- <img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-betty-wade-60x60.jpg" alt=""/>-->
+                                    </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal">Betty Wade</cite>
@@ -282,7 +284,9 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>
+                                    <div class="unit-left unit-item-narrow">
+                                       <!-- <img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/>-->
+                                    </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal">Bryan Green</cite>
@@ -302,7 +306,8 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>
+                                    <div class="unit-left unit-item-narrow">
+                                        <!--<img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>-->
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal">Bryan Green</cite>
@@ -322,7 +327,9 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-betty-wade-60x60.jpg" alt=""/></div>
+                                    <div class="unit-left unit-item-narrow">
+                                     <!--   <img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-betty-wade-60x60.jpg" alt=""/>-->
+                                    </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal">Betty Wade</cite>

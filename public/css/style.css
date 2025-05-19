@@ -30570,13 +30570,49 @@ html.ie-11 .fc-event .fc-event-wrap {
     .price-item > div  > .content > .button{
        font-size: 0.8rem;
     }
+
+
 }
 
 @media (max-width: 1200px) {
     .service-select-mobil{
         width: 100%;
     }
+
+
 }
+
+@media (max-width: 990px) {
+    .slide-tablet{
+        height: 504px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-tablet{
+        height: 384px;
+    }
+
+    .swipe-title-size{
+        font-size: 39px;
+    }
+}
+
+
+@media (min-width: 990px) {
+    .slide-tablet{
+        height: 847px;
+    }
+}
+
+
+/*@media (min-width: 768px) and (max-width: 1024px) {
+    .slide-tablet{
+        height: 504px;
+    }
+
+}*/
+
 
 
 
