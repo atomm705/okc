@@ -122,10 +122,10 @@
 
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img"
+                                    <div class="unit-left unit-item-narrow"><!--<img class="rounded-circle quote-img"
                                                                                  width="60" height="60"
                                                                                  src=" {{ asset('images/users/user-betty-wade-60x60.jpg') }}"
-                                                                                 alt=""/></div>
+                                                                                 alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal"> Владимир</cite>
@@ -154,10 +154,10 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img"
+                                    <div class="unit-left unit-item-narrow"><!--<img class="rounded-circle quote-img"
                                                                                  width="60" height="60"
                                                                                  src="{{ asset('images/users/user-betty-wade-60x60.jpg') }} "
-                                                                                 alt=""/></div>
+                                                                                 alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal">Олена</cite>
@@ -185,10 +185,10 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img"
+                                    <div class="unit-left unit-item-narrow"><!--<img class="rounded-circle quote-img"
                                                                                  width="60" height="60"
                                                                                  src="{{ asset('images/users/user-betty-wade-60x60.jpg') }}"
-                                                                                 alt=""/></div>
+                                                                                 alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal"> Ілля</cite>
@@ -216,10 +216,10 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img"
+                                    <div class="unit-left unit-item-narrow"><!--<img class="rounded-circle quote-img"
                                                                                  width="60" height="60"
                                                                                  src="{{ asset('images/users/user-betty-wade-60x60.jpg') }}"
-                                                                                 alt=""/></div>
+                                                                                 alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal">Дарья</cite>
@@ -279,10 +279,10 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow"><img class="rounded-circle quote-img"
+                                    <div class="unit-left unit-item-narrow"><!--<img class="rounded-circle quote-img"
                                                                                  width="60" height="60"
                                                                                  src="{{ asset('images/users/user-betty-wade-60x60.jpg') }}"
-                                                                                 alt=""/></div>
+                                                                                 alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
                                             <cite class="text-normal"> Денис Портер</cite>

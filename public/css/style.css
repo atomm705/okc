@@ -9894,6 +9894,8 @@ p + .list-marked {
     .breadcrumbs-creative > .container {
         padding-left: 414px;
     }
+
+
 }
 
 .input-group-addon {
@@ -30564,6 +30566,20 @@ html.ie-11 .fc-event .fc-event-wrap {
     .container-2 {
         max-width: 1440px;
     }
+
+   .custom-position-photo{
+        position: absolute;
+        top: 270px;
+        z-index: 1;
+    }
+
+    .padding--top{
+        padding-top: 30px;
+    }
+
+    .breadcrumbs-doctor > .container {
+        padding-left: 414px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -30603,14 +30619,29 @@ html.ie-11 .fc-event .fc-event-wrap {
     .slide-tablet{
         height: 847px;
     }
+
+    .custom-title-size{
+        font-size: 2.625rem;
+    }
 }
 
 
-/*@media (min-width: 768px) and (max-width: 1024px) {
-    .slide-tablet{
-        height: 504px;
+/* стилі нижче для відоброаження профиля доктора для великих планшетів (тут вони відображаються як на комп`ютерах)
+/*@media (min-width: 992px) and (max-width: 1199px) {
+    .custom-position-photo{
+        position: absolute;
+        top: 115px;
+        z-index: 1;
+
     }
 
+    .padding--top{
+        padding-top: 30px;
+    }
+
+    .custom-title-size{
+        font-size: 2.3rem;
+    }
 }*/
 
 

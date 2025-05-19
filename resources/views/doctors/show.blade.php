@@ -1,7 +1,7 @@
 <x-app-layout>
-    <section class="breadcrumbs-custom bg-image context-dark  slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark  slider-page breadcrumbs-doctor" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">{{ $doctorTranslation->full_name }}</h2>
+            <h2 class="breadcrumbs-custom-title custom-title-size">{{ $doctorTranslation->full_name }}</h2>
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.team') }}">@lang('global.pages.doctors')</a></li>
@@ -14,10 +14,10 @@
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-sm-10 col-lg-4">
-                    <div class="member-block-type-5 inset-lg-right-20">
+                    <div class="member-block-type-5 inset-lg-right-20 custom-position-photo">
                         <img src="{{ $doctorTranslation->doctor->imageSquare->src }}" width="320" height="320" alt="{{ $doctorTranslation->full_name }}" />
                     </div>
-                    <div class="offset-top-34 text-md-start inset-lg-right-20">
+                    <div class="offset-top-34 text-md-start inset-lg-right-20 padding--top">
                         <h6 class="text-start">@lang('frontend/doctors/doctors.certificates.title')</h6>
                         <hr class="text-subline">
                         <div class="row justify-content-sm-center justify-content-md-start offset-top-24 row-certificates" data-lightgallery="group">
