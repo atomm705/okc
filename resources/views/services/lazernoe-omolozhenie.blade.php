@@ -154,7 +154,7 @@
 
         </div>
 
-        <div class="section-main section-main_second  section-main_change-mob">
+        <div class="section-main section-main_second  section-main_change-mob margin--10 padding--17">
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">

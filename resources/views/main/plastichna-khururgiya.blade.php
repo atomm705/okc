@@ -7,10 +7,10 @@
                 <div class="page-content">
                     <div class="banner-main-hold">
                         <div class="banner-main-title">
-                            <span>@lang('frontend/plastychna.slider.slide_1.title')</span>
+                            <span class="title-size-phone">@lang('frontend/plastychna.slider.slide_1.title')</span>
                         </div>
                         <div class="banner-main-subtitle">
-                            <span>@lang('frontend/plastychna.slider.slide_1.description')</span><br>
+                            <span class="subtitle-size-phone">@lang('frontend/plastychna.slider.slide_1.description')</span><br>
                             <span style="font-size: 28px">@lang('frontend/plastychna.slider.slide_1.description1')</span>
                         </div>
                         <div class="wr-banner-main-button">
@@ -158,10 +158,10 @@
                 <div id="video_youtube"></div>
                 <script>
                     if(screen.width > '767'){
-                        document.getElementById("video_youtube").innerHTML = '<iframe width="100%" height="640" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                        document.getElementById("video_youtube").innerHTML = '<iframe  width="100%" height="640" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                     }
                     if(screen.width < '768'){
-                        document.getElementById("video_youtube").innerHTML = '<iframe width="100%" height="208" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                        document.getElementById("video_youtube").innerHTML = '<iframe class="height--tablet" width="100%" height="300" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                     }
                 </script>
             </div>

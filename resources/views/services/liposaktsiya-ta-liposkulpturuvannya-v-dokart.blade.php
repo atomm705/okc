@@ -171,10 +171,10 @@
                     <div id="video_youtube" class="align-center"></div>
                     <script>
                         if(screen.width > '767'){
-                            document.getElementById("video_youtube").innerHTML = '<iframe width="482" height="857" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+                            document.getElementById("video_youtube").innerHTML = '<iframe  width="482" height="857" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
                         }
                         if(screen.width < '768'){
-                            document.getElementById("video_youtube").innerHTML = '<iframe width="420" height="750" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+                            document.getElementById("video_youtube").innerHTML = '<iframe class="padding--shorts" width="420" height="750" src="https://www.youtube.com/embed/BxAkwLfRIPg" title="Ліпосакція? Як Досягти Ідеальної Фігури Без Болю та Синців?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
                         }
                     </script>
                 </div>

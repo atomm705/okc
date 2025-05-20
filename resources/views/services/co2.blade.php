@@ -39,13 +39,13 @@
             </div>
         </div>
 
-        <div class="section-main section-main_m-n section-main_video">
+        <div class="section-main section-main_m-n section-main_video padding--phone">
             <div class="page-content">
-                <iframe width="100%" height="617" src="https://www.youtube.com/embed/FmCN1Gc_yMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="height--phone" width="100%" height="617" src="https://www.youtube.com/embed/FmCN1Gc_yMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="section-main when-needed">
+        <div class="section-main when-needed after-video-padding">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/co2.when.title')</span>

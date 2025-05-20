@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="section-main section-main_m-n section-main_video">
+        <div class="section-main section-main_m-n section-main_video padding--phone">
             <div class="page-content">
                 <video width="100%" height="480" controls="controls" >
                     <source src="/images/services/cosmetology/triton_intro.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="section-main when-needed">
+        <div class="section-main when-needed after-video-padding">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/epil.when.title')</span>
@@ -159,7 +159,7 @@
 
         </div>
 
-        <div class="section-main section-main_second  section-main_change-mob">
+        <div class="section-main section-main_second  section-main_change-mob margin--10 padding--17">
             <div class="page-content">
                 <div class="page-box-sm">
                     <div class="title-section">

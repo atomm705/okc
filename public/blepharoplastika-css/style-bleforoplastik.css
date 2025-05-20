@@ -1146,3 +1146,46 @@ html #__telerWdTriggerContent {
 
  }
 
+
+@media (max-width: 768px) {
+
+    .padding--phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .height--phone{
+        height: 300px;
+    }
+
+    .margin--10{
+        margin-top: 10px;
+    }
+
+    .padding--17{
+        padding-top: 17px!important;
+    }
+
+}
+@media (max-width: 375px){
+    .title-size-phone{
+        font-size: 26px!important;
+    }
+
+    .subtitle-size-phone{
+        font-size: 18px!important;
+    }
+}
+.after-video-padding{
+    padding-top: 30px;
+}
+@media (min-width: 768px){
+    .height--tablet{
+        height: 640px;
+    }
+
+}
+
+
+
+

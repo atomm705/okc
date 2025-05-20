@@ -190,4 +190,14 @@
 
 }
 
+@media (max-width: 440px) {
+
+    .padding--shorts{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+
 

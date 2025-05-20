@@ -42,14 +42,13 @@
             </div>
         </div>
 
-        <div class="section-main section-main_m-n section-main_video">
+        <div class="section-main section-main_m-n section-main_video padding--phone">
             <div class="page-content">
-                <iframe width="100%" height="617" src="https://www.youtube.com/embed/videoseries?list=PLJwatesN19cLJWXfGyMNreC42M2SjaLWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="height--phone" width="100%" height="617" src="https://www.youtube.com/embed/videoseries?list=PLJwatesN19cLJWXfGyMNreC42M2SjaLWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-
-        <div class="section-main when-needed">
+        <div class="section-main when-needed after-video-padding">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/checkUp.when.title')</span>
@@ -987,15 +986,14 @@
             </div>
         </div>
 
-        <div class="section-main section-main_m-n section-main_video">
+        <div class="section-main section-main_m-n section-main_video padding--phone after-video-padding">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/checkUp.reviews.video')</span>
                 </div>
-                <iframe width="100%" height="617" src="https://www.youtube.com/embed/videoseries?list=PLJwatesN19cLJWXfGyMNreC42M2SjaLWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="height--phone"  width="100%" height="617" src="https://www.youtube.com/embed/videoseries?list=PLJwatesN19cLJWXfGyMNreC42M2SjaLWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-
 
         <div class="section-main">
             <div class="page-content" style="display: none">
