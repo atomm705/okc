@@ -95,6 +95,26 @@
             });
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+            const itemsToShow = 2;
+            const $items = $('.list-box__item');
+            let currentlyVisible = itemsToShow;
+
+            $items.hide().slice(0, itemsToShow).show();
+
+            $('#load-more').on('click', function () {
+                $items.slice(currentlyVisible, currentlyVisible + itemsToShow).slideDown();
+                currentlyVisible += itemsToShow;
+
+                if (currentlyVisible >= $items.length) {
+                    $(this).hide();
+                }
+            });
+        });
+    </script>
+
 @endif
 
 @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'   )

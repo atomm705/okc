@@ -296,7 +296,7 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Результаты после процедуры</span>
+                    <span>@lang('frontend/lumeca.results.title')</span>
                 </div>
 
                 <div class="list-box">
@@ -658,6 +658,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="recall-button container-more-results" style="text-align: center; margin-top: 20px;">
+                        <button id="load-more" class="button-main button-main_blue button-more-recall">@lang('frontend/lumeca.results.more')</button>
                     </div>
 
                 </div>

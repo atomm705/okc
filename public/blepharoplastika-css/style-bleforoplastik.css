@@ -1199,6 +1199,13 @@ html #__telerWdTriggerContent {
 
 }
 
+.container-more-results{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
