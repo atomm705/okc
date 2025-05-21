@@ -1186,6 +1186,22 @@ html #__telerWdTriggerContent {
 
 }
 
+@media (min-width: 1200px){
+
+    .resize > img {
+        width: 506px!important;
+    }
+
+    .height-after{
+        width: 506px;
+        height: 506px;
+    }
+
+}
+
+
+
+
 
 
 

@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
     @endif
-    @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart' )
+    @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' )
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/custom.css') }}">
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/swiper.min.css') }}">
     @endif
