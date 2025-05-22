@@ -14,19 +14,19 @@
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-sm-10 col-lg-4">
-                    <div class="member-block-type-5 inset-lg-right-20 custom-position-photo">
+                    <div class="member-block-type-5 inset-lg-right-20 custom-position-photo center-photo ">
                         <img src="{{ $doctorTranslation->doctor->imageSquare->src }}" width="320" height="320" alt="{{ $doctorTranslation->full_name }}" />
                     </div>
                     <div class="offset-top-34 text-md-start inset-lg-right-20 padding--top">
                         <h6 class="text-start">@lang('frontend/doctors/doctors.certificates.title')</h6>
                         <hr class="text-subline">
-                        <div class="row justify-content-sm-center justify-content-md-start offset-top-24 row-certificates" data-lightgallery="group">
+                        <div class="row justify-content-sm-center justify-content-md-start offset-top-24 row-certificates certificate-content-center" data-lightgallery="group">
                             @foreach ($doctorTranslation->doctor->getCertificates() as $certificate)
-                                <div class="col-sm-8 col-md-4 offset-top-20">
+                                <div class="col-sm-8 col-md-4 offset-top-20 certificate-center width-auto">
                                     <a class="thumbnail-classic" data-lightgallery="item" data-size="700x970"
                                        href="{{ $certificate->src }}">
                                         <figure>
-                                            <img width="100" height="138"
+                                            <img class="certificates-mobil" width="100" height="138"
                                                  src="{{ $certificate->src }}"
                                                  alt="certificate">
                                         </figure>

@@ -30587,7 +30587,13 @@ html.ie-11 .fc-event .fc-event-wrap {
        font-size: 0.8rem;
     }
 
+    .certificate-center{
+        text-align: center;
+    }
 
+    .certificate-content-center{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -30612,6 +30618,16 @@ html.ie-11 .fc-event .fc-event-wrap {
     .swipe-title-size{
         font-size: 39px;
     }
+
+    .certificates-mobil{
+        width: 100px !important;
+    }
+
+    .width-auto{
+        width: auto!important;
+    }
+
+
 }
 
 
@@ -30625,6 +30641,13 @@ html.ie-11 .fc-event .fc-event-wrap {
     }
 }
 
+@media (max-width: 991px) {
+   .center-photo{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+}
 
 /* стилі нижче для відоброаження профиля доктора для великих планшетів (тут вони відображаються як на комп`ютерах)
 /*@media (min-width: 992px) and (max-width: 1199px) {

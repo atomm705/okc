@@ -726,7 +726,7 @@
                                                 <rect x="0" y="7" width="16" height="2" fill="#1D86BC"/>
                                                 <rect x="7" y="0" width="2" height="16" fill="#1D86BC"/>
                                             </svg>
-                                        </span>
+                                </span>
                             </div>
 
                             <div class="accordion-descr" data-box-dropdown>
@@ -741,7 +741,6 @@
                         <div class="accordion-list-item__inner">
                             <div class="accordion-title" data-button>
                                 <span class="accordion-title__text">@lang('frontend/lumeca.question.question_2')</span>
-
                                 <span class="accordion-title__indicator" data-indicator>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -749,7 +748,7 @@
                                                 <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
                                                       fill="#1D86BC"/>
                                             </svg>
-                                        </span>
+                                </span>
                             </div>
 
                             <div class="accordion-descr" data-box-dropdown>
@@ -774,7 +773,7 @@
                                                 <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
                                                       fill="#1D86BC"/>
                                             </svg>
-                                        </span>
+                                </span>
                             </div>
 
                             <div class="accordion-descr" data-box-dropdown>
@@ -798,7 +797,7 @@
                                                 <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
                                                       fill="#1D86BC"/>
                                             </svg>
-                                        </span>
+                                </span>
                             </div>
 
                             <div class="accordion-descr" data-box-dropdown>
@@ -823,7 +822,7 @@
                                                 <rect x="7" y="16" width="16" height="2" transform="rotate(-90 7 16)"
                                                       fill="#1D86BC"/>
                                             </svg>
-                                        </span>
+                                </span>
                             </div>
 
                             <div class="accordion-descr" data-box-dropdown>
@@ -905,8 +904,6 @@
                 </div>
             </div>
         </div>
-
-
     </main>
 
 </x-app-layout>
