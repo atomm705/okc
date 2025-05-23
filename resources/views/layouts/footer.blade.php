@@ -44,10 +44,15 @@
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
 
-@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya'|| Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' )
+<!-- я прибрав || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' і  Route::currentRouteName() === 'services.lazernoe-omolozhenie' секція when-needed не показувалась проблема була в скрипті blepharoplastika-js/simpleParallax.js (така точно проблема і на головному сайті) -->
+@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' )
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 
+@endif
+
+@if(Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' )
+    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 @endif
 
 @if(Route::currentRouteName() === 'services.lazernoe-omolozhenie'  )
@@ -86,7 +91,6 @@
                     $(document).off('mousemove touchmove', onMove);
                     $(document).off('mouseup touchend touchcancel', onEnd);
                 }
-
 
                 $(window).on('resize', function () {
                     var percent = $resize.width() / $slider.width() * 100;
@@ -166,8 +170,6 @@
         });
     </script>
 @endif
-
-
 
 @if(Route::currentRouteName() === 'services.panoptix')
     <link rel="preload" as="script" src="{{ asset('blepharoplastika-js/app.js') }}">
@@ -260,7 +262,6 @@
 
 @if(Route::currentRouteName() === 'main.category' || Route::currentRouteName() === 'main.service')
 
-
     <script>
         // цей скрипт для роботи тегу select для телефонів і планшетів
         document.addEventListener("DOMContentLoaded", function () {
@@ -319,7 +320,6 @@
             });
         });
     </script>
-
 @endif
 
 

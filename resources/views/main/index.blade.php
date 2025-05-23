@@ -245,7 +245,7 @@
 
     <section class="section-lg bg-default section">
         <div class="container">
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/cOUYKMbttow?si=3y2RivY38F5Dv7VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="height--phone" width="100%" height="600" src="https://www.youtube.com/embed/cOUYKMbttow?si=3y2RivY38F5Dv7VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 

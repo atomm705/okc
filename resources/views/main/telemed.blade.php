@@ -19,7 +19,7 @@
 
         <section class="section-lg bg-default-liac">
             <div class="container text-center">
-                    <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_1.title')</h3>
+                    <div ><h4 class="title-telemed" style=" margin-top: 0px";>@lang('frontend/telemed.article_1.title')</h4>
                         <p class="custom-paragraph">@lang('frontend/telemed.article_1.texts.text_1')</p>
                     </div>
             </div>
@@ -28,7 +28,7 @@
 
         <section class="section-lg bg-default-liac">
             <div class="container text-center">
-                    <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_2.title')</h3>
+                    <div ><h4  class="title-telemed" style=" margin-top: 0px";>@lang('frontend/telemed.article_2.title')</h4>
                         <p class="custom-paragraph">@lang('frontend/telemed.article_2.texts.text_1')</p>
                     </div>
             </div>
@@ -37,7 +37,7 @@
         <section class="section-lg bg-default-liac">
         <div class="container text-center">
 
-            <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_3.title')</h3>
+            <div ><h4  class="title-telemed" style=" margin-top: 0px";>@lang('frontend/telemed.article_3.title')</h4>
                 <p >@lang('frontend/telemed.article_3.texts.text_1')</p>
 
                 <ul class="list-marked" style="text-align: left;">
@@ -59,8 +59,8 @@
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container "><!----> <!---->
 
-            <div ><h3 style="font-size: 2.60em; margin-top: 0px"; class="text-center">@lang('frontend/telemed.article_4.title')</h3>
-                <p class="custom-paragraph text-center">@lang('frontend/telemed.article_4.texts.text_1')</p>
+            <div ><h4  class="title-telemed" style="text-align: center; margin-top: 0px"; class="text-center">@lang('frontend/telemed.article_4.title')</h4>
+                <p class="custom-paragraph ">@lang('frontend/telemed.article_4.texts.text_1')</p>
 
                 <ul class="list-marked" style="text-align: left;">
                     <li>@lang('frontend/telemed.article_4.list_1.item_1')</li>
@@ -101,7 +101,7 @@
 
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container "><!----> <!---->
-            <div ><h3 style="font-size: 2.60em; margin-top: 0px;" class="text-center">@lang('frontend/telemed.article_5.title')</h3>
+            <div ><h4  class="title-telemed" style=" margin-top: 0px;" class="text-center">@lang('frontend/telemed.article_5.title')</h4>
                 <p >@lang('frontend/telemed.article_5.texts.text_1')</p>
                 <p class="text-left">@lang('frontend/telemed.article_5.texts.text_2')</p>
                 <p >@lang('frontend/telemed.article_5.texts.text_3')</p>
@@ -118,7 +118,7 @@
 
     <section class="section-lg bg-default-liac">
         <div class="container text-center">
-            <div ><h3 style="font-size: 2.60em; margin-top: 0px";>@lang('frontend/telemed.article_6.title')</h3>
+            <div ><h4  class="title-telemed" style=" margin-top: 0px";>@lang('frontend/telemed.article_6.title')</h4>
                 <p>@lang('frontend/telemed.article_6.texts.text_1')</p>
                 <ul class="list-marked" style="text-align: left;">
                     <li>@lang('frontend/telemed.article_6.list.item_1')</li>

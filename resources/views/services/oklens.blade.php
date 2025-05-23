@@ -312,11 +312,11 @@
         <div class="content section-title"><h3>@lang('frontend/oklens.contact_with_specialist_down_lens.title')</h3> <!---->
             <!----></div>
     </section>
-    <section class="section-full-width section-flat-width section-flat-height"
+    <section class="section-full-width section-flat-width section-flat-height padding--phone padding--video"
              style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
-        <div class="content"><!----> <!---->
-            <div class="slot">
-                <iframe width="100%" height="600px" frameborder="0"
+        <div class="content "><!----> <!---->
+            <div class="slot " style="display: flex; justify-content: center" >
+                <iframe  class="height--phone width-video" width="100%" height="600px" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/c_Br0XtxKVI"></iframe>
             </div>
@@ -327,19 +327,16 @@
             <div class="slot"><a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/oklens.contact_us.link')</a></div>
         </div>
     </section>
-    <section class="section-map section-full-width section-flat-width section-flat-height"
+    <section class="section-map section-full-width section-flat-width section-flat-height "
              style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
         <div class="content"><!----> <!---->
             <div class="slot">
-                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen="allowfullscreen" width="100%" height="400px" frameborder="0"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.2756506946719!2d36.245743173268586!3d50.00921300450467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dbc8603d19%3A0x344aa3d3b44d1308!2z0YPQuy4g0JzQsNGP0LrQvtCy0YHQutC-0LPQviwgMjQsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1577399748711!5m2!1sru!2sua"></iframe>
             </div>
         </div>
     </section>
-
-
-
 </div>
 
 

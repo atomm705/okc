@@ -158,7 +158,7 @@
                 <div id="video_youtube"></div>
                 <script>
                     if(screen.width > '767'){
-                        document.getElementById("video_youtube").innerHTML = '<iframe  width="100%" height="640" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                        document.getElementById("video_youtube").innerHTML = '<iframe class="height--phone" width="100%" height="640" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                     }
                     if(screen.width < '768'){
                         document.getElementById("video_youtube").innerHTML = '<iframe class="height--tablet" width="100%" height="300" src="https://www.youtube.com/embed/B4oZ2SRP4h8?si=4jnKAQDAdcUtqfE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';

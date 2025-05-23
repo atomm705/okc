@@ -1892,4 +1892,18 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
     align-items: center;
 }
 
+@media (min-width: 1200px) {
+    .width-video{
+        width: 1200px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .padding--video{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 

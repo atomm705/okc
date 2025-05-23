@@ -476,7 +476,7 @@
         </div>
         </div>
 
-        <div class="section-main section-main_m-n section-main_video">
+        <div class="section-main section-main_m-n section-main_video after-video-padding">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/injection.question.title')</span>

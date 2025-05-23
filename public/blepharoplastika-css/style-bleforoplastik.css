@@ -1154,9 +1154,6 @@ html #__telerWdTriggerContent {
         padding-right: 10px;
     }
 
-    .height--phone{
-        height: 300px;
-    }
 
     .margin--10{
         margin-top: 10px;
@@ -1187,7 +1184,6 @@ html #__telerWdTriggerContent {
 }
 
 @media (min-width: 1200px){
-
     .resize > img {
         width: 506px!important;
     }
@@ -1197,6 +1193,49 @@ html #__telerWdTriggerContent {
         height: 506px;
     }
 
+}
+
+@media (max-width: 1020px){
+    .resize > img {
+        width:416px!important;
+    }
+
+    .height-after{
+        width: 416px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .height--phone{
+        height: 300px;
+    }
+
+    .height-after{
+        width: 480px;
+        height: auto;
+    }
+
+    .resize > img {
+        width: 480px!important;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .height-after{
+        width: 400px;
+        height: auto;
+    }
+
+    .resize > img {
+        width: 400px!important;
+    }
+
+    .before-foter-position2{
+        padding-top: 140px;
+    }
 }
 
 .container-more-results{

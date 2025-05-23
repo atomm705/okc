@@ -30600,8 +30600,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     .service-select-mobil{
         width: 100%;
     }
-
-
 }
 
 @media (max-width: 990px) {
@@ -30626,10 +30624,7 @@ html.ie-11 .fc-event .fc-event-wrap {
     .width-auto{
         width: auto!important;
     }
-
-
 }
-
 
 @media (min-width: 990px) {
     .slide-tablet{
@@ -30649,6 +30644,26 @@ html.ie-11 .fc-event .fc-event-wrap {
    }
 }
 
+@media (min-width: 1200px) {
+    .title-telemed{
+        font-size: 2.20em;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .title-telemed{
+        font-size: 1.3em;
+    }
+
+}
+
+
+@media (max-width: 440px) {
+    .height--phone {
+        height: 300px;
+    }
+}
 /* стилі нижче для відоброаження профиля доктора для великих планшетів (тут вони відображаються як на комп`ютерах)
 /*@media (min-width: 992px) and (max-width: 1199px) {
     .custom-position-photo{
@@ -30666,8 +30681,3 @@ html.ie-11 .fc-event .fc-event-wrap {
         font-size: 2.3rem;
     }
 }*/
-
-
-
-
-

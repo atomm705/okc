@@ -885,12 +885,12 @@
         </div>
 
 
-        <div class="banner-section banner-section_bottom" id="banner-section-4">
+        <div class="banner-section banner-section_bottom" id="banner-section-4" style="margin-top: 1px;">
             <div class="banner-section-bg">
                 <img src="/images/banner-section-4.jpg" alt="bg"/>
             </div>
 
-            <div class="page-content before-foter-position">
+            <div class="page-content before-foter-position2 ">
                 <div class="banner-section-title">
                     <span>@lang('frontend/lumeca.consultation.title')</span>
                 </div>

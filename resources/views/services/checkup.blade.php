@@ -986,7 +986,7 @@
             </div>
         </div>
 
-        <div class="section-main section-main_m-n section-main_video padding--phone after-video-padding">
+        <div class="section-main section-main_m-n section-main_video padding--phone after-video-padding" style="padding-bottom: 60px">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/checkUp.reviews.video')</span>
@@ -995,7 +995,7 @@
             </div>
         </div>
 
-        <div class="section-main">
+        <!--<div class="section-main">
             <div class="page-content" style="display: none">
                 <div class="title-section">
                     <span>Відгуки клієнтів</span>
@@ -1127,7 +1127,7 @@
                 </div>
 
             </div>
-        </div>
+        </div>-->
 
 
 
