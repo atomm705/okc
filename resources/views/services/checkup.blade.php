@@ -897,7 +897,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <!--<div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
                                     <div class="specialist-card-box specialist-card-box-position">
                                         <div class="specialist-name">
@@ -920,7 +920,7 @@
                                     </div>
                                 </div>
 
-                                <div class="wr-slider-specialis__inner">
+                               <div class="wr-slider-specialis__inner">
                                     <div class="slider-specialist swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
@@ -939,7 +939,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                         </div>
                     </div>
