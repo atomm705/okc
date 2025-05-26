@@ -30257,7 +30257,12 @@ html.ie-11 .fc-event .fc-event-wrap {
 .services-item > p > iframe{
     width: 100%;
     height: 500px;
+}
 
+@media (max-width: 440px){
+    .services-item > p > iframe{
+        height: 300px;
+    }
 }
 
 .services-item > h3{
@@ -30320,6 +30325,13 @@ html.ie-11 .fc-event .fc-event-wrap {
     height: 500px;
 }
 
+@media (max-width: 440px){
+    .price-item > div > iframe {
+        height: 300px;
+    }
+
+}
+
 .price-item > div {
     position: relative;
 }
@@ -30349,6 +30361,12 @@ html.ie-11 .fc-event .fc-event-wrap {
     text-align: center;
     font-size: 2.625rem;
     color: #fff;
+}
+
+@media (max-width: 440px){
+    .price-item > div  > .content > .title{
+        font-size: 1.3rem;
+    }
 }
 
 .price-item > div  > .content > .description{
@@ -30560,6 +30578,12 @@ html.ie-11 .fc-event .fc-event-wrap {
 .price-item > p > iframe {
     width: 100%;
     height: 500px;
+}
+
+@media  (max-width: 440px) {
+    .price-item > p > iframe {
+        height: 300px;
+    }
 }
 
 @media (min-width: 1200px) {
