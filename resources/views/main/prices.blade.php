@@ -40,47 +40,45 @@
                     </div>
                 </div>
                 <div class="col-lg-9 offset-lg-top-0 offset-top-34">
-                    <div class="row text-md-start isotope isotope-style-1" data-isotope-layout="fitRows" data-column-class=".col-1" data-lightgallery="group" data-lg-animation="lg-slide-circular" data-isotope-group="gallery">
-                        <div class="col-1 isotope-item isotope-sizer"></div>
-
+                    <h3 class="text-md-start">{{ $category_active->name }}</h3>
+                    <div class="offset-sm-top-60 text-start">
                         @if(isset($category_active->slug))
-                        <div class="col-lg-12 isotope-item">
-                            <h3>{{ $category_active->name }}</h3>
-                                <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
-                                    <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
-                                        @foreach($category_active->category->groups as $group)
-                                            @if(isset($group->translation->name))<li  class="acordion-title">{{ $group->translation->name }}</li>@endif
-                                        @endforeach
-                                    </ul>
-                                    <div class="resp-tabs-container tabs-group-default" data-group="tabs-group-default">
-                                        @foreach($category_active->category->groups as $group)
-                                            @if(isset($group->translation->name) && $group->services)
+                        <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
+                            <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
+                                @foreach($category_active->category->groups as $group)
+                                    @if(isset($group->translation->name))
+                                        <li>{{ $group->translation->name }}</li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                            <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
+                                @foreach($category_active->category->groups as $group)
+                                    @if(isset($group->translation->name) && $group->services)
                                         <div>
                                             <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
                                                 <thead>
-                                                    <th>@lang('global.service')</th>
-                                                    <th>{{ __('global.price') }}</th>
-                                                    <th>{{ __('global.time_m') }}</th>
-                                                    <th>{{ __('global.description') }}</th>
+                                                <th>@lang('global.service')</th>
+                                                <th>{{ __('global.price') }}</th>
+                                                <th>{{ __('global.time_m') }}</th>
+                                                <th>{{ __('global.description') }}</th>
                                                 </thead>
                                                 <tbody>
-                                                    @foreach($group->services as $service)
-                                                        @if(isset($service->translations()->name))
-                                                            <tr>
+                                                @foreach($group->services as $service)
+                                                    @if(isset($service->translations()->name))
+                                                        <tr>
                                                             <td>{{ $service->translations()->name }}</td>
                                                             <td>{{ $service->price }}</td>
                                                             <td>{{ $service->time }}</td>
                                                             <td>{!! $service->translations()->note !!}</td>
                                                         </tr>
-                                                        @endif
-                                                    @endforeach
+                                                    @endif
+                                                @endforeach
                                                 </tbody>
                                             </table>
                                         </div>
-                                            @endif
-                                        @endforeach
-                                    </div>
-                                </div>
+                                    @endif
+                                @endforeach
+                            </div>
                         </div>
                         @endif
                     </div>
