@@ -26,6 +26,7 @@
     <script src="{{ asset('admin/js/helpers.js') }}"></script>
     <script src="{{ asset('admin/js/template-customizer.js') }}"></script>
     <script src="{{ asset('admin/js/config.js') }}"></script>
+    <script src="{{ asset('admin/ckeditor/ckeditor.js') }}"></script>
 
 </head>
 

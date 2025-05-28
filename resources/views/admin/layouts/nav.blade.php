@@ -24,6 +24,9 @@
             </a>
         </li>
         <li class="menu-item">
+            <a href="{{ route('admin.prices') }}" class="menu-link">Ціни</a>
+        </li>
+        <li class="menu-item">
             <a href="{{ route('admin.divisions') }}" class="menu-link">Відділення</a>
         </li>
         <li class="menu-item">

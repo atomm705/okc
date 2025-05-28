@@ -32,4 +32,8 @@ class Service extends Model
     {
         return $query->where('is_visible', 1);
     }
+
+    public function translation($lang = 'uk'){
+        return $this->hasOne(ServiceTranslation::class, 'service_id', 'service_id')->where('locale', $lang)->first();
+    }
 }

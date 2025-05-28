@@ -26,6 +26,5 @@
 <script src="{{ asset('admin/js/nouislider.js') }}"></script>
 <script src="{{ asset('admin/js/select2.js') }}"></script>
 <script src="{{ asset('admin/js/ui-popover.js') }}"></script>
-<!--<script src="{{ asset('admin/js/forms-sliders.js') }}"></script>-->
 <script src="/admin/vendor/datatables/datatables.min.js" type="text/javascript"></script>
 

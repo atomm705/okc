@@ -21,10 +21,13 @@ Route::middleware(SetLocale::class)->group(function () {
 
         Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
         Route::get('/departments', [PageController::class, 'departments'])->name('main.departments');
+
         //Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
+
         //Route::get('/schedule/{department?}', function ($department = null) {
         //      return view('main.timetable', compact('department'));
         // })->name('main.timetable');
+
         Route::get('/schedule/{department?}', [PageController::class, 'timetable'])->name('main.timetable');
 
         Route::get('/blog', [PageController::class, 'blog'])->name('main.blog');
@@ -41,10 +44,11 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/esteticheskaya-meditsina/lazernoe-omolozhenie', [ServicePagesController::class, 'lazernoeomolozhenie'])->name('services.lazernoe-omolozhenie');
         Route::get('/esteticheskaya-meditsina/co2', [ServicePagesController::class, 'co2'])->name('services.co2');
         Route::get('/diagnostika/checkup', [ServicePagesController::class, 'checkup'])->name('services.checkup');
-        Route::get('/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
-        Route::get('/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
+        Route::get('/oftalmologiya/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
+        Route::get('/oftalmologiya/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
         Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
         Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
+
 
         Route::get('/doctors', [DoctorController::class, 'index'])->name('main.team');
 
@@ -59,11 +63,6 @@ Route::middleware(SetLocale::class)->group(function () {
     })->where('locale', 'en|uk|ru');
 });
 
-// Тут я прописую маршрути які доступні тільки для адміністратора
-Route::middleware(['auth', \App\Http\Middleware\IsAdmin::class])->group(function () {
-    Route::get('/admin-pannel/user-management', [AdminController::class, 'user'])->name('admin.user-management'); //сторінка користувачів
-});
-
 
 // Тут прописані маршрути тільки для зареєстрованих користувачів(включно адміністратора)
 Route::middleware(['auth'])->group(function () {
@@ -71,10 +70,23 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 
         Route::get('/doctors', [DoctorController::class, 'doctors'])->name('admin.doctors');
+        Route::get('/doctors/{id}', [DoctorController::class, 'doctors'])->name('admin.doctors.list');
+        Route::get('/doctor_department/create', [DoctorController::class, 'department_create'])->name('admin.doctor_department.create');
+        Route::get('/doctor_department/{id}/edit', [DoctorController::class, 'department_edit'])->name('admin.doctor_department.edit');
+        Route::get('/doctor/{department_id}/create', [DoctorController::class, 'create'])->name('admin.doctor.create');
+        Route::post('/doctor/{department_id}/store', [DoctorController::class, 'store'])->name('admin.doctor.store');
+        Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('admin.doctor.edit');
+        Route::post('/doctor/{id}/update', [DoctorController::class, 'update'])->name('admin.doctor.update');
 
-        Route::get('/groups', [ServiceController::class, 'groups'])->name('admin.groups');
+        Route::get('/groups', [ServicesController::class, 'groups'])->name('admin.groups');
 
-        Route::get('/services', [ServiceController::class, 'services'])->name('admin.services');
+        Route::get('/services', [ServicesController::class, 'services'])->name('admin.services');
+
+        Route::get('/prices', [ServicesControler::class, 'prices'])->name('admin.prices');
+        Route::get('/prices/{slug}', [ServicesControler::class, 'prices'])->name('admin.prices.list');
+        Route::get('/prices/create', [ServicesControler::class, 'create'])->name('admin.prices.create');
+        Route::get('/prices/{slug}/edit', [ServicesControler::class, 'edit'])->name('admin.prices.edit');
+        Route::post('/prices/{slug}/update', [ServicesControler::class, 'update'])->name('admin.prices.update');
 
         Route::get('/division', [DivisionController::class, 'index'])->name('admin.divisions');
         Route::get('/division/create', [DivisionController::class, 'create'])->name('admin.divisions.create');

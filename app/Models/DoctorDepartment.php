@@ -26,6 +26,10 @@ class DoctorDepartment extends Model
         return $this->hasMany(DoctorDepartmentTranslation::class, 'department_id', 'department_id')->where('locale', app()->getLocale())->first();
     }
 
+    public function translation($lang = 'uk'){
+        return $this->hasOne(DoctorDepartmentTranslation::class, 'department_id', 'department_id')->where('locale', $lang)->first();
+    }
+
     public function doctors()
     {
         return $this->belongsToMany(Doctor::class, 'doctors_doctors_departments', 'department_id', 'doctor_id')->where('doctors_doctors_departments.is_visible', 1)
@@ -34,5 +38,13 @@ class DoctorDepartment extends Model
             ->with(['translation' => function ($query) {
                 $query->where('locale', app()->getLocale());
             }]);
+    }
+
+    public function langs(){
+        return $this->hasMany(DoctorDepartmentTranslation::class, 'department_id', 'department_id');
+    }
+
+    public function admin_doctors(){
+        return $this->hasMany(DoctorDoctorDepartment::class, 'department_id', 'department_id');
     }
 }
