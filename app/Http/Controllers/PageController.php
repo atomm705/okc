@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogArticleTranslation;
 use App\Models\DoctorDepartmentTranslation;
 use App\Models\DoctorTranslation;
 use App\Models\Image;
@@ -36,10 +37,82 @@ class PageController extends Controller
         return view('main.contacts');
     }
 
-    public function blog(){
+    public function blog()
+    {
+        $articles = \App\Models\BlogArticle::query()
+            ->where('is_visible', true)
+            ->whereHas('translation', fn($q) => $q->where('locale', app()->getLocale()))
+            ->with([
+                'translation' => fn($q) => $q->where('locale', app()->getLocale()),
+                'translation.image',
+                'translation.authorImage',
+                'categories.translation' => fn($q) => $q->where('locale', app()->getLocale()),
+                'translation.tags',
+            ])
+            ->latest()
+            ->paginate(10);
 
-        return view('main.blog');
+        return view('main.blog', compact('articles'));
     }
+
+    public function blog_show($slug)
+    {
+
+        $translation = BlogArticleTranslation::where('slug', $slug)
+            ->where('locale', app()->getLocale())
+            ->firstOrFail();
+        $article = $translation->article;
+
+        return view('main.show', compact('article', 'translation'));
+
+    }
+
+    public function blog_category($slug)
+    {
+        $locale = app()->getLocale();
+
+        $categoryTranslation = \App\Models\BlogCategoryTranslation::where('slug', $slug)
+            ->where('locale', $locale)
+            ->firstOrFail();
+
+        $category = $categoryTranslation->category;
+
+        $articles = $category->articles()
+            ->where('is_visible', true)
+            ->whereHas('translation', fn($q) => $q->where('locale', $locale))
+            ->with([
+                'translation' => fn($q) => $q->where('locale', $locale),
+                'translation.image',
+                'translation.authorImage',
+                'translation.tags',
+            ])
+            ->latest()
+            ->paginate(10);
+
+        return view('main.blog', compact('articles', 'categoryTranslation'));
+    }
+
+    public function blog_tag($slug)
+    {
+        $tag = \App\Models\BlogTag::where('slug', $slug)->firstOrFail();
+
+        $articles = $tag->articles()
+            ->where('is_visible', true)
+            ->whereHas('translation', fn($q) => $q->where('locale', app()->getLocale()))
+            ->with([
+                'translation' => fn($q) => $q->where('locale', app()->getLocale()),
+                'translation.image',
+                'translation.authorImage',
+                'categories.translation' => fn($q) => $q->where('locale', app()->getLocale()),
+                'translation.tags',
+            ])
+            ->latest()
+            ->paginate(10);
+
+        return view('main.blog', compact('articles', 'tag'));
+    }
+
+
 
 
     public function timetable($departmentSlug = null)

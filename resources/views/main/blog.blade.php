@@ -1,149 +1,106 @@
 <x-app-layout>
+
     <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">@lang('global.pages.blog')</h2>
+            <h2 class="breadcrumbs-custom-title">
+               <!--  $categoryTranslation->name ?? __('global.pages.blog') розкоментувати та обвернути в фігурні душки якщо треба щоб був здоровий заголовок категорії-->
+                   @lang('global.pages.blog')
+            </h2>
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.blog') }}">@lang('global.pages.blog')</a></li>
-
+                @isset($categoryTranslation)
+                    <li><a href="{{ route('blog.category', $categoryTranslation->slug) }}">{{ $categoryTranslation->name }}</a></li>
+                @endisset
             </ul>
         </div>
     </section>
+
+
     <section class="section-98 section-sm-110">
 
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-lg-10 col-xl-8">
-                    <div class="post-modern-timeline-date text-md-start">
-                        <div class="d-inline-block text-center">
-                            <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
-                        </div>
-                    </div>
-                    <article class="post post-modern post-modern-timeline post-modern-timeline-left">
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="400" src=" {{ asset('images/post-04-570x370.jpg') }}" alt=""/></a>
-                        </div>
-                        <section class="post-content text-start">
 
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps</a></h5>
-                            </div>
-                            <div class="offset-top-4">
-                                <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">News</a>
-                            </div>
-                            <div class="post-body offset-top-14">
-                                <p>Etiam et imperdiet quam. In sit amet finibus lorem, ac ultricies enim. Aliquam volutpat enim diam, vitae. Phasellus non luctus justo, eu fringilla tortor.</p>
-                            </div>
-                            <div class="post-author">
-                                <div class="post-author-img"><img class="rounded-circle" width="90" height="90" src="{{ asset('images/user-amanda-wells-90x90.jpg ') }}" alt="Dr. Martha Schmidt"/></div>
-                                <div class="post-author-name text-middle">Dr. Martha Schmidt
-                                </div>
-                            </div>
-                            <div class="post-modern-classic-meta tags group group-sm offset-top-20"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">News</a><a class="btn-tag btn btn-default" href="#">ECG</a>
-                            </div>
-                        </section>
-                    </article>
-                    <div class="post-modern-timeline-date text-md-start">
-                        <div class="d-inline-block text-center">
-                            <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
-                        </div>
-                    </div>
+                        @foreach ($articles as $article)
+                        @php
+                            $translation = $article->translation;
+                            $image = $translation->image?->url ?? '/images/default.webp';
+                            $authorImage = $translation->authorImage?->url ?? '/images/no-photo-2-sq.webp';
+                        @endphp
 
-                    <article class="post post-modern post-modern-timeline post-modern-timeline-left">
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="380" src=" {{ asset('images/post-05-570x370.jpg') }}" alt=""/></a>
-                        </div>
-                        <section class="post-content text-start">
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
+                        <article class="post post-modern post-modern-timeline post-modern-timeline-left">
+                            <div class="post-media">
+                                <a href="{{ route('main.show', $translation->slug) }}">
+                                    <img src="{{ $image }}" width="570" height="400" alt="{{ $translation->name }}">
+                                </a>
                             </div>
-                            <div class="offset-top-4">
-                                <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">News</a>
-                            </div>
-                            <div class="post-body offset-top-14">
-                                <p>Phasellus et lacus mattis, tincidunt metus sodales, tincidunt urna. Cras felis neque, iaculis vitae varius eu, luctus consectetur odio.</p>
-                            </div>
-                            <div class="post-author">
-                                <div class="post-author-img"><img class="rounded-circle" width="90" height="90" src="{{ asset('images/user-jeffrey-welch-90x90.jpg ') }}" alt="Dr. Eric Snyder"/></div>
-                                <div class="post-author-name text-middle">Dr. Eric Snyder
-                                </div>
-                            </div>
-                            <div class="post-modern-classic-meta tags group group-sm offset-top-20"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">News</a><a class="btn-tag btn btn-default" href="#">Diagnostics</a>
-                            </div>
-                        </section>
-                    </article>
-                    <div class="post-modern-timeline-date text-md-start">
-                        <div class="d-inline-block text-center">
-                            <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
-                        </div>
-                    </div>
-                    <article class="post post-modern post-modern-timeline post-modern-timeline-left">
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="370" src="{{ asset('images/post-06-570x370.jpg ') }}" alt=""/></a>
-                        </div>
 
-                        <section class="post-content text-start">
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Picking the Right Diagnostic Services</a></h5>
-                            </div>
-                            <div class="offset-top-4">
-                                <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">Science</a>
-                            </div>
-                            <div class="post-body offset-top-14">
-                                <p>Phasellus et lacus mattis, tincidunt metus sodales, tincidunt urna. Cras felis neque, iaculis vitae varius eu, luctus consectetur odio.</p>
-                            </div>
-                            <div class="post-author">
-                                <div class="post-author-img"><img class="rounded-circle" width="90" height="90" src="{{ asset('images/user-amanda-wells-90x90.jpg  ') }}" alt="Dr. Martha Schmidt"/></div>
-                                <div class="post-author-name text-middle">Dr. Martha Schmidt
+                            <section class="post-content text-start">
+                                <div class="post-title offset-top-8">
+                                    <h5><a href="{{ route('main.show', $translation->slug) }}">{{ $translation->name }}</a></h5>
                                 </div>
-                            </div>
-                            <div class="post-modern-classic-meta tags group group-sm offset-top-20"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">News</a><a class="btn-tag btn btn-default" href="#">Tips</a>
-                            </div>
-                        </section>
-                    </article>
-                    <div class="post-modern-timeline-date text-md-start">
-                        <div class="d-inline-block text-center">
-                            <time class="text-regular" datetime="2023-01-01">June 21, 2023 <br class="d-none d-lg-inline-block"> at 8:12pm</time>
-                        </div>
-                    </div>
-                    <article class="post post-modern post-modern-timeline post-modern-timeline-left post-modern-timeline-left-last">
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive" width="570" height="370" src="{{ asset('images/post-07-570x370.jpg ') }}" alt=""/></a>
-                        </div>
 
-                        <section class="post-content text-start">
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">The Purpose and Procedure of X-ray Imaging</a></h5>
-                            </div>
-                            <div class="offset-top-4">
-                                <div class="divider divider-vertical hr-sm-left-0 d-inline-block"></div><a class="text-primary d-inline-block" href="single-post.html">Food</a>
-                            </div>
-                            <div class="post-body offset-top-14">
-                                <p>Cras tempor eu enim id pulvinar. Proin at imperdiet felis, vel vehicula neque. Nulla quis nisl facilisis ex dignissim euismod eu vel neque.</p>
-                            </div>
-                            <div class="post-author">
-                                <div class="post-author-img"><img class="rounded-circle" width="90" height="90" src="{{ asset('images/user-jeffrey-welch-90x90.jpg ') }}" alt="Dr. Eric Snyder"/></div>
-                                <div class="post-author-name text-middle">Dr. Eric Snyder
+                                <div class="offset-top-4">
+                                    <div class="divider divider-vertical d-inline-block"></div>
+                                    @foreach ($article->categories as $category)
+                                        <a href="{{ route('blog.category', $category->translation->slug) }}" class="text-primary">{{ $category->translation->name }}</a>
+                                    @endforeach
                                 </div>
-                            </div>
-                            <div class="post-modern-classic-meta tags group group-sm offset-top-20"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">News</a><a class="btn-tag btn btn-default" href="#">X-ray</a>
-                            </div>
-                        </section>
-                    </article>
-                    <div class="row offset-top-50 offset-lg-top-0">
-                        <div class="col-xl-10 offset-xl-2 text-xl-start">
-                            <div class="inset-xl-left-10">
-                                <nav>
-                                    <ul class="pagination-classic">
-                                        <li class="active"><span class="btn btn-darkest">1</span>
-                                        </li>
-                                        <li><a class="btn btn-darkest" href="#">2</a>
-                                        </li>
-                                        <li><a class="btn btn-darkest" href="#">3</a>
-                                        </li>
-                                        <li><a class="btn btn-darkest" href="#">4</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
+
+                                <div class="post-body offset-top-14">
+                                    <p>{{ Str::limit(strip_tags($translation->text), 150) }}</p>
+                                </div>
+
+                                <div class="post-author">
+                                    <div class="post-author-img">
+                                        <img class="rounded-circle" width="90" height="90" src="{{ $authorImage }}" alt="{{ $translation->author_name }}">
+                                    </div>
+                                    <div class="post-author-name">{{ $translation->author_name }}</div>
+                                </div>
+                                <div class="post-modern-classic-meta tags group group-sm offset-top-20">
+                                    @foreach ($article->translation->tags as $tag)
+                                        <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">
+                                            {{ $tag->name ?? $tag->slug }}
+                                        </a>
+                                    @endforeach
+                                </div>
+
+                            </section>
+                        </article>
+                @endforeach
+
+                            @if ($articles->hasPages())
+                                <div class="row offset-top-50 offset-lg-top-0">
+                                    <div class="col-xl-10 offset-xl-2 text-xl-start">
+                                        <div class="inset-xl-left-10">
+                                            <nav>
+                                                <ul class="pagination-classic">
+                                                    @if ($articles->onFirstPage())
+                                                        <li class="disabled"><span class="btn btn-darkest">&laquo;</span></li>
+                                                    @else
+                                                        <li><a class="btn btn-darkest" href="{{ $articles->previousPageUrl() }}" rel="prev">&laquo;</a></li>
+                                                    @endif
+                                                    @foreach ($articles->links()->elements[0] as $page => $url)
+                                                        @if ($page == $articles->currentPage())
+                                                            <li class="active"><span class="btn btn-darkest">{{ $page }}</span></li>
+                                                        @else
+                                                            <li><a class="btn btn-darkest" href="{{ $url }}">{{ $page }}</a></li>
+                                                        @endif
+                                                    @endforeach
+                                                    @if ($articles->hasMorePages())
+                                                        <li><a class="btn btn-darkest" href="{{ $articles->nextPageUrl() }}" rel="next">&raquo;</a></li>
+                                                    @else
+                                                        <li class="disabled"><span class="btn btn-darkest">&raquo;</span></li>
+                                                    @endif
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-4 offset-top-66 offset-md-top-90 offset-lg-top-0">
                     <div class="blog-grid-sidebar inset-xxl-left-30">
