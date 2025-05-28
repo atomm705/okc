@@ -83,7 +83,7 @@
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.testimonials') }}">{{ __('header.menu.testimonials') }}</a></li>
 
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="">{{ __('header.menu.price') }}</a>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.prices') }}">{{ __('header.menu.price') }}</a>
 
 
                                 <li class="rd-nav-item"><a class="rd-nav-link"  href="{{ route('main.contacts') }}">{{ __('header.menu.contacts') }}</a>
