@@ -10,7 +10,7 @@
                                     <div class="inset-xl-right-80 text-lg-start ">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_1.title') }} <br class="d-block">
                                         </h2>
-                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="main.appointment {{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
+                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
 
                                     </div>
                                 </div>
@@ -28,7 +28,7 @@
                                     <div class="text-lg-start">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_2.title') }}
                                         </h2>
-                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">{{ __('frontend/index.slider.slide_2.link') }}</a>
+                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_2.link') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                                 <div class="col-lg-7 section-slider-custom">
                                     <div class="text-lg-start">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_3.title') }}</h2>
-                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="make-an-appointment.html">{{ __('frontend/index.slider.slide_3.link') }}</a>
+                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_3.link') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -66,12 +66,15 @@
                             <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.time_to_work.title')</h6>
                             <hr>
                             <div class="row offset-top-24 justify-content-sm-between text-gray-light">
-                                <div class="col-sm-4"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span></div>
-                                <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div>
+                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 17px; color: #fff;"><strong>Клініка</strong></span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 60px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
+                               <!-- <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div
                                 <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</div>
-                                <div class="col-sm-7 offset-top-10 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</div>
-                                <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.appointment.title')</div>
-                                <div class="offset-top-5 text-gray-light offset-top-30 offset-xs-top-10"> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span style="margin-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
+                                <div class="col-sm-7 offset-top-10 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</div>>
+                                <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.appointment.title')</div>-->
+                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 17px; color: #fff;"><strong>Запис</strong></span></div>
+                                <div class="offset-top-5 text-gray-light  "> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span style="padding-left: 10px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
 
                                 <div class="offset-top-8 text-gray-light">
                                     <p>@lang('frontend/index.blocks.time_to_work.body.shedule_time.body')</p>
@@ -161,7 +164,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-5">
                         <h2><br class="d-none d-xl-inline-block">@lang('frontend/index.laser_correction.title')</h2>
                         <p class="offset-top-30 text-white">@lang('frontend/index.laser_correction.description')</p>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('frontend/index.laser_correction.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="/uk/oftalmologiya/lazerna-korektsiya-zoru">@lang('frontend/index.laser_correction.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -201,7 +204,7 @@
                             <p>@lang('frontend/index.surgery.description')</p>
 
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="#">@lang('frontend/index.surgery.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/ambulatorna-khirurgiya">@lang('frontend/index.surgery.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -267,7 +270,7 @@
                                     </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Betty Wade</cite>
+                                            <cite class="text-normal">Владимир</cite>
                                         </h5>
 
                                     </div>
@@ -289,7 +292,7 @@
                                     </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Bryan Green</cite>
+                                            <cite class="text-normal">Олена</cite>
                                         </h5>
 
                                     </div>
@@ -306,11 +309,11 @@
                                     </q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
-                                    <div class="unit-left unit-item-narrow">
+                                    <div class="unit-left unit-item-narrow"></div>
                                         <!--<img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>-->
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Bryan Green</cite>
+                                            <cite class="text-normal">Ілля</cite>
                                         </h5>
 
                                     </div>
@@ -332,7 +335,7 @@
                                     </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Betty Wade</cite>
+                                            <cite class="text-normal">Дарья</cite>
                                         </h5>
 
                                     </div>
@@ -352,7 +355,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-5">
                         <h2 style=" white-space: nowrap;"> @lang('frontend/index.cataract.title')</h2>
                         <p class="offset-top-30 text-white">@lang('frontend/index.cataract.description')</p>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="make-an-appointment.html">@lang('frontend/index.cataract.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="/uk/oftalmologiya/likuvannya-katarakti">@lang('frontend/index.cataract.link')</a></div>
                     </div>
                 </div>
             </div>

@@ -28,6 +28,10 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/schedule/{department?}', [PageController::class, 'timetable'])->name('main.timetable');
 
         Route::get('/blog', [PageController::class, 'blog'])->name('main.blog');
+        Route::get('/blog/{slug}', [PageController::class, 'blog_show'])->name('main.show');
+        Route::get('/blog/category/{slug}', [PageController::class, 'blog_category'])->name('blog.category');
+        Route::get('/blog/tag/{slug}', [PageController::class, 'blog_tag'])->name('blog.tag');
+
         Route::get('/contacts', [PageController::class, 'contacts'])->name('main.contacts');
         Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
         Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
