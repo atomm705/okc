@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation scrollTo" lang="en">
 <head>
-    <title>Team Member Profile</title>
+    <title>Single Post</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +69,7 @@
                                     </li>
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="team.html">Team</a>
                                     </li>
-                                    <li class="rd-nav-item active"><a class="rd-nav-link">Pages</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link">Pages</a>
                                         <ul class="rd-menu rd-navbar-megamenu">
                                             <li class="rd-megamenu-item">
                                                 <h6 class="rd-megamenu-title">Elements</h6>
@@ -129,7 +129,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="blog-masonry.html">Blog</a>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="blog-masonry.html">Blog</a>
                                         <ul class="rd-menu rd-navbar-dropdown">
                                             <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-masonry.html">Blog Masonry</a>
                                             </li>
@@ -139,7 +139,7 @@
                                             </li>
                                             <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-grid.html">Blog Grid</a>
                                             </li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-post.html">Single Post</a>
+                                            <li class="rd-dropdown-item active"><a class="rd-dropdown-link" href="single-post.html">Single Post</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -166,227 +166,317 @@
         </div>
     </header>
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image context-dark breadcrumbs-creative" style="background-image: url(images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/background-breadcrumbs-01-1920x345.jpg);" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
-            <h2 class="breadcrumbs-custom-title">Team Member Profile</h2>
+            <h2 class="breadcrumbs-custom-title">Single Post</h2>
             <ul class="breadcrumbs-custom-path">
                 <li><a href="index.html">Home</a></li>
-                <li><a>Pages</a></li>
-                <li class="active">Team Member Profile</li>
+                <li><a href="blog-masonry.html">Blog</a></li>
+                <li class="active">Single Post</li>
             </ul>
         </div>
     </section>
-    <!-- team member section-->
-    <section class="section-lg section bg-default">
+    <!-- Page Contents-->
+    <section class="section-lg bg-default section">
         <div class="container">
-            <div class="row justify-content-sm-center">
-                <div class="col-sm-10 col-lg-4">
-                    <!-- Member block type 5-->
-                    <div class="member-block-type-5 inset-lg-right-20"><img class="img-responsive center-block" src="images/user-scott-riley-320x320.jpg" width="320" height="320" alt=""/>
-                        <div class="member-block-body"><a class="btn-ellipse btn-primary btn" href="make-an-appointment.html">make an appointment</a>
-                            <address class="contact-info offset-top-20 offset-sm-top-24">
-                                <ul class="list-unstyled p">
-                                    <li><span class="icon icon-xxxs text-middle text-primary mdi mdi-phone"></span><a class="text-middle d-inline-block text-gray-darker" href="tel:1-800-1234-567">1-800-1234-567</a></li>
-                                    <li><span class="icon icon-xxxs text-middle text-primary mdi mdi-email-open"></span><a class="text-middle d-inline-block" href="mailto:mail@demolink.org">mail@demolink.org</a></li>
-                                </ul>
-                            </address>
-                            <div class="offset-top-24">
-                                <ul class="list-inline list-inline-xs">
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-facebook" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-twitter" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-google-plus" href="#"></a></li>
-                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa-rss" href="#"></a></li>
+            <div class="row justify-content-sm-center justify-content-xl-end">
+                <div class="col-md-10 col-lg-8">
+                    <h4 class="font-weight-bold text-primary">Picking the Right Diagnostic Services for Efficient Results</h4>
+                    <ul class="list list-inline list-inline-dashed offset-top-4">
+                        <li>July 2, 2023 at 4:10pm</li>
+                        <li>by<a class="text-primary" href="team-member.html"> Amanda Wells</a>
+                        </li>
+                        <li><a class="text-primary" href="blog-modern.html">Science</a></li>
+                    </ul>
+                    <div class="offset-top-30"><img class="img-responsive center-block" src="images/post-09-770x480.jpg" width="770" height="480" alt=""></div>
+                    <div class="offset-top-30">
+                        <p>Phasellus et lacus mattis, tincidunt metus sodales, tincidunt urna. Cras felis neque, iaculis vitae varius eu, luctus consectetur odio. However, this ideal is a dream, not reality, and a clever and profitable marketing ruse, not fact.</p>
+                        <p>Sed mollis, arcu et posuere cursus, massa neque viverra nisl, a condimentum urna justo ac neque. Phasellus id ante laoreet, viverra erat eget, luctus urna.</p>
+                        <ul class="list-marked list">
+                            <li>Phasellus rhoncus felis ut justo laoreet</li>
+                            <li>Nulla volutpat, leo nec tempor tincidunt</li>
+                            <li>Sed tristique est quis urna sodales congue</li>
+                            <li>Nullam tempus elementum lacus</li>
+                            <li>Mauris sem enim, sagittis et lobortis sit amet</li>
+                            <li>Donec maximus velit vel dui placerat fringilla</li>
+                        </ul>
+                    </div>
+                    <div class="offset-top-30"><img class="img-responsive center-block" src="images/post-11-770x480.jpg" width="770" height="480" alt=""></div>
+                    <div class="offset-top-30">
+                        <p>Nullam mollis ultrices est. Nulla in justo lacinia, scelerisque purus et, semper tortor. Donec bibendum leo vitae commodo porttitor. Proin tempus sollicitudin odio in feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vitae nisl tristique commodo. Phasellus porttitor metus at mattis ultricies. In imperdiet nec nunc in tincidunt.</p>
+                        <p>Curabitur faucibus dolor at dui lobortis, eget dictum nisi mattis. Fusce risus dui, fringilla non elit sit amet, lobortis interdum eros. Donec mattis lectus quis elit fermentum lacinia. Nullam at ligula semper ante mollis pretium. Nam euismod velit ut quam accumsan vestibulum. Etiam diam augue, dapibus ac placerat nec, accumsan eget nibh. Cras sodales, leo ut volutpat laoreet, velit enim pharetra magna, at dapibus lacus elit vel mi. Nullam a massa ac ligula scelerisque maximus. Quisque dictum quis lorem ut sodales. Duis at semper odio. Morbi in sapien vel lacus posuere mattis ac eget ante. Etiam viverra accumsan rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+                    <div class="offset-top-30 offset-md-top-66">
+                        <div class="row row-20">
+                            <div class="col-md-6">
+                                <div class="tags group group-sm"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">News</a><a class="btn-tag btn btn-default" href="#">Tips</a></div>
+                            </div>
+                            <div class="col-md-6 text-md-end">
+                                <div class="d-inline-block inset-right-20">
+                                    <p class="text-dark">Share:</p>
+                                </div>
+                                <ul class="list-inline list-inline-xs d-inline-block offset-top-14 offset-sm-top-0">
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa fa-facebook" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa fa-twitter" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa fa-google-plus" href="#"></a></li>
+                                    <li><a class="icon icon-xxs icon-circle icon-gray-light fa fa-rss" href="#"></a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="offset-top-34 text-md-start inset-lg-right-20">
-                        <h6 class="text-start">certificates</h6>
-                        <hr class="text-subline">
-                        <div class="row justify-content-sm-center justify-content-md-start offset-top-24 row-certificates" data-lightgallery="group">
-                            <div class="col-sm-8 col-md-4"><a class="thumbnail-classic" data-lightgallery="item" data-size="700x970" href="images/certifications/certificate-01-700x970.jpg">
-                                    <figure><img width="100" height="138" src="images/certifications/certificate-01-100x138.jpg" alt=""/>
-                                    </figure></a>
+                        <div class="offset-top-66">
+                            <h6>posted by</h6>
+                            <hr class="text-subline">
+                        </div>
+                        <div class="offset-top-30">
+                            <div class="unit unit-xs flex-sm-row">
+                                <div class="unit-left"><img class="rounded-circle img-responsive center-block" src="images/users-amanda-wells-170x170.jpg" width="170" height="170" alt=""></div>
+                                <div class="unit-body text-sm-start">
+                                    <div>
+                                        <h5><a href="team-member.html">Amanda Wells</a></h5>
+                                    </div>
+                                    <div class="offset-top-4 offset-sm-top-8">
+                                        <div class="text-gray font-italic">Doctor, Blogger</div>
+                                    </div>
+                                    <div class="offset-top-20 text-start">
+                                        <p>Nullam mollis ultrices est. Nulla in justo lacinia, scelerisque purus et, semper tortor. Donec bibendum leo vitae commodo porttitor. Proin tempus sollicitudin odio in feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vitae nisl tristique commodo. Phasellus porttitor metus at mattis ultricies. In imperdiet nec nunc in tincidunt.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-8 col-md-4 offset-top-20 offset-sm-top-0"><a class="thumbnail-classic" data-lightgallery="item" data-size="700x970" href="images/certifications/certificate-01-700x970.jpg">
-                                    <figure><img width="100" height="138" src="images/certifications/certificate-01-100x138.jpg" alt=""/>
-                                    </figure></a>
+                        </div>
+                        <div class="offset-top-66">
+                            <h6>recent blog posts</h6>
+                            <hr class="text-subline">
+                        </div>
+                        <div class="row offset-top-30">
+                            <div class="col-md-6">
+                                <!-- Post Modern-->
+                                <article class="post post-modern post-modern-classic">
+                                    <!-- Post media-->
+                                    <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="240" src="images/post-16-370x240.jpg" alt=""/></a>
+                                    </div>
+                                    <!-- Post content-->
+                                    <div class="post-content text-start">
+                                        <!-- Post Title-->
+                                        <div class="post-title offset-top-8">
+                                            <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
+                                        </div>
+                                        <ul class="list-inline list-inline-dashed">
+                                            <li>June 21, 2023 at 8:12pm</li>
+                                            <li><a class="text-primary" href="blog-masonry.html">News</a></li>
+                                        </ul>
+                                        <!-- Post Body-->
+                                        <div class="post-body">
+                                            <p>Etiam et imperdiet quam. In sit amet finibus lorem, ac ultricies enim. Aliquam volutpat enim diam, vitae. Phasellus non luctus justo, eu fringilla tortor.</p>
+                                        </div>
+                                        <div class="tags group group-sm"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">News</a><a class="btn-tag btn btn-default" href="#">ECG</a>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
-                            <div class="col-sm-8 col-md-4 offset-top-20 offset-sm-top-0"><a class="thumbnail-classic" data-lightgallery="item" data-size="700x970" href="images/certifications/certificate-01-700x970.jpg">
-                                    <figure><img width="100" height="138" src="images/certifications/certificate-01-100x138.jpg" alt=""/>
-                                    </figure></a>
+                            <div class="col-md-6 offset-top-50 offset-sm-top-0">
+                                <!-- Post Modern-->
+                                <article class="post post-modern post-modern-classic">
+                                    <!-- Post media-->
+                                    <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="240" src="images/post-17-370x240.jpg" alt=""/></a>
+                                    </div>
+                                    <!-- Post content-->
+                                    <div class="post-content text-start">
+                                        <!-- Post Title-->
+                                        <div class="post-title offset-top-8">
+                                            <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps</a></h5>
+                                        </div>
+                                        <ul class="list-inline list-inline-dashed">
+                                            <li>June 21, 2023 at 8:12pm</li>
+                                            <li><a class="text-primary" href="blog-masonry.html">News</a></li>
+                                        </ul>
+                                        <!-- Post Body-->
+                                        <div class="post-body">
+                                            <p>Phasellus et lacus mattis, tincidunt metus sodales, tincidunt urna. Cras felis neque, iaculis vitae varius eu, luctus consectetur odio.</p>
+                                        </div>
+                                        <div class="tags group group-sm"><a class="btn-tag btn btn-default" href="#">Health</a><a class="btn-tag btn btn-default" href="#">Road Trip</a><a class="btn-tag btn btn-default" href="#">ECG</a>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
-                            <div class="col-sm-8 col-md-4 offset-top-20"><a class="thumbnail-classic" data-lightgallery="item" data-size="700x970" href="images/certifications/certificate-01-700x970.jpg">
-                                    <figure><img width="100" height="138" src="images/certifications/certificate-01-100x138.jpg" alt=""/>
-                                    </figure></a>
+                        </div>
+                        <div class="offset-top-66">
+                            <h6>comments</h6>
+                            <hr class="text-subline">
+                        </div>
+                        <div class="offset-top-30">
+                            <!-- Box Comment-->
+                            <div class="box-comment text-start">
+                                <div class="unit flex-row unit-spacing-xs">
+                                    <div class="unit-left"><img class="rounded-circle img-responsive center-block" src="images/users/user-betty-wade-60x60.jpg" width="60" height="60" alt=""></div>
+                                    <div class="unit-body">
+                                        <div class="d-sm-inline-block"><a class="font-weight-bold text-primary" href="team-member.html">Betty Wade</a></div>
+                                        <div class="d-sm-inline-block inset-sm-left-20">
+                                            <p class="text-gray-dark">June 21, 2023 at 8:12pm</p>
+                                        </div>
+                                        <div class="offset-top-10">
+                                            <p>Curabitur faucibus dolor at dui lobortis, eget dictum nisi mattis. Fusce risus dui, fringilla non elit sit amet, lobortis interdum eros. Donec mattis lectus quis elit fermentum lacinia. Nullam at ligula semper ante mollis pretium. Nam euismod velit ut quam accumsan vestibulum. Etiam diam augue, dapibus ac placerat nec, accumsan eget nibh.</p>
+                                        </div>
+                                        <div class="offset-top-8"><a class="text-primary" href="#"><span class="icon text-middle icon icon-xxs fa fa-mail-reply text-primary inset-right-10" style="font-size: 18px;"></span><span class="text-middle">Reply</span></a></div>
+                                    </div>
+                                </div>
+                                <div class="inset-left-20 inset-md-left-70 offset-top-41">
+                                    <div class="unit flex-row unit-spacing-xs">
+                                        <div class="unit-left"><img class="rounded-circle img-responsive center-block" src="images/users/user-amanda-wells-90x90.jpg" width="60" height="60" alt=""></div>
+                                        <div class="unit-body">
+                                            <div class="d-sm-inline-block"><a class="font-weight-bold text-primary" href="team-member.html">Amanda Wells</a></div>
+                                            <div class="d-sm-inline-block inset-sm-left-20">
+                                                <p class="text-gray-dark">June 21, 2023 at 8:12pm</p>
+                                            </div>
+                                            <div class="offset-top-10">
+                                                <p>Nullam a massa ac ligula scelerisque maximus.</p>
+                                            </div>
+                                            <div class="offset-top-8"><a class="text-primary" href="#"><span class="icon text-middle icon icon-xxs fa fa-mail-reply text-primary inset-right-10" style="font-size: 18px;"></span><span class="text-middle">Reply</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-8 col-md-4 offset-top-20"><a class="thumbnail-classic" data-lightgallery="item" data-size="700x970" href="images/certifications/certificate-01-700x970.jpg">
-                                    <figure><img width="100" height="138" src="images/certifications/certificate-01-100x138.jpg" alt=""/>
-                                    </figure></a>
-                            </div>
+                        </div>
+                        <div class="offset-top-60">
+                            <h6>Send a Comment</h6>
+                            <hr class="text-subline">
+                        </div>
+                        <div class="offset-top-20">
+                            <!-- RD Mailform-->
+                            <form class="rd-mailform text-start" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                                <div class="row justify-content-sm-center">
+                                    <div class="col-md-6">
+                                        <div class="form-wrap form-wrap-label-outside">
+                                            <label class="form-label form-label-outside text-dark" for="single-post-first-name">First name</label>
+                                            <input class="form-input" id="single-post-first-name" type="text" name="first-name" data-constraints="">
+                                        </div>
+                                        <div class="form-wrap form-wrap-label-outside offset-top-20">
+                                            <label class="form-label form-label-outside text-dark" for="single-post-email">E-mail</label>
+                                            <input class="form-input" id="single-post-email" type="email" name="email" data-constraints="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 offset-top-20 offset-sm-top-0">
+                                        <div class="form-wrap form-wrap-label-outside">
+                                            <label class="form-label form-label-outside text-dark" for="single-post-last-name">Last name</label>
+                                            <input class="form-input" id="single-post-last-name" type="text" name="last-name" data-constraints="">
+                                        </div>
+                                        <div class="form-wrap form-wrap-label-outside offset-top-20">
+                                            <label class="form-label form-label-outside text-dark" for="single-post-phone">Phone</label>
+                                            <input class="form-input" id="single-post-phone" type="text" name="last-name" data-constraints="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-wrap form-wrap-label-outside offset-top-20">
+                                    <label class="form-label form-label-outside text-dark" for="single-post-message">Message</label>
+                                    <textarea class="form-input" id="single-post-message" name="message" data-constraints="" style="max-height: 150px;"></textarea>
+                                </div>
+                                <div class="offset-top-20 text-center text-md-start">
+                                    <button class="btn btn-ellipse btn-primary" type="submit">submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-lg-8 text-lg-start offset-top-60 offset-md-top-0">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div>Position</div>
-                            <h5 class="font-weight-bold">CMO, Pathologist</h5>
-                        </div>
-                        <div class="col-md-7 offset-top-41 offset-sm-top-0">
-                            <div>Education</div>
-                            <h5 class="font-weight-bold">Perelman School of Medicine at the University of Pennsylvania (1987)</h5>
-                        </div>
-                    </div>
-                    <div class="offset-top-66 text-start">
-                        <h6>the heart of medical center</h6>
-                        <hr class="text-subline">
-                        <p>Nullam non odio vitae velit volutpat vulputate tempor eu sapien. Phasellus porttitor diam in tellus semper, ut elementum arcu eleifend. Nullam in posuere orci, ac congue augue. Sed varius massa et tortor fermentum, a dapibus ligula varius. Duis nec elementum ante, non imperdiet libero. Sed nec ornare justo, quis vehicula mauris. Nam ornare dui vitae ex congue interdum. Donec luctus dignissim est at ultricies. Sed ullamcorper posuere leo vitae suscipit. Suspendisse ac sem at nulla pellentesque rutrum a vel diam. Morbi pretium interdum lorem nec faucibus.</p>
-                        <p>Aenean ac ex nunc. Phasellus tincidunt tempus enim. Sed elementum volutpat libero at pellentesque. Vestibulum interdum, dolor eget tristique dignissim, augue diam viverra ex, non malesuada ipsum mauris volutpat nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam efficitur accumsan condimentum.</p>
-                    </div>
-                    <div class="offset-top-66">
-                        <h6 class="text-start">skills</h6>
-                        <hr class="text-subline">
-                        <div class="offset-top-30">
-                            <!-- Linear progress bar-->
-                            <div class="progress-linear">
-                                <div class="progress-header">
-                                    <h6 class="text-gray-dark pull-left">Dedication</h6>
-                                    <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">50</h6>
-                                </div>
-                                <div class="progress-bar-linear-wrap progress-linear-body">
-                                    <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                <div class="col-md-10 col-lg-4 offset-top-66 offset-md-top-0">
+                    <div class="blog-grid-sidebar inset-xxl-left-30">
+                        <!-- Aside-->
+                        <aside class="text-start">
+                            <!-- Search in Blog-->
+                            <div>
+                                <h6>Search in Blog</h6>
+                                <hr class="text-subline">
+                                <div class="offset-top-14 offset-md-top-20 rd-search-blog">
+                                    <!-- RD Search Form-->
+                                    <form class="form-search rd-search" action="search-results.html" method="GET">
+                                        <div class="form-wrap">
+                                            <label class="form-label form-search-label" for="blog-classic-form-search-widget">Search</label>
+                                            <input class="form-search-input form-input #{inputClass}" id="blog-classic-form-search-widget" type="text" name="s" autocomplete="off">
+                                        </div>
+                                        <button class="form-search-submit" type="submit"><span class="fa fa-search text-primary"></span></button>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="offset-top-60">
-                                <!-- Linear progress bar-->
-                                <div class="progress-linear">
-                                    <div class="progress-header">
-                                        <h6 class="text-gray-dark pull-left">problem Solving</h6>
-                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">20</h6>
-                                    </div>
-                                    <div class="progress-bar-linear-wrap progress-linear-body">
-                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
-                                    </div>
-                                </div>
+                            <!-- Archive-->
+                            <div class="offset-top-30 offset-md-top-60">
+                                <h6>Archive</h6>
+                                <hr class="text-subline">
                             </div>
-                            <div class="offset-top-60">
-                                <!-- Linear progress bar-->
-                                <div class="progress-linear">
-                                    <div class="progress-header">
-                                        <h6 class="text-gray-dark pull-left">professionalism</h6>
-                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">87</h6>
+                            <div class="offset-top-14 offset-md-top-20">
+                                <div class="row justify-content-sm-center justify-content-xl-start">
+                                    <div class="col-sm-6 col-xl-5">
+                                        <!-- List Marked-->
+                                        <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
+                                            <li><a href="#">Jan 2023</a></li>
+                                            <li><a href="#">Mar 2023</a></li>
+                                            <li><a href="#">Apr 2023</a></li>
+                                            <li><a href="#">May 2023</a></li>
+                                        </ul>
                                     </div>
-                                    <div class="progress-bar-linear-wrap progress-linear-body">
-                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                                    <div class="col-sm-6 col-xl-5 offset-top-10 offset-xs-top-0 inset-sm-left-5">
+                                        <!-- List Marked-->
+                                        <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
+                                            <li><a href="#">Jul 2023</a></li>
+                                            <li><a href="#">Sep 2023</a></li>
+                                            <li><a href="#">Oct 2023</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="offset-top-60">
-                                <!-- Linear progress bar-->
-                                <div class="progress-linear">
-                                    <div class="progress-header">
-                                        <h6 class="text-gray-dark pull-left">Decision-making</h6>
-                                        <h6 class="text-primary offset-top-0 pull-right progress-value progress-linear-counter">37</h6>
-                                    </div>
-                                    <div class="progress-bar-linear-wrap progress-linear-body">
-                                        <div class="progress-linear-bar progress-bar-linear bg-accent"></div>
+                            <!-- Flickr @fasttravel-->
+                            <div class="offset-top-30 offset-md-top-60">
+                                <h6>gallery</h6>
+                                <hr class="text-subline">
+                            </div>
+                            <div class="offset-top-14 offset-md-top-20">
+                                <div class="row row-10 row-narrow-10 justify-content-center" data-lightgallery="group">
+                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-01_original.jpg"><img width="165" height="165" src="images/sidebar-img-01-165x165.jpg" alt=""></a></div>
+                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-02_original.jpg"><img width="165" height="165" src="images/sidebar-img-02-165x165.jpg" alt=""></a></div>
+                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-03_original.jpg"><img width="165" height="165" src="images/sidebar-img-03-165x165.jpg" alt=""></a></div>
+                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-04_original.jpg"><img width="165" height="165" src="images/sidebar-img-04-165x165.jpg" alt=""></a></div>
+                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-05_original.jpg"><img width="165" height="165" src="images/sidebar-img-05-165x165.jpg" alt=""></a></div>
+                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-06_original.jpg"><img width="165" height="165" src="images/sidebar-img-06-165x165.jpg" alt=""></a></div>
+                                </div>
+                            </div>
+                            <!-- Recent Posts-->
+                            <div class="offset-top-30 offset-md-top-60">
+                                <h6>Recent Posts</h6>
+                                <hr class="text-subline">
+                            </div>
+                            <div class="offset-top-14 offset-md-top-20">
+                                <!-- List Marked-->
+                                <ul class="list list-marked list-marked-icon text-dark inset-left-0 list-marked-gray">
+                                    <li><a class="font-weight-bold" href="single-post.html">Reasons to Visit a Breast Specialist</a><br>
+                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
+                                    </li>
+                                    <li><a class="font-weight-bold" href="single-post.html">The Purpose and Procedure of X-ray Imaging</a><br>
+                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
+                                    </li>
+                                    <li><a class="font-weight-bold" href="single-post.html">Picking the Right Diagnostic Services</a><br>
+                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
+                                    </li>
+                                    <li><a class="font-weight-bold" href="single-post.html">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a><br>
+                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="offset-top-30 offset-md-top-60 text-center text-xl-start"><a href="#"><img class="img-responsive" src="images/blog/sidebar-banner-01-336x500.jpg" width="336" height="500" alt=""/></a></div>
+                            <div class="offset-top-30 offset-md-top-60">
+                                <!-- Facebook standart widget-->
+                                <div>
+                                    <div class="fb-root fb-widget" id="fb-root">
+                                        <div class="fb-page-responsive text-center text-xl-start">
+                                            <div class="fb-page" data-href="https://www.facebook.com/TemplateMonster" data-tabs="timeline" data-height="605" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                                <div class="fb-xfbml-parse-ignore">
+                                                    <blockquote cite="https://www.facebook.com/TemplateMonster"><a href="https://www.facebook.com/TemplateMonster">TemplateMonster</a></blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </aside>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Dr. Scott Riley’s blog posts-->
-    <section class="section-lg section bg-default-liac">
-        <div class="container">
-            <h3>Scott Riley’s Blog Posts</h3>
-            <div class="row justify-content-sm-center row-40">
-                <div class="col-sm-10 col-md-8 col-lg-4">
-                    <!-- Post Modern-->
-                    <article class="post post-modern post-modern-classic">
-                        <!-- Post media-->
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-13-370x250.jpg" alt=""/></a>
-                        </div>
-                        <!-- Post content-->
-                        <div class="post-content text-start">
-                            <!-- Post Title-->
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Reasons to Visit a Breast Specialist</a></h5>
-                            </div>
-                            <ul class="list-inline list-inline-dashed">
-                                <li>June 21, 2023 at 8:12pm</li>
-                                <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
-                            </ul>
-                            <!-- Post Body-->
-                            <div class="post-body">
-                                <div class="offset-top-14">
-                                    <p>There are a lot of women that are unaware of the numerous risks associated with their health and eventually ignore the importance of visiting...</p>
-                                </div>
-                            </div>
-                            <div class="tags group group-sm">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-10 col-md-8 col-lg-4">
-                    <!-- Post Modern-->
-                    <article class="post post-modern post-modern-classic">
-                        <!-- Post media-->
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-14-370x250.jpg" alt=""/></a>
-                        </div>
-                        <!-- Post content-->
-                        <div class="post-content text-start">
-                            <!-- Post Title-->
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Picking the Right Diagnostic Services for Efficient Results</a></h5>
-                            </div>
-                            <ul class="list-inline list-inline-dashed">
-                                <li>June 21, 2023 at 8:12pm</li>
-                                <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
-                            </ul>
-                            <!-- Post Body-->
-                            <div class="post-body">
-                                <div class="offset-top-14">
-                                    <p>There have been a lot of cases in which people were not provided with accurate reports that eventually affected their medical treatment. There is always...</p>
-                                </div>
-                            </div>
-                            <div class="tags group group-sm">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-10 col-md-8 col-lg-4">
-                    <!-- Post Modern-->
-                    <article class="post post-modern post-modern-classic">
-                        <!-- Post media-->
-                        <div class="post-media"><a class="link-image" href="single-post.html"><img class="img-responsive img-cover" width="370" height="250" src="images/post-15-370x250.jpg" alt=""/></a>
-                        </div>
-                        <!-- Post content-->
-                        <div class="post-content text-start">
-                            <!-- Post Title-->
-                            <div class="post-title offset-top-8">
-                                <h5 class="font-weight-bold"><a href="single-post.html">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a></h5>
-                            </div>
-                            <ul class="list-inline list-inline-dashed">
-                                <li>June 21, 2023 at 8:12pm</li>
-                                <li><a class="text-primary text-primary" href="single-post.html">News</a></li>
-                            </ul>
-                            <!-- Post Body-->
-                            <div class="post-body">
-                                <div class="offset-top-14">
-                                    <p>An ECG stands for an "electrocardiogram," which is a test that measures and records the electrical activity of the heart. It is used by doctors to obtain...</p>
-                                </div>
-                            </div>
-                            <div class="tags group group-sm">
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div><a class="btn btn-ellipse btn-primary offset-top-41 offset-md-top-60" href="blog-masonry.html">view all blog posts</a>
         </div>
     </section>
     <!-- Page Footer-->
@@ -448,10 +538,7 @@
     </footer>
 </div>
 <div class="snackbars" id="form-output-global"></div>
-
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
-
-
 </body>
 </html>

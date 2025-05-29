@@ -21,9 +21,7 @@
                         <img src="{{ $translation->authorImage?->url ?? '/images/no-photo-2-sq.webp' }}" class="rounded-circle me-2" width="50" height="50" alt="{{ $translation->author_name }}">
                         <span class="text-muted">{{ $translation->author_name }}</span>
                     </div>
-                    @if ($translation->image)
-                        <img src="{{ $translation->image->url }}" class="img-fluid mb-4" alt="{{ $translation->name }}">
-                    @endif
+
                     <div class="article-content mb-5">
                         {!! $translation->text !!}
                     </div>

@@ -12,6 +12,14 @@
                 @isset($categoryTranslation)
                     <li><a href="{{ route('blog.category', $categoryTranslation->slug) }}">{{ $categoryTranslation->name }}</a></li>
                 @endisset
+
+                @isset($tag)
+                    <li><a href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name }}</a></li>
+                @endisset
+
+                @isset($archiveName)
+                    <li><a href="{{ route('main.blog.archive', ['date' => $date]) }}">{{ $archiveName }}</a></li>
+                @endisset
             </ul>
         </div>
     </section>
@@ -33,7 +41,9 @@
                         <article class="post post-modern post-modern-timeline post-modern-timeline-left">
                             <div class="post-media">
                                 <a href="{{ route('main.show', $translation->slug) }}">
-                                    <img src="{{ $image }}" width="570" height="400" alt="{{ $translation->name }}">
+                                    <img src="{{ url($translation->image->src ?? '/assets/images/default.jpg') }}"
+                                         width="570" height="400"
+                                         alt="{{ $translation->name }}">
                                 </a>
                             </div>
 
@@ -60,16 +70,18 @@
                                     <div class="post-author-name">{{ $translation->author_name }}</div>
                                 </div>
                                 <div class="post-modern-classic-meta tags group group-sm offset-top-20">
-                                    @foreach ($article->translation->tags as $tag)
-                                        <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">
-                                            {{ $tag->name ?? $tag->slug }}
-                                        </a>
+                                    @foreach ($article->tags as $tag)
+                                        @if ($tag && isset($tag->slug))
+                                            <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">
+                                                {{ $tag->name ?? $tag->slug }}
+                                            </a>
+                                        @endif
                                     @endforeach
                                 </div>
 
                             </section>
                         </article>
-                @endforeach
+                         @endforeach
 
                             @if ($articles->hasPages())
                                 <div class="row offset-top-50 offset-lg-top-0">
@@ -77,20 +89,31 @@
                                         <div class="inset-xl-left-10">
                                             <nav>
                                                 <ul class="pagination-classic">
+
                                                     @if ($articles->onFirstPage())
                                                         <li class="disabled"><span class="btn btn-darkest">&laquo;</span></li>
                                                     @else
-                                                        <li><a class="btn btn-darkest" href="{{ $articles->previousPageUrl() }}" rel="prev">&laquo;</a></li>
+                                                        <li>
+                                                            <a class="btn btn-darkest" href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['page' => $articles->currentPage() - 1])) }}" rel="prev">&laquo;</a>
+                                                        </li>
                                                     @endif
-                                                    @foreach ($articles->links()->elements[0] as $page => $url)
+
+
+                                                    @foreach ($articles->getUrlRange(1, $articles->lastPage()) as $page => $url)
                                                         @if ($page == $articles->currentPage())
                                                             <li class="active"><span class="btn btn-darkest">{{ $page }}</span></li>
                                                         @else
-                                                            <li><a class="btn btn-darkest" href="{{ $url }}">{{ $page }}</a></li>
+                                                            <li>
+                                                                <a class="btn btn-darkest" href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['page' => $page])) }}">{{ $page }}</a>
+                                                            </li>
                                                         @endif
                                                     @endforeach
+
+
                                                     @if ($articles->hasMorePages())
-                                                        <li><a class="btn btn-darkest" href="{{ $articles->nextPageUrl() }}" rel="next">&raquo;</a></li>
+                                                        <li>
+                                                            <a class="btn btn-darkest" href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['page' => $articles->currentPage() + 1])) }}" rel="next">&raquo;</a>
+                                                        </li>
                                                     @else
                                                         <li class="disabled"><span class="btn btn-darkest">&raquo;</span></li>
                                                     @endif
@@ -100,6 +123,7 @@
                                     </div>
                                 </div>
                             @endif
+
 
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-4 offset-top-66 offset-md-top-90 offset-lg-top-0">
@@ -126,37 +150,19 @@
                                 <div class="row justify-content-sm-center justify-content-xl-start">
                                     <div class="col-sm-6 col-xl-5">
                                         <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
-                                            <li><a href="#">Jan 2023</a></li>
-                                            <li><a href="#">Mar 2023</a></li>
-                                            <li><a href="#">Apr 2023</a></li>
-                                            <li><a href="#">May 2023</a></li>
+                                            @foreach ($archives as $archive)
+                                                <li>
+                                                    <a href="{{ route('main.blog.archive', ['date' => $archive->year_month]) }}">
+                                                        {{ $archive->month_name }} ({{ $archive->posts_count }})
+                                                    </a>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </div>
-                                    <div class="col-sm-6 col-xl-5 offset-top-10 offset-xs-top-0 inset-sm-left-5">
-                                        <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
-                                            <li><a href="#">Jul 2023</a></li>
-                                            <li><a href="#">Sep 2023</a></li>
-                                            <li><a href="#">Oct 2023</a></li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                             </div>
-                            <!-- Flickr @fasttravel-->
-                          <!--  <div class="offset-top-30 offset-md-top-60">
-                                <h6>gallery</h6>
-                                <hr class="text-subline">
-                            </div>
-                            <div class="offset-top-14 offset-md-top-20">
-                                <div class="row row-10 row-narrow-10 justify-content-center" data-lightgallery="group">
-                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-01_original.jpg"><img width="165" height="165" src="images/sidebar-img-01-165x165.jpg" alt=""></a></div>
-                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-02_original.jpg"><img width="165" height="165" src="images/sidebar-img-02-165x165.jpg" alt=""></a></div>
-                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-03_original.jpg"><img width="165" height="165" src="images/sidebar-img-03-165x165.jpg" alt=""></a></div>
-                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-04_original.jpg"><img width="165" height="165" src="images/sidebar-img-04-165x165.jpg" alt=""></a></div>
-                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-05_original.jpg"><img width="165" height="165" src="images/sidebar-img-05-165x165.jpg" alt=""></a></div>
-                                    <div class="col-6 col-md-4 col-xl-6"><a class="thumbnail-classic" data-lightgallery="item" href="images/gallery-06_original.jpg"><img width="165" height="165" src="images/sidebar-img-06-165x165.jpg" alt=""></a></div>
-                                </div>
-                            </div>-->
-                            <!-- Recent Posts-->
+
                             <div class="offset-top-30 offset-md-top-60">
                                 <h6>Recent Posts</h6>
                                 <hr class="text-subline">
@@ -164,35 +170,24 @@
                             <div class="offset-top-14 offset-md-top-20">
                                 <!-- List Marked-->
                                 <ul class="list list-marked list-marked-icon text-dark inset-left-0 list-marked-gray">
-                                    <li><a class="font-weight-bold" href="single-post.html">Reasons to Visit a Breast Specialist</a><br>
-                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
-                                    </li>
-                                    <li><a class="font-weight-bold" href="single-post.html">The Purpose and Procedure of X-ray Imaging</a><br>
-                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
-                                    </li>
-                                    <li><a class="font-weight-bold" href="single-post.html">Picking the Right Diagnostic Services</a><br>
-                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
-                                    </li>
-                                    <li><a class="font-weight-bold" href="single-post.html">Preparing for an ECG in 8 Easy Steps: Tips From Our Diagnosticians</a><br>
-                                        <time class="text-gray-dark" datetime="2023-04-30">June 21, 2023 at 8:12pm</time>
-                                    </li>
+                                    @foreach ($recentArticles as $recent)
+                                        @php
+                                            $translation = $recent->translation;
+                                            $date = \Carbon\Carbon::parse($recent->created_at);
+                                        @endphp
+                                        <li>
+                                            <a class="font-weight-bold" href="{{ route('main.show', $translation->slug) }}">
+                                                {{ $translation->name }}
+                                            </a><br>
+                                            <time class="text-gray-dark" datetime="{{ $date->toDateString() }}">
+                                               <!-- якщо потрібен ще часа то до  публикациї поста то додати \\a\\t H:i -->
+                                                {{ $date->translatedFormat('F d, Y ') }}
+                                            </time>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div>
-                            <!--<div class="offset-top-30 offset-md-top-60 text-center text-xl-start"><a href="#"><img class="img-responsive" src="images/blog/sidebar-banner-01-336x500.jpg" width="336" height="500" alt=""/></a></div>-->
-                            <!--<div class="offset-top-30 offset-md-top-60">-->
-                                <!-- Facebook standart widget-->
-                               <!-- <div>
-                                    <div class="fb-root fb-widget" id="fb-root">
-                                        <div class="fb-page-responsive text-center text-xl-start">
-                                            <div class="fb-page" data-href="https://www.facebook.com/TemplateMonster" data-tabs="timeline" data-height="605" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                                <div class="fb-xfbml-parse-ignore">
-                                                    <blockquote cite="https://www.facebook.com/TemplateMonster"><a href="https://www.facebook.com/TemplateMonster">TemplateMonster</a></blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
+
                         </aside>
                     </div>
                 </div>

@@ -10,6 +10,8 @@ class BlogArticleTranslation extends Model
 {
     protected $table = 'blog_articles_translations';
 
+
+
     public function article(): BelongsTo
     {
         return $this->belongsTo(BlogArticle::class, 'article_id');
@@ -36,4 +38,5 @@ class BlogArticleTranslation extends Model
             'tag_id'
         );
     }
+
 }

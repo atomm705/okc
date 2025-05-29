@@ -11,13 +11,25 @@ class BlogTag extends Model
 {
     protected $table = 'blog_tags';
 
-    public function articles(): BelongsToMany
+    public function translations()
     {
         return $this->belongsToMany(
-            BlogArticle::class,
+            BlogArticleTranslation::class,
             'blog_articles_tags',
             'tag_id',
-            'article_id'
+            'translation_id',
+            'tag_id',
+            'translation_id'
         );
     }
+
+   // public function articles(): BelongsToMany
+  //  {
+   //     return $this->belongsToMany(
+   //         BlogArticle::class,
+   //         'blog_articles_tags',
+    //      'tag_id',
+    //        'article_id'
+   //    );
+  //  }
 }

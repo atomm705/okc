@@ -37,9 +37,9 @@ class BlogArticle extends Model
         );
     }
 
-    public function tags()
+    public function getTagsAttribute()
     {
-        return $this->translation ? $this->translation->tags() : collect();
+        return $this->translation ? $this->translation->tags : collect();
     }
 
 }
