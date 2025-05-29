@@ -42,6 +42,7 @@ class PageController extends Controller
     // функція сторінки блогу
     public function blog(?string $date = null)
     {
+
         $query = \App\Models\BlogArticle::query()
             ->where('is_visible', true)
             ->whereHas('translation', fn($q) => $q->where('locale', app()->getLocale()))
@@ -62,6 +63,8 @@ class PageController extends Controller
         }
 
         $articles = $query->latest()->paginate(10);
+
+
 
         $recentArticles = \App\Models\BlogArticle::query()
             ->where('is_visible', true)

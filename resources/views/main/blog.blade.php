@@ -55,7 +55,7 @@
                                 <div class="offset-top-4">
                                     <div class="divider divider-vertical d-inline-block"></div>
                                     @foreach ($article->categories as $category)
-                                        <a href="{{ route('blog.category', $category->translation->slug) }}" class="text-primary">{{ $category->translation->name }}</a>
+                                        <a href="{{ route('blog.category', $category->translation->slug) }}" class="text-primary" style="margin-left: 5px">{{ $category->translation->name }}</a>
                                     @endforeach
                                 </div>
 
@@ -148,18 +148,17 @@
                             </div>
                             <div class="offset-top-14 offset-md-top-20">
                                 <div class="row justify-content-sm-center justify-content-xl-start">
+                                    @foreach ($archives as $archive)
                                     <div class="col-sm-6 col-xl-5">
                                         <ul class="list list-marked inset-left-0 list-marked-icon text-dark list-marked-gray">
-                                            @foreach ($archives as $archive)
                                                 <li>
                                                     <a href="{{ route('main.blog.archive', ['date' => $archive->year_month]) }}">
                                                         {{ $archive->month_name }} ({{ $archive->posts_count }})
                                                     </a>
                                                 </li>
-                                            @endforeach
                                         </ul>
                                     </div>
-
+                                    @endforeach
                                 </div>
                             </div>
 
