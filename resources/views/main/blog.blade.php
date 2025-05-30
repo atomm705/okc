@@ -20,6 +20,10 @@
                 @isset($archiveName)
                     <li><a href="{{ route('main.blog.archive', ['date' => $date]) }}">{{ $archiveName }}</a></li>
                 @endisset
+
+                @isset($query)
+                    <li>Поиск: {{ $query }}</li>
+                @endisset
             </ul>
         </div>
     </section>
@@ -40,7 +44,7 @@
 
                         <article class="post post-modern post-modern-timeline post-modern-timeline-left">
                             <div class="post-media">
-                                <a href="{{ route('main.show', $translation->slug) }}">
+                                <a class="link-image" href="{{ route('main.show', $translation->slug) }}">
                                     <img src="{{ url($translation->image->src ?? '/assets/images/default.jpg') }}"
                                          width="570" height="400"
                                          alt="{{ $translation->name }}">
@@ -130,20 +134,22 @@
                     <div class="blog-grid-sidebar inset-xxl-left-30">
                         <aside class="text-start">
                             <div>
-                                <h6>Search in Blog</h6>
+                                <h6>@lang('frontend/blog.search.title')</h6>
                                 <hr class="text-subline">
                                 <div class="offset-top-14 offset-md-top-20 rd-search-blog">
-                                    <form class="form-search rd-search" action="search-results.html" method="GET">
+                                    <form id="searchForm" class="form-search rd-search" onsubmit="return goToSearch(event)">
                                         <div class="form-wrap">
                                             <label class="form-label form-search-label" for="blog-classic-form-search-widget">Search</label>
-                                            <input class="form-search-input form-input #{inputClass}" id="blog-classic-form-search-widget" type="text" name="s" autocomplete="off">
+                                            <input class="form-search-input form-input" id="blog-classic-form-search-widget" type="text" name="s" autocomplete="off">
                                         </div>
-                                        <button class="form-search-submit" type="submit"><span class="fa fa-search text-primary"></span></button>
+                                        <button class="form-search-submit" type="submit">
+                                            <span class="fa fa-search text-primary"></span>
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                             <div class="offset-top-30 offset-md-top-60">
-                                <h6>Archive</h6>
+                                <h6>@lang('frontend/blog.archive.title')</h6>
                                 <hr class="text-subline">
                             </div>
                             <div class="offset-top-14 offset-md-top-20">
@@ -163,7 +169,7 @@
                             </div>
 
                             <div class="offset-top-30 offset-md-top-60">
-                                <h6>Recent Posts</h6>
+                                <h6>@lang('frontend/blog.latest.title')</h6>
                                 <hr class="text-subline">
                             </div>
                             <div class="offset-top-14 offset-md-top-20">

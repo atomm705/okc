@@ -38,6 +38,9 @@ Route::middleware(SetLocale::class)->group(function () {
         // дата
         Route::get('/blog/archive/{date}', [PageController::class, 'blog'])->name('main.blog.archive');
 
+        //пошук
+        Route::get('/blog/search/{query}', [PageController::class, 'search'])->name('blog.search');
+
         // пагінація
         Route::get('/blog/page/{page}', [PageController::class, 'blog_paginated'])->name('main.blog.page');
         Route::get('/blog/category/{slug}/page/{page}', [PageController::class, 'blog_category_paginated'])->name('main.category.page');

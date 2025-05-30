@@ -22,7 +22,7 @@
 
                         <div class="blog-show-item mb-3">
                             <div class="d-flex align-items-center">
-                                <img src="{{ $translation->authorImage?->url ?? '/images/no-photo-2-sq.webp' }}" class="rounded-circle me-2" width="50" height="50" alt="{{ $translation->author_name }}">
+                                <img  src="{{ $translation->authorImage?->url ?? '/images/no-photo-2-sq.webp' }}" class="rounded-circle me-2" width="50" height="50" alt="{{ $translation->author_name }}">
                                 <span class="text-muted">{{ $translation->author_name }}</span>
                             </div>
 
@@ -48,7 +48,80 @@
                             </div>
                         @endif
                     </div>
+                    <div class="offset-top-66">
+                        <h6>@lang('frontend/blog.article.posted_by.title')</h6>
+                        <hr class="text-subline">
+                    </div>
+                    <div class="offset-top-30">
+                        <div class="unit unit-xs flex-sm-row">
+                            <div class="unit-left"><img class="rounded-circle img-responsive center-block" src="/images/no-photo-2-sq.webp"  alt="" style="width: 170px; height: 170px;"></div>
+                            <div class="unit-body text-sm-start">
+                                <div>
+                                    <h5><a href="team-member.html">@lang('frontend/blog.article.posted_by.default.title')</a></h5>
+                                </div>
+                                <div class="offset-top-4 offset-sm-top-8">
+                                    <div class="text-gray font-italic">@lang('frontend/blog.article.posted_by.default.position')</div>
+                                </div>
+                                <div class="offset-top-20 text-start">
+                                    <p>@lang('frontend/blog.article.posted_by.default.description')</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-top-66">
+                        <h6>@lang('frontend/blog.latest.title')</h6>
+                        <hr class="text-subline">
+                    </div>
+                    <div class="row offset-top-30">
+                        @foreach ($recentArticles as $recent)
+                            @php
+                                $t = $recent->translation;
+                                $date = \Carbon\Carbon::parse($recent->created_at);
+                            @endphp
+                            <div class="col-md-6">
+                                <article class="post post-modern post-modern-classic">
+                                    <div class="post-media">
+                                        <a class="link-image" href="{{ route('main.show', $t->slug) }}">
+                                            <img class="img-responsive img-cover" width="370" height="240"
+                                                 src="{{ $t->image?->src ?? asset('images/no-photo-2-sq.webp') }}"
+                                                 alt="{{ $t->name }}">
+                                        </a>
+                                    </div>
+                                    <div class="post-content text-start">
+                                        <div class="post-title offset-top-8">
+                                            <h5 class="font-weight-bold">
+                                                <a href="{{ route('main.show', $t->slug) }}">{{ $t->name }}</a>
+                                            </h5>
+                                        </div>
+                                        <ul class="list-inline list-inline-dashed">
+                                            <li>{{ $date->translatedFormat('F d, Y') }}</li>
+                                            @if ($recent->categories->isNotEmpty())
+                                                <li>
+                                                    <a class="text-primary" href="{{ route('blog.category', $recent->categories[0]->translation->slug) }}">
+                                                        {{ $recent->categories[0]->translation->name }}
+                                                    </a>
+                                                </li>
+                                            @endif
+                                        </ul>
+                                        <div class="post-body">
+                                            <p>{{ \Illuminate\Support\Str::limit(strip_tags($t->text), 100) }}</p>
+                                        </div>
+                                        @if ($t->tags->count())
+                                            <div class="tags group group-sm">
+                                                @foreach ($t->tags as $tag)
+                                                    <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name ?? $tag->slug }}</a>
+                                                @endforeach
+                                            </div>
+                                        @endif
+                                    </div>
+                                </article>
+                            </div>
+                        @endforeach
+                    </div>
+
                 </div>
+
                 <div class="col-md-10 col-lg-8 col-xl-4 offset-top-66 offset-md-top-90 offset-lg-top-0">
                     <div class="blog-grid-sidebar inset-xxl-left-30">
                         <aside class="text-start">
@@ -56,12 +129,14 @@
                                 <h6>Search in Blog</h6>
                                 <hr class="text-subline">
                                 <div class="offset-top-14 offset-md-top-20 rd-search-blog">
-                                    <form class="form-search rd-search" action="search-results.html" method="GET">
+                                    <form id="searchForm" class="form-search rd-search" onsubmit="return goToSearch(event)">
                                         <div class="form-wrap">
                                             <label class="form-label form-search-label" for="blog-classic-form-search-widget">Search</label>
-                                            <input class="form-search-input form-input #{inputClass}" id="blog-classic-form-search-widget" type="text" name="s" autocomplete="off">
+                                            <input class="form-search-input form-input" id="blog-classic-form-search-widget" type="text" name="s" autocomplete="off">
                                         </div>
-                                        <button class="form-search-submit" type="submit"><span class="fa fa-search text-primary"></span></button>
+                                        <button class="form-search-submit" type="submit">
+                                            <span class="fa fa-search text-primary"></span>
+                                        </button>
                                     </form>
                                 </div>
                             </div>

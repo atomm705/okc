@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\App;
 use App\Models\Doctor;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Models\BlogArticle;
+
 
 
 class PageController extends Controller
@@ -40,12 +42,19 @@ class PageController extends Controller
 
     // сторінка блогу (start)
     // функція сторінки блогу
-    public function blog(?string $date = null)
+    public function blog(Request $request, ?string $date = null)
     {
+        $queryString = $request->input('s'); // поисковый запрос
 
         $query = \App\Models\BlogArticle::query()
             ->where('is_visible', true)
-            ->whereHas('translation', fn($q) => $q->where('locale', app()->getLocale()))
+            ->whereHas('translation', function ($q) use ($queryString) {
+                $q->where('locale', app()->getLocale());
+
+                if ($queryString) {
+                    $q->where('name', 'like', "%{$queryString}%");
+                }
+            })
             ->with([
                 'translation' => fn($q) => $q->where('locale', app()->getLocale()),
                 'translation.image',
@@ -54,7 +63,8 @@ class PageController extends Controller
                 'translation.tags',
             ]);
 
-        if ($date) {
+        // Если дата указана и нет поискового запроса — фильтруем по месяцу
+        if ($date && !$queryString) {
             if (preg_match('/^\d{4}-\d{2}$/', $date)) {
                 $query->whereDate('created_at', 'like', "$date%");
             } else {
@@ -64,32 +74,46 @@ class PageController extends Controller
 
         $articles = $query->latest()->paginate(10);
 
-
-
-        $recentArticles = \App\Models\BlogArticle::query()
-            ->where('is_visible', true)
-            ->with(['translation'])
-            ->latest()
-            ->limit(5)
-            ->get();
-
-        $archives = DB::table('blog_articles')
-            ->select(DB::raw("DATE_FORMAT(created_at, '%Y-%m') as `year_month`"), DB::raw("COUNT(*) as posts_count"))
-            ->where('is_visible', 1)
-            ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"))
-            ->orderBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m')"), 'desc')
-            ->get();
-
-        foreach ($archives as $archive) {
-            $archive->month_name = Carbon::createFromFormat('Y-m', $archive->year_month)->format('F Y');
-        }
+        $archives = $this->getArchives();
+        $recentArticles = $this->getRecentArticles();
 
         $archiveName = null;
-        if ($date) {
+        if ($date && !$queryString) {
             $archiveName = Carbon::createFromFormat('Y-m', $date)->format('F Y');
         }
 
-        return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date'));
+        return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date', 'queryString'));
+    }
+
+    //функція пошуку за статтею
+    public function search($query)
+    {
+        $locale = app()->getLocale();
+
+        $query = urldecode($query);
+
+        $articles = BlogArticle::query()
+            ->where('is_visible', true)
+            ->whereHas('translation', function ($q) use ($query, $locale) {
+                $q->where('locale', $locale)
+                    ->where(function ($q2) use ($query) {
+                        $q2->where('name', 'like', "%$query%");
+                    });
+            })
+            ->with([
+                'translation' => fn($q) => $q->where('locale', $locale),
+                'translation.image',
+                'translation.authorImage',
+                'categories.translation' => fn($q) => $q->where('locale', $locale),
+                'translation.tags',
+            ])
+            ->latest()
+            ->paginate(10);
+
+        $archives = $this->getArchives();
+        $recentArticles = $this->getRecentArticles();
+
+        return view('main.blog', compact('articles', 'query', 'archives', 'recentArticles'));
     }
 
     // функція для фильтрації по місяцям
@@ -129,23 +153,38 @@ class PageController extends Controller
     // функція для показу поста
     public function blog_show($slug)
     {
-
-        $translation = BlogArticleTranslation::where('slug', $slug)
-            ->where('locale', app()->getLocale())
+        $article = BlogArticle::with([
+            'translation' => fn($q) => $q->where('locale', app()->getLocale()),
+            'translation.image',
+            'translation.authorImage',
+            'categories.translation' => fn($q) => $q->where('locale', app()->getLocale()),
+            'translation.tags',
+        ])->whereHas('translation', fn($q) => $q->where('slug', $slug)->where('locale', app()->getLocale()))
+            ->where('is_visible', true)
             ->firstOrFail();
-        $article = $translation->article;
+
+        $translation = $article->translation;
 
         $archives = $this->getArchives();
+        $recentArticles = BlogArticle::with([
+            'translation' => fn($q) => $q->where('locale', app()->getLocale()),
+            'translation.image',
+            'categories.translation' => fn($q) => $q->where('locale', app()->getLocale())
+        ])
+            ->where('is_visible', true)
+            ->where('article_id', '!=', $article->id)
+            ->latest()
+            ->take(2)
+            ->get();
 
-        $recentArticles = $this->getRecentArticles();
-
-        return view('main.show', compact('article', 'translation', 'archives','recentArticles'));
+        return view('main.show', compact('article', 'translation', 'archives', 'recentArticles'));
     }
 
     // фільтрація по категоріям
-    public function blog_category($slug)
+    public function blog_category(Request $request, $slug)
     {
         $locale = app()->getLocale();
+        $query = $request->input('s');
 
         $categoryTranslation = \App\Models\BlogCategoryTranslation::where('slug', $slug)
             ->where('locale', $locale)
@@ -155,7 +194,13 @@ class PageController extends Controller
 
         $articles = $category->articles()
             ->where('is_visible', true)
-            ->whereHas('translation', fn($q) => $q->where('locale', $locale))
+            ->whereHas('translation', function ($q) use ($locale, $query) {
+                $q->where('locale', $locale);
+
+                if ($query) {
+                    $q->where('name', 'like', "%$query%");
+                }
+            })
             ->with([
                 'translation' => fn($q) => $q->where('locale', $locale),
                 'translation.image',
@@ -166,11 +211,11 @@ class PageController extends Controller
             ->paginate(10);
 
         $archives = $this->getArchives();
-
         $recentArticles = $this->getRecentArticles();
 
-        return view('main.blog', compact('articles', 'categoryTranslation', 'archives','recentArticles'));
+        return view('main.blog', compact('articles', 'categoryTranslation', 'archives', 'recentArticles', 'query'));
     }
+
 
     public function blog_category_paginated($slug, $page = 1)
     {
@@ -179,15 +224,22 @@ class PageController extends Controller
     }
 
     // фільтрація по тегам
-    public function blog_tag($slug)
+    public function blog_tag(Request $request, $slug)
     {
         $tag = \App\Models\BlogTag::where('slug', $slug)->firstOrFail();
         $locale = app()->getLocale();
+        $query = $request->input('s');
 
-        $translationIds = $tag->translations()->where('locale', $locale)->pluck('blog_articles_translations.translation_id');
+        $translationIds = $tag->translations()
+            ->where('locale', $locale)
+            ->pluck('blog_articles_translations.translation_id');
 
-        $articles = \App\Models\BlogArticle::whereHas('translation', function ($q) use ($translationIds) {
+        $articles = \App\Models\BlogArticle::whereHas('translation', function ($q) use ($translationIds, $query) {
             $q->whereIn('translation_id', $translationIds);
+
+            if ($query) {
+                $q->where('name', 'like', "%$query%");
+            }
         })
             ->where('is_visible', true)
             ->with([
@@ -201,10 +253,9 @@ class PageController extends Controller
             ->paginate(10);
 
         $archives = $this->getArchives();
-
         $recentArticles = $this->getRecentArticles();
 
-        return view('main.blog', compact('articles', 'tag', 'archives','recentArticles'));
+        return view('main.blog', compact('articles', 'tag', 'archives', 'recentArticles', 'query'));
     }
 
     public function blog_tag_paginated($slug, $page = 1)
