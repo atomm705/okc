@@ -67,7 +67,7 @@
                             <hr>
                             <div class="row offset-top-24 justify-content-sm-between text-gray-light">
                                 <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 17px; color: #fff;"><strong>Клініка</strong></span></div>
-                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 60px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 30px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
                                 <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
                                <!-- <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div
                                 <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</div>

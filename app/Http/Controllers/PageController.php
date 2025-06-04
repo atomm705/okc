@@ -44,7 +44,7 @@ class PageController extends Controller
     // функція сторінки блогу
     public function blog(Request $request, ?string $date = null)
     {
-        $queryString = $request->input('s'); // поисковый запрос
+        $queryString = $request->input('s');
 
         $query = \App\Models\BlogArticle::query()
             ->where('is_visible', true)
@@ -63,7 +63,6 @@ class PageController extends Controller
                 'translation.tags',
             ]);
 
-        // Если дата указана и нет поискового запроса — фильтруем по месяцу
         if ($date && !$queryString) {
             if (preg_match('/^\d{4}-\d{2}$/', $date)) {
                 $query->whereDate('created_at', 'like', "$date%");
@@ -74,6 +73,7 @@ class PageController extends Controller
 
         $articles = $query->latest()->paginate(10);
 
+
         $archives = $this->getArchives();
         $recentArticles = $this->getRecentArticles();
 
@@ -83,6 +83,13 @@ class PageController extends Controller
         }
 
         return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date', 'queryString'));
+    }
+
+    // функція для пагинації сторінки блогу
+    public function blog_paginated(Request $request ,$page = 1)
+    {
+        request()->merge(['page' => $page]);
+        return $this->blog( $request);
     }
 
     //функція пошуку за статтею
@@ -133,6 +140,13 @@ class PageController extends Controller
         return $archives;
     }
 
+    // функція для пагинації архівів
+    public function blog_archive_paginated(Request $request ,$archives,$page = 1)
+    {
+        request()->merge(['page' => $page]);
+        return $this->blog( $request,$archives);
+    }
+
     // функція для фільтрації останіх статтей
     private function getRecentArticles()
     {
@@ -144,11 +158,6 @@ class PageController extends Controller
             ->get();
     }
 
-    public function blog_paginated($page = 1)
-    {
-        request()->merge(['page' => $page]);
-        return $this->blog();
-    }
 
     // функція для показу поста
     public function blog_show($slug)
@@ -216,11 +225,11 @@ class PageController extends Controller
         return view('main.blog', compact('articles', 'categoryTranslation', 'archives', 'recentArticles', 'query'));
     }
 
-
-    public function blog_category_paginated($slug, $page = 1)
+    // функція для пагинації по категоріям
+    public function blog_category_paginated(Request $request,$slug, $page = 1)
     {
         request()->merge(['page' => $page]);
-        return $this->blog_category($slug);
+        return $this->blog_category($request,$slug);
     }
 
     // фільтрація по тегам
@@ -258,10 +267,11 @@ class PageController extends Controller
         return view('main.blog', compact('articles', 'tag', 'archives', 'recentArticles', 'query'));
     }
 
-    public function blog_tag_paginated($slug, $page = 1)
+    // функція для пагинації по тегам
+    public function blog_tag_paginated( Request $request,$slug, $page = 1)
     {
         request()->merge(['page' => $page]);
-        return $this->blog_tag($slug);
+        return $this->blog_tag( $request,$slug);
     }
     // сторінка блогу (finish)
 

@@ -126,7 +126,7 @@
                     <div class="blog-grid-sidebar inset-xxl-left-30">
                         <aside class="text-start">
                             <div>
-                                <h6>Search in Blog</h6>
+                                <h6>@lang('frontend/blog.search.title')</h6>
                                 <hr class="text-subline">
                                 <div class="offset-top-14 offset-md-top-20 rd-search-blog">
                                     <form id="searchForm" class="form-search rd-search" onsubmit="return goToSearch(event)">
@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                             <div class="offset-top-30 offset-md-top-60">
-                                <h6>Archive</h6>
+                                <h6>@lang('frontend/blog.archive.title')</h6>
                                 <hr class="text-subline">
                             </div>
                             <div class="offset-top-14 offset-md-top-20">
@@ -161,7 +161,7 @@
                             </div>
 
                             <div class="offset-top-30 offset-md-top-60">
-                                <h6>Recent Posts</h6>
+                                <h6>@lang('frontend/blog.latest.title')</h6>
                                 <hr class="text-subline">
                             </div>
                             <div class="offset-top-14 offset-md-top-20">

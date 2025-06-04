@@ -1,46 +1,91 @@
 <x-app-layout>
 
+    @php
+        $paginationUrl = function($page) {
+            $routeName = Route::currentRouteName();
+            $params = request()->route()->parameters();
+
+            switch ($routeName) {
+                case 'main.blog':
+                case 'main.blog.page':
+                    return route('main.blog.page', ['page' => $page]);
+                case 'blog.tag':
+                case 'blog.tag.page':
+                    return route('blog.tag.page', [
+                        'slug' => $params['slug'],
+                        'page' => $page,
+                    ]);
+
+                case 'main.blog.archive':
+                case 'main.blog.archive.paginated':
+                    return route('main.blog.archive.paginated', [
+                        'date' => $params['date'],
+                        'page' => $page,
+                    ]);
+                case 'blog.category':
+                case 'main.category.page':
+                    return route('main.category.page', [
+                        'slug' => $params['slug'],
+                        'page' => $page,
+                    ]);
+                default:
+                    return '#';
+            }
+        };
+    @endphp
+
     <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
+
             <h2 class="breadcrumbs-custom-title">
                <!--  $categoryTranslation->name ?? __('global.pages.blog') розкоментувати та обвернути в фігурні душки якщо треба щоб був здоровий заголовок категорії-->
                    @lang('global.pages.blog')
             </h2>
+
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.blog') }}">@lang('global.pages.blog')</a></li>
                 @isset($categoryTranslation)
-                    <li><a href="{{ route('blog.category', $categoryTranslation->slug) }}">{{ $categoryTranslation->name }}</a></li>
+                    <li><a href="{{ route('blog.category', $categoryTranslation->slug) }}">Категория: {{ $categoryTranslation->name }}</a></li>
                 @endisset
 
                 @isset($tag)
-                    <li><a href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name }}</a></li>
+                    <li><a href="{{ route('blog.tag', $tag->slug) }}">Тег: {{ $tag->name }}</a></li>
                 @endisset
 
                 @isset($archiveName)
-                    <li><a href="{{ route('main.blog.archive', ['date' => $date]) }}">{{ $archiveName }}</a></li>
+                    <li><a href="{{ route('main.blog.archive', ['date' => $date]) }}">За {{ $archiveName }}</a></li>
                 @endisset
 
                 @isset($query)
                     <li>Поиск: {{ $query }}</li>
                 @endisset
             </ul>
+
         </div>
     </section>
 
-
     <section class="section-98 section-sm-110">
-
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-lg-10 col-xl-8">
-
                         @foreach ($articles as $article)
                         @php
                             $translation = $article->translation;
                             $image = $translation->image?->url ?? '/images/default.webp';
                             $authorImage = $translation->authorImage?->url ?? '/images/no-photo-2-sq.webp';
+
+                            $createdAt = \Carbon\Carbon::parse($article->created_at);
                         @endphp
+
+                        <div class="post-modern-timeline-date text-md-start">
+                            <div class="d-inline-block">
+                                <time class="text-regular" datetime="{{ $createdAt->toDateString() }}">
+                                    {{ $createdAt->translatedFormat('F d, Y') }}
+                                    <br class="d-none d-lg-inline-block"> в {{ $createdAt->format('H:i') }}
+                                </time>
+                            </div>
+                        </div>
 
                         <article class="post post-modern post-modern-timeline post-modern-timeline-left">
                             <div class="post-media">
@@ -50,23 +95,19 @@
                                          alt="{{ $translation->name }}">
                                 </a>
                             </div>
-
                             <section class="post-content text-start">
                                 <div class="post-title offset-top-8">
                                     <h5><a href="{{ route('main.show', $translation->slug) }}">{{ $translation->name }}</a></h5>
                                 </div>
-
                                 <div class="offset-top-4">
                                     <div class="divider divider-vertical d-inline-block"></div>
                                     @foreach ($article->categories as $category)
                                         <a href="{{ route('blog.category', $category->translation->slug) }}" class="text-primary" style="margin-left: 5px">{{ $category->translation->name }}</a>
                                     @endforeach
                                 </div>
-
                                 <div class="post-body offset-top-14">
                                     <p>{{ Str::limit(strip_tags($translation->text), 150) }}</p>
                                 </div>
-
                                 <div class="post-author">
                                     <div class="post-author-img">
                                         <img class="rounded-circle" width="90" height="90" src="{{ $authorImage }}" alt="{{ $translation->author_name }}">
@@ -82,51 +123,48 @@
                                         @endif
                                     @endforeach
                                 </div>
-
                             </section>
                         </article>
-                         @endforeach
+                    @endforeach
 
-                            @if ($articles->hasPages())
-                                <div class="row offset-top-50 offset-lg-top-0">
-                                    <div class="col-xl-10 offset-xl-2 text-xl-start">
-                                        <div class="inset-xl-left-10">
-                                            <nav>
-                                                <ul class="pagination-classic">
+                            @if ($articles->lastPage() > 1)
+                        <div class="row offset-top-50 offset-lg-top-0">
+                            <div class="col-xl-10 offset-xl-2 text-xl-start">
+                                <div class="inset-xl-left-10">
+                                    <nav>
+                                        <ul class="pagination-classic">
+                                            {{-- Предыдущая страница --}}
+                                            @if ($articles->onFirstPage())
+                                                <li class="disabled"><span class="btn btn-darkest">&laquo;</span></li>
+                                            @else
+                                                <li>
+                                                    <a class="btn btn-darkest" href="{{ $paginationUrl($articles->currentPage() - 1) }} "  rel="prev">&laquo;</a>
+                                                </li>
+                                            @endif
 
-                                                    @if ($articles->onFirstPage())
-                                                        <li class="disabled"><span class="btn btn-darkest">&laquo;</span></li>
-                                                    @else
-                                                        <li>
-                                                            <a class="btn btn-darkest" href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['page' => $articles->currentPage() - 1])) }}" rel="prev">&laquo;</a>
-                                                        </li>
-                                                    @endif
+                                            {{-- Номера страниц --}}
+                                            @for ($page = 1; $page <= $articles->lastPage(); $page++)
+                                                @if ($page == $articles->currentPage())
+                                                    <li class="active"><span class="btn btn-darkest">{{ $page }}</span></li>
+                                                @else
+                                                    <li><a class="btn btn-darkest" href="{{ $paginationUrl($page) }}">{{ $page }}</a></li>
+                                                @endif
+                                            @endfor
 
-
-                                                    @foreach ($articles->getUrlRange(1, $articles->lastPage()) as $page => $url)
-                                                        @if ($page == $articles->currentPage())
-                                                            <li class="active"><span class="btn btn-darkest">{{ $page }}</span></li>
-                                                        @else
-                                                            <li>
-                                                                <a class="btn btn-darkest" href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['page' => $page])) }}">{{ $page }}</a>
-                                                            </li>
-                                                        @endif
-                                                    @endforeach
-
-
-                                                    @if ($articles->hasMorePages())
-                                                        <li>
-                                                            <a class="btn btn-darkest" href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['page' => $articles->currentPage() + 1])) }}" rel="next">&raquo;</a>
-                                                        </li>
-                                                    @else
-                                                        <li class="disabled"><span class="btn btn-darkest">&raquo;</span></li>
-                                                    @endif
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
+                                            {{-- Следующая страница --}}
+                                            @if ($articles->hasMorePages())
+                                                <li>
+                                                    <a class="btn btn-darkest" href="{{ $paginationUrl($articles->currentPage() + 1) }}">&raquo;</a>
+                                                </li>
+                                            @else
+                                                <li class="disabled"><span class="btn btn-darkest">&raquo;</span></li>
+                                            @endif
+                                        </ul>
+                                    </nav>
                                 </div>
-                            @endif
+                            </div>
+                        </div>
+                    @endif
 
 
                 </div>
@@ -167,7 +205,6 @@
                                     @endforeach
                                 </div>
                             </div>
-
                             <div class="offset-top-30 offset-md-top-60">
                                 <h6>@lang('frontend/blog.latest.title')</h6>
                                 <hr class="text-subline">
@@ -192,16 +229,10 @@
                                     @endforeach
                                 </ul>
                             </div>
-
                         </aside>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
 </x-app-layout>

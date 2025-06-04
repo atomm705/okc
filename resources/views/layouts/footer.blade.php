@@ -405,3 +405,59 @@
     </script>
 @endif
 
+@if(Route::currentRouteName() === 'main.blog.page')
+    <script>
+        function goToSearch(e) {
+            e.preventDefault();
+            const input = document.querySelector('#blog-classic-form-search-widget');
+            const query = encodeURIComponent(input.value.trim());
+            if (query.length > 0) {
+                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
+            }
+            return false;
+        }
+    </script>
+@endif
+
+@if(Route::currentRouteName() === 'blog.tag.page')
+    <script>
+        function goToSearch(e) {
+            e.preventDefault();
+            const input = document.querySelector('#blog-classic-form-search-widget');
+            const query = encodeURIComponent(input.value.trim());
+            if (query.length > 0) {
+                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
+            }
+            return false;
+        }
+    </script>
+@endif
+
+@if(Route::currentRouteName() === 'main.category.page')
+    <script>
+        function goToSearch(e) {
+            e.preventDefault();
+            const input = document.querySelector('#blog-classic-form-search-widget');
+            const query = encodeURIComponent(input.value.trim());
+            if (query.length > 0) {
+                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
+            }
+            return false;
+        }
+    </script>
+@endif
+
+@if(Route::currentRouteName() === 'main.blog.archive.paginated')
+    <script>
+        function goToSearch(e) {
+            e.preventDefault();
+            const input = document.querySelector('#blog-classic-form-search-widget');
+            const query = encodeURIComponent(input.value.trim());
+            if (query.length > 0) {
+                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
+            }
+            return false;
+        }
+    </script>
+@endif
+

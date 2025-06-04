@@ -37,15 +37,18 @@ Route::middleware(SetLocale::class)->group(function () {
 
         // дата
         Route::get('/blog/archive/{date}', [PageController::class, 'blog'])->name('main.blog.archive');
+        Route::get('/blog/archive/{date}/page/{page}', [PageController::class, 'blog_archive_paginated'])->name('main.blog.archive.paginated');
 
         //пошук
         Route::get('/blog/search/{query}', [PageController::class, 'search'])->name('blog.search');
 
         // пагінація
         Route::get('/blog/page/{page}', [PageController::class, 'blog_paginated'])->name('main.blog.page');
+       // Route::get('/{locale}/blog/page/{page}', [BlogController::class, 'blog_paginated'])->where('page', '[0-9]+');
         Route::get('/blog/category/{slug}/page/{page}', [PageController::class, 'blog_category_paginated'])->name('main.category.page');
+        //Route::get('/blog/category/{slug}/page/{page}', [BlogController::class, 'blog_category_paginated'])->where('page', '[0-9]+');
         Route::get('/blog/tag/{slug}/page/{page}', [PageController::class, 'blog_tag_paginated'])->name('blog.tag.page');
-
+       // Route::get('/{locale}/blog/tag/{slug}/page/{page}', [BlogController::class, 'blog_tag_paginated'])->where('page', '[0-9]+');
 
         Route::get('/contacts', [PageController::class, 'contacts'])->name('main.contacts');
         Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
