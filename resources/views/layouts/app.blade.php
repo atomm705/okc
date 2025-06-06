@@ -15,7 +15,77 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    @php
+        use Illuminate\Support\Facades\Route;
+
+        $routeName = Route::currentRouteName();
+        $pageKey = last(explode('.', $routeName));
+        $locale = app()->getLocale();
+
+        $defaultSeo = [
+            'title' => 'Медичний центр Докарт',
+            'description' => 'Многопрофильный медицинский центр Докарт Харьков. Диагностический центр с использованием современного оборудования. ул. Маяковского, 24 ☎(057)761-61-31',
+            'keywords' => 'Докарт, Харьков, офтальмология, офтальмолог, лазерная коррекция зрения, лазерная коррекция, лечение катаракты, подбор очков, гинекология, гинеколог, урология, уролог',
+            'og:title' => 'Медичний центр Докарт',
+            'og:description' => 'Многопрофильный медицинский центр Докарт Харьков...',
+        ];
+
+        $seoFromModel = [];
+
+        try {
+            $slug = request()->route('slug');
+
+            $modelsToCheck = [
+                \App\Models\BlogArticleTranslation::class => ['slug'],
+                \App\Models\DoctorTranslation::class => ['full_slug', 'short_slug'],
+            ];
+
+            foreach ($modelsToCheck as $modelClass => $slugFields) {
+                if (class_exists($modelClass)) {
+                    foreach ($slugFields as $field) {
+                        $model = $modelClass::where($field, $slug)->first();
+                        if ($model && $model->page_seo) {
+                            $seoFromModel = collect($model->page_seo)
+                                ->filter(fn($val) => !is_null($val))
+                                ->toArray();
+                            break 2;
+                        }
+                    }
+                }
+            }
+        } catch (\Throwable $e) {
+            $seoFromModel = [];
+        }
+
+        $seoPath = base_path("lang/{$locale}/frontend/{$pageKey}.php");
+        $fileSeo = file_exists($seoPath) ? (include $seoPath)['seo'] ?? [] : [];
+
+        if (isset($seoFromModel['openGraph'])) {
+    if (isset($seoFromModel['openGraph']['title'])) {
+        $seoFromModel['og:title'] = $seoFromModel['openGraph']['title'];
+    }
+    if (isset($seoFromModel['openGraph']['description'])) {
+        $seoFromModel['og:description'] = $seoFromModel['openGraph']['description'];
+    }
+    unset($seoFromModel['openGraph']);
+}
+
+
+        $seo = array_merge($defaultSeo, $fileSeo, $seoFromModel);
+
+       // dd($seo);
+    @endphp
+
+
+    <title>{{ $seo['title'] }}</title>
+    <meta name="description" content="{{ $seo['description'] }}">
+    <meta name="keywords" content="{{ $seo['keywords'] }}">
+
+    <meta property="og:title" content="{{ $seo['og:title'] ?? $seo['title'] }}">
+    <meta property="og:description" content="{{ $seo['og:description'] ?? $seo['description'] }}">
+
+    <!--<title>{{ config('app.name', 'Laravel') }}</title>-->
     <link rel="icon" href="{{ asset('/images/favicon.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />

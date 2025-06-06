@@ -133,7 +133,7 @@
                                 <div class="inset-xl-left-10">
                                     <nav>
                                         <ul class="pagination-classic">
-                                            {{-- Предыдущая страница --}}
+
                                             @if ($articles->onFirstPage())
                                                 <li class="disabled"><span class="btn btn-darkest">&laquo;</span></li>
                                             @else
@@ -142,7 +142,7 @@
                                                 </li>
                                             @endif
 
-                                            {{-- Номера страниц --}}
+
                                             @for ($page = 1; $page <= $articles->lastPage(); $page++)
                                                 @if ($page == $articles->currentPage())
                                                     <li class="active"><span class="btn btn-darkest">{{ $page }}</span></li>
@@ -151,7 +151,7 @@
                                                 @endif
                                             @endfor
 
-                                            {{-- Следующая страница --}}
+
                                             @if ($articles->hasMorePages())
                                                 <li>
                                                     <a class="btn btn-darkest" href="{{ $paginationUrl($articles->currentPage() + 1) }}">&raquo;</a>
@@ -210,7 +210,7 @@
                                 <hr class="text-subline">
                             </div>
                             <div class="offset-top-14 offset-md-top-20">
-                                <!-- List Marked-->
+
                                 <ul class="list list-marked list-marked-icon text-dark inset-left-0 list-marked-gray">
                                     @foreach ($recentArticles as $recent)
                                         @php

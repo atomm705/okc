@@ -10,7 +10,10 @@ class BlogArticleTranslation extends Model
 {
     protected $table = 'blog_articles_translations';
 
-
+    // для seo
+    protected $casts = [
+        'page_seo' => 'array',
+    ];
 
     public function article(): BelongsTo
     {

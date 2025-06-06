@@ -10,6 +10,11 @@ class DoctorTranslation extends Model
     protected $primaryKey = 'translation_id';
     public $timestamps = false;
 
+    // для seo
+    protected $casts = [
+        'page_seo' => 'array',
+    ];
+
     protected $fillable = [
         'doctor_id',
         'locale',
