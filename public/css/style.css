@@ -30759,3 +30759,15 @@ html.ie-11 .fc-event .fc-event-wrap {
 .article-content > h3{
     font-size: 26px;
 }
+
+.content-post > table > tbody > tr > td{
+    border: 1px solid #808080 !important;
+    padding: 10px;
+}
+.content-post > table > tbody > tr:first-of-type > td{
+    text-align: center;
+}
+
+.content-post > h3, h4 {
+    text-align: start !important;
+}

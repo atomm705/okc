@@ -22,9 +22,24 @@ class PageController extends Controller
 
     public function index()
     {
-        return view('main.index');
-    }
+        $recentArticles = \App\Models\BlogArticle::query()
+            ->where('is_visible', true)
+            ->with([
+                'translation' => fn($q) => $q->where('locale', app()->getLocale()),
+                'translation.image',
+                'translation.tags',
+                'categories.translation' => fn($q) => $q->where('locale', app()->getLocale()),
+            ])
+            ->latest()
+            ->limit(10)
+            ->get()
+            ->filter(fn($article) => $article->translation !== null)
+            ->take(3);
 
+
+        return view('main.index', compact('recentArticles'));
+    }
+    
     public function about(){
 
         return view('main.about');

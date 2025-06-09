@@ -34,7 +34,7 @@
                             </div>
                         </div>
 
-                        <div class="article-content mb-5">
+                        <div class="article-content mb-5 content-post">
                             {!! $translation->text !!}
                         </div>
                         @if ($translation->tags->count())
