@@ -67,7 +67,7 @@
                             <hr>
                             <div class="row offset-top-24 justify-content-sm-between text-gray-light">
                                 <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 17px; color: #fff;"><strong>Клініка</strong></span></div>
-                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 60px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 30px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
                                 <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
                                <!-- <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div
                                 <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</div>
@@ -362,6 +362,65 @@
         </div>
     </section>
 
+    <section class="section-98 section-sm-110">
+        <div class="container">
+            <h3 class="text-center text-lg-center">@lang('frontend/index.blog.title')</h3>
+            <div class="row justify-content-sm-center offset-top-60">
+                @foreach ($recentArticles as $recent)
+                    <div class="col-md-8 col-lg-4" style="margin-bottom: 20px">
+                        @php
+                            $t = $recent->translation;
+                            $date = \Carbon\Carbon::parse($recent->created_at);
+                        @endphp
+
+                        <article class="post post-modern post-modern-classic">
+
+                            <div class="post-media">
+                                <a class="link-image" href="{{ route('main.show', $t->slug) }}">
+                                    <img class="img-responsive img-cover" width="370" height="240"
+                                         src="{{ $t->image?->src ?? asset('images/no-photo-2-sq.webp') }}"
+                                         alt="{{ $t->name }}">
+                                </a>
+                            </div>
+
+                            <div class="post-content text-start">
+
+                                <div class="post-title offset-top-8">
+                                    <h5 class="font-weight-bold"> <a href="{{ route('main.show', $t->slug) }}">{{ $t->name }}</a> </h5>
+                                </div>
+                                <ul class="list-inline list-inline-dashed">
+                                    <li>{{ $date->translatedFormat('F d, Y') }}</li>
+                                    @if ($recent->categories->isNotEmpty())
+                                        <li>
+
+                                            <a class="text-primary"
+                                               href="{{ route('blog.category', $recent->categories[0]->translation->slug) }}">
+                                                {{ $recent->categories[0]->translation->name }}
+                                            </a>
+
+                                        </li>
+                                    @endif
+                                </ul>
+
+                                <div class="post-body">
+                                    <p>{{ \Illuminate\Support\Str::limit(strip_tags($t->text), 100) }}</p>
+                                </div>
+                                @if ($t->tags->count())
+                                    <div class="tags group group-sm">
+                                        @foreach ($t->tags as $tag)
+                                            <a class="btn-tag btn btn-default"
+                                               href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name ?? $tag->slug }}</a>
+                                        @endforeach
+                                    </div>
+                                @endif
+                            </div>
+                        </article>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container text-center defolt-div" ><!----> <!---->
             <a class="link-discount" style=" background-image: url('{{ asset('images/218bbe9c38ffa59b6e99bf94428e4293.webp') }}') ; "  href="single-post.html">
@@ -372,6 +431,8 @@
             </a>
         </div>
     </section>
+
+
     <section class="section">
         <div  data-center="Медицинский центр Докарт (клиника Ок Центр)" data-zoom="5" >
             <div class="google-map">

@@ -30708,3 +30708,66 @@ html.ie-11 .fc-event .fc-event-wrap {
         font-size: 2.3rem;
     }
 }*/
+
+.blog-show-item{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.categories-block{
+    display: flex;
+    gap: 5px;
+}
+
+.divider-vertical2 {
+    width: 1px;
+    height: 24px;
+    background: #bdbdbd;
+    margin: 0 11px 0 0;
+    position: relative;
+
+}
+
+.article-content > ul{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.article-content > ul > li{
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.article-content > ul > li:before{
+    display: inline-block;
+    left: 0;
+    top: 12px;
+    min-width: 25px;
+    content: '\f105';
+    font: 400 14px / 24px 'FontAwesome';
+    color: #2a93c9;
+}
+
+.article-tags-position{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.article-content > h3{
+    font-size: 26px;
+}
+
+.content-post > table > tbody > tr > td{
+    border: 1px solid #808080 !important;
+    padding: 10px;
+}
+.content-post > table > tbody > tr:first-of-type > td{
+    text-align: center;
+}
+
+.content-post > h3, h4 {
+    text-align: start !important;
+}
