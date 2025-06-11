@@ -40,4 +40,17 @@ class ServicesControler extends Controller
         return view('admin.prices.edit', compact('category', 'categories'));
     }
 
+    public function update(Request $request, $slug){
+
+        $service_category = ServicesCategoryTranslation::where('slug', $slug)->where('locale', app()->getLocale())->first();
+        if($request->category){
+            $article_category = ArticleCategory::where('category_id', $request->category)->first();
+            $article_category->price_id = $service_category->category_id;
+            $article_category->save();
+        }
+
+        return redirect()->route('admin.prices.list', ['slug' => $service_category->slug]);
+    }
+
+
 }

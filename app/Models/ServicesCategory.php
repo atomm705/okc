@@ -41,5 +41,8 @@ class ServicesCategory extends Model
         return $this->hasMany(ServiceCategoryGroup::class, 'category_id', 'category_id')
             ->where('is_visible', 1);
     }
+    public function articleCategory(){
+        return $this->hasOne(ArticleCategory::class, 'price_id', 'category_id');
+    }
 
 }

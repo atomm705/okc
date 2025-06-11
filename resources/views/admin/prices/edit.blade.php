@@ -37,7 +37,7 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <label for="page_text_before_{{ $lang }}" class="form-label">Текст перед: {{ $lang }}</label>
-                                                                <textarea class="form-control" id="page_text_before_{{ $lang }}" name="page_text_before_{{ $lang }}" @if($lang == 'uk') required @endif>{{ $category->page_text_before ?? '' }}</textarea>
+                                                                <textarea class="form-control" id="page_text_before_{{ $lang }}" name="page_text_before_{{ $lang }}" @if($lang == 'uk') @endif>{{ $category->page_text_before ?? '' }}</textarea>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -49,10 +49,16 @@
                                                     </div>
                                                 @endforeach
                                                     <div class="form-group">
-                                                        <label for="category" class="form-label">Прив'язати до категорії</label>
+                                                        <label for="category" class="form-label">Зв'язати з категорією</label>
                                                         <select name="category" class="form-control">
-                                                            @foreach($categories as $category)
-                                                                <option value="{{ $category->category_id }}">{{ $category->translation->name ?? ''}}</option>
+                                                            <option value="">-- Оберіть категорію --</option>
+                                                            @foreach($categories as $category_article)
+                                                                <option value="{{ $category_article->category_id }}" @if(
+                                                                    isset($category_article->serviceCategory) &&
+                                                                    $category_article->serviceCategory->category_id == $category->category_id
+                                                                     ) selected @endif>
+                                                                    {{ $category_article->translation->name ?? ''}}
+                                                                </option>
                                                             @endforeach
                                                         </select>
                                                     </div>

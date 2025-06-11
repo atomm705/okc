@@ -14,4 +14,13 @@ class ServicesCategoryTranslation extends Model
     {
         return $this->belongsTo(ServicesCategory::class, 'category_id');
     }
+
+    public function translation($lang = 'uk'){
+        return $this->hasOne(ServicesCategoryTranslation::class, 'category_id', 'category_id')->where('locale', $lang)->first();
+    }
+
+    public function admin_translation($lang){
+        return $this->hasOne(ServicesCategoryTranslation::class, 'category_id', 'category_id')
+            ->where('locale', $lang);
+    }
 }
