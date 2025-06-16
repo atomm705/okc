@@ -82,9 +82,15 @@ return [
 
     'locale' => env('APP_LOCALE', 'uk'),
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', ['uk', 'en', 'ru']),
+    /*'fallback_locale' => env('APP_FALLBACK_LOCALE', ['uk', 'en', 'ru']),*/
+
+    'fallback_locale' => explode(',', env('APP_FALLBACK_LOCALE', 'uk,en,ru')),
+
+
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'uk_UA'),
+
+
 
     /*
     |--------------------------------------------------------------------------

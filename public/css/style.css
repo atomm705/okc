@@ -30670,6 +30670,9 @@ html.ie-11 .fc-event .fc-event-wrap {
        justify-content: center;
    }
 }
+.title-telemed{
+    text-align: center !important;
+}
 
 @media (min-width: 1200px) {
     .title-telemed{

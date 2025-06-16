@@ -59,8 +59,9 @@
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container "><!----> <!---->
 
-            <div ><h4  class="title-telemed" style="text-align: center; margin-top: 0px"; class="text-center">@lang('frontend/telemed.article_4.title')</h4>
-                <p class="custom-paragraph ">@lang('frontend/telemed.article_4.texts.text_1')</p>
+            <div >
+                <h4  class="title-telemed" style="text-align: center; margin-top: 0px"; class="text-center">@lang('frontend/telemed.article_4.title')</h4>
+                <p>@lang('frontend/telemed.article_4.texts.text_1')</p>
 
                 <ul class="list-marked" style="text-align: left;">
                     <li>@lang('frontend/telemed.article_4.list_1.item_1')</li>
@@ -130,5 +131,7 @@
             <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a></div>
         </div>
     </section>
+
+
 
 </x-app-layout>

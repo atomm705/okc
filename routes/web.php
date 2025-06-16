@@ -97,6 +97,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('admin.doctor.edit');
         Route::post('/doctor/{id}/update', [DoctorController::class, 'update'])->name('admin.doctor.update');
 
+
         Route::get('/groups', [ServicesController::class, 'groups'])->name('admin.groups');
 
         Route::get('/services', [ServicesController::class, 'services'])->name('admin.services');

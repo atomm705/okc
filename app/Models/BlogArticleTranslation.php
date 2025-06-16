@@ -5,14 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use App\Casts\UnescapedJsonCast;
 
 class BlogArticleTranslation extends Model
 {
     protected $table = 'blog_articles_translations';
 
-    // для seo
+
     protected $casts = [
-        'page_seo' => 'array',
+        'page_seo' => UnescapedJsonCast::class,
     ];
 
     public function article(): BelongsTo

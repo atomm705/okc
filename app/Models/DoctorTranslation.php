@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Casts\UnescapedJsonCast;
 
 class DoctorTranslation extends Model
 {
@@ -10,9 +11,18 @@ class DoctorTranslation extends Model
     protected $primaryKey = 'translation_id';
     public $timestamps = false;
 
-    // для seo
+
     protected $casts = [
-        'page_seo' => 'array',
+        'page_seo' => UnescapedJsonCast::class,
+        'position_main' => UnescapedJsonCast::class,
+        'position_all' => UnescapedJsonCast::class,
+        'educations' => UnescapedJsonCast::class,
+        'courses' => UnescapedJsonCast::class,
+        'awards' => UnescapedJsonCast::class,
+        'associations' => UnescapedJsonCast::class,
+        'treatment_of_disease' => UnescapedJsonCast::class,
+        'procedures' => UnescapedJsonCast::class,
+        'specialisation' => UnescapedJsonCast::class,
     ];
 
     protected $fillable = [
@@ -26,19 +36,23 @@ class DoctorTranslation extends Model
         'short_slug',
         'email',
         'educations',
+        'short_name',
         'position_main',
         'about',
         'specialisation',
         'courses',
         'associations',
-        'procedyres',
+        'procedures',
         'treatment_of_disease',
         'awards',
         'position_all',
+        'page_seo',
     ];
 
     public function doctor()
     {
         return $this->belongsTo(Doctor::class, 'doctor_id');
     }
+
+
 }
