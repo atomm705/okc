@@ -6,8 +6,6 @@
                 <h5 class="card-header">Лікарі / Редагування</h5>
                 <div class="card-body">
                     <div class="table-responsive text-nowrap">
-
-
                          <form action="{{ route('admin.doctor.update', ['id' => $doctor->doctor_id]) }}" method="POST" enctype="multipart/form-data">
                              @csrf
 
@@ -34,14 +32,14 @@
                                              <div class="col-md-6">
                                                  <label for="photo_full" class="form-label">Зображення 384x410</label>
                                                  @if($doctor->imageFull)
-                                                     <img src="{{ asset('storage/' . $doctor->imageFull->path) }}" alt="photo_full" style="max-width: 100px;">
+                                                     <img src="{{ asset( $doctor->imageFull->src) }}" alt="photo_full" style="max-width: 100px;">
                                                  @endif
                                                  <input type="file" class="form-control" name="photo_full">
                                              </div>
                                              <div class="col-md-6">
                                                  <label for="photo_square" class="form-label">Зображення 520x520</label>
                                                  @if($doctor->imageSquare)
-                                                     <img src="{{ asset('storage/' . $doctor->imageSquare->path) }}" alt="photo_square" style="max-width: 100px;">
+                                                     <img src="{{ asset( $doctor->imageSquare->src) }}" alt="photo_square" style="max-width: 100px;">
                                                  @endif
                                                  <input type="file" class="form-control" name="photo_square">
                                              </div>
@@ -50,7 +48,7 @@
                                                  @if($doctor->getCertificates()->count())
                                                      <div class="mb-2 d-flex flex-wrap gap-2">
                                                          @foreach($doctor->getCertificates() as $certificate)
-                                                             <img src="{{ asset('storage/' . $certificate->path) }}" alt="certificate" style="max-height: 80px;">
+                                                             <img src="{{ asset( $certificate->src) }}" alt="certificate" style="max-height: 80px;">
                                                          @endforeach
                                                      </div>
                                                  @endif
