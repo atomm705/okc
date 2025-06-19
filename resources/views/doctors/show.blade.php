@@ -38,9 +38,10 @@
                 </div>
                 <div class="col-sm-10 col-lg-8 text-lg-start offset-top-60 offset-md-top-0">
 
+
                     @php
-                        $position = json_decode($doctorTranslation->position_all, true);
-                        $education = json_decode($doctorTranslation->educations, true);
+                        $position = $doctorTranslation->position_all;
+                        $education = $doctorTranslation->educations;
                     @endphp
 
                     @if ((is_array($position) && count(array_filter($position))) || (is_array($education) && count(array_filter($education))))
@@ -75,8 +76,9 @@
                         </div>
                     @endif
 
+
                     @php
-                        $specs = json_decode($doctorTranslation->specialisation, true);
+                        $specs = $doctorTranslation->specialisation;
                     @endphp
 
                     @if (is_array($specs) && count(array_filter($specs)))
@@ -93,9 +95,10 @@
                         </div>
                     @endif
 
+
                     @php
-                        $courses = json_decode($doctorTranslation->courses, true);
-                        $associations = json_decode($doctorTranslation->associations, true);
+                        $courses = $doctorTranslation->courses;
+                        $associations = $doctorTranslation->associations;
                     @endphp
 
                     @if (
@@ -141,9 +144,10 @@
                         </div>
                     @endif
 
+
                     @php
-                        $treatment = json_decode($doctorTranslation->treatment_of_disease, true);
-                        $procedures = json_decode($doctorTranslation->procedures, true);
+                        $treatment = $doctorTranslation->treatment_of_disease;
+                        $procedures = $doctorTranslation->procedures;
                     @endphp
 
                     @if (
@@ -182,8 +186,9 @@
                         </div>
                     @endif
 
+
                     @php
-                        $awards = json_decode($doctorTranslation->awards, true);
+                        $awards = $doctorTranslation->awards;
                     @endphp
 
                     @if (is_array($awards) && count(array_filter($awards)))
@@ -198,7 +203,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                @endif
+                    @endif
                 </div>
             </div>
         </div>

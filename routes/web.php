@@ -104,6 +104,8 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/category/{id}/update', [ServicesController::class, 'category_update'])->name('admin.category.update');
         Route::post('/category/image_del', [ServicesController::class, 'category_image_del'])->name('admin.category.image_del');
 
+        Route::get('/groups', [ServicesController::class, 'groups'])->name('admin.groups');
+
         Route::get('/{slug}/groups', [ServicesController::class, 'groups'])->name('admin.groups');
         Route::get('/groups/{slug}/create', [ServicesController::class, 'groups_create'])->name('admin.groups.create');
         Route::post('/groups/store', [ServicesController::class, 'groups_store'])->name('admin.groups.store');

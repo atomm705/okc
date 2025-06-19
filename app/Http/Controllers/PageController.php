@@ -39,7 +39,7 @@ class PageController extends Controller
 
         return view('main.index', compact('recentArticles'));
     }
-    
+
     public function about(){
 
         return view('main.about');
@@ -56,6 +56,7 @@ class PageController extends Controller
     }
 
     // сторінка блогу (start)
+
     // функція сторінки блогу
     public function blog(Request $request, ?string $date = null)
     {

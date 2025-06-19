@@ -11,9 +11,22 @@ class Doctor extends Model
     protected $table = 'doctors';
     protected $primaryKey = 'doctor_id';
 
+    protected $fillable = [
+        'photo_full_id',
+        'photo_square_id',
+        'position',
+        'is_visible',
+        'certificates',
+    ];
+
+   // public function translations()
+    //{
+      //  return $this->hasMany(DoctorTranslation::class, 'doctor_id', 'doctor_id')->where('locale', app()->getLocale())->first();
+    //}
+
     public function translations()
     {
-        return $this->hasMany(DoctorTranslation::class, 'doctor_id', 'doctor_id')->where('locale', app()->getLocale())->first();
+        return $this->hasMany(DoctorTranslation::class, 'doctor_id', 'doctor_id');
     }
 
     public function translation()

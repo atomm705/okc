@@ -9705,7 +9705,7 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
     min-width: 25px;
     content: '\f105';
     font: 400 14px/24px 'FontAwesome';
-    color: #b7b7b7;
+   /* color: #b7b7b7;*/
 }
 
 .list-marked > li + li {
@@ -30669,6 +30669,9 @@ html.ie-11 .fc-event .fc-event-wrap {
        align-items: center;
        justify-content: center;
    }
+}
+.title-telemed{
+    text-align: center !important;
 }
 
 @media (min-width: 1200px) {
