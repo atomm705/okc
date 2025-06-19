@@ -19,7 +19,7 @@
                         <tbody class="table-border-bottom-0">
                         @foreach($divisions as $division)
                         <tr>
-                            <td>{{ $division->translation('uk')->title }}</td>
+                            <td>{{ $division->translation->name }}</td>
                             <td>{{ $division->categories_count }}</td>
                             <td>
                                 <div class="dropdown">

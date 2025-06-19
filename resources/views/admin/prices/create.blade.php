@@ -3,12 +3,12 @@
     <div class="content-wrapper">
         <div class="container-xxl flex-grow-1 container-p-y">
             <div class="card">
-                <h5 class="card-header">Послуги / Редагування</h5>
+                <h5 class="card-header">Послуги / Створення</h5>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive text-nowrap">
-                                <form method="post" action="{{ route('admin.prices.update', ['id' => $price->id]) }}">
+                                <form method="post" action="{{ route('admin.prices.store') }}">
                                     @csrf
                                     <div class="row">
                                         <div class="col-md-4">
@@ -16,15 +16,15 @@
                                                 <label for="service_id">Група послуг</label>
                                                 <select name="service_id" class="form-control">
                                                     @foreach($groups as $gr)
-                                                        <option value="{{ $gr->id }}" @if($gr->id == $price->service_id) selected @endif>{{ $gr->admin_translation('uk')->name }}</option>
+                                                        <option value="{{ $gr->id }}" @if($gr->id == $group->id) selected @endif>{{ $gr->admin_translation('uk')->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group mb-2">
                                                 <label for="is_visible">Відображати</label>
                                                 <select name="is_visible" class="form-control">
-                                                    <option value="1" @if($price->is_visible == '1') selected @endif>Відображати</option>
-                                                    <option value="0" @if($price->is_visible == '0') selected @endif>Не відображати</option>
+                                                    <option value="1">Відображати</option>
+                                                    <option value="0">Не відображати</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -43,30 +43,30 @@
                                                             <div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="name_{{ $lang }}" class="form-label">Назва {{ $lang }}</label>
-                                                                    <input type="text" class="form-control" id="name_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="name_{{ $lang }}" @if($lang == 'uk') required @endif value="{{ $price->admin_translation($lang)->name ?? '' }}"/>
+                                                                    <input type="text" class="form-control" id="name_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="name_{{ $lang }}" @if($lang == 'uk') required @endif/>
                                                                 </div>
                                                             </div><div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="price_{{ $lang }}" class="form-label">Ціна {{ $lang }}</label>
-                                                                    <input type="text" class="form-control" id="price_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="price_{{ $lang }}"  value="{{ $price->admin_translation($lang)->price ?? '' }}"/>
+                                                                    <input type="text" class="form-control" id="price_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="price_{{ $lang }}"/>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="price_promo_{{ $lang }}" class="form-label">Акційна ціна {{ $lang }}</label>
-                                                                    <input type="text" class="form-control" id="price_promo_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="price_promo_{{ $lang }}"  value="{{ $price->admin_translation($lang)->price_promo ?? '' }}"/>
+                                                                    <input type="text" class="form-control" id="price_promo_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="price_promo_{{ $lang }}"/>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="time_{{ $lang }}" class="form-label">Час {{ $lang }}</label>
-                                                                    <input type="text" class="form-control" id="time_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="time_{{ $lang }}"  value="{{ $price->admin_translation($lang)->time ?? '' }}"/>
+                                                                    <input type="text" class="form-control" id="time_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="time_{{ $lang }}"/>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="note_{{ $lang }}" class="form-label">Опис {{ $lang }}</label>
-                                                                    <textarea class="form-control" id="note_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="note_{{ $lang }}">{{ $price->admin_translation($lang)->note ?? '' }}</textarea>
+                                                                    <textarea class="form-control" id="note_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="note_{{ $lang }}"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>

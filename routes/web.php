@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\SetLocale;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\ServicesControler;
-use App\Http\Controllers\AppointmentControler;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ServicePagesController;
@@ -97,15 +97,23 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('admin.doctor.edit');
         Route::post('/doctor/{id}/update', [DoctorController::class, 'update'])->name('admin.doctor.update');
 
-        Route::get('/groups', [ServicesController::class, 'groups'])->name('admin.groups');
+        Route::get('/category', [ServicesController::class, 'category'])->name('admin.category');
+        Route::get('/category/create', [ServicesController::class, 'category_create'])->name('admin.category.create');
+        Route::post('/category/store', [ServicesController::class, 'category_store'])->name('admin.category.store');
+        Route::get('/category/{id}/edit', [ServicesController::class, 'category_edit'])->name('admin.category.edit');
+        Route::post('/category/{id}/update', [ServicesController::class, 'category_update'])->name('admin.category.update');
+        Route::post('/category/image_del', [ServicesController::class, 'category_image_del'])->name('admin.category.image_del');
 
-        Route::get('/services', [ServicesController::class, 'services'])->name('admin.services');
+        Route::get('/{slug}/groups', [ServicesController::class, 'groups'])->name('admin.groups');
+        Route::get('/groups/{slug}/create', [ServicesController::class, 'groups_create'])->name('admin.groups.create');
+        Route::post('/groups/store', [ServicesController::class, 'groups_store'])->name('admin.groups.store');
+        Route::get('/groups/{id}/edit', [ServicesController::class, 'groups_edit'])->name('admin.groups.edit');
+        Route::post('/groups/{id}/update', [ServicesController::class, 'groups_update'])->name('admin.groups.update');
 
-        Route::get('/prices', [ServicesControler::class, 'prices'])->name('admin.prices');
-        Route::get('/prices/{slug}', [ServicesControler::class, 'prices'])->name('admin.prices.list');
-        Route::get('/prices/create', [ServicesControler::class, 'create'])->name('admin.prices.create');
-        Route::get('/prices/{slug}/edit', [ServicesControler::class, 'edit'])->name('admin.prices.edit');
-        Route::post('/prices/{slug}/update', [ServicesControler::class, 'update'])->name('admin.prices.update');
+        Route::get('/prices/{group_id}/create', [ServicesController::class, 'create'])->name('admin.prices.create');
+        Route::post('/prices/store', [ServicesController::class, 'store'])->name('admin.prices.store');
+        Route::get('/prices/{id}/edit', [ServicesController::class, 'edit'])->name('admin.prices.edit');
+        Route::post('/prices/{id}/update', [ServicesController::class, 'update'])->name('admin.prices.update');
 
         Route::get('/division', [DivisionController::class, 'index'])->name('admin.divisions');
         Route::get('/division/create', [DivisionController::class, 'create'])->name('admin.divisions.create');

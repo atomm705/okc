@@ -23,7 +23,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="name_{{ $lang }}" class="form-label">Назва {{ $lang }}</label>
-                                                        <input type="text" class="form-control" id="name_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="name_{{ $lang }}" @if($lang == 'uk') required @endif value="{{ $division->admin_translation($lang)->title }}"/>
+                                                        <input type="text" class="form-control" id="name_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="name_{{ $lang }}" @if($lang == 'uk') required @endif value="{{ $division->admin_translation($lang)->name }}"/>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -60,22 +60,6 @@
                 <div class="card-body mt-2">
                     <div class="row">
                         <div class="col-md-6">
-                            <form method="post" id="category_add">
-                                @csrf
-                                <div class="form-group">
-                                    <label for="category" class="form-label">Категорія</label>
-                                    <select name="category" class="form-control">
-                                        @foreach($categories as $category)
-                                            <option value="{{ $category->category_id }}">{{ $category->translation->name ?? ''}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="form-group mt-2">
-                                    <button class="btn btn-primary" type="submit">Додати</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-6">
                             <div id="category_result">
                                 <table class="table">
                                     <thead>
@@ -88,7 +72,7 @@
                                     @foreach($division->categories as $category)
                                         <tr>
                                             <td>{{ $i }}</td>
-                                            <td>{{ $category->category->translation->name }}</td>
+                                            <td>{{ $category->translation->name }}</td>
                                             <td></td>
                                         </tr>
                                         @php $i++; @endphp

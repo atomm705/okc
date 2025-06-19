@@ -17,23 +17,17 @@
                 <div class="text-truncate">Головна</div>
             </a>
         </li>
-        <li class="menu-item @if(request()->routeIs('admin.services.*')) active @endif">
-            <a href="" class="menu-link" >
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div class="text-truncate">Послуги</div>
+        <li class="menu-item">
+            <a href="{{ route('admin.divisions') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-library"></i>
+                <div class="text-truncate">Відділення</div>
             </a>
         </li>
         <li class="menu-item">
-            <a href="{{ route('admin.prices') }}" class="menu-link">Ціни</a>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('admin.divisions') }}" class="menu-link">Відділення</a>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('admin.groups') }}" class="menu-link">Категорії</a>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('admin.services') }}" class="menu-link">Послуги</a>
+            <a href="{{ route('admin.category') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div class="text-truncate">Категорії</div>
+            </a>
         </li>
         <li class="menu-item @if(request()->routeIs('admin.doctors')) active @endif">
             <a href="{{ route('admin.doctors') }}" class="menu-link" >

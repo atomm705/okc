@@ -2,7 +2,6 @@
 @section('content')
     <div class="content-wrapper">
         <div class="container-xxl flex-grow-1 container-p-y">
-
             <div class="row">
                 <div class="col-md-9">
                     <div class="card">
@@ -24,7 +23,7 @@
                                 <tbody>
                                 @foreach($category_active->category->groups as $group)
                                     <tr>
-                                        <td>{{ $group->admin_translation()->name ?? ''}}</td>
+                                        <td>{{ $group->admin_translation('uk')->name ?? ''}}</td>
                                         <td>@if($group->is_visible == '1')<span class="badge rounded-pill bg-label-success">Відображається</span>@else<span class="badge rounded-pill bg-label-warning">Не відображається</span>@endif</td>
                                         <td>
                                             <div class="dropdown">

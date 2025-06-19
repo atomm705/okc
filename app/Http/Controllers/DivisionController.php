@@ -6,6 +6,7 @@ use App\Models\ArticleCategory;
 use App\Models\Division;
 use App\Models\DivisionCategory;
 use App\Models\DivisionTranslation;
+use App\Models\NewDivision;
 use App\Models\ServicesCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -14,7 +15,7 @@ class DivisionController extends Controller
 {
     public function index(){
 
-        $divisions = Division::all();
+        $divisions = NewDivision::all();
 
         return view('admin.divisions.index', compact('divisions'));
     }
@@ -26,7 +27,7 @@ class DivisionController extends Controller
 
     public function store(Request $request){
 
-        $division = new Division();
+        $division = new NewDivision();
         $division->slug = Str::slug($request->name_uk);
         $division->save();
 
@@ -36,13 +37,17 @@ class DivisionController extends Controller
             $inner_title = 'inner_title_'.$lang;
             $inner_description = 'inner_description_'.$lang;
 
-            $translate = new DivisionTranslation();
+            $translate = new NewDivisionTranslation();
+            $trans = array();
             $translate->division_id = $division->id;
             $translate->locale = $lang;
-            $translate->title = $request->$title;
-            $translate->description = $request->$description;
-            $translate->inner_title = $request->$inner_title;
-            $translate->inner_description = $request->$inner_description;
+            $translate->name = $request->$title;
+
+            $trans['description'] = $request->$description;
+            $trans['inner_title'] = $request->$inner_title;
+            $trans['inner_description'] = $request->$inner_description;
+
+            $translate->page_seo = json_encode($trans, JSON_UNESCAPED_UNICODE);
 
             $translate->save();
         }
@@ -53,11 +58,9 @@ class DivisionController extends Controller
 
     public function edit($id){
 
-        $division = Division::find($id);
+        $division = NewDivision::find($id);
 
-        $categories = ArticleCategory::where('is_visible', true)->with('translation')->get();
-
-        return view('admin.divisions.edit', compact('division', 'categories'));
+        return view('admin.divisions.edit', compact('division'));
     }
 
     public function update(Request $request, $id)
@@ -73,29 +76,17 @@ class DivisionController extends Controller
 
             $translate = DivisionTranslation::where('division_id', $division->id)->where('locale', $lang)->first();
 
-            $translate->title = $request->$title;
-            $translate->description = $request->$description;
-            $translate->inner_title = $request->$inner_title;
-            $translate->inner_description = $request->$inner_description;
+            $trans = array();
+
+            $trans['description'] = $request->$description;
+            $trans['inner_title'] = $request->$inner_title;
+            $trans['inner_description'] = $request->$inner_description;
+
+            $translate->page_seo = json_encode($trans, JSON_UNESCAPED_UNICODE);
 
             $translate->save();
         }
         return redirect()->route('admin.divisions');
-    }
-
-    public function category_add(Request $request, $id){
-
-        $category = DivisionCategory::where('division_id', $id)->where('category_id', $request->category)->first();
-        if(!$category){
-            $category = new DivisionCategory();
-            $category->division_id = $id;
-            $category->category_id = $request->category;
-            $category->save();
-        }
-
-        $division = Division::find($id);
-
-        return view('admin.divisions.part', compact('division'));
     }
 
     public function category_del(){
