@@ -360,7 +360,7 @@ class ServicesController extends Controller
             }
         }
 
-        return redirect()->route('admin.groups', ['slug' => $group->category->slug]);
+        return redirect()->route('admin.groups', ['slug' => $group->group->category->slug]);
     }
 
     public function edit($id){
