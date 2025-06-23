@@ -58,15 +58,30 @@
 
                                                         <div class="col-md-12 mb-3">
                                                             <label for="seo_title_{{ $lang }}" class="form-label">Свій СЕО title {{ $lang }}</label>
-                                                            <textarea name="seo_title_{{ $lang }}" class="form-control" rows="5">{{ json_decode($group->admin_translation($lang)->page_seo, true)['title'] ?? '' }}</textarea>
+                                                            @php
+                                                                $translation = $group->admin_translation($lang);
+                                                                $seo = json_decode($translation?->page_seo ?? '', true);
+                                                            @endphp
+
+                                                            <textarea name="seo_title_{{ $lang }}" class="form-control" rows="5">{{ $seo['title'] ?? '' }}</textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="seo_description_{{ $lang }}" class="form-label">Свій СЕО description {{ $lang }}</label>
-                                                            <textarea name="seo_description_{{ $lang }}" class="form-control" rows="5">{{ json_decode($group->admin_translation($lang)->page_seo, true)['description'] ?? '' }}</textarea>
+                                                            @php
+                                                                $translation = $group->admin_translation($lang);
+                                                                $seo = json_decode($translation?->page_seo ?? '', true);
+                                                            @endphp
+
+                                                            <textarea name="seo_description_{{ $lang }}" class="form-control" rows="5">{{ $seo['description'] ?? '' }}</textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="seo_keywords_{{ $lang }}" class="form-label">Свій СЕО keywords {{ $lang }}</label>
-                                                            <textarea name="seo_keywords_{{ $lang }}" class="form-control" rows="5">{{ json_decode($group->admin_translation($lang)->page_seo, true)['keywords'] ?? '' }}</textarea>
+                                                            @php
+                                                                $translation = $group->admin_translation($lang);
+                                                                $seo = json_decode($translation?->page_seo ?? '', true);
+                                                            @endphp
+
+                                                            <textarea name="seo_keywords_{{ $lang }}" class="form-control" rows="5">{{ $seo['keywords'] ?? '' }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
