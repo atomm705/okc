@@ -13,6 +13,7 @@
                                 </div>
                             </div>
                         </div>
+                        @foreach($category_active->category->groups as $group)
                         <div class="card-body">
                             <table class="table">
                                 <thead>
@@ -21,7 +22,6 @@
                                 <th>Дії</th>
                                 </thead>
                                 <tbody>
-                                @foreach($category_active->category->groups as $group)
                                     <tr>
                                         <td>{{ $group->admin_translation('uk')->name ?? ''}}</td>
                                         <td>@if($group->is_visible == '1')<span class="badge rounded-pill bg-label-success">Відображається</span>@else<span class="badge rounded-pill bg-label-warning">Не відображається</span>@endif</td>
@@ -41,11 +41,10 @@
                                         <td></td>
                                     </tr>
                                     @endforeach
-                                @endforeach
                                 </tbody>
                             </table>
-
                         </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-md-3">

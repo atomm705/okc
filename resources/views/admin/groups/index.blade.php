@@ -9,8 +9,18 @@
                     </div>
                     <div class="card">
                         <h5 class="card-header">Групи послуг</h5>
+                        @foreach($groups as $group)
                         <div class="table-responsive text-nowrap m-5">
-                            @foreach($groups as $group)
+                            <div class="mb-3 row">
+                                <div class="col-md-6"><h3>{{ $group->admin_translation('uk')->name ?? '' }}</h3></div>
+                                <div class="col-md-2">
+                                    @if($group->is_visible == '1') <span class="text-success">Відображається</span>@endif @if($group->is_visible == '0') <span class="text-danger">Не відображається</span>@endif
+                                </div>
+                                <div class="col-md-4">
+                                    <a class="dropdown-item" href="{{ route('admin.groups.edit', ['id' => $group->id]) }}"><i class="bx bx-edit-alt me-1"></i> Редагувати групу</a>
+                                    <a class="dropdown-item" href="{{ route('admin.prices.create', ['group_id' => $group->id]) }}"><i class="bx bx-add-to-queue me-1"></i> Створити послугу</a>
+                                </div>
+                            </div>
                                 <table class="table" id="list-{{ $group->id }}">
                                     <thead>
                                     <tr>
@@ -21,15 +31,6 @@
                                     </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-3">
-                                    <tr>
-                                        <td><h3>{{ $group->admin_translation('uk')->name ?? '' }}</h3></td>
-                                        <td></td>
-                                        <td>@if($group->is_visible == '1') <span class="text-green-600">Відображається</span>@endif @if($group->is_visible == '0') <span class="text-red-600">Не відображається</span>@endif </td>
-                                        <td>
-                                            <a class="dropdown-item" href="{{ route('admin.groups.edit', ['id' => $group->id]) }}"><i class="bx bx-edit-alt me-1"></i> Редагувати групу</a>
-                                            <a class="dropdown-item" href="{{ route('admin.prices.create', ['group_id' => $group->id]) }}"><i class="bx bx-add-to-queue me-1"></i> Створити послугу</a>
-                                        </td>
-                                    </tr>
                                     @foreach($group->services as $service)
                                         <tr>
                                             <td>{{ $service->admin_translation('uk')->name }}</td>
@@ -47,8 +48,8 @@
                                     @endforeach
                                     </tbody>
                                 </table>
-                            @endforeach
                         </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-md-3">

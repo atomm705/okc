@@ -8,8 +8,6 @@
                     <div class="table-responsive text-nowrap">
                          <form action="{{ route('admin.doctor.update', ['id' => $doctor->doctor_id]) }}" method="POST" enctype="multipart/form-data">
                              @csrf
-
-
                              <div class="nav-align-top nav-tabs-shadow mb-5">
                                  <ul class="nav nav-tabs" role="tablist">
                                      <li class="nav-item" role="presentation">
@@ -56,7 +54,6 @@
                                              </div>
                                          </div>
                                      </div>
-
 
                                      @foreach(config('app.fallback_locale') as $lang)
                                          @php $trans = $doctor->translations->firstWhere('locale', $lang); @endphp
@@ -147,11 +144,9 @@
                                                      <label for="og_description_{{ $lang }}" class="form-label">OG Description</label>
                                                      <input type="text" class="form-control" name="page_seo[{{ $lang }}][openGraph][description]" value="{{ $seo['openGraph']['description'] ?? '' }}">
                                                  </div>
-
                                              </div>
                                          </div>
                                      @endforeach
-
                                  </div>
                              </div>
 
