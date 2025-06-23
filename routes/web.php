@@ -89,7 +89,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 
         Route::get('/doctors', [DoctorController::class, 'doctors'])->name('admin.doctors');
-        Route::get('/doctors/{id}', [DoctorController::class, 'doctors'])->name('admin.doctors.list');
+        Route::get('/doctors/{id}/list', [DoctorController::class, 'doctors_list'])->name('admin.doctors.list');
         Route::get('/doctor_department/create', [DoctorController::class, 'department_create'])->name('admin.doctor_department.create');
         Route::get('/doctor_department/{id}/edit', [DoctorController::class, 'department_edit'])->name('admin.doctor_department.edit');
         Route::get('/doctor/{department_id}/create', [DoctorController::class, 'create'])->name('admin.doctor.create');

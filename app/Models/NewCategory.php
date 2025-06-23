@@ -14,7 +14,15 @@ class NewCategory extends Model
         return $this->hasMany(NewCategoryTranslation::class, 'category_id', 'id')->where('locale', $lang)->first();
     }
 
+    public function translations(){
+        return $this->hasMany(NewCategoryTranslation::class, 'category_id', 'id');
+    }
+
     public function groups(){
         return $this->hasMany(NewService::class, 'category_id', 'id');
+    }
+
+    public function doctors(){
+        return $this->belongsToMany(NewDoctor::class, 'new_doctor_departments', 'department_id', 'doctor_id');
     }
 }

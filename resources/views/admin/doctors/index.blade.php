@@ -11,8 +11,13 @@
                                     <div class="card border">
                                         <div class="card-header">
                                             <div class="row">
-                                                <div class="rounded-full"><img src="{{ $department_active->image->src }}"> {{ $department_active->translation('uk')->name }}</div>
-                                            </div>
+                                                <div class="rounded-full">
+                                                    @if(empty($department))
+                                                        <img src="{{ $departments->first()->image }}" width="128"> {{ $departments->first()->admin_translation('uk')->name }}</div>
+                                                    @else
+                                                        <img src="{{ $department->image }}" width="128"> {{ $department->admin_translation('uk')->name }}</div>
+                                                    @endif
+                                        </div>
                                             <div class="row border-right">
                                                 <span class="text-uppercase" style="border-bottom: 2px solid #ececec">Підтримувані мови</span>
                                                 @php
@@ -23,17 +28,36 @@
                                                         // додати інші мови за потреби
                                                     ];
                                                 @endphp
-                                                @foreach($department_active->langs as $lang)
-                                                    <span class="">{{ $languages[$lang->locale] }}</span>
-                                                @endforeach
+                                                @if(empty($department))
+                                                    @foreach($departments->first()->translations as $lang)
+                                                        <span class="">{{ $languages[$lang->locale] }}</span>
+                                                    @endforeach
+                                                @else
+                                                    @foreach($department->translations as $lang)
+                                                        <span class="">{{ $languages[$lang->locale] }}</span>
+                                                    @endforeach
+                                                @endif
                                             </div>
                                         </div>
                                         <div class="card-body bg-gray-500">
                                             <div class="row">
                                                 <div class="col-lg-3"></div>
                                                 <div class="col-lg-3"><a href="" class="btn btn-success">Додати лікаря</a></div>
-                                                <div class="col-lg-3"><a href="{{ route('admin.doctor.create', ['department_id' => $department_active->department_id]) }}" class="btn btn-outline-success">Створити лікаря</a></div>
-                                                <div class="col-lg-3"><a href="{{ route('admin.doctor_department.edit', ['id' => $department_active->department_id]) }}" class="btn btn-outline-primary">Редагувати</a></div>
+                                                @if(empty($department))
+                                                    <div class="col-lg-3">
+                                                        <a href="{{ route('admin.doctor.create', ['department_id' => $departments->first()->id]) }}" class="btn btn-outline-success">Створити лікаря</a>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <a href="{{ route('admin.doctor_department.edit', ['id' => $departments->first()->id]) }}" class="btn btn-outline-primary">Редагувати</a>
+                                                    </div>
+                                                @else
+                                                    <div class="col-lg-3">
+                                                        <a href="{{ route('admin.doctor.create', ['department_id' => $department->id]) }}" class="btn btn-outline-success">Створити лікаря</a>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <a href="{{ route('admin.doctor_department.edit', ['id' => $department->id]) }}" class="btn btn-outline-primary">Редагувати</a>
+                                                    </div>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -47,20 +71,37 @@
                                     <th>Дії</th>
                                     </thead>
                                     <tbody>
-                                @foreach($department_active->admin_doctors as $doctor)
-                                    <tr>
-                                        <td>{{ $doctor->doctor->translation('uk')->full_name ?? $doctor->doctor->translation('ru')->full_name ?? 'empty - '.$doctor->doctor->doctor_id}}</td>
-                                        <td>@if($doctor->doctor->is_visible == '1')<span class="badge rounded-pill bg-label-success">Відображається</span>@else<span class="badge rounded-pill bg-label-warning">Не відображається</span>@endif</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="{{ route('admin.doctor.edit', ['id' => $doctor->doctor->doctor_id]) }}"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                @endforeach
+                                    @if(empty($department))
+                                        @foreach($departments->first()->doctors as $doctor)
+                                            <tr>
+                                                <td>{{ $doctor->admin_translation('uk')->full_name ?? $doctor->doctor->admin_translation('ru')->full_name ?? 'empty - '.$doctor->id}}</td>
+                                                <td>@if($doctor->is_visible == '1')<span class="badge rounded-pill bg-label-success">Відображається</span>@else<span class="badge rounded-pill bg-label-warning">Не відображається</span>@endif</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="{{ route('admin.doctor.edit', ['id' => $doctor->id]) }}"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    @else
+                                        @foreach($department->doctors as $doctor)
+                                            <tr>
+                                                <td>{{ $doctor->admin_translation('uk')->second_name ?? '' }} {{ $doctor->admin_translation('uk')->first_name ?? '' }} {{ $doctor->admin_translation('uk')->middle_name ?? '' }}</td>
+                                                <td>@if($doctor->is_visible == '1')<span class="badge rounded-pill bg-label-success">Відображається</span>@else<span class="badge rounded-pill bg-label-warning">Не відображається</span>@endif</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="{{ route('admin.doctor.edit', ['id' => $doctor->id]) }}"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    @endif
                                     </tbody>
                                 </table>
 
@@ -78,7 +119,7 @@
                             <div class="card-body">
                                 <ul class="list-style-none">
                                     @foreach($departments as $department)
-                                        <li class="text-uppercase mt-1"><a href="{{ route('admin.doctors', ['id' => $department->department_id]) }}">{{ $department->translation('uk')->name ?? $department->translation('ru')->name }}</a></li>
+                                        <li class="text-uppercase mt-1"><a href="{{ route('admin.doctors.list', ['id' => $department->id]) }}">{{ $department->admin_translation('uk')->name ?? '' }}</a></li>
                                     @endforeach
                                 </ul>
                             </div>

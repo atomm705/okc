@@ -39,6 +39,26 @@
                                                     <input type="file" class="form-control" name="sertificates[]" multiple>
                                                 </div>
                                             </div>
+                                            <div class="row mt-3">
+                                                @php \Carbon\Carbon::setLocale('uk'); @endphp
+                                                @for($i = 0;$i<6;$i++)
+                                                    <div class="col-md-2 mb-3">
+                                                        <label for="working_hours_{{ $i }}" class="text-capitalize">{{ ucfirst(\Carbon\Carbon::create()->startOfWeek()->addDays($i)->translatedFormat('l')) }}</label>
+                                                        <select name="working_hours[{{ $i }}][start]" class="form-control mb-3" id="working_hours_{{ $i }}">
+                                                            <option value="">Початок роботи</option>
+                                                            @for ($time = strtotime('08:00'); $time <= strtotime('19:00'); $time += 15 * 60)
+                                                                <option value="{{ date('H:i', $time) }}">{{ date('H:i', $time) }}</option>
+                                                            @endfor
+                                                        </select>
+                                                        <select name="working_hours[{{ $i }}][end]" class="form-control mb-3" id="working_hours_{{ $i }}">
+                                                            <option value="">Кінець роботи</option>
+                                                            @for ($time = strtotime('08:00'); $time <= strtotime('19:00'); $time += 15 * 60)
+                                                                <option value="{{ date('H:i', $time) }}">{{ date('H:i', $time) }}</option>
+                                                            @endfor
+                                                        </select>
+                                                    </div>
+                                                @endfor
+                                            </div>
                                         </div>
                                         @foreach(config('app.fallback_locale') as $lang)
                                             <div class="tab-pane fade" id="navs-top-{{ $lang }}" role="tabpanel">
@@ -164,19 +184,19 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <label for="seo_title_{{ $lang }}" class="form-label">Заголовок {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(вводити через кому)</span></label>
+                                                        <label for="seo_title_{{ $lang }}" class="form-label">Заголовок {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none"></span></label>
                                                         <input type="text" class="form-control" id="seo_title_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="seo_title_{{ $lang }}"/>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <label for="seo_description_{{ $lang }}" class="form-label">Опис {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(вводити через кому)</span></label>
+                                                        <label for="seo_description_{{ $lang }}" class="form-label">Опис {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none"></span></label>
                                                         <input type="text" class="form-control" id="seo_description_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="seo_description_{{ $lang }}"/>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <label for="seo_keywords_{{ $lang }}" class="form-label">Ключові слова {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(вводити через кому)</span></label>
+                                                        <label for="seo_keywords_{{ $lang }}" class="form-label">Ключові слова {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none"></span></label>
                                                         <input type="text" class="form-control" id="seo_keywords_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="seo_keywords_{{ $lang }}"/>
                                                     </div>
                                                 </div>
