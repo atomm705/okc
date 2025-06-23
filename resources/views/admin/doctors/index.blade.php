@@ -2,7 +2,6 @@
 @section('content')
     <div class="content-wrapper">
         <div class="container-xxl flex-grow-1 container-p-y">
-
                 <div class="row">
                     <div class="col-md-9">
                         <div class="card">
@@ -74,7 +73,7 @@
                                     @if(empty($department))
                                         @foreach($departments->first()->doctors as $doctor)
                                             <tr>
-                                                <td>{{ $doctor->admin_translation('uk')->full_name ?? $doctor->doctor->admin_translation('ru')->full_name ?? 'empty - '.$doctor->id}}</td>
+                                                <td>{{ $doctor->admin_translation('uk')->second_name ?? '' }} {{ $doctor->admin_translation('uk')->first_name ?? '' }} {{ $doctor->admin_translation('uk')->middle_name ?? '' }}</td>
                                                 <td>@if($doctor->is_visible == '1')<span class="badge rounded-pill bg-label-success">Відображається</span>@else<span class="badge rounded-pill bg-label-warning">Не відображається</span>@endif</td>
                                                 <td>
                                                     <div class="dropdown">

@@ -48,6 +48,14 @@
                                                             <textarea name="text_{{ $lang }}" id="text_{{ $lang }}" class="form-control" rows="10"></textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
+                                                            <label for="text_before_{{ $lang }}" class="form-label">Текст до {{ $lang }}</label>
+                                                            <textarea name="text_before_{{ $lang }}" id="text_before_{{ $lang }}" class="form-control" rows="10"></textarea>
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="text_after_{{ $lang }}" class="form-label">Текст після {{ $lang }}</label>
+                                                            <textarea name="text_after_{{ $lang }}" id="text_after_{{ $lang }}" class="form-control" rows="10"></textarea>
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
                                                             <label for="seo_title_{{ $lang }}" class="form-label">Свій СЕО title {{ $lang }}</label>
                                                             <textarea name="seo_title_{{ $lang }}" class="form-control" rows="5"></textarea>
                                                         </div>

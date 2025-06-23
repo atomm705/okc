@@ -48,6 +48,15 @@
                                                             <textarea name="text_{{ $lang }}" id="text_{{ $lang }}" class="form-control" rows="10">{{ $group->admin_translation($lang)->text ?? '' }}</textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
+                                                            <label for="text_before_{{ $lang }}" class="form-label">Текст до {{ $lang }}</label>
+                                                            <textarea name="text_before_{{ $lang }}" id="text_before_{{ $lang }}" class="form-control" rows="10">{{ $group->admin_translation($lang)->text_before ?? '' }}</textarea>
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="text_after_{{ $lang }}" class="form-label">Текст після {{ $lang }}</label>
+                                                            <textarea name="text_after_{{ $lang }}" id="text_after_{{ $lang }}" class="form-control" rows="10">{{ $group->admin_translation($lang)->text_after ?? '' }}</textarea>
+                                                        </div>
+
+                                                        <div class="col-md-12 mb-3">
                                                             <label for="seo_title_{{ $lang }}" class="form-label">Свій СЕО title {{ $lang }}</label>
                                                             <textarea name="seo_title_{{ $lang }}" class="form-control" rows="5">{{ json_decode($group->admin_translation($lang)->page_seo, true)['title'] ?? '' }}</textarea>
                                                         </div>
@@ -81,6 +90,8 @@
             <script>
                 @foreach(config('app.fallback_locale') as $lang)
                 CKEDITOR.replace('text_{{ $lang }}');
+                CKEDITOR.replace('text_before_{{ $lang }}');
+                CKEDITOR.replace('text_after_{{ $lang }}');
                 @endforeach
             </script>
 @endsection
