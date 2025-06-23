@@ -17,4 +17,12 @@ class NewDoctor extends Model
     public function translations(){
         return $this->hasMany(NewDoctorTranslation::class, 'doctor_id', 'id');
     }
+
+    public function departments(){
+        return $this->belongsToMany(NewCategory::class, 'new_doctor_departments', 'doctor_id', 'department_id')->withPivot('work_hours');
+    }
+
+    public function sertificates(){
+        return $this->hasMany(NewDoctorSertificate::class, 'doctor_id', 'id');
+    }
 }

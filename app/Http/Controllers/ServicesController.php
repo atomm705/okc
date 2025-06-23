@@ -250,6 +250,8 @@ class ServicesController extends Controller
             $name = 'name_'.$lang;
             if($request->$name){
                 $text = 'text_'.$lang;
+                $text_before = 'text_before_'.$lang;
+                $text_after = 'text_after_'.$lang;
                 $seo_title = 'seo_title_'.$lang;
                 $seo_description = 'seo_description_'.$lang;
                 $seo_keywords = 'seo_keywords_'.$lang;
@@ -260,6 +262,8 @@ class ServicesController extends Controller
                 $translate->locale = $lang;
                 $translate->name = $request->$name;
                 $translate->text = $request->$text;
+                $translate->text_before = $request->$text_before;
+                $translate->text_after = $request->$text_after;
 
                 $seo['title'] = $request->$seo_title;
                 $seo['description'] = $request->$seo_description;
@@ -294,6 +298,8 @@ class ServicesController extends Controller
             $name = 'name_'.$lang;
             if($request->$name){
                 $text = 'text_'.$lang;
+                $text_before = 'text_before_'.$lang;
+                $text_after = 'text_after_'.$lang;
                 $seo_title = 'seo_title_'.$lang;
                 $seo_description = 'seo_description_'.$lang;
                 $seo_keywords = 'seo_keywords_'.$lang;
@@ -309,6 +315,8 @@ class ServicesController extends Controller
 
                 $translate->name = $request->$name;
                 $translate->text = $request->$text;
+                $translate->text_before = $request->$text_before;
+                $translate->text_after = $request->$text_after;
 
                 $seo['title'] = $request->$seo_title;
                 $seo['description'] = $request->$seo_description;

@@ -68,20 +68,39 @@
                                                 </div>
                                             </div>
                                             <div class="row mt-3">
-                                                @php \Carbon\Carbon::setLocale('uk'); @endphp
-                                                @for($i = 0;$i<6;$i++)
+                                                @php
+                                                    \Carbon\Carbon::setLocale('uk');
+                                                    $workHoursRaw = old('work_hours', $doctor->departments->first()->pivot->work_hours ?? []);
+                                                    $storedHours = is_string($workHoursRaw) ? json_decode($workHoursRaw, true) : $workHoursRaw;
+                                                @endphp
+
+                                                @for($i = 0; $i < 6; $i++)
+                                                    @php
+                                                        $start = '';
+                                                        $end = '';
+                                                        if (!empty($storedHours[$i]) && str_contains($storedHours[$i], '-')) {
+                                                            [$start, $end] = explode('-', $storedHours[$i]);
+                                                        }
+                                                    @endphp
+
                                                     <div class="col-md-2 mb-3">
-                                                        <label for="working_hours_{{ $i }}" class="text-capitalize">{{ ucfirst(\Carbon\Carbon::create()->startOfWeek()->addDays($i)->translatedFormat('l')) }}</label>
-                                                        <select name="working_hours[{{ $i }}][start]" class="form-control mb-3" id="working_hours_{{ $i }}">
+                                                        <label for="working_hours_{{ $i }}" class="text-capitalize">
+                                                            {{ ucfirst(\Carbon\Carbon::create()->startOfWeek()->addDays($i)->translatedFormat('l')) }}
+                                                        </label>
+
+                                                        <select name="working_hours[{{ $i }}][start]" class="form-control mb-2" id="working_hours_start_{{ $i }}">
                                                             <option value="">Початок роботи</option>
                                                             @for ($time = strtotime('08:00'); $time <= strtotime('19:00'); $time += 15 * 60)
-                                                                <option value="{{ date('H:i', $time) }}">{{ date('H:i', $time) }}</option>
+                                                                @php $t = date('H:i', $time); @endphp
+                                                                <option value="{{ $t }}" @selected($t === $start)>{{ $t }}</option>
                                                             @endfor
                                                         </select>
-                                                        <select name="working_hours[{{ $i }}][end]" class="form-control mb-3" id="working_hours_{{ $i }}">
+
+                                                        <select name="working_hours[{{ $i }}][end]" class="form-control" id="working_hours_end_{{ $i }}">
                                                             <option value="">Кінець роботи</option>
                                                             @for ($time = strtotime('08:00'); $time <= strtotime('19:00'); $time += 15 * 60)
-                                                                <option value="{{ date('H:i', $time) }}">{{ date('H:i', $time) }}</option>
+                                                                @php $t = date('H:i', $time); @endphp
+                                                                <option value="{{ $t }}" @selected($t === $end)>{{ $t }}</option>
                                                             @endfor
                                                         </select>
                                                     </div>
