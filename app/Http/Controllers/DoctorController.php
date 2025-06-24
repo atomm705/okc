@@ -6,6 +6,7 @@ use App\Models\Image;
 use App\Models\NewCategory;
 use App\Models\NewDoctor;
 use App\Models\NewDoctorDepartment;
+use App\Models\NewDoctorSertificate;
 use App\Models\NewDoctorTranslation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -110,6 +111,40 @@ class DoctorController extends Controller
 
         $doctor->save();
 
+        if ($request->hasFile('sertificates')) {
+            $request->validate([
+                'sertificates.*' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4096',
+            ]);
+
+            $files = $request->file('sertificates');
+
+            foreach ($files as $file) {
+                $filename = hash('sha256', $file->getClientOriginalName() . now()) . '.' . $file->getClientOriginalExtension();
+                $basename = pathinfo($filename, PATHINFO_FILENAME);
+                $directory = public_path('assets/images/uploads/');
+
+                // Переміщення оригіналу
+                $originalPath = $directory . $filename;
+                $file->move($directory, $filename);
+
+                // Оптимізація
+                $optimizerChain = OptimizerChainFactory::create();
+                $optimizerChain->optimize($originalPath);
+
+                // Генерація .webp
+                $manager = new ImageManager(new Driver());
+                $image = $manager->read($originalPath);
+                $webPath = $directory . $basename . '.webp';
+                $image->toWebp()->save($webPath);
+
+                $sertif = new NewDoctorSertificate();
+                $sertif->doctor_id = $doctor->id;
+                $sertif->image = 'assets/images/uploads/' . $filename;
+                $sertif->save();
+
+            }
+        }
+
         $department = new NewDoctorDepartment();
         $department->department_id = $department_id;
         $department->doctor_id = $doctor->id;
@@ -158,15 +193,15 @@ class DoctorController extends Controller
                 $translate->first_name = $request->$first_name;
                 $translate->second_name = $request->$second_name;
                 $translate->middle_name = $request->$middle_name;
-                $translate->position_main = $specialties = array_map('trim', explode(',', $request->$position_main));
-                $translate->position_all = array_map('trim', explode(',', $request->$position_all));
-                $translate->educations = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$educations)));
-                $translate->courses = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$courses)));
-                $translate->awards = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$awards)));
-                $translate->associations = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$associations)));
-                $translate->treatment_of_disease = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$treatment_of_disease)));
-                $translate->procedures = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$procudures)));
-                $translate->specialisations = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$specialisations)));
+                $translate->position_main = $specialties = json_encode(array_map('trim', explode(',', $request->$position_main)), JSON_UNESCAPED_UNICODE);
+                $translate->position_all = json_encode(array_map('trim', explode(',', $request->$position_all)), JSON_UNESCAPED_UNICODE);
+                $translate->educations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$educations))), JSON_UNESCAPED_UNICODE);
+                $translate->courses = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$courses))), JSON_UNESCAPED_UNICODE);
+                $translate->awards = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$awards))), JSON_UNESCAPED_UNICODE);
+                $translate->associations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$associations))), JSON_UNESCAPED_UNICODE);
+                $translate->treatment_of_disease = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$treatment_of_disease))), JSON_UNESCAPED_UNICODE);
+                $translate->procedures = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$procudures))), JSON_UNESCAPED_UNICODE);
+                $translate->specialisations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$specialisations))), JSON_UNESCAPED_UNICODE);
                 $translate->about = $request->$about;
 
                 $seo['title'] = $request->$seo_title;
@@ -241,6 +276,41 @@ class DoctorController extends Controller
 
         $doctor->save();
 
+        if ($request->hasFile('sertificates')) {
+            $request->validate([
+                'sertificates.*' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4096',
+            ]);
+
+            $files = $request->file('sertificates');
+
+            foreach ($files as $file) {
+                $filename = hash('sha256', $file->getClientOriginalName() . now()) . '.' . $file->getClientOriginalExtension();
+                $basename = pathinfo($filename, PATHINFO_FILENAME);
+                $directory = public_path('assets/images/uploads/');
+
+                // Переміщення оригіналу
+                $originalPath = $directory . $filename;
+                $file->move($directory, $filename);
+
+                // Оптимізація
+                $optimizerChain = OptimizerChainFactory::create();
+                $optimizerChain->optimize($originalPath);
+
+                // Генерація .webp
+                $manager = new ImageManager(new Driver());
+                $image = $manager->read($originalPath);
+                $webPath = $directory . $basename . '.webp';
+                $image->toWebp()->save($webPath);
+
+                $sertif = new NewDoctorSertificate();
+                $sertif->doctor_id = $doctor->id;
+                $sertif->image = 'assets/images/uploads/' . $filename;
+                $sertif->save();
+
+            }
+
+        }
+
         $department = NewDoctorDepartment::where('doctor_id', $id)->first();
 
         $data = $request->input('working_hours', []);
@@ -273,7 +343,7 @@ class DoctorController extends Controller
                 $awards = 'awards_'.$lang;
                 $associations = 'associations_'.$lang;
                 $treatment_of_disease = 'treatment_of_disease_'.$lang;
-                $procudures = 'procudures_'.$lang;
+                $procedures = 'procedures_'.$lang;
                 $specialisations = 'specialisations_'.$lang;
                 $about = 'about_'.$lang;
                 $seo_title = 'seo_title_'.$lang;
@@ -281,21 +351,24 @@ class DoctorController extends Controller
                 $seo_keywords = 'seo_keywords_'.$lang;
 
                 $seo = array();
-                $translate = new NewDoctorTranslation();
-                $translate->doctor_id = $doctor->id;
-                $translate->locale = $lang;
+                $translate = NewDoctorTranslation::where('doctor_id', $id)->first();
+                if(!$translate){
+                    $translate = new NewDoctorTranslation();
+                    $translate->doctor_id = $doctor->id;
+                    $translate->locale = $lang;
+                }
                 $translate->first_name = $request->$first_name;
                 $translate->second_name = $request->$second_name;
                 $translate->middle_name = $request->$middle_name;
-                $translate->position_main = $specialties = array_map('trim', explode(',', $request->$position_main));
-                $translate->position_all = array_map('trim', explode(',', $request->$position_all));
-                $translate->educations = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$educations)));
-                $translate->courses = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$courses)));
-                $translate->awards = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$awards)));
-                $translate->associations = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$associations)));
-                $translate->treatment_of_disease = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$treatment_of_disease)));
-                $translate->procedures = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$procudures)));
-                $translate->specialisations = array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$specialisations)));
+                $translate->position_main = $specialties = json_encode(array_map('trim', explode(',', $request->$position_main)), JSON_UNESCAPED_UNICODE);
+                $translate->position_all = json_encode(array_map('trim', explode(',', $request->$position_all)), JSON_UNESCAPED_UNICODE);
+                $translate->educations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$educations))), JSON_UNESCAPED_UNICODE);
+                $translate->courses = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$courses))), JSON_UNESCAPED_UNICODE);
+                $translate->awards = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$awards))), JSON_UNESCAPED_UNICODE);
+                $translate->associations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$associations))), JSON_UNESCAPED_UNICODE);
+                $translate->treatment_of_disease = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$treatment_of_disease))), JSON_UNESCAPED_UNICODE);
+                $translate->procedures = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$procedures))), JSON_UNESCAPED_UNICODE);
+                $translate->specialisations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$specialisations))), JSON_UNESCAPED_UNICODE);
                 $translate->about = $request->$about;
 
                 $seo['title'] = $request->$seo_title;
@@ -307,7 +380,7 @@ class DoctorController extends Controller
                 $translate->save();
             }
         }
-        return redirect()->route('admin.doctors.list', ['id' => $department_id]);
+        return redirect()->route('admin.doctors.list', ['id' => $department->department_id]);
     }
 
     public function destroy(Request $request){

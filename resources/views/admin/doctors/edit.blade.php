@@ -65,6 +65,24 @@
                                                 <div class="col-md-12">
                                                     <label for="certificates" class="form-label">Сертифікати</label>
                                                     <input type="file" class="form-control" name="sertificates[]" multiple>
+                                                    <div class="row">
+                                                        @if($doctor->sertificates)
+                                                            @foreach($doctor->sertificates as $sertificate)
+                                                                @if(file_exists(public_path($sertificate->image)))
+                                                                    <div class="col-md-2">
+                                                                        <div class="mt-3">
+                                                                            <div class="image">
+                                                                                <img src="{{ asset($sertificate->image) }}" width="150">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mt-2">
+                                                                            <span class="btn btn-outline-danger cursor-pointer" id="sertificate_del" data-sertificate="{{ $sertificate->id }}">Видалити зображення</span>
+                                                                        </div>
+                                                                    </div>
+                                                                @endif
+                                                            @endforeach
+                                                        @endif
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-3">
@@ -166,17 +184,35 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="position_main_{{ $lang }}" class="form-label">Головна посада {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(вводити через кому)</span></label>
-                                                        <input type="text" class="form-control" id="position_main_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="position_main_{{ $lang }}" value="{{ old('position_main_' . $lang, is_array(optional($doctor->admin_translation($lang))->position_main ?? null)
-    ? implode(',', optional($doctor->admin_translation($lang))->position_main)
-    : optional($doctor->admin_translation($lang))->position_main) }}"/>
+                                                        @php
+                                                            $translation = optional($doctor->admin_translation($lang));
+                                                            $positionMain = json_decode($translation->position_main, true) ?? [];
+                                                            $positionMainString = is_array($positionMain) ? implode(',', $positionMain) : $positionMain;
+                                                        @endphp
+
+                                                        <input type="text"
+                                                               class="form-control"
+                                                               id="position_main_{{ $lang }}"
+                                                               name="position_main_{{ $lang }}"
+                                                               value="{{ old('position_main_' . $lang, $positionMainString) }}"
+                                                        />
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="position_all_{{ $lang }}" class="form-label">Всі посади {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(вводити через кому)</span></label>
-                                                        <input type="text" class="form-control" id="position_all_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="position_all_{{ $lang }}" value="{{ old('position_all_' . $lang, is_array(optional($doctor->admin_translation($lang))->position_all ?? null)
-    ? implode(',', optional($doctor->admin_translation($lang))->position_all)
-    : optional($doctor->admin_translation($lang))->position_all) }}"/>
+                                                        @php
+                                                            $translation = optional($doctor->admin_translation($lang));
+                                                            $positionAll = json_decode($translation->position_all, true) ?? [];
+                                                            $positionAllString = is_array($positionAll) ? implode(',', $positionAll) : $positionAll;
+                                                        @endphp
+
+                                                        <input type="text"
+                                                               class="form-control"
+                                                               id="position_all_{{ $lang }}"
+                                                               name="position_all_{{ $lang }}"
+                                                               value="{{ old('position_all_' . $lang, $positionAllString) }}"
+                                                        />
                                                     </div>
                                                 </div>
                                                 <hr>
@@ -188,48 +224,118 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="educations_{{ $lang }}" class="form-label">Освіта {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="educations_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="educations_{{ $lang }}" rows="5">{{ old('educations_'.$lang, isset($doctor) ? implode("\n", $doctor->educations ?? []) : '') }}</textarea>
-                                                    </div>
+                                                        @php
+                                                            $educationItems = isset($doctor) && is_array($doctor->admin_translation($lang)?->educations)
+                                                                ? implode("\n", $doctor->admin_translation($lang)->educations)
+                                                                : '';
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="educations_{{ $lang }}"
+                                                                  name="educations_{{ $lang }}"
+                                                                  rows="5">{{ old('educations_'.$lang, $educationItems) }}</textarea>                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="courses_{{ $lang }}" class="form-label">Курси {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="courses_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="courses_{{ $lang }}" rows="5">{{ old('courses_'.$lang, isset($doctor) ? implode("\n", $doctor->courses ?? []) : '') }}</textarea>
-                                                    </div>
+                                                        @php
+                                                            $courses = optional($doctor->admin_translation($lang))->courses;
+                                                            $coursesText = is_array($courses)
+                                                                ? implode("\n", $courses)
+                                                                : (is_string($courses) ? implode("\n", json_decode($courses, true) ?? []) : '');
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="courses_{{ $lang }}"
+                                                                  name="courses_{{ $lang }}"
+                                                                  rows="5">{{ old('courses_' . $lang, $coursesText) }}</textarea>                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="awards_{{ $lang }}" class="form-label">Нагороди {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="awards_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="awards_{{ $lang }}" rows="5">{{ old('awards_'.$lang, isset($doctor) ? implode("\n", $doctor->awards ?? []) : '') }}</textarea>
-                                                    </div>
+                                                        @php
+                                                            $awards = optional($doctor->admin_translation($lang))->awards ?? [];
+                                                            if (is_string($awards)) {
+                                                                $awards = json_decode($awards, true) ?? [];
+                                                            }
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="awards_{{ $lang }}"
+                                                                  name="awards_{{ $lang }}"
+                                                                  rows="5">{{ old('awards_'.$lang, implode("\n", $awards)) }}</textarea>                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="associations_{{ $lang }}" class="form-label">Участь в асоціаціях {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="associations_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="associations_{{ $lang }}" rows="5">{{ old('associations_'.$lang, isset($doctor) ? implode("\n", $doctor->associations ?? []) : '') }}</textarea>
+                                                        @php
+                                                            $associations = optional($doctor->admin_translation($lang))->associations ?? [];
+                                                            if (is_string($associations)) {
+                                                                $associations = json_decode($associations, true) ?? [];
+                                                            }
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="associations_{{ $lang }}"
+                                                                  aria-describedby="defaultFormControlHelp"
+                                                                  name="associations_{{ $lang }}"
+                                                                  rows="5">{{ old('associations_'.$lang, implode("\n", $associations)) }}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="treatment_of_disease_{{ $lang }}" class="form-label">Захворювання, що лікує {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="treatment_of_disease_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="treatment_of_disease_{{ $lang }}" rows="5">{{ old('treatment_of_disease_'.$lang, isset($doctor) ? implode("\n", $doctor->treatment_of_disease ?? []) : '') }}</textarea>
+                                                        @php
+                                                            $treatment = optional($doctor->admin_translation($lang))->treatment_of_disease ?? [];
+                                                            if (is_string($treatment)) {
+                                                                $treatment = json_decode($treatment, true) ?? [];
+                                                            }
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="treatment_of_disease_{{ $lang }}"
+                                                                  aria-describedby="defaultFormControlHelp"
+                                                                  name="treatment_of_disease_{{ $lang }}"
+                                                                  rows="5">{{ old('treatment_of_disease_'.$lang, implode("\n", $treatment)) }}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="procedures_{{ $lang }}" class="form-label">Процедури, що виконує {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="procedures_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="procedures_{{ $lang }}" rows="5">{{ old('procedures_'.$lang, isset($doctor) ? implode("\n", $doctor->procedures ?? []) : '') }}</textarea>
+                                                        @php
+                                                            $procedures = optional($doctor->admin_translation($lang))->procedures ?? [];
+                                                            if (is_string($procedures)) {
+                                                                $procedures = json_decode($procedures, true) ?? [];
+                                                            }
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="procedures_{{ $lang }}"
+                                                                  aria-describedby="defaultFormControlHelp"
+                                                                  name="procedures_{{ $lang }}"
+                                                                  rows="5">{{ old('procedures_'.$lang, implode("\n", $procedures)) }}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <label for="specialisation_{{ $lang }}" class="form-label">Спеціалізації {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
-                                                        <textarea class="form-control" id="specialisation_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="specialisation_{{ $lang }}" rows="5">{{ old('specialisation_'.$lang, isset($doctor) ? implode("\n", $doctor->specialisation ?? []) : '') }}</textarea>
+                                                        @php
+                                                            $specialisation = optional($doctor->admin_translation($lang))->specialisation ?? [];
+                                                            if (is_string($specialisation)) {
+                                                                $specialisation = json_decode($specialisation, true) ?? [];
+                                                            }
+                                                        @endphp
+
+                                                        <textarea class="form-control"
+                                                                  id="specialisation_{{ $lang }}"
+                                                                  aria-describedby="defaultFormControlHelp"
+                                                                  name="specialisation_{{ $lang }}"
+                                                                  rows="5">{{ old('specialisation_'.$lang, implode("\n", $specialisation)) }}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <label for="about_{{ $lang }}" class="form-label">Про лікаря {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
+                                                        <label for="about_{{ $lang }}" class="form-label">Про лікаря {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none"></span></label>
                                                         <textarea class="form-control" id="about_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="about_{{ $lang }}" rows="15">{{ $doctor->admin_translation($lang)->about ?? '' }}</textarea>
                                                     </div>
                                                 </div>

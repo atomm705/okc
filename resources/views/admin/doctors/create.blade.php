@@ -172,7 +172,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <label for="about_{{ $lang }}" class="form-label">Про лікаря {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
+                                                        <label for="about_{{ $lang }}" class="form-label">Про лікаря {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none"></span></label>
                                                         <textarea class="form-control" id="about_{{ $lang }}" aria-describedby="defaultFormControlHelp" name="about_{{ $lang }}" rows="15"></textarea>
                                                     </div>
                                                 </div>
