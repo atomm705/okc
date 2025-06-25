@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Division;
+use App\Models\NewDivision;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
@@ -22,7 +22,7 @@ class ViewServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('*', function ($view) {
-            $view->with('mainMenu', Division::all());
+            $view->with('mainMenu', NewDivision::all());
         });
     }
 }

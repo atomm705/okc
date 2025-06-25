@@ -4,27 +4,31 @@ namespace App\Http\Controllers;
 
 use App\Models\ArticleCategoryTranslate;
 use App\Models\ArticleTranslate;
+use App\Models\NewCategory;
+use App\Models\NewService;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
     public function category_page($category_slug) {
-        $translation = ArticleCategoryTranslate::where('slug', $category_slug)
-            ->where('locale', app()->getLocale())
-            ->firstOrFail();
+        $category = NewCategory::where('slug', $category_slug)->where('is_visible', true)->first();
 
+        if(!$category){
+            abort(404);
+        }
         return view('main.services', [
-            'category' => $translation,
+            'category' => $category,
         ]);
     }
 
     public function page($category_slug, $slug){
-        $translation = ArticleTranslate::where('slug', $slug)
-            ->where('locale', app()->getLocale())
-            ->firstOrFail();
+        $group = NewService::where('slug', $slug)->where('is_visible', true)->first();
+        if(!$group){
+            abort(404);
+        }
 
         return view('main.services_article', [
-            'article' => $translation
+            'group' => $group,
         ]);
     }
 

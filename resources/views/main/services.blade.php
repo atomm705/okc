@@ -20,10 +20,10 @@
                             <li class="d-xl-none service-select-mobil">
                                 <p>{{ __('global.Choose your category') }}:</p>
                                 <select id="category" class="form-control service-select-mobil  " >
-                                    <option value="{{ $category->slug }}" >{{ $category->name }}</option>
-                                    @foreach($category->category->articles as $article)
-                                        <option value="/{{ app()->getLocale() }}/{{ $category->slug }}/{{ $article->translation->slug }}">
-                                            {{ $article->translation->name }}
+                                    <option value="{{ $category->slug }}" >{{ $category->translation->name }}</option>
+                                    @foreach($category->groups as $group)
+                                        <option value="/{{ app()->getLocale() }}/{{ $category->slug }}/{{ $group->slug }}">
+                                            {{ $group->translation->name }}
                                         </option>
                                     @endforeach
                                 </select>
@@ -32,16 +32,16 @@
                                 <ul class="list-sm-inline isotope-filters-list">
                                     <li>
                                         <a class="isotope-filter active text-" href="{{ route('main.category', ['category_slug' => $category->slug]) }}">
-                                            {{ $category->name }}
+                                            {{ $category->translation->name }}
                                         </a>
                                     </li>
-                                    @foreach($category->category->articles as $article)
+                                    @foreach($category->groups as $group)
                                         <li>
                                             <a class="isotope-filter" href="{{ route('main.service', [
-                                                'slug' => $article->translation->slug,
+                                                'slug' => $group->slug,
                                                 'category_slug' => $category->slug
                                             ]) }}">
-                                                {{ $article->translation->name }}
+                                                {{ $group->translation->name }}
                                             </a>
                                         </li>
                                     @endforeach
@@ -54,21 +54,20 @@
                     <div class="row text-md-start isotope isotope-style-1" data-isotope-layout="fitRows" data-column-class=".col-1" data-lightgallery="group" data-lg-animation="lg-slide-circular" data-isotope-group="gallery">
                         <div class="col-1 isotope-item isotope-sizer"></div>
                         <div class="col-lg-12 isotope-item services-item">
-                           <!-- <h3>{{ $category->name }}</h3>-->
-                            {!! $category->text !!}
+                           <!-- <h3>{{ $category->translation->name }}</h3>-->
+                            {!! $category->translation->text !!}
                         </div>
-                        @if(isset($category->category->serviceCategory))
-                            <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
-                            <div class="col-lg-12 isotope-item price-item">
-                                <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
-                                    @foreach($category->category->serviceCategory->groups as $group)
+                        @if(isset($category->groups))
+                            <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
+                                <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
+                                    @foreach($category->groups as $group)
                                         @if(isset($group->translation->name))
                                             <li>{{ $group->translation->name }}</li>
                                         @endif
                                     @endforeach
                                 </ul>
-                                <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
-                                    @foreach($category->category->serviceCategory->groups as $group)
+                                <div class="resp-tabs-container tabs-group-default" data-group="tabs-group-default">
+                                    @foreach($category->groups as $group)
                                         @if(isset($group->translation->name) && $group->services)
                                             <div>
                                                 <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
@@ -80,12 +79,12 @@
                                                     </thead>
                                                     <tbody>
                                                     @foreach($group->services as $service)
-                                                        @if(isset($service->translations()->name))
+                                                        @if(isset($service->translation->name))
                                                             <tr>
-                                                                <td>{{ $service->translations()->name }}</td>
-                                                                <td>{{ $service->price }}</td>
+                                                                <td>{{ $service->translation->name }}</td>
+                                                                <td>{{ $service->translation->price }}</td>
                                                                 <td>{{ $service->time }}</td>
-                                                                <td>{!! $service->translations()->note !!}</td>
+                                                                <td>{!! $service->translation->note !!}</td>
                                                             </tr>
                                                         @endif
                                                     @endforeach
@@ -95,7 +94,6 @@
                                         @endif
                                     @endforeach
                                 </div>
-                            </div>
                             </div>
                         @endif
                     </div>

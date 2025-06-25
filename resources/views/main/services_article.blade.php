@@ -5,8 +5,8 @@
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li>@lang('global.pages.services')</li>
-                <li><a href="{{ route('main.category', ['category_slug' => $article->article->category->translation->slug]) }}">{{ $article->article->category->translation->name }}</a></li>
-                <li>{{ $article->name }}</li>
+                <li><a href="{{ route('main.category', ['category_slug' => $group->category->slug]) }}">{{ $group->category->translation->name }}</a></li>
+                <li>{{ $group->translation->name }}</li>
             </ul>
         </div>
     </section>
@@ -20,10 +20,10 @@
                             <li class="d-xl-none service-select-mobil"  >
                                 <p>{{ __('global.Choose your category') }}:</p>
                                 <select id="category" class="form-control service-select-mobil" >
-                                    <option value="{{ $article->article->category->translation->slug }}">{{ $article->article->category->translation->name }} </option>
-                                    @foreach($article->article->category->articles as $articl)
-                                        <option  value="/{{ app()->getLocale() }}/{{ $article->article->category->translation->slug }}/{{ $articl->translation->slug }}" @if($article->slug == $articl->slug) selected @endif >
-                                            {{ $articl->translation->name }}
+                                    <option value="{{ $group->category->slug }}">{{ $group->category->translation->name }} </option>
+                                    @foreach($group->category->groups as $gr)
+                                        <option  value="/{{ app()->getLocale() }}/{{ $gr->category->slug }}/{{ $gr->slug }}" @if($group->slug == $gr->slug) selected @endif >
+                                            {{ $gr->translation->name }}
                                         </option>
                                     @endforeach
                                 </select>
@@ -31,17 +31,17 @@
                             <li class="section-relative">
                                 <ul class="list-sm-inline isotope-filters-list">
                                     <li>
-                                        <a class="isotope-filter active text-[20px]" href="{{ route('main.category', ['category_slug' => $article->article->category->translation->slug]) }}">
-                                            {{ $article->article->category->translation->name }}
+                                        <a class="isotope-filter active text-[20px]" href="{{ route('main.category', ['category_slug' => $group->category->slug]) }}">
+                                            {{ $group->category->translation->name }}
                                         </a>
                                     </li>
-                                    @foreach($article->article->category->articles as $articl)
+                                    @foreach($group->category->groups as $gr)
                                         <li>
-                                            <a class="isotope-filter @if($article->slug == $articl->translation->slug) active @endif" href="{{ route('main.service', [
-                                                'slug' => $articl->translation->slug,
-                                                'category_slug' => $article->article->category->translation->slug
+                                            <a class="isotope-filter @if($group->slug == $gr->slug) active @endif" href="{{ route('main.service', [
+                                                'slug' => $gr->slug,
+                                                'category_slug' => $group->category->slug
                                             ]) }}">
-                                                {{ $articl->translation->name }}
+                                                {{ $gr->translation->name }}
                                             </a>
                                         </li>
                                     @endforeach
@@ -53,10 +53,32 @@
                 <div class="col-lg-9 offset-lg-top-0 offset-top-34">
                     <div class="row text-md-start isotope isotope-style-1" data-isotope-layout="fitRows" data-column-class=".col-1" data-lightgallery="group" data-lg-animation="lg-slide-circular" data-isotope-group="gallery">
                         <div class="col-1 isotope-item isotope-sizer"></div>
-                        <div class="col-lg-12 isotope-item price-item" data-filter="Diagnostic Imaging">
-                        <!--   <h3>{{ $article->name }}</h3>-->
-                            {!! $article->text !!}
+                        <div class="col-lg-12 isotope-item services-item">
+                        <!-- <h3>{{ $group->translation->name }}</h3>-->
+                            {!! $group->translation->text !!}
                         </div>
+                        @if(isset($group->services))
+                            <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
+                                <thead>
+                                <th>@lang('global.service')</th>
+                                <th>{{ __('global.price') }}</th>
+                                <th>{{ __('global.time_m') }}</th>
+                                <th>{{ __('global.description') }}</th>
+                                </thead>
+                                <tbody>
+                                @foreach($group->services as $service)
+                                    @if(isset($service->translation->name))
+                                        <tr>
+                                            <td>{{ $service->translation->name }}</td>
+                                            <td>{{ $service->translation->price }}</td>
+                                            <td>{{ $service->translation->time }}</td>
+                                            <td>{!! $service->translation->note !!}</td>
+                                        </tr>
+                                    @endif
+                                @endforeach
+                                </tbody>
+                            </table>
+                        @endif
                     </div>
                 </div>
             </div>

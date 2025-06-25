@@ -65,10 +65,10 @@
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         @foreach($mainMenu as $item)
                                         <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">{{ $item->translation()->title }}</h6>
+                                            <h6 class="rd-megamenu-title">{{ $item->translation->name }}</h6>
                                             <ul class="rd-megamenu-list">
                                                 @foreach($item->categories as $category)
-                                                @if(isset($category->category->translation->slug))<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->category->translation->slug]) }}" >{{ $category->category->translation->name ?? '' }}</a></li>@endif
+                                                @if(isset($category->slug))<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a></li>@endif
                                                 @endforeach
                                             </ul>
                                         </li>
