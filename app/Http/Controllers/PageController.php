@@ -6,6 +6,7 @@ use App\Models\BlogArticleTranslation;
 use App\Models\DoctorDepartmentTranslation;
 use App\Models\DoctorTranslation;
 use App\Models\Image;
+use App\Models\NewCategory;
 use App\Models\ServicesCategory;
 use App\Models\ServicesCategoryTranslation;
 use Illuminate\Http\Request;
@@ -292,66 +293,23 @@ class PageController extends Controller
     // сторінка блогу (finish)
 
     // сторінка розкладу
-    public function timetable($departmentSlug = null)
+    public function timetable($department = null)
     {
-        $locale = app()->getLocale();
+        if($department){
+            $current_category = NewCategory::where('slug', $department)->first();
 
+            $categories = NewCategory::where('is_visible', true)->get();
+        }
+        else{
+            $current_category = NewCategory::where('slug', 'oftalmologiya')->first();
 
-        $allDepartments = DoctorDepartmentTranslation::with([
-            'department.doctors' => function ($query) use ($locale) {
-                $query->with([
-                    'translation' => function ($q) use ($locale) {
-                        $q->where('locale', $locale);
-                    },
-                    'imageSquare',
-                ]);
-            },
-        ])->where('locale', $locale)->get();
+            $categories = NewCategory::where('is_visible', true)->get();
 
-        if (!$departmentSlug) {
-            $defaultDepartment = $allDepartments->firstWhere('slug', 'oftalmologiya');
-            $departmentSlug = $defaultDepartment?->slug;
-    }
-
-
-        $currentDepartment = $allDepartments->firstWhere('slug', $departmentSlug);
-
-
-        foreach ($allDepartments as $department) {
-            $filteredDoctors = [];
-
-            foreach ($department->department->doctors as $doctor) {
-                $workHours = json_decode($doctor->pivot->work_hours, true);
-
-                if (empty($workHours) || collect($workHours)->filter()->isEmpty()) {
-                    continue;
-                }
-
-                $days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
-                $doctorSchedule = [];
-
-                foreach ($days as $i => $day) {
-                    $doctorSchedule[] = [
-                        'day' => $day,
-                        'time' => $workHours[$i] ?? 'нет приёма',
-                    ];
-                }
-
-
-                $doctor->schedule = $doctorSchedule;
-
-
-                $filteredDoctors[] = $doctor;
-            }
-
-
-            $department->department->setRelation('doctors', collect($filteredDoctors));
         }
 
-
         return view('main.timetable', [
-            'departments' => $allDepartments,
-            'currentDepartment' => $currentDepartment,
+            'categories' => $categories,
+            'current_category' => $current_category,
         ]);
     }
 

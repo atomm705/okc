@@ -35,4 +35,5 @@ return [
 	'awards'               => [
 		'title' => 'Нагороди'
 	],
+    'doctor_profile' => 'Профіль',
 ];

@@ -41,7 +41,6 @@ class DoctorController extends Controller
         return view('admin.doctors.index', compact('departments', 'doctors'));
     }
 
-
     public function doctors_list($id){
         $departments = NewCategory::where('is_visible', true)->get();
 
@@ -59,7 +58,7 @@ class DoctorController extends Controller
     public function store(Request $request, $department_id){
 
         $doctor = new NewDoctor();
-        $doctor->slug = \Illuminate\Support\Str::slug($request->name_uk);
+        $doctor->slug = \Illuminate\Support\Str::slug($request->second_name_uk .' '. $request->second_name_uk .' ' . $request->middle_name_uk);
         $doctor->is_visible = '1';
 
         if($request->file('photo_full')){
