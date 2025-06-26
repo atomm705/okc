@@ -31,12 +31,14 @@
 
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     @foreach($categories as $category)
+                                        @if($category->translation)
                                         <li class="list-timetable-item">
                                             <a href="{{ route('main.timetable', $category->slug) }}"
                                                class="{{ $current_category->slug === $category->slug ? 'active' : '' }}">
                                                 {{ $category->translation->name }}
                                             </a>
                                         </li>
+                                        @endif
                                     @endforeach
                                 </ul>
                             </li>
@@ -53,6 +55,7 @@
                             <div class="articles">
                                 <h3 class="mb-3">{{ $current_category->translation->name ?? 'Без названия' }}</h3>
                                 @foreach ($current_category->doctors as $doctor)
+                                    @if($doctor->translation)
                                     @php
                                     $full_name = '';
                                     if($doctor->translation->second_name){
@@ -151,6 +154,7 @@
                                             <p>Расписание отсутствует</p>
                                         @endif
                                     </div>
+                                    @endif
                                 @endforeach
                             </div>
                         </div>

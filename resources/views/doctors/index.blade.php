@@ -15,20 +15,23 @@
                     <div class="doctors-departments-section">
                         <div class="departments-list-compact">
                             @foreach($departments as $department)
+                                @if($department->translation)
                                 <a href="#doctors-department-{{ $department->slug }}" class="department">
                                     <img src="{{ $department->image }}" alt="{{ $department->translation->name }}">
                                     <div class="title">{{ $department->translation->name }}</div>
                                     <div class="details">{{ __('global.more') }}</div>
                                 </a>
+                                @endif
                             @endforeach
                         </div>
                         <div class="content">
                             @foreach($departments as $department)
-                                <div class="doctors-departments-section-department" id="doctors-department-{{ $department->translation->slug }}">
+                                @if($department->translation)
+                                <div class="doctors-departments-section-department" id="doctors-department-{{ $department->slug }}">
                                     <div class="content"><h3>{{ $department->translation->name }}</h3>
                                         <div class="doctors">
                                             @foreach($department->doctors as $doctor)
-                                                @if(isset($doctor->slug))
+                                                @if(isset($doctor->translation))
                                                     <a href="{{ route('doctors.show', ['slug' => $doctor->slug ?? '']) }}" class="doctor-tile-compact-component">
 
                                                         <img src="/{{ $doctor->photo_square }}">
@@ -58,6 +61,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endif
                             @endforeach
                         </div>
                     </div>

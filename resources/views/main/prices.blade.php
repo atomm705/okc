@@ -30,8 +30,10 @@
 
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     @foreach($categories as $category)
-                                        @if(isset($category->slug))
-                                            <li><a href="{{ route('prices.category', ['category' => $category->slug]) }}"  @if(isset($category_active->slug) && $category_active->slug == $category->slug) class="active" @endif>{{ $category->translation->name }}</a></li>
+                                        @if($category->translation)
+                                            @if(isset($category->slug))
+                                                <li><a href="{{ route('prices.category', ['category' => $category->slug]) }}"  @if(isset($category_active->slug) && $category_active->slug == $category->slug) class="active" @endif>{{ $category->translation->name }}</a></li>
+                                            @endif
                                         @endif
                                     @endforeach
                                 </ul>
