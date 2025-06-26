@@ -315,9 +315,9 @@ class PageController extends Controller
 
     public function prices()
     {
-        $categories = ServicesCategory::where('is_visible', true)->get();
+        $categories = NewCategory::where('is_visible', true)->get();
 
-        $category_active = ServicesCategoryTranslation::where('slug', 'oftalmologiya')->where('locale', app()->getLocale())->first();
+        $category_active = NewCategory::where('slug', 'oftalmologiya')->first();
 
         return view('main.prices', compact('categories', 'category_active'));
     }

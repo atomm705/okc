@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Image;
 use App\Models\NewCategory;
 use App\Models\NewDoctor;
 use App\Models\NewDoctorDepartment;
@@ -22,15 +21,16 @@ class DoctorController extends Controller
 {
 
     public function index(){
-        $locale = App::getLocale();
-        $departments = DoctorDepartment::where('is_visible', true)->get();
+
+        $departments = NewCategory::where('is_visible', true)->get();
+
         return view('doctors.index', compact('departments'));
     }
 
     public function show($slug)
     {
-        $doctorTranslation = DoctorTranslation::where('full_slug', $slug)->where('locale', app()->getLocale())->first();
-        return view('doctors.show', compact('doctorTranslation'));
+        $doctor = NewDoctor::where('slug', $slug)->where('is_visible', true)->first();
+        return view('doctors.show', compact('doctor'));
     }
 
     public function doctors(){
@@ -192,7 +192,7 @@ class DoctorController extends Controller
                 $translate->first_name = $request->$first_name;
                 $translate->second_name = $request->$second_name;
                 $translate->middle_name = $request->$middle_name;
-                $translate->position_main = $specialties = json_encode(array_map('trim', explode(',', $request->$position_main)), JSON_UNESCAPED_UNICODE);
+                $translate->position_main = json_encode(array_map('trim', explode(',', $request->$position_main)), JSON_UNESCAPED_UNICODE);
                 $translate->position_all = json_encode(array_map('trim', explode(',', $request->$position_all)), JSON_UNESCAPED_UNICODE);
                 $translate->educations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$educations))), JSON_UNESCAPED_UNICODE);
                 $translate->courses = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$courses))), JSON_UNESCAPED_UNICODE);
@@ -350,7 +350,7 @@ class DoctorController extends Controller
                 $seo_keywords = 'seo_keywords_'.$lang;
 
                 $seo = array();
-                $translate = NewDoctorTranslation::where('doctor_id', $id)->first();
+                $translate = NewDoctorTranslation::where('doctor_id', $id)->where('locale', $lang)->first();
                 if(!$translate){
                     $translate = new NewDoctorTranslation();
                     $translate->doctor_id = $doctor->id;
@@ -359,7 +359,7 @@ class DoctorController extends Controller
                 $translate->first_name = $request->$first_name;
                 $translate->second_name = $request->$second_name;
                 $translate->middle_name = $request->$middle_name;
-                $translate->position_main = $specialties = json_encode(array_map('trim', explode(',', $request->$position_main)), JSON_UNESCAPED_UNICODE);
+                $translate->position_main = json_encode(array_map('trim', explode(',', $request->$position_main)), JSON_UNESCAPED_UNICODE);
                 $translate->position_all = json_encode(array_map('trim', explode(',', $request->$position_all)), JSON_UNESCAPED_UNICODE);
                 $translate->educations = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$educations))), JSON_UNESCAPED_UNICODE);
                 $translate->courses = json_encode(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', $request->$courses))), JSON_UNESCAPED_UNICODE);

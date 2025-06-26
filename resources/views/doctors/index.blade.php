@@ -15,33 +15,38 @@
                     <div class="doctors-departments-section">
                         <div class="departments-list-compact">
                             @foreach($departments as $department)
-                                <a href="#doctors-department-{{ $department->translations()->slug }}" class="department">
-                                    <img src="{{ $department->image->src }}" alt="{{ $department->translations()->name }}">
-                                    <div class="title">{{ $department->translations()->name }}</div>
+                                <a href="#doctors-department-{{ $department->slug }}" class="department">
+                                    <img src="{{ $department->image }}" alt="{{ $department->translation->name }}">
+                                    <div class="title">{{ $department->translation->name }}</div>
                                     <div class="details">{{ __('global.more') }}</div>
                                 </a>
                             @endforeach
                         </div>
                         <div class="content">
                             @foreach($departments as $department)
-                                <div class="doctors-departments-section-department" id="doctors-department-{{ $department->translations()->slug }}">
-                                    <div class="content"><h3>{{ $department->translations()->name }}</h3>
+                                <div class="doctors-departments-section-department" id="doctors-department-{{ $department->translation->slug }}">
+                                    <div class="content"><h3>{{ $department->translation->name }}</h3>
                                         <div class="doctors">
                                             @foreach($department->doctors as $doctor)
-                                                @if(isset($doctor->translation->full_slug))
-                                                    <a href="{{ route('doctors.show', ['slug' => $doctor->translation->full_slug ?? '']) }}" class="doctor-tile-compact-component">
+                                                @if(isset($doctor->slug))
+                                                    <a href="{{ route('doctors.show', ['slug' => $doctor->slug ?? '']) }}" class="doctor-tile-compact-component">
 
-                                                        <img src="{{ $doctor->image->src }}">
+                                                        <img src="/{{ $doctor->photo_square }}">
                                                         <div class="content" style="height: 160px;">
-                                                            <div class="name"> {{ $doctor->translation->full_name ?? '' }}</div>
+                                                            <div class="name"> {{ $doctor->translation->second_name ?? '' }} {{ $doctor->translation->first_name ?? '' }} {{ $doctor->translation->middle_name ?? '' }}</div>
                                                             <div class="description">
                                                                 @php
+                                                                    $rawPositions = $doctor->translation->position_main ?? [];
 
-                                                                    $positions = $doctor->translation->position_main;
+                                                                    if (is_string($rawPositions)) {
+                                                                        $positions = json_decode($rawPositions, true) ?? [];
+                                                                    } elseif (is_array($rawPositions)) {
+                                                                        $positions = $rawPositions;
+                                                                    } else {
+                                                                        $positions = [];
+                                                                    }
 
-                                                                    $display_positions = (is_array($positions) && count(array_filter($positions)))
-                                                                        ? implode(', ', array_filter($positions))
-                                                                        : '';
+                                                                    $display_positions = implode(', ', array_filter($positions));
                                                                 @endphp
                                                                 {{ $display_positions }}
                                                             </div>

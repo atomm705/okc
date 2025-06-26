@@ -10,4 +10,8 @@ class AppointmentControler extends Controller
     {
         return view('main.appointment');
     }
+
+    public function post(Request $request){
+
+    }
 }

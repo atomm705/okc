@@ -3,7 +3,7 @@
 	let
 		userAgent = navigator.userAgent.toLowerCase(),
 		isIE = userAgent.indexOf("msie") !== -1 ? parseInt(userAgent.split("msie")[1], 10) : userAgent.indexOf("trident") !== -1 ? 11 : userAgent.indexOf("edge") !== -1 ? 12 : false;
-	
+
 	// Unsupported browsers
 	if (isIE !== false && isIE < 12) {
 		console.warn("[Core] detected IE" + isIE + ", load alert");
@@ -11,23 +11,23 @@
 		script.src = "./js/support.js";
 		document.querySelector("head").appendChild(script);
 	}
-	
+
 	let
 		initialDate = new Date(),
-		
+
 		$document = $(document),
 		$window = $(window),
 		$html = $("html"),
 		$body = $("body"),
-		
+
 		isDesktop = $html.hasClass("desktop"),
 		isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
 		isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1,
 		isRtl = $html.attr("dir") === "rtl",
 		windowReady = false,
 		isNoviBuilder = false,
-		
-		
+
+
 		plugins = {
 			bootstrapTooltip:        $('[data-toggle="tooltip"]'),
 			bootstrapModal:          $('.modal'),
@@ -1833,3 +1833,36 @@
 
 	});
 }());
+$(document).ready(function() {
+    $('body').on('click', '.online', function () {
+        $('.modal').css({
+            display: 'block',
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 300); // 300 мс (можна 3000 для 3 секунд)
+
+        $('.modal .content').css({
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 300);
+    });
+    $('.button-preset-cancel').click(function(){
+        $('.modal').css({
+            display: 'none',
+            opacity: 1
+        }).animate({
+            opacity: 0
+        }, 300); // 300 мс (можна 3000 для 3 секунд)
+
+        $('.modal .content').css({
+            opacity: 1
+        }).animate({
+            opacity: 0
+        }, 300);
+    });
+    $(".accept-preset-blue").submit(function(e){
+        e.preventDefault();
+    });
+});

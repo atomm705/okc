@@ -10,7 +10,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li ><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li class="active"><a  href="{{ route('main.index') }}">@lang('global.pages.prices')</a></li>
-                    <li class="active">{{ ucfirst(str_replace('-', ' ', $category_active->name ?? '')) }}</li>
+                    <li class="active">{{ ucfirst(str_replace('-', ' ', $category_active->translation()->name ?? '')) }}</li>
             </ul>
         </div>
     </section>
@@ -23,15 +23,15 @@
                         <h4 class="text-uppercase isotope-filters-title offset-top-34"></h4>
                         <ul class="list-inline list-inline-sm">
                             <li class="d-xl-none">
-                                <p>Choose your category:</p>
+                                <p>{{ __('global.Choose your category') }}:</p>
                             </li>
                             <li class="section-relative">
                                 <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
 
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     @foreach($categories as $category)
-                                        @if(isset($category->translation->slug))
-                                            <li><a href="{{ route('prices.category', ['category' => $category->translation->slug]) }}"  @if(isset($category_active->slug) && $category_active->slug == $category->translation->slug) class="active" @endif>{{ $category->translation->name }}</a></li>
+                                        @if(isset($category->slug))
+                                            <li><a href="{{ route('prices.category', ['category' => $category->slug]) }}"  @if(isset($category_active->slug) && $category_active->slug == $category->slug) class="active" @endif>{{ $category->translation->name }}</a></li>
                                         @endif
                                     @endforeach
                                 </ul>
@@ -40,19 +40,19 @@
                     </div>
                 </div>
                 <div class="col-lg-9 offset-lg-top-0 offset-top-34">
-                    <h3 class="text-md-start">{{ $category_active->name }}</h3>
+                    <h3 class="text-md-start">{{ $category_active->translation->name }}</h3>
                     <div class="offset-sm-top-60 text-start">
                         @if(isset($category_active->slug))
                         <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                             <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
-                                @foreach($category_active->category->groups as $group)
+                                @foreach($category_active->groups as $group)
                                     @if(isset($group->translation->name))
                                         <li>{{ $group->translation->name }}</li>
                                     @endif
                                 @endforeach
                             </ul>
                             <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
-                                @foreach($category_active->category->groups as $group)
+                                @foreach($category_active->groups as $group)
                                     @if(isset($group->translation->name) && $group->services)
                                         <div>
                                             <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
@@ -64,12 +64,12 @@
                                                 </thead>
                                                 <tbody>
                                                 @foreach($group->services as $service)
-                                                    @if(isset($service->translations()->name))
+                                                    @if(isset($service->translation->name))
                                                         <tr>
-                                                            <td>{{ $service->translations()->name }}</td>
-                                                            <td>{{ $service->price }}</td>
-                                                            <td>{{ $service->time }}</td>
-                                                            <td>{!! $service->translations()->note !!}</td>
+                                                            <td>{{ $service->translation->name }}</td>
+                                                            <td>{{ $service->translation->price }}</td>
+                                                            <td>{{ $service->translation->time }}</td>
+                                                            <td>{!! $service->translation->note !!}</td>
                                                         </tr>
                                                     @endif
                                                 @endforeach

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ArticleCategory;
 use App\Models\NewCategory;
 use App\Models\NewCategoryTranslation;
 use App\Models\NewPriceTranslation;
@@ -27,18 +26,18 @@ class ServicesController extends Controller
 
     public function price($slug){
 
-        $categories = ServicesCategory::where('is_visible', true)->get();
+        $categories = NewCategory::where('is_visible', true)->get();
 
-        $category_active = ServicesCategoryTranslation::where('slug', $slug)->where('locale', app()->getLocale())->first();
+        $category_active = NewCategory::where('slug', $slug)->first();
 
         return view('main.prices', compact('categories', 'category_active'));
     }
 
-    public function prices($slug= 'oftalmologiya' ){
+    public function prices($slug = 'oftalmologiya' ){
 
-        $categories = ServicesCategory::where('is_visible', true)->get();
+        $categories = NewCategory::where('is_visible', true)->get();
 
-        $category_active = ServicesCategoryTranslation::where('slug', $slug)->where('locale', app()->getLocale())->first();
+        $category_active = NewCategory::where('slug', $slug)->first();
 
         return view('admin.prices.index', compact('categories', 'category_active'));
     }
