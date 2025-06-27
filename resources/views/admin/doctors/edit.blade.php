@@ -225,15 +225,16 @@
                                                     <div class="col-md-12">
                                                         <label for="educations_{{ $lang }}" class="form-label">Освіта {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
                                                         @php
-                                                            $educationItems = isset($doctor) && is_array($doctor->admin_translation($lang)?->educations)
-                                                                ? implode("\n", $doctor->admin_translation($lang)->educations)
-                                                                : '';
+                                                            $educations = optional($doctor->admin_translation($lang))->educations ?? [];
+                                                            if (is_string($educations)) {
+                                                                $educations = json_decode($educations, true) ?? [];
+                                                            }
                                                         @endphp
 
                                                         <textarea class="form-control"
                                                                   id="educations_{{ $lang }}"
                                                                   name="educations_{{ $lang }}"
-                                                                  rows="5">{{ old('educations_'.$lang, $educationItems) }}</textarea>                                                    </div>
+                                                                  rows="5">{{ old('awards_'.$lang, implode("\n", $educations)) }}</textarea>                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -277,7 +278,6 @@
 
                                                         <textarea class="form-control"
                                                                   id="associations_{{ $lang }}"
-                                                                  aria-describedby="defaultFormControlHelp"
                                                                   name="associations_{{ $lang }}"
                                                                   rows="5">{{ old('associations_'.$lang, implode("\n", $associations)) }}</textarea>
                                                     </div>
@@ -294,7 +294,6 @@
 
                                                         <textarea class="form-control"
                                                                   id="treatment_of_disease_{{ $lang }}"
-                                                                  aria-describedby="defaultFormControlHelp"
                                                                   name="treatment_of_disease_{{ $lang }}"
                                                                   rows="5">{{ old('treatment_of_disease_'.$lang, implode("\n", $treatment)) }}</textarea>
                                                     </div>
@@ -311,7 +310,6 @@
 
                                                         <textarea class="form-control"
                                                                   id="procedures_{{ $lang }}"
-                                                                  aria-describedby="defaultFormControlHelp"
                                                                   name="procedures_{{ $lang }}"
                                                                   rows="5">{{ old('procedures_'.$lang, implode("\n", $procedures)) }}</textarea>
                                                     </div>
@@ -320,17 +318,16 @@
                                                     <div class="col-md-12">
                                                         <label for="specialisation_{{ $lang }}" class="form-label">Спеціалізації {{ $lang }} <span style="font-weight: normal; font-size: 11px; text-transform: none">(кожний пункт з нового рядка)</span></label>
                                                         @php
-                                                            $specialisation = optional($doctor->admin_translation($lang))->specialisation ?? [];
-                                                            if (is_string($specialisation)) {
-                                                                $specialisation = json_decode($specialisation, true) ?? [];
+                                                            $specialisations = optional($doctor->admin_translation($lang))->specialisations ?? [];
+                                                            if (is_string($specialisations)) {
+                                                                $specialisations = json_decode($specialisations, true) ?? [];
                                                             }
                                                         @endphp
 
                                                         <textarea class="form-control"
                                                                   id="specialisation_{{ $lang }}"
-                                                                  aria-describedby="defaultFormControlHelp"
                                                                   name="specialisation_{{ $lang }}"
-                                                                  rows="5">{{ old('specialisation_'.$lang, implode("\n", $specialisation)) }}</textarea>
+                                                                  rows="5">{{ old('specialisation_'.$lang, implode("\n", $specialisations)) }}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="row">
