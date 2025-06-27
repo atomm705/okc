@@ -155,9 +155,7 @@
                     <div class="description">{{ __('global.Format: +380501023212') }}</div>
                     <div class="error" style="height: 0px;">
                         <div class="text">
-                            @error('phone')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror</div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group required">
