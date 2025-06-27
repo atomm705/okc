@@ -40,8 +40,8 @@
 
 
                     @php
-                        $position = $doctor->translation->position_all;
-                        $education = $doctor->translation->educations;
+                        $position = json_decode($doctor->translation->position_all, true);
+                        $education = json_decode($doctor->translation->educations, true);
                     @endphp
 
                     @if ((is_array($position) && count(array_filter($position))) || (is_array($education) && count(array_filter($education))))

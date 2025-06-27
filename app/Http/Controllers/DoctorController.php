@@ -188,7 +188,7 @@ class DoctorController extends Controller
                 $associations = 'associations_'.$lang;
                 $treatment_of_disease = 'treatment_of_disease_'.$lang;
                 $procudures = 'procudures_'.$lang;
-                $specialisations = 'specialisations_'.$lang;
+                $specialisations = 'specialisation_'.$lang;
                 $about = 'about_'.$lang;
                 $seo_title = 'seo_title_'.$lang;
                 $seo_description = 'seo_description_'.$lang;
@@ -352,7 +352,7 @@ class DoctorController extends Controller
                 $associations = 'associations_'.$lang;
                 $treatment_of_disease = 'treatment_of_disease_'.$lang;
                 $procedures = 'procedures_'.$lang;
-                $specialisations = 'specialisations_'.$lang;
+                $specialisations = 'specialisation_'.$lang;
                 $about = 'about_'.$lang;
                 $seo_title = 'seo_title_'.$lang;
                 $seo_description = 'seo_description_'.$lang;

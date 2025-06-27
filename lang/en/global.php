@@ -33,5 +33,13 @@ return [
     'price' => 'Price',
     'time_m' => 'Time(minutes)',
     'description' => 'Note',
-
+    'Registration online' => 'Registration online',
+    'Your phone number' => 'Your phone number',
+    'Format: +380501023212' => 'Format: +380501023212',
+    'your name' => 'your name',
+    'appointment_text' => 'By filling out this form, you agree to the terms of processing personal data. We guarantee the confidentiality of your request.',
+    'cancel' => 'cancel',
+    'send' => 'Send',
+    'error_phone_required' => 'The phone field is required.',
+    'error_phone_format' => 'The phone format should be +380XXXXXXXXX.',
 ];

@@ -1864,5 +1864,14 @@ $(document).ready(function() {
     });
     $(".accept-preset-blue").submit(function(e){
         e.preventDefault();
+        var form = $(this);
+        $.ajax({
+            url: "/appointment",
+            type: "POST",
+            data: form.serialize(),
+            success: function(response){
+                return true;
+            }
+        });
     });
 });

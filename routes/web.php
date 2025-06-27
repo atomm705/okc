@@ -67,7 +67,6 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/oftalmologiya/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
         Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
         Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
-        Route::post('/appointment', [AppointmentController::class, 'post'])->name('post.appointment');
 
         Route::get('/doctors', [DoctorController::class, 'index'])->name('main.team');
 
@@ -81,6 +80,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/{category_slug}/{slug}', [ArticleController::class, 'page'])->name('main.service');
     })->where('locale', 'en|uk|ru');
 });
+Route::post('/appointment', [AppointmentController::class, 'post'])->name('post.appointment');
 
 
 // Тут прописані маршрути тільки для зареєстрованих користувачів(включно адміністратора)

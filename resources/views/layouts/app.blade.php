@@ -140,7 +140,7 @@
     @include('layouts.footer')
     <div class="modal appointment-modal" style="" id="modal">
         <div class="content" style="">
-            <h4>Запис онлайн</h4>
+            <h4>{{ __('global.Registration online') }}</h4>
             <form action="/appointment" method="POST" class="accept-preset-blue">
                 <div class="error" style="height: 0px;">
                     <div class="text">&nbsp;</div>
@@ -150,61 +150,30 @@
                     <div class="text">&nbsp;</div>
                 </div>
                 <div class="form-group required">
-                    <label for="appointment-phone">Ваш номер телефону</label>
+                    <label for="appointment-phone">{{ __('global.Your phone number') }}</label>
                     <input type="text" name="phone" id="appointment-phone">
-                    <div class="description">Формат: +380501023212</div>
+                    <div class="description">{{ __('global.Format: +380501023212') }}</div>
                     <div class="error" style="height: 0px;">
-                        <div class="text">&nbsp;</div>
+                        <div class="text">
+                            @error('phone')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror</div>
                     </div>
                 </div>
                 <div class="form-group required">
-                    <label for="appointment-name">Ваше ім'я</label>
+                    <label for="appointment-name">{{ __('global.your name') }}</label>
                     <input type="text" name="name" id="appointment-name">
                     <div class="error" style="height: 0px;">
                         <div class="text">&nbsp;</div>
                     </div>
                 </div>
-                <div class="form-group" style="display: none;">
-                    <label for="appointment-additional">Додаткова інформація</label>
-                    <textarea name="additional" cols="30" rows="10" id="appointment-additional" placeholder="Додаткова інформація"></textarea>
-                    <div class="error" style="height: 0px;">
-                        <div class="text">&nbsp;</div>
-                    </div>
-                </div>
-                <div class="sides" style="display: none;">
-                    <div class="column">
-                        <div>
-                            <span class="mdi mdi-clock"></span>
-                            <div class="info">
-                                <div class="title">Ми працюємо</div>
-                                <div class="value">ПН-СБ з 9:00 до 18:00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div>
-                            <span class="mdi mdi-clock"></span>
-                            <div class="info">
-                                <div class="title">Запис через соц. мережу</div>
-                                <div class="value">До 21:00</div>
-                            </div>
-                        </div>
-                        <div>
-                            <span class="mdi mdi-phone"></span>
-                            <div class="info">
-                                <div class="title">Запис по телефону</div>
-                                <div class="value">До 19:00</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="personal-agreement">
                     <span class="mdi mdi-shield"></span>
-                    <div class="value">Заповнюючи дану форму, Ви погоджуєтеся з умовами обробки персональніх даних. Ми гарантуемо конфіденційність Вашого зверненя</div>
+                    <div class="value">{{ __('global.appointment_text') }}</div>
                 </div>
                 <div class="buttons">
-                    <button type="button" class="button-preset-cancel">Відмінити</button>
-                    <button class="button-preset-submit">Відправити</button></div>
+                    <button type="button" class="button-preset-cancel">{{ __('global.cancel') }}</button>
+                    <button class="button-preset-submit" type="submit">{{ __('global.send') }}</button></div>
             </form>
         </div>
     </div>
