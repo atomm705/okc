@@ -11,9 +11,6 @@ use App\Http\Controllers\ServicePagesController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ArticleController;
 
-
-
-
 Route::middleware(SetLocale::class)->group(function () {
     Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
         Route::get('', [PageController::class, 'index'])->name('main.index');

@@ -1870,7 +1870,18 @@ $(document).ready(function() {
             type: "POST",
             data: form.serialize(),
             success: function(response){
-                return true;
+                $('#modal .content').html(response.message);
+                setTimeout(function() {
+                    $('.modal').animate({
+                        opacity: 0
+                    }, 300, function() {
+                        $(this).css('display', 'none');
+                    });
+
+                    $('.modal .content').animate({
+                        opacity: 0
+                    }, 300);
+                }, 3000);
             }
         });
     });

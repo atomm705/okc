@@ -30870,7 +30870,7 @@ html.ie-11 .fc-event .fc-event-wrap {
 .modal>.content {
     padding: 25px;
     opacity: 0;
-    margin: 20px auto;
+    margin: 80px auto !important;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     border-radius: 5px;
@@ -30977,4 +30977,9 @@ input {
 }
 .appointment-modal > .content > form .buttons button.button-preset-cancel:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+.admin-alert{
+    padding: 30px;
+    font-size: 16px;
+    color: #FFF;
 }
