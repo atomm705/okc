@@ -21,4 +21,9 @@ class NewService extends Model
     public function category(){
         return $this->hasOne(NewCategory::class, 'id', 'category_id');
     }
+
+  //  public function category()
+   // {
+  //      return $this->belongsTo(NewCategory::class, 'category_id', 'id');
+  //  }
 }

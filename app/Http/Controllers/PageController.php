@@ -90,6 +90,7 @@ class PageController extends Controller
 
         $articles = $query->latest()->paginate(10);
 
+        $hasTranslations = $articles->count() > 0;
 
         $archives = $this->getArchives();
         $recentArticles = $this->getRecentArticles();
@@ -99,7 +100,7 @@ class PageController extends Controller
             $archiveName = Carbon::createFromFormat('Y-m', $date)->format('F Y');
         }
 
-        return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date', 'queryString'));
+        return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date', 'queryString','hasTranslations'));
     }
 
     // функція для пагинації сторінки блогу
@@ -134,10 +135,12 @@ class PageController extends Controller
             ->latest()
             ->paginate(10);
 
+        $hasTranslations = $articles->count() > 0;
+
         $archives = $this->getArchives();
         $recentArticles = $this->getRecentArticles();
 
-        return view('main.blog', compact('articles', 'query', 'archives', 'recentArticles'));
+        return view('main.blog', compact('articles', 'query', 'archives', 'recentArticles','hasTranslations'));
     }
 
     // функція для фильтрації по місяцям
@@ -236,10 +239,12 @@ class PageController extends Controller
             ->latest()
             ->paginate(10);
 
+        $hasTranslations = $articles->count() > 0;
+
         $archives = $this->getArchives();
         $recentArticles = $this->getRecentArticles();
 
-        return view('main.blog', compact('articles', 'categoryTranslation', 'archives', 'recentArticles', 'query'));
+        return view('main.blog', compact('articles', 'categoryTranslation', 'archives', 'recentArticles', 'query','hasTranslations'));
     }
 
     // функція для пагинації по категоріям
@@ -278,10 +283,12 @@ class PageController extends Controller
             ->latest()
             ->paginate(10);
 
+        $hasTranslations = $articles->count() > 0;
+
         $archives = $this->getArchives();
         $recentArticles = $this->getRecentArticles();
 
-        return view('main.blog', compact('articles', 'tag', 'archives', 'recentArticles', 'query'));
+        return view('main.blog', compact('articles', 'tag', 'archives', 'recentArticles', 'query', 'hasTranslations'));
     }
 
     // функція для пагинації по тегам
