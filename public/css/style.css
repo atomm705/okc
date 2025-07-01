@@ -30258,7 +30258,19 @@ html.ie-11 .fc-event .fc-event-wrap {
         color: #2a93c9 !important;
     }
 }
+
 .services-item > p > iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.services-item > h2 {
+    font-size: 1.75rem;
+    line-height: 1;
+    margin-top: 30px;
+}
+
+.edit-video-cover-component > iframe {
     width: 100%;
     height: 500px;
 }
@@ -30267,36 +30279,40 @@ html.ie-11 .fc-event .fc-event-wrap {
     .services-item > p > iframe{
         height: 300px;
     }
+
+    .edit-video-cover-component > iframe {
+        height: 300px;
+    }
 }
 
 .services-item > h3{
     font-size: 1.75rem;
     line-height: 1;
+    margin-top: 30px;
 }
 
-
 .services-item > ul > li {
-    font-size: 1rem;
-    padding-left: 25px;
-    line-height: 1.5;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: unset;
+    line-height: 1.0;
 }
 
 .services-item > ul > li:before {
-
     display: inline-block;
-    left: 0;
-    top: 12px;
+    left: -15px;
+    top: 7.5px;
     min-width: 25px;
     content: '\f105';
     font: 400 14px / 24px 'FontAwesome';
     color: #2a93c9;
 }
 
-.services-item > :last-child{
+/*.services-item > :last-child{
     padding: 25px 0;
     width: 100%;
     text-align: center;
-}
+}*/
 
 .has-button-component{
     padding: 25px 0;
@@ -30333,7 +30349,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     .price-item > div > iframe {
         height: 300px;
     }
-
 }
 
 .price-item > div {
@@ -30349,8 +30364,7 @@ html.ie-11 .fc-event .fc-event-wrap {
     bottom: 0;
     left: 0;
     display: -webkit-box;
-    display: flex
-;
+    display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
@@ -30367,13 +30381,59 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #fff;
 }
 
+.edit-video-cover-component {
+    position: relative;
+}
+
+.edit-video-cover-component > .content{
+    padding: 25px;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    flex-direction: column !important;
+}
+
+.edit-video-cover-component > .content > .title{
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.625rem;
+    color: #fff;
+}
+
+.services-item > p:has(button) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
 @media (max-width: 440px){
     .price-item > div  > .content > .title{
+        font-size: 1.3rem;
+    }
+
+    .edit-video-cover-component > .content > .title{
         font-size: 1.3rem;
     }
 }
 
 .price-item > div  > .content > .description{
+    font-size: 1.375rem;
+    margin-top: 10px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.edit-video-cover-component > .content > .description{
     font-size: 1.375rem;
     margin-top: 10px;
     text-align: center;
@@ -30402,6 +30462,30 @@ html.ie-11 .fc-event .fc-event-wrap {
     background: #2a93c9;
     color: #fff;
 }
+
+.edit-video-cover-component > .content > button{
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #fff;
+    color: #191919;
+    border-radius: 999px;
+    line-height: 1;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+    cursor: hand;
+    transition: all .3s ease-in-out 0s;
+}
+
+.edit-video-cover-component > .content > button:hover{
+    background: #2a93c9;
+    color: #fff;
+}
+
 
 .price-item > div  > .content > .buttons > button{
     margin-top: 25px;
@@ -30493,14 +30577,15 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #2a93c9;
 }
 
-.price-item > .edit-spoiler-component{
+.edit-spoiler-component{
     overflow: hidden;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     margin-top: 10px;
 }
 
-.price-item > .edit-spoiler-component > .header{
+.edit-spoiler-component > .header{
+    position: relative;
     padding: 15px 35px 15px 0;
     cursor: pointer;
     color: #2a93c9;
@@ -30512,7 +30597,7 @@ html.ie-11 .fc-event .fc-event-wrap {
     transition: all .3s ease-in-out 0s;
 }
 
-.price-item > .edit-spoiler-component > .header:after {
+.edit-spoiler-component > .header:after {
      content: "";
      position: absolute;
      top: 5px;
@@ -30527,29 +30612,29 @@ html.ie-11 .fc-event .fc-event-wrap {
      transition: .2s;
  }
 
-.price-item > .edit-spoiler-component > .header.active:after {
+.edit-spoiler-component > .header.active:after {
     content: "";
     position: absolute;
     color: #868686;
     transition: .2s;
 }
 
-.price-item > .edit-spoiler-component > .body {
+.edit-spoiler-component > .body {
     padding: 12px 35px 12px 0;
     display: none;
 }
 
-.price-item > .edit-spoiler-component > .body > .list-tab-none{
+.edit-spoiler-component > .body > .list-tab-none{
     padding: 12px 35px 12px 0;
 }
 
-.price-item > .edit-spoiler-component > .body > .list-tab-none > li{
+.edit-spoiler-component > .body > .list-tab-none > li{
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 10px;
 }
 
-.price-item > .edit-spoiler-component > .body > .list-tab-none > li:before {
+.edit-spoiler-component > .body > .list-tab-none > li:before {
     line-height: 1;
     content: "\f105";
     font: 400 14px / 24px 'FontAwesome';
@@ -30560,6 +30645,28 @@ html.ie-11 .fc-event .fc-event-wrap {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-right: 15px;
+}
+
+.services-item > ul > li > ul {
+    list-style: none;
+    padding: 0;
+   margin-left: 50px;
+
+}
+.services-item > ul > li > ul > li {
+    font-size: 14px;
+    padding-left: unset;
+    line-height: 1.0;
+}
+
+.services-item > ul > li > ul > li:before {
+    display: inline-block;
+    left: -15px;
+    top: 7.5px;
+    min-width: 25px;
+    content: '\f105';
+    font: 400 14px / 24px 'FontAwesome';
+    color: #2a93c9;
 }
 
 .price-item > ul > li {
@@ -30587,6 +30694,10 @@ html.ie-11 .fc-event .fc-event-wrap {
 @media  (max-width: 440px) {
     .price-item > p > iframe {
         height: 300px;
+    }
+
+    .edit-video-cover-component > .content > button {
+        font-size: 12px;
     }
 }
 
@@ -30834,7 +30945,7 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #fff;
 }
 .button, button {
-    padding: 7px 35px;
+   /* padding: 7px 35px;*/
     line-height: 1;
     font-size: 1rem;
     white-space: nowrap;
@@ -30947,14 +31058,29 @@ input {
 .appointment-modal > .content > form .buttons button.button-preset-cancel {
     background-color: transparent;
 }
+
+/*
+старий
 .appointment-modal > .content > form .buttons button {
     padding-top: 10px;
     padding-bottom: 10px;
     color: #fff;
+}*/
+
+.appointment-modal > .content > form .buttons button {
+    padding: 10px 10px;
+    color: #fff;
 }
+
+.appointment-modal > .content > form .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
 .appointment-modal > .content > form > .personal-agreement {
-    display: flex
-;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }

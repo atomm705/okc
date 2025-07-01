@@ -117,7 +117,7 @@ class ServicesController extends Controller
                 $translate->save();
             }
         }
-        return redirect()->route('admin.groups');
+        return redirect()->route('admin.groups', ['slug' => $category->slug]);
     }
 
     public function category_edit($id){
@@ -193,7 +193,7 @@ class ServicesController extends Controller
                 $translate->save();
             }
         }
-        return redirect()->route('admin.groups');
+        return redirect()->route('admin.groups', ['slug' => $category->slug]);
     }
 
     public function category_image_del(Request $request){

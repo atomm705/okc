@@ -280,7 +280,7 @@
     <script>
         // цей скрипт для роботи акордіону
         document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".price-item > .edit-spoiler-component > .header").forEach(header => {
+            document.querySelectorAll(".edit-spoiler-component > .header").forEach(header => {
                 header.addEventListener("click", function () {
                     const body = this.nextElementSibling;
 
