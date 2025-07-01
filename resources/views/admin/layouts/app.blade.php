@@ -9,24 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('admin/css/boxicons.css') }}" />
-    <link rel="stylesheet" href="{{ asset('admin/css/fontawesome.css') }}" />
-    <link rel="stylesheet" href="{{ asset('admin/css/flag-icons.css') }}" />
+    <link rel="stylesheet" href="{{ asset('admin/css/boxicons.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('admin/css/fontawesome.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('admin/css/flag-icons.css') }}" type="text/css"/>
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/core.css') }}?v=1" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{ asset('admin/css/theme-default.css') }}" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{ asset('admin/css/demo.css') }}" />
+    <link rel="stylesheet" href="{{ asset('admin/css/core.css') }}?v=1" class="template-customizer-core-css" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('admin/css/theme-default.css') }}" class="template-customizer-theme-css" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('admin/css/demo.css') }}" type="text/css"/>
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/perfect-scrollbar.css') }}" />
-    <link rel="stylesheet" href="{{ asset('admin/css/typeahead.css') }}" />
-    <link rel="stylesheet" href="{{ asset('admin/css/custom.css') }}" />
-    <link rel="stylesheet" href="{{ asset('admin/css/nouislider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('admin/css/select2.css') }}" />
+    <link rel="stylesheet" href="{{ asset('admin/css/perfect-scrollbar.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('admin/css/typeahead.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('admin/css/custom.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('admin/css/nouislider.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('admin/css/select2.css') }}" type="text/css"/>
     <link href="/admin/vendor/datatables/datatables.css" rel="stylesheet" type="text/css">
     <script src="{{ asset('admin/js/helpers.js') }}"></script>
     <script src="{{ asset('admin/js/template-customizer.js') }}"></script>
     <script src="{{ asset('admin/js/config.js') }}"></script>
-    <script src="{{ asset('admin/ckeditor/ckeditor.js') }}"></script>
+    <!--<script src="{{ asset('admin/ckeditor/ckeditor.js') }}"></script>-->
+    <script src="{{ asset('admin/js/tinymce.min.js') }}"></script>
 
 </head>
 
