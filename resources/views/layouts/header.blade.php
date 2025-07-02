@@ -61,14 +61,17 @@
                                 <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">{{ __('header.menu.index') }}</a>
                                 </li>
 
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="">{{ __('header.menu.services') }}</a>
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link rd-navbar-submenu-toggle" href="">{{ __('header.menu.services') }}</a>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         @foreach($mainMenu as $item)
                                         <li class="rd-megamenu-item">
                                             <h6 class="rd-megamenu-title">{{ $item->translation->name }}</h6>
                                             <ul class="rd-megamenu-list">
                                                 @foreach($item->categories as $category)
-                                                @if(isset($category->slug))<li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a></li>@endif
+                                                @if(isset($category->slug))<li class="rd-megamenu-list-item">
+                                                        <a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a>
+                                                    </li>@endif
                                                 @endforeach
                                             </ul>
                                         </li>

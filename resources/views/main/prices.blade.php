@@ -26,7 +26,7 @@
                                 <p>{{ __('global.Choose your category') }}:</p>
                             </li>
                             <li class="section-relative">
-                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
+                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">{{ __('global.Choose your category') }}<span class="caret"></span></button>
 
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     @foreach($categories as $category)
@@ -57,7 +57,7 @@
                                 @foreach($category_active->groups as $group)
                                     @if(isset($group->translation->name) && $group->services)
                                         <div>
-                                            <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
+                                            <table class="table table-custom table-fixed table-hover-rows table-3-col">
                                                 <thead>
                                                 <th>@lang('global.service')</th>
                                                 <th>{{ __('global.price') }}</th>
@@ -89,7 +89,17 @@
         </div>
     </section>
 </x-app-layout>
+<script type="text/javascript">
+    $(document).ready(function () {
+        const isMobile = window.innerWidth <= 768;
 
+        if (isMobile) {
+            $('.resp-accordion').removeClass('resp-tab-active');
+            $('.resp-tab-content').removeClass('resp-tab-content-active');
+            $('.resp-tab-content').css('display', 'none');
+        }
+    });
+</script>
 
 
 

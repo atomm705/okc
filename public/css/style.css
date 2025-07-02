@@ -12899,7 +12899,7 @@ fieldset[disabled] .box-planning-type-4 .btn-default {
 }
 
 .table-custom td {
-    padding: 17px 24px;
+    padding: 17px 5px;
 }
 
 .table-custom tbody tr:first-child td {
@@ -25036,7 +25036,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .responsive-tabs .resp-tab-content {
-    padding: 2px 25px 17px 20px;
+    padding: 2px 0 17px;
 }
 
 .responsive-tabs .resp-tabs-list {
