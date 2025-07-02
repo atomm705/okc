@@ -58,11 +58,12 @@
                         <div class="rd-navbar-nav-wrap">
 
                             <ul class="rd-navbar-nav">
-                                <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif"><a class="rd-nav-link"href="{{ route('main.index') }}">{{ __('header.menu.index') }}</a>
+                                <li class="rd-nav-item @if(request()->routeIs('main.index')) active @endif">
+                                    <a class="rd-nav-link"href="{{ route('main.index') }}">{{ __('header.menu.index') }}</a>
                                 </li>
 
                                 <li class="rd-nav-item">
-                                    <a class="rd-nav-link rd-navbar-submenu-toggle" href="">{{ __('header.menu.services') }}</a>
+                                    <span class="rd-nav-link rd-navbar-submenu-toggle">{{ __('header.menu.services') }}</span>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         @foreach($mainMenu as $item)
                                         <li class="rd-megamenu-item">
