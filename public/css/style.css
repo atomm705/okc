@@ -31109,3 +31109,10 @@ input {
     font-size: 16px;
     color: #FFF;
 }
+
+@media (max-width: 440px) {
+    .page-sticky-menu-component{
+        right: 50px;
+        bottom: 18px;
+    }
+}
