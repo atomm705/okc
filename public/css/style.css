@@ -14360,6 +14360,7 @@ a[href*='tel'], a[href*='mailto'] {
     display: inline-block;
     transition: .22s;
     content: '\f236';
+    font-family: "Material Design Icons";
 }
 
 .rd-navbar-static .rd-nav-item > .rd-navbar-submenu-toggle:hover {

@@ -63,7 +63,7 @@
                                 </li>
 
                                 <li class="rd-nav-item">
-                                    <span class="rd-nav-link rd-navbar-submenu-toggle">{{ __('header.menu.services') }}</span>
+                                    <span class="rd-nav-link rd-navbar-submenu-toggle" style='display: flex; font-family: "Lato", Helvetica, Arial, sans-serif'>{{ __('header.menu.services') }}</span>
                                     <ul class="rd-menu rd-navbar-megamenu">
                                         @foreach($mainMenu as $item)
                                         <li class="rd-megamenu-item">
