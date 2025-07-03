@@ -25049,11 +25049,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .responsive-tabs .resp-tabs-list li {
     position: relative;
     display: inline-block;
-    padding: 0 0 7px;
+    padding: 0 0 2px;
     font-size: 15px;
     font-weight: 700;
     color: #2a93c9;
-    text-transform: uppercase;
+    text-transform: lowercase;
     list-style-type: none;
     cursor: pointer;
     transition: color .2s ease-in;
