@@ -41,7 +41,56 @@
                                         <div class="card-body bg-gray-500">
                                             <div class="row">
                                                 <div class="col-lg-3"></div>
-                                                <div class="col-lg-3"><a href="" class="btn btn-success">Додати лікаря</a></div>
+                                                <div class="col-lg-3">
+                                                    <a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#basicModal">Додати лікаря</a>
+                                                    <div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true" style="display: none;">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel1">Додати лікаря у {{ $department->translation->name }}</h5>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <form method="post" action="{{ route('admin.doctor.department_add') }}">
+                                                                    @csrf
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col mb-6">
+                                                                            <input type="hidden" name="department" value="{{ $department->id }}">
+                                                                            <label for="nameBasic" class="form-label">Лікар</label>
+                                                                            <select name="doctor" class="form-control" id="doctorSearch"></select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row g-6">
+                                                                        @php \Carbon\Carbon::setLocale('uk'); @endphp
+                                                                        @for($i = 0;$i<6;$i++)
+                                                                            <div class="col-md-2 mb-3">
+                                                                                <label for="working_hours_{{ $i }}" class="text-capitalize">{{ ucfirst(\Carbon\Carbon::create()->startOfWeek()->addDays($i)->translatedFormat('l')) }}</label>
+                                                                                <select name="working_hours[{{ $i }}][start]" class="form-control mb-3" id="working_hours_{{ $i }}">
+                                                                                    <option value="">Початок роботи</option>
+                                                                                    @for ($time = strtotime('08:00'); $time <= strtotime('19:00'); $time += 15 * 60)
+                                                                                        <option value="{{ date('H:i', $time) }}">{{ date('H:i', $time) }}</option>
+                                                                                    @endfor
+                                                                                </select>
+                                                                                <select name="working_hours[{{ $i }}][end]" class="form-control mb-3" id="working_hours_{{ $i }}">
+                                                                                    <option value="">Кінець роботи</option>
+                                                                                    @for ($time = strtotime('08:00'); $time <= strtotime('19:00'); $time += 15 * 60)
+                                                                                        <option value="{{ date('H:i', $time) }}">{{ date('H:i', $time) }}</option>
+                                                                                    @endfor
+                                                                                </select>
+                                                                            </div>
+                                                                        @endfor
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Закрити</button>
+                                                                    <button type="submit" class="btn btn-primary add_doctor">Додати</button>
+                                                                </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 @if(empty($department))
                                                     <div class="col-lg-3">
                                                         <a href="{{ route('admin.doctor.create', ['department_id' => $departments->first()->id]) }}" class="btn btn-outline-success">Створити лікаря</a>
@@ -62,7 +111,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body" id="doctorResult">
                                 <table class="table">
                                     <thead>
                                     <th>Ім'я</th>
@@ -128,4 +177,46 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+<script>
+    $(document).ready(function(){
+        $("#doctorSearch").select2({
+            placeholder: 'Почніть набирати назву..',
+            language: "uk",
+            ajax: {
+                url: '{{ route("admin.doctor.search") }}',
+                dataType: 'json',
+                delay: 250,
+                processResults: function (data) {
+                    return {
+                        results: $.map(data, function (item) {
+                            return {
+                                text: item.name,
+                                id: item.id
+                            }
+                        })
+                    };
+                    onItemSelect: selectItem();
+                },
+                cache: true
+            }
+        });
+
+        $(".add_doctor").submit(function(e){
+            e.preventDefault();
+            var form = $(this);
+            $.ajax({
+                url: "{{ route('admin.doctor.department_add') }}",
+                type: "POST",
+                data: form.serialize(),
+                success: function(response){
+                    $('#doctorResult').html(response);
+                    $('body').removeClass('.modal-open');
+                    $('body').css('');
+                }
+            });
+        });
+    });
+</script>
 @endsection

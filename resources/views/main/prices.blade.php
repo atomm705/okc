@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-lg-9 offset-lg-top-0 offset-top-34">
                     <h3 class="text-md-start">{{ $category_active->translation->name }}</h3>
-                    <div class="offset-sm-top-60 text-start">
+                    <div class="offset-sm-top-30 text-start">
                         @if(isset($category_active->slug))
                         <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                             <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
