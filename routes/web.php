@@ -93,6 +93,8 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/doctor/{department_id}/store', [DoctorController::class, 'store'])->name('admin.doctor.store');
         Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('admin.doctor.edit');
         Route::post('/doctor/{id}/update', [DoctorController::class, 'update'])->name('admin.doctor.update');
+        Route::post('/doctor/department_add', [DoctorController::class, 'department_add'])->name('admin.doctor.department_add');
+        Route::get('/doctor/search', [DoctorController::class, 'search'])->name('admin.doctor.search');
 
         Route::get('/category', [ServicesController::class, 'category'])->name('admin.category');
         Route::get('/category/create', [ServicesController::class, 'category_create'])->name('admin.category.create');

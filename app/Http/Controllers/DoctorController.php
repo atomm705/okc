@@ -394,4 +394,59 @@ class DoctorController extends Controller
     public function destroy(Request $request){
 
     }
+
+    public function department_add(Request $request){
+
+        $doctor = NewDoctorDepartment::where('department_id', $request->department)->where('doctor_id', $request->doctor)->first();
+        if(!$doctor){
+
+            $doctor = new NewDoctorDepartment();
+            $doctor->department_id = $request->department;
+            $doctor->doctor_id = $request->doctor;
+            $doctor->is_visible = '1';
+            $data = $request->input('working_hours', []);
+
+            $workingHours = [];
+
+            for ($i = 0; $i < 7; $i++) {
+                $start = $data[$i]['start'] ?? null;
+                $end = $data[$i]['end'] ?? null;
+
+                if ($start && $end) {
+                    $workingHours[$i] = $start . '-' . $end;
+                } else {
+                    $workingHours[$i] = null;
+                }
+            }
+            $doctor->work_hours = json_encode($workingHours, JSON_UNESCAPED_UNICODE);
+            $doctor->save();
+        }
+
+        return redirect()->route('admin.doctors.list', ['id' => $request->department]);
+    }
+
+    public function search(Request $request){
+            $search = $request->q;
+
+            $results = NewDoctor::select('new_doctors.id')
+                ->join('new_doctor_translations', function ($join) {
+                    $join->on('new_doctors.id', '=', 'new_doctor_translations.doctor_id');
+                })
+                ->where(function ($query) use ($search) {
+                    $query->whereRaw("CONCAT_WS(' ', new_doctor_translations.second_name, new_doctor_translations.first_name, new_doctor_translations.middle_name) LIKE ?", ["%{$search}%"]);
+                })
+                ->where('new_doctor_translations.locale', app()->getLocale()) // обов'язково
+                ->limit(20)
+                ->get()
+                ->map(function ($doctor) {
+                    $fullName = "{$doctor->translation->second_name} {$doctor->translation->first_name} {$doctor->translation->middle_name}";
+                    return [
+                        'id' => $doctor->id,
+                        'name' => trim($fullName)
+                    ];
+                });
+
+        return response()->json($results);
+    }
+
 }
