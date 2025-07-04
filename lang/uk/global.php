@@ -29,6 +29,7 @@ return [
 	],
 	'more' => 'Докладніше',
     'Choose your category' => 'Оберіть категорію',
+    'Choose a department' => 'Виберіть відділ',
     'service' => 'Послуга',
     'price' => 'Ціна',
     'time_m' => 'Час(хв)',

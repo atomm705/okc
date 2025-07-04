@@ -234,6 +234,13 @@ a, a:focus, a:hover, a:visited {
     .page-sticky-menu-component {
         left: 25px
     }
+
+    .category-open{
+        align-items: center;
+        position: relative;
+        height: 52px;
+        width: 272px;
+    }
 }
 
 .page-sticky-menu-component .button, .page-sticky-menu-component button {
@@ -403,13 +410,27 @@ a, a:focus, a:hover, a:visited {
 }
 
 .page-sticky-menu-component > .container.appointment-up > .appointment {
-    margin-right: 15px;
+
+    margin-right: 60px;
+    margin-bottom: 17px;
     border-radius: 955px;
     display: -webkit-box;
     display: flex;
     -webkit-transition: all .3s ease-in-out 0s;
     transition: all .3s ease-in-out 0s;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .34)
+}
+
+@media  (max-width: 440px) {
+    .page-sticky-menu-component > .container.appointment-up > .appointment  {
+        margin-right: 40px;
+    }
+}
+
+@media  (max-width: 1050px) {
+    .page-sticky-menu-component > .container.appointment-up > .appointment  {
+        margin-right: 35px;
+    }
 }
 
 .page-sticky-menu-component > .container.appointment-up > .appointment:hover {
@@ -987,3 +1008,26 @@ textarea {
 .selectizer-component .dropdown > .items > .item.selected, .selectizer-component .dropdown > .items > .item:hover {
     background: #e5e5e5
 }
+
+
+.ui-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 40px ;
+    z-index: 100;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 42px;
+    color: #fff;
+    background: #2a93c9;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: .45s all ease-in-out;
+    transform: translate3d(0, 100px, 0);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+

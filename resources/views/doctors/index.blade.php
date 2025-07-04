@@ -9,7 +9,7 @@
         </div>
     </section>
     <div id="app" class="app">
-        <section>
+        <section class="section-team-doctors">
             <div class="content">
                 <div class="slot">
                     <div class="doctors-departments-section">

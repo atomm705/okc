@@ -63,21 +63,21 @@
                                 </li>
 
                                 <li class="rd-nav-item">
-                                    <span class="rd-nav-link rd-navbar-submenu-toggle" style='display: flex; font-family: "Lato", Helvetica, Arial, sans-serif'>{{ __('header.menu.services') }}</span>
-                                    <ul class="rd-menu rd-navbar-megamenu">
-                                        @foreach($mainMenu as $item)
-                                        <li class="rd-megamenu-item">
-                                            <h6 class="rd-megamenu-title">{{ $item->translation->name }}</h6>
-                                            <ul class="rd-megamenu-list">
-                                                @foreach($item->categories as $category)
-                                                @if(isset($category->slug))<li class="rd-megamenu-list-item">
-                                                        <a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a>
-                                                    </li>@endif
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                        @endforeach
-                                    </ul>
+                                        <span class="rd-nav-link rd-navbar-submenu-toggle category-open" style='display: flex; font-family: "Lato", Helvetica, Arial, sans-serif'>{{ __('header.menu.services') }}</span>
+                                        <ul class="rd-menu rd-navbar-megamenu">
+                                            @foreach($mainMenu as $item)
+                                                <li class="rd-megamenu-item">
+                                                    <h6 class="rd-megamenu-title">{{ $item->translation->name }}</h6>
+                                                    <ul class="rd-megamenu-list">
+                                                        @foreach($item->categories as $category)
+                                                            @if(isset($category->slug))<li class="rd-megamenu-list-item">
+                                                                <a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a>
+                                                            </li>@endif
+                                                        @endforeach
+                                                    </ul>
+                                                </li>
+                                            @endforeach
+                                        </ul>
                                 </li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="{{ route('main.timetable') }}">{{ __('header.menu.schedule') }}</a>
                                 </li>

@@ -1907,3 +1907,11 @@ html.page-oklens body .app .price-calculation>.content>.slot>.price-calculator-c
     }
 }
 
+@media (max-width: 1200px) {
+    .category-open{
+        align-items: center;
+        position: relative;
+        height: 52px;
+        width: 272px;
+    }
+}

@@ -23,11 +23,11 @@
                         <h4 class="text-uppercase isotope-filters-title offset-top-34"></h4>
                         <ul class="list-inline list-inline-sm">
                             <li class="d-xl-none">
-                                <p>Choose your category:</p>
+                                <p>{{ __('global.Choose a department') }}:</p>
                             </li>
                             <li class="section-relative">
 
-                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">Filter<span class="caret"></span></button>
+                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">{{ __('global.Choose a department') }}<span class="caret"></span></button>
 
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     @foreach($categories as $category)

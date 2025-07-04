@@ -29,6 +29,7 @@ return [
 	],
     'more' => 'More',
     'Choose your category' => 'Choose your category',
+    'Choose a department' => 'Choose a department',
     'service' => 'Service',
     'price' => 'Price',
     'time_m' => 'Time(minutes)',

@@ -121,8 +121,8 @@
 @endif
 
 @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'   )
-    <script src="{{ asset('blepharoplastika-js/liposaktsiya.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
+    <script src="{{ asset('blepharoplastika-js/liposaktsiya.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
     <script>
         $(document).ready(function () {
