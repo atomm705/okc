@@ -615,7 +615,7 @@
             </div>
         </div>
 
-        <div class="section-main">
+       <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
                     <span>@lang('frontend/blefaroplastika.reviews.title')</span>
@@ -623,13 +623,91 @@
                 <div class="list-box">
                     <div class="list-box__item">
                         <div class="review-box">
-                            <!--<div class="review-title">
-                                <span>Валерия М</span>
+                            <div class="recall-result">
+                                <div class="recall-result-title">
+                                    <span>Результат</span>
+                                </div>
+                                <div class="ba-slider">
+                                    <img src="/images/before-1.jpg" alt="">
+                                    <span class="label label-after">До</span>
+                                    <div class="resize">
+                                        <img src="/images/after-1.jpg" alt="">
+                                        <span class="label label-before">Після</span>
+                                    </div>
+                                    <div class="draggable">
+                                        <span class="dr-btn">
+                                          <span class="dr-btn__left">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                          <span class="dr-btn__right">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="list-box__item">
+                        <div class="review-box">
+                            <div class="recall-result">
+                                <div class="recall-result-title">
+                                    <span>Результат</span>
+                                </div>
+                                <div class="ba-slider">
+                                    <img src="/images/before-2.jpg" alt="">
+                                    <span class="label label-after">До</span>
+                                    <div class="resize">
+                                        <img src="/images/after-2.jpg" alt="">
+                                        <span class="label label-before">Після</span>
+                                    </div>
+                                    <div class="draggable">
+                                        <span class="dr-btn">
+                                          <span class="dr-btn__left">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                          <span class="dr-btn__right">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recall-button">
+                    <a href="https://www.okc.com.ua/ru/testimonials" target="_blank"
+                       class="button-main button-main_blue button-more-recall">@lang('frontend/blefaroplastika.reviews.link')</a>
+                </div>
+            </div>
+        </div>
 
-                            <div class="review-text">
-                                <span>Благодарю Анну Васильевну за профессионализм и отличный результат. Обратилась к ней, так как провисала кожа на верхних веках. Долго сомневалась стоит ли делать. Все таки операция. Пробовала решить косметическим способом. Но ничего не помогало. Анну Васильевну мне посоветовала подруга. Сначала обратилась за консультацией. Она очень подробно объяснила как будет все будет проходить, ответила на все мои вопросы и опасения. Операция прошла достаточно быстро и безболезненно. А восстановление почти незаметно.</span>
-                            </div>-->
+        <!--<div class="section-main">
+            <div class="page-content">
+                <div class="title-section">
+                    <span>@lang('frontend/blefaroplastika.reviews.title')</span>
+                </div>
+                <div class="list-box">
+                    <div class="list-box__item">
+                        <div class="review-box">
+
                             <div class="recall-result">
                                 <div class="recall-result-title">
                                     <span>Результат</span>
@@ -677,13 +755,7 @@
                     </div>
                     <div class="list-box__item">
                         <div class="review-box">
-                            <!--<div class="review-title">
-                                <span>Диана Д</span>
-                            </div>
 
-                            <div class="review-text">
-                                <span>Делала операцию месяц назад. Чувствую себя прекрасно. Благодарю Анну Васильевну. У нее золотые руки. Операция прошла быстро. Анна Васильевна говорила мне на каждом этапе операции что происходит, что все под контролем и это помогало мне чувствовать себя спокойно. Спасибо ей за то, что после операции связывалась со мной по скайпу и отвечала на все вопросы в телеграмм. Восстановление прошло очень быстро, всего 2 недели. Очень довольна результатом. Все как я и хотела!</span>
-                            </div>-->
                             <div class="recall-result">
                                 <div class="recall-result-title">
                                     <span>Результат</span>
@@ -735,7 +807,7 @@
                        class="button-main button-main_blue button-more-recall">@lang('frontend/blefaroplastika.reviews.link')</a>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="section-main section-main_m-n section-main_video" style="min-height: 320px; height:auto; max-height: 640px">
             <div class="banner-section banner-section_bottom" id="banner-section-4" style="margin-top: 70px">

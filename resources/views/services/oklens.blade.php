@@ -93,7 +93,7 @@
                 <hr class="line-paralax">
             </div>
 
-            <div class="content"><h3 class="text-center content-title-position">@lang('frontend/oklens.surgery.title')</h3>
+            <div class="content padding-l-r"><h3 class="text-center content-title-position">@lang('frontend/oklens.surgery.title')</h3>
                 <p class="text-center p-mobil-2">@lang('frontend/oklens.surgery.description')</p> <!---->
             </div>
         </div>
@@ -323,7 +323,7 @@
         </div>
     </section>
     <section class="section-full-width" style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----><!---->
-        <div class="content section-title"><h3>@lang('frontend/oklens.contact_us.title')</h3> <!---->
+        <div class="content section-title padding-l-r"><h3>@lang('frontend/oklens.contact_us.title')</h3> <!---->
             <div class="slot"><a href="/contacts" class="button button-ellipse button-preset-primary button-large">@lang('frontend/oklens.contact_us.link')</a></div>
         </div>
     </section>

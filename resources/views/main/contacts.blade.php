@@ -17,8 +17,8 @@
                         <div class="row">
                             <div class="col-xl-8 text-start">
                                 <h3>@lang('frontend/contacts.contact.title')</h3>
-                                <div class="offset-top-66">
-                                    <p>@lang('frontend/contacts.contact.description')</p>
+                                <div>
+                                    <p class="gray">@lang('frontend/contacts.contact.description')</p>
                                 </div>
                                 <div class="offset-top-34">
                                     <form class="rd-mailform text-start" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
@@ -50,7 +50,7 @@
                                         </div>
                                         <div class="offset-top-18 offset-sm-top-24 text-center text-md-start">
 
-                                            <p>@lang('frontend/contacts.contact.form.agreement')</p>
+                                            <p class="gray">@lang('frontend/contacts.contact.form.agreement')</p>
                                             <button class="btn btn-ellipse btn-primary" type="submit" style="min-width: 130px;">@lang('frontend/contacts.contact.form.send')</button>
                                         </div>
                                     </form>

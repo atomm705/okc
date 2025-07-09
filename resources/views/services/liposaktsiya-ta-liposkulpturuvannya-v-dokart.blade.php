@@ -4,10 +4,10 @@
 
         <div class="body-main">
 
-            <div class="section-main ">
-                <div class="banner-main margin--20"
+            <div class="section-main banner-lipo-mt">
+                <div class="banner-main margin--20 banner-lipo-position"
                      style="background-image: url('/images/services/liposaktsiya/banner.jpg');">
-                    <div class="page-content">
+                    <div class="page-content banner-lipo-pt">
                         <div class="banner-main-hold">
                             <div class="banner-main-title margin--50">
                                 <span class="text-shadow-primary text-primary">@lang('frontend/liposaktsiya.slider.slide_1.title')</span>

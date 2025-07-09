@@ -304,7 +304,7 @@
             </div>
         </div>
 
-        <div class="section-main">
+        <!--<div class="section-main">
             <div class="page-content" style="display: none">
                 <div class="title-section">
                     <span>Відгуки клієнтів</span>
@@ -436,7 +436,7 @@
                 </div>
 
             </div>
-        </div>
+        </div>-->
 
 
         <div class="banner-section banner-section_bottom" id="banner-section-4">
@@ -457,6 +457,9 @@
                     <button class="open-modal-recall button-main button-main_orange">@lang('frontend/epil.consultation.link')</button>
                 </div>
             </div>
+        </div>
+
+        <div class="specialist-card-box block-hiden">
         </div>
     </main>
 

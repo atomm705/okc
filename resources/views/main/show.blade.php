@@ -7,7 +7,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.blog') }}">@lang('global.pages.blog')</a></li>
-                <li>{{ $translation->name }}</li>
+                <li  class="white">{{ $translation->name }}</li>
             </ul>
         </div>
     </section>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
 
-                        <div class="article-content mb-5 content-post">
+                        <div class="article-content mb-5 content-post about-post">
                             {!! $translation->text !!}
                         </div>
                         @if ($translation->tags->count())

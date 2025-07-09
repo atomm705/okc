@@ -188,8 +188,8 @@
 
             <div class="page-content">
                 <div class="advantage">
-                    <div class="advantage-list advantage-list_white">
-                        <div class="advantage-card advantage-card_small">
+                    <div class="advantage-list advantage-list_white ">
+                        <div class="advantage-card">
                             <div class="advantage-card-ico">
                                 <img src="/images/ico-1.svg" alt="ico"/>
                             </div>
@@ -199,7 +199,7 @@
                             </div>
                         </div>
 
-                        <div class="advantage-card advantage-card_small">
+                        <div class="advantage-card">
                             <div class="advantage-card-ico">
                                 <img src="/images/ico-2.svg" alt="ico"/>
                             </div>
@@ -209,7 +209,7 @@
                             </div>
                         </div>
 
-                        <div class="advantage-card advantage-card_small">
+                        <div class="advantage-card">
                             <div class="advantage-card-ico">
                                 <img src="/images/ico-3.svg" alt="ico"/>
                             </div>

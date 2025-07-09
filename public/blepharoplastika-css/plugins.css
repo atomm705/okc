@@ -235,12 +235,12 @@ a, a:focus, a:hover, a:visited {
         left: 25px
     }
 
-    .category-open{
+    /*.category-open{
         align-items: center;
         position: relative;
         height: 52px;
         width: 272px;
-    }
+    }*/
 }
 
 .page-sticky-menu-component .button, .page-sticky-menu-component button {
@@ -1009,25 +1009,5 @@ textarea {
     background: #e5e5e5
 }
 
-
-.ui-to-top {
-    position: fixed;
-    right: 15px;
-    bottom: 40px ;
-    z-index: 100;
-    width: 46px;
-    height: 46px;
-    font-size: 20px;
-    line-height: 42px;
-    color: #fff;
-    background: #2a93c9;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: none;
-    transition: .45s all ease-in-out;
-    transform: translate3d(0, 100px, 0);
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-}
 
 

@@ -10,7 +10,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.timetable') }}">@lang('global.pages.schedule')</a></li>
-                <li >{{ $current_category->translation->name ?? 'Офтальмология' }}</li>
+                <li class="white" >{{ $current_category->translation->name ?? 'Офтальмология' }}</li>
             </ul>
         </div>
     </section>
@@ -23,7 +23,7 @@
                         <h4 class="text-uppercase isotope-filters-title offset-top-34"></h4>
                         <ul class="list-inline list-inline-sm">
                             <li class="d-xl-none">
-                                <p>{{ __('global.Choose a department') }}:</p>
+                                <p class="gray">{{ __('global.Choose a department') }}:</p>
                             </li>
                             <li class="section-relative">
 

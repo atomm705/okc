@@ -54,9 +54,33 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: auto; /* Задаємо ширину зображення як авто */
+    width: auto ; /* Задаємо ширину зображення як авто */
     object-fit: cover;
     max-width: none;
+}
+
+@media (max-width: 440px) {
+    .resize-img-after{
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .resize-img-after{
+        width: 480px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .resize-img-after{
+        width: 506px !important;
+    }
+}
+
+@media (max-width: 1020px) {
+    .resize-img-after{
+        width: 416px !important;
+    }
 }
 
 .draggable {
@@ -110,18 +134,22 @@
     z-index: 2;
 }
 @media screen and (max-width: 480px) {
-    .section-main{
+    .banner-lipo-mt{
         margin-top: 70px;
     }
     .banner-main{
-        background-position: -560px 0;
+      /*  background-position: -560px 0;*/
         height: 420px;
+    }
+
+    .banner-lipo-position{
+        background-position: -560px 0;
     }
     .banner-main-title span{
         font-size: 25px;
         line-height: 1.2em;
     }
-    .page-content{
+    .banner-lipo-pt{
         margin-top: 80px;
     }
     .text-primary{

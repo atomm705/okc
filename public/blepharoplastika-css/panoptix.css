@@ -50,7 +50,8 @@ ul:not(.list-not-marked).list-marked li {
 
 ul:not(.list-not-marked).list-marked li:before {
     line-height: 1;
-    content: "\F142";
+   /* content: "\F142";*/
+    content: "\f238";
     font-family: Material Design Icons;
     color: #2a93c9;
     position: absolute;
@@ -185,7 +186,7 @@ section {
     }
 
     section {
-        height: 510px;
+        height: 610px !important;
 
     }
 

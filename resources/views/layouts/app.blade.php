@@ -90,39 +90,20 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Asap:400,500,600,700%7CLato:400italic,400,700">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     @if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'|| Route::currentRouteName() === 'services.lazernaya-epilyatsiya' || Route::currentRouteName() === 'services.lazernoe-omolozhenie'|| Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'  || Route::currentRouteName() === 'main.team' ||  Route::currentRouteName() === 'services.panoptix')
         <link rel="stylesheet" href="{{ asset('blepharoplastika-css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
     @endif
-
-    @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' )
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('blepharoplastika-css/swiper.min.css') }}">
+    @if(Route::currentRouteName() === 'services.oklens' )
+     <link rel="stylesheet" href="{{ asset('blepharoplastika-css/oklens.css') }}" >
     @endif
-
-       <!-- @if(Route::currentRouteName() === 'main.team' )
-           <link rel="stylesheet" href="{{ asset('blepharoplastika-css/departments.css') }}">
-            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-          <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-
-        @endif-->
-
-        @if(Route::currentRouteName() === 'services.oklens' )
-
-            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
-            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
-            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/oklens.css') }}" >
-        @endif
-
-        @if(Route::currentRouteName() === 'services.panoptix' )
-
-            <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
-            <link rel="stylesheet" href="{{ asset('blepharoplastika-css/panoptix.css') }}">
-        @endif
+    @if(Route::currentRouteName() === 'services.panoptix' )
+    <link rel="stylesheet" href="{{ asset('blepharoplastika-css/panoptix.css') }}">
+    @endif
 </head>
 <!-- Bootstrap JS + Popper.js -->
 <body  >

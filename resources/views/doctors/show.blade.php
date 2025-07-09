@@ -5,7 +5,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li><a href="{{ route('main.team') }}">@lang('global.pages.doctors')</a></li>
-                <li >{{ $doctor->translation->second_name }} {{ $doctor->translation->first_name }} {{ $doctor->translation->middle_name }}</li>
+                <li  class="white" >{{ $doctor->translation->second_name }} {{ $doctor->translation->first_name }} {{ $doctor->translation->middle_name }}</li>
             </ul>
         </div>
     </section>
@@ -53,7 +53,7 @@
                                     <ul class="list list-marked">
                                         @foreach ($position as $item)
                                             @if (!empty(trim($item)))
-                                                <li>{{ $item }}</li>
+                                                <li class="gray">{{ $item }}</li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -67,7 +67,7 @@
                                     <ul class="list list-marked">
                                         @foreach ($education as $item)
                                             @if (!empty(trim($item)))
-                                                <li>{{ $item }}</li>
+                                                <li class="gray">{{ $item }}</li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -88,7 +88,7 @@
                             <ul class="list list-marked">
                                 @foreach ($specs as $spec)
                                     @if (!empty(trim($spec)))
-                                        <li>{{ $spec }}</li>
+                                        <li class="gray">{{ $spec }}</li>
                                     @endif
                                 @endforeach
                             </ul>
@@ -113,7 +113,7 @@
                                     <ul class="list list-marked">
                                         @foreach ($courses as $course)
                                             @if (!empty(trim($course)))
-                                                <li>{{ $course }}</li>
+                                                <li class="gray">{{ $course }}</li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -127,7 +127,7 @@
                                     <ul class="list list-marked">
                                         @foreach ($associations as $assoc)
                                             @if (!empty(trim($assoc)))
-                                                <li>{{ $assoc }}</li>
+                                                <li class="gray">{{ $assoc }}</li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -140,7 +140,7 @@
                         <div class="offset-top-30 text-start">
                             <h6>@lang('frontend/doctors/doctors.about.title')</h6>
                             <hr class="text-subline-1">
-                            <p>{!! $doctor->translation->about !!}</p>
+                            <p class="gray">{!! $doctor->translation->about !!}</p>
                         </div>
                     @endif
 
@@ -162,7 +162,7 @@
                                     <ul class="list list-marked">
                                         @foreach ($treatment as $item)
                                             @if (!empty(trim($item)))
-                                                <li>{{ $item }}</li>
+                                                <li class="gray">{{ $item }}</li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -176,7 +176,7 @@
                                     <ul class="list list-marked">
                                         @foreach ($procedures as $proc)
                                             @if (!empty(trim($proc)))
-                                                <li>{{ $proc }}</li>
+                                                <li class="gray">{{ $proc }}</li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -198,7 +198,7 @@
                             <ul class="list list-marked">
                                 @foreach ($awards as $award)
                                     @if (!empty(trim($award)))
-                                        <li>{{ $award }}</li>
+                                        <li class="gray">{{ $award }}</li>
                                     @endif
                                 @endforeach
                             </ul>

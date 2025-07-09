@@ -15,9 +15,9 @@
                 <div class="col-sm-10 col-lg-8">
                     <h3 style="font-size: 2.60em; ">@lang('frontend/about.article.title')</h3>
                     <div class="offset-top-20 ">
-                        <p>@lang('frontend/about.article.texts.text_1')</p>
-                        <p>@lang('frontend/about.article.texts.text_2')</p>
-                        <p>@lang('frontend/about.article.texts.text_3')</p>
+                        <p class="gray">@lang('frontend/about.article.texts.text_1')</p>
+                        <p class="gray">@lang('frontend/about.article.texts.text_2')</p>
+                        <p class="gray">@lang('frontend/about.article.texts.text_3')</p>
                     </div>
                 </div>
                 <div class="col-sm-10 col-lg-4">
@@ -29,11 +29,11 @@
                             </div>
                             <div class="unit-body">
                                 <h6 class="font-weight-bold text-primary">Армен Прокипец</h6>
-                                <p class="font-italic offset-top-0">@lang('frontend/about.heart.position')</p>
+                                <p class="font-italic offset-top-0 gray">@lang('frontend/about.heart.position')</p>
                                 <a  href="/uk/doctors/prokipets-armen-tarasovich">@lang('frontend/about.heart.more')</a>
                             </div>
                         </div>
-                        <p>@lang('frontend/about.heart.text')</p>
+                        <p class="gray">@lang('frontend/about.heart.text')</p>
                     </div>
                 </div>
             </div>
@@ -42,13 +42,13 @@
     <section class="section-lg ">
         <div class="container ">
             <div ><h3 style="font-size: 2.60em; margin-top: 0px; margin-bottom: 33px; " class="text-center">@lang('frontend/about.mission.title') </h3>
-                <p class="text-left">@lang('frontend/about.mission.texts.text_1')</p>
+                <p class="text-left gray">@lang('frontend/about.mission.texts.text_1')</p>
                 <ul class="list-marked" style="text-align: left;">
-                    <li>@lang('frontend/about.mission.list.item_1')</li>
-                    <li>@lang('frontend/about.mission.list.item_2')</li>
-                    <li>@lang('frontend/about.mission.list.item_3')</li>
+                    <li class="gray">@lang('frontend/about.mission.list.item_1')</li>
+                    <li class="gray">@lang('frontend/about.mission.list.item_2')</li>
+                    <li class="gray">@lang('frontend/about.mission.list.item_3')</li>
                 </ul>
-                <p class="text-left">@lang('frontend/about.mission.texts.text_2')</p>
+                <p class="text-left gray">@lang('frontend/about.mission.texts.text_2')</p>
             </div>
         </div>
     </section>

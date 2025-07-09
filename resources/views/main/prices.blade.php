@@ -10,7 +10,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li ><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li class="active"><a  href="{{ route('main.index') }}">@lang('global.pages.prices')</a></li>
-                    <li class="active">{{ ucfirst(str_replace('-', ' ', $category_active->translation()->name ?? '')) }}</li>
+                    <li class="active white">{{ ucfirst(str_replace('-', ' ', $category_active->translation()->name ?? '')) }}</li>
             </ul>
         </div>
     </section>
@@ -23,7 +23,7 @@
                         <h4 class="text-uppercase isotope-filters-title offset-top-34"></h4>
                         <ul class="list-inline list-inline-sm">
                             <li class="d-xl-none">
-                                <p>{{ __('global.Choose your category') }}:</p>
+                                <p class="gray">{{ __('global.Choose your category') }}:</p>
                             </li>
                             <li class="section-relative">
                                 <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">{{ __('global.Choose your category') }}<span class="caret"></span></button>

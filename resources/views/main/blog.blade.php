@@ -58,14 +58,14 @@
                 @endisset
 
                 @isset($query)
-                    <li>Поиск: {{ $query }}</li>
+                    <li class="white">Поиск: {{ $query }}</li>
                 @endisset
             </ul>
 
         </div>
     </section>
 
-    <section class="section-98 section-sm-110">
+    <section class="section-sm-110">
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-lg-10 col-xl-8">
@@ -180,7 +180,7 @@
                 @if ($hasTranslations)
                     <div class="col-md-10 col-lg-8 col-xl-4 offset-top-66 offset-md-top-90 offset-lg-top-0">
                         <div class="blog-grid-sidebar inset-xxl-left-30">
-                            <aside class="text-start">
+                            <aside class="text-start aside-padding-mobil">
                                 <div>
                                     <h6>@lang('frontend/blog.search.title')</h6>
                                     <hr class="text-subline">

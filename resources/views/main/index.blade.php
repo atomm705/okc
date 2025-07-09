@@ -66,15 +66,15 @@
                             <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.time_to_work.title')</h6>
                             <hr>
                             <div class="row offset-top-24 justify-content-sm-between text-gray-light">
-                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 17px; color: #fff;"><strong>Клініка</strong></span></div>
-                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 30px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
-                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 17px;"><strong class="white">Клініка</strong></span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span class="white" style="white-space: nowrap; font-size: 14px; padding-left: 30px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span class="white" style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
                                <!-- <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div
                                 <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</div>
                                 <div class="col-sm-7 offset-top-10 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</div>>
                                 <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.appointment.title')</div>-->
-                                <div class="col-sm-4" style="width: 100%;"> <span style="white-space: nowrap; font-size: 17px; color: #fff;"><strong>Запис</strong></span></div>
-                                <div class="offset-top-5 text-gray-light  "> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span style="padding-left: 10px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
+                                <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 17px;"><strong class="white">Запис</strong></span></div>
+                                <div class="offset-top-5 text-gray-light  "> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span class="white" style="padding-left: 10px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
 
                                 <div class="offset-top-8 text-gray-light">
                                     <p>@lang('frontend/index.blocks.time_to_work.body.shedule_time.body')</p>
@@ -88,7 +88,7 @@
                     <div class="sheldue-item light">
                         <div class="sheldue-item-body">
                             <div class="icon icon-xs mdi mdi-calendar-today text-white-50"></div>
-                            <h6 class="d-inline-block inset-left-10 text-white"><span style="font-size: 15px">@lang('frontend/index.blocks.schedule.title' )</span></h6>
+                            <h6 class="d-inline-block inset-left-10 text-white"><span class="white" style="font-size: 15px">@lang('frontend/index.blocks.schedule.title' )</span></h6>
                             <hr>
                             <div class="offset-top-24 text-gray-light">
                                 <p>@lang('frontend/index.blocks.schedule.body')</p>
@@ -101,7 +101,7 @@
                     <div class="sheldue-item">
                         <div class="sheldue-item-body">
                             <div class="icon icon-xs mdi mdi-phone text-white-50"></div>
-                            <h6 class="d-inline-block inset-left-10 text-white"><span style="font-size: 17px">@lang('frontend/index.blocks.appointment.title')</span></h6>
+                            <h6 class="d-inline-block inset-left-10 text-white"><span class="text-white" style="font-size: 15px">@lang('frontend/index.blocks.appointment.title')</span></h6>
                             <hr>
                             <div class="offset-top-24 text-gray-light p-index">
                                 <p>@lang('frontend/index.blocks.appointment.body')</p>
@@ -114,7 +114,7 @@
                     <div class="sheldue-item light last">
                         <div class="sheldue-item-body">
                             <div class="icon icon-xs icon-emergency-01 text-white-50"></div>
-                            <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.phones.title')</h6>
+                            <h6 class="d-inline-block inset-left-10 text-white" style="font-size: 15px">@lang('frontend/index.blocks.phones.title')</h6>
                             <hr>
                             <div class="offset-top-24">
                                 <p style="font-size: 17px"><a class="text-white" href="tel:#">0 (800) 317-317</a></p>
@@ -141,17 +141,17 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="icon icon-xlg icon-circle icon-default icon-pills-xl"></div>
                     <h5 class="font-weight-bold text-gray-darkest">@lang('frontend/index.why_we.columns.column_1.title')</h5>
-                    <p>@lang('frontend/index.why_we.columns.column_1.description')</p>
+                    <p class="gray">@lang('frontend/index.why_we.columns.column_1.description')</p>
                 </div>
                 <div class="col-md-6 col-lg-4 offset-md-top-0">
                     <div class="icon icon-xlg icon-circle icon-default icon-doctor-xl"></div>
                     <h5 class="font-weight-bold text-gray-darkest">@lang('frontend/index.why_we.columns.column_2.title')</h5>
-                    <p>@lang('frontend/index.why_we.columns.column_2.description')</p>
+                    <p class="gray">@lang('frontend/index.why_we.columns.column_2.description')</p>
                 </div>
                 <div class="col-md-6 col-lg-4 offset-md-top-0">
                     <div class="icon icon-xlg icon-circle icon-default icon-medical-car-xl"></div>
                     <h5 class="font-weight-bold text-gray-darkest">@lang('frontend/index.why_we.columns.column_3.title')</h5>
-                    <p>@lang('frontend/index.why_we.columns.column_3.description')</p>
+                    <p class="gray">@lang('frontend/index.why_we.columns.column_3.description')</p>
                 </div>
             </div>
         </div>
@@ -189,7 +189,7 @@
                     <div class="section-image-aside-body offset-top-66 offset-sm-top-0 section-sm-bottom-66 section-sm-top-110 inset-lg-left-93">
                         <h3>@lang('frontend/index.ophthalmology.title')</h3>
                         <div class="offset-top-34 offset-md-top-60">
-                            <p>@lang('frontend/index.ophthalmology.description')</p>
+                            <p class="gray">@lang('frontend/index.ophthalmology.description')</p>
                         </div>
                         <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/oftalmologiya">@lang('frontend/index.ophthalmology.link')</a></div>
                     </div>
@@ -201,7 +201,7 @@
                     <div class="section-image-aside-body section-sm-bottom-66 section-sm-top-110 inset-lg-right-93">
                         <h3>@lang('frontend/index.surgery.title')</h3>
                         <div class="offset-top-34 offset-md-top-60">
-                            <p>@lang('frontend/index.surgery.description')</p>
+                            <p class="gray">@lang('frontend/index.surgery.description')</p>
 
                         </div>
                         <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/ambulatorna-khirurgiya">@lang('frontend/index.surgery.link')</a></div>
@@ -214,7 +214,7 @@
                     <div class="section-image-aside-body offset-top-66 offset-sm-top-0 section-sm-bottom-66 section-sm-top-110 inset-lg-left-93">
                         <h3>@lang('frontend/index.diagnosis.title')</h3>
                         <div class="offset-top-34 offset-md-top-60">
-                            <p>@lang('frontend/index.diagnosis.description')</p>
+                            <p class="gray">@lang('frontend/index.diagnosis.description')</p>
                         </div>
                         <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/diagnostika">@lang('frontend/index.diagnosis.link')</a></div>
                     </div>
@@ -226,8 +226,8 @@
                     <div class="section-image-aside-body section-sm-bottom-66 section-sm-top-110 inset-lg-right-93">
                         <h3>Пастична хірургія</h3>
                         <div class="offset-top-34 offset-md-top-60">
-                            <p>Пластична хірургія несе в собі ціль усунути як вроджені так і набуті недоліки зовнішності людини, щоб покращити якість життя.</p>
-                            <p>Також вона несе в собі естетичну мету - корекція зовнішності людини, щоб отримати бажаний результат.</p>
+                            <p class="gray">Пластична хірургія несе в собі ціль усунути як вроджені так і набуті недоліки зовнішності людини, щоб покращити якість життя.</p>
+                            <p class="gray">Також вона несе в собі естетичну мету - корекція зовнішності людини, щоб отримати бажаний результат.</p>
                         </div>
                         <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/plastichna-khirurgiya">@lang('frontend/index.diagnosis.link')</a></div>
                     </div>
@@ -261,8 +261,8 @@
                     <div class="item">
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
-                                <p class="font-italic text-gray-dark">
-                                    <q>Спасибо ОГРОМНОЕ - Николаю Николаевичу Ковшарь, за профессионализм и человеческое отношение, а также: его ассистентам и другим сотрудникам медцентра "Докарт"!!! Впечатление, от посещения медцентра,- самые положительные! Все на европейском уровне: начиная от порога-входа, сотрудника безопасности, ресепшен и заканчивая - санузлом; везде - уют, чистота и комфорт!!! Низкий поклон, всем - Вам!!!</q>
+                                <p class="font-italic text-gray-dark ">
+                                    <q class="gray testimitionals-size">Спасибо ОГРОМНОЕ - Николаю Николаевичу Ковшарь, за профессионализм и человеческое отношение, а также: его ассистентам и другим сотрудникам медцентра "Докарт"!!! Впечатление, от посещения медцентра,- самые положительные! Все на европейском уровне: начиная от порога-входа, сотрудника безопасности, ресепшен и заканчивая - санузлом; везде - уют, чистота и комфорт!!! Низкий поклон, всем - Вам!!!</q>
                                 </p>
                                 <div class="quote-meta unit flex-row unit-spacing-sm align-items-center">
                                     <div class="unit-left unit-item-narrow">
@@ -270,7 +270,7 @@
                                     </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Владимир</cite>
+                                            <cite class="text-normal testimitionals-size">Владимир</cite>
                                         </h5>
 
                                     </div>
@@ -282,7 +282,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Добрий день))) Хочу подякувати персоналу клініки Докарт за уважне, чуйне ставлення саме до моєї тітки Анні Федорівні Паршиної) Слова подяки докторам Ковшар Миколі Миколайовичу,Симонову Максиму Євгеновичу,а також милим дівчаткам на рецепшені!-Ганна Федорівна почувається чудово-нічого в очах їй не заважає))) Бажаємо вам Здоров'я та процвітання)
                                     </q>
                                 </p>
@@ -292,7 +292,7 @@
                                     </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Олена</cite>
+                                            <cite class="text-normal testimitionals-size">Олена</cite>
                                         </h5>
 
                                     </div>
@@ -304,7 +304,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q  class="gray testimitionals-size">
                                         Це найкраща та найсучасніша клініка у якій я був. Був приємно вражений кваліфікацією та чуйністю персоналу. Зробив корекцію зору,оперував Армен Тарасович, я щиро вдячний за якість виконаної роботи. Також хочу висловити подяку усім іншим працівникам,що супроводжували на усіх до і післяопераційних етапах ,ви найкращі!;)
                                     </q>
                                 </p>
@@ -313,7 +313,7 @@
                                         <!--<img class="rounded-circle quote-img" width="60" height="60" src="images/users/user-bryan-green-60x60.jpg" alt=""/></div>-->
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Ілля</cite>
+                                            <cite class="text-normal testimitionals-size">Ілля</cite>
                                         </h5>
 
                                     </div>
@@ -325,7 +325,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Добрый день! Спасибо большое Армену Тарасовичу и всему коллективу ОК-центр за прекрасный настрой перед лазерной коррекцией :) Я ещё не очень чётко вижу вдаль, но мне уже легче смотреть без очков и линз вблизи, Вы мне не только улучшили зрение, но и сделали счастливее и увеличили любовь к жизни, спасибо большое!! 💗 Мирного неба Вам і Слава Україні! 🇺🇦
                                     </q>
                                 </p>
@@ -335,7 +335,7 @@
                                     </div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Дарья</cite>
+                                            <cite class="text-normal testimitionals-size">Дарья</cite>
                                         </h5>
 
                                     </div>

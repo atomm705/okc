@@ -42,16 +42,65 @@
 </footer>
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        $('body').UItoTop();
+    });
+</script>
 <script src="{{ asset('js/script.js') }}"></script>
 
 <!-- я прибрав || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' і  Route::currentRouteName() === 'services.lazernoe-omolozhenie' секція when-needed не показувалась проблема була в скрипті blepharoplastika-js/simpleParallax.js (така точно проблема і на головному сайті) -->
-@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' )
+@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' )
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
+    <script>
+        $(document).ready(function () {
+            $('.ba-slider').each(function () {
+                var $slider = $(this);
+                var $handle = $slider.find('.draggable');
+                var $resize = $slider.find('.resize');
+
+                var dragging = false;
+
+                $handle.on('mousedown touchstart', function (e) {
+                    e.preventDefault();
+                    dragging = true;
+                    $(document).on('mousemove touchmove', onMove);
+                    $(document).on('mouseup touchend touchcancel', onEnd);
+                });
+
+                function onMove(e) {
+                    if (!dragging) return;
+
+                    var pageX = e.pageX || e.originalEvent.touches[0].pageX;
+                    var offset = $slider.offset().left;
+                    var width = $slider.width();
+
+                    var pos = Math.max(0, Math.min(width, pageX - offset));
+                    var percent = (pos / width) * 100;
+
+                    $handle.css('left', percent + '%');
+                    $resize.css('width', percent + '%');
+                }
+
+                function onEnd() {
+                    dragging = false;
+                    $(document).off('mousemove touchmove', onMove);
+                    $(document).off('mouseup touchend touchcancel', onEnd);
+                }
+
+
+                $(window).on('resize', function () {
+                    var percent = $resize.width() / $slider.width() * 100;
+                    $handle.css('left', percent + '%');
+                });
+            });
+        });
+    </script>
 @endif
 
-@if(Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' )
-    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
+@if(Route::currentRouteName() === 'services.oklens' )
+    <script src="{{ asset('blepharoplastika-js/oklens.js') }}" defer></script>
 @endif
 
 @if(Route::currentRouteName() === 'services.lazernoe-omolozhenie'  )
@@ -460,4 +509,6 @@
         }
     </script>
 @endif
+
+
 

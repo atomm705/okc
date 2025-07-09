@@ -280,11 +280,107 @@ if (document.querySelectorAll('.video-card').length) {
     initVideo();
 }
 
+/////////////////
+////////////////
+////////////////
+////////////////
+///////////////////
+
+//function Resizer(node, divisor) {
+  // var self = this;
+   // self.node = document.querySelector(node);
+   // self.divisor = self.node.querySelector(divisor);
+    //self.drag = self.divisor.querySelector('.draggable');
+
+   // self.drag.addEventListener('mousedown', function (e) {
+   //     self.resize(e)
+   // });
+
+   //self.resize = function (ev) {
+    //    var _s = this;
+   //     _s.event = ev;
+    //    _s.nodeWidth = self.node.getBoundingClientRect().width;
+    //    _s.move = function (e) {
+    //        var moveX = (e.pageX - _s.event.pageX);
+    //        moveX *= -1;
+
+       //     _s.currentWidth = _s.startWidth + moveX;
+
+        //    self.divisor.style.width = _s.currentWidth + 'px';
+
+         //   if (_s.currentWidth >= _s.nodeWidth) {
+         //       self.divisor.style.width = _s.nodeWidth + 'px';
+          //  }
+
+         //   if (_s.currentWidth <= 0) {
+        //        self.divisor.style.width = '0';
+        //    }
+       // }
+
+      //  document.addEventListener('mousemove', _s.move);
+
+      //  document.addEventListener('mouseup', function () {
+       //     this.removeEventListener('mousemove', _s.move);
+       //     self.drag.removeEventListener('mousedown', function (e) {
+        //        self.resize(e)
+        //    });
+        //});
+   // };
+
+   // self.resizeTouch = function (evt) {
+   //     var _s = this;
+   //     _s.nodeWidth = self.node.getBoundingClientRect().width;
+    //    _s.startWidth = self.divisor.getBoundingClientRect().width;
+
+    //    _s.startTouchX = evt.changedTouches[0].pageX;
+
+     //   _s.moveTouch = function (ev) {
+     //       var moveX = (ev.changedTouches[0].pageX - self.startTouchX);
+     //      moveX *= -1;
+
+    //        _s.currentWidth = _s.startWidth + moveX;
+
+      //      self.divisor.style.width = _s.currentWidth + 'px';
+
+       //     if (_s.currentWidth >= _s.nodeWidth) {
+       //         self.divisor.style.width = _s.nodeWidth + 'px';
+       //     }
+
+         //   if (_s.currentWidth <= 0) {
+        //        self.divisor.style.width = '0';
+       //     }
+      //  }
+
+     //   document.addEventListener('touchmove', _s.moveTouch);
+
+      //  document.addEventListener('touchend', function () {
+       //     this.removeEventListener('touchmove', _s.moveTouch);
+       //     self.drag.removeEventListener('touchstart', function (e) {
+        //        self.resizeTouch(e)
+         //   });
+        //});
+    //};
+
+  //  self.drag.addEventListener('touchstart', function (e) {
+  //      self.resizeTouch(e)
+  //  });
+//}
+
+//new Resizer('#resultRecall_1', '.divisorAfter');
+//new Resizer('#resultRecall_2', '.divisorAfter');
+
+/////////////////
+////////////////
+////////////////
+////////////////
+///////////////////
+//open - close modal
+
 function СontrolModal(node) {
     var self = this;
     self.node = node;
     self.modal = document.querySelector('.modal.appointment-modal');
-  //  self.modalContent = self.modal.querySelector('.modal.appointment-modal > .content');
+    //  self.modalContent = self.modal.querySelector('.modal.appointment-modal > .content');
     //self.bntClose = self.modal.querySelector('.button-preset-cancel');
     self.widthScroll = function () {
         let div = document.createElement('div');

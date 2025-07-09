@@ -310,7 +310,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_1.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_1.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_1.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -346,7 +346,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_2.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_2.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_2.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -382,7 +382,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_4.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_4.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_4.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -418,7 +418,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_3.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_3.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_3.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -454,7 +454,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_5.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_5.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_5.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -490,7 +490,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_6.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_6.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_6.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -526,7 +526,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_7.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_7.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_7.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -562,7 +562,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_8.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_8.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_8.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -598,7 +598,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_9.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_9.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_9.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -634,7 +634,7 @@
                                     <img class="height-after" src="/images/services/cosmetology/lumeca/before_slide_10.jpg" alt="">
                                     <span class="label label-after">До</span>
                                     <div class="resize">
-                                        <img src="/images/services/cosmetology/lumeca/after_slide_10.jpg" alt="">
+                                        <img class="resize-img-after" src="/images/services/cosmetology/lumeca/after_slide_10.jpg" alt="">
                                         <span class="label label-before">Після</span>
                                     </div>
                                     <div class="draggable">
@@ -890,7 +890,7 @@
                 <img src="/images/banner-section-4.jpg" alt="bg"/>
             </div>
 
-            <div class="page-content before-foter-position2 ">
+            <div class="page-content before-foter-position ">
                 <div class="banner-section-title">
                     <span>@lang('frontend/lumeca.consultation.title')</span>
                 </div>
@@ -903,6 +903,9 @@
                     <button class="open-modal-recall button-main button-main_orange">@lang('frontend/lumeca.consultation.link')</button>
                 </div>
             </div>
+        </div>
+
+        <div class="specialist-card-box block-hiden">
         </div>
     </main>
 

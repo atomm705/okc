@@ -5,8 +5,8 @@
             <h2 class="breadcrumbs-custom-title">@lang('global.pages.services')</h2>
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
-                <li>@lang('global.pages.services')</li>
-                <li>{{ $category->name }}</li>
+                <li class="white">@lang('global.pages.services')</li>
+                <li class="white">{{ $category->name }}</li>
             </ul>
         </div>
     </section>
@@ -18,7 +18,7 @@
                     <div class="isotope-filters isotope-filters-vertical">
                         <ul class="list-inline list-inline-sm service-select-mobil">
                             <li class="d-xl-none service-select-mobil">
-                                <p>{{ __('global.Choose your category') }}:</p>
+                                <p class="gray">{{ __('global.Choose your category') }}:</p>
                                 <select id="category" class="form-control service-select-mobil  " >
                                     <option value="{{ $category->slug }}" >{{ $category->translation->name }}</option>
                                     @foreach($category->groups as $group)

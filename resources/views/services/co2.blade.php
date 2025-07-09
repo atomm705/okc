@@ -528,9 +528,8 @@
         <div class="section-main">
             <div class="page-content">
                 <div class="title-section">
-                    <span>Відгуки клієнтів</span>
+                    <span>@lang('frontend/blefaroplastika.reviews.title')</span>
                 </div>
-
                 <div class="list-box">
                     <div class="list-box__item">
                         <div class="review-box">
@@ -545,55 +544,35 @@
                                 <div class="recall-result-title">
                                     <span>Результат(после 1 процедуры)</span>
                                 </div>
-
-                                <div class="recall-result-box" id="resultRecall_2">
-                                    <div class="recall-result-box__before">
-                                        <div class="recall-result-box-img">
-                                            <img src="/images/services/co2/slide_2_before.jpg"
-                                                 alt="result">
-                                        </div>
-
-                                        <div class="recall-result-box-title">
-                                            <span>До</span>
-                                        </div>
+                                <div class="ba-slider">
+                                    <img src="/images/services/co2/slide_2_before.jpg" alt="">
+                                    <span class="label label-after">До</span>
+                                    <div class="resize">
+                                        <img src="/images/services/co2/slide_2_after.jpg" alt="">
+                                        <span class="label label-before">Після</span>
                                     </div>
-
-                                    <div class="recall-result-box__after divisorAfter">
-                                        <div class="recall-result-box-img">
-                                            <img src="/images/services/co2/slide_2_after.jpg"
-                                                 alt="result">
-                                        </div>
-
-                                        <div class="recall-result-box-title" id="titleBefore">
-                                            <span>После</span>
-                                        </div>
-
-                                        <div class="draggable">
-                                                <span class="dr-btn">
-                                                    <span class="dr-btn__left">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-
-                                                    <span class="dr-btn__right">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                        </div>
+                                    <div class="draggable">
+                                        <span class="dr-btn">
+                                          <span class="dr-btn__left">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                          <span class="dr-btn__right">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                     <div class="list-box__item">
                         <div class="review-box">
                             <div class="review-title">
@@ -607,58 +586,39 @@
                                 <div class="recall-result-title">
                                     <span>Результат(после 1 процедуры)</span>
                                 </div>
-                                <div class="recall-result-box" id="resultRecall_1">
-                                    <div class="recall-result-box__before">
-                                        <div class="recall-result-box-img">
-                                            <img src="/images/services/co2/slide_1_before.jpg"
-                                                 alt="result">
-                                        </div>
-
-                                        <div class="recall-result-box-title">
-                                            <span>До</span>
-                                        </div>
+                                <div class="ba-slider">
+                                    <img src="/images/services/co2/slide_1_before.jpg" alt="">
+                                    <span class="label label-after">До</span>
+                                    <div class="resize">
+                                        <img src="/images/services/co2/slide_1_after.jpg" alt="">
+                                        <span class="label label-before">Після</span>
                                     </div>
-
-                                    <div class="recall-result-box__after divisorAfter">
-                                        <div class="recall-result-box-img">
-                                            <img src="/images/services/co2/slide_1_after.jpg"
-                                                 alt="result">
-                                        </div>
-
-                                        <div class="recall-result-box-title" id="titleBefore">
-                                            <span>После</span>
-                                        </div>
-
-                                        <div class="draggable">
-                                                <span class="dr-btn">
-                                                    <span class="dr-btn__left">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-
-                                                    <span class="dr-btn__right">
-                                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
-                                                                  fill="#1D86BC"/>
-                                                        </svg>
-                                                    </span>
-                                                </span>
-                                        </div>
+                                    <div class="draggable">
+                                        <span class="dr-btn">
+                                          <span class="dr-btn__left">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M7.79999 1.41501L2.97692 6L7.79999 10.585L6.31155 12L-1.21832e-05 6L6.31154 6.50619e-08L7.79999 1.41501Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                          <span class="dr-btn__right">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M1.38805e-06 10.585L4.82307 6L1.85557e-07 1.41502L1.48844 -1.95186e-07L7.8 6L1.48844 12L1.38805e-06 10.585Z"
+                                                    fill="#1D86BC"/>
+                                            </svg>
+                                          </span>
+                                        </span>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="recall-button">
                     <a href="https://www.okc.com.ua/ru/testimonials" target="_blank"
-                       class="button-main button-main_blue button-more-recall">Більше відгуків</a>
+                       class="button-main button-main_blue button-more-recall">@lang('frontend/blefaroplastika.reviews.link')</a>
                 </div>
             </div>
         </div>

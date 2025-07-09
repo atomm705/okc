@@ -38,17 +38,17 @@
         <div class="container text-center">
 
             <div ><h4  class="title-telemed" style=" margin-top: 0px";>@lang('frontend/telemed.article_3.title')</h4>
-                <p >@lang('frontend/telemed.article_3.texts.text_1')</p>
+                <p class="gray">@lang('frontend/telemed.article_3.texts.text_1')</p>
 
                 <ul class="list-marked" style="text-align: left;">
-                    <li>@lang('frontend/telemed.article_3.list.item_1')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_2')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_3')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_4')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_5')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_6')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_7')</li>
-                    <li>@lang('frontend/telemed.article_3.list.item_8')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_1')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_2')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_3')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_4')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_5')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_6')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_7')</li>
+                    <li class="gray">@lang('frontend/telemed.article_3.list.item_8')</li>
                 </ul>
             </div>
 
@@ -61,36 +61,36 @@
 
             <div >
                 <h4  class="title-telemed" style="text-align: center; margin-top: 0px"; class="text-center">@lang('frontend/telemed.article_4.title')</h4>
-                <p>@lang('frontend/telemed.article_4.texts.text_1')</p>
+                <p class="gray">@lang('frontend/telemed.article_4.texts.text_1')</p>
 
                 <ul class="list-marked" style="text-align: left;">
-                    <li>@lang('frontend/telemed.article_4.list_1.item_1')</li>
-                    <li>@lang('frontend/telemed.article_4.list_1.item_2')</li>
-                    <li>@lang('frontend/telemed.article_4.list_1.item_3')</li>
-                    <li>@lang('frontend/telemed.article_4.list_1.item_4')</li>
-                    <li>@lang('frontend/telemed.article_4.list_1.item_5')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_1.item_1')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_1.item_2')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_1.item_3')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_1.item_4')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_1.item_5')</li>
                 </ul>
 
-                <p class="text-left">@lang('frontend/telemed.article_4.texts.text_2')</p>
+                <p class="text-left gray">@lang('frontend/telemed.article_4.texts.text_2')</p>
 
-                <p >@lang('frontend/telemed.article_4.texts.text_3')</p>
+                <p class="gray">@lang('frontend/telemed.article_4.texts.text_3')</p>
 
                 <ul class="list-marked" style="text-align: left;">
-                    <li>@lang('frontend/telemed.article_4.list_2.item_1')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_2')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_3')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_4')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_5')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_6')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_7')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_8')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_9')</li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_10')
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_1')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_2')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_3')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_4')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_5')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_6')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_7')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_8')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_9')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_10')
                     </li>
-                    <li>@lang('frontend/telemed.article_4.list_2.item_11')</li>
+                    <li class="gray">@lang('frontend/telemed.article_4.list_2.item_11')</li>
                 </ul>
 
-                <p>@lang('frontend/telemed.article_4.texts.text_4')</p>
+                <p class="gray">@lang('frontend/telemed.article_4.texts.text_4')</p>
             </div>
 
             <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/"
@@ -103,15 +103,15 @@
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container "><!----> <!---->
             <div ><h4  class="title-telemed" style=" margin-top: 0px;" class="text-center">@lang('frontend/telemed.article_5.title')</h4>
-                <p >@lang('frontend/telemed.article_5.texts.text_1')</p>
-                <p class="text-left">@lang('frontend/telemed.article_5.texts.text_2')</p>
-                <p >@lang('frontend/telemed.article_5.texts.text_3')</p>
-                <p >@lang('frontend/telemed.article_5.texts.text_4')</p>
+                <p class="gray">@lang('frontend/telemed.article_5.texts.text_1')</p>
+                <p class="text-left gray">@lang('frontend/telemed.article_5.texts.text_2')</p>
+                <p class="gray">@lang('frontend/telemed.article_5.texts.text_3')</p>
+                <p class="gray">@lang('frontend/telemed.article_5.texts.text_4')</p>
                 <ul class="list-marked" style="text-align: left;">
-                    <li>@lang('frontend/telemed.article_5.phone.item_1')</li>
-                    <li>@lang('frontend/telemed.article_5.phone.item_2')</li>
-                    <li>@lang('frontend/telemed.article_5.phone.item_3')</li>
-                    <li>@lang('frontend/telemed.article_5.phone.item_4')</li>
+                    <li class="gray">@lang('frontend/telemed.article_5.phone.item_1')</li>
+                    <li class="gray">@lang('frontend/telemed.article_5.phone.item_2')</li>
+                    <li class="gray">@lang('frontend/telemed.article_5.phone.item_3')</li>
+                    <li class="gray">@lang('frontend/telemed.article_5.phone.item_4')</li>
                 </ul>
             </div>
         </div>
@@ -120,12 +120,12 @@
     <section class="section-lg bg-default-liac">
         <div class="container text-center">
             <div ><h4  class="title-telemed" style=" margin-top: 0px";>@lang('frontend/telemed.article_6.title')</h4>
-                <p>@lang('frontend/telemed.article_6.texts.text_1')</p>
+                <p class="gray">@lang('frontend/telemed.article_6.texts.text_1')</p>
                 <ul class="list-marked" style="text-align: left;">
-                    <li>@lang('frontend/telemed.article_6.list.item_1')</li>
-                    <li>@lang('frontend/telemed.article_6.list.item_2')</li>
-                    <li>@lang('frontend/telemed.article_6.list.item_3')</li>
-                    <li>@lang('frontend/telemed.article_6.list.item_4')</li>
+                    <li class="gray">@lang('frontend/telemed.article_6.list.item_1')</li>
+                    <li class="gray">@lang('frontend/telemed.article_6.list.item_2')</li>
+                    <li class="gray">@lang('frontend/telemed.article_6.list.item_3')</li>
+                    <li class="gray">@lang('frontend/telemed.article_6.list.item_4')</li>
                 </ul>
             </div>
             <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/telemed.button.title')</a></div>

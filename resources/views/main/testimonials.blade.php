@@ -109,7 +109,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Спасибо ОГРОМНОЕ - Николаю Николаевичу Ковшарь, за профессионализм и
                                         человеческое
                                         отношение, а также: его ассистентам и другим сотрудникам медцентра "Докарт"!!!
@@ -128,7 +128,7 @@
                                                                                  alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal"> Владимир</cite>
+                                            <cite class="text-normal testimitionals-size"> Владимир</cite>
                                         </h5>
                                         <p class="quote-desc text-capitalize text-gray font-italic">Пацієнт</p>
                                     </div>
@@ -140,7 +140,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Добрий день)))
                                         Хочу подякувати персоналу клініки Докарт за уважне, чуйне ставлення саме до моєї
                                         тітки
@@ -160,7 +160,7 @@
                                                                                  alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Олена</cite>
+                                            <cite class="text-normal testimitionals-size">Олена</cite>
                                         </h5>
                                         <p class="quote-desc text-capitalize text-gray font-italic">Пацієнт</p>
                                     </div>
@@ -172,7 +172,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Це найкраща та найсучасніша клініка у якій я був. Був приємно вражений
                                         кваліфікацією та
                                         чуйністю персоналу.
@@ -191,7 +191,7 @@
                                                                                  alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal"> Ілля</cite>
+                                            <cite class="text-normal testimitionals-size"> Ілля</cite>
                                         </h5>
                                         <p class="quote-desc text-capitalize text-gray font-italic">Пацієнт</p>
                                     </div>
@@ -203,7 +203,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Добрый день! Спасибо большое Армену Тарасовичу и всему коллективу ОК-центр за
                                         прекрасный
                                         настрой перед лазерной коррекцией :)
@@ -222,7 +222,7 @@
                                                                                  alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal">Дарья</cite>
+                                            <cite class="text-normal testimitionals-size">Дарья</cite>
                                         </h5>
                                         <p class="quote-desc text-capitalize text-gray font-italic">Пацієнт</p>
                                     </div>
@@ -267,7 +267,7 @@
                         <blockquote class="quote quote-classic">
                             <div class="quote-body">
                                 <p class="font-italic text-gray-dark">
-                                    <q>
+                                    <q class="gray testimitionals-size">
                                         Спасибо за сервис и за процедуру которую вчера прошёл в клинике !
                                         Сервис огонь 🔥 чисто , девочки красивые и приветливые , мед сестрички профи и
                                         тоже
@@ -285,7 +285,7 @@
                                                                                  alt=""/>--></div>
                                     <div class="unit-body unit-item-wide">
                                         <h5 class="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite class="text-normal"> Денис Портер</cite>
+                                            <cite class="text-normal testimitionals-size"> Денис Портер</cite>
                                         </h5>
                                         <p class="quote-desc text-capitalize text-gray font-italic">Пацієнт</p>
                                     </div>
