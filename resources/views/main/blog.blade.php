@@ -71,7 +71,7 @@
                 <div class="col-lg-10 col-xl-8">
 
                     @if (!$hasTranslations)
-                        <div class="alert alert-warning">
+                        <div class="alert alert-blog-mb alert-warning ">
                             @lang('frontend/blog.no_translations')
                         </div>
                     @endif

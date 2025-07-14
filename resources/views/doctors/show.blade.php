@@ -137,10 +137,10 @@
                     @endif
 
                     @if (!empty(trim($doctor->translation->about)))
-                        <div class="offset-top-30 text-start">
+                        <div class="offset-top-30 text-start about-doctor">
                             <h6>@lang('frontend/doctors/doctors.about.title')</h6>
                             <hr class="text-subline-1">
-                            <p class="gray">{!! $doctor->translation->about !!}</p>
+                            <p>{!! $doctor->translation->about !!}</p>
                         </div>
                     @endif
 

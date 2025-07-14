@@ -49,7 +49,6 @@
 </script>
 <script src="{{ asset('js/script.js') }}"></script>
 
-<!-- я прибрав || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' і  Route::currentRouteName() === 'services.lazernoe-omolozhenie' секція when-needed не показувалась проблема була в скрипті blepharoplastika-js/simpleParallax.js (така точно проблема і на головному сайті) -->
 @if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' )
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
@@ -166,7 +165,6 @@
             });
         });
     </script>
-
 @endif
 
 @if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'   )
@@ -370,7 +368,7 @@
     </script>
 @endif
 
-@if(Route::currentRouteName() === 'main.blog')
+@if(Route::currentRouteName() === 'main.blog' || Route::currentRouteName() === 'main.show' || Route::currentRouteName() === 'blog.category' || Route::currentRouteName() === 'blog.tag' || Route::currentRouteName() === 'main.blog.archive' || Route::currentRouteName() === 'blog.search' || Route::currentRouteName() === 'main.blog.page' || Route::currentRouteName() === 'blog.tag.page' || Route::currentRouteName() === 'main.category.page' || Route::currentRouteName() === 'main.blog.archive.paginated')
     <script>
         function goToSearch(e) {
             e.preventDefault();
@@ -383,132 +381,3 @@
         }
     </script>
 @endif
-
-@if(Route::currentRouteName() === 'main.show')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'blog.category')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'blog.tag')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'main.blog.archive')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'blog.search')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'main.blog.page')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'blog.tag.page')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'main.category.page')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-@if(Route::currentRouteName() === 'main.blog.archive.paginated')
-    <script>
-        function goToSearch(e) {
-            e.preventDefault();
-            const input = document.querySelector('#blog-classic-form-search-widget');
-            const query = encodeURIComponent(input.value.trim());
-            if (query.length > 0) {
-                window.location.href = `/{{ app()->getLocale() }}/blog/search/${query}`;
-            }
-            return false;
-        }
-    </script>
-@endif
-
-
-

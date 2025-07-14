@@ -9829,6 +9829,7 @@ p + .list-marked {
     opacity: .4;
     position: relative;
     top: 2px;
+    color: #fff;
 }
 
 .breadcrumbs-custom-path li:last-child:after {
@@ -31394,6 +31395,7 @@ section {
 
 .contacts-wrap{
     display: flex;
+    margin-left: 20px;
 }
 
 .rd-navbar-static .rd-menu {
@@ -32034,4 +32036,12 @@ html.page-doctors-departments body .app section > .content {
     .aside-padding-mobil{
         padding-bottom: 60px;
     }
+}
+
+.alert-blog-mb{
+    margin-bottom: 10px !important;
+}
+
+.about-doctor > p{
+    color:#868686;
 }
