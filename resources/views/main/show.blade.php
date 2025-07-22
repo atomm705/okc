@@ -108,7 +108,7 @@
                                             <p>{{ \Illuminate\Support\Str::limit(strip_tags($t->text), 100) }}</p>
                                         </div>
                                         @if ($t->tags->count())
-                                            <div class="tags group group-sm">
+                                            <div class="tags group group-sm" style="margin-bottom: 10px;">
                                                 @foreach ($t->tags as $tag)
                                                     <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name ?? $tag->slug }}</a>
                                                 @endforeach

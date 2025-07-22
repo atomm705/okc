@@ -1,8 +1,8 @@
 
 <x-app-layout>
-<div class="app color-main"  id="app">
+<div class="color-main"  id="app">
     <div class="body-main ">
-        <div class="section-main">
+        <div class="section-main plastica-banner-position">
             <div class="banner-main mt-0"
                  style="background-image: url('/images/banner.png');">
                 <div class="page-content">

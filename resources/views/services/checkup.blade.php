@@ -636,10 +636,9 @@
                 <div class="slider-main wr-slider-video">
                     <div class="slider-video swiper-container">
                         <div class="swiper-wrapper">
-
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box specialist-card-box-position">
+                                    <div class="specialist-card-box specialist-card-box-position specialist-card-box-position-mobil">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_5')</span>
                                         </div>
@@ -655,75 +654,33 @@
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/tsivenko-viktoriya-nikolaevna">@lang('frontend/checkUp.specialist.description.link')</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/civenko-civenko-mikolayivna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
+                                    <div class="slider-specialist ">
+
+
                                                 <div class="specialist-card specialist-card-bg" >
                                                     <picture class="specialist-photo2 specialist-photo-checup">
-                                                        <source srcset="/images/services/checkup/tsivenko.jpg"
+                                                        <source srcset="/assets/images/uploads/1048c7554edb6fc9a5e609dcbb0fbff0103a5ee361b54c54cdb8b8eddb54e156"
                                                                 media="(min-width: 992px)"/>
 
-                                                        <div class="specialist-tablet"><img src="/images/services/checkup/tsivenko.jpg"
+                                                        <div class="specialist-tablet"><img src="/assets/images/uploads/1048c7554edb6fc9a5e609dcbb0fbff0103a5ee361b54c54cdb8b8eddb54e156"
                                                                   alt="specialist" style="height: 415px; "/></div>
                                                     </picture>
                                                 </div>
-                                            </div>
-                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box specialist-card-box-position">
-                                        <div class="specialist-name">
-                                            <span>@lang('frontend/checkUp.specialist.specialist_2')</span>
-                                        </div>
-
-                                        <div class="specialist-specialization">
-                                            <div class="specialist-specialization-property">
-                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
-                                            </div>
-
-                                            <div class="specialist-specialization-title">
-                                                <span>@lang('frontend/checkUp.specialist.description.title_2') </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/mikheev-eduard-aleksandrovich">@lang('frontend/checkUp.specialist.description.link')</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="specialist-card specialist-card-bg" >
-                                                    <picture class="specialist-photo2 specialist-photo-checup" style="width: 450px">
-                                                        <source srcset="/images/services/checkup/mikheev.jpg"
-                                                                media="(min-width: 992px)"/>
-
-                                                        <div class="specialist-tablet"><img src="/images/services/checkup/mikheev.jpg"
-                                                                  alt="specialist" style="height: 550px;"/></div>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box specialist-card-box-position">
+                                    <div class="specialist-card-box specialist-card-box-position specialist-card-box-position-mobil">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_7')</span>
                                         </div>
@@ -739,79 +696,31 @@
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/vitokhina-lesnaya-tatyana-petrovna">@lang('frontend/checkUp.specialist.description.link')</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/vitoxina-lisna-vitoxina-lisna-petrivna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
+                                    <div class="slider-specialist ">
                                                 <div class="specialist-card specialist-card-bg">
                                                     <picture class="specialist-photo2 specialist-photo-checup" style="width: 440px;" >
                                                         <source srcset="/images/services/checkup/vitohina.jpg"
                                                                 media="(min-width: 992px)"/>
 
                                                        <div class="specialist-tablet">
-                                                           <img src="/images/services/checkup/vitohina.jpg"
+                                                           <img class="img-specialist-ml" src="/images/services/checkup/vitohina.jpg"
                                                                 alt="specialist"/>
                                                        </div>
                                                     </picture>
                                                 </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--<div class="swiper-slide">
-
-                                <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box">
-                                        <div class="specialist-name">
-                                            <span>Іпішина Яна анатоліївна</span>
-                                        </div>
-
-                                        <div class="specialist-specialization">
-                                            <div class="specialist-specialization-property">
-                                                <span>Спеціалізації</span>
-                                            </div>
-
-                                            <div class="specialist-specialization-title">
-                                                <span>Офтальмолог, лікар вищої категорії</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/lyashenko-yana-anatolevna">Детальніше про лікаря</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="specialist-card">
-                                                    <picture class="specialist-photo">
-                                                        <source srcset="/images/services/checkup/lyashenko.jpg"
-                                                                media="(min-width: 992px)"/>
-
-                                                        <img src="/images/services/checkup/lyashenko.jpg"
-                                                             alt="Ляшенко Яна анатольевна"/>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>-->
-
                             <div class="swiper-slide">
                                 <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box specialist-card-box-position">
+                                    <div class="specialist-card-box specialist-card-box-position specialist-card-box-position-mobil">
                                         <div class="specialist-name">
                                             <span>@lang('frontend/checkUp.specialist.specialist_3')</span>
                                         </div>
@@ -827,15 +736,14 @@
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/pogrebnyak-anna-aleksandrovna">@lang('frontend/checkUp.specialist.description.link')</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/pogrebnyak-ganna-oleksandrivna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
+                                    <div class="slider-specialist ">
+
                                                 <div class="specialist-card specialist-card-bg" >
                                                     <picture class="specialist-photo2 specialist-photo-checup" >
                                                         <source srcset="/images/services/checkup/pogrebnyak.jpg"
@@ -849,101 +757,12 @@
                                                         </div>
                                                     </picture>
                                                 </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box specialist-card-box-position">
-                                        <div class="specialist-name">
-                                            <span>@lang('frontend/checkUp.specialist.specialist_4')</span>
-                                        </div>
-
-                                        <div class="specialist-specialization">
-                                            <div class="specialist-specialization-property">
-                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
-                                            </div>
-
-                                            <div class="specialist-specialization-title">
-                                                <span>@lang('frontend/checkUp.specialist.description.title_4') </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/trofimova-ekaterina-aleksandrovna">@lang('frontend/checkUp.specialist.description.link')</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="specialist-card specialist-card-bg" >
-                                                    <picture class="specialist-photo2 specialist-photo-checup" >
-                                                        <source srcset="/images/services/checkup/trofimova.jpg"
-                                                                media="(min-width: 992px)"/>
-
-                                                       <div class="specialist-tablet"><img src="/images/services/checkup/trofimova.jpg"
-                                                                 alt="specialist"/></div>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--<div class="swiper-slide">
-                                <div class="page-content wr-specialist-info">
-                                    <div class="specialist-card-box specialist-card-box-position">
-                                        <div class="specialist-name">
-                                            <span>@lang('frontend/checkUp.specialist.specialist_6')</span>
-                                        </div>
-
-                                        <div class="specialist-specialization">
-                                            <div class="specialist-specialization-property">
-                                                <span>@lang('frontend/checkUp.specialist.specialisation')</span>
-                                            </div>
-
-                                            <div class="specialist-specialization-title">
-                                                <span>@lang('frontend/checkUp.specialist.description.title_6') </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/danilenko-svetlana-vitalevna">@lang('frontend/checkUp.specialist.description.link')</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                               <div class="wr-slider-specialis__inner">
-                                    <div class="slider-specialist swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="specialist-card specialist-card-bg">
-                                                    <picture class="specialist-photo2 specialist-photo-checup" style="width: 450px; ">
-                                                        <source srcset="/images/services/checkup/a2f6efeab4e089eab6d81b0bcbbeb0ba.webp"
-                                                                media="(min-width: 992px)"/>
-
-                                                       <div class="specialist-tablet">
-                                                           <img src="/images/services/checkup/a2f6efeab4e089eab6d81b0bcbbeb0ba.webp"
-                                                                alt="specialist" style="height: 450px"/>
-                                                       </div>
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
                         </div>
                     </div>
-
-                    <div class="slider-main-navigation">
+                    <div class="slider-main-navigation slider-main-navigation-hiden">
                         <div class="slider-main-button slider-main-prev" id="slider-video-button-prev">
                             <svg width="13" height="20" viewBox="0 0 13 20" fill="black"
                                  xmlns="http://www.w3.org/2000/svg">

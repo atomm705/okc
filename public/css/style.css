@@ -5632,6 +5632,7 @@ mark, .mark {
 
 .gray{
     color: #868686;
+    line-height: 1.5rem;
 }
 
 .page a.text-white:hover,
@@ -30881,6 +30882,7 @@ html.ie-11 .fc-event .fc-event-wrap {
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 10px;
+    color: #868686;
 }
 
 .article-content > ul > li:before{
@@ -32044,4 +32046,52 @@ html.page-doctors-departments body .app section > .content {
 
 .about-doctor > p{
     color:#868686;
+}
+
+.note-item > p{
+    color: #0a0a0a !important;
+}
+
+.text_after-item > p{
+    color:  #868686;
+}
+
+.text_after-item > ul > li {
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: unset;
+    line-height: 1.0;
+    color: #868686;
+    margin-left: 30px;
+}
+.text_after-item > ul > li:before {
+    display: inline-block;
+    left: -15px;
+    top: 7.5px;
+    min-width: 25px;
+    content: '\f105';
+    font: 400 14px / 24px 'FontAwesome';
+    color: #2a93c9;
+}
+
+@media (max-width: 768px) {
+    .specialist-card-box-position-mobil{
+        margin-left: 30px;
+    }
+
+    .img-specialist-ml{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider-main-navigation-hiden{
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .title-th-m{
+        font-size: 11px !important;
+    }
 }

@@ -220,7 +220,12 @@
 @section('script')
     <script>
         @foreach(config('app.fallback_locale') as $lang)
-        CKEDITOR.replace('about_{{ $lang }}');
+        tinymce.init({
+            selector: 'textarea#about_{{ $lang }}', // Replace this CSS selector to match the placeholder element for TinyMCE
+            plugins: 'code table lists',
+            toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table',
+            license_key: 'gpl'
+        });
         @endforeach
     </script>
 @endsection

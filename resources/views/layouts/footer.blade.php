@@ -48,8 +48,7 @@
     });
 </script>
 <script src="{{ asset('js/script.js') }}"></script>
-
-@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' )
+@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' || Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart' )
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
     <script>
@@ -61,17 +60,28 @@
 
                 var dragging = false;
 
-                $handle.on('mousedown touchstart', function (e) {
+                $handle[0].addEventListener('touchstart', function(e) {
                     e.preventDefault();
                     dragging = true;
-                    $(document).on('mousemove touchmove', onMove);
-                    $(document).on('mouseup touchend touchcancel', onEnd);
+                    $(document).on('touchmove', onMove);
+                    $(document).on('touchend touchcancel', onEnd);
+                }, { passive: false });
+
+
+                $handle.on('mousedown', function (e) {
+                    e.preventDefault();
+                    dragging = true;
+                    $(document).on('mousemove', onMove);
+                    $(document).on('mouseup', onEnd);
                 });
+
 
                 function onMove(e) {
                     if (!dragging) return;
 
-                    var pageX = e.pageX || e.originalEvent.touches[0].pageX;
+                    var pageX = e.pageX || (e.originalEvent && e.originalEvent.touches && e.originalEvent.touches[0].pageX);
+                    if (typeof pageX === 'undefined') return;
+
                     var offset = $slider.offset().left;
                     var width = $slider.width();
 
@@ -88,7 +98,6 @@
                     $(document).off('mouseup touchend touchcancel', onEnd);
                 }
 
-
                 $(window).on('resize', function () {
                     var percent = $resize.width() / $slider.width() * 100;
                     $handle.css('left', percent + '%');
@@ -97,56 +106,7 @@
         });
     </script>
 @endif
-
-@if(Route::currentRouteName() === 'services.oklens' )
-    <script src="{{ asset('blepharoplastika-js/oklens.js') }}" defer></script>
-@endif
-
 @if(Route::currentRouteName() === 'services.lazernoe-omolozhenie'  )
-    <script>
-        $(document).ready(function () {
-            $('.ba-slider').each(function () {
-                var $slider = $(this);
-                var $handle = $slider.find('.draggable');
-                var $resize = $slider.find('.resize');
-
-                var dragging = false;
-
-                $handle.on('mousedown touchstart', function (e) {
-                    e.preventDefault();
-                    dragging = true;
-                    $(document).on('mousemove touchmove', onMove);
-                    $(document).on('mouseup touchend touchcancel', onEnd);
-                });
-
-                function onMove(e) {
-                    if (!dragging) return;
-
-                    var pageX = e.pageX || e.originalEvent.touches[0].pageX;
-                    var offset = $slider.offset().left;
-                    var width = $slider.width();
-
-                    var pos = Math.max(0, Math.min(width, pageX - offset));
-                    var percent = (pos / width) * 100;
-
-                    $handle.css('left', percent + '%');
-                    $resize.css('width', percent + '%');
-                }
-
-                function onEnd() {
-                    dragging = false;
-                    $(document).off('mousemove touchmove', onMove);
-                    $(document).off('mouseup touchend touchcancel', onEnd);
-                }
-
-                $(window).on('resize', function () {
-                    var percent = $resize.width() / $slider.width() * 100;
-                    $handle.css('left', percent + '%');
-                });
-            });
-        });
-    </script>
-
     <script>
         $(document).ready(function () {
             const itemsToShow = 2;
@@ -166,59 +126,7 @@
         });
     </script>
 @endif
-
-@if(Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart'   )
-    <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
-    <script src="{{ asset('blepharoplastika-js/liposaktsiya.js') }}" defer></script>
-    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
-    <script>
-        $(document).ready(function () {
-            $('.ba-slider').each(function () {
-                var $slider = $(this);
-                var $handle = $slider.find('.draggable');
-                var $resize = $slider.find('.resize');
-
-                var dragging = false;
-
-                $handle.on('mousedown touchstart', function (e) {
-                    e.preventDefault();
-                    dragging = true;
-                    $(document).on('mousemove touchmove', onMove);
-                    $(document).on('mouseup touchend touchcancel', onEnd);
-                });
-
-                function onMove(e) {
-                    if (!dragging) return;
-
-                    var pageX = e.pageX || e.originalEvent.touches[0].pageX;
-                    var offset = $slider.offset().left;
-                    var width = $slider.width();
-
-                    var pos = Math.max(0, Math.min(width, pageX - offset));
-                    var percent = (pos / width) * 100;
-
-                    $handle.css('left', percent + '%');
-                    $resize.css('width', percent + '%');
-                }
-
-                function onEnd() {
-                    dragging = false;
-                    $(document).off('mousemove touchmove', onMove);
-                    $(document).off('mouseup touchend touchcancel', onEnd);
-                }
-
-
-                $(window).on('resize', function () {
-                    var percent = $resize.width() / $slider.width() * 100;
-                    $handle.css('left', percent + '%');
-                });
-            });
-        });
-    </script>
-@endif
-
 @if(Route::currentRouteName() === 'services.panoptix')
-    <link rel="preload" as="script" src="{{ asset('blepharoplastika-js/app.js') }}">
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -296,7 +204,6 @@
         });
     </script>
 @endif
-
 @if(Route::currentRouteName() === 'main.timetable' )
 <script>
     function toggleDropdown() {
@@ -305,9 +212,7 @@
     }
 </script>
 @endif
-
 @if(Route::currentRouteName() === 'main.category' || Route::currentRouteName() === 'main.service')
-
     <script>
         // цей скрипт для роботи тегу select для телефонів і планшетів
         document.addEventListener("DOMContentLoaded", function () {
@@ -323,7 +228,6 @@
             }
         });
     </script>
-
     <script>
         // цей скрипт для роботи акордіону
         document.addEventListener("DOMContentLoaded", function () {
@@ -342,7 +246,6 @@
             });
         });
     </script>
-
     <script>
         // цей скрипт відповідає за натискання кнопки яка знаходится поверх відео
         document.addEventListener("DOMContentLoaded", function () {
@@ -367,7 +270,6 @@
         });
     </script>
 @endif
-
 @if(Route::currentRouteName() === 'main.blog' || Route::currentRouteName() === 'main.show' || Route::currentRouteName() === 'blog.category' || Route::currentRouteName() === 'blog.tag' || Route::currentRouteName() === 'main.blog.archive' || Route::currentRouteName() === 'blog.search' || Route::currentRouteName() === 'main.blog.page' || Route::currentRouteName() === 'blog.tag.page' || Route::currentRouteName() === 'main.category.page' || Route::currentRouteName() === 'main.blog.archive.paginated')
     <script>
         function goToSearch(e) {

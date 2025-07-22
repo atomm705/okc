@@ -57,34 +57,34 @@
                         <!-- <h3>{{ $group->translation->name }}</h3>-->
                             {!! $group->translation->text !!}
                         </div>
-                        @if(isset($group->services))
-                            <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
-                                <thead>
-                                <th>@lang('global.service')</th>
-                                <th>{{ __('global.price') }}</th>
-                                <th>{{ __('global.time_m') }}</th>
-                                <th>{{ __('global.description') }}</th>
-                                </thead>
-                                <tbody>
-                                @foreach($group->services as $service)
-                                    @if(isset($service->translation->name))
-                                        <tr>
-                                            <td>{{ $service->translation->name }}</td>
-                                            <td>{{ $service->translation->price }}</td>
-                                            <td>{{ $service->translation->time }}</td>
-                                            <td>{!! $service->translation->note !!}</td>
-                                        </tr>
-                                    @endif
-                                @endforeach
-                                </tbody>
-                            </table>
-                        @endif
+                        <div>
+                            @if(isset($group->services))
+                                <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
+                                    <thead>
+                                    <th class="title-th-m">@lang('global.service')</th>
+                                    <th class="title-th-m">{{ __('global.price') }}</th>
+                                    <th class="title-th-m">{{ __('global.time_m') }}</th>
+                                    <th class="title-th-m">{{ __('global.description') }}</th>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($group->services as $service)
+                                        @if(isset($service->translation->name))
+                                            <tr>
+                                                <td>{{ $service->translation->name }}</td>
+                                                <td>{{ $service->translation->price }}</td>
+                                                <td>{{ $service->translation->time }}</td>
+                                                <td class="note-item">{!! $service->translation->note !!}</td>
+                                            </tr>
+                                        @endif
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                                <div class="text_after-item"> {!! $group->translation->text_after !!}</div>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 </x-app-layout>

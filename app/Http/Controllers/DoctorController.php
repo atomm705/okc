@@ -45,9 +45,11 @@ class DoctorController extends Controller
     public function doctors(){
         $departments = NewCategory::where('is_visible', true)->get();
 
+        $department = $departments->first();
+
         $doctors = NewDoctorDepartment::where('department_id', '1')->where('is_visible', true)->get();
 
-        return view('admin.doctors.index', compact('departments', 'doctors'));
+        return view('admin.doctors.index', compact('departments', 'doctors', 'department'));
     }
 
     public function doctors_list($id){
