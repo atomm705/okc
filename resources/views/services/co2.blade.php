@@ -369,7 +369,7 @@
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/salenkova-elena-anatolevna">@lang('frontend/co2.specialist_1.description.link')</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/saljenkova-saljenkova-anatoliyivna">@lang('frontend/co2.specialist_1.description.link')</a>
                                 </div>
                             </div>
 
@@ -401,7 +401,7 @@
                                 </div>
 
                                 <div class="specialist-info">
-                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/khorunzhaya-lyubov-sergeevna">@lang('frontend/co2.specialist_2.description.link')</a>
+                                    <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/xorunza-xorunza-sergiyivna">@lang('frontend/co2.specialist_2.description.link')</a>
                                 </div>
                             </div>
                         </div>

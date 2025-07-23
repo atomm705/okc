@@ -106,7 +106,7 @@
     @endif
 </head>
 <!-- Bootstrap JS + Popper.js -->
-<body  >
+<body>
 <div class="preloader">
     <div class="preloader-body">
         <div class="cssload-container">

@@ -300,7 +300,7 @@
                 </div>
 
                 <div class="list-box">
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -336,7 +336,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -372,7 +372,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -408,7 +408,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -444,7 +444,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -480,7 +480,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -516,7 +516,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -552,7 +552,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -588,7 +588,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
@@ -624,7 +624,7 @@
                         </div>
                     </div>
 
-                    <div class="list-box__item">
+                    <div class="list-box__item lazernoe-omolozhenie__item">
                         <div class="review-box">
                             <div class="recall-result">
                                 <div class="recall-result-title">
