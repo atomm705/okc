@@ -72,7 +72,7 @@
 
                     @if (!$hasTranslations)
                         <div class="alert alert-blog-mb alert-warning ">
-                            @lang('frontend/blog.no_translations')
+                            @lang('frontend.blog.no_translations')
                         </div>
                     @endif
 
@@ -99,7 +99,7 @@
                         <article class="post post-modern post-modern-timeline post-modern-timeline-left">
                             <div class="post-media">
                                 <a class="link-image" href="{{ route('main.show', $translation->slug) }}">
-                                    <img src="{{ url($translation->image->src ?? '/assets/images/default.jpg') }}"
+                                    <img src="{{ url($translation->image?->src ?? '/assets/images/default.jpg') }}"
                                          width="570" height="400"
                                          alt="{{ $translation->name }}">
                                 </a>
@@ -111,8 +111,9 @@
                                 <div class="offset-top-4">
                                     <div class="divider divider-vertical d-inline-block"></div>
                                     @foreach ($article->categories as $category)
-
-                                        <a href="{{ route('blog.category', $category->translation->slug) }}" class="text-primary" style="margin-left: 5px">{{ $category->translation->name }}</a>
+                                        @if ($category->translation)
+                                            <a href="{{ route('blog.category', $category->translation->slug) }}" class="text-primary" style="margin-left: 5px">{{ $category->translation->name }}</a>
+                                        @endif
                                     @endforeach
                                 </div>
                                 <div class="post-body offset-top-14">
@@ -120,19 +121,21 @@
                                 </div>
                                 <div class="post-author">
                                     <div class="post-author-img">
-                                        <img class="rounded-circle" width="90" height="90" src="{{ $authorImage }}" alt="{{ $translation->author_name }}">
+                                        <img class="rounded-circle" width="90" height="90" src="{{ $authorImage }}" alt="{{ $translation->author_name ?? '' }}">
                                     </div>
-                                    <div class="post-author-name">{{ $translation->author_name }}</div>
+                                    <div class="post-author-name">{{ $translation->author_name ?? '' }}</div>
                                 </div>
                                 <div class="post-modern-classic-meta tags group group-sm offset-top-20">
-                                    @foreach ($article->tags as $tag)
+                                    @if($article->tags)
+                                        @foreach ($article->tags as $tag)
 
-                                        @if ($tag && isset($tag->slug))
-                                            <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">
-                                                {{ $tag->name ?? $tag->slug }}
-                                            </a>
-                                        @endif
-                                    @endforeach
+                                            @if ($tag && isset($tag->slug))
+                                                <a class="btn-tag btn btn-default" href="{{ route('blog.tag', $tag->slug) }}">
+                                                    {{ $tag->name ?? $tag->slug }}
+                                                </a>
+                                            @endif
+                                        @endforeach
+                                    @endif
                                 </div>
                             </section>
                         </article>
@@ -227,6 +230,7 @@
                                                 $translation = $recent->translation;
                                                 $date = \Carbon\Carbon::parse($recent->created_at);
                                             @endphp
+                                            @if($translation)
                                             <li>
                                                 <a class="font-weight-bold" href="{{ route('main.show', $translation->slug) }}">
                                                     {{ $translation->name }}
@@ -235,6 +239,7 @@
                                                     {{ $date->translatedFormat('F d, Y ') }}
                                                 </time>
                                             </li>
+                                            @endif
                                         @endforeach
                                     </ul>
                                 </div>
