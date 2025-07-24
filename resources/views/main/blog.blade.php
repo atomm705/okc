@@ -34,7 +34,7 @@
         };
     @endphp
 
-    <section class="breadcrumbs-custom bg-image context-dark slider-page" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark slider-page breadcrumbs-desktop-mt" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
 
             <h2 class="breadcrumbs-custom-title">

@@ -39,8 +39,8 @@
                     </div>
                 </div>
             </div>
-            <div class="rd-navbar-main-outer">
-                <div class="rd-navbar-main">
+            <div class="rd-navbar-main-outer header-desktop-relative">
+                <div class="rd-navbar-main header-desktop-absolute">
                     <div class="rd-navbar-panel"
                          @if (!Route::is('main.index'))
                             style="background: white; box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);"

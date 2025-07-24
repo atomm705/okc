@@ -1,5 +1,5 @@
 <x-app-layout>
-    <section class="breadcrumbs-custom bg-image context-dark  slider-page breadcrumbs-doctor" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+    <section class="breadcrumbs-custom bg-image context-dark  slider-page breadcrumbs-doctor breadcrumbs-desktop-mt" style="background-image: url({{ asset('images/bg-6.webp') }});" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
             <h2 class="breadcrumbs-custom-title custom-title-size">{{ $doctor->translation->second_name }} {{ $doctor->translation->first_name }} {{ $doctor->translation->middle_name }}</h2>
             <ul class="breadcrumbs-custom-path">

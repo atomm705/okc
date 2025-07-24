@@ -1,5 +1,5 @@
 <x-app-layout>
-    <section class="breadcrumbs-custom bg-image context-dark slider-page"
+    <section class="breadcrumbs-custom bg-image context-dark slider-page breadcrumbs-desktop-mt"
              style="background-image: url({{ asset('images/bg-6.webp') }}); "
              data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
         <div class="container">
