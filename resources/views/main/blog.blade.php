@@ -188,7 +188,8 @@
                                     <h6>@lang('frontend/blog.search.title')</h6>
                                     <hr class="text-subline">
                                     <div class="offset-top-14 offset-md-top-20 rd-search-blog">
-                                        <form id="searchForm" class="form-search rd-search" onsubmit="return goToSearch(event)">
+                                        <form id="searchForm" class="form-search rd-search" method="post" action="{{ route('main.blog') }}">
+                                            @csrf
                                             <div class="form-wrap">
                                                 <label class="form-label form-search-label" for="blog-classic-form-search-widget">Search</label>
                                                 <input class="form-search-input form-input" id="blog-classic-form-search-widget" type="text" name="s" autocomplete="off">

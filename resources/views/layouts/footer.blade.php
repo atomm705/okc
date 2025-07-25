@@ -52,7 +52,4 @@
     <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
     <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 @endif
-<script>
-    window.locale = "{{ app()->getLocale() }}";
-</script>
 <script src="{{ asset('js/custom.js') }}"></script>
