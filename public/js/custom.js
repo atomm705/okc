@@ -200,16 +200,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function goToSearch(e) {
-    e.preventDefault();
-    const input = document.querySelector('#blog-classic-form-search-widget');
-    const query = encodeURIComponent(input.value.trim());
-
-    if (query.length > 0) {
-        const locale = window.locale || 'uk';
-        window.location.href = `/${locale}/blog/search/${query}`;
-    }
-
-    return false;
-}
 
