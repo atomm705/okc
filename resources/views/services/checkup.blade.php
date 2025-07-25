@@ -654,7 +654,7 @@
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/civenko-civenko-mikolayivna">@lang('frontend/checkUp.specialist.description.link')</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/{{ app()->getLocale() }}/doctors/tsivenko-viktoriya-mikolaivna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -696,7 +696,7 @@
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/vitoxina-lisna-vitoxina-lisna-petrivna">@lang('frontend/checkUp.specialist.description.link')</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/{{ app()->getLocale() }}/doctors/vitokhina-lisna-tetyana-petrivna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>
@@ -736,7 +736,7 @@
                                         </div>
 
                                         <div class="specialist-info">
-                                            <a style="text-decoration: underline; color: #0d47a1;" href="/ru/doctors/pogrebnyak-ganna-oleksandrivna">@lang('frontend/checkUp.specialist.description.link')</a>
+                                            <a style="text-decoration: underline; color: #0d47a1;" href="/{{ app()->getLocale() }}/doctors/pogrebnyak-ganna-oleksandrivna">@lang('frontend/checkUp.specialist.description.link')</a>
                                         </div>
                                     </div>
                                 </div>

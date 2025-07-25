@@ -30,7 +30,7 @@
                             <div class="unit-body">
                                 <h6 class="font-weight-bold text-primary">Армен Прокипец</h6>
                                 <p class="font-italic offset-top-0 gray">@lang('frontend/about.heart.position')</p>
-                                <a  href="/uk/doctors/prokipets-armen-tarasovich">@lang('frontend/about.heart.more')</a>
+                                <a  href="/{{ app()->getLocale() }}/doctors/prokipets-armen-tarasovich">@lang('frontend/about.heart.more')</a>
                             </div>
                         </div>
                         <p class="gray">@lang('frontend/about.heart.text')</p>
