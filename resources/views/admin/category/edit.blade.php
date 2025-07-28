@@ -44,7 +44,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group mb-2">
-                                        <label for="is_root">Відображати в головному меню</label>
+                                        <label for="is_root">Відображати</label>
                                         <select name="is_root" class="form-control">
                                             <option value="1" @if($category->is_root == '1') selected @endif>Відображати</option>
                                             <option value="0" @if($category->is_root == '0') selected @endif>Не відображати</option>
@@ -54,14 +54,14 @@
                                 <div class="col-md-8">
                                     <div class="nav-align-top nav-tabs-shadow mb-5">
                                         <ul class="nav nav-tabs" role="tablist">
-                                            @foreach(config('app.fallback_locale') as $lang)
+                                            @foreach(config('app.available_locales') as $lang)
                                                 <li class="nav-item" role="presentation">
                                                     <button type="button" class="nav-link @if($lang == 'uk') active  @endif" role="tab" data-bs-toggle="tab" data-bs-target="#navs-top-{{ $lang }}" aria-controls="navs-top-{{ $lang }}" aria-selected="true">{{ strtoupper($lang) }}</button>
                                                 </li>
                                             @endforeach
                                         </ul>
                                         <div class="tab-content">
-                                            @foreach(config('app.fallback_locale') as $lang)
+                                            @foreach(config('app.available_locales') as $lang)
                                                 <div class="tab-pane fade @if($lang == 'uk') show active @endif" id="navs-top-{{ $lang }}" role="tabpanel">
                                                     <div class="row">
                                                         <div class="col-md-12 mb-3">
@@ -108,7 +108,7 @@
         @endsection
         @section('script')
             <script>
-                @foreach(config('app.fallback_locale') as $lang)
+                @foreach(config('app.available_locales') as $lang)
                 tinymce.init({
                     selector: 'textarea#text_{{ $lang }}', // Replace this CSS selector to match the placeholder element for TinyMCE
                     plugins: 'code table lists',

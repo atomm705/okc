@@ -11,14 +11,14 @@
                             <div>
                                 <div class="nav-align-top nav-tabs-shadow mb-5">
                                     <ul class="nav nav-tabs" role="tablist">
-                                        @foreach(config('app.fallback_locale') as $lang)
+                                        @foreach(config('app.available_locales') as $lang)
                                             <li class="nav-item" role="presentation">
                                                 <button type="button" class="nav-link @if($lang == 'uk') active  @endif" role="tab" data-bs-toggle="tab" data-bs-target="#navs-top-{{ $lang }}" aria-controls="navs-top-{{ $lang }}" aria-selected="true">{{ strtoupper($lang) }}</button>
                                             </li>
                                         @endforeach
                                     </ul>
                                     <div class="tab-content">
-                                        @foreach(config('app.fallback_locale') as $lang)
+                                        @foreach(config('app.available_locales') as $lang)
                                             <div class="tab-pane fade @if($lang == 'uk') show active @endif" id="navs-top-{{ $lang }}" role="tabpanel">
                                                 <div class="row">
                                                     <div class="col-md-12">
