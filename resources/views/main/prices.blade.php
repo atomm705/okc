@@ -48,7 +48,7 @@
                         <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                             <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
-                                    @if(isset($group->translation->name))
+                                    @if(isset($group->translation->name)  && $group->services->first())
                                         <li>{{ $group->translation->name }}</li>
                                     @endif
                                 @endforeach
