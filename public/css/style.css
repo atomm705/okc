@@ -32127,3 +32127,58 @@ html.page-doctors-departments body .app section > .content {
 .custom-height-p{
     line-height: 1.4em;
 }
+
+.services-item > .edit-image-cover-component > .content {
+    padding: 25px;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: flex
+;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    flex-direction: column !important;
+}
+
+@media (max-width: 440px) {
+    services-item > .edit-image-cover-component > .content > .title  {
+        font-size: 1.3rem;
+    }
+}
+
+.services-item > .edit-image-cover-component > .content > .title {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.625rem;
+    color: #fff;
+}
+
+.services-item > .edit-image-cover-component > .content > .description {
+    font-size: 1.375rem;
+    margin-top: 10px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.services-item > .edit-image-cover-component > .content > .description > a{
+    font-size: 1.375rem;
+
+}
+
+@media (max-width: 440px) {
+    .services-item > .edit-image-cover-component > .content > .buttons > button{
+        font-size: 12px;
+    }
+}
+
+.services-item > .edit-image-cover-component > .content > .buttons{
+  margin-top: 20px;
+}
