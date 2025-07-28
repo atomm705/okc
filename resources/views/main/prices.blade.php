@@ -55,7 +55,7 @@
                             </ul>
                             <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
-                                    @if(isset($group->translation->name) && $group->services)
+                                    @if(isset($group->translation->name) && $group->services->first())
                                         <div>
                                             <table class="table table-custom table-fixed table-hover-rows table-3-col">
                                                 <thead>
