@@ -10,7 +10,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li ><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li class="active"><a  href="{{ route('main.index') }}">@lang('global.pages.prices')</a></li>
-                    <li class="active white">{{ ucfirst(str_replace('-', ' ', $category_active->translation()->name ?? '')) }}</li>
+                    <li class="active white">{{ ucfirst(str_replace('-', ' ', $category_active->translation->name ?? '')) }}</li>
             </ul>
         </div>
     </section>
