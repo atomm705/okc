@@ -89,6 +89,9 @@
             </div>
         </div>
     </section>
+
+    <div class="specialist-card-box block-hiden">
+    </div>
 </x-app-layout>
 <script type="text/javascript">
     $(document).ready(function () {

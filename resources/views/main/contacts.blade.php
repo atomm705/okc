@@ -151,4 +151,6 @@
         </div>
     </section>
 
+    <div class="specialist-card-box block-hiden">
+    </div>
 </x-app-layout>

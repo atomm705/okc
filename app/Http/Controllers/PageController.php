@@ -61,11 +61,20 @@ class PageController extends Controller
     // функція сторінки блогу
     public function blog(Request $request, ?string $date = null)
     {
+        $queryString = $request->input('s');
+
         if($request->s){
             return redirect()->route("blog.search", ['query' => $request->s]);
         }
         $query = \App\Models\BlogArticle::query()
             ->where('is_visible', true)
+            ->whereHas('translation', function ($q) use ($queryString) {
+                $q->where('locale', app()->getLocale());
+
+                if ($queryString) {
+                    $q->where('name', 'like', "%{$queryString}%");
+                }
+            })
             ->with([
                 'translation' => fn($q) => $q->where('locale', app()->getLocale()),
                 'translation.image',
@@ -74,7 +83,7 @@ class PageController extends Controller
                 'translation.tags',
             ]);
 
-        if ($date) {
+        if ($date && !$queryString) {
             if (preg_match('/^\d{4}-\d{2}$/', $date)) {
                 $query->whereDate('created_at', 'like', "$date%");
             } else {
@@ -90,11 +99,11 @@ class PageController extends Controller
         $recentArticles = $this->getRecentArticles();
 
         $archiveName = null;
-        if ($date) {
+        if ($date && !$queryString) {
             $archiveName = Carbon::createFromFormat('Y-m', $date)->format('F Y');
         }
 
-        return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date', 'hasTranslations'));
+        return view('main.blog', compact('articles', 'recentArticles', 'archives', 'archiveName', 'date', 'hasTranslations','queryString'));
     }
 
     // функція для пагинації сторінки блогу

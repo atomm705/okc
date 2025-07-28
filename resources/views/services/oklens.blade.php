@@ -312,14 +312,11 @@
         <div class="content section-title"><h3>@lang('frontend/oklens.contact_with_specialist_down_lens.title')</h3> <!---->
             <!----></div>
     </section>
-    <section class="section-full-width section-flat-width section-flat-height padding--phone padding--video"
-             style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----> <!---->
-        <div class="content "><!----> <!---->
-            <div class="slot " style="display: flex; justify-content: center" >
-                <iframe  class="height--phone width-video" width="100%" height="600px" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/c_Br0XtxKVI"></iframe>
-            </div>
+    <section class="section-lg bg-default section">
+        <div class="container">
+            <iframe  class="height--phone width-video" width="100%" height="600px" frameborder="0"
+                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/c_Br0XtxKVI"></iframe>
         </div>
     </section>
     <section class="section-full-width" style="transform: translateY(0px); transition: 0.3s; opacity: 1;"><!----><!---->
@@ -338,6 +335,7 @@
         </div>
     </section>
 </div>
-
+<div class="specialist-card-box block-hiden">
+</div>
 
 </x-app-layout>

@@ -48,8 +48,6 @@
     });
 </script>
 <script src="{{ asset('js/script.js') }}"></script>
-@if(Route::currentRouteName() === 'main.blepharoplastika' || Route::currentRouteName() === 'main.plastichna-khururgiya' || Route::currentRouteName() === 'services.inektsionnaya-terapiya' || Route::currentRouteName() === 'services.plazmoterapiya' || Route::currentRouteName() === 'services.rf-lifting'  || Route::currentRouteName() === 'services.co2'|| Route::currentRouteName() === 'services.checkup' || Route::currentRouteName() === 'services.lazernoe-omolozhenie' || Route::currentRouteName() === 'services.lazernaya-epilyatsiya' || Route::currentRouteName() === 'services.liposaktsiya-ta-liposkulpturuvannya-v-dokart' )
-    <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
-    <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
-@endif
+<script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
+<script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 <script src="{{ asset('js/custom.js') }}"></script>
