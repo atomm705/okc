@@ -10,7 +10,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li ><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li class="active"><a  href="{{ route('main.index') }}">@lang('global.pages.prices')</a></li>
-                    <li class="active white">{{ ucfirst(str_replace('-', ' ', $category_active->translation()->name ?? '')) }}</li>
+                    <li class="active white">{{ ucfirst(str_replace('-', ' ', $category_active->translation->name ?? '')) }}</li>
             </ul>
         </div>
     </section>
@@ -48,14 +48,14 @@
                         <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                             <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
-                                    @if(isset($group->translation->name))
+                                    @if(isset($group->translation->name)  && $group->services->first())
                                         <li>{{ $group->translation->name }}</li>
                                     @endif
                                 @endforeach
                             </ul>
                             <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
-                                    @if(isset($group->translation->name) && $group->services)
+                                    @if(isset($group->translation->name) && $group->services->first())
                                         <div>
                                             <table class="table table-custom table-fixed table-hover-rows table-3-col">
                                                 <thead>
