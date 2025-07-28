@@ -251,10 +251,6 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-
     <div class="specialist-card-box block-hiden">
     </div>
-=======
->>>>>>> 2a7c805c1011cf95bcbb6d32cc66b1f0bdfa49b2
 </x-app-layout>
