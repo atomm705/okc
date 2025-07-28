@@ -17,7 +17,7 @@
 
     <section class="section-lg section bg-default" style="margin-bottom: 70px;">
         <div class="container">
-            <div class="row isotope-wrap">
+            <div class="row ">
                 <div class="col-lg-3">
                     <div class="isotope-filters isotope-filters-vertical">
                         <h4 class="text-uppercase isotope-filters-title offset-top-34"></h4>
@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9 offset-lg-top-0 offset-top-34">
+                <div class="col-lg-9 offset-lg-top-0 offset-top-34 ">
                     <h3 class="text-md-start">{{ $category_active->translation->name }}</h3>
                     <div class="offset-sm-top-30 text-start">
                         @if(isset($category_active->slug))
