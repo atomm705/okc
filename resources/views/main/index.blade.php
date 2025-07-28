@@ -65,7 +65,7 @@
                             <div class="icon icon-xs mdi mdi-calendar-clock text-white-50"></div>
                             <h6 class="d-inline-block inset-left-10 text-white">@lang('frontend/index.blocks.time_to_work.title')</h6>
                             <hr>
-                            <div class="row offset-top-24 justify-content-sm-between text-gray-light">
+                            <div class="row justify-content-sm-between text-gray-light first-row-item">
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 17px;"><strong class="white">Клініка</strong></span></div>
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span class="white" style="white-space: nowrap; font-size: 14px; padding-left: 30px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span class="white" style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
@@ -77,7 +77,7 @@
                                 <div class="offset-top-5 text-gray-light  "> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span class="white" style="padding-left: 10px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
 
                                 <div class="offset-top-8 text-gray-light">
-                                    <p>@lang('frontend/index.blocks.time_to_work.body.shedule_time.body')</p>
+                                    <p class="custom-height-p">@lang('frontend/index.blocks.time_to_work.body.shedule_time.body')</p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                             <h6 class="d-inline-block inset-left-10 text-white"><span class="white" style="font-size: 15px">@lang('frontend/index.blocks.schedule.title' )</span></h6>
                             <hr>
                             <div class="offset-top-24 text-gray-light">
-                                <p>@lang('frontend/index.blocks.schedule.body')</p>
+                                <p class="custom-height-p">@lang('frontend/index.blocks.schedule.body')</p>
                             </div>
                         </div>
                         <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('frontend/index.blocks.schedule.link')</a></div>
@@ -104,7 +104,7 @@
                             <h6 class="d-inline-block inset-left-10 text-white"><span class="text-white" style="font-size: 15px">@lang('frontend/index.blocks.appointment.title')</span></h6>
                             <hr>
                             <div class="offset-top-24 text-gray-light p-index">
-                                <p>@lang('frontend/index.blocks.appointment.body')</p>
+                                <p class="custom-height-p">@lang('frontend/index.blocks.appointment.body')</p>
                             </div>
                         </div>
                         <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.contacts') }}">@lang('frontend/index.blocks.appointment.link')</a></div>

@@ -14883,7 +14883,7 @@ a[href*='tel'], a[href*='mailto'] {
 .rd-navbar-fixed .rd-navbar-dropdown > li > a {
     display: block;
     padding: 9px 56px 9px 16px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -30885,6 +30885,10 @@ html.ie-11 .fc-event .fc-event-wrap {
     color: #868686;
 }
 
+.article-content > ul > li > span {
+    color: #868686;
+}
+
 .article-content > ul > li:before{
     display: inline-block;
     left: 0;
@@ -31334,6 +31338,7 @@ section {
     .rd-navbar-fixed .rd-nav-link {
         display: block;
         padding: 19px 56px 19px 18px;
+        font-size: 16px;
     }
 
     .rd-navbar-toggle {
@@ -32034,6 +32039,11 @@ html.page-doctors-departments body .app section > .content {
     line-height: 1.5em;
 }
 
+.about-post > p > span {
+    color:#868686;
+    line-height: 1.5em;
+}
+
 @media (max-width: 768px) {
     .aside-padding-mobil{
         padding-bottom: 60px;
@@ -32108,4 +32118,12 @@ html.page-doctors-departments body .app section > .content {
    .breadcrumbs-desktop-mt{
        margin-top: 35px;
    }
+}
+
+.first-row-item > div {
+    margin-bottom: 5px;
+}
+
+.custom-height-p{
+    line-height: 1.4em;
 }
