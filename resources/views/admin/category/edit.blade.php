@@ -43,6 +43,13 @@
                                             <option value="0" @if($category->is_visible == '0') selected @endif>Не відображати</option>
                                         </select>
                                     </div>
+                                    <div class="form-group mb-2">
+                                        <label for="is_root">Відображати в головному меню</label>
+                                        <select name="is_root" class="form-control">
+                                            <option value="1" @if($category->is_root == '1') selected @endif>Відображати</option>
+                                            <option value="0" @if($category->is_root == '0') selected @endif>Не відображати</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="nav-align-top nav-tabs-shadow mb-5">

@@ -18,5 +18,8 @@ class NewDivision extends Model
     public function categories(){
         return $this->hasMany(NewCategory::class, 'division_id', 'id')->where('is_visible', true);
     }
+    public function menu_categories(){
+        return $this->hasMany(NewCategory::class, 'division_id', 'id')->where('is_visible', true)->where('is_root', true);
+    }
 
 }

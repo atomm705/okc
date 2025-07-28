@@ -25,6 +25,13 @@
                                             <option value="0">Не відображати</option>
                                         </select>
                                     </div>
+                                    <div class="form-group mb-2">
+                                        <label for="is_group">Відображати в меню</label>
+                                        <select name="is_group" class="form-control">
+                                            <option value="1">Відображати</option>
+                                            <option value="0">Не відображати</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="nav-align-top nav-tabs-shadow mb-5">

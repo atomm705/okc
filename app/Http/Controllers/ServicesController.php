@@ -63,6 +63,7 @@ class ServicesController extends Controller
         $category->slug = \Illuminate\Support\Str::slug($request->name_uk);
         $category->division_id = $request->division_id;
         $category->is_visible = $request->is_visible;
+        $category->is_root = $request->is_root;
 
         if($request->file('image')){
             $request->validate([
@@ -136,6 +137,7 @@ class ServicesController extends Controller
 
         $category->division_id = $request->division_id;
         $category->is_visible = $request->is_visible;
+        $category->is_root = $request->is_root;
 
         if($request->file('image')){
             $request->validate([
@@ -242,6 +244,7 @@ class ServicesController extends Controller
         $group->slug = \Illuminate\Support\Str::slug($request->name_uk);
         $group->category_id = $request->category_id;
         $group->is_visible = $request->is_visible;
+        $group->is_group = $request->is_group;
         $group->save();
 
 
@@ -290,6 +293,7 @@ class ServicesController extends Controller
 
         $group->category_id = $request->category_id;
         $group->is_visible = $request->is_visible;
+        $group->is_group = $request->is_group;
         $group->save();
 
 

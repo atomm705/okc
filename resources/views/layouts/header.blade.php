@@ -69,7 +69,7 @@
                                                 <li class="rd-megamenu-item">
                                                     <h6 class="rd-megamenu-title">{{ $item->translation->name }}</h6>
                                                     <ul class="rd-megamenu-list">
-                                                        @foreach($item->categories as $category)
+                                                        @foreach($item->menu_categories as $category)
                                                             @if(isset($category->slug))<li class="rd-megamenu-list-item">
                                                                 <a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a>
                                                             </li>@endif

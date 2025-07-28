@@ -25,6 +25,13 @@
                                             <option value="0" @if($group->is_visible == '0') selected @endif>Не відображати</option>
                                         </select>
                                     </div>
+                                    <div class="form-group mb-2">
+                                        <label for="is_group">Відображати в меню</label>
+                                        <select name="is_group" class="form-control">
+                                            <option value="1" @if($group->is_group == '1') selected @endif>Відображати</option>
+                                            <option value="0" @if($group->is_group == '0') selected @endif>Не відображати</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="nav-align-top nav-tabs-shadow mb-5">
