@@ -28394,25 +28394,29 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 
 /** @section ToTop */
 .ui-to-top {
-     display: block;
-     position: fixed;
-     right: 15px;
-     bottom: 40px !important;
-     z-index: 100;
-     width: 46px;
-     height: 46px;
-     font-size: 20px;
-     line-height: 42px;
-     color: #fff;
-     background: #2a93c9;
-     overflow: hidden;
-     text-align: center;
-     text-decoration: none;
-     transition: .45s all ease-in-out;
-     transform: translate3d(0, 300px, 0);
-     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-     border-radius: 50%;
- }
+
+    display: block  !important;
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    z-index: 1000;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 42px;
+    color: #fff;
+    background: #2a93c9;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    opacity: 0 ;
+    pointer-events: none;
+    transition: opacity .45s ease-in-out, transform .45s ease-in-out;
+    transform: translate3d(0, 300px, 0);
+    will-change: transform, opacity;
+}
 
 .ui-to-top:hover {
     color: #fff;
@@ -28421,24 +28425,23 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
     text-decoration: none;
 }
 
-@media (max-width: 440px) {
-    .ui-to-top{
-        bottom: 20px !important;
-    }
-}
-
 .ui-to-top:focus {
     color: #fff;
 }
 
 .ui-to-top.active {
-    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    pointer-events: all;
+    transform: translate3d(0, 0, 0); /
 }
 
-/*html.mobile .ui-to-top,
-html.tablet .ui-to-top {
-    display: none !important;
-}*/
+
+@media (max-width: 575.98px) {
+    .ui-to-top {
+        right: 15px;
+        bottom: 20px;
+    }
+}
 
 @media (min-width: 576px) {
     .ui-to-top {
@@ -28447,6 +28450,14 @@ html.tablet .ui-to-top {
     }
 }
 
+/* Закомментированные стили:
+   html.mobile .ui-to-top,
+   html.tablet .ui-to-top {
+       display: none !important;
+   }
+   Эти стили лучше оставить закомментированными или удалить, если вы хотите,
+   чтобы кнопка отображалась на мобильных/планшетах.
+*/
 /*
 * @subsection   RD Material Tabs
 *
