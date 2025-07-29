@@ -1835,8 +1835,6 @@
 }());
 $(document).ready(function() {
     $('body').on('click touchend', '.online', function (e) {
-        // Предотвращаем стандартное поведение при touchend,
-        // чтобы избежать двойных срабатываний ("ghost clicks")
         if (e.type === 'touchend') {
             e.preventDefault();
         }
