@@ -41,8 +41,6 @@
     </div>
 </footer>
 <div class="snackbars" id="form-output-global"></div>
-<script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
-<script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script>
     $(document).ready(function() {
@@ -50,4 +48,6 @@
     });
 </script>
 <script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
+<script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 <script src="{{ asset('js/custom.js') }}"></script>
