@@ -30318,7 +30318,7 @@ html.ie-11 .fc-event .fc-event-wrap {
     margin-top: 10px;
     font-size: 14px;
     padding-left: unset;
-    line-height: 1.0;
+    line-height: 1.5em;
     color: #868686;
 }
 
@@ -32181,4 +32181,31 @@ html.page-doctors-departments body .app section > .content {
 
 .services-item > .edit-image-cover-component > .content > .buttons{
   margin-top: 20px;
+}
+.services-item > ul {
+     margin-left: 30px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+
+@media (max-width: 440px) {
+    .services-item > ul {
+        margin-left: 0px;
+    }
+}
+
+.services-item > ul > li > ul > li{
+    color: #868686;
+}
+
+.services-item > ul > li > span {
+    color: #868686;
+}
+
+.services-item > h3 > a{
+    font-size: 1.75rem;
+}
+
+.services-item > p > span{
+    color: #868686;
 }
