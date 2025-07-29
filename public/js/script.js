@@ -1834,13 +1834,19 @@
 	});
 }());
 $(document).ready(function() {
-    $('body').on('click', '.online', function () {
+    $('body').on('click touchend', '.online', function (e) {
+        // Предотвращаем стандартное поведение при touchend,
+        // чтобы избежать двойных срабатываний ("ghost clicks")
+        if (e.type === 'touchend') {
+            e.preventDefault();
+        }
+
         $('.modal').css({
             display: 'block',
             opacity: 0
         }).animate({
             opacity: 1
-        }, 300); // 300 мс (можна 3000 для 3 секунд)
+        }, 300);
 
         $('.modal .content').css({
             opacity: 0
@@ -1848,13 +1854,18 @@ $(document).ready(function() {
             opacity: 1
         }, 300);
     });
-    $('.button-preset-cancel').click(function(){
+
+    $('.button-preset-cancel').on('click touchend', function(e){
+        if (e.type === 'touchend') {
+            e.preventDefault();
+        }
+
         $('.modal').css({
             display: 'none',
             opacity: 1
         }).animate({
             opacity: 0
-        }, 300); // 300 мс (можна 3000 для 3 секунд)
+        }, 300);
 
         $('.modal .content').css({
             opacity: 1
@@ -1862,6 +1873,7 @@ $(document).ready(function() {
             opacity: 0
         }, 300);
     });
+
     $(".accept-preset-blue").submit(function(e){
         e.preventDefault();
         var form = $(this);
