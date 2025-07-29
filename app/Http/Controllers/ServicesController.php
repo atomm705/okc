@@ -92,7 +92,7 @@ class ServicesController extends Controller
         $category->save();
 
 
-        foreach(config('app.fallback_locale') as $lang){
+        foreach(config('app.available_locales') as $lang){
             $name = 'name_'.$lang;
             if($request->$name){
                 $short_name = 'short_name_'.$lang;
@@ -166,7 +166,7 @@ class ServicesController extends Controller
         $category->save();
 
 
-        foreach(config('app.fallback_locale') as $lang){
+        foreach(config('app.available_locales') as $lang){
             $name = 'name_'.$lang;
             if($request->$name){
                 $short_name = 'short_name_'.$lang;
@@ -248,7 +248,7 @@ class ServicesController extends Controller
         $group->save();
 
 
-        foreach(config('app.fallback_locale') as $lang){
+        foreach(config('app.available_locales') as $lang){
             $name = 'name_'.$lang;
             if($request->$name){
                 $text = 'text_'.$lang;
@@ -297,7 +297,7 @@ class ServicesController extends Controller
         $group->save();
 
 
-        foreach(config('app.fallback_locale') as $lang){
+        foreach(config('app.available_locales') as $lang){
             $name = 'name_'.$lang;
             if($request->$name){
                 $text = 'text_'.$lang;
@@ -351,7 +351,7 @@ class ServicesController extends Controller
         $price->is_visible = $request->is_visible;
         $price->save();
 
-        foreach(config('app.fallback_locale') as $lang) {
+        foreach(config('app.available_locales') as $lang) {
             $name = 'name_' . $lang;
             if ($request->$name) {
                 $prices = 'price_'.$lang;
@@ -392,7 +392,7 @@ class ServicesController extends Controller
         $price->is_visible = $request->is_visible;
         $price->save();
 
-        foreach(config('app.fallback_locale') as $lang) {
+        foreach(config('app.available_locales') as $lang) {
             $name = 'name_' . $lang;
             if ($request->$name) {
                 $prices = 'price_'.$lang;
