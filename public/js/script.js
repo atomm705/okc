@@ -1833,56 +1833,41 @@
 
 	});
 }());
-$(document).ready(function() {
+$(document).ready(function () {
+    // Відкриття модального вікна
     $('body').on('click', '.online', function () {
-        $('.modal').css({
-            display: 'block',
-            opacity: 0
-        }).animate({
-            opacity: 1
-        }, 300); // 300 мс (можна 3000 для 3 секунд)
-
-        $('.modal .content').css({
-            opacity: 0
-        }).animate({
-            opacity: 1
-        }, 300);
+        $('.modal').css('display', 'block').stop(true).animate({ opacity: 1 }, 300);
+        $('.modal .content').css('opacity', 0).stop(true).animate({ opacity: 1 }, 300);
     });
-    $('.button-preset-cancel').click(function(){
-        $('.modal').css({
-            display: 'none',
-            opacity: 1
-        }).animate({
-            opacity: 0
-        }, 300); // 300 мс (можна 3000 для 3 секунд)
 
-        $('.modal .content').css({
-            opacity: 1
-        }).animate({
-            opacity: 0
-        }, 300);
+    // Закриття по кнопці cancel
+    $('body').on('click', '.button-preset-cancel', function () {
+        $('.modal .content').stop(true).animate({ opacity: 0 }, 300);
+        $('.modal').stop(true).animate({ opacity: 0 }, 300, function () {
+            $(this).css('display', 'none');
+        });
     });
-    $(".accept-preset-blue").submit(function(e){
+
+    // Відправка форми з ajax
+    $('body').on('submit', '.accept-preset-blue', function (e) {
         e.preventDefault();
         var form = $(this);
+
         $.ajax({
             url: "/appointment",
             type: "POST",
             data: form.serialize(),
-            success: function(response){
-                $('#modal .content').html(response.message);
-                setTimeout(function() {
-                    $('.modal').animate({
-                        opacity: 0
-                    }, 300, function() {
+            success: function (response) {
+                $('.modal .content').html(response.message).css('opacity', 1);
+
+                setTimeout(function () {
+                    $('.modal .content').stop(true).animate({ opacity: 0 }, 300);
+                    $('.modal').stop(true).animate({ opacity: 0 }, 300, function () {
                         $(this).css('display', 'none');
                     });
-
-                    $('.modal .content').animate({
-                        opacity: 0
-                    }, 300);
                 }, 3000);
             }
         });
     });
 });
+
