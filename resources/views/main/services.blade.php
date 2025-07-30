@@ -61,14 +61,14 @@
                             <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
                                 <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                     @foreach($category->groups as $group)
-                                        @if(isset($group->translation->name))
+                                        @if(isset($group->translation->name) && $group->services->first())
                                             <li>{{ $group->translation->name }}</li>
                                         @endif
                                     @endforeach
                                 </ul>
                                 <div class="resp-tabs-container tabs-group-default" data-group="tabs-group-default">
                                     @foreach($category->groups as $group)
-                                        @if(isset($group->translation->name) && $group->services)
+                                        @if(isset($group->translation->name) && $group->services->first())
                                             <div>
                                                 <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
                                                     <thead>

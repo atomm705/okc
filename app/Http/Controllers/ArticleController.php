@@ -11,9 +11,9 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {
     public function category_page($category_slug) {
-        $category = NewCategory::where('slug', $category_slug)->where('is_visible', true)->first();
+        $category = NewCategory::with('translation')->where('slug', $category_slug)->where('is_visible', true)->first();
 
-        if(!$category){
+        if(!$category->translation){
             abort(404);
         }
         return view('main.services', [
@@ -29,7 +29,7 @@ class ArticleController extends Controller
             ->where('is_visible', true)
             ->first();
 
-        if(!$group){
+        if(!$group->translation){
             abort(404);
         }
 

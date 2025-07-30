@@ -40,6 +40,53 @@
         </div>
     </div>
 </footer>
+<div class="modal appointment-modal" style="" id="modal">
+    <div class="content" style="">
+        <h4>{{ __('global.Registration online') }}</h4>
+        <form action="/appointment" method="POST" class="accept-preset-blue">
+            <div class="error" style="height: 0px;">
+                <div class="text">&nbsp;</div>
+            </div>
+            @csrf
+            <div class="error" style="height: 0px;">
+                <div class="text">&nbsp;</div>
+            </div>
+            <div class="form-group required">
+                <label for="appointment-phone">{{ __('global.Your phone number') }}</label>
+                <input type="text" name="phone" id="appointment-phone">
+                <div class="description">{{ __('global.Format: +380501023212') }}</div>
+                <div class="error" style="height: 0px;">
+                    <div class="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group required">
+                <label for="appointment-name">{{ __('global.your name') }}</label>
+                <input type="text" name="name" id="appointment-name">
+                <div class="error" style="height: 0px;">
+                    <div class="text">&nbsp;</div>
+                </div>
+            </div>
+            <div class="personal-agreement">
+                <span class="mdi mdi-shield"></span>
+                <div class="value">{{ __('global.appointment_text') }}</div>
+            </div>
+            <div class="buttons">
+                <button type="button" class="button-preset-cancel">{{ __('global.cancel') }}</button>
+                <button class="button-preset-submit" type="submit">{{ __('global.send') }}</button></div>
+        </form>
+    </div>
+</div>
+<div class="page-sticky-menu-component"><!---->
+    <div class="container appointment-up">
+        <div class="appointment">
+            <button class="online" type="button" data-toggle="modal" data-target="#modal">{{ __('global.sticky_menu.appointment') }}</button>
+            <a href="#tlcallback" class="button recall mt-0">
+                <i class="fa fa-phone" style="display: inline-block !important;"></i>
+            </a>
+        </div>
+    </div>
+</div>
 <div class="snackbars" id="form-output-global"></div>
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>

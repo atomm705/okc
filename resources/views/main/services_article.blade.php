@@ -20,7 +20,6 @@
                             <li class="d-xl-none service-select-mobil"  >
                                 <p class="gray">{{ __('global.Choose your category') }}:</p>
                                 <select id="category" class="form-control service-select-mobil" >
-                                    <option value="{{ $group->category->slug }}">{{ $group->category->translation->name }} </option>
                                     @foreach($group->category->menu_groups as $gr)
                                         <option  value="/{{ app()->getLocale() }}/{{ $gr->category->slug }}/{{ $gr->slug }}" @if($group->slug == $gr->slug) selected @endif >
                                             {{ $gr->translation->name }}
@@ -58,7 +57,7 @@
                             {!! $group->translation->text !!}
                         </div>
                         <div>
-                            @if(isset($group->services))
+                            @if($group->services->first())
                                 <table class="table table-custom table-fixed table-hover-rows table-3-col" data-responsive="true">
                                     <thead>
                                     <th class="title-th-m">@lang('global.service')</th>
