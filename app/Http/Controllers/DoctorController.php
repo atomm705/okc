@@ -24,14 +24,11 @@ class DoctorController extends Controller
 
         $departments = NewCategory::where('is_visible', true)->get();
 
-
         return view('doctors.index', compact('departments'));
     }
 
     public function show($slug)
     {
-        $locale = app()->getLocale();
-
         $doctor = NewDoctor::where('slug', $slug)
                 ->where('is_visible', true)->first();
 
