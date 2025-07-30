@@ -28,10 +28,10 @@
                         <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
                         <div class="offset-top-30">
                             <ul class="list-inline">
-                                <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="#"></a></li>
-                                <li><a class="icon fa fa-twitter icon-xxs icon-circle icon-white" href="#"></a></li>
-                                <li><a class="icon fa fa-google-plus icon-xxs icon-circle icon-white" href="#"></a></li>
-                                <li><a class="icon fa fa-rss icon-xxs icon-circle icon-white" href="#"></a></li>
+                                <li class="logo-link-instagram"><a class="icon fa fa-instagram icon-xxs icon-circle icon-white" href="https://www.instagram.com/docart_clinic"></a></li>
+                                <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="https://facebook.com/okcentr"></a></li>
+                                <li class="logo-link-youtube"><a class="icon fa fa-youtube-play icon-xxs icon-circle icon-white" href="https://www.youtube.com/c/DOKART"></a></li>
+                                <li class="logo-link-telegram"><a class="icon fa fa-paper-plane icon-xxs icon-circle icon-white" href="https://t.me/ok_centre"></a></li>
                             </ul>
                         </div>
                     </div>
