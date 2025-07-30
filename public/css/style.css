@@ -28393,8 +28393,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 /** @section ToTop */
-.ui-to-top {
-
+/*.ui-to-top {
     display: block  !important;
     position: fixed;
     right: 15px;
@@ -28432,7 +28431,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 .ui-to-top.active {
     opacity: 1;
     pointer-events: all;
-    transform: translate3d(0, 0, 0); /
+    transform: translate3d(0, 0, 0);
 }
 
 
@@ -28448,6 +28447,62 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
         right: 40px;
         bottom: 40px;
     }
+}*/
+#ui-to-top-custom {
+
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    z-index: 1000;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 42px;
+    color: #fff;
+    background: #2a93c9;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .45s ease-in-out, transform .45s ease-in-out;
+    transform: translate3d(0, 300px, 0);
+    will-change: transform, opacity;
+}
+
+#ui-to-top-custom:hover {
+    color: #fff;
+    background: #156c98;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .56);
+    text-decoration: none;
+}
+
+#ui-to-top-custom:focus {
+    color: #fff;
+}
+
+#ui-to-top-custom.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate3d(0, 0, 0);
+}
+
+
+@media (max-width: 575.98px) {
+    #ui-to-top-custom {
+        right: 15px;
+        bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    #ui-to-top-custom {
+        right: 40px;
+        bottom: 40px;
+    }
 }
 
 /* Закомментированные стили:
@@ -28455,8 +28510,6 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
    html.tablet .ui-to-top {
        display: none !important;
    }
-   Эти стили лучше оставить закомментированными или удалить, если вы хотите,
-   чтобы кнопка отображалась на мобильных/планшетах.
 */
 /*
 * @subsection   RD Material Tabs
@@ -32219,4 +32272,11 @@ html.page-doctors-departments body .app section > .content {
 
 .services-item > p > span{
     color: #868686;
+}
+
+@media (max-width: 440px) {
+    .about-title-mobil{
+        font-size: 20px;
+        text-align: center;
+    }
 }

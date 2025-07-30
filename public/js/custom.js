@@ -1,3 +1,32 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+    const backToTopButton = document.createElement("a");
+    backToTopButton.href = "#";
+    backToTopButton.id = "ui-to-top-custom";
+    backToTopButton.className = "ui-to-top fa fa-angle-up";
+    backToTopButton.setAttribute("aria-label", "Вернуться наверх");
+    document.body.appendChild(backToTopButton);
+    const button = document.getElementById("ui-to-top-custom");
+    const minScroll = 500;
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > minScroll) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
+    button.addEventListener("click", function(e) {
+        e.preventDefault();
+        if (window.scrollY === 0) {
+            return;
+        }
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
 $(document).ready(function () {
     $('.ba-slider').each(function () {
         var $slider = $(this);

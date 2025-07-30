@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row justify-content-sm-center row-30">
                 <div class="col-sm-10 col-lg-8">
-                    <h3 style="font-size: 2.60em; ">@lang('frontend/about.article.title')</h3>
+                    <h3 class="about-title-mobil" style="font-size: 1.80em; ">@lang('frontend/about.article.title')</h3>
                     <div class="offset-top-20 ">
                         <p class="gray">@lang('frontend/about.article.texts.text_1')</p>
                         <p class="gray">@lang('frontend/about.article.texts.text_2')</p>
@@ -41,7 +41,7 @@
     </section>
     <section class="section-lg ">
         <div class="container ">
-            <div ><h3 style="font-size: 2.60em; margin-top: 0px; margin-bottom: 33px; " class="text-center">@lang('frontend/about.mission.title') </h3>
+            <div ><h3 style="font-size: 1.80em; margin-top: 0px; margin-bottom: 33px; " class="text-center about-title-mobil">@lang('frontend/about.mission.title') </h3>
                 <p class="text-left gray">@lang('frontend/about.mission.texts.text_1')</p>
                 <ul class="list-marked" style="text-align: left;">
                     <li class="gray">@lang('frontend/about.mission.list.item_1')</li>
