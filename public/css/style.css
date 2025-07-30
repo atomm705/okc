@@ -9063,6 +9063,7 @@ a.icon {
 }
 
 .icon-xxs.icon-rect, .icon-xxs.icon-rounded, .icon-xxs.icon-circle, .icon-xxs.icon-outlined {
+    display: block;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -9313,6 +9314,21 @@ a.icon {
 .icon-outlined.mdi-rocket,
 .icon-outlined.mdi-xml {
     font-size: 42px;
+}
+
+.logo-link-instagram > a:hover{
+    color: #fff;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffd600);
+}
+
+.logo-link-youtube > a:hover{
+    color: #fff;
+    background:  #c4302b;
+}
+
+.logo-link-telegram > a:hover{
+    color:  #fff;
+    background: #0082cc;
 }
 
 a.icon-rect.fa-facebook:hover, a.icon-circle.fa-facebook:hover, a.icon-outlined.fa-facebook:hover, a.icon-rounded.fa-facebook:hover {
