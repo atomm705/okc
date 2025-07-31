@@ -1,0 +1,49 @@
+<?php
+
+return [
+	'pages'       => [
+		'index'        => 'Home',
+		'services'     => 'Services',
+		'schedule'     => 'Schedule',
+		'doctors'      => 'Doctors',
+		'testimonials' => 'Reviews',
+		'prices'       => 'Prices',
+		'contacts'     => 'Contacts',
+		'about'        => 'About Us',
+		'blog'         => 'Blog',
+		'telemed'         => 'Tele MD',
+	],
+	'sticky_menu' => [
+		'appointment' => 'Appointment'
+	],
+	'time'        => 'Time',
+	'profile'     => 'Profile',
+	'days'        => [
+		'mo' => 'Mo',
+		'tu' => 'Tu',
+		'we' => 'We',
+		'th' => 'Th',
+		'fr' => 'Fr',
+		'sa' => 'Sa',
+		'su' => 'Su',
+	],
+    'more' => 'More',
+    'Choose your category' => 'Choose your category',
+    'Choose a department' => 'Choose a department',
+    'service' => 'Service',
+    'price' => 'Price',
+    'time_m' => 'Time(minutes)',
+    'description' => 'Note',
+    'Registration online' => 'Registration online',
+    'Your phone number' => 'Your phone number',
+    'Format: +380501023212' => 'Format: +380501023212',
+    'your name' => 'your name',
+    'appointment_text' => 'By filling out this form, you agree to the terms of processing personal data. We guarantee the confidentiality of your request.',
+    'cancel' => 'cancel',
+    'send' => 'Send',
+    'error_phone_required' => 'The phone field is required.',
+    'error_phone_format' => 'The phone format should be +380XXXXXXXXX.',
+    'not found' => 'Not found (Error 404)',
+    'no_translations_404' => 'There is no translation or the page is missing.'
+
+];
