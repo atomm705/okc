@@ -9,7 +9,16 @@
             </ul>
         </div>
     </section>
-
-
+    <section class="section-sm-110">
+        <div class="container">
+            <div class="row justify-content-sm-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="alert alert-blog-mb alert-warning ">
+                        @lang('global.no_translations_404')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </x-app-layout>

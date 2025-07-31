@@ -44,4 +44,6 @@ return [
     'error_phone_required' => 'The phone field is required.',
     'error_phone_format' => 'The phone format should be +380XXXXXXXXX.',
     'not found' => 'Not found (Error 404)',
+    'no_translations_404' => 'There is no translation or the page is missing.'
+
 ];
