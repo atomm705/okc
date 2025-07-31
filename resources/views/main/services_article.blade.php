@@ -21,9 +21,11 @@
                                 <p class="gray">{{ __('global.Choose your category') }}:</p>
                                 <select id="category" class="form-control service-select-mobil" >
                                     @foreach($group->category->menu_groups as $gr)
+                                        @if($gr->translation)
                                         <option  value="/{{ app()->getLocale() }}/{{ $gr->category->slug }}/{{ $gr->slug }}" @if($group->slug == $gr->slug) selected @endif >
                                             {{ $gr->translation->name }}
                                         </option>
+                                        @endif
                                     @endforeach
                                 </select>
                             </li>
@@ -35,6 +37,7 @@
                                         </a>
                                     </li>
                                     @foreach($group->category->menu_groups as $gr)
+                                        @if($gr->translation)
                                         <li>
                                             <a class="isotope-filter @if($group->slug == $gr->slug) active @endif" href="{{ route('main.service', [
                                                 'slug' => $gr->slug,
@@ -43,6 +46,7 @@
                                                 {{ $gr->translation->name }}
                                             </a>
                                         </li>
+                                        @endif
                                     @endforeach
                                 </ul>
                             </li>

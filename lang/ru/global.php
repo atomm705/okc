@@ -43,5 +43,5 @@ return [
     'send' => 'Отправить',
     'error_phone_required' => 'Поле телефона обязательное',
     'error_phone_format' => 'Формат телефона должен быть вида +380XXXXXXXXX.',
-
+    'not found' => 'Не найдено (Ошибка 404)',
 ];

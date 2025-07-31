@@ -15,24 +15,24 @@
                         <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
-                                <div class="unit-body unit-body-first"><a href="#" class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }}   @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')|| request()->routeIs('services.oklens')) text-white @endif">ПН-СБ
+                                <div class="unit-body unit-body-first"><span class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }}   @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')|| request()->routeIs('services.oklens')) text-white @endif">ПН-СБ
                                         <br> с 9-00 до 17-00
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                         </address>
                         <address class="contact-info reveal-sm-inline-block text-start offset-none">
                             <div class="p unit unit-spacing-xs unit-horizontal">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
-                                <div class="unit-body align-content-center "><a href="tel:#" class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }} @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.oklens')) text-white @endif">0 (800) 317-317
+                                <div class="unit-body align-content-center "><a href="tel:0800317317" class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }} @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.oklens')) text-white @endif">0 (800) 317-317
                                     </a></div>
                             </div>
                         </address>
                         <address class="contact-info reveal-sm-inline-block text-start">
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
-                                <div class="unit-body unit-body-third"><a href="#" class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }} @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.oklens')) text-white @endif">Україна, м. Харків,
-                                        <br> вул. Миколи Хвильового (Маяковського), 24</a>
+                                <div class="unit-body unit-body-third"><span class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }} @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.oklens')) text-white @endif">Україна, м. Харків,
+                                        <br> вул. Миколи Хвильового (Маяковського), 24</span>
                                 </div>
                             </div>
                         </address>
@@ -70,9 +70,11 @@
                                                     <h6 class="rd-megamenu-title">{{ $item->translation->name }}</h6>
                                                     <ul class="rd-megamenu-list">
                                                         @foreach($item->menu_categories as $category)
+                                                            @if($category->translation)
                                                             @if(isset($category->slug))<li class="rd-megamenu-list-item">
                                                                 <a class="rd-megamenu-list-link" href="{{ route('main.category', ['category_slug' => $category->slug]) }}" >{{ $category->translation->name ?? '' }}</a>
                                                             </li>@endif
+                                                            @endif
                                                         @endforeach
                                                     </ul>
                                                 </li>

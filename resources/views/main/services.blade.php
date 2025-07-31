@@ -6,7 +6,7 @@
             <ul class="breadcrumbs-custom-path">
                 <li><a href="{{ route('main.index') }}">@lang('global.pages.index')</a></li>
                 <li class="white">@lang('global.pages.services')</li>
-                <li class="white">{{ $category->name }}</li>
+                <li class="white">{{ $category->translation->name }}</li>
             </ul>
         </div>
     </section>
@@ -22,9 +22,11 @@
                                 <select id="category" class="form-control service-select-mobil  " >
                                     <option value="{{ $category->slug }}" >{{ $category->translation->name }}</option>
                                     @foreach($category->menu_groups as $group)
+                                        @if($group->translation)
                                         <option value="/{{ app()->getLocale() }}/{{ $category->slug }}/{{ $group->slug }}">
                                             {{ $group->translation->name }}
                                         </option>
+                                        @endif
                                     @endforeach
                                 </select>
                             </li>
@@ -36,6 +38,7 @@
                                         </a>
                                     </li>
                                     @foreach($category->menu_groups as $group)
+                                        @if($group->translation)
                                         <li>
                                             <a class="isotope-filter" href="{{ route('main.service', [
                                                 'slug' => $group->slug,
@@ -44,6 +47,7 @@
                                                 {{ $group->translation->name }}
                                             </a>
                                         </li>
+                                        @endif
                                     @endforeach
                                 </ul>
                             </li>

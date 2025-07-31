@@ -43,4 +43,5 @@ return [
     'send' => 'Send',
     'error_phone_required' => 'The phone field is required.',
     'error_phone_format' => 'The phone format should be +380XXXXXXXXX.',
+    'not found' => 'Not found (Error 404)',
 ];

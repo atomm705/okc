@@ -12555,7 +12555,10 @@ input.text-gray-darker::-webkit-input-placeholder {
 }
 
 .unit-body {
-    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px;
 }
 
 .unit-left,
@@ -32295,4 +32298,7 @@ html.page-doctors-departments body .app section > .content {
         font-size: 20px;
         text-align: center;
     }
+}
+.l-h-1-5{
+    line-height: 1.5rem;
 }

@@ -6,7 +6,7 @@
                     <div class="col-sm-10 col-lg-4 text-start order-lg-3 inset-lg-left-50">
                         <h6>@lang('footer.newsletter.title')</h6>
                         <hr class="text-subline">
-                        <p class="text-white-70">@lang('footer.newsletter.description')</p>
+                        <p class="text-white-70 l-h-1-5">@lang('footer.newsletter.description')</p>
                     </div>
                     <div class="col-sm-10 text-sm-start col-lg-4 order-lg-2">
                         <h6>@lang('footer.contacts.title')</h6>
@@ -15,11 +15,17 @@
                             <address class="contact-info d-md-inline-block text-start">
                                 <div class="p unit unit-spacing-xxs flex-row">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-phone text-white"></span></div>
-                                    <div class="unit-body"> <a class="text-white-70" href="tel:#"> (057) 761-61-31</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (093) 761-61-31</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (099) 548-44-85</a> <span class="text-white-70">, </span> <a class="text-white-70" href="tel:#"> (097) 318-67-58</a> </div>
+                                    <div class="unit-body">
+                                        <div><a class="text-white-70" href="tel:0800317317"> 0 (800) 317-317</a> <span class="text-white-70">, </span></div>
+                                        <div><a class="text-white-70" href="tel:+380577616131"> (057) 761-61-31</a> <span class="text-white-70">, </span></div>
+                                        <div><a class="text-white-70" href="tel:+380937616131"> (093) 761-61-31</a> <span class="text-white-70">, </span></div>
+                                        <div><a class="text-white-70" href="tel:+380995484485"> (099) 548-44-85</a> <span class="text-white-70">, </span></div>
+                                        <div><a class="text-white-70" href="tel:+380973186758"> (097) 318-67-58</a></div>
+                                    </div>
                                 </div>
                                 <div class="p unit flex-row unit-spacing-xxs">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
-                                    <div class="unit-body"><a class="text-white-70" href="#">@lang('footer.contacts.address')</a></div>
+                                    <div class="unit-body"><a class="text-white-70 l-h-1-5" href="#">@lang('footer.contacts.address')</a></div>
                                 </div>
                             </address>
                         </div>
@@ -28,10 +34,10 @@
                         <!--Brand--><a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}"  alt="" width="77" height="26"/><img class="brand-logo-light" src=" {{ asset('images/logo-brand.webp') }}" alt="" width="77" height="26"/></a>
                         <div class="offset-top-30">
                             <ul class="list-inline">
-                                <li class="logo-link-instagram"><a class="icon fa fa-instagram icon-xxs icon-circle icon-white" href="https://www.instagram.com/docart_clinic"></a></li>
-                                <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="https://facebook.com/okcentr"></a></li>
-                                <li class="logo-link-youtube"><a class="icon fa fa-youtube-play icon-xxs icon-circle icon-white" href="https://www.youtube.com/c/DOKART"></a></li>
-                                <li class="logo-link-telegram"><a class="icon fa fa-paper-plane icon-xxs icon-circle icon-white" href="https://t.me/ok_centre"></a></li>
+                                <li class="logo-link-instagram"><a class="icon fa fa-instagram icon-xxs icon-circle icon-white" href="https://www.instagram.com/docart_clinic" title="Docart Instagram"></a></li>
+                                <li><a class="icon fa fa-facebook icon-xxs icon-circle icon-white" href="https://facebook.com/okcentr" title="Docart Facebook"></a></li>
+                                <li class="logo-link-youtube"><a class="icon fa fa-youtube-play icon-xxs icon-circle icon-white" href="https://www.youtube.com/c/DOKART" title="Docart Youtube"></a></li>
+                                <li class="logo-link-telegram"><a class="icon fa fa-paper-plane icon-xxs icon-circle icon-white" href="https://t.me/ok_centre" title="Docart Telegram"></a></li>
                             </ul>
                         </div>
                     </div>
