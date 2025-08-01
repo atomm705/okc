@@ -308,12 +308,12 @@ class PageController extends Controller
         if($department){
             $current_category = NewCategory::where('slug', $department)->first();
 
-            $categories = NewCategory::where('is_visible', true)->get();
+            $categories = NewCategory::where('is_visible', true)->where('is_root', true)->get();
         }
         else{
             $current_category = NewCategory::where('slug', 'oftalmologiya')->first();
 
-            $categories = NewCategory::where('is_visible', true)->get();
+            $categories = NewCategory::where('is_visible', true)->where('is_root', true)->get();
 
         }
 

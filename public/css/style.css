@@ -30333,6 +30333,8 @@ html.ie-11 .fc-event .fc-event-wrap {
     text-transform: uppercase;
     font-size: 1.125rem;
     color: #2a93c9;
+    display: block;
+    margin-top: 5px;
 }
 
 @media (max-width: 1200px) {

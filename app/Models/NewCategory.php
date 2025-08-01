@@ -25,6 +25,6 @@ class NewCategory extends Model
         return $this->hasMany(NewService::class, 'category_id', 'id')->where('is_group', true);
     }
     public function doctors(){
-        return $this->belongsToMany(NewDoctor::class, 'new_doctor_departments', 'department_id', 'doctor_id');
+        return $this->belongsToMany(NewDoctor::class, 'new_doctor_departments', 'department_id', 'doctor_id')->orderBy('position', 'asc');
     }
 }

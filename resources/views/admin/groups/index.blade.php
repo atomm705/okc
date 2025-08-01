@@ -12,7 +12,7 @@
                         @foreach($groups as $group)
                         <div class="table-responsive text-nowrap m-5">
                             <div class="mb-3 row">
-                                <div class="col-md-6"><h3>{{ $group->admin_translation('uk')->name ?? '' }}</h3></div>
+                                <div class="col-md-6"><h3 class="text-wrap">{{ $group->admin_translation('uk')->name ?? '' }}</h3></div>
                                 <div class="col-md-2">
                                     @if($group->is_visible == '1') <span class="text-success">Відображається</span>@endif @if($group->is_visible == '0') <span class="text-danger">Не відображається</span>@endif
                                 </div>
@@ -21,7 +21,7 @@
                                     <a class="dropdown-item" href="{{ route('admin.prices.create', ['group_id' => $group->id]) }}"><i class="bx bx-add-to-queue me-1"></i> Створити послугу</a>
                                 </div>
                             </div>
-                                <table class="table" id="list-{{ $group->id }}">
+                                <table class="table" id="list-{{ $group->id }}" width="100%">
                                     <thead>
                                     <tr>
                                         <th>Назва</th>
@@ -33,7 +33,7 @@
                                     <tbody class="table-border-bottom-3">
                                     @foreach($group->services as $service)
                                         <tr>
-                                            <td>{{ $service->admin_translation('uk')->name }}</td>
+                                            <td class="text-wrap">{{ $service->admin_translation('uk')->name }}</td>
                                             <td>{{ $service->price }}</td>
                                             <td>@if($service->is_visible == '1') <span class="text-green-600">Відображається</span>@endif @if($service->is_visible == '0') <span class="text-red-600">Не відображається</span>@endif </td>
                                             <td>
@@ -82,7 +82,7 @@
             order: [[0, 'asc']],
             scrollX: 400,
             language: {
-                url: "/js/{{ app()->getLocale() }}.json"
+                url: "/admin/js/{{ app()->getLocale() }}.json"
             }
         });
         @endforeach

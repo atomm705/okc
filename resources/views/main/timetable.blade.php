@@ -27,14 +27,14 @@
                             </li>
                             <li class="section-relative">
 
-                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">{{ __('global.Choose a department') }}<span class="caret"></span></button>
+                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">@if($current_category){{ $current_category->translation->name }} @else {{ __('global.Choose a department') }} @endif<span class="caret"></span></button>
 
                                 <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
                                     @foreach($categories as $category)
                                         @if($category->translation)
                                         <li class="list-timetable-item">
                                             <a href="{{ route('main.timetable', $category->slug) }}"
-                                               class="{{ $current_category->slug === $category->slug ? 'active' : '' }}">
+                                               class="{{ $current_category->slug == $category->slug ? 'active' : '' }}">
                                                 {{ $category->translation->name }}
                                             </a>
                                         </li>
