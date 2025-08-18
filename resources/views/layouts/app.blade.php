@@ -85,7 +85,6 @@
     <meta property="og:title" content="{{ $seo['og:title'] ?? $seo['title'] }}">
     <meta property="og:description" content="{{ $seo['og:description'] ?? $seo['description'] }}">
 
-    <!--<title>{{ config('app.name', 'Laravel') }}</title>-->
     <link rel="icon" href="{{ asset('/images/favicon.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />

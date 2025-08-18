@@ -61,9 +61,9 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/esteticheskaya-meditsina/lazernoe-omolozhenie', [ServicePagesController::class, 'lazernoeomolozhenie'])->name('services.lazernoe-omolozhenie');
         Route::get('/esteticheskaya-meditsina/co2', [ServicePagesController::class, 'co2'])->name('services.co2');
         Route::get('/diagnostika/checkup', [ServicePagesController::class, 'checkup'])->name('services.checkup');
-        Route::get('/oftalmologiya/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
-        Route::get('/oftalmologiya/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
-        Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
+        Route::get('/panoptix', [ServicePagesController::class, 'panoptix'])->name('services.panoptix');
+        Route::get('/oklens', [ServicePagesController::class, 'oklens'])->name('services.oklens');
+        #Route::get('/tests', [ServicePagesController::class, 'tests'])->name('services.tests');
         Route::get('/esteticheskaya-meditsina/liposaktsiya-ta-liposkulpturuvannya-v-dokart', [ServicePagesController::class, 'liposaktsiya'])->name('services.liposaktsiya-ta-liposkulpturuvannya-v-dokart');
 
         Route::get('/doctors', [DoctorController::class, 'index'])->name('main.team');
