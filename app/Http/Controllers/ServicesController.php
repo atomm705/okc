@@ -58,9 +58,27 @@ class ServicesController extends Controller
 
     public function category_store(Request $request){
 
+        $map = [
+            'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd',
+            'е' => 'e', 'ё' => 'yo', 'ж' => 'zh', 'з' => 'z', 'и' => 'i',
+            'й' => 'y', 'к' => 'k', 'л' => 'l', 'м' => 'm', 'н' => 'n',
+            'о' => 'o', 'п' => 'p', 'р' => 'r', 'с' => 's', 'т' => 't',
+            'у' => 'u', 'ф' => 'f', 'х' => 'kh', 'ц' => 'ts', 'ч' => 'ch',
+            'ш' => 'sh', 'щ' => 'sch', 'ъ' => '', 'ы' => 'y', 'ь' => '',
+            'э' => 'e', 'ю' => 'yu', 'я' => 'ya',
+
+            'А' => 'A', 'Б' => 'B', 'В' => 'V', 'Г' => 'G', 'Д' => 'D',
+            'Е' => 'E', 'Ё' => 'Yo', 'Ж' => 'Zh', 'З' => 'Z', 'И' => 'I',
+            'Й' => 'Y', 'К' => 'K', 'Л' => 'L', 'М' => 'M', 'Н' => 'N',
+            'О' => 'O', 'П' => 'P', 'Р' => 'R', 'С' => 'S', 'Т' => 'T',
+            'У' => 'U', 'Ф' => 'F', 'Х' => 'Kh', 'Ц' => 'Ts', 'Ч' => 'Ch',
+            'Ш' => 'Sh', 'Щ' => 'Sch', 'Ъ' => '', 'Ы' => 'Y', 'Ь' => '',
+            'Э' => 'E', 'Ю' => 'Yu', 'Я' => 'Ya',
+        ];
+
         $category = new NewCategory();
 
-        $category->slug = \Illuminate\Support\Str::slug($request->name_uk);
+        $category->slug = \Illuminate\Support\Str::slug(strtr($request->name_ru, $map), '-');
         $category->division_id = $request->division_id;
         $category->is_visible = $request->is_visible;
         $category->is_root = $request->is_root;
@@ -239,9 +257,27 @@ class ServicesController extends Controller
     }
 
     public function groups_store(Request $request){
+        $map = [
+            'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd',
+            'е' => 'e', 'ё' => 'yo', 'ж' => 'zh', 'з' => 'z', 'и' => 'i',
+            'й' => 'y', 'к' => 'k', 'л' => 'l', 'м' => 'm', 'н' => 'n',
+            'о' => 'o', 'п' => 'p', 'р' => 'r', 'с' => 's', 'т' => 't',
+            'у' => 'u', 'ф' => 'f', 'х' => 'kh', 'ц' => 'ts', 'ч' => 'ch',
+            'ш' => 'sh', 'щ' => 'sch', 'ъ' => '', 'ы' => 'y', 'ь' => '',
+            'э' => 'e', 'ю' => 'yu', 'я' => 'ya',
+
+            'А' => 'A', 'Б' => 'B', 'В' => 'V', 'Г' => 'G', 'Д' => 'D',
+            'Е' => 'E', 'Ё' => 'Yo', 'Ж' => 'Zh', 'З' => 'Z', 'И' => 'I',
+            'Й' => 'Y', 'К' => 'K', 'Л' => 'L', 'М' => 'M', 'Н' => 'N',
+            'О' => 'O', 'П' => 'P', 'Р' => 'R', 'С' => 'S', 'Т' => 'T',
+            'У' => 'U', 'Ф' => 'F', 'Х' => 'Kh', 'Ц' => 'Ts', 'Ч' => 'Ch',
+            'Ш' => 'Sh', 'Щ' => 'Sch', 'Ъ' => '', 'Ы' => 'Y', 'Ь' => '',
+            'Э' => 'E', 'Ю' => 'Yu', 'Я' => 'Ya',
+        ];
+
         $group = new NewService();
 
-        $group->slug = \Illuminate\Support\Str::slug($request->name_uk);
+        $group->slug = \Illuminate\Support\Str::slug(strtr($request->name_uk, $map), '-');
         $group->category_id = $request->category_id;
         $group->is_visible = $request->is_visible;
         $group->is_group = $request->is_group;

@@ -10,6 +10,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ServicePagesController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\SettingsController;
 
 Route::middleware(SetLocale::class)->group(function () {
     Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
@@ -127,6 +128,7 @@ Route::middleware(['auth'])->group(function () {
 
         Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
 
+        Route::get('/settings/change_url', [SettingsController::class, 'change_url'])->name('admin.settings.changeUrl');
     });
 });
 
