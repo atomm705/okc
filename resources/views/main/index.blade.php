@@ -6,11 +6,11 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
-                                    <div class="inset-xl-right-80 text-lg-start ">
+                                <div class="section-slider-custom">
+                                    <div class="inset-xl-right-80 text-lg-start flex justify-center">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_1.title') }} <br class="d-block">
                                         </h2>
-                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
+                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
 
                                     </div>
                                 </div>
@@ -24,11 +24,11 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-6 section-slider-custom to-front">
+                                <div class="section-slider-custom to-front">
                                     <div class="text-lg-start">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_2.title') }}
                                         </h2>
-                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_2.link') }}</a>
+                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_2.link') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -41,10 +41,10 @@
                     <div class="swiper-slide-caption slider-fade">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-7 section-slider-custom">
+                                <div class="section-slider-custom">
                                     <div class="text-lg-start">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_3.title') }}</h2>
-                                        <h5 class="d-none d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_3.link') }}</a>
+                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_3.link') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -69,10 +69,6 @@
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 17px;"><strong class="white">Клініка</strong></span></div>
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_1')</span><span class="white" style="white-space: nowrap; font-size: 14px; padding-left: 30px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</span></div>
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 14px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</span><span class="white" style="white-space: nowrap; font-size: 14px; padding-left: 55px;">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</span></div>
-                               <!-- <div class="col-sm-7 offset-top-10 offset-xs-top-0 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_1')</div
-                                <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.clinic.time.title_2')</div>
-                                <div class="col-sm-7 offset-top-10 text-sm-end">@lang('frontend/index.blocks.time_to_work.body.clinic.time.value_2')</div>>
-                                <div class="col-sm-4 offset-top-30 offset-xs-top-10">@lang('frontend/index.blocks.time_to_work.body.appointment.title')</div>-->
                                 <div class="col-sm-4" style="width: 100%;"> <span class="white" style="white-space: nowrap; font-size: 17px;"><strong class="white">Запис</strong></span></div>
                                 <div class="offset-top-5 text-gray-light  "> @lang('frontend/index.blocks.time_to_work.body.appointment.time.title_1') <span class="white" style="padding-left: 10px;">@lang('frontend/index.blocks.time_to_work.body.appointment.time.value_1')</span></div>
 
@@ -362,6 +358,7 @@
         </div>
     </section>
 
+    @if($recentArticles->first())
     <section class="section-98 section-sm-110">
         <div class="container">
             <h3 class="text-center text-lg-center">@lang('frontend/index.blog.title')</h3>
@@ -420,6 +417,7 @@
             </div>
         </div>
     </section>
+    @endif
 
     <section class="section-lg bg-default-liac"><!----> <!---->
         <div class="container text-center defolt-div" ><!----> <!---->

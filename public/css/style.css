@@ -16879,12 +16879,13 @@ swiper-slide-caption{
 /* Pagination Styles */
 .swiper-pagination {
     display: block;
-    position: absolute;
-    text-align: center;
     transition: 300ms;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 10;
+    margin: 0 auto;
+    max-width: 1200px;
+    bottom: 50px;
 }
 
 .desktop .swiper-container .swiper-pagination-type-1 {

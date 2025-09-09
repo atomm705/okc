@@ -448,4 +448,86 @@ class DoctorController extends Controller
         return response()->json($results);
     }
 
+    public function apiDoctorDepartmentList(Request $request){
+
+        $lang = $request->header('X-Locale', 'uk');
+
+        $departments = NewCategory::select('id', 'image')->where('is_visible', true)->with(['translations' => fn($q) => $q->where('locale', $lang)])->get();
+
+        $items = $departments->map(function($d){
+            $tr = $d->translations->first();
+            return [
+                'id' => $d->id,
+                'image' => $d->iamge,
+                'translation' => $tr ? [
+                    'lcale' => $tr->locale,
+                    'name' => $tr->name,
+                ] : null,
+
+            ];
+        });
+        return response()->json([
+            'ok' => true,
+            'departments' => $items,
+            ]);
+    }
+    public function apiDoctorList(Request $request, $departmentId){
+
+        $lang = $request->header('X-Locale', 'uk');
+
+        $doctors = NewDoctor::select('id', 'photo_full', 'position')->with(['translations' => fn($q) => $q->where('locale', $lang)])->whereIn('id', function($query) use($departmentId){
+            $query->select('doctor_id')->from('new_doctor_departments')->where('department_id', $departmentId)->where('is_visible', true);
+        })->where('is_visible', true)->orderBy('position', 'asc')->get();
+
+       $items = $doctors->map(function($d){
+           $tr = $d->translations->first();
+           return [
+               'id' => $d->id,
+               'photo' => $d->photo_full,
+               'translation' => $tr ? [
+                   'full_name' => $tr->second_name . ' ' . $tr->first_name . ' ' . $tr->middle_name,
+                   'position' => $tr->position_main,
+               ] : null,
+           ];
+        });
+
+       return response()->json([
+          'ok' => true,
+          'doctors' => $items,
+       ]);
+    }
+
+    public function apiDoctorShow(Request $request, $doctorId){
+        $lang = $request->header('X-Locale', 'uk');
+
+        $doctor = NewDoctor::with(['translations' => fn($q) => $q->where('locale', $lang), 'departments'])->where('id', $doctorId)->where('is_visible', true)->get();
+
+        $item = $doctor->map(function($d){
+            $tr = $d->translations->first();
+            return [
+                'id' => $d->id,
+                'photo' => $d->photo_full,
+                'translation' => $tr ? [
+                    'full_name' => $tr->full_name,
+                    'position_main' => $tr->position_main,
+                    'position_all' => $tr->position_all,
+                    'educations' => $tr->educations,
+                    'courses' => $tr->courses,
+                    'awards' => $tr->awards,
+                    'associations' => $tr->associations,
+                    'treatment_of_disease' => $tr->treatment_of_disease,
+                    'procedures' => $tr->procedures,
+                    'specialisation' => $tr->specialisation,
+                    'about' => $tr->about,
+                ] : null,
+            ];
+        });
+
+        return response()->json([
+           'ok' => true,
+           'doctor' => $item,
+        ]);
+    }
+
+
 }

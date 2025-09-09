@@ -17,7 +17,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('', [PageController::class, 'index'])->name('main.index');
         Route::get('/about', [PageController::class, 'about'])->name('main.about');
 
-        Route::get('/services', [ServicesControler::class, 'index'])->name('main.services');
+        Route::get('/services', [ServicesController::class, 'index'])->name('main.services');
         Route::get('/departments', [PageController::class, 'departments'])->name('main.departments');
 
         //Route::get('/schedule', [PageController::class, 'timetable'])->name('main.timetable');
@@ -50,7 +50,7 @@ Route::middleware(SetLocale::class)->group(function () {
        // Route::get('/{locale}/blog/tag/{slug}/page/{page}', [BlogController::class, 'blog_tag_paginated'])->where('page', '[0-9]+');
 
         Route::get('/contacts', [PageController::class, 'contacts'])->name('main.contacts');
-        Route::get('/calendar', [AppointmentControler::class, 'index'])->name('main.appointment');
+        Route::get('/calendar', [AppointmentController::class, 'index'])->name('main.appointment');
         Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
         Route::get('/telemed', [PageController::class, 'telemed'])->name('main.telemed');
         Route::get('oftalmologiya/blepharoplastika', [PageController::class, 'blepharoplastika'])->name('main.blepharoplastika');
