@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const backToTopButton = document.createElement("a");
     backToTopButton.href = "#";
@@ -28,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function () {
+    $('.appointment-button').addClass('online');
+
     $('.ba-slider').each(function () {
         var $slider = $(this);
         var $handle = $slider.find('.draggable');

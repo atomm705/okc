@@ -22,7 +22,7 @@ class DoctorController extends Controller
 
     public function index(){
 
-        $departments = NewCategory::where('is_visible', true)->get();
+        $departments = NewCategory::where('is_visible', true)->where('is_root', true)->get();
 
         return view('doctors.index', compact('departments'));
     }

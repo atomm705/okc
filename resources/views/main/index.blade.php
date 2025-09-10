@@ -10,7 +10,7 @@
                                     <div class="inset-xl-right-80 text-lg-start flex justify-center">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_1.title') }} <br class="d-block">
                                         </h2>
-                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}"> {{ __('frontend/index.slider.slide_1.link') }}</a>
+                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_1.description') }}</h5><button class="online btn btn-ellipse btn-white offset-top-24" type="button" data-toggle="modal" data-target="#modal"> {{ __('frontend/index.slider.slide_1.link') }}</button>
 
                                     </div>
                                 </div>
@@ -28,7 +28,7 @@
                                     <div class="text-lg-start">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_2.title') }}
                                         </h2>
-                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_2.link') }}</a>
+                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_2.description') }}</h5><button class="online btn btn-ellipse btn-white offset-top-24" type="button" data-toggle="modal" data-target="#modal">{{ __('frontend/index.slider.slide_2.link') }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                                 <div class="section-slider-custom">
                                     <div class="text-lg-start">
                                         <h2 class="swipe-title-size">{{ __('frontend/index.slider.slide_3.title') }}</h2>
-                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><a class="btn btn-ellipse btn-white offset-top-24" href="{{ route('main.timetable') }}">{{ __('frontend/index.slider.slide_3.link') }}</a>
+                                        <h5 class="d-lg-block mw-1000">{{ __('frontend/index.slider.slide_3.description') }}</h5><button class="online btn btn-ellipse btn-white offset-top-24" type="button" data-toggle="modal" data-target="#modal">{{ __('frontend/index.slider.slide_3.link') }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                                 <p class="custom-height-p">@lang('frontend/index.blocks.schedule.body')</p>
                             </div>
                         </div>
-                        <div class="sheldue-more"><a class="btn btn-white btn-block btn-rect" href="{{ route('main.timetable') }}">@lang('frontend/index.blocks.schedule.link')</a></div>
+                        <div class="sheldue-more"><button class="online btn btn-white btn-block btn-rect" class="online" type="button" data-toggle="modal" data-target="#modal">@lang('frontend/index.blocks.schedule.link')</button></div>
                     </div>
                 </div>
                 <div class="col-md-8 col-lg-5 col-xl-3">
@@ -173,7 +173,7 @@
                 <p class="custom-paragraph">@lang('frontend/index.advantages_1.description')</p>
             </div>
         </div>
-        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_1.link')</a>
+        <div class="div-telemed-link"><button type="button" data-toggle="modal" data-target="#modal" class="online btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_1.link')</button>
         </div>
     </section>
 
@@ -187,7 +187,7 @@
                         <div class="offset-top-34 offset-md-top-60">
                             <p class="gray">@lang('frontend/index.ophthalmology.description')</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/oftalmologiya">@lang('frontend/index.ophthalmology.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/{{ app()->getLocale() }}/oftalmologiya">@lang('frontend/index.ophthalmology.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@
                             <p class="gray">@lang('frontend/index.surgery.description')</p>
 
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/ambulatorna-khirurgiya">@lang('frontend/index.surgery.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/{{ app()->getLocale() }}/ambulatorna-khirurgiya">@lang('frontend/index.surgery.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                         <div class="offset-top-34 offset-md-top-60">
                             <p class="gray">@lang('frontend/index.diagnosis.description')</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/diagnostika">@lang('frontend/index.diagnosis.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/{{ app()->getLocale() }}/diagnostika">@lang('frontend/index.diagnosis.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -225,7 +225,7 @@
                             <p class="gray">Пластична хірургія несе в собі ціль усунути як вроджені так і набуті недоліки зовнішності людини, щоб покращити якість життя.</p>
                             <p class="gray">Також вона несе в собі естетичну мету - корекція зовнішності людини, щоб отримати бажаний результат.</p>
                         </div>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/uk/plastichna-khirurgiya">@lang('frontend/index.diagnosis.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-primary" href="/{{ app()->getLocale() }}/plastichna-khirurgiya">@lang('frontend/index.diagnosis.link')</a></div>
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                 <p class="custom-paragraph">@lang('frontend/index.advantages_2.description')</p>
             </div>
         </div>
-        <div class="div-telemed-link"><a href="https://uatelemd.com/okcentre/" class="btn btn-ellipse btn-primary ">@lang('frontend/index.advantages_2.link')</a>
+        <div class="div-telemed-link"><button class="online btn btn-ellipse btn-primary" type="button" data-toggle="modal" data-target="#modal">@lang('frontend/index.advantages_2.link')</button>
         </div>
     </section>
 
@@ -351,7 +351,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-5">
                         <h2 style=" white-space: nowrap;"> @lang('frontend/index.cataract.title')</h2>
                         <p class="offset-top-30 text-white">@lang('frontend/index.cataract.description')</p>
-                        <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="/uk/oftalmologiya/likuvannya-katarakti">@lang('frontend/index.cataract.link')</a></div>
+                        <div class="offset-top-30"><a class="btn btn-ellipse btn-white" href="/{{ app()->getLocale() }}/oftalmologiya/lechenie-katarakty">@lang('frontend/index.cataract.link')</a></div>
                     </div>
                 </div>
             </div>

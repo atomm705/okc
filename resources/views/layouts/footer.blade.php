@@ -99,3 +99,7 @@
 <script src="{{ asset('blepharoplastika-js/simpleParallax.js') }}" defer></script>
 <script src="{{ asset('blepharoplastika-js/app-b.js') }}" defer></script>
 <script src="{{ asset('js/custom.js') }}"></script>
+<script>var telerWdWidgetId = "eddf3ae2-5534-4445-b242-48011c530c54";
+    var telerWdDomain = "okc.phonet.com.ua";</script>
+
+<sсript src="https://okc.phonet.com.ua/public/widget/call-catcher/lib-v3.js"></sсript>

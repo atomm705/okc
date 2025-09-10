@@ -53,7 +53,7 @@ Route::middleware(SetLocale::class)->group(function () {
         Route::get('/calendar', [AppointmentController::class, 'index'])->name('main.appointment');
         Route::get('/testimonials', [PageController::class, 'testimonials'])->name('main.testimonials');
         Route::get('/telemed', [PageController::class, 'telemed'])->name('main.telemed');
-        Route::get('oftalmologiya/blepharoplastika', [PageController::class, 'blepharoplastika'])->name('main.blepharoplastika');
+        Route::get('/oftalmologiya/blepharoplastika', [PageController::class, 'blepharoplastika'])->name('main.blepharoplastika');
         Route::get('/plastichna-khururgiya', [PageController::class, 'plastichnakhururgiya'])->name('main.plastichna-khururgiya');
         Route::get('/esteticheskaya-meditsina/inektsionnaya-terapiya', [ServicePagesController::class, 'inektsionnayaterapiya'])->name('services.inektsionnaya-terapiya');
         Route::get('/esteticheskaya-meditsina/plazmoterapiya', [ServicePagesController::class, 'plazmoterapiya'])->name('services.plazmoterapiya');

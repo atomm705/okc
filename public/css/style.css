@@ -112,6 +112,9 @@ blockquote {
 address {
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 
 figure {
@@ -2288,7 +2291,7 @@ Section Slider Custom
 
 @media (min-width: 992px) {
     .section-slider-custom {
-        padding: 160px 0 50px;
+        padding: 250px 15px 50px;
     }
 }
 
@@ -8630,7 +8633,7 @@ a.thumbnail:hover {
 
 .page {
     overflow: hidden;
-    background-color: #fff;
+    background-color: #f1f3f9;
 }
 
 .img-responsive {
@@ -14989,6 +14992,11 @@ a[href*='tel'], a[href*='mailto'] {
     transform: translate3d(0, 0, 0);
     opacity: 1;
     visibility: visible;
+    height: 100%;
+    max-width: 320px;
+}
+.rd-navbar-fixed .rd-navbar-collapse .contacts-wrap address{
+    width: 100%;
 }
 
 .rd-navbar-fixed .rd-navbar-collapse .list-inline > li {
@@ -15239,6 +15247,9 @@ a[href*='tel'], a[href*='mailto'] {
 .rd-navbar-fixed .rd-navbar-collapse .contacts-wrap {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
 }
 
 .rd-navbar-fixed .rd-navbar-collapse .brand {
@@ -15992,9 +16003,11 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-aside,
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-main {
-    max-width: 1170px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .rd-navbar-subpage.rd-navbar-static .rd-navbar-main {
@@ -17273,7 +17286,7 @@ swiper-slide-caption{
 }
 
 .mobile .swiper-pagination, .tablet .swiper-pagination {
-    display: block;
+    display: none;
 }
 
 .mobile .swiper-button, .tablet .swiper-button {
@@ -30691,7 +30704,6 @@ html.ie-11 .fc-event .fc-event-wrap {
     overflow: hidden;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
-    margin-top: 10px;
 }
 
 .edit-spoiler-component > .header{
@@ -30807,6 +30819,9 @@ html.ie-11 .fc-event .fc-event-wrap {
 }
 
 @media  (max-width: 440px) {
+    .contacts-wrap{
+        justify-content: flex-start;
+    }
     .price-item > p > iframe {
         height: 300px;
     }
@@ -30819,6 +30834,7 @@ html.ie-11 .fc-event .fc-event-wrap {
 @media (min-width: 1200px) {
     .container-2 {
         max-width: 1440px;
+        margin: 0 auto;
     }
 
    .custom-position-photo{
@@ -30856,17 +30872,8 @@ html.ie-11 .fc-event .fc-event-wrap {
     }
 }
 
-@media (max-width: 990px) {
-    .slide-tablet{
-        height: 504px;
-    }
-}
 
 @media (max-width: 768px) {
-    .slide-tablet{
-        height: 384px;
-    }
-
     .swipe-title-size{
         font-size: 39px;
     }
@@ -31488,7 +31495,10 @@ section {
 
 .contacts-wrap{
     display: flex;
-    margin-left: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
 }
 
 .rd-navbar-static .rd-menu {

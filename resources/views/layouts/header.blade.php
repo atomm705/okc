@@ -12,23 +12,23 @@
                        <a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                     </div>
                     <div class="contacts-wrap">
-                        <address class="contact-info reveal-sm-inline-block text-start custom-styles-address">
+                        <address>
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary  fa-clock-o [&#xf017;]"></span></div>
-                                <div class="unit-body unit-body-first"><span class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }}   @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')|| request()->routeIs('services.oklens')) text-white @endif">ПН-СБ
-                                        <br> с 9-00 до 17-00
+                                <div class="unit-body unit-body-first"><span class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }}   @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya')|| request()->routeIs('services.oklens')) text-white @endif">
+                                        <br> @lang('header.contacts.time')
                                     </span>
                                 </div>
                             </div>
                         </address>
-                        <address class="contact-info reveal-sm-inline-block text-start offset-none">
+                        <address>
                             <div class="p unit unit-spacing-xs unit-horizontal">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-phone"></span></div>
                                 <div class="unit-body align-content-center "><a href="tel:0800317317" class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }} @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.oklens')) text-white @endif">0 (800) 317-317
                                     </a></div>
                             </div>
                         </address>
-                        <address class="contact-info reveal-sm-inline-block text-start">
+                        <address>
                             <div class="p unit unit-horizontal unit-spacing-xs">
                                 <div class="unit-left"><span class="icon icon-xs icon-circle icon-gray-light text-primary mdi mdi-map-marker"></span></div>
                                 <div class="unit-body unit-body-third"><span class="{{ !Route::is('main.index') ? 'color-services-mobil' : '' }} @if(request()->routeIs('main.index') || request()->routeIs('main.plastichna-khururgiya') || request()->routeIs('services.oklens')) text-white @endif">Україна, м. Харків,

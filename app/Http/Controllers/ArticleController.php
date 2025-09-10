@@ -22,6 +22,12 @@ class ArticleController extends Controller
     }
 
     public function page($category_slug, $slug){
+        if($slug == 'panoptix'){
+            return redirect(route('services.panoptix'));
+        }
+        if($slug == 'oklens'){
+            return redirect(route('services.oklens'));
+        }
         $group = NewService::where('slug', $slug)
             ->whereHas('category', function ($q) use ($category_slug) {
                 $q->where('slug', $category_slug);
