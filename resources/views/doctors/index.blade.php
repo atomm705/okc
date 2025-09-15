@@ -15,7 +15,7 @@
                     <div class="doctors-departments-section">
                         <div class="departments-list-compact">
                             @foreach($departments as $department)
-                                @if($department->translation)
+                                @if($department->translation && $department->doctors->first())
                                 <a href="#doctors-department-{{ $department->slug }}" class="department">
                                     <img src="{{ $department->image }}" alt="{{ $department->translation->name }}">
                                     <div class="title">{{ $department->translation->name }}</div>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="content">
                             @foreach($departments as $department)
-                                @if($department->translation)
+                                @if($department->translation && $department->doctors->first())
                                 <div class="doctors-departments-section-department" id="doctors-department-{{ $department->slug }}">
                                     <div class="content"><h3>{{ $department->translation->name }}</h3>
                                         <div class="doctors">

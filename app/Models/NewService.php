@@ -15,7 +15,7 @@ class NewService extends Model
     }
 
     public function services(){
-        return $this->hasMany(NewPrice::class, 'service_id', 'id');
+        return $this->hasMany(NewPrice::class, 'service_id', 'id')->where('is_visible', true);
     }
 
     public function category(){

@@ -9,7 +9,7 @@
 
                 <div class="rd-navbar-aside">
                     <div class="rd-navbar-brand">
-                       <a class="brand" href="{{ route('main.index') }}"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
+                       <a class="brand" href="{{ route('main.index') }}" title="@lang('header.menu.index')"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="30" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
                     </div>
                     <div class="contacts-wrap">
                         <address>
@@ -45,10 +45,10 @@
                          @if (!Route::is('main.index'))
                             style="background: white; box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.2);"
                          @endif>
-                        <button class="rd-navbar-toggle  {{ !Route::is('main.index') ? 'rd-navbar-toggle2' : '' }}" data-rd-navbar-toggle=".rd-navbar-nav-wrap" ><span class="color-mobil "></span></button>
+                        <button class="rd-navbar-toggle  {{ !Route::is('main.index') ? 'rd-navbar-toggle2' : '' }}" data-rd-navbar-toggle=".rd-navbar-nav-wrap" title="@" ><span class="color-mobil "></span></button>
 
                         <div class="rd-navbar-brand ">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/></a>
+                            <!--Brand--><a class="brand" href="{{ route('main.index') }}" title="@lang('header.manu.index')"><img class="brand-logo-dark" src="{{ asset('images/logo-brand.webp') }}" alt="" width="77" height="20"/><img class="brand-logo-light" src="{{ asset('images/logo-brand.webp') }}" alt="@lang('header.menu.index')" width="77" height="20"/></a>
                         </div>
 
                         <div class="content-mobil"></div>

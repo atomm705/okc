@@ -24,10 +24,10 @@
                             @foreach ($doctor->sertificates as $certificate)
                                 <div class="col-sm-8 col-md-4 offset-top-20 certificate-center width-auto">
                                     <a class="thumbnail-classic" data-lightgallery="item" data-size="700x970"
-                                       href="/{{ $certificate->image }}">
+                                       href="{{ $certificate->image }}">
                                         <figure>
                                             <img class="certificates-mobil" width="100" height="138"
-                                                 src="/{{ $certificate->image }}"
+                                                 src="{{ $certificate->image }}"
                                                  alt="certificate">
                                         </figure>
                                     </a>

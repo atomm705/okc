@@ -69,5 +69,4 @@ class Doctor extends Model
         return \App\Models\Image::whereIn('image_id', $ids)->get();
     }
 
-
 }

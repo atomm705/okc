@@ -87,7 +87,7 @@
     <div class="container appointment-up">
         <div class="appointment">
             <button class="online" type="button" data-toggle="modal" data-target="#modal">{{ __('global.sticky_menu.appointment') }}</button>
-            <a href="#tlcallback" class="button recall mt-0">
+            <a href="#tlcallback" class="button recall mt-0" title="@lang('global.call_us')">
                 <i class="fa fa-phone" style="display: inline-block !important;"></i>
             </a>
         </div>

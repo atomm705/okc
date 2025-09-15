@@ -385,6 +385,7 @@ class ServicesController extends Controller
         $price = new NewPrice();
         $price->service_id = $request->service_id;
         $price->is_visible = $request->is_visible;
+        $price->price = $request->price;
         $price->save();
 
         foreach(config('app.available_locales') as $lang) {
@@ -426,6 +427,7 @@ class ServicesController extends Controller
         $price = NewPrice::findOrFail($id);
         $price->service_id = $request->service_id;
         $price->is_visible = $request->is_visible;
+        $price->price = $request->price;
         $price->save();
 
         foreach(config('app.available_locales') as $lang) {

@@ -27,6 +27,10 @@
                                                     <option value="0" @if($price->is_visible == '0') selected @endif>Не відображати</option>
                                                 </select>
                                             </div>
+                                            <div class="form-group mb-2">
+                                                <label for="price">Ціна(одна для всіх мов)</label>
+                                                <input type="text" class="form-control" name="price" value="{{ $price->price }}">
+                                            </div>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="nav-align-top nav-tabs-shadow mb-5">

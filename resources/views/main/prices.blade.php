@@ -69,7 +69,7 @@
                                                     @if(isset($service->translation->name))
                                                         <tr>
                                                             <td>{{ $service->translation->name }}</td>
-                                                            <td>{{ $service->translation->price }}</td>
+                                                            <td>@if($service->price) {{ $service->price }} @else {{ $service->translation->price }} @endif</td>
                                                             <td>{{ $service->translation->time }}</td>
                                                             <td class="note-item">{!! $service->translation->note !!}</td>
                                                         </tr>

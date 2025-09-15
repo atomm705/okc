@@ -87,8 +87,8 @@
 
     <link rel="icon" href="{{ asset('/images/favicon.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Asap:400,500,600,700%7CLato:400italic,400,700">
+    <!--<link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Asap:400,500,600,700%7CLato:400italic,400,700&display=swap">
     <link rel="stylesheet" href="{{ asset('blepharoplastika-css/style-bleforoplastik.css') }}">
     <link rel="stylesheet" href="{{ asset('blepharoplastika-css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
@@ -104,14 +104,12 @@
     <link rel="stylesheet" href="{{ asset('blepharoplastika-css/panoptix.css') }}">
     @endif
 </head>
-<!-- Bootstrap JS + Popper.js -->
 <body>
 <div class="preloader">
     <div class="preloader-body">
         <div class="cssload-container">
             <div class="cssload-double-torus"></div>
         </div>
-        <p>&nbsp;</p>
     </div>
 </div>
 <div class="page">
