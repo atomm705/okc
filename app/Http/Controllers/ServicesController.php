@@ -15,6 +15,7 @@ use Spatie\ImageOptimizer\OptimizerChainFactory;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 use App\Models\NewPrice;
+use Carbon\Carbon;
 
 class ServicesController extends Controller
 {
@@ -380,7 +381,7 @@ class ServicesController extends Controller
 
     public function store(Request $request){
 
-        $group = NewService::find($request->group_id);
+        $group = NewService::find($request->service_id);
 
         $price = new NewPrice();
         $price->service_id = $request->service_id;
@@ -408,7 +409,7 @@ class ServicesController extends Controller
             }
         }
 
-        return redirect()->route('admin.groups', ['slug' => $group->group->category->slug]);
+        return redirect()->route('admin.groups', ['slug' => $group->category->slug]);
     }
 
     public function edit($id){

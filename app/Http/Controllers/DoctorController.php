@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Doctor;
+use App\Models\DoctorDepartment;
 use App\Models\NewCategory;
 use App\Models\NewDoctor;
 use App\Models\NewDoctorDepartment;
@@ -174,7 +176,7 @@ class DoctorController extends Controller
         $department->is_visible = '1';
         $department->save();
 
-        foreach(config('app.fallback_locale') as $lang){
+        foreach(config('app.available_locales') as $lang) {
             $first_name = 'first_name_'.$lang;
             if($request->$first_name){
                 $second_name = 'second_name_'.$lang;
@@ -234,53 +236,13 @@ class DoctorController extends Controller
         $doctor = NewDoctor::findOrFail($id);
         $doctor->is_visible = '1';
 
-        if($request->file('photo_full')){
-            $request->validate([
-                'photo_full' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4096',
-            ]);
-
-            $file = $request->file('photo_full');
-            $filename = hash('sha256', $file->getClientOriginalName());
-            $basename = pathinfo($filename, PATHINFO_FILENAME);
-            $directory = public_path('assets/images/uploads/');
-
-            $originalPath = $directory . $filename;
-            $file->move($directory, $filename);
-
-            $optimizerChain = OptimizerChainFactory::create();
-            $optimizerChain->optimize($originalPath);
-
-            $manager = new ImageManager(new Driver());
-            $image = $manager->read($originalPath);
-            $webPath = $directory . $basename. '.webp';
-            $image->toWebp()->save($webPath);
-
-            $doctor->photo_full = 'assets/images/uploads/' . $filename;
-        }
-        if($request->file('photo_square')){
-            $request->validate([
-                'photo_square' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4096',
-            ]);
-
-            $file = $request->file('photo_square');
-            $filename = hash('sha256', $file->getClientOriginalName());
-            $basename = pathinfo($filename, PATHINFO_FILENAME);
-            $directory = public_path('assets/images/uploads/');
-
-            $originalPath = $directory . $filename;
-            $file->move($directory, $filename);
-
-            $optimizerChain = OptimizerChainFactory::create();
-            $optimizerChain->optimize($originalPath);
-
-            $manager = new ImageManager(new Driver());
-            $image = $manager->read($originalPath);
-            $webPath = $directory . $basename. '.webp';
-            $image->toWebp()->save($webPath);
-
-            $doctor->photo_square = 'assets/images/uploads/' . $filename;
+        if ($request->filled('photo_full_path')) {
+            $this->replaceImagePath($doctor, 'photo_full', $request->string('photo_full_path'));
         }
 
+        if ($request->filled('photo_square_path')) {
+            $this->replaceImagePath($doctor, 'photo_square', $request->string('photo_square_path'));
+        }
         $doctor->save();
 
         if ($request->hasFile('sertificates')) {
@@ -338,7 +300,7 @@ class DoctorController extends Controller
         $department->is_visible = '1';
         $department->save();
 
-        foreach(config('app.fallback_locale') as $lang){
+        foreach(config('app.available_locales') as $lang) {
             $first_name = 'first_name_'.$lang;
             if($request->$first_name){
                 $second_name = 'second_name_'.$lang;
@@ -424,6 +386,23 @@ class DoctorController extends Controller
         return redirect()->route('admin.doctors.list', ['id' => $request->department]);
     }
 
+    public function department_delete($id, $department_id){
+
+        $item = NewDoctorDepartment::where('doctor_id', $id)->where('department_id', $department_id)->first();
+        $item->delete();
+
+        return redirect()->route('admin.doctors.list', ['id' => $department_id]);
+    }
+
+    public function image_del($type, $doctor){
+
+        $doctor = NewDoctor::find($doctor);
+
+        $image_type = 'photo_'.$type;
+
+        unlink(public_path($doctor->$image_type));
+    }
+
     public function search(Request $request){
             $search = $request->q;
 
@@ -471,6 +450,7 @@ class DoctorController extends Controller
             'departments' => $items,
             ]);
     }
+
     public function apiDoctorList(Request $request, $departmentId){
 
         $lang = $request->header('X-Locale', 'uk');
@@ -529,5 +509,25 @@ class DoctorController extends Controller
         ]);
     }
 
+    private function replaceImagePath(NewDoctor $doctor, string $field, string $newRelPath): void
+    {
+        // дозволяємо тільки файли в assets/images/uploads/crop
+        $allowedPrefix = 'assets/images/uploads/crop/';
+        if (!str_starts_with($newRelPath, $allowedPrefix)) {
+            // ігноруємо або киньте ValidationException, якщо хочете
+            return;
+        }
+
+        $oldRelPath = (string) ($doctor->{$field} ?? '');
+
+        // якщо шлях змінився — видаляємо старий файл
+        if ($oldRelPath && $oldRelPath !== $newRelPath) {
+            $oldAbs = public_path($oldRelPath);
+            if (is_file($oldAbs)) @unlink($oldAbs);
+        }
+
+        // встановлюємо новий шлях
+        $doctor->{$field} = $newRelPath;
+    }
 
 }

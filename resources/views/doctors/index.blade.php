@@ -34,7 +34,7 @@
                                                 @if(isset($doctor->translation))
                                                     <a href="{{ route('doctors.show', ['slug' => $doctor->slug ?? '']) }}" class="doctor-tile-compact-component">
 
-                                                        <img src="/{{ $doctor->photo_square }}">
+                                                        <img src="/{{ $doctor->photo_full }}">
                                                         <div class="content" style="height: 160px;">
                                                             <div class="name"> {{ $doctor->translation->second_name ?? '' }} {{ $doctor->translation->first_name ?? '' }} {{ $doctor->translation->middle_name ?? '' }}</div>
                                                             <div class="description">

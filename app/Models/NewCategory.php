@@ -19,7 +19,7 @@ class NewCategory extends Model
     }
 
     public function groups(){
-        return $this->hasMany(NewService::class, 'category_id', 'id');
+        return $this->hasMany(NewService::class, 'category_id', 'id')->where('is_visible', true);
     }
     public function menu_groups(){
         return $this->hasMany(NewService::class, 'category_id', 'id')->where('is_group', true);

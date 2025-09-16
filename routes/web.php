@@ -11,6 +11,7 @@ use App\Http\Controllers\ServicePagesController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\UploadController;
 
 Route::middleware(SetLocale::class)->group(function () {
     Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function() {
@@ -96,7 +97,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/doctor/{id}/edit', [DoctorController::class, 'edit'])->name('admin.doctor.edit');
         Route::post('/doctor/{id}/update', [DoctorController::class, 'update'])->name('admin.doctor.update');
         Route::post('/doctor/department_add', [DoctorController::class, 'department_add'])->name('admin.doctor.department_add');
+        Route::get('/doctor/{id}/{department_id}/department_delete/', [DoctorController::class, 'department_delete'])->name('admin.doctor.department_delete');
         Route::get('/doctor/search', [DoctorController::class, 'search'])->name('admin.doctor.search');
+        Route::get('doctor/{type}/{doctor}/image_del', [DoctorController::class, 'image_del'])->name('admin.doctor.image_del');
 
         Route::get('/category', [ServicesController::class, 'category'])->name('admin.category');
         Route::get('/category/create', [ServicesController::class, 'category_create'])->name('admin.category.create');
@@ -129,6 +132,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
 
         Route::get('/settings/change_url', [SettingsController::class, 'change_url'])->name('admin.settings.changeUrl');
+        Route::post('/upload/crop', [UploadController::class, 'crop'])->name('upload.crop');
     });
 });
 

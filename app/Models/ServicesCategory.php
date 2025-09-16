@@ -17,7 +17,7 @@ class ServicesCategory extends Model
     public function groups()
     {
         return $this->hasMany(ServicesCategoryGroup::class, 'category_id')
-            ->where('is_visible', 1);
+            ->where('is_visible', true);
     }
 
     public function translation()
@@ -39,7 +39,7 @@ class ServicesCategory extends Model
     public function visibleGroups()
     {
         return $this->hasMany(ServiceCategoryGroup::class, 'category_id', 'category_id')
-            ->where('is_visible', 1);
+            ->where('is_visible', true);
     }
     public function articleCategory(){
         return $this->hasOne(ArticleCategory::class, 'price_id', 'category_id');

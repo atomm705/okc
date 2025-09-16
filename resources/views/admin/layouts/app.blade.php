@@ -28,6 +28,8 @@
     <script src="{{ asset('admin/js/config.js') }}"></script>
     <!--<script src="{{ asset('admin/ckeditor/ckeditor.js') }}"></script>-->
     <script src="{{ asset('admin/js/tinymce.min.js') }}"></script>
+    <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.6.2/dist/cropper.min.css">
+    <script src="https://unpkg.com/cropperjs@1.6.2/dist/cropper.min.js"></script>
 
 
 </head>

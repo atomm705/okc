@@ -23,12 +23,32 @@
                                     <div class="tab-content">
                                         <div class="tab-pane fade show active" id="navs-top-info" role="tabpanel">
                                             <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="is_visible">Видимість</label>
+                                                    <select name="is_visible" class="form-control">
+                                                        <option value="1">Працює</option>
+                                                        <option value="0">Не працює</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
                                                 <div class="col-md-12">
                                                     <h3>Зображення</h3>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="photo_full" class="form-label">Зображення 384*410</label>
-                                                    <input type="file" class="form-control" name="photo_full">
+                                                    <label for="photo_full" class="form-label">Зображення 384×410</label>
+                                                    <input id="photo_full" type="file" class="form-control" accept="image/*">
+                                                    {{-- шлях, що поверне сервер після обрізання --}}
+                                                    <input type="hidden" name="photo_full_path" id="photo_full_path">
+
+                                                    <div class="mt-2">
+                                                        <img id="preview_full" style="max-width:100%; display:none;" alt="preview 384×410">
+                                                    </div>
+                                                    <div class="mt-2 d-flex gap-2">
+                                                        <button id="save_full" type="button" class="btn btn-primary btn-sm" disabled>Обрізати та завантажити</button>
+                                                        <button id="reset_full" type="button" class="btn btn-outline-secondary btn-sm" disabled>Скинути</button>
+                                                    </div>
+                                                    <small id="status_full" class="text-muted"></small>
                                                     <div class="photo_full-result">
                                                         @if($doctor->photo_full)
                                                             @if(file_exists(public_path($doctor->photo_full)))
@@ -38,15 +58,25 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-12 mt-2">
-                                                                    <span class="btn btn-outline-danger cursor-pointer" id="photo_full_del" data-doctor="{{ $doctor->id }}">Видалити зображення</span>
+                                                                    <span class="btn btn-outline-danger cursor-pointer photo_del" data-image="full" data-doctor="{{ $doctor->id }}">Видалити зображення</span>
                                                                 </div>
                                                             @endif
                                                         @endif
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="photo_square" class="form-label">Зображення 520*520</label>
-                                                    <input type="file" class="form-control" name="photo_square">
+                                                    <label for="photo_square" class="form-label">Зображення 520×520</label>
+                                                    <input id="photo_square" type="file" class="form-control" accept="image/*">
+                                                    <input type="hidden" name="photo_square_path" id="photo_square_path">
+
+                                                    <div class="mt-2">
+                                                        <img id="preview_square" style="max-width:100%; display:none;" alt="preview 520×520">
+                                                    </div>
+                                                    <div class="mt-2 d-flex gap-2">
+                                                        <button id="save_square" type="button" class="btn btn-primary btn-sm" disabled>Обрізати та завантажити</button>
+                                                        <button id="reset_square" type="button" class="btn btn-outline-secondary btn-sm" disabled>Скинути</button>
+                                                    </div>
+                                                    <small id="status_square" class="text-muted"></small>
                                                     <div class="photo_square-result">
                                                         @if($doctor->photo_square)
                                                             @if(file_exists(public_path($doctor->photo_square)))
@@ -56,7 +86,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-12 mt-2">
-                                                                    <span class="btn btn-outline-danger cursor-pointer" id="image_del" data-doctor="{{ $doctor->id }}">Видалити зображення</span>
+                                                                    <span class="btn btn-outline-danger cursor-pointer photo_del" data-image="square" data-doctor="{{ $doctor->id }}">Видалити зображення</span>
                                                                 </div>
                                                             @endif
                                                         @endif
@@ -103,7 +133,7 @@
 
                                                     <div class="col-md-2 mb-3">
                                                         <label for="working_hours_{{ $i }}" class="text-capitalize">
-                                                            {{ ucfirst(\Carbon\Carbon::create()->startOfWeek()->addDays($i)->translatedFormat('l')) }}
+                                                            {{ ucfirst(\Carbon\Carbon::create()->locale('uk')->startOfWeek()->addDays($i)->translatedFormat('l')) }}
                                                         </label>
 
                                                         <select name="working_hours[{{ $i }}][start]" class="form-control mb-2" id="working_hours_start_{{ $i }}">
@@ -387,5 +417,87 @@
             license_key: 'gpl'
         });
         @endforeach
+
+        $(document).ready(function(){
+           $(".photo_del").click(function(){
+
+               var type = $(this).data('image');
+               var doctor = $(this).data('doctor');
+
+               $.ajax({
+                   url: "/admin-panel/doctor/" + type + "/" + doctor + "/image_del",
+                   type: "GET",
+                   data: {},
+                   success: function(response){
+                       $('.photo_' + type + '-result').html('');
+                   }
+               });
+           });
+        });
+    </script>
+    <script>
+        function initCropperBlock({ inputId, previewId, saveBtnId, resetBtnId, statusId, hiddenPathId, aspectRatio, width, height, target }) {
+            const fileInput = document.getElementById(inputId);
+            const img = document.getElementById(previewId);
+            const saveBtn = document.getElementById(saveBtnId);
+            const resetBtn = document.getElementById(resetBtnId);
+            const status = document.getElementById(statusId);
+            const hiddenPath = document.getElementById(hiddenPathId);
+            let cropper;
+
+            fileInput.addEventListener('change', () => {
+                const file = fileInput.files?.[0];
+                if (!file) return;
+                img.src = URL.createObjectURL(file);
+                img.style.display = 'block';
+                if (cropper) cropper.destroy();
+                cropper = new Cropper(img, { viewMode:2, aspectRatio, autoCropArea:1, dragMode:'move', responsive:true, background:false, zoomOnWheel:true });
+                saveBtn.disabled = false; resetBtn.disabled = false; status.textContent = '';
+            });
+
+            resetBtn.addEventListener('click', () => cropper?.reset());
+
+            saveBtn.addEventListener('click', async () => {
+                if (!cropper) return;
+                status.textContent = 'Обробка...'; saveBtn.disabled = true;
+
+                const canvas = cropper.getCroppedCanvas({ width, height, imageSmoothingEnabled:true, imageSmoothingQuality:'high' });
+                const blob = await new Promise(r => canvas.toBlob(r, 'image/jpeg', 0.9));
+                if (!blob) { status.textContent = 'Не вдалося сформувати зображення'; saveBtn.disabled=false; return; }
+
+                const fd = new FormData();
+                fd.append('image', blob, 'crop.jpg');
+                fd.append('target', target);
+                fd.append('_token', '{{ csrf_token() }}');
+
+                try {
+                    const res = await fetch('{{ route('upload.crop') }}', { method:'POST', body:fd, headers:{ 'Accept':'application/json' }});
+                    if (!res.ok) { status.textContent = `Помилка ${res.status}: ${(await res.text()).slice(0,200)}`; return; }
+                    const data = await res.json();
+                    if (data.status) { hiddenPath.value = data.path; status.textContent = '✅ Збережено'; fileInput.disabled = true; }
+                    else { status.textContent = data.message || 'Помилка збереження'; }
+                } catch {
+                    status.textContent = 'Помилка мережі/сервера';
+                } finally {
+                    saveBtn.disabled = false;
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 384×410 — photo_full
+            initCropperBlock({
+                inputId:'photo_full', previewId:'preview_full', saveBtnId:'save_full', resetBtnId:'reset_full',
+                statusId:'status_full', hiddenPathId:'photo_full_path', aspectRatio:384/410, width:384, height:410,
+                target:'photo_full'
+            });
+
+            // 520×520 — photo_square
+            initCropperBlock({
+                inputId:'photo_square', previewId:'preview_square', saveBtnId:'save_square', resetBtnId:'reset_square',
+                statusId:'status_square', hiddenPathId:'photo_square_path', aspectRatio:1, width:520, height:520,
+                target:'photo_square'
+            });
+        });
     </script>
 @endsection
