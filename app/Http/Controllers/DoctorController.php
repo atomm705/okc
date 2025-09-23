@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Drivers\Gd\Driver;
 use Intervention\Image\ImageManager;
 use Spatie\ImageOptimizer\OptimizerChainFactory;
+use Illuminate\Support\Facades\DB;
 
 //use Illuminate\Support\Facades\Log;
 
@@ -59,6 +60,8 @@ class DoctorController extends Controller
         $doctors = NewDoctorDepartment::where('department_id', $department->id)->where('is_visible', true)->get();
 
         return view('admin.doctors.index', compact('departments', 'doctors', 'department'));
+
+
     }
 
     public function create($department_id){
@@ -71,51 +74,12 @@ class DoctorController extends Controller
         $doctor->slug = \Illuminate\Support\Str::slug($request->second_name_uk .' '. $request->first_name_uk .' ' . $request->middle_name_uk);
         $doctor->is_visible = '1';
 
-        if($request->file('photo_full')){
-            $request->validate([
-                'photo_full' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4096',
-            ]);
-
-            $file = $request->file('photo_full');
-            $filename = hash('sha256', $file->getClientOriginalName());
-            $basename = pathinfo($filename, PATHINFO_FILENAME);
-            $directory = public_path('assets/images/uploads/');
-
-            $originalPath = $directory . $filename;
-            $file->move($directory, $filename);
-
-            $optimizerChain = OptimizerChainFactory::create();
-            $optimizerChain->optimize($originalPath);
-
-            $manager = new ImageManager(new Driver());
-            $image = $manager->read($originalPath);
-            $webPath = $directory . $basename. '.webp';
-            $image->toWebp()->save($webPath);
-
-            $doctor->photo_full = 'assets/images/uploads/' . $filename;
+        if ($request->filled('photo_full_path')) {
+            $this->replaceImagePath($doctor, 'photo_full', $request->string('photo_full_path'));
         }
-        if($request->file('photo_square')){
-            $request->validate([
-                'photo_square' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:4096',
-            ]);
 
-            $file = $request->file('photo_square');
-            $filename = hash('sha256', $file->getClientOriginalName());
-            $basename = pathinfo($filename, PATHINFO_FILENAME);
-            $directory = public_path('assets/images/uploads/');
-
-            $originalPath = $directory . $filename;
-            $file->move($directory, $filename);
-
-            $optimizerChain = OptimizerChainFactory::create();
-            $optimizerChain->optimize($originalPath);
-
-            $manager = new ImageManager(new Driver());
-            $image = $manager->read($originalPath);
-            $webPath = $directory . $basename. '.webp';
-            $image->toWebp()->save($webPath);
-
-            $doctor->photo_square = 'assets/images/uploads/' . $filename;
+        if ($request->filled('photo_square_path')) {
+            $this->replaceImagePath($doctor, 'photo_square', $request->string('photo_square_path'));
         }
 
         $doctor->save();
@@ -282,6 +246,16 @@ class DoctorController extends Controller
 
         $department = NewDoctorDepartment::where('doctor_id', $id)->first();
 
+        if (!$request->has('working_hours')) {
+            // ВАРІАНТ А: нічого не змінювати
+            // return back()->with('status', 'Нічого не змінено (порожній запит).');
+
+            // ВАРІАНТ Б: очистити графік (усі дні null)
+            $department->work_hours = array_fill(0, 7, null);
+            $department->save();
+            return back()->with('status', 'Години очищено.');
+        }
+
         $data = $request->input('working_hours', []);
 
         $workingHours = [];
@@ -383,7 +357,9 @@ class DoctorController extends Controller
             $doctor->save();
         }
 
-        return redirect()->route('admin.doctors.list', ['id' => $request->department]);
+        $department = NewCategory::findOrFail($request->department);
+
+        return view('admin.doctors.doctor_part', compact('department'));
     }
 
     public function department_delete($id, $department_id){
@@ -404,27 +380,34 @@ class DoctorController extends Controller
     }
 
     public function search(Request $request){
-            $search = $request->q;
 
-            $results = NewDoctor::select('new_doctors.id')
-                ->join('new_doctor_translations', function ($join) {
-                    $join->on('new_doctors.id', '=', 'new_doctor_translations.doctor_id');
-                })
-                ->where(function ($query) use ($search) {
-                    $query->whereRaw("CONCAT_WS(' ', new_doctor_translations.second_name, new_doctor_translations.first_name, new_doctor_translations.middle_name) LIKE ?", ["%{$search}%"]);
-                })
-                ->where('new_doctor_translations.locale', app()->getLocale()) // обов'язково
-                ->limit(20)
-                ->get()
-                ->map(function ($doctor) {
-                    $fullName = "{$doctor->translation->second_name} {$doctor->translation->first_name} {$doctor->translation->middle_name}";
-                    return [
-                        'id' => $doctor->id,
-                        'name' => trim($fullName)
-                    ];
-                });
+        // Select2 шле 'term'; але підтримаймо і 'q' на всяк випадок
+        $term = $request->input('term', $request->input('q', ''));
+        if (trim($term) === '') {
+            return response()->json([]);
+        }
 
-        return response()->json($results);
+        // Для пошуку по словах у будь-якому порядку
+        $like = '%' . preg_replace('/\s+/', '%', trim($term)) . '%';
+
+        $rows = \App\Models\NewDoctorTranslation::query()
+            // (опц) фільтр за мовою, якщо треба саме укр
+            // ->where('locale', app()->getLocale())
+            ->where(function ($q) use ($like) {
+                $q->where('first_name', 'LIKE', $like)
+                    ->orWhere('middle_name', 'LIKE', $like)
+                    ->orWhere('second_name', 'LIKE', $like)
+                    ->orWhereRaw("CONCAT_WS(' ', second_name, first_name, middle_name) LIKE ?", [$like]);
+            })
+            // одне ім'я на одного лікаря
+            ->selectRaw("doctor_id, MIN(CONCAT_WS(' ', second_name, first_name, middle_name)) AS name")
+            ->groupBy('doctor_id')
+            ->orderBy('name')
+            ->limit(20)
+            ->get()
+            ->map(fn($r) => ['id' => $r->doctor_id, 'text' => $r->name]); // <-- text для Select2
+
+        return response()->json($rows);
     }
 
     public function apiDoctorDepartmentList(Request $request){

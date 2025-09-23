@@ -47,10 +47,13 @@
                                                         <div class="modal-dialog" role="document">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
+                                                                    @php
+                                                                        $dep = $department ?? $departments->first();
+                                                                    @endphp
                                                                     <h5 class="modal-title" id="exampleModalLabel1">Додати лікаря у {{ $department->translation->name }}</h5>
                                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 </div>
-                                                                <form method="post" action="{{ route('admin.doctor.department_add') }}">
+                                                                <form method="post" action="{{ route('admin.doctor.department_add') }}" id="addDoctorForm">
                                                                     @csrf
                                                                 <div class="modal-body">
                                                                     <div class="row">
@@ -181,44 +184,59 @@
     </div>
 @endsection
 @section('script')
-<script>
-    $(document).ready(function(){
-        $("#doctorSearch").select2({
-            placeholder: 'Почніть набирати назву..',
-            language: "uk",
-            ajax: {
-                url: '{{ route("admin.doctor.search") }}',
-                dataType: 'json',
-                delay: 250,
-                processResults: function (data) {
-                    return {
-                        results: $.map(data, function (item) {
-                            return {
-                                text: item.name,
-                                id: item.id
-                            }
-                        })
-                    };
-                    onItemSelect: selectItem();
-                },
-                cache: true
-            }
-        });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Ініціалізація select2 всередині модалки (щоб не було проблем із z-index)
+            $('#basicModal').on('shown.bs.modal', function () {
+                $('#doctorSearch').select2({
+                    placeholder: 'Почніть набирати назву..',
+                    language: 'uk',
+                    width: '100%',
+                    dropdownParent: $('#basicModal'),
+                    ajax: {
+                        url: '{{ route("admin.doctor.search") }}',
+                        dataType: 'json',
+                        delay: 250,
+                        data: function (params) {
+                            return { q: params.term }; // або term: params.term — на бек ми підтримуємо обидва
+                        },
+                        processResults: function (data) {
+                            return { results: data }; // вже [{id, text}]
+                        },
+                        cache: true
+                    }
+                });
+            });
 
-        $(".add_doctor").submit(function(e){
-            e.preventDefault();
-            var form = $(this);
-            $.ajax({
-                url: "{{ route('admin.doctor.department_add') }}",
-                type: "POST",
-                data: form.serialize(),
-                success: function(response){
-                    $('#doctorResult').html(response);
-                    $('body').removeClass('.modal-open');
-                    $('body').css('');
-                }
+            // Сабмітимо САМЕ ФОРМУ
+            $('#addDoctorForm').on('submit', function (e) {
+                e.preventDefault();
+                var $form = $(this);
+
+                $.ajax({
+                    url: $form.attr('action'),
+                    type: 'POST',
+                    data: $form.serialize(),
+                    success: function (html) {
+                        // Оновлюємо список лікарів
+                        $('#doctorResult').html(html);
+
+                        // Закриваємо модалку
+                        const modalEl = document.getElementById('basicModal');
+                        const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+                        modal.hide();
+
+                        // Скидаємо форму
+                        $form[0].reset();
+                        // Якщо треба — очистити select2
+                        $('#doctorSearch').val(null).trigger('change');
+                    },
+                    error: function (xhr) {
+                        // Вивести помилки валідації (за бажанням — красивіше)
+                        alert('Не вдалося зберегти. Статус: ' + xhr.status);
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 @endsection

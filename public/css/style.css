@@ -25099,7 +25099,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-size: 15px;
     font-weight: 700;
     color: #2a93c9;
-    text-transform: lowercase;
+    text-transform: none;
     list-style-type: none;
     cursor: pointer;
     transition: color .2s ease-in;

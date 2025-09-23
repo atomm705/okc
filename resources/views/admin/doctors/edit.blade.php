@@ -26,8 +26,8 @@
                                                 <div class="col-md-6">
                                                     <label for="is_visible">Видимість</label>
                                                     <select name="is_visible" class="form-control">
-                                                        <option value="1">Працює</option>
-                                                        <option value="0">Не працює</option>
+                                                        <option value="1" @if($doctor->is_visible = '1') selected @endif>Працює</option>
+                                                        <option value="0"  @if($doctor->is_visible = '0') selected @endif>Не працює</option>
                                                     </select>
                                                 </div>
                                             </div>
