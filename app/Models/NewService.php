@@ -22,6 +22,13 @@ class NewService extends Model
         return $this->hasOne(NewCategory::class, 'id', 'category_id');
     }
 
+    public function parent(){
+        return $this->hasOne(NewService::class, 'id', 'group_id');
+    }
+
+    public function groups(){
+        return $this->hasMany(NewService::class, 'group_id', 'id');
+    }
   //  public function category()
    // {
   //      return $this->belongsTo(NewCategory::class, 'category_id', 'id');

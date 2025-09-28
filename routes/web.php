@@ -112,7 +112,9 @@ Route::middleware(['auth'])->group(function () {
 
         Route::get('/{slug}/groups', [ServicesController::class, 'groups'])->name('admin.groups');
         Route::get('/groups/{slug}/create', [ServicesController::class, 'groups_create'])->name('admin.groups.create');
+        Route::get('/groups/{id}/group_create', [ServicesController::class, 'groups_group_create'])->name('admin.groups.group_create');
         Route::post('/groups/store', [ServicesController::class, 'groups_store'])->name('admin.groups.store');
+        Route::post('/groups/group_store', [ServicesController::class, 'groups_group_store'])->name('admin.groups.group_store');
         Route::get('/groups/{id}/edit', [ServicesController::class, 'groups_edit'])->name('admin.groups.edit');
         Route::post('/groups/{id}/update', [ServicesController::class, 'groups_update'])->name('admin.groups.update');
 

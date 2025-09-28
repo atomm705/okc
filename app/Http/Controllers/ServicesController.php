@@ -241,7 +241,7 @@ class ServicesController extends Controller
     {
         $category = NewCategory::where('slug', $slug)->first();
 
-        $groups = NewService::where('category_id', $category->id)->get();
+        $groups = NewService::where('category_id', $category->id)->whereNull('group_id')->get();
 
         $categories = NewCategory::where('is_visible', true)->get();
 
@@ -255,6 +255,13 @@ class ServicesController extends Controller
         $category = NewCategory::where('slug', $slug)->first();
 
         return view('admin.groups.create', compact('categories', 'category'));
+    }
+
+    public function groups_group_create($id){
+
+        $group = NewService::findOrFail($id);
+
+        return view('admin.groups.group_create', compact('group'));
     }
 
     public function groups_store(Request $request){
@@ -316,6 +323,67 @@ class ServicesController extends Controller
         return redirect()->route('admin.groups', ['slug' => $group->category->slug]);
     }
 
+    public function groups_group_store(Request $request){
+        $map = [
+            'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd',
+            'е' => 'e', 'ё' => 'yo', 'ж' => 'zh', 'з' => 'z', 'и' => 'i',
+            'й' => 'y', 'к' => 'k', 'л' => 'l', 'м' => 'm', 'н' => 'n',
+            'о' => 'o', 'п' => 'p', 'р' => 'r', 'с' => 's', 'т' => 't',
+            'у' => 'u', 'ф' => 'f', 'х' => 'kh', 'ц' => 'ts', 'ч' => 'ch',
+            'ш' => 'sh', 'щ' => 'sch', 'ъ' => '', 'ы' => 'y', 'ь' => '',
+            'э' => 'e', 'ю' => 'yu', 'я' => 'ya',
+
+            'А' => 'A', 'Б' => 'B', 'В' => 'V', 'Г' => 'G', 'Д' => 'D',
+            'Е' => 'E', 'Ё' => 'Yo', 'Ж' => 'Zh', 'З' => 'Z', 'И' => 'I',
+            'Й' => 'Y', 'К' => 'K', 'Л' => 'L', 'М' => 'M', 'Н' => 'N',
+            'О' => 'O', 'П' => 'P', 'Р' => 'R', 'С' => 'S', 'Т' => 'T',
+            'У' => 'U', 'Ф' => 'F', 'Х' => 'Kh', 'Ц' => 'Ts', 'Ч' => 'Ch',
+            'Ш' => 'Sh', 'Щ' => 'Sch', 'Ъ' => '', 'Ы' => 'Y', 'Ь' => '',
+            'Э' => 'E', 'Ю' => 'Yu', 'Я' => 'Ya',
+        ];
+
+        $parent = NewService::findOrFail($request->group_id);
+
+        $group = new NewService();
+
+        $group->slug = \Illuminate\Support\Str::slug(strtr($request->name_uk, $map), '-');
+        $group->category_id = $parent->category_id;
+        $group->group_id = $request->group_id;
+        $group->is_visible = $request->is_visible;
+        $group->save();
+
+
+        foreach(config('app.available_locales') as $lang){
+            $name = 'name_'.$lang;
+            if($request->$name){
+                $text = 'text_'.$lang;
+                $text_before = 'text_before_'.$lang;
+                $text_after = 'text_after_'.$lang;
+                $seo_title = 'seo_title_'.$lang;
+                $seo_description = 'seo_description_'.$lang;
+                $seo_keywords = 'seo_keywords_'.$lang;
+
+                $seo = array();
+                $translate = new NewServiceTranslation();
+                $translate->service_id = $group->id;
+                $translate->locale = $lang;
+                $translate->name = $request->$name;
+                $translate->text = $request->$text;
+                $translate->text_before = $request->$text_before;
+                $translate->text_after = $request->$text_after;
+
+                $seo['title'] = $request->$seo_title;
+                $seo['description'] = $request->$seo_description;
+                $seo['keywords'] = $request->$seo_keywords;
+
+                $translate->page_seo = json_encode($seo, JSON_UNESCAPED_UNICODE);
+
+                $translate->save();
+            }
+        }
+        return redirect()->route('admin.groups', ['slug' => $group->parent->category->slug]);
+    }
+
     public function groups_edit($id){
 
         $group = NewService::findOrFail($id);
@@ -329,6 +397,7 @@ class ServicesController extends Controller
         $group = NewService::findOrFail($id);
 
         $group->category_id = $request->category_id;
+        $group->group_id = $request->group_id;
         $group->is_visible = $request->is_visible;
         $group->is_group = $request->is_group;
         $group->save();
@@ -374,7 +443,7 @@ class ServicesController extends Controller
 
         $group = NewService::where('id', $group_id)->first();
 
-        $groups = NewService::where('category_id', $group->category_id)->where('is_visible', true)->get();
+        $groups = NewService::where('category_id', $group->category_id)->where('is_visible', true)->whereNull('group_id')->get();
 
         return view('admin.prices.create', compact('group', 'groups'));
     }
@@ -418,7 +487,7 @@ class ServicesController extends Controller
 
         $group = NewService::where('id', $price->service_id)->first();
 
-        $groups = NewService::where('category_id', $group->category_id)->where('is_visible', true)->get();
+        $groups = NewService::where('category_id', $group->category_id)->where('is_visible', true)->whereNull('group_id')->get();
 
         return view('admin.prices.edit', compact('price', 'groups'));
     }

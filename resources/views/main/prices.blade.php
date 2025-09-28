@@ -48,14 +48,14 @@
                         <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
                             <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
-                                    @if(isset($group->translation->name)  && $group->services->first())
+                                    @if(isset($group->translation->name) && ($group->services->first() || $group->groups->first()))
                                         <li>{{ $group->translation->name }}</li>
                                     @endif
                                 @endforeach
                             </ul>
                             <div class="resp-tabs-container text-start tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
-                                    @if(isset($group->translation->name) && $group->services->first())
+                                    @if(isset($group->translation->name) && ($group->services->first() || $group->groups->first()))
                                         <div>
                                             <table class="table table-custom table-fixed table-hover-rows table-3-col">
                                                 <thead>
@@ -65,6 +65,21 @@
                                                 <th class="title-th-m">{{ __('global.description') }}</th>
                                                 </thead>
                                                 <tbody>
+                                                @foreach($group->groups as $g)
+                                                    <tr>
+                                                        <td colspan="4"><h5>{{ $g->translation->name }}</h5></td>
+                                                    </tr>
+                                                    @foreach($g->services as $service)
+                                                        @if(isset($service->translation->name))
+                                                            <tr>
+                                                                <td>{{ $service->translation->name }}</td>
+                                                                <td>@if($service->price) {{ $service->price }} @else {{ $service->translation->price }} @endif</td>
+                                                                <td>{{ $service->translation->time }}</td>
+                                                                <td class="note-item">{!! $service->translation->note !!}</td>
+                                                            </tr>
+                                                        @endif
+                                                    @endforeach
+                                                @endforeach
                                                 @foreach($group->services as $service)
                                                     @if(isset($service->translation->name))
                                                         <tr>

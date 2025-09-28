@@ -18,10 +18,23 @@
                                 </div>
                                 <div class="col-md-4">
                                     <a class="dropdown-item" href="{{ route('admin.groups.edit', ['id' => $group->id]) }}"><i class="bx bx-edit-alt me-1"></i> Редагувати групу</a>
+                                    <a class="dropdown-item" href="{{ route('admin.groups.group_create', ['id' => $group->id]) }}"><i class="bx bxs-book-add me-1"></i> ДОДАТИ ПІДГРУПУ</a>
                                     <a class="dropdown-item" href="{{ route('admin.prices.create', ['group_id' => $group->id]) }}"><i class="bx bx-add-to-queue me-1"></i> Створити послугу</a>
                                 </div>
                             </div>
-                                <table class="table" id="list-{{ $group->id }}" width="100%">
+                                @foreach($group->groups as $g)
+                                <div class="table-responsive text-nowrap m-5">
+                                    <div class="mb-3 row">
+                                        <div class="col-md-6"><h3 class="text-wrap">{{ $g->admin_translation('uk')->name ?? '' }}</h3></div>
+                                        <div class="col-md-2">
+                                            @if($g->is_visible == '1') <span class="text-success">Відображається</span>@endif @if($g->is_visible == '0') <span class="text-danger">Не відображається</span>@endif
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a class="dropdown-item" href="{{ route('admin.groups.edit', ['id' => $g->id]) }}"><i class="bx bx-edit-alt me-1"></i> Редагувати групу</a>
+                                            <a class="dropdown-item" href="{{ route('admin.prices.create', ['group_id' => $g->id]) }}"><i class="bx bx-add-to-queue me-1"></i> Створити послугу</a>
+                                        </div>
+                                    </div>
+                                    <table class="table" id="list-{{ $g->id }}" width="100%">
                                     <thead>
                                     <tr>
                                         <th>Назва</th>
@@ -31,7 +44,7 @@
                                     </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-3">
-                                    @foreach($group->services as $service)
+                                    @foreach($g->services as $service)
                                         <tr>
                                             <td class="text-wrap">{{ $service->admin_translation('uk')->name }}</td>
                                             <td>{{ $service->price }}</td>
@@ -48,6 +61,35 @@
                                     @endforeach
                                     </tbody>
                                 </table>
+                                </div>
+                                @endforeach
+                            <table class="table" id="list-{{ $group->id }}" width="100%">
+                                <thead>
+                                <tr>
+                                    <th>Назва</th>
+                                    <th>Ціна</th>
+                                    <th>Статус</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-border-bottom-3">
+                                @foreach($group->services as $service)
+                                    <tr>
+                                        <td class="text-wrap">{{ $service->admin_translation('uk')->name }}</td>
+                                        <td>{{ $service->price }}</td>
+                                        <td>@if($service->is_visible == '1') <span class="text-green-600">Відображається</span>@endif @if($service->is_visible == '0') <span class="text-red-600">Не відображається</span>@endif </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="{{ route('admin.prices.edit', ['id' => $service->id]) }}"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                         </div>
                         @endforeach
                     </div>

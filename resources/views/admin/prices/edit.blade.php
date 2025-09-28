@@ -17,6 +17,9 @@
                                                 <select name="service_id" class="form-control">
                                                     @foreach($groups as $gr)
                                                         <option value="{{ $gr->id }}" @if($gr->id == $price->service_id) selected @endif>{{ $gr->admin_translation('uk')->name }}</option>
+                                                        @foreach($gr->groups as $gg)
+                                                            <option value="{{ $gg->id }}" @if($gg->id == $price->service_id) selected @endif>  &nbsp;&nbsp;-- {{ $gg->admin_translation('uk')->name }}</option>
+                                                        @endforeach
                                                     @endforeach
                                                 </select>
                                             </div>

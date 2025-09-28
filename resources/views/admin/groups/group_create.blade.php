@@ -3,42 +3,24 @@
     <div class="content-wrapper">
         <div class="container-xxl flex-grow-1 container-p-y">
             <div class="card">
-                <h5 class="card-header">Група послуг / Редагуання</h5>
+                <h5 class="card-header">Група послуг / Створення підгрупи</h5>
                 <div class="card-body">
                     <div>
-                        <form method="post" action="{{ route('admin.groups.update', ['id' => $group->id]) }}" enctype="multipart/form-data">
+                        <form method="post" action="{{ route('admin.groups.group_store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group mb-2">
-                                        <label for="category_id">Категорія</label>
-                                        <select name="category_id" class="form-control">
-                                            @foreach($categories as $category)
-                                                <option value="{{ $category->id }}" @if($group->category_id == $category->id) selected @endif>{{ $category->admin_translation('uk')->name }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="group_id">Батьківська група</label>
+                                        <label for="category_id">Батьківська група</label>
                                         <select name="group_id" class="form-control">
-                                            <option value=""></option>
-                                            @foreach($group->category->groups as $g)
-                                                <option value="{{ $g->id }}" @if($group->group_id == $g->id) selected @endif>{{ $g->admin_translation('uk')->name }}</option>
-                                            @endforeach
+                                            <option value="{{ $group->id }}">{{ $group->admin_translation('uk')->name }}</option>
                                         </select>
                                     </div>
                                     <div class="form-group mb-2">
                                         <label for="is_visible">Відображати</label>
                                         <select name="is_visible" class="form-control">
-                                            <option value="1" @if($group->is_visible == '1') selected @endif>Відображати</option>
-                                            <option value="0" @if($group->is_visible == '0') selected @endif>Не відображати</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <label for="is_group">Відображати в меню</label>
-                                        <select name="is_group" class="form-control">
-                                            <option value="1" @if($group->is_group == '1') selected @endif>Відображати</option>
-                                            <option value="0" @if($group->is_group == '0') selected @endif>Не відображати</option>
+                                            <option value="1">Відображати</option>
+                                            <option value="0">Не відображати</option>
                                         </select>
                                     </div>
                                 </div>
@@ -57,47 +39,31 @@
                                                     <div class="row">
                                                         <div class="col-md-12 mb-3">
                                                             <label for="name_{{ $lang }}" class="form-label">Назва {{ $lang }}</label>
-                                                            <input type="text" class="form-control" id="name_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="name_{{ $lang }}" @if($lang == 'uk') required @endif value="{{ $group->admin_translation($lang)->name ?? '' }}"/>
+                                                            <input type="text" class="form-control" id="name_{{ $lang }}" placeholder="" aria-describedby="defaultFormControlHelp" name="name_{{ $lang }}" @if($lang == 'uk') required @endif/>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="text_{{ $lang }}" class="form-label">Опис {{ $lang }}</label>
-                                                            <textarea name="text_{{ $lang }}" id="text_{{ $lang }}" class="form-control" rows="10">{{ $group->admin_translation($lang)->text ?? '' }}</textarea>
+                                                            <textarea name="text_{{ $lang }}" id="text_{{ $lang }}" class="form-control" rows="10"></textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="text_before_{{ $lang }}" class="form-label">Текст до {{ $lang }}</label>
-                                                            <textarea name="text_before_{{ $lang }}" id="text_before_{{ $lang }}" class="form-control" rows="10">{{ $group->admin_translation($lang)->text_before ?? '' }}</textarea>
+                                                            <textarea name="text_before_{{ $lang }}" id="text_before_{{ $lang }}" class="form-control" rows="10"></textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="text_after_{{ $lang }}" class="form-label">Текст після {{ $lang }}</label>
-                                                            <textarea name="text_after_{{ $lang }}" id="text_after_{{ $lang }}" class="form-control" rows="10">{{ $group->admin_translation($lang)->text_after ?? '' }}</textarea>
+                                                            <textarea name="text_after_{{ $lang }}" id="text_after_{{ $lang }}" class="form-control" rows="10"></textarea>
                                                         </div>
-
                                                         <div class="col-md-12 mb-3">
                                                             <label for="seo_title_{{ $lang }}" class="form-label">Свій СЕО title {{ $lang }}</label>
-                                                            @php
-                                                                $translation = $group->admin_translation($lang);
-                                                                $seo = json_decode($translation?->page_seo ?? '', true);
-                                                            @endphp
-
-                                                            <textarea name="seo_title_{{ $lang }}" class="form-control" rows="5">{{ $seo['title'] ?? '' }}</textarea>
+                                                            <textarea name="seo_title_{{ $lang }}" class="form-control" rows="5"></textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="seo_description_{{ $lang }}" class="form-label">Свій СЕО description {{ $lang }}</label>
-                                                            @php
-                                                                $translation = $group->admin_translation($lang);
-                                                                $seo = json_decode($translation?->page_seo ?? '', true);
-                                                            @endphp
-
-                                                            <textarea name="seo_description_{{ $lang }}" class="form-control" rows="5">{{ $seo['description'] ?? '' }}</textarea>
+                                                            <textarea name="seo_description_{{ $lang }}" class="form-control" rows="5"></textarea>
                                                         </div>
                                                         <div class="col-md-12 mb-3">
                                                             <label for="seo_keywords_{{ $lang }}" class="form-label">Свій СЕО keywords {{ $lang }}</label>
-                                                            @php
-                                                                $translation = $group->admin_translation($lang);
-                                                                $seo = json_decode($translation?->page_seo ?? '', true);
-                                                            @endphp
-
-                                                            <textarea name="seo_keywords_{{ $lang }}" class="form-control" rows="5">{{ $seo['keywords'] ?? '' }}</textarea>
+                                                            <textarea name="seo_keywords_{{ $lang }}" class="form-control" rows="5"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
