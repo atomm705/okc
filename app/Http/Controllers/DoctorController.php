@@ -420,7 +420,7 @@ class DoctorController extends Controller
             $tr = $d->translations->first();
             return [
                 'id' => $d->id,
-                'image' => $d->iamge,
+                'image' => $d->image,
                 'translation' => $tr ? [
                     'lcale' => $tr->locale,
                     'name' => $tr->name,

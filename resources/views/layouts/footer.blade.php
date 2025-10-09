@@ -3,17 +3,12 @@
         <div class="row justify-content-md-center text-xl-start">
             <div class="col-md-8 col-lg-12">
                 <div class="row justify-content-sm-center row-40">
-                    <div class="col-sm-10 col-lg-4 text-start order-lg-3 inset-lg-left-50">
-                        <h6>@lang('footer.newsletter.title')</h6>
-                        <hr class="text-subline">
-                        <p class="text-white-70 l-h-1-5">@lang('footer.newsletter.description')</p>
-                    </div>
-                    <div class="col-sm-10 text-sm-start col-lg-4 order-lg-2">
+                    <div class="col-sm-10 text-sm-start col-lg-8 order-lg-2">
                         <h6>@lang('footer.contacts.title')</h6>
                         <hr class="text-subline">
                         <div class="text-center text-xl-start">
-                            <address class="contact-info d-md-inline-block text-start">
-                                <div class="p unit unit-spacing-xxs flex-row">
+                            <address class="contact-info d-md-inline-block text-start row">
+                                <div class="p unit unit-spacing-xxs flex-row col-md-6">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-phone text-white"></span></div>
                                     <div class="unit-body">
                                         <div><a class="text-white-70" href="tel:0800317317"> 0 (800) 317-317</a> <span class="text-white-70">, </span></div>
@@ -23,7 +18,7 @@
                                         <div><a class="text-white-70" href="tel:+380973186758"> (097) 318-67-58</a></div>
                                     </div>
                                 </div>
-                                <div class="p unit flex-row unit-spacing-xxs">
+                                <div class="p unit flex-row unit-spacing-xxs col-md-6">
                                     <div class="unit-left"><span class="icon icon-xxs mdi mdi-map-marker text-white"></span></div>
                                     <div class="unit-body"><a class="text-white-70 l-h-1-5" href="#">@lang('footer.contacts.address')</a></div>
                                 </div>

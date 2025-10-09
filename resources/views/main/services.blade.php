@@ -18,7 +18,7 @@
                     <div class="isotope-filters isotope-filters-vertical">
                         <ul class="list-inline list-inline-sm service-select-mobil">
                             <li class="d-xl-none service-select-mobil">
-                                <p class="gray">{{ __('global.Choose your category') }}:</p>
+                                <p class="gray">{{ __('global.Choose a department') }}:</p>
                                 <select id="category" class="form-control service-select-mobil  " >
                                     <option value="{{ $category->slug }}" >{{ $category->translation->name }}</option>
                                     @foreach($category->menu_groups as $group)

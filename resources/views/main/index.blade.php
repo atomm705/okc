@@ -245,7 +245,7 @@
     <section class="section-lg bg-default section">
         <div class="container">
             <iframe class="height--phone" width="100%" height="600"
-                    src="https://www.youtube-nocookie.com/embed/cOUYKMbttow?rel=0&modestbranding=1&playsinline=1"
+                    src="https://www.youtube-nocookie.com/embed/DNWgkbO4lzw?rel=0&modestbranding=1&playsinline=1"
                     title="YouTube video player" loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="origin-when-cross-origin" allowfullscreen></iframe>

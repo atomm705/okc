@@ -22,13 +22,9 @@
                     <div class="isotope-filters isotope-filters-vertical">
                         <h4 class="text-uppercase isotope-filters-title offset-top-34"></h4>
                         <ul class="list-inline list-inline-sm">
-                            <li class="d-xl-none">
-                                <p class="gray">{{ __('global.Choose your category') }}:</p>
-                            </li>
-                            <li class="section-relative">
-                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">{{ __('global.Choose your category') }}<span class="caret"></span></button>
-
-                                <ul class="list-sm-inline isotope-filters-list" id="isotope-1">
+                            <li class="section-relative full-width-sm text-center">
+                                <button class="isotope-filters-toggle btn btn-sm btn-default" data-custom-toggle="#isotope-1" data-custom-toggle-disable-on-blur="true" data-custom-toggle-hide-on-blur="true">{{ __('global.Choose a department') }}<span class="caret"></span></button>
+                                <ul class="list-sm-inline isotope-filters-list full-width-sm" id="isotope-1">
                                     @foreach($categories as $category)
                                         @if($category->translation)
                                             @if(isset($category->slug))
@@ -37,6 +33,7 @@
                                         @endif
                                     @endforeach
                                 </ul>
+                                <div class="spacer" aria-hidden="true"></div>
                             </li>
                         </ul>
                     </div>
@@ -45,8 +42,8 @@
                     <h3 class="text-md-start">{{ $category_active->translation->name }}</h3>
                     <div class="offset-sm-top-30 text-start">
                         @if(isset($category_active->slug))
-                        <div class="responsive-tabs responsive-tabs-classic tabs-custom" data-type="horizontal">
-                            <ul class="resp-tabs-list tabs-1 text-center tabs-group-default" data-group="tabs-group-default">
+                            <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
+                                <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
                                 @foreach($category_active->groups as $group)
                                     @if(isset($group->translation->name) && ($group->services->first() || $group->groups->first()))
                                         <li>{{ $group->translation->name }}</li>

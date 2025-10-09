@@ -526,4 +526,33 @@ class ServicesController extends Controller
 
 
     }
+
+    public function apiServiceDepartmentList(){
+        $lang = $request->header('X-Locale', 'uk');
+
+        $departments = NewCategory::select('id', 'image')->where('is_visible', true)->with(['translations' => fn($q) => $q->where('locale', $lang)])->get();
+
+        $items = $departments->map(function($d){
+            $tr = $d->translations->first();
+            return [
+                'id' => $d->id,
+                'image' => $d->iamge,
+                'translation' => $tr ? [
+                    'lcale' => $tr->locale,
+                    'name' => $tr->name,
+                ] : null,
+
+            ];
+        });
+        return response()->json([
+            'ok' => true,
+            'departments' => $items,
+        ]);
+    }
+
+    public function apiGroupList(Request $request, $departmentId){
+        $lang = $request->header('X-Locale', 'uk');
+
+        $groups = NewService::where()
+    }
 }

@@ -16676,6 +16676,7 @@ swiper-slide-caption{
 .swiper-container .row,
 .swiper-container .swiper-caption {
     height: 100%;
+    min-height: 580px;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -22611,9 +22612,6 @@ html:not(.lt-ie10) .not-animated {
 
 .isotope-filters-list {
     display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
     padding: 5px 0;
     margin: 5px 0;
     z-index: 10;
@@ -32290,6 +32288,9 @@ html.page-doctors-departments body .app section > .content {
     .services-item > ul {
         margin-left: 0px;
     }
+    .full-width-sm{
+        width: 100%;
+    }
 }
 
 .services-item > ul > li > ul > li{
@@ -32319,5 +32320,7 @@ html.page-doctors-departments body .app section > .content {
 }
 
 .body--loading .preloader{opacity:1;visibility:visible;pointer-events:auto;}
+
+.spacer { height: 0; transition: height .25s ease; }
 
 @keyframes spin{to{transform:rotate(360deg)}}
